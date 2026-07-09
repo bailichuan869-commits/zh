@@ -1,0 +1,114 @@
+---
+title: CPA-ZH official source registry
+updated: 2026-07-09
+purpose: >
+  Maintain the preferred official source entrances for CPA-ZH retrieval,
+  archiving, link checking, and version tracking.
+---
+
+principles:
+  - Prefer the issuing authority over reposts.
+  - Prefer official full text over news summaries.
+  - Preserve reposts and Q&A pages as interpretation or provenance support.
+  - Treat exposure drafts as historical references unless adopted by a formal notice.
+  - Record every downloaded file with an effective URL and a local archive path.
+
+authorities:
+  - id: npc
+    name: 全国人大
+    priority: 1
+    domains:
+      - npc.gov.cn
+    roles:
+      - 法律原文
+      - 法律修订
+    notes: 四部核心法律的有效版本应优先核验全国人大或中国人大网公开文本。
+
+  - id: state-council
+    name: 国务院
+    priority: 2
+    domains:
+      - gov.cn
+      - www.gov.cn
+    roles:
+      - 国办政策文件
+      - 中办国办联合文件公开信息
+      - 政策解读
+    notes: 国办发文件优先使用中国政府网公开页面；中办文件如无公开全文，应记录可核验来源边界。
+
+  - id: mof
+    name: 财政部
+    priority: 1
+    domains:
+      - mof.gov.cn
+      - kjs.mof.gov.cn
+      - jdjc.mof.gov.cn
+    roles:
+      - 会计准则
+      - 注册会计师行业规章
+      - 财会监督政策
+      - 会计师事务所监管
+    key_entries:
+      - label: 财政部会计司
+        url: http://kjs.mof.gov.cn/
+      - label: 财政部监督评价局
+        url: http://jdjc.mof.gov.cn/
+
+  - id: cicpa
+    name: 中国注册会计师协会
+    priority: 1
+    domains:
+      - cicpa.org.cn
+      - www.cicpa.org.cn
+    roles:
+      - 中国注册会计师执业准则
+      - 职业道德守则
+      - 独立性准则应用指南
+      - 行业通知公告
+    key_entries:
+      - label: 执业准则
+        url: https://cicpa.org.cn/ztzl1/Professional_standards/
+      - label: 职业道德规范
+        url: https://cicpa.org.cn/ztzl1/Professional_standards/Professional_ethics/
+      - label: 通知公告
+        url: https://cicpa.org.cn/xxfb/tzgg/
+
+  - id: csrc
+    name: 中国证监会
+    priority: 2
+    domains:
+      - csrc.gov.cn
+      - www.csrc.gov.cn
+    roles:
+      - 证券法配套监管
+      - 证券服务机构监管
+      - 发行监管规则适用指引
+      - 行政处罚与监管措施
+    key_entries:
+      - label: 中国证监会官网
+        url: https://www.csrc.gov.cn/
+
+  - id: samr
+    name: 国家市场监督管理总局
+    priority: 3
+    domains:
+      - samr.gov.cn
+      - www.samr.gov.cn
+    roles:
+      - 企业登记
+      - 公司登记配套规则
+
+retrieval_order:
+  - official_full_text
+  - official_pdf_or_attachment
+  - issuing_authority_notice
+  - official_interpretation_or_qa
+  - official_repost
+  - historical_reference
+
+document_status:
+  valid: 现行有效或当前使用版本
+  superseded: 已被新版本替代，保留作历史沿革
+  historical: 历史参考，不作为当前直接适用依据
+  draft: 征求意见稿或草案，不作为正式依据
+  unknown: 尚未完成效力核验

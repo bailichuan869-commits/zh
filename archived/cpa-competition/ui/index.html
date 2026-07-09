@@ -1,0 +1,2611 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>注册会计师竞赛知识库</title>
+  <style>
+    :root {
+      --bg: #f3efe5;
+      --panel: rgba(255, 252, 246, 0.88);
+      --panel-strong: #fffaf0;
+      --ink: #18222f;
+      --muted: #5a6775;
+      --line: rgba(24, 34, 47, 0.12);
+      --accent: #b84c2a;
+      --accent-soft: rgba(184, 76, 42, 0.14);
+      --accent-2: #1d5c63;
+      --shadow: 0 20px 40px rgba(24, 34, 47, 0.12);
+      --radius: 24px;
+      --radius-sm: 14px;
+      --serif: "Noto Serif SC", "Source Han Serif SC", "STSong", Georgia, serif;
+      --sans: "Aptos", "Segoe UI", "PingFang SC", "Microsoft YaHei UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background:
+        radial-gradient(circle at top left, rgba(184, 76, 42, 0.18), transparent 28%),
+        radial-gradient(circle at top right, rgba(29, 92, 99, 0.16), transparent 26%),
+        linear-gradient(180deg, #f8f3e9 0%, #efe7d9 100%);
+      color: var(--ink);
+      font-family: var(--sans);
+    }
+
+    body {
+      padding: 24px;
+    }
+
+    .shell {
+      display: grid;
+      grid-template-columns: 320px minmax(0, 1fr);
+      gap: 22px;
+      min-height: calc(100vh - 48px);
+    }
+
+    .sidebar,
+    .content {
+      background: var(--panel);
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(16px);
+      box-shadow: var(--shadow);
+      border-radius: var(--radius);
+    }
+
+    .sidebar {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .brand {
+      padding: 8px 4px 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .brand h1 {
+      margin: 10px 0 8px;
+      font-family: var(--serif);
+      font-size: 30px;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .brand p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .search {
+      display: grid;
+      gap: 10px;
+    }
+
+    .search input {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.85);
+      padding: 13px 14px;
+      border-radius: 16px;
+      font-size: 14px;
+      color: var(--ink);
+      outline: none;
+    }
+
+    .search input:focus {
+      border-color: rgba(184, 76, 42, 0.45);
+      box-shadow: 0 0 0 4px rgba(184, 76, 42, 0.12);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .stat {
+      padding: 14px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,248,238,0.75));
+      border: 1px solid rgba(24, 34, 47, 0.08);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 24px;
+      font-family: var(--serif);
+      margin-bottom: 4px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chip {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 8px 12px;
+      cursor: pointer;
+      color: var(--muted);
+      font-size: 13px;
+      transition: 180ms ease;
+    }
+
+    .chip.active,
+    .chip:hover {
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-color: rgba(184, 76, 42, 0.18);
+    }
+
+    .nav-title {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin: 2px 0;
+    }
+
+    .nav-list {
+      display: grid;
+      gap: 8px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .nav-item {
+      border: 1px solid transparent;
+      border-radius: 18px;
+      padding: 12px 14px;
+      cursor: pointer;
+      transition: 180ms ease;
+      background: rgba(255, 255, 255, 0.45);
+    }
+
+    .nav-item:hover,
+    .nav-item.active {
+      border-color: rgba(184, 76, 42, 0.18);
+      background: rgba(255, 249, 242, 0.96);
+      transform: translateX(2px);
+    }
+
+    .nav-item small {
+      display: block;
+      color: var(--muted);
+      margin-top: 4px;
+      line-height: 1.5;
+    }
+
+    .nav-item .meta {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 4px;
+      color: var(--accent-2);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .content {
+      display: grid;
+      grid-template-rows: auto auto 1fr;
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 28px 32px 20px;
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(135deg, rgba(184, 76, 42, 0.08), rgba(29, 92, 99, 0.08)),
+        rgba(255, 252, 246, 0.72);
+    }
+
+    .hero-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .hero h2 {
+      margin: 0 0 8px;
+      font-family: var(--serif);
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+    }
+
+    .hero p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 760px;
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0 32px 16px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 252, 246, 0.66);
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 999px;
+      padding: 8px 12px;
+      background: rgba(24, 34, 47, 0.05);
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .reader {
+      overflow: auto;
+      padding: 28px 32px 40px;
+    }
+
+    .article {
+      max-width: 940px;
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 1.85;
+    }
+
+    .article h1,
+    .article h2,
+    .article h3,
+    .article h4 {
+      font-family: var(--serif);
+      line-height: 1.2;
+      color: var(--ink);
+      letter-spacing: -0.02em;
+    }
+
+    .article h1 {
+      font-size: 40px;
+      margin: 0 0 16px;
+    }
+
+    .article h2 {
+      font-size: 26px;
+      margin: 30px 0 12px;
+      padding-top: 6px;
+    }
+
+    .article h3 {
+      font-size: 20px;
+      margin: 24px 0 10px;
+    }
+
+    .article p {
+      margin: 0 0 14px;
+    }
+
+    .article ul,
+    .article ol {
+      margin: 0 0 16px 22px;
+      padding: 0;
+    }
+
+    .article li {
+      margin-bottom: 8px;
+    }
+
+    .article code {
+      font-family: "Cascadia Code", "Consolas", monospace;
+      background: rgba(24, 34, 47, 0.08);
+      border-radius: 8px;
+      padding: 2px 6px;
+      font-size: 0.92em;
+    }
+
+    .article pre {
+      overflow: auto;
+      background: #1c2835;
+      color: #f4f7fb;
+      padding: 18px;
+      border-radius: 18px;
+    }
+
+    .article table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    .article th,
+    .article td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .article th {
+      background: rgba(24, 34, 47, 0.05);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+    }
+
+    .article blockquote {
+      margin: 18px 0;
+      padding: 16px 18px;
+      border-left: 4px solid var(--accent);
+      background: rgba(184, 76, 42, 0.08);
+      border-radius: 0 16px 16px 0;
+      color: var(--muted);
+    }
+
+    .article a {
+      color: var(--accent-2);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(29, 92, 99, 0.24);
+    }
+
+    .article a:hover {
+      color: var(--accent);
+      border-bottom-color: rgba(184, 76, 42, 0.45);
+    }
+
+    .support-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .support-card {
+      padding: 18px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid var(--line);
+    }
+
+    .support-card h4 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      font-family: var(--sans);
+      letter-spacing: 0;
+    }
+
+    .link-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .doc-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 11px;
+      border-radius: 999px;
+      background: rgba(29, 92, 99, 0.08);
+      color: var(--accent-2);
+      border: 1px solid rgba(29, 92, 99, 0.12);
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .empty {
+      color: var(--muted);
+      border: 1px dashed var(--line);
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      background: rgba(255,255,255,0.45);
+    }
+
+    .footer-note {
+      margin-top: 26px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 1080px) {
+      body {
+        padding: 14px;
+      }
+
+      .shell {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+
+      .sidebar {
+        order: 2;
+      }
+
+      .content {
+        order: 1;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .hero,
+      .meta-bar,
+      .reader {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      .stats,
+      .support-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <section class="brand">
+        <div class="eyebrow">知识库界面</div>
+        <h1>注册会计师竞赛知识库</h1>
+        <p>本地静态界面，直接浏览法规、专题页、来源页和交叉链接。继续补料后可重新生成，无需外部依赖。</p>
+      </section>
+
+      <section class="search">
+        <input id="searchInput" type="search" placeholder="搜索标题、考点、法条、标签..." />
+        <div class="stats">
+          <div class="stat">
+            <strong id="docCount">0</strong>
+            <span>总文档数</span>
+          </div>
+          <div class="stat">
+            <strong id="conceptCount">0</strong>
+            <span>专题页</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="nav-title">模块筛选</div>
+        <div class="filters" id="filters"></div>
+      </section>
+
+      <section style="min-height: 0; display: flex; flex-direction: column; gap: 10px;">
+        <div class="nav-title">文档导航</div>
+        <div class="nav-list" id="navList"></div>
+      </section>
+    </aside>
+
+    <main class="content">
+      <section class="hero">
+        <div class="hero-top">
+          <div>
+            <div class="eyebrow" id="heroEyebrow">已加载</div>
+            <h2 id="heroTitle">知识库已就绪</h2>
+            <p id="heroDescription">左侧可以按模块筛选并搜索，中间打开任何页面后，支持继续沿着交叉链接跳转。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="meta-bar" id="metaBar"></section>
+
+      <section class="reader">
+        <article class="article" id="article"></article>
+      </section>
+    </main>
+  </div>
+
+  <script id="docsData" type="application/json">[
+  {
+    "id": "concepts/preparation-strategy",
+    "title": "备赛策略",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "study-plan",
+    "sourceType": "",
+    "created": "2026-06-24",
+    "updated": "2026-06-26",
+    "tags": [
+      "study-plan",
+      "competition",
+      "cpa",
+      "p2-important"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[overview]]",
+      "[[concepts/competition-scope]]",
+      "[[concepts/practical-skills]]",
+      "[[concepts/policy-documents]]",
+      "[[concepts/question-bank-and-error-log]]",
+      "[[concepts/policy-update-tracker]"
+    ],
+    "excerpt": "备赛策略 定义 备赛策略是把知识范围转化为学习节奏、训练路径和动态跟踪机制的方法集合。 说明 原始清单给出了四条备赛建议，分别对应系统学习、实践结合、模拟训练和关注动态。对知识库来说，这意味着不能只堆内容，还要让内容能被用于复盘、案例训练和最新政策更新。 核心原则 1. 系统学习搭框架：先建立完整覆盖，避免知识断层。 2. 实践结合促理解：用案例把法条和准则",
+    "links": [
+      "concepts/competition-scope",
+      "concepts/audit-case-library",
+      "concepts/question-bank-and-error-log",
+      "concepts/policy-update-tracker",
+      "concepts/policy-documents",
+      "concepts/practical-skills",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 备赛策略\n\n## 定义\n\n备赛策略是把知识范围转化为学习节奏、训练路径和动态跟踪机制的方法集合。\n\n## 说明\n\n原始清单给出了四条备赛建议，分别对应系统学习、实践结合、模拟训练和关注动态。对知识库来说，这意味着不能只堆内容，还要让内容能被用于复盘、案例训练和最新政策更新。\n\n## 核心原则\n\n1. **系统学习搭框架**：先建立完整覆盖，避免知识断层。\n2. **实践结合促理解**：用案例把法条和准则转化为真实判断。\n3. **模拟训练提速度**：通过题目和情境演练提升输出能力。\n4. **动态跟踪防过时**：政策文件和行业动态要持续更新。\n\n## 结构与步骤\n\n| 模块 | 说明 | 示例 |\n|------|------|------|\n| 系统学习 | 建立主线框架与法规目录 | 先读 [[concepts/competition-scope]] |\n| 实践结合 | 把知识用于案例解释 | [[concepts/audit-case-library]] |\n| 模拟训练 | 建立题库、错题和答题模板 | [[concepts/question-bank-and-error-log]] |\n| 关注动态 | 建立政策更新入口 | [[concepts/policy-update-tracker]] |\n\n## 适用方式\n\n### 适用场景\n- 制定复习顺序\n- 设计每周学习任务\n- 安排知识输入与案例输出的节奏\n\n### 不适用场景\n- 不适合代替具体法规和案例内容本身\n\n## 关联主题\n\n### 相关页面\n- [[concepts/policy-documents]] - 动态更新重点来自政策文件\n- [[concepts/practical-skills]] - 模拟训练需要实务场景支撑\n- [[concepts/question-bank-and-error-log]] - 用于日常做题和错题复盘\n- [[concepts/policy-update-tracker]] - 用于持续跟踪政策变化\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-26*",
+    "relativePath": "concepts/preparation-strategy.md",
+    "backlinks": [
+      "concepts/competition-scope",
+      "concepts/comprehensive-competency",
+      "concepts/policy-documents",
+      "concepts/practical-skills",
+      "index",
+      "overview",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "relatedResolved": [
+      "concepts/competition-scope",
+      "concepts/practical-skills",
+      "concepts/policy-documents",
+      "concepts/question-bank-and-error-log"
+    ]
+  },
+  {
+    "id": "sources/regulations-repo",
+    "title": "本地法规资料目录",
+    "section": "sources",
+    "type": "source",
+    "conceptType": "",
+    "sourceType": "note",
+    "created": "2026-06-24",
+    "updated": "2026-06-24",
+    "tags": [
+      "regulation",
+      "source",
+      "cpa",
+      "reviewed"
+    ],
+    "sources": [],
+    "related": [],
+    "excerpt": "本地法规资料目录 来源信息 - 类型：本地法规资料目录 - 整理时间：2026-06-24 - 目录路径：D:/ai-audit/regulations 内容概述 该来源并非单一法规，而是当前工作区中已经整理好的法规资料目录。它包含 4 部与竞赛直接相关的核心法律文本版本，并附有部分原始 docx 文件，适合作为知识库的第一批法规来源。 当前可直接纳入知识库",
+    "links": [
+      "concepts/regulations-and-standards",
+      "concepts/core-laws-map",
+      "concepts/cpa-law",
+      "concepts/accounting-law",
+      "concepts/company-law",
+      "concepts/securities-law"
+    ],
+    "markdown": "# 本地法规资料目录\n\n## 来源信息\n- **类型**：本地法规资料目录\n- **整理时间**：2026-06-24\n- **目录路径**：`D:/ai-audit/regulations`\n\n## 内容概述\n该来源并非单一法规，而是当前工作区中已经整理好的法规资料目录。它包含 4 部与竞赛直接相关的核心法律文本版本，并附有部分原始 `docx` 文件，适合作为知识库的第一批法规来源。\n\n当前可直接纳入知识库的法律包括：《中华人民共和国注册会计师法》《中华人民共和国会计法》《中华人民共和国公司法》《中华人民共和国证券法》。这些文件足以把原先概括性的“法规模块”扩展为真正可学习的专题页。\n\n## 关键内容\n\n1. **已具备核心法源**：四部与竞赛关系最强的基础法律已经到位。\n2. **具备版本信息**：至少从文件头可以确认主要通过日期和最近修订时间。\n3. **适合继续精加工**：可以进一步提炼“核心条文、常见考点、实务连接、易混点”。\n\n## 数据概况\n\n| 项目 | 数值 | 说明 |\n|------|------|------|\n| 已有核心法律 | 4 | 注册会计师法、会计法、公司法、证券法 |\n| 保留原始文档 | 2 | 公司法、证券法保留了 `docx` 原件 |\n\n## 涉及主题\n\n| 主题 | 说明 |\n|------|------|\n| [[concepts/regulations-and-standards]] | 作为法规模块的本地来源支撑 |\n| [[concepts/core-laws-map]] | 用于组织四部法律的学习顺序 |\n| [[concepts/cpa-law]] | 来源于本地法规文本 |\n| [[concepts/accounting-law]] | 来源于本地法规文本 |\n| [[concepts/company-law]] | 来源于本地法规文本 |\n| [[concepts/securities-law]] | 来源于本地法规文本 |\n\n## 整理备注\n这是一次很关键的补料，因为它让知识库从“结构设计阶段”进入了“专题沉淀阶段”。\n\n---\n*收录时间：2026-06-24*",
+    "relativePath": "sources/regulations-repo.md",
+    "backlinks": [
+      "concepts/accounting-law",
+      "concepts/company-law",
+      "concepts/core-laws-map",
+      "concepts/cpa-law",
+      "concepts/regulations-and-standards",
+      "concepts/securities-law",
+      "index"
+    ],
+    "relatedResolved": []
+  },
+  {
+    "id": "sources/2026-06-24-competition-knowledge-list",
+    "title": "第四届北京注册会计师行业青年知识竞赛考察知识清单",
+    "section": "sources",
+    "type": "source",
+    "conceptType": "",
+    "sourceType": "report",
+    "created": "2026-06-24",
+    "updated": "2026-06-24",
+    "tags": [
+      "cpa",
+      "competition",
+      "source",
+      "reviewed"
+    ],
+    "sources": [],
+    "related": [],
+    "excerpt": "第四届北京注册会计师行业青年知识竞赛考察知识清单 来源信息 - 类型：报告 - 作者：未注明 - 发布时间：未注明 - 原始文件：raw/reports/2026-06-24-competition-knowledge-list.docx - 提取文本：raw/reports/2026-06-24-competition-knowledge-list.txt",
+    "links": [
+      "concepts/competition-scope",
+      "concepts/regulations-and-standards",
+      "concepts/policy-documents",
+      "concepts/ethics-and-independence",
+      "concepts/practical-skills",
+      "concepts/preparation-strategy"
+    ],
+    "markdown": "# 第四届北京注册会计师行业青年知识竞赛考察知识清单\n\n## 来源信息\n- **类型**：报告\n- **作者**：未注明\n- **发布时间**：未注明\n- **原始文件**：`raw/reports/2026-06-24-competition-knowledge-list.docx`\n- **提取文本**：`raw/reports/2026-06-24-competition-knowledge-list.txt`\n\n## 内容概述\n该来源是一份竞赛考察范围清单，面向北京注册会计师行业青年知识竞赛。它以目录式方式给出了应覆盖的法规准则、政策文件、行业史与职业道德、审计实务能力以及备赛建议。\n\n这份清单本身不展开具体条文或案例，但清晰定义了知识库的一级栏目，因此适合作为知识库初始化的“范围边界来源”。后续扩展应围绕清单中的法规、准则、政策和技能项逐步生长。\n\n## 关键内容\n\n1. **法规与准则是核心基础**：包括注册会计师法、会计法、公司法、证券法、企业会计准则及执业准则。\n2. **政策与监管文件占比较高**：说明竞赛不仅考基础法条，也重视行业治理、诚信建设和监督机制。\n3. **职业道德和独立性单列**：体现注册会计师执业价值判断的重要性。\n4. **实务技能强调应用**：包括审计流程、底稿、抽样、机器人流程自动化、数据清洗与综合执业能力。\n5. **备赛建议强调动态更新**：要求持续关注财政部、中注协等机构的最新政策动态。\n\n## 关键判断\n\n| 判断 | 依据 | 可信度 |\n|------|------|--------|\n| 竞赛考察内容覆盖法规、政策、职业道德、实务与备赛方法五大板块 | 原始清单按五个一级标题列示 | 高 |\n| 实务能力不仅包括传统审计流程，也包括智能化工具应用 | 清单明确提到机器人流程自动化、数据清洗与分析 | 高 |\n\n## 涉及主题\n\n| 主题 | 说明 |\n|------|------|\n| [[concepts/competition-scope]] | 作为竞赛知识地图的总入口 |\n| [[concepts/regulations-and-standards]] | 对应第一部分法规与准则 |\n| [[concepts/policy-documents]] | 对应第二部分政策性文件 |\n| [[concepts/ethics-and-independence]] | 对应第三部分职业道德与独立性 |\n| [[concepts/practical-skills]] | 对应第四部分实务技能 |\n| [[concepts/preparation-strategy]] | 对应第五部分备赛建议 |\n\n## 待补问题\n- [ ] 是否需要把每部法规拆成独立页面并补充重点条文？\n- [ ] 是否后续导入历年真题、案例题和模拟题？\n- [ ] 是否需要增加“政策动态跟踪”页面？\n\n## 整理备注\n该来源最适合用作知识库初始化，不宜被误当成完整学习材料。其价值在于定义范围和结构，而不在于提供答案。\n\n---\n*收录时间：2026-06-24*",
+    "relativePath": "sources/2026-06-24-competition-knowledge-list.md",
+    "backlinks": [
+      "concepts/accounting-standard-revenue",
+      "concepts/accounting-standards",
+      "concepts/audit-case-library",
+      "concepts/audit-evidence-and-confirmation",
+      "concepts/audit-process",
+      "concepts/audit-standards",
+      "concepts/competition-scope",
+      "concepts/comprehensive-competency",
+      "concepts/core-laws-map",
+      "concepts/ethics-and-independence",
+      "concepts/ethics-code",
+      "concepts/independence-standard-1",
+      "concepts/industry-history",
+      "concepts/intelligent-tools",
+      "concepts/policy-audit-order",
+      "concepts/policy-caihui-supervision",
+      "concepts/policy-clause-comparison",
+      "concepts/policy-cpa-exam",
+      "concepts/policy-cpa-registration",
+      "concepts/policy-documents",
+      "concepts/policy-firm-inspection",
+      "concepts/policy-firm-license",
+      "concepts/policy-integrity",
+      "concepts/policy-update-tracker",
+      "concepts/practical-skills",
+      "concepts/preparation-strategy",
+      "concepts/question-bank-and-error-log",
+      "concepts/regulations-and-standards",
+      "index",
+      "overview"
+    ],
+    "relatedResolved": []
+  },
+  {
+    "id": "concepts/regulations-and-standards",
+    "title": "法规与准则",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "framework",
+    "sourceType": "",
+    "created": "2026-06-24",
+    "updated": "2026-06-25",
+    "tags": [
+      "cpa",
+      "regulation",
+      "standards",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list",
+      "regulations-repo"
+    ],
+    "related": [
+      "[concepts/competition-scope]]",
+      "[[concepts/core-laws-map]]",
+      "[[concepts/policy-documents]]",
+      "[[concepts/practical-skills]"
+    ],
+    "excerpt": "法规与准则 定义 法规与准则板块是竞赛知识体系的基础层，覆盖注册会计师执业活动所依赖的核心法律框架与专业准则。 说明 该板块包括四部基础法律以及两类专业规范体系。法律为执业活动提供外部制度边界，会计准则规范财务报告确认计量，审计准则规范注册会计师实施业务的程序与证据要求。 当前知识库已经补入四部核心法律的本地法规资料，可以作为后续继续向准则、政策和案例延展的",
+    "links": [
+      "concepts/core-laws-map",
+      "concepts/accounting-standards",
+      "concepts/audit-standards",
+      "concepts/cpa-law",
+      "concepts/accounting-law",
+      "concepts/company-law",
+      "concepts/securities-law",
+      "concepts/policy-documents",
+      "concepts/practical-skills",
+      "sources/2026-06-24-competition-knowledge-list",
+      "sources/regulations-repo"
+    ],
+    "markdown": "# 法规与准则\n\n## 定义\n\n法规与准则板块是竞赛知识体系的基础层，覆盖注册会计师执业活动所依赖的核心法律框架与专业准则。\n\n## 说明\n\n该板块包括四部基础法律以及两类专业规范体系。法律为执业活动提供外部制度边界，会计准则规范财务报告确认计量，审计准则规范注册会计师实施业务的程序与证据要求。\n\n当前知识库已经补入四部核心法律的本地法规资料，可以作为后续继续向准则、政策和案例延展的第一层材料。相比原始竞赛清单，这一步把“知道要学什么”推进到了“可以从哪几部法开始学、各自解决什么问题”。\n\n## 核心原则\n\n1. **法律回答“能不能做”**：明确主体资格、职责边界与法律责任。\n2. **会计准则回答“怎么确认和披露”**：决定报表信息形成逻辑。\n3. **审计准则回答“怎么获取证据并形成结论”**：连接职业判断与执业质量。\n\n## 结构与步骤\n\n| 模块 | 说明 | 示例 | 细页 |\n|------|------|------|------|\n| 基础法律 | 明确行业法治框架 | 注册会计师法、会计法、公司法、证券法 | [[concepts/core-laws-map]] |\n| 会计准则体系 | 规范财务报告编制 | 企业会计准则、应用指南及解释 | [[concepts/accounting-standards]] |\n| 执业准则体系 | 规范审计与鉴证执行 | 中国注册会计师执业准则及应用指南 | [[concepts/audit-standards]] |\n\n## 四部核心法律\n\n| 法律 | 关注重点 | 当前知识页 |\n|------|----------|------------|\n| 《中华人民共和国注册会计师法》 | 注册会计师资格、注册、业务范围、事务所与法律责任 | [[concepts/cpa-law]] |\n| 《中华人民共和国会计法》 | 会计资料真实完整、核算、监督与法律责任 | [[concepts/accounting-law]] |\n| 《中华人民共和国公司法》 | 公司组织、治理、资本、清算与信息义务 | [[concepts/company-law]] |\n| 《中华人民共和国证券法》 | 证券发行交易、信息披露、投资者保护与监管责任 | [[concepts/securities-law]] |\n\n## 适用方式\n\n### 适用场景\n- 理解考题中的制度背景\n- 连接案例中的法律责任、会计处理和审计程序\n- 为职业道德、独立性和执业监管提供判断基础\n\n### 不适用场景\n- 不能单独解决复杂案例，需要结合政策文件和实务场景\n\n## 关联主题\n\n### 相关页面\n- [[concepts/core-laws-map]] - 四部核心法律的进入顺序和对应考点\n- [[concepts/policy-documents]] - 用于补充监管导向和治理要求\n- [[concepts/practical-skills]] - 用于落地到计划、底稿和抽样\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n- [[sources/regulations-repo]]\n\n---\n*最近更新：2026-06-24*",
+    "relativePath": "concepts/regulations-and-standards.md",
+    "backlinks": [
+      "concepts/accounting-law",
+      "concepts/competition-scope",
+      "concepts/practical-skills",
+      "index",
+      "overview",
+      "sources/2026-06-24-competition-knowledge-list",
+      "sources/regulations-repo"
+    ],
+    "relatedResolved": [
+      "concepts/core-laws-map",
+      "concepts/policy-documents"
+    ]
+  },
+  {
+    "id": "concepts/policy-audit-order",
+    "title": "关于进一步规范财务审计秩序促进注册会计师行业健康发展的意见（国办发〔2021〕30号）",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "policy",
+    "sourceType": "",
+    "created": "2026-06-25",
+    "updated": "2026-06-25",
+    "tags": [
+      "policy",
+      "industry-governance",
+      "cpa",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/policy-documents]]",
+      "[[concepts/policy-caihui-supervision]]",
+      "[[concepts/policy-firm-license]"
+    ],
+    "excerpt": "关于进一步规范财务审计秩序促进注册会计师行业健康发展的意见（国办发〔2021〕30号） 定义 该意见是国务院办公厅针对注册会计师行业乱象发布的综合治理文件，聚焦审计秩序、行业监管、诚信建设和质量提升。 说明 这份文件出台背景是部分审计失败、恶性竞争、挂名执业等问题。它从“乱象整治—监管升级—制度建设”三个层面给出系统性安排，是后续财政部令第97号、第99号修",
+    "links": [
+      "concepts/policy-firm-license",
+      "concepts/policy-cpa-registration",
+      "concepts/policy-integrity",
+      "concepts/policy-caihui-supervision",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 关于进一步规范财务审计秩序促进注册会计师行业健康发展的意见（国办发〔2021〕30号）\n\n## 定义\n\n该意见是国务院办公厅针对注册会计师行业乱象发布的综合治理文件，聚焦审计秩序、行业监管、诚信建设和质量提升。\n\n## 说明\n\n这份文件出台背景是部分审计失败、恶性竞争、挂名执业等问题。它从“乱象整治—监管升级—制度建设”三个层面给出系统性安排，是后续财政部令第97号、第99号修订和诚信建设纲要的重要政策依据。\n\n## 核心原则\n\n1. **秩序先行**：先治乱，再提质量。\n2. **监管升级**：强化事中事后监管，推进信息化监管手段。\n3. **诚信为本**：把诚信建设贯穿行业治理全过程。\n4. **质量导向**：引导事务所从规模扩张转向质量提升。\n\n## 结构与步骤\n\n| 模块 | 说明 | 要点 |\n|------|------|------|\n| 整治秩序 | 打击挂名、恶性竞争、虚假审计 | 清理“挂名执业”“人情报告” |\n| 行业监管 | 完善监管体制、提升监管能力 | 联合监管、信用监管 |\n| 诚信建设 | 诚信档案、失信惩戒 | 与财会〔2023〕5号衔接 |\n| 制度完善 | 修订注册办法、事务所办法 | 推动财政部令修订 |\n| 质量提升 | 审计准则、内部控制、人才培养 | 强化准则执行与人才培养 |\n\n## 常见考点\n\n- 文件明确要整治“挂名执业”“恶性竞争”“审计程序走过场”等乱象。\n- 推进联合监管，财政部门与市场监管、证券监管协同。\n- 要求完善注册会计师注册、事务所许可制度——这是后续财政部令第97号、第99号修订的政策来源。\n- 强调审计报告“一码通”和审计报告赋码验证机制。\n\n## 易混点\n\n- “规范秩序”与“提高质量”是两阶段任务，前者治标，后者治本。\n- 该文件是政策依据，具体处罚规则在财政部令和法律法规中。\n\n## 典型场景\n\n### 场景 1：事务所挂名执业被查处\n抓手：本意见 + 财政部令第97号监管条款。\n\n### 场景 2：审计报告真实性验证\n抓手：审计报告赋码制度，体现信息化监管导向。\n\n## 实务连接\n\n- 是 [[concepts/policy-firm-license]]、[[concepts/policy-cpa-registration]]、[[concepts/policy-integrity]] 的上位政策依据。\n- 与 [[concepts/policy-caihui-supervision]] 形成“总体—行业”治理关系。\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-25*",
+    "relativePath": "concepts/policy-audit-order.md",
+    "backlinks": [
+      "concepts/audit-case-library",
+      "concepts/policy-caihui-supervision",
+      "concepts/policy-clause-comparison",
+      "concepts/policy-documents",
+      "concepts/policy-firm-license",
+      "concepts/policy-integrity",
+      "concepts/policy-update-tracker",
+      "index"
+    ],
+    "relatedResolved": [
+      "concepts/policy-caihui-supervision"
+    ]
+  },
+  {
+    "id": "concepts/policy-caihui-supervision",
+    "title": "关于进一步加强财会监督工作的意见（中办发〔2023〕4号）",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "policy",
+    "sourceType": "",
+    "created": "2026-06-25",
+    "updated": "2026-06-25",
+    "tags": [
+      "policy",
+      "supervision",
+      "cpa",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/policy-documents]]",
+      "[[concepts/policy-audit-order]]",
+      "[[concepts/ethics-and-independence]"
+    ],
+    "excerpt": "关于进一步加强财会监督工作的意见（中办发〔2023〕4号） 定义 《关于进一步加强财会监督工作的意见》是党中央、国务院办公厅印发的财会监督顶层设计文件，明确了财会监督的定位、体系、机制和重点任务。 说明 这份文件的特殊性在于它不是部门规章，而是由中办、国办联合印发，层级高、统领性强。它把财会监督纳入党和国家监督体系，要求构建内部监督、政府监督、社会监督协同的",
+    "links": [
+      "concepts/policy-audit-order",
+      "concepts/ethics-and-independence",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 关于进一步加强财会监督工作的意见（中办发〔2023〕4号）\n\n## 定义\n\n《关于进一步加强财会监督工作的意见》是党中央、国务院办公厅印发的财会监督顶层设计文件，明确了财会监督的定位、体系、机制和重点任务。\n\n## 说明\n\n这份文件的特殊性在于它不是部门规章，而是由中办、国办联合印发，层级高、统领性强。它把财会监督纳入党和国家监督体系，要求构建内部监督、政府监督、社会监督协同的格局。对注册会计师行业而言，它把会计师事务所审计视为社会监督的重要组成部分，并强化了对中介机构的监督问责。\n\n## 核心原则\n\n1. **监督是体系性的**：不是单一部门的事，而是内部、政府、社会三类监督协同。\n2. **注册会计师审计属于社会监督**：事务所承担资本市场和公共信息质量的把关职责。\n3. **严监管是导向**：对财务造假、中介机构失职零容忍。\n4. **协同与共享**：要求监督信息互通、结果互认、联合惩戒。\n\n## 结构与步骤\n\n| 模块 | 说明 | 要点 |\n|------|------|------|\n| 总体要求 | 指导思想、工作原则、主要目标 | 到2025年构建起财会监督体系 |\n| 监督体系 | 内部、政府、社会三类监督 | 单位内部、财政等政府部门、中介机构 |\n| 监督机制 | 协同、线索移送、整改、激励 | 部门协同、行刑衔接 |\n| 重点任务 | 财经纪律、会计信息质量、中介机构 | 严打财务造假、规范审计秩序 |\n| 保障措施 | 党的领导、法治、队伍、信息化 | 加强党对财会监督的全面领导 |\n\n## 常见考点\n\n- 财会监督的三大体系：单位内部监督、政府监督、社会监督，三者不能混同。\n- 会计师事务所及其注册会计师的审计行为属于社会监督，不是政府监督。\n- 文件对财务造假持“零容忍”态度，强调中介机构“看门人”责任。\n- 协同机制要求财政与审计、税务、市场监管、司法等部门线索移送、结果共享。\n\n## 易混点\n\n- “财会监督”不等于“财政监督”。前者是体系性概念，后者只是政府监督的一部分。\n- “社会监督”在本文语境下主要指中介机构审计，不完全等同于舆论监督。\n- 文件是顶层设计，具体处罚仍要落到会计法、注册会计师法、证券法等。\n\n## 典型场景\n\n### 场景 1：判断某监督行为属于哪一类\n抓手：先看主体。单位自身是内部监督；财政等部门是政府监督；事务所审计是社会监督。\n\n### 场景 2：财务造假案件中的中介责任\n抓手：意见强调中介机构“看门人”职责，配合证券法第163条连带责任理解。\n\n## 实务连接\n\n- 与 [[concepts/policy-audit-order]] 共同构成行业治理政策主线。\n- 与 [[concepts/ethics-and-independence]] 连接，社会监督的可信度依赖独立性和职业道德。\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-25*",
+    "relativePath": "concepts/policy-caihui-supervision.md",
+    "backlinks": [
+      "concepts/audit-case-library",
+      "concepts/policy-audit-order",
+      "concepts/policy-clause-comparison",
+      "concepts/policy-documents",
+      "concepts/policy-firm-inspection",
+      "concepts/policy-update-tracker",
+      "index"
+    ],
+    "relatedResolved": [
+      "concepts/policy-audit-order"
+    ]
+  },
+  {
+    "id": "concepts/policy-firm-inspection",
+    "title": "会计师事务所监督检查办法（财办〔2022〕23号）",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "policy",
+    "sourceType": "",
+    "created": "2026-06-25",
+    "updated": "2026-06-25",
+    "tags": [
+      "policy",
+      "inspection",
+      "supervision",
+      "cpa",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/policy-documents]]",
+      "[[concepts/policy-firm-license]]",
+      "[[concepts/policy-caihui-supervision]"
+    ],
+    "excerpt": "会计师事务所监督检查办法（财办〔2022〕23号） 定义 该办法规范财政部门对会计师事务所的监督检查工作，明确检查内容、方式、程序和结果处理。 说明 该办法是财政部令第97号“监督管理”部分的操作细化，也是中办发4号“强化政府监督”在事务所层面的执行工具。它把检查从“运动式”转向“常态化、信息化”，强调风险导向和分级分类监管。 核心原则 1. 常态化检查：不",
+    "links": [
+      "concepts/policy-firm-license",
+      "concepts/policy-caihui-supervision",
+      "concepts/policy-integrity",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 会计师事务所监督检查办法（财办〔2022〕23号）\n\n## 定义\n\n该办法规范财政部门对会计师事务所的监督检查工作，明确检查内容、方式、程序和结果处理。\n\n## 说明\n\n该办法是财政部令第97号“监督管理”部分的操作细化，也是中办发4号“强化政府监督”在事务所层面的执行工具。它把检查从“运动式”转向“常态化、信息化”，强调风险导向和分级分类监管。\n\n## 核心原则\n\n1. **常态化检查**：不是临时专项行动，而是定期与不定期结合。\n2. **风险导向**：根据风险等级确定检查频次和范围。\n3. **分级分类**：对证券所和非证券所区别监管。\n4. **结果公开**：检查结果向社会公告，强化社会监督。\n\n## 结构与步骤\n\n| 模块 | 说明 | 要点 |\n|------|------|------|\n| 检查职责 | 财政部、省级财政部门分工 | 证券所由财政部重点检查 |\n| 检查内容 | 执业质量、内部治理、职业道德、报备 | 覆盖全维度 |\n| 检查方式 | 现场检查、非现场监管、专项检查 | 信息化监管手段 |\n| 检查程序 | 通知、进场、取证、交换意见、报告 | 程序正当 |\n| 结果处理 | 警示、约谈、处罚、移交 | 分级处理 |\n\n## 常见考点\n\n- 检查内容包括执业质量、内部治理、一体化管理、职业道德遵守、业务报备等。\n- 证券资格事务所由财政部重点监管，省级财政部门配合。\n- 检查方式包括现场检查和非现场监管，后者依赖审计报告报备和数据分析。\n- 检查结果向社会公告，体现透明度。\n- 发现违法线索移送稽查或司法。\n\n## 易混点\n\n- “监督检查”（财办23号）与“执业许可监管”（财政部令97号）有关联但层级不同：前者是检查操作办法，后者是许可与监管总规章。\n- “非现场监管”不等于“不检查”，而是通过数据报备进行持续监控。\n- “警示、约谈”不是行政处罚，是监管措施；处罚仍依97号等规章。\n\n## 典型场景\n\n### 场景 1：证券所被财政部专项检查\n抓手：本办法 + 财政部令97号 + 证券法中介责任。\n\n### 场景 2：事务所通过报备数据异常被发现\n抓手：非现场监管发现线索 → 转现场检查 → 结果处理。\n\n## 实务连接\n\n- 上位规章：[[concepts/policy-firm-license]] 财政部令97号。\n- 顶层政策：[[concepts/policy-caihui-supervision]] 中办发4号强化政府监督。\n- 与 [[concepts/policy-integrity]] 联动：检查结果纳入诚信档案。\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-25*",
+    "relativePath": "concepts/policy-firm-inspection.md",
+    "backlinks": [
+      "concepts/audit-case-library",
+      "concepts/policy-clause-comparison",
+      "concepts/policy-documents",
+      "concepts/policy-firm-license",
+      "concepts/policy-update-tracker",
+      "index"
+    ],
+    "relatedResolved": [
+      "concepts/policy-firm-license"
+    ]
+  },
+  {
+    "id": "concepts/policy-firm-license",
+    "title": "会计师事务所执业许可和监督管理办法（财政部令第97号）",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "policy",
+    "sourceType": "",
+    "created": "2026-06-25",
+    "updated": "2026-06-25",
+    "tags": [
+      "policy",
+      "firm",
+      "supervision",
+      "cpa",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/policy-documents]]",
+      "[[concepts/policy-firm-inspection]]",
+      "[[concepts/cpa-law]"
+    ],
+    "excerpt": "会计师事务所执业许可和监督管理办法（财政部令第97号） 定义 该办法规定会计师事务所执业许可的申请条件、审批程序、组织形式、变更与终止，以及日常监督和处罚。 说明 事务所是注册会计师执业的法定机构载体（注册会计师法第22条）。该办法把“事务所怎么设立、怎么管、违规怎么罚”落实为可操作规则，是国办发〔2021〕30号“完善事务所许可制度”的直接产物。 核心原则",
+    "links": [
+      "concepts/cpa-law",
+      "concepts/policy-firm-inspection",
+      "concepts/policy-audit-order",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 会计师事务所执业许可和监督管理办法（财政部令第97号）\n\n## 定义\n\n该办法规定会计师事务所执业许可的申请条件、审批程序、组织形式、变更与终止，以及日常监督和处罚。\n\n## 说明\n\n事务所是注册会计师执业的法定机构载体（注册会计师法第22条）。该办法把“事务所怎么设立、怎么管、违规怎么罚”落实为可操作规则，是国办发〔2021〕30号“完善事务所许可制度”的直接产物。\n\n## 核心原则\n\n1. **机构许可制**：事务所执业必须取得执业许可。\n2. **组织形式多样**：普通合伙、特殊普通合伙、有限责任公司。\n3. **人员与合伙人要求**：对合伙人数量、执业年限、出资比例有硬性规定。\n4. **事中事后监管并重**：检查、警示、约谈、处罚多手段。\n\n## 结构与步骤\n\n| 模块 | 说明 | 要点 |\n|------|------|------|\n| 组织形式 | 普通合伙、特殊普通合伙、有限责任公司 | 不同形式对应不同责任 |\n| 设立条件 | 合伙人/股东人数、注册会计师比例、出资 | 普通合伙需2名以上合伙人 |\n| 执业许可申请 | 省级财政部门审批 | 提交申请、执业许可证书 |\n| 变更与终止 | 名称、住所、合伙人、组织形式变更 | 需备案或审批 |\n| 监督检查 | 日常检查、专项检查、年度报备 | 与财办〔2022〕23号衔接 |\n| 法律责任 | 警告、罚款、暂停、吊销 | 依情节分级处罚 |\n\n## 常见考点\n\n- 事务所组织形式包括普通合伙、特殊普通合伙、有限责任三种，各自责任机制不同。\n- 普通合伙事务所应有两名以上合伙人，合伙人均须为注册会计师。\n- 执业许可由省级财政部门审批，财政部统一公告。\n- 事务所变更名称、住所、合伙人、组织形式等应办理备案或审批。\n- 挂名执业、超出能力承接业务、未按准则执业均会触发处罚。\n\n## 易混点\n\n- “特殊普通合伙”与“普通合伙”不同：前者对故意或重大过失合伙人有特殊责任隔离。\n- “执业许可”与“营业执照”不同：前者由财政部门审批，后者由市场监管部门登记。\n- “事务所处罚”与“注册会计师个人处罚”可并存。\n\n## 典型场景\n\n### 场景 1：事务所设立形式选择\n抓手：看合伙人数量、风险偏好、责任隔离需求。\n\n### 场景 2：事务所被检查发现挂名执业\n抓手：本办法监管条款 + 国办发30号整治要求 + 诚信建设纲要失信惩戒。\n\n## 实务连接\n\n- 上位法：[[concepts/cpa-law]] 第22-29条事务所制度。\n- 监管衔接：[[concepts/policy-firm-inspection]] 监督检查办法。\n- 政策依据：[[concepts/policy-audit-order]] 国办发30号。\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-25*",
+    "relativePath": "concepts/policy-firm-license.md",
+    "backlinks": [
+      "concepts/policy-audit-order",
+      "concepts/policy-clause-comparison",
+      "concepts/policy-documents",
+      "concepts/policy-firm-inspection",
+      "concepts/policy-update-tracker",
+      "index"
+    ],
+    "relatedResolved": [
+      "concepts/policy-firm-inspection"
+    ]
+  },
+  {
+    "id": "concepts/question-bank-and-error-log",
+    "title": "竞赛模拟题与错题归档",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "study-plan",
+    "sourceType": "",
+    "created": "2026-06-26",
+    "updated": "2026-06-26",
+    "tags": [
+      "competition",
+      "practice",
+      "questions",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/preparation-strategy]]",
+      "[[concepts/regulations-and-standards]]",
+      "[[concepts/practical-skills]]",
+      "[[concepts/audit-case-library]"
+    ],
+    "excerpt": "竞赛模拟题与错题归档 定义 竞赛模拟题与错题归档页用于把知识库内容转化为训练材料，覆盖法规准则、政策文件、职业道德、审计实务和综合执业能力。 使用方法 1. 先闭卷作答：每题先写出判断结论和理由，不急着看答案。 2. 再回链复盘：用题目后的关联页面回到知识库查缺补漏。 3. 最后沉淀错因：错题不只记答案，要记录“错在概念、错在条文、错在场景，还是错在表达”。",
+    "links": [
+      "concepts/cpa-law",
+      "concepts/accounting-law",
+      "concepts/company-law",
+      "concepts/securities-law",
+      "concepts/independence-standard-1",
+      "concepts/audit-process",
+      "concepts/intelligent-tools",
+      "concepts/ethics-code",
+      "concepts/policy-documents",
+      "concepts/audit-case-library",
+      "concepts/accounting-standards",
+      "concepts/audit-standards",
+      "concepts/audit-evidence-and-confirmation",
+      "concepts/accounting-standard-revenue",
+      "concepts/comprehensive-competency",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 竞赛模拟题与错题归档\n\n## 定义\n\n竞赛模拟题与错题归档页用于把知识库内容转化为训练材料，覆盖法规准则、政策文件、职业道德、审计实务和综合执业能力。\n\n## 使用方法\n\n1. **先闭卷作答**：每题先写出判断结论和理由，不急着看答案。\n2. **再回链复盘**：用题目后的关联页面回到知识库查缺补漏。\n3. **最后沉淀错因**：错题不只记答案，要记录“错在概念、错在条文、错在场景，还是错在表达”。\n\n## 模拟题\n\n| 序号 | 题目 | 答案要点 | 关联页面 |\n|------|------|----------|----------|\n| 1 | 注册会计师已经考试合格，是否当然可以独立承办审计业务？ | 不当然可以。还需依法注册；执行业务应加入会计师事务所，不能以个人名义随意承办法定审计业务。 | [[concepts/cpa-law]] |\n| 2 | 单位负责人能否以“账是财务人员做的”为由免除会计资料真实完整责任？ | 不能。单位负责人对本单位会计工作和会计资料真实性、完整性负责。 | [[concepts/accounting-law]] |\n| 3 | 公司决议存在瑕疵时，应如何区分无效、可撤销和不成立？ | 先看内容是否违法，再看程序或章程瑕疵，最后看是否根本未形成有效决议。 | [[concepts/company-law]] |\n| 4 | 公开发行证券是否只要信息披露充分就可以不履行注册程序？ | 不可以。公开发行证券必须依法注册，信息披露责任与注册程序并行。 | [[concepts/securities-law]] |\n| 5 | 会计师事务所在证券项目期间买卖相关证券，主要触碰哪类红线？ | 触碰证券法下证券服务机构行为限制，也构成独立性高度敏感事项。 | [[concepts/securities-law]], [[concepts/independence-standard-1]] |\n| 6 | 审计计划、审计底稿和审计抽样三者是什么关系？ | 计划决定风险导向和资源安排，底稿记录执行过程和结论，抽样是获取审计证据的具体方法之一。 | [[concepts/audit-process]] |\n| 7 | 机器人流程自动化能否替代注册会计师职业判断？ | 不能。工具可提高效率和覆盖面，但不能替代风险识别、异常解释和最终结论判断。 | [[concepts/intelligent-tools]] |\n| 8 | 职业道德守则中的“独立性”是否只要求注册会计师主观上不偏不倚？ | 不是。还要求形式独立，避免理性第三方认为独立性受到损害。 | [[concepts/ethics-code]], [[concepts/independence-standard-1]] |\n| 9 | 政策文件为什么不能只背标题？ | 政策文件体现监管重点，常考文号、治理目标、责任链条和制度安排。 | [[concepts/policy-documents]] |\n| 10 | 审计报告存在重大虚假记载，投资者索赔时应从哪些维度分析？ | 信息披露责任、中介机构勤勉尽责、因果关系、民事赔偿和行政处罚。 | [[concepts/securities-law]], [[concepts/audit-case-library]] |\n| 11 | 企业会计准则与审计准则在答题中如何衔接？ | 会计准则解决确认、计量、列报和披露，审计准则解决风险识别、证据获取和结论形成。 | [[concepts/accounting-standards]], [[concepts/audit-standards]] |\n| 12 | 审计中发现客户拒绝提供关键资料，应优先想到哪些处理？ | 识别审计范围受限、评价对报告的影响；如涉及故意不提供资料，还要联想到注册会计师法下拒绝出具报告的红线。 | [[concepts/cpa-law]], [[concepts/audit-evidence-and-confirmation]] |\n| 13 | 收入确认题为什么容易和舞弊风险联系在一起？ | 收入直接影响业绩，常涉及截止、真实性、履约义务、可变对价和关联交易。 | [[concepts/accounting-standard-revenue]] |\n| 14 | 函证回函不符是否一定说明存在错报？ | 不一定。应分析差异原因，执行替代程序，判断是否存在错报或控制缺陷。 | [[concepts/audit-evidence-and-confirmation]] |\n| 15 | 综合题答题时为什么要先搭“事实—规则—判断—结论”框架？ | 可避免只背法条或只讲经验，帮助把法规、准则、证据和职业判断放到同一个答案里。 | [[concepts/comprehensive-competency]] |\n\n## 错题归档模板\n\n| 日期 | 题目来源 | 错题类型 | 错因 | 正确抓手 | 回链页面 | 下次复盘 |\n|------|----------|----------|------|----------|----------|----------|\n| 待填 | 模拟题/案例题/政策题 | 概念/条文/场景/表达 | 待填 | 待填 | 待填 | 待填 |\n\n## 错因分类\n\n| 错因 | 表现 | 修正方法 |\n|------|------|----------|\n| 概念错 | 把不同制度混用，例如把会计监督等同于外部审计 | 回到定义页，重画对比表 |\n| 条文错 | 记得制度方向，但说不清责任主体或适用条件 | 回到重点条文，做关键词卡片 |\n| 场景错 | 看懂条文，但放不进案例事实 | 用“事实—规则—判断—结论”重写答案 |\n| 表达错 | 结论对，但答题缺层次、缺关键词 | 使用模板化表达：先结论，再依据，再落点 |\n\n## 复盘节奏\n\n| 阶段 | 任务 | 产出 |\n|------|------|------|\n| 每日 | 做 5-10 道小题 | 标记错因 |\n| 每周 | 汇总高频错因 | 更新错题表 |\n| 赛前 | 按五大模块轮转复盘 | 形成答题模板 |\n\n## 来源\n\n- [[sources/2026-06-24-competition-knowledge-list]]",
+    "relativePath": "concepts/question-bank-and-error-log.md",
+    "backlinks": [
+      "concepts/preparation-strategy",
+      "index",
+      "overview"
+    ],
+    "relatedResolved": [
+      "concepts/regulations-and-standards",
+      "concepts/practical-skills"
+    ]
+  },
+  {
+    "id": "concepts/competition-scope",
+    "title": "竞赛知识范围",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "framework",
+    "sourceType": "",
+    "created": "2026-06-24",
+    "updated": "2026-06-24",
+    "tags": [
+      "competition",
+      "framework",
+      "cpa",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[overview]]",
+      "[[concepts/regulations-and-standards]]",
+      "[[concepts/policy-documents]]",
+      "[[concepts/ethics-and-independence]]",
+      "[[concepts/practical-skills]]",
+      "[[concepts/preparation-strategy]"
+    ],
+    "excerpt": "竞赛知识范围 定义 竞赛知识范围是对青年知识竞赛考察内容的结构化拆分，定义了复习边界、专题分组和后续扩展方向。 说明 原始清单将考察内容分为五个板块，这五个板块可以直接转化为知识库的一级结构。这样做的好处是，后续无论补充法规原文、案例分析还是模拟题，都能准确归档到对应主题。 核心原则 1. 先分层，再细化：先按五大主题建立骨架，再扩展到二级页面。 2. 先核",
+    "links": [
+      "concepts/regulations-and-standards",
+      "concepts/policy-documents",
+      "concepts/ethics-and-independence",
+      "concepts/practical-skills",
+      "concepts/preparation-strategy",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 竞赛知识范围\n\n## 定义\n\n竞赛知识范围是对青年知识竞赛考察内容的结构化拆分，定义了复习边界、专题分组和后续扩展方向。\n\n## 说明\n\n原始清单将考察内容分为五个板块，这五个板块可以直接转化为知识库的一级结构。这样做的好处是，后续无论补充法规原文、案例分析还是模拟题，都能准确归档到对应主题。\n\n## 核心原则\n\n1. **先分层，再细化**：先按五大主题建立骨架，再扩展到二级页面。\n2. **先核心，再延伸**：优先完善法规准则与职业道德，再补案例和训练材料。\n3. **先稳定知识，再动态跟踪**：稳定法规范畴优先结构化，动态政策另设更新时间。\n\n## 结构与步骤\n\n| 模块 | 说明 | 示例 |\n|------|------|------|\n| 法规与准则 | 奠定考试与执业基础 | [[concepts/regulations-and-standards]] |\n| 政策文件 | 体现监管导向与行业治理 | [[concepts/policy-documents]] |\n| 道德与独立性 | 体现职业判断底线 | [[concepts/ethics-and-independence]] |\n| 实务技能 | 对应场景化应用能力 | [[concepts/practical-skills]] |\n| 备赛方法 | 把知识库转化为训练路径 | [[concepts/preparation-strategy]] |\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-24*",
+    "relativePath": "concepts/competition-scope.md",
+    "backlinks": [
+      "concepts/preparation-strategy",
+      "index",
+      "overview",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "relatedResolved": [
+      "concepts/regulations-and-standards",
+      "concepts/policy-documents",
+      "concepts/ethics-and-independence",
+      "concepts/practical-skills"
+    ]
+  },
+  {
+    "id": "concepts/accounting-standard-revenue",
+    "title": "企业会计准则第14号——收入",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "framework",
+    "sourceType": "",
+    "created": "2026-06-26",
+    "updated": "2026-06-26",
+    "tags": [
+      "accounting",
+      "standards",
+      "revenue",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/accounting-standards]]",
+      "[[concepts/audit-case-library]]",
+      "[[concepts/audit-evidence-and-confirmation]"
+    ],
+    "excerpt": "企业会计准则第14号——收入 定义 收入准则规范企业与客户之间合同产生的收入确认、计量、列报和披露，是会计准则和审计实务中最容易与舞弊风险、截止测试和信息披露问题连接的高频准则。 五步法框架 步骤 核心问题 常见风险 ------ ---------- ---------- 识别与客户订立的合同 是否存在具有商业实质、权利义务明确、对价可能收回的合同 虚假合",
+    "links": [
+      "concepts/accounting-standards",
+      "concepts/audit-evidence-and-confirmation",
+      "concepts/audit-case-library",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 企业会计准则第14号——收入\n\n## 定义\n\n收入准则规范企业与客户之间合同产生的收入确认、计量、列报和披露，是会计准则和审计实务中最容易与舞弊风险、截止测试和信息披露问题连接的高频准则。\n\n## 五步法框架\n\n| 步骤 | 核心问题 | 常见风险 |\n|------|----------|----------|\n| 识别与客户订立的合同 | 是否存在具有商业实质、权利义务明确、对价可能收回的合同 | 虚假合同、补充协议遗漏、合同不具商业实质 |\n| 识别合同中的单项履约义务 | 企业承诺转让的商品或服务是否可明确区分 | 多元素安排拆分错误、服务和商品混在一起 |\n| 确定交易价格 | 企业预期有权收取的对价金额是多少 | 可变对价估计过高、重大融资成分遗漏 |\n| 将交易价格分摊至履约义务 | 交易价格如何分配给各单项履约义务 | 单独售价估计不合理、分摊操纵 |\n| 履行履约义务时确认收入 | 是某一时点确认，还是某一时段确认 | 提前确认、延后确认、截止错误 |\n\n## 常见考点\n\n- 收入确认不是“开票即确认”，也不是“收款即确认”，核心是履约义务是否已经履行。\n- 某一时段确认收入需要满足准则条件，不能因为项目周期长就当然按进度确认。\n- 可变对价要考虑高度可能不会发生重大转回的限制。\n- 主要责任人和代理人判断会影响收入按总额还是净额确认。\n- 合同变更要判断是单独合同、原合同终止新合同，还是作为原合同组成部分处理。\n\n## 易混点\n\n| 易混点 | 正确理解 |\n|--------|----------|\n| 开票、收款、发货、验收 | 都是证据线索，但不能单独替代准则判断 |\n| 总额法和净额法 | 关键看企业是否在商品转让前控制该商品 |\n| 时点确认和时段确认 | 要看客户是否同时取得并消耗利益、是否控制在建资产、企业是否有合格收款权 |\n| 合同资产和应收账款 | 合同资产还取决于其他条件，应收账款通常仅取决于时间流逝 |\n\n## 审计关注\n\n| 审计目标 | 关注程序 |\n|----------|----------|\n| 真实性 | 检查合同、出库、物流、验收、回款，必要时函证客户 |\n| 截止 | 抽查期末前后发货、验收和入账记录 |\n| 准确性 | 复核交易价格、折扣返利、可变对价和分摊计算 |\n| 分类列报 | 检查合同资产、合同负债、应收账款和收入列报 |\n| 舞弊风险 | 关注异常大额收入、期末集中确认、退货、关联方交易 |\n\n## 典型场景\n\n### 场景 1：期末突击确认大额收入\n先判断合同是否真实、客户是否验收、控制权是否转移，再检查期后退货和回款。\n\n### 场景 2：软件销售附带后续服务\n识别软件许可和后续服务是否构成单独履约义务，交易价格是否合理分摊。\n\n### 场景 3：平台型业务按总额确认收入\n判断企业是主要责任人还是代理人，重点看是否控制商品、是否承担存货风险、是否有定价权。\n\n## 关联主题\n\n- [[concepts/accounting-standards]] - 企业会计准则体系\n- [[concepts/audit-evidence-and-confirmation]] - 收入真实性常需要函证和替代程序\n- [[concepts/audit-case-library]] - 收入提前确认是典型案例类型\n\n## 来源\n\n- [[sources/2026-06-24-competition-knowledge-list]]",
+    "relativePath": "concepts/accounting-standard-revenue.md",
+    "backlinks": [
+      "concepts/audit-case-library",
+      "concepts/audit-evidence-and-confirmation",
+      "concepts/question-bank-and-error-log",
+      "index"
+    ],
+    "relatedResolved": [
+      "concepts/audit-case-library"
+    ]
+  },
+  {
+    "id": "concepts/accounting-standards",
+    "title": "企业会计准则体系",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "framework",
+    "sourceType": "",
+    "created": "2026-06-25",
+    "updated": "2026-06-25",
+    "tags": [
+      "accounting",
+      "standards",
+      "cpa",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/regulations-and-standards]]",
+      "[[concepts/accounting-law]]",
+      "[[concepts/audit-standards]"
+    ],
+    "excerpt": "企业会计准则体系 定义 企业会计准则是规范企业财务报告确认、计量、列报和披露的统一标准，由基本准则、具体准则、应用指南和解释公告构成。 说明 会计法回答“必须真实核算”，企业会计准则回答“怎么核算才算真实可比”。它是审计的标尺——审计意见是“报表是否符合企业会计准则”，因此注册会计师必须熟悉准则体系。竞赛把它列入法规与准则板块，说明准则层是执业判断的依据层。",
+    "links": [
+      "concepts/audit-standards",
+      "concepts/accounting-law",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 企业会计准则体系\n\n## 定义\n\n企业会计准则是规范企业财务报告确认、计量、列报和披露的统一标准，由基本准则、具体准则、应用指南和解释公告构成。\n\n## 说明\n\n会计法回答“必须真实核算”，企业会计准则回答“怎么核算才算真实可比”。它是审计的标尺——审计意见是“报表是否符合企业会计准则”，因此注册会计师必须熟悉准则体系。竞赛把它列入法规与准则板块，说明准则层是执业判断的依据层。\n\n## 核心原则\n\n1. **层级递进**：基本准则统驭，具体准则细化，应用指南和解释补充。\n2. **原则导向**：以原则为主，要求职业判断，不是纯规则清单。\n3. **趋同国际**：与IFRS持续趋同，保留国情适配。\n4. **动态更新**：新业务、新业态推动准则持续修订。\n\n## 结构与步骤\n\n| 层级 | 说明 | 示例 |\n|------|------|------|\n| 基本准则 | 统驭性原则，确立目标、假设、要素 | 《企业会计准则——基本准则》 |\n| 具体准则 | 各类业务确认计量列报 | 收入、金融工具、租赁、所得税等42项 |\n| 应用指南 | 操作性指引 | 各准则应用指南 |\n| 解释公告 | 答复实务问题 | 企业会计准则解释第1-17号等 |\n\n## 高频具体准则\n\n| 准则 | 主题 | 审计关注 |\n|------|------|----------|\n| CAS14 | 收入 | 收入确认时点、履约义务、可变对价 |\n| CAS22/23/24 | 金融工具 | 分类、减值、套期 |\n| CAS21 | 租赁 | 使用权资产、租赁负债 |\n| CAS18 | 所得税 | 递延所得税、暂时性差异 |\n| CAS2 | 长期股权投资 | 成本法、权益法、转换 |\n| CAS8 | 资产减值 | 减值测试、商誉减值 |\n| CAS36 | 关联方披露 | 关联方识别、交易披露 |\n| CAS20 | 企业合并 | 同一控制与非同一控制 |\n\n## 常见考点\n\n- 基本准则确立会计要素（资产、负债、所有者权益、收入、费用、利润）和确认计量原则。\n- 收入准则（CAS14）五步法：识别合同、识别履约义务、确定交易价格、分摊交易价格、确认收入。\n- 金融工具“三分类”和预期信用损失减值模型。\n- 租赁准则下承租人不再区分经营租赁和融资租赁，统一确认使用权资产。\n- 商誉减值不得转回，且需进行减值测试。\n- 关联方披露要求识别关联关系和关联交易。\n\n## 易混点\n\n- “基本准则”与“具体准则”：前者是统驭原则，后者是具体业务规则。\n- “同一控制下企业合并”与“非同一控制”：前者按账面价值，后者按公允价值。\n- “收入”准则新旧版：新收入准则（CAS14修订）用五步法替代原建造合同。\n\n## 典型场景\n\n### 场景 1：收入确认时点争议\n抓手：CAS14五步法，判断是时点确认还是时段确认。\n\n### 场景 2：商誉减值是否计提\n抓手：CAS8减值测试，先分摊商誉到资产组，再测试可收回金额。\n\n## 实务连接\n\n- 审计标尺：[[concepts/audit-standards]] 审计准则要求按企业会计准则评价报表。\n- 法律基础：[[concepts/accounting-law]] 会计法要求核算符合统一制度。\n- 课程衔接：发行类第9号课程涉及研发费用资本化，对应CAS6无形资产。\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-25*",
+    "relativePath": "concepts/accounting-standards.md",
+    "backlinks": [
+      "concepts/accounting-standard-revenue",
+      "concepts/audit-standards",
+      "concepts/policy-update-tracker",
+      "concepts/question-bank-and-error-log",
+      "concepts/regulations-and-standards",
+      "index"
+    ],
+    "relatedResolved": [
+      "concepts/accounting-law"
+    ]
+  },
+  {
+    "id": "concepts/audit-case-library",
+    "title": "审计典型案例库",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "competency",
+    "sourceType": "",
+    "created": "2026-06-26",
+    "updated": "2026-06-26",
+    "tags": [
+      "audit",
+      "case",
+      "practice",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/practical-skills]]",
+      "[[concepts/audit-process]]",
+      "[[concepts/securities-law]]",
+      "[[concepts/question-bank-and-error-log]"
+    ],
+    "excerpt": "审计典型案例库 定义 审计典型案例库用于把法规、准则、职业道德和监管政策放入具体情境，训练“看事实、找风险、定规则、给结论”的综合答题能力。 案例分析框架 步骤 问题 输出 ------ ------ ------ 事实识别 题目中发生了什么，谁参与，涉及哪些交易或报告 事实清单 风险判断 哪些事项可能导致重大错报、独立性受损或违法违规 风险点 规则定位 对",
+    "links": [
+      "concepts/accounting-standard-revenue",
+      "concepts/audit-evidence-and-confirmation",
+      "concepts/audit-process",
+      "concepts/audit-standards",
+      "concepts/company-law",
+      "concepts/securities-law",
+      "concepts/cpa-law",
+      "concepts/comprehensive-competency",
+      "concepts/independence-standard-1",
+      "concepts/ethics-code",
+      "concepts/policy-audit-order",
+      "concepts/policy-firm-inspection",
+      "concepts/policy-caihui-supervision",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 审计典型案例库\n\n## 定义\n\n审计典型案例库用于把法规、准则、职业道德和监管政策放入具体情境，训练“看事实、找风险、定规则、给结论”的综合答题能力。\n\n## 案例分析框架\n\n| 步骤 | 问题 | 输出 |\n|------|------|------|\n| 事实识别 | 题目中发生了什么，谁参与，涉及哪些交易或报告 | 事实清单 |\n| 风险判断 | 哪些事项可能导致重大错报、独立性受损或违法违规 | 风险点 |\n| 规则定位 | 对应哪部法律、哪项准则、哪类政策要求 | 规则依据 |\n| 程序应对 | 注册会计师应执行哪些程序，获取什么证据 | 审计动作 |\n| 结论表达 | 对报告、责任、整改或处罚作出判断 | 答题结论 |\n\n## 典型案例索引\n\n| 案例 | 核心风险 | 答题抓手 | 关联页面 |\n|------|----------|----------|----------|\n| 收入提前确认 | 截止错误、虚假销售、业绩压力 | 收入确认、函证、期后回款、合同履约义务 | [[concepts/accounting-standard-revenue]], [[concepts/audit-evidence-and-confirmation]] |\n| 存货虚增 | 资产真实性、监盘缺陷、减值不足 | 监盘、抽样、跌价准备、盘点差异 | [[concepts/audit-process]], [[concepts/audit-standards]] |\n| 关联方资金占用 | 关联交易识别、披露不充分、公司治理缺陷 | 公司法、证券法、信息披露、管理层诚信 | [[concepts/company-law]], [[concepts/securities-law]] |\n| 重大合同缺失 | 审计范围受限、证据不足 | 替代程序、保留意见/无法表示意见、拒绝出具报告场景 | [[concepts/cpa-law]], [[concepts/audit-evidence-and-confirmation]] |\n| 会计估计偏乐观 | 减值、预计负债、公允价值估计偏差 | 职业怀疑、专家工作、管理层偏向 | [[concepts/audit-standards]], [[concepts/comprehensive-competency]] |\n| 独立性受损 | 经济利益、密切关系、自我评价威胁 | 独立性防范措施、禁止情形、理性第三方视角 | [[concepts/independence-standard-1]], [[concepts/ethics-code]] |\n| 低价竞争和挂名执业 | 事务所质量控制、执业秩序、监管处罚 | 规范审计秩序、事务所监督检查、诚信建设 | [[concepts/policy-audit-order]], [[concepts/policy-firm-inspection]] |\n| 证券虚假陈述 | 信息披露违法、中介责任、投资者索赔 | 勤勉尽责、底稿保存、连带责任、行政处罚 | [[concepts/securities-law]], [[concepts/policy-caihui-supervision]] |\n\n## 案例答题模板\n\n```text\n结论：该事项可能构成/不构成……风险。\n事实：题目中出现……，说明……。\n依据：可联系……法律/准则/政策要求。\n程序：注册会计师应当……，获取……证据。\n影响：如无法消除影响，可能导致……报告或责任后果。\n```\n\n## 常见考点\n\n- 案例题不是单纯背法条，要把事实和规则连接起来。\n- 看到“管理层不配合、关键资料缺失”，优先想到审计范围受限和证据充分适当性。\n- 看到“上市公司、发行文件、公告、投资者损失”，优先联想到证券法信息披露责任。\n- 看到“亲属关系、经济利益、长期合作、收费依赖”，优先联想到独立性威胁。\n- 看到“低价竞争、挂名执业、质量控制失效”，优先联想到政策性监管文件。\n\n## 复盘方法\n\n| 方法 | 作用 |\n|------|------|\n| 一案多链 | 一个案例至少链接法律、准则、职业道德三个页面 |\n| 一题多问 | 同一案例分别从注册会计师、事务所、被审计单位、监管机构角度作答 |\n| 一错多改 | 错题改答案时，同时补充“缺了哪个事实、错用哪个规则” |\n\n## 来源\n\n- [[sources/2026-06-24-competition-knowledge-list]]",
+    "relativePath": "concepts/audit-case-library.md",
+    "backlinks": [
+      "concepts/accounting-standard-revenue",
+      "concepts/audit-evidence-and-confirmation",
+      "concepts/practical-skills",
+      "concepts/preparation-strategy",
+      "concepts/question-bank-and-error-log",
+      "index",
+      "overview"
+    ],
+    "relatedResolved": [
+      "concepts/audit-process",
+      "concepts/securities-law"
+    ]
+  },
+  {
+    "id": "concepts/audit-process",
+    "title": "审计流程操作——计划、底稿与抽样",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "skill",
+    "sourceType": "",
+    "created": "2026-06-25",
+    "updated": "2026-06-25",
+    "tags": [
+      "audit",
+      "process",
+      "working-papers",
+      "sampling",
+      "cpa",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/practical-skills]]",
+      "[[concepts/audit-standards]]",
+      "[[concepts/intelligent-tools]"
+    ],
+    "excerpt": "审计流程操作——计划、底稿与抽样 定义 审计流程操作是把审计准则转化为具体执业动作的过程，核心包括审计计划编制、审计底稿撰写和审计抽样应用。 说明 准则是“应该做什么”，流程是“具体怎么做”。这三项是审计实务的基本功：计划决定方向，底稿记录证据，抽样决定覆盖。竞赛把它列为实务技能第一项，说明理论到操作的转化是考察重点。 核心原则 1. 风险导向贯穿全程：计划",
+    "links": [
+      "concepts/audit-standards",
+      "concepts/intelligent-tools",
+      "concepts/comprehensive-competency",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 审计流程操作——计划、底稿与抽样\n\n## 定义\n\n审计流程操作是把审计准则转化为具体执业动作的过程，核心包括审计计划编制、审计底稿撰写和审计抽样应用。\n\n## 说明\n\n准则是“应该做什么”，流程是“具体怎么做”。这三项是审计实务的基本功：计划决定方向，底稿记录证据，抽样决定覆盖。竞赛把它列为实务技能第一项，说明理论到操作的转化是考察重点。\n\n## 核心原则\n\n1. **风险导向贯穿全程**：计划、执行、记录都以风险评估为起点。\n2. **底稿是证据载体**：没有底稿等于没有审计。\n3. **抽样须有依据**：不是随意选样，而是基于风险和重要性。\n\n## 审计计划编制\n\n| 阶段 | 内容 | 准则依据 |\n|------|------|----------|\n| 初步业务活动 | 评价独立性、接受保持客户、签订业务约定书 | CSA 1110 |\n| 总体审计策略 | 确定范围、时间、方向，分配资源 | CSA 1201 |\n| 具体审计计划 | 风险评估程序、进一步程序性质时间范围 | CSA 1201 |\n| 计划变更 | 重大变化时更新计划 | CSA 1201 |\n\n**要点**：总体审计策略是“宏观安排”，具体审计计划是“详细清单”，两者不可混淆。计划应是动态的，随风险评估结果更新。\n\n## 审计底稿撰写\n\n| 要素 | 说明 |\n|------|------|\n| 完整性 | 涵盖所有重要审计证据和结论 |\n| 清晰性 | 他人在无口头解释下能理解 |\n| 及时性 | 执行同时记录，不得事后补造 |\n| 索引归档 | 统一编号，便于复核和检索 |\n| 复核 | 经验较多者复核经验较少者工作 |\n\n**底稿通常包括**：审计标识、索引、审计程序、证据、结论、复核记录。CSA 1131对审计工作底稿的编制、归档（60天内）和保管作出规定。\n\n## 审计抽样\n\n| 类型 | 说明 | 适用 |\n|------|------|------|\n| 统计抽样 | 运用概率论，可量化抽样风险 | 控制测试、细节测试 |\n| 非统计抽样 | 基于判断，不量化风险 | 控制测试、细节测试 |\n| 属性抽样 | 评估控制偏差率 | 控制测试 |\n| 变量抽样 | 评估金额错报 | 细节测试 |\n\n**关键概念**：抽样风险（信赖过度/信赖不足、误拒/误受）、非抽样风险、可容忍偏差率、可容忍错报、预期偏差率、样本规模影响因素。\n\n**样本规模影响因素**：可容忍错报/偏差率越低、预期错报/偏差率越高、总体变异性越大、可接受抽样风险越低，样本规模越大。\n\n## 常见考点\n\n- 总体审计策略与具体审计计划的区别：前者宏观，后者详细。\n- 审计工作底稿归档期限为审计报告日后60天内。\n- 抽样风险四种：控制测试中信赖过度风险影响效果（影响审计有效性），信赖不足风险影响效率。\n- 细节测试中误受风险影响效果，误拒风险影响效率。\n- 影响审计有效性（效果）的风险更危险：信赖过度、误受。\n\n## 易混点\n\n- “总体审计策略”与“具体审计计划”：策略是方向，计划是步骤。\n- “统计抽样”与“非统计抽样”：都可接受，区别在是否量化抽样风险，不是准不准。\n- “信赖过度”与“误受”：前者是控制测试，后者是细节测试，都影响效果。\n\n## 典型场景\n\n### 场景 1：根据风险评估设计抽样方案\n抓手：风险越高 → 样本规模越大 → 有效性越强。\n\n### 场景 2：底稿缺失导致处罚\n抓手：CSA 1131 + 注册会计师法第21条 + 财办23号检查。\n\n## 实务连接\n\n- 准则依据：[[concepts/audit-standards]] CSA 1201/1131/1314。\n- 工具赋能：[[concepts/intelligent-tools]] 机器人流程自动化和数据分析提升抽样效率和覆盖。\n- 综合应用：[[concepts/comprehensive-competency]] 复杂场景需流程与判断结合。\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-25*",
+    "relativePath": "concepts/audit-process.md",
+    "backlinks": [
+      "concepts/audit-case-library",
+      "concepts/audit-evidence-and-confirmation",
+      "concepts/comprehensive-competency",
+      "concepts/intelligent-tools",
+      "concepts/practical-skills",
+      "concepts/question-bank-and-error-log",
+      "index"
+    ],
+    "relatedResolved": [
+      "concepts/audit-standards"
+    ]
+  },
+  {
+    "id": "concepts/practical-skills",
+    "title": "审计实务与综合执业能力",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "competency",
+    "sourceType": "",
+    "created": "2026-06-24",
+    "updated": "2026-06-26",
+    "tags": [
+      "audit",
+      "skills",
+      "rpa",
+      "cpa",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/regulations-and-standards]]",
+      "[[concepts/ethics-and-independence]]",
+      "[[concepts/preparation-strategy]]",
+      "[[concepts/audit-case-library]]",
+      "[[concepts/audit-evidence-and-confirmation]"
+    ],
+    "excerpt": "审计实务与综合执业能力 定义 审计实务与综合执业能力板块强调把法规、准则和职业道德转化为具体执业动作与复杂情境处理能力。 说明 这一部分把传统审计流程和智能化工具放在一起，说明竞赛不仅考理论，还关注现代执业环境下的操作能力。除流程性技能外，还特别要求跨学科整合和复杂场景应对，这意味着答题应体现结构化分析和场景迁移能力。 核心原则 1. 流程能力决定执行质量：",
+    "links": [
+      "concepts/audit-process",
+      "concepts/audit-evidence-and-confirmation",
+      "concepts/intelligent-tools",
+      "concepts/comprehensive-competency",
+      "concepts/audit-case-library",
+      "concepts/regulations-and-standards",
+      "concepts/ethics-and-independence",
+      "concepts/preparation-strategy",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 审计实务与综合执业能力\n\n## 定义\n\n审计实务与综合执业能力板块强调把法规、准则和职业道德转化为具体执业动作与复杂情境处理能力。\n\n## 说明\n\n这一部分把传统审计流程和智能化工具放在一起，说明竞赛不仅考理论，还关注现代执业环境下的操作能力。除流程性技能外，还特别要求跨学科整合和复杂场景应对，这意味着答题应体现结构化分析和场景迁移能力。\n\n## 核心原则\n\n1. **流程能力决定执行质量**：计划、底稿、抽样等是基本功。\n2. **工具能力提升效率与覆盖面**：机器人流程自动化、数据清洗和分析正在成为重要辅助。\n3. **综合能力决定上限**：跨学科整合和复杂情境应对体现更高层次的专业判断。\n\n## 结构与步骤\n\n| 模块 | 说明 | 细页 |\n|------|------|------|\n| 审计流程 | 从计划到执行到记录 | [[concepts/audit-process]] |\n| 审计证据 | 获取充分、适当的审计证据 | [[concepts/audit-evidence-and-confirmation]] |\n| 智能化工具 | 利用技术支持财务与审计工作 | [[concepts/intelligent-tools]] |\n| 综合执业能力 | 解决复杂和交叉问题 | [[concepts/comprehensive-competency]] |\n| 案例训练 | 将程序、证据和责任放入场景 | [[concepts/audit-case-library]] |\n\n## 适用方式\n\n### 适用场景\n- 审计案例分析题\n- 流程设计题和场景处置题\n- 结合准则与技术工具的综合问答\n\n### 不适用场景\n- 不应把工具应用理解为脱离准则的机械操作\n\n## 关联主题\n\n### 相关页面\n- [[concepts/regulations-and-standards]] - 流程与程序必须以准则为依据\n- [[concepts/ethics-and-independence]] - 实务执行中必须守住独立性和职业怀疑\n- [[concepts/preparation-strategy]] - 需要通过案例和模拟训练强化\n- [[concepts/audit-evidence-and-confirmation]] - 审计程序最终要落到证据充分适当\n- [[concepts/audit-case-library]] - 用案例训练复杂场景应对\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-26*",
+    "relativePath": "concepts/practical-skills.md",
+    "backlinks": [
+      "concepts/accounting-law",
+      "concepts/audit-standards",
+      "concepts/company-law",
+      "concepts/competition-scope",
+      "concepts/cpa-law",
+      "concepts/ethics-and-independence",
+      "concepts/independence-standard-1",
+      "concepts/preparation-strategy",
+      "concepts/regulations-and-standards",
+      "index",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "relatedResolved": [
+      "concepts/ethics-and-independence",
+      "concepts/preparation-strategy",
+      "concepts/audit-case-library"
+    ]
+  },
+  {
+    "id": "concepts/audit-evidence-and-confirmation",
+    "title": "审计证据与函证",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "competency",
+    "sourceType": "",
+    "created": "2026-06-26",
+    "updated": "2026-06-26",
+    "tags": [
+      "audit",
+      "evidence",
+      "confirmation",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/audit-standards]]",
+      "[[concepts/audit-process]]",
+      "[[concepts/audit-case-library]]",
+      "[[concepts/accounting-standard-revenue]"
+    ],
+    "excerpt": "审计证据与函证 定义 审计证据与函证页用于整理注册会计师如何获取充分、适当的审计证据，以及在应收账款、银行存款、往来款、收入真实性等场景中如何设计和评价函证程序。 核心原则 1. 充分性关注数量：证据数量是否足以支持结论。 2. 适当性关注质量：证据是否相关、可靠。 3. 外部证据通常更可靠：直接来自独立第三方的证据通常强于内部生成证据。 4. 函证不是形式",
+    "links": [
+      "concepts/audit-process",
+      "concepts/accounting-standard-revenue",
+      "concepts/audit-case-library",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 审计证据与函证\n\n## 定义\n\n审计证据与函证页用于整理注册会计师如何获取充分、适当的审计证据，以及在应收账款、银行存款、往来款、收入真实性等场景中如何设计和评价函证程序。\n\n## 核心原则\n\n1. **充分性关注数量**：证据数量是否足以支持结论。\n2. **适当性关注质量**：证据是否相关、可靠。\n3. **外部证据通常更可靠**：直接来自独立第三方的证据通常强于内部生成证据。\n4. **函证不是形式动作**：关键在于对象选择、过程控制、回函评价和替代程序。\n\n## 证据类型\n\n| 类型 | 示例 | 注意点 |\n|------|------|--------|\n| 外部证据 | 银行回函、客户回函、律师询证函 | 关注来源独立性和回函真实性 |\n| 内部证据 | 合同、发票、出库单、验收单 | 需要结合内部控制有效性评价 |\n| 重新计算 | 利息、折旧、分摊、收入计算 | 适合验证数学准确性 |\n| 重新执行 | 重新执行控制程序 | 可验证控制运行有效性 |\n| 分析程序 | 毛利率、周转率、趋势对比 | 适合识别异常，不宜单独支撑所有结论 |\n\n## 函证流程\n\n| 步骤 | 工作要点 | 常见风险 |\n|------|----------|----------|\n| 确定函证对象 | 根据重大性、风险、异常项目选样 | 只选容易回函对象，遗漏高风险客户 |\n| 控制函证过程 | 注册会计师直接寄发和收回 | 被审计单位代收代寄导致可靠性下降 |\n| 评价回函结果 | 分析相符、不符、未回函原因 | 对不符事项解释不充分 |\n| 执行替代程序 | 检查期后收款、合同、发货、验收 | 替代程序流于形式 |\n| 汇总结论 | 判断是否存在错报或控制缺陷 | 只记录“已函证”，没有形成结论 |\n\n## 常见考点\n\n- 函证未回函不能直接视为没有问题，必须执行替代程序。\n- 回函不符也不必然等于错报，需要分析差异原因。\n- 对舞弊风险高的项目，应加强函证过程控制和证据交叉验证。\n- 银行函证通常对货币资金、借款、担保、受限资金等都有重要意义。\n- 应收账款函证常和收入真实性、截止、坏账准备连接考查。\n\n## 易混点\n\n| 易混点 | 正确理解 |\n|--------|----------|\n| 函证数量多就一定充分 | 还要看对象选择是否覆盖高风险项目 |\n| 被审计单位提供回函也可以 | 函证过程应由注册会计师控制 |\n| 未回函说明余额不存在 | 未回函只说明没有取得外部确认，需要替代程序 |\n| 替代程序就是看发票 | 替代程序应形成完整证据链，如合同、出库、验收、期后回款 |\n\n## 典型场景\n\n### 场景 1：大客户长期未回函\n应判断是否执行再次函证，并通过期后收款、合同、物流、验收等替代程序补强证据。\n\n### 场景 2：银行回函显示存在受限资金\n应进一步检查受限原因、列报披露、对偿债能力和持续经营的影响。\n\n### 场景 3：客户回函金额与账面不符\n应分析差异是时间性差异、记账错误、争议事项，还是虚假交易迹象。\n\n## 实务连接\n\n- 与 [[concepts/audit-process]] 连接：函证结果应进入底稿并支持审计结论。\n- 与 [[concepts/accounting-standard-revenue]] 连接：收入真实性常需要外部证据支持。\n- 与 [[concepts/audit-case-library]] 连接：多数审计失败案例都能追到证据不足或证据质量不足。\n\n## 来源\n\n- [[sources/2026-06-24-competition-knowledge-list]]",
+    "relativePath": "concepts/audit-evidence-and-confirmation.md",
+    "backlinks": [
+      "concepts/accounting-standard-revenue",
+      "concepts/audit-case-library",
+      "concepts/practical-skills",
+      "concepts/question-bank-and-error-log",
+      "index"
+    ],
+    "relatedResolved": [
+      "concepts/audit-process",
+      "concepts/audit-case-library"
+    ]
+  },
+  {
+    "id": "concepts/core-laws-map",
+    "title": "四部核心法律学习索引",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "framework",
+    "sourceType": "",
+    "created": "2026-06-24",
+    "updated": "2026-06-24",
+    "tags": [
+      "regulation",
+      "cpa",
+      "framework",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list",
+      "regulations-repo"
+    ],
+    "related": [
+      "[concepts/regulations-and-standards]]",
+      "[[concepts/cpa-law]]",
+      "[[concepts/accounting-law]]",
+      "[[concepts/company-law]]",
+      "[[concepts/securities-law]"
+    ],
+    "excerpt": "四部核心法律学习索引 定义 四部核心法律学习索引，是为竞赛复习设计的法规入口页，用于说明每部法律分别回答什么问题、彼此之间如何衔接、建议按什么顺序学习。 说明 虽然竞赛把四部法律并列列出，但它们在知识结构中的功能并不相同。注册会计师法直接界定执业主体和业务边界，会计法聚焦会计信息和监督基础，公司法提供公司治理和资本运作背景，证券法则为资本市场信息披露和证券业",
+    "links": [
+      "concepts/cpa-law",
+      "concepts/accounting-law",
+      "concepts/company-law",
+      "concepts/securities-law",
+      "sources/2026-06-24-competition-knowledge-list",
+      "sources/regulations-repo"
+    ],
+    "markdown": "# 四部核心法律学习索引\n\n## 定义\n\n四部核心法律学习索引，是为竞赛复习设计的法规入口页，用于说明每部法律分别回答什么问题、彼此之间如何衔接、建议按什么顺序学习。\n\n## 说明\n\n虽然竞赛把四部法律并列列出，但它们在知识结构中的功能并不相同。注册会计师法直接界定执业主体和业务边界，会计法聚焦会计信息和监督基础，公司法提供公司治理和资本运作背景，证券法则为资本市场信息披露和证券业务设定规则。把这四部法律拆开理解，答题时更容易快速定位。\n\n## 核心原则\n\n1. **先学“谁可以执业”**：从注册会计师法建立职业身份和业务边界。\n2. **再学“报表如何真实形成”**：从会计法理解信息生成底盘。\n3. **再学“公司如何运转”**：从公司法进入治理、资本和清算逻辑。\n4. **最后学“市场如何监管”**：从证券法理解发行交易和信息披露。\n\n## 结构与步骤\n\n| 步骤 | 重要原因 | 页面 |\n|------|----------|------|\n| 1 | 明确注册会计师资格、注册、业务范围和事务所规则 | [[concepts/cpa-law]] |\n| 2 | 明确会计资料真实完整、核算和监督 | [[concepts/accounting-law]] |\n| 3 | 明确公司设立、治理、资本和清算 | [[concepts/company-law]] |\n| 4 | 明确证券发行交易、披露和监管 | [[concepts/securities-law]] |\n\n## 适用方式\n\n### 适用场景\n- 法规串讲复习\n- 建立竞赛答题的法规定位感\n- 后续补充案例、题库和政策文件时作为挂载索引\n\n### 不适用场景\n- 不代替每部法律的精读页\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n- [[sources/regulations-repo]]\n\n---\n*最近更新：2026-06-24*",
+    "relativePath": "concepts/core-laws-map.md",
+    "backlinks": [
+      "concepts/regulations-and-standards",
+      "index",
+      "sources/regulations-repo"
+    ],
+    "relatedResolved": [
+      "concepts/cpa-law",
+      "concepts/accounting-law",
+      "concepts/company-law"
+    ]
+  },
+  {
+    "id": "concepts/ethics-and-independence",
+    "title": "行业史、职业道德与独立性",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "principle",
+    "sourceType": "",
+    "created": "2026-06-24",
+    "updated": "2026-06-25",
+    "tags": [
+      "ethics",
+      "independence",
+      "cpa",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/policy-documents]]",
+      "[[concepts/practical-skills]]",
+      "[[concepts/regulations-and-standards]"
+    ],
+    "excerpt": "行业史、职业道德与独立性 定义 该板块关注注册会计师行业的历史背景、职业道德规范以及审计和审阅业务中的独立性要求，是执业价值底线所在。 说明 竞赛把“行业史”与“职业道德”并列，说明考察不只是条文识记，还包括行业为什么形成今天的治理逻辑。独立性准则第1号及应用指南则把道德原则具体化到业务执行层面，决定注册会计师是否具备发表结论的资格基础。 核心原则 1. 职",
+    "links": [
+      "concepts/industry-history",
+      "concepts/ethics-code",
+      "concepts/independence-standard-1",
+      "concepts/practical-skills",
+      "concepts/policy-documents",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 行业史、职业道德与独立性\n\n## 定义\n\n该板块关注注册会计师行业的历史背景、职业道德规范以及审计和审阅业务中的独立性要求，是执业价值底线所在。\n\n## 说明\n\n竞赛把“行业史”与“职业道德”并列，说明考察不只是条文识记，还包括行业为什么形成今天的治理逻辑。独立性准则第1号及应用指南则把道德原则具体化到业务执行层面，决定注册会计师是否具备发表结论的资格基础。\n\n## 核心原则\n\n1. **职业道德是执业底座**：没有职业道德，技术能力无法转化为可信结论。\n2. **独立性是审计可信度前提**：它既包括实质独立，也包括形式独立。\n3. **历史有助于理解制度**：行业发展脉络帮助理解为何监管持续强调诚信与质量。\n\n## 结构与步骤\n\n| 模块 | 说明 | 细页 |\n|------|------|------|\n| 行业发展基础 | 认识行业形成与演进逻辑 | [[concepts/industry-history]] |\n| 职业道德守则 | 规范职业行为与价值判断 | [[concepts/ethics-code]] |\n| 独立性要求 | 落实到审计、审阅业务 | [[concepts/independence-standard-1]] |\n\n## 适用方式\n\n### 适用场景\n- 回答职业判断与执业底线类题目\n- 分析利益冲突、熟悉威胁、自我评价威胁等场景\n- 连接监管文件中的诚信建设与监督检查\n\n### 不适用场景\n- 不能脱离具体业务情境空泛记忆，需要结合案例训练\n\n## 关联主题\n\n### 相关页面\n- [[concepts/practical-skills]] - 独立性问题往往在实务流程中暴露\n- [[concepts/policy-documents]] - 诚信建设与监督检查直接关联本板块\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-24*",
+    "relativePath": "concepts/ethics-and-independence.md",
+    "backlinks": [
+      "concepts/competition-scope",
+      "concepts/cpa-law",
+      "concepts/policy-caihui-supervision",
+      "concepts/policy-cpa-registration",
+      "concepts/policy-documents",
+      "concepts/policy-integrity",
+      "concepts/practical-skills",
+      "concepts/securities-law",
+      "index",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "relatedResolved": [
+      "concepts/practical-skills"
+    ]
+  },
+  {
+    "id": "concepts/policy-documents",
+    "title": "行业政策性文件",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "framework",
+    "sourceType": "",
+    "created": "2026-06-24",
+    "updated": "2026-06-26",
+    "tags": [
+      "policy",
+      "supervision",
+      "cpa",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/regulations-and-standards]]",
+      "[[concepts/ethics-and-independence]]",
+      "[[concepts/preparation-strategy]]",
+      "[[concepts/policy-update-tracker]]",
+      "[[concepts/policy-clause-comparison]"
+    ],
+    "excerpt": "行业政策性文件 定义 行业政策性文件是对注册会计师行业治理、考试注册、执业许可、监督检查和诚信建设进行细化安排的规范集合。 说明 与基础法律相比，政策性文件更直接体现阶段性监管重点和行业治理导向。竞赛将其纳入考察范围，意味着仅会背法律名称还不够，还需要理解当前行业监管环境的重点问题，例如财会监督、审计秩序、诚信建设和监督检查机制。 核心原则 1. 政策体现监",
+    "links": [
+      "concepts/policy-caihui-supervision",
+      "concepts/policy-audit-order",
+      "concepts/policy-cpa-exam",
+      "concepts/policy-cpa-registration",
+      "concepts/policy-firm-license",
+      "concepts/policy-firm-inspection",
+      "concepts/policy-integrity",
+      "concepts/policy-update-tracker",
+      "concepts/policy-clause-comparison",
+      "concepts/ethics-and-independence",
+      "concepts/preparation-strategy",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 行业政策性文件\n\n## 定义\n\n行业政策性文件是对注册会计师行业治理、考试注册、执业许可、监督检查和诚信建设进行细化安排的规范集合。\n\n## 说明\n\n与基础法律相比，政策性文件更直接体现阶段性监管重点和行业治理导向。竞赛将其纳入考察范围，意味着仅会背法律名称还不够，还需要理解当前行业监管环境的重点问题，例如财会监督、审计秩序、诚信建设和监督检查机制。\n\n## 核心原则\n\n1. **政策体现监管方向**：它反映行业当下最被强调的问题。\n2. **政策连接资格与执业管理**：考试、注册、许可、检查构成完整闭环。\n3. **政策是动态知识**：需要关注发布年份和后续更新。\n\n## 结构与步骤\n\n| 模块 | 说明 | 文件 | 细页 |\n|------|------|------|------|\n| 监督导向 | 对财会监督和审计秩序提出总体要求 | 中办发〔2023〕4号 | [[concepts/policy-caihui-supervision]] |\n| 秩序整治 | 对财务审计秩序和行业治理作出安排 | 国办发〔2021〕30号 | [[concepts/policy-audit-order]] |\n| 资格准入（考试） | 对注册会计师统一考试作出规定 | 财政部令第115号 | [[concepts/policy-cpa-exam]] |\n| 资格准入（注册） | 对注册会计师注册管理作出规定 | 财政部令第99号 | [[concepts/policy-cpa-registration]] |\n| 机构监管 | 对事务所许可和监管作出规定 | 财政部令第97号 | [[concepts/policy-firm-license]] |\n| 监督检查 | 对事务所监督检查作出规定 | 财办〔2022〕23号 | [[concepts/policy-firm-inspection]] |\n| 诚信建设 | 强调行业信用与职业形象 | 财会〔2023〕5号 | [[concepts/policy-integrity]] |\n| 动态跟踪 | 持续记录政策变化和核验状态 | 财政部、中注协等动态 | [[concepts/policy-update-tracker]] |\n| 条款对照 | 横向比较文件对象、目标和考点 | 政策文件对照表 | [[concepts/policy-clause-comparison]] |\n\n## 适用方式\n\n### 适用场景\n- 判断行业管理类考题\n- 理解政策题中的年份、文号和监管重点\n- 将职业道德要求放回监管语境中理解\n\n### 不适用场景\n- 不能代替基础法条和准则的原理学习\n\n## 关联主题\n\n### 相关页面\n- [[concepts/ethics-and-independence]] - 诚信与独立性常与监管要求联动出现\n- [[concepts/preparation-strategy]] - 需要设置动态跟踪机制\n- [[concepts/policy-update-tracker]] - 持续记录政策变化\n- [[concepts/policy-clause-comparison]] - 快速比较不同政策文件\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-26*",
+    "relativePath": "concepts/policy-documents.md",
+    "backlinks": [
+      "concepts/competition-scope",
+      "concepts/ethics-and-independence",
+      "concepts/industry-history",
+      "concepts/preparation-strategy",
+      "concepts/question-bank-and-error-log",
+      "concepts/regulations-and-standards",
+      "index",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "relatedResolved": [
+      "concepts/ethics-and-independence",
+      "concepts/preparation-strategy",
+      "concepts/policy-update-tracker"
+    ]
+  },
+  {
+    "id": "concepts/policy-update-tracker",
+    "title": "政策动态跟踪",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "framework",
+    "sourceType": "",
+    "created": "2026-06-26",
+    "updated": "2026-06-26",
+    "tags": [
+      "policy",
+      "update",
+      "supervision",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/policy-documents]]",
+      "[[concepts/preparation-strategy]]",
+      "[[concepts/policy-clause-comparison]"
+    ],
+    "excerpt": "政策动态跟踪 定义 政策动态跟踪页用于记录财政部、中国注册会计师协会、证券监管部门等机构发布的行业政策、考试注册、执业监管、诚信建设和准则更新信息。 跟踪原则 1. 只记录和竞赛范围有关的动态：避免把页面变成普通新闻列表。 2. 必须保留发布日期和发布机构：政策题常考“谁发布、何时发布、解决什么问题”。 3. 每条动态都要链接到知识页：动态本身不是终点，要能",
+    "links": [
+      "concepts/policy-caihui-supervision",
+      "concepts/policy-audit-order",
+      "concepts/policy-cpa-exam",
+      "concepts/policy-cpa-registration",
+      "concepts/policy-firm-license",
+      "concepts/policy-integrity",
+      "concepts/policy-firm-inspection",
+      "concepts/accounting-standards",
+      "concepts/audit-standards",
+      "concepts/policy-clause-comparison",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 政策动态跟踪\n\n## 定义\n\n政策动态跟踪页用于记录财政部、中国注册会计师协会、证券监管部门等机构发布的行业政策、考试注册、执业监管、诚信建设和准则更新信息。\n\n## 跟踪原则\n\n1. **只记录和竞赛范围有关的动态**：避免把页面变成普通新闻列表。\n2. **必须保留发布日期和发布机构**：政策题常考“谁发布、何时发布、解决什么问题”。\n3. **每条动态都要链接到知识页**：动态本身不是终点，要能回到法规、准则、职业道德或实务技能。\n4. **明显会变化的信息要标注核验时间**：考试安排、政策有效性、准则修订尤其要注意。\n\n## 当前重点跟踪清单\n\n| 类别 | 跟踪内容 | 关注原因 | 关联页面 |\n|------|----------|----------|----------|\n| 财会监督 | 财会监督体系、监督协同、会计信息质量治理 | 政策题高频背景 | [[concepts/policy-caihui-supervision]] |\n| 审计秩序 | 规范财务审计秩序、压实中介责任、整治低价竞争 | 直接连接事务所监管和执业质量 | [[concepts/policy-audit-order]] |\n| 考试办法 | 报名条件、考试组织、成绩管理、违规处理 | 与青年竞赛背景和行业准入相关 | [[concepts/policy-cpa-exam]] |\n| 注册管理 | 注册条件、不得注册、撤销注册、年检管理 | 与注册会计师法衔接紧密 | [[concepts/policy-cpa-registration]] |\n| 事务所许可 | 事务所设立、分所管理、监督管理、处罚 | 与行业组织形态和质量控制相关 | [[concepts/policy-firm-license]] |\n| 诚信建设 | 诚信档案、信用监管、惩戒机制、文化建设 | 职业道德和行业治理交叉点 | [[concepts/policy-integrity]] |\n| 监督检查 | 检查范围、检查程序、处理处罚、整改要求 | 案例题和监管题常见来源 | [[concepts/policy-firm-inspection]] |\n| 准则更新 | 会计准则解释、审计准则修订、职业道德守则变化 | 影响具体答题口径 | [[concepts/accounting-standards]], [[concepts/audit-standards]] |\n\n## 动态记录模板\n\n| 日期 | 发布机构 | 文件/动态 | 关键词 | 影响模块 | 是否已入库 |\n|------|----------|-----------|--------|----------|------------|\n| 待填 | 待填 | 待填 | 待填 | 法规/政策/道德/实务/题库 | 待填 |\n\n## 复习抓手\n\n| 题型 | 答题切入 |\n|------|----------|\n| 文件识别题 | 先写发布机构、文号或文件名称，再写监管目标 |\n| 政策理解题 | 从“背景问题—治理措施—责任主体—实施机制”展开 |\n| 案例分析题 | 将政策要求落到事务所质量控制、注册会计师勤勉尽责和监管责任 |\n| 综合题 | 把政策导向与法律责任、职业道德、审计证据连接起来 |\n\n## 待办\n\n- 补充官方链接和最近核验日期。\n- 将新增政策动态同步到 [[concepts/policy-clause-comparison]]。\n- 对影响考试注册、事务所监管和执业准则的文件建立单独细页。\n\n## 来源\n\n- [[sources/2026-06-24-competition-knowledge-list]]",
+    "relativePath": "concepts/policy-update-tracker.md",
+    "backlinks": [
+      "concepts/policy-documents",
+      "concepts/preparation-strategy",
+      "index"
+    ],
+    "relatedResolved": [
+      "concepts/preparation-strategy"
+    ]
+  },
+  {
+    "id": "concepts/policy-clause-comparison",
+    "title": "政策文件条款对照",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "framework",
+    "sourceType": "",
+    "created": "2026-06-26",
+    "updated": "2026-06-26",
+    "tags": [
+      "policy",
+      "comparison",
+      "supervision",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/policy-documents]]",
+      "[[concepts/policy-update-tracker]]",
+      "[[concepts/audit-case-library]"
+    ],
+    "excerpt": "政策文件条款对照 定义 政策文件条款对照页用于把竞赛涉及的政策文件放在同一张表中比较，帮助快速识别“文件解决什么问题、监管对象是谁、常见考点在哪里”。 总体对照 文件 主要对象 核心问题 答题关键词 关联页面 ------ ---------- ---------- ------------ ---------- 关于进一步加强财会监督工作的意见 财会监督体",
+    "links": [
+      "concepts/policy-caihui-supervision",
+      "concepts/policy-audit-order",
+      "concepts/policy-cpa-exam",
+      "concepts/policy-cpa-registration",
+      "concepts/policy-firm-license",
+      "concepts/policy-integrity",
+      "concepts/policy-firm-inspection",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 政策文件条款对照\n\n## 定义\n\n政策文件条款对照页用于把竞赛涉及的政策文件放在同一张表中比较，帮助快速识别“文件解决什么问题、监管对象是谁、常见考点在哪里”。\n\n## 总体对照\n\n| 文件 | 主要对象 | 核心问题 | 答题关键词 | 关联页面 |\n|------|----------|----------|------------|----------|\n| 关于进一步加强财会监督工作的意见 | 财会监督体系、各类监督主体 | 监督协同不足、财会秩序治理 | 党内监督、人大监督、行政监督、财政监督、单位内部监督、社会监督 | [[concepts/policy-caihui-supervision]] |\n| 关于进一步规范财务审计秩序促进注册会计师行业健康发展的意见 | 会计师事务所、注册会计师、监管部门 | 审计秩序、低价竞争、挂名执业、质量缺陷 | 压实责任、整治乱象、强化监管、诚信建设 | [[concepts/policy-audit-order]] |\n| 注册会计师全国统一考试办法 | 考生、考试组织机构 | 考试报名、组织、成绩、违规处理 | 报名条件、考试阶段、成绩管理、违规处理 | [[concepts/policy-cpa-exam]] |\n| 注册会计师注册办法 | 注册申请人、注册会计师协会 | 注册条件、不得注册、撤销注册 | 二年审计业务经验、不予注册、撤销注册、年检 | [[concepts/policy-cpa-registration]] |\n| 会计师事务所执业许可和监督管理办法 | 会计师事务所及分所 | 设立许可、执业许可、监督管理 | 合伙人、股东、分所、执业许可、行政处罚 | [[concepts/policy-firm-license]] |\n| 注册会计师行业诚信建设纲要 | 行业组织、事务所、从业人员 | 诚信体系和信用监管 | 诚信档案、信用约束、失信惩戒、文化建设 | [[concepts/policy-integrity]] |\n| 会计师事务所监督检查办法 | 财政部门、事务所、注册会计师 | 监督检查程序和整改处罚 | 检查计划、检查通知、质量控制、整改、处理处罚 | [[concepts/policy-firm-inspection]] |\n\n## 高频比较\n\n| 比较项 | 容易混淆点 | 正确区分 |\n|--------|------------|----------|\n| 财会监督意见 vs 规范审计秩序意见 | 都谈监管，容易混成一个文件 | 前者是更大的财会监督体系，后者更聚焦注册会计师行业和审计秩序 |\n| 注册办法 vs 考试办法 | 都和“成为注册会计师”有关 | 考试办法解决考试合格，注册办法解决执业注册和后续管理 |\n| 事务所许可办法 vs 监督检查办法 | 都涉及事务所监管 | 许可办法重在准入和日常监督，检查办法重在检查程序、处理处罚和整改 |\n| 诚信建设纲要 vs 职业道德守则 | 都讲诚信和职业行为 | 纲要偏行业治理和信用体系，守则偏个人和事务所职业行为规范 |\n| 政策文件 vs 法律 | 政策文件也有规范作用，但层级不同 | 法律确定基本权利义务和责任边界，政策文件体现治理安排和监管重点 |\n\n## 答题模板\n\n```text\n该文件主要针对……问题，由……主体落实。\n其核心要求可以概括为……。\n在案例中，应结合……法律/准则判断，并落到……责任或整改措施。\n```\n\n## 常见考点\n\n- 政策题常考“文件名称 + 文号 + 监管目标 + 责任主体”。\n- 不同政策之间的关系常是“总纲—专项—执行办法”。\n- 对事务所监管类题目，要同时想到许可、检查、诚信、质量控制。\n- 对考试注册类题目，要区分考试合格、申请注册、执业会员和非执业会员。\n\n## 来源\n\n- [[sources/2026-06-24-competition-knowledge-list]]",
+    "relativePath": "concepts/policy-clause-comparison.md",
+    "backlinks": [
+      "concepts/policy-documents",
+      "concepts/policy-update-tracker",
+      "index"
+    ],
+    "relatedResolved": [
+      "concepts/policy-update-tracker"
+    ]
+  },
+  {
+    "id": "index",
+    "title": "知识库索引",
+    "section": "overview",
+    "type": "index",
+    "conceptType": "",
+    "sourceType": "",
+    "created": "2026-06-24",
+    "updated": "2026-06-26",
+    "tags": [
+      "cpa",
+      "competition",
+      "structured"
+    ],
+    "sources": [],
+    "related": [],
+    "excerpt": "知识库索引 总览 - overview - 竞赛知识体系的总览与学习路径 专题（框架页） - concepts/competition-scope - 竞赛范围的总入口页 - concepts/regulations-and-standards - 法规、会计准则与执业准则板块 - concepts/core-laws-map - 四部核心法律的学习索引 -",
+    "links": [
+      "overview",
+      "concepts/competition-scope",
+      "concepts/regulations-and-standards",
+      "concepts/core-laws-map",
+      "concepts/policy-documents",
+      "concepts/ethics-and-independence",
+      "concepts/practical-skills",
+      "concepts/preparation-strategy",
+      "concepts/cpa-law",
+      "concepts/accounting-law",
+      "concepts/company-law",
+      "concepts/securities-law",
+      "concepts/policy-caihui-supervision",
+      "concepts/policy-audit-order",
+      "concepts/policy-cpa-exam",
+      "concepts/policy-cpa-registration",
+      "concepts/policy-firm-license",
+      "concepts/policy-integrity",
+      "concepts/policy-firm-inspection",
+      "concepts/industry-history",
+      "concepts/ethics-code",
+      "concepts/independence-standard-1",
+      "concepts/accounting-standards",
+      "concepts/audit-standards",
+      "concepts/accounting-standard-revenue",
+      "concepts/audit-evidence-and-confirmation",
+      "concepts/audit-process",
+      "concepts/intelligent-tools",
+      "concepts/comprehensive-competency",
+      "concepts/question-bank-and-error-log",
+      "concepts/audit-case-library",
+      "concepts/policy-update-tracker",
+      "concepts/policy-clause-comparison",
+      "sources/2026-06-24-competition-knowledge-list",
+      "sources/regulations-repo"
+    ],
+    "markdown": "# 知识库索引\n\n## 总览\n- [[overview]] - 竞赛知识体系的总览与学习路径\n\n## 专题（框架页）\n- [[concepts/competition-scope]] - 竞赛范围的总入口页\n- [[concepts/regulations-and-standards]] - 法规、会计准则与执业准则板块\n- [[concepts/core-laws-map]] - 四部核心法律的学习索引\n- [[concepts/policy-documents]] - 行业政策性文件板块\n- [[concepts/ethics-and-independence]] - 行业史、职业道德与独立性要求\n- [[concepts/practical-skills]] - 审计实务与智能化工具应用\n- [[concepts/preparation-strategy]] - 备赛方法与训练安排\n\n## 四部核心法律\n- [[concepts/cpa-law]] - 中华人民共和国注册会计师法\n- [[concepts/accounting-law]] - 中华人民共和国会计法\n- [[concepts/company-law]] - 中华人民共和国公司法\n- [[concepts/securities-law]] - 中华人民共和国证券法\n\n## 政策性文件细页\n- [[concepts/policy-caihui-supervision]] - 中办发〔2023〕4号 财会监督意见\n- [[concepts/policy-audit-order]] - 国办发〔2021〕30号 规范审计秩序意见\n- [[concepts/policy-cpa-exam]] - 财政部令第115号 注册会计师考试办法\n- [[concepts/policy-cpa-registration]] - 财政部令第99号 注册会计师注册办法\n- [[concepts/policy-firm-license]] - 财政部令第97号 事务所执业许可和监督管理办法\n- [[concepts/policy-integrity]] - 财会〔2023〕5号 行业诚信建设纲要\n- [[concepts/policy-firm-inspection]] - 财办〔2022〕23号 事务所监督检查办法\n\n## 职业道德与独立性细页\n- [[concepts/industry-history]] - 中国注册会计师行业发展基础知识\n- [[concepts/ethics-code]] - 中国注册会计师职业道德守则\n- [[concepts/independence-standard-1]] - 独立性准则第1号\n\n## 准则体系\n- [[concepts/accounting-standards]] - 企业会计准则体系\n- [[concepts/audit-standards]] - 中国注册会计师执业准则体系\n\n## 重点准则细页\n- [[concepts/accounting-standard-revenue]] - 企业会计准则第14号：收入\n- [[concepts/audit-evidence-and-confirmation]] - 审计证据与函证\n\n## 实务技能细页\n- [[concepts/audit-process]] - 审计流程操作（计划、底稿、抽样）\n- [[concepts/intelligent-tools]] - 智能化工具应用（机器人流程自动化、数据清洗与分析）\n- [[concepts/comprehensive-competency]] - 综合执业能力（跨学科整合、复杂场景）\n\n## 训练与案例\n- [[concepts/question-bank-and-error-log]] - 竞赛模拟题与错题归档\n- [[concepts/audit-case-library]] - 审计典型案例库\n\n## 政策跟踪与对照\n- [[concepts/policy-update-tracker]] - 政策动态跟踪\n- [[concepts/policy-clause-comparison]] - 政策文件条款对照\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]] (2026-06-24) - 知识竞赛考察范围原始清单\n- [[sources/regulations-repo]] (2026-06-24) - 本地法规资料目录与现有法律文本\n\n## 建议下一步补充\n- 补充更多具体会计准则细页：金融工具、存货、长期股权投资、资产减值、租赁。\n- 补充更多审计准则细页：重大错报风险、审计重要性、审计抽样、利用专家工作、审计报告。\n- 将真实监管处罚案例整理为“事实—规则—程序—责任”案例卡。\n- 持续维护政策动态跟踪页，补充官方链接和最近核验日期。",
+    "relativePath": "index.md",
+    "backlinks": [],
+    "relatedResolved": []
+  },
+  {
+    "id": "concepts/intelligent-tools",
+    "title": "智能化工具应用——机器人流程自动化、数据清洗与分析",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "skill",
+    "sourceType": "",
+    "created": "2026-06-25",
+    "updated": "2026-06-26",
+    "tags": [
+      "rpa",
+      "data-analysis",
+      "intelligent-tools",
+      "cpa",
+      "p2-important"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/practical-skills]]",
+      "[[concepts/audit-process]]",
+      "[[concepts/comprehensive-competency]"
+    ],
+    "excerpt": "智能化工具应用——机器人流程自动化、数据清洗与分析 定义 智能化工具应用指利用机器人流程自动化、数据清洗与分析、智能财务等技术辅助审计和财务工作，提升效率与覆盖面。 说明 竞赛把智能化工具与传统审计流程并列，说明现代执业环境下，注册会计师不仅要懂准则，还要会用技术。机器人流程自动化替代重复操作，数据分析扩展样本至全量，智能工具改变的是效率边界和审计深度，但不",
+    "links": [
+      "concepts/audit-process",
+      "concepts/comprehensive-competency",
+      "concepts/ethics-code",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 智能化工具应用——机器人流程自动化、数据清洗与分析\n\n## 定义\n\n智能化工具应用指利用机器人流程自动化、数据清洗与分析、智能财务等技术辅助审计和财务工作，提升效率与覆盖面。\n\n## 说明\n\n竞赛把智能化工具与传统审计流程并列，说明现代执业环境下，注册会计师不仅要懂准则，还要会用技术。机器人流程自动化替代重复操作，数据分析扩展样本至全量，智能工具改变的是效率边界和审计深度，但不改变审计准则的判断要求。\n\n## 核心原则\n\n1. **工具是辅助不是替代**：技术提升效率，职业判断仍由人完成。\n2. **数据质量是前提**：分析结论依赖数据清洗质量。\n3. **准则不因工具降低**：用机器人流程自动化执行程序仍要满足审计证据充分适当要求。\n4. **风险意识贯穿**：技术应用本身有数据安全、算法偏差等新风险。\n\n## 主要工具与应用\n\n### 机器人流程自动化\n\n| 维度 | 说明 |\n|------|------|\n| 定义 | 模拟人工操作的软件机器人，按规则执行重复任务 |\n| 适用 | 凭证抽取、银行对账、函证生成、报备填列 |\n| 优势 | 7×24小时、零差错、可审计 |\n| 局限 | 仅适合规则明确的重复任务，不处理例外和判断 |\n\n### 数据清洗与分析\n\n| 维度 | 说明 |\n|------|------|\n| 数据清洗 | 处理缺失、重复、异常、格式不一致 |\n| 分析方法 | 描述性、诊断性、预测性、规范性分析 |\n| 审计应用 | 全量测试、本福特定律、异常检测、趋势分析 |\n| 工具 | 电子表格、脚本、数据库查询、专业审计软件 |\n\n### 智能化财务应用\n\n| 维度 | 说明 |\n|------|------|\n| 智能凭证 | 自动识别归集 |\n| 智能报表 | 自动生成与差异分析 |\n| 智能风控 | 异常交易实时预警 |\n\n## 常见考点\n\n- 机器人流程自动化适用于规则明确、重复性高的任务，不适用于需要职业判断的场景。\n- 数据分析使审计从抽样走向全量测试，提升覆盖面，但数据质量是前提。\n- 本福特定律用于检测数据是否存在人为捏造。\n- 工具应用不得降低审计证据充分适当要求，仍需职业怀疑。\n- 数据安全和客户信息保密是技术应用的新风险点。\n\n## 易混点\n\n- “机器人流程自动化”与“人工智能”：前者是规则驱动的流程自动化，后者是学习驱动的智能，两者不同。\n- “全量测试”与“抽样”：全量测试是数据分析能力带来的覆盖扩展，不否定抽样的程序价值。\n- “数据清洗”与“数据处理”：清洗是保证质量，处理是分析应用，顺序不同。\n\n## 典型场景\n\n### 场景 1：用机器人流程自动化自动生成函证\n抓手：规则明确、重复高 → 机器人流程自动化适用；但函证差异分析仍需人工判断。\n\n### 场景 2：用数据分析识别收入异常\n抓手：全量收入数据 → 本福特定律/趋势分析 → 锁定异常 → 转人工核查。\n\n## 实务连接\n\n- 服务流程：[[concepts/audit-process]] 机器人流程自动化和分析嵌入审计流程各环节。\n- 综合应用：[[concepts/comprehensive-competency]] 工具能力需与跨学科判断结合。\n- 守底线：[[concepts/ethics-code]] 数据应用中保密原则不可放松。\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-26*",
+    "relativePath": "concepts/intelligent-tools.md",
+    "backlinks": [
+      "concepts/audit-process",
+      "concepts/comprehensive-competency",
+      "concepts/practical-skills",
+      "concepts/question-bank-and-error-log",
+      "index"
+    ],
+    "relatedResolved": [
+      "concepts/audit-process"
+    ]
+  },
+  {
+    "id": "concepts/independence-standard-1",
+    "title": "中国注册会计师独立性准则第1号——财务报表审计和审阅业务对独立性的要求",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "principle",
+    "sourceType": "",
+    "created": "2026-06-25",
+    "updated": "2026-06-25",
+    "tags": [
+      "independence",
+      "standard",
+      "audit",
+      "cpa",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/ethics-and-independence]]",
+      "[[concepts/ethics-code]]",
+      "[[concepts/practical-skills]"
+    ],
+    "excerpt": "独立性准则第1号——财务报表审计和审阅业务对独立性的要求 定义 该准则是职业道德守则的专项延伸，针对财务报表审计和审阅业务，对独立性提出具体可操作要求，涵盖网络、关联实体、合伙人轮换、非鉴证业务等。 说明 职业道德守则确立独立性原则，独立性准则第1号把它落地到具体场景。它把“独立”从口号变成清单——哪些利益必须处置、哪些关系必须回避、哪些服务不能同时提供、合",
+    "links": [
+      "concepts/ethics-code",
+      "concepts/practical-skills",
+      "concepts/securities-law",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 独立性准则第1号——财务报表审计和审阅业务对独立性的要求\n\n## 定义\n\n该准则是职业道德守则的专项延伸，针对财务报表审计和审阅业务，对独立性提出具体可操作要求，涵盖网络、关联实体、合伙人轮换、非鉴证业务等。\n\n## 说明\n\n职业道德守则确立独立性原则，独立性准则第1号把它落地到具体场景。它把“独立”从口号变成清单——哪些利益必须处置、哪些关系必须回避、哪些服务不能同时提供、合伙人多久必须轮换。\n\n## 核心原则\n\n1. **实质与形式并重**：精神独立与第三方合理认知都需满足。\n2. **覆盖审计客户关联实体**：独立性要求延伸至审计客户的母公司、子公司等。\n3. **防范措施具体化**：通过轮换、分隔、禁止等机制降低威胁。\n4. **持续全期间**：独立性要求覆盖业务承接、执行和报告全过程。\n\n## 结构与步骤\n\n| 模块 | 说明 | 要点 |\n|------|------|------|\n| 独立性框架 | 实质独立、形式独立、威胁与防范 | 总体要求 |\n| 网络与关联实体 | 网络所、关联实体范围 | 独立性延伸 |\n| 经济利益 | 持有客户股票、贷款、担保 | 直接或间接利益均受限 |\n| 商业关系 | 与客户的联合促销、担保等 | 不得产生不当影响 |\n| 家庭和个人关系 | 亲属在客户任职 | 评估密切关系威胁 |\n| 非鉴证业务 | 同时提供内控设计、代账、估值等 | 部分服务产生自我评价威胁 |\n| 合伙人轮换 | 项目合伙人、签字注册会计师轮换年限 | 防止长期关系威胁 |\n| 薪酬与业绩评价 | 不得以非鉴证业务收入评价审计团队 | 防范自身利益 |\n\n## 常见考点\n\n- 独立性要求覆盖审计期间和出具报告日，且向前追溯涵盖审计涵盖的财务报表期间。\n- 持有审计客户股票（包括间接通过基金等）构成自身利益威胁，应处置。\n- 项目合伙人和签字注册会计师有轮换年限要求，防止长期关系威胁。\n- 不得同时为审计客户提供代账、内控设计、估值等产生自我评价威胁的服务。\n- 关联实体（母公司、子公司）的独立性要求与审计客户一致。\n- 对公众利益实体的审计客户，独立性要求更严格。\n\n## 易混点\n\n- “审计期间”与“涵盖期间”：独立性要求覆盖涵盖期间（报表涵盖的财务期间）及之后。\n- “网络所”不等于“分所”：网络所是共享质量控制、品牌等的多个事务所，独立性要求传导。\n- “非鉴证业务”全面禁止还是部分禁止：取决于是否产生自我评价或倡导威胁，需逐项判断。\n\n## 典型场景\n\n### 场景 1：审计团队配偶在客户财务部任职\n抓手：密切关系威胁 → 评估是否可降至可接受水平，通常应回避。\n\n### 场景 2：事务所同时为审计客户提供内控设计\n抓手：自我评价威胁 → 通常不得同时提供，或应退出审计业务。\n\n### 场景 3：合伙人连续签字超过轮换年限\n抓手：长期关系威胁 → 应按规定轮换。\n\n## 实务连接\n\n- 上位原则：[[concepts/ethics-code]] 职业道德守则的独立性原则。\n- 流程落地：[[concepts/practical-skills]] 审计承接时应做独立性评估。\n- 法律呼应：[[concepts/securities-law]] 第42条证券买卖限制是资本市场层强化。\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-25*",
+    "relativePath": "concepts/independence-standard-1.md",
+    "backlinks": [
+      "concepts/audit-case-library",
+      "concepts/ethics-and-independence",
+      "concepts/ethics-code",
+      "concepts/question-bank-and-error-log",
+      "index"
+    ],
+    "relatedResolved": [
+      "concepts/ethics-code"
+    ]
+  },
+  {
+    "id": "concepts/industry-history",
+    "title": "中国注册会计师行业发展基础知识",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "history",
+    "sourceType": "",
+    "created": "2026-06-25",
+    "updated": "2026-06-25",
+    "tags": [
+      "history",
+      "industry",
+      "cpa",
+      "p2-important"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/ethics-and-independence]]",
+      "[[concepts/ethics-code]]",
+      "[[concepts/policy-documents]"
+    ],
+    "excerpt": "中国注册会计师行业发展基础知识 定义 该板块梳理中国注册会计师行业的产生、恢复、改革与发展脉络，帮助理解行业治理逻辑的演进。 说明 竞赛把“行业史”与“职业道德”并列，意在说明行业规范不是凭空产生的，而是对历史问题的回应。了解恢复重建、脱钩改制、做优做强、一体化管理等关键节点，能更好地理解现行监管政策的来龙去脉。 核心原则 1. 制度是历史回应：当前监管政策",
+    "links": [
+      "concepts/policy-documents",
+      "concepts/ethics-code",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 中国注册会计师行业发展基础知识\n\n## 定义\n\n该板块梳理中国注册会计师行业的产生、恢复、改革与发展脉络，帮助理解行业治理逻辑的演进。\n\n## 说明\n\n竞赛把“行业史”与“职业道德”并列，意在说明行业规范不是凭空产生的，而是对历史问题的回应。了解恢复重建、脱钩改制、做优做强、一体化管理等关键节点，能更好地理解现行监管政策的来龙去脉。\n\n## 核心原则\n\n1. **制度是历史回应**：当前监管政策多是对过往问题的制度回应。\n2. **独立性是历史主线**：从行政附属到独立执业，独立化贯穿行业发展。\n3. **治理在持续升级**：从恢复重建到一体化管理，质量导向不断强化。\n\n## 发展脉络\n\n| 阶段 | 时间 | 关键事件 |\n|------|------|----------|\n| 旧中国萌芽 | 1918年 | 谢霖创办正则会计师事务所，北洋政府颁布《会计师暂行章程》 |\n| 恢复重建 | 1980年代 | 1980年财政部恢复重建注册会计师制度；1988年中注协成立 |\n| 法制确立 | 1993-1994年 | 《注册会计师法》1993年颁布、1994年施行 |\n| 脱钩改制 | 1998-1999年 | 事务所与挂靠单位脱钩，走向独立执业 |\n| 准则建设 | 2006年起 | 与国际审计准则趋同的中国注册会计师执业准则体系 |\n| 做优做强 | 2007年后 | 推动事务所规模化、品牌化、国际化 |\n| 一体化管理 | 2020年后 | 强调总所对分所、合伙人一体化管理，治理从规模转向质量 |\n| 财会监督体系 | 2023年 | 中办发4号把行业纳入党和国家监督体系 |\n\n## 常见考点\n\n- 1980年恢复重建注册会计师制度，1988年中注协成立。\n- 1993年《注册会计师法》颁布，1994年施行，是行业法治基础。\n- 1998-1999年脱钩改制使事务所成为独立的市场主体。\n- 2006年执业准则国际趋同是中国准则走向国际化的关键节点。\n- 行业当前治理导向是一体化管理和质量提升，对应国办发30号、中办发4号。\n\n## 易混点\n\n- “中注协”与“财政部”：中注协是行业自律组织，财政部是行政主管。两者职责不同但协同。\n- “脱钩改制”与“做优做强”是不同阶段任务：前者解决独立性问题，后者解决规模与质量问题。\n- “国际趋同”不等于“完全照搬”，中国准则保留国情适配。\n\n## 典型场景\n\n### 场景 1：理解现行监管政策的历史动因\n抓手：脱钩改制后的独立执业乱象 → 国办发30号整治 → 中办发4号体系化监督。\n\n### 场景 2：事务所一体化管理的政策渊源\n抓手：做优做强阶段暴露的“总所分所两张皮”问题 → 一体化管理要求。\n\n## 实务连接\n\n- 与 [[concepts/policy-documents]] 各政策页呼应：每项政策都有历史背景。\n- 为 [[concepts/ethics-code]] 职业道德守则提供制度演进背景。\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-25*",
+    "relativePath": "concepts/industry-history.md",
+    "backlinks": [
+      "concepts/ethics-and-independence",
+      "index"
+    ],
+    "relatedResolved": [
+      "concepts/ethics-code"
+    ]
+  },
+  {
+    "id": "concepts/audit-standards",
+    "title": "中国注册会计师执业准则体系",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "framework",
+    "sourceType": "",
+    "created": "2026-06-25",
+    "updated": "2026-06-25",
+    "tags": [
+      "audit",
+      "standards",
+      "cpa",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/regulations-and-standards]]",
+      "[[concepts/practical-skills]]",
+      "[[concepts/ethics-and-independence]"
+    ],
+    "excerpt": "中国注册会计师执业准则体系 定义 中国注册会计师执业准则是规范注册会计师执行审计、审阅、其他鉴证和相关服务的专业标准，由鉴证业务基本准则、审计准则、审阅准则、其他鉴证准则和相关服务准则构成。 说明 执业准则回答“注册会计师怎么取证、怎么判断、怎么形成结论、怎么出报告”。注册会计师法第21条要求按执业准则出具报告，因此准则是执业的法律依据，也是质量检查和处罚的",
+    "links": [
+      "concepts/cpa-law",
+      "concepts/practical-skills",
+      "concepts/accounting-standards",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 中国注册会计师执业准则体系\n\n## 定义\n\n中国注册会计师执业准则是规范注册会计师执行审计、审阅、其他鉴证和相关服务的专业标准，由鉴证业务基本准则、审计准则、审阅准则、其他鉴证准则和相关服务准则构成。\n\n## 说明\n\n执业准则回答“注册会计师怎么取证、怎么判断、怎么形成结论、怎么出报告”。注册会计师法第21条要求按执业准则出具报告，因此准则是执业的法律依据，也是质量检查和处罚的衡量标准。\n\n## 核心原则\n\n1. **以审计准则为主体**：财务报表审计准则是执业准则的核心。\n2. **风险导向审计**：以风险评估为起点，设计和实施进一步审计程序。\n3. **充分适当证据**：审计意见必须建立在充分适当的审计证据之上。\n4. **国际趋同**：与ISA持续趋同，2006年实现与IFAC准则体系接轨。\n\n## 结构与步骤\n\n| 层级 | 说明 | 示例 |\n|------|------|------|\n| 鉴证业务基本准则 | 统驭所有鉴证业务 | 《中国注册会计师鉴证业务基本准则》 |\n| 审计准则 | 财务报表审计 | 一般原则、风险评估、进一步程序、报告等 |\n| 审阅准则 | 有限保证业务 | 财务报表审阅 |\n| 其他鉴证准则 | 预测、内控等鉴证 | 盈利预测审核 |\n| 相关服务准则 | 非鉴证业务 | 代编财务信息、商定程序 |\n\n## 高频审计准则\n\n| 准则 | 主题 | 审计关注 |\n|------|------|----------|\n| CSA 1101 | 财务报表审计的目标和一般原则 | 审计目标、职业怀疑、合理保证 |\n| CSA 1201 | 计划审计工作 | 总体审计策略、具体审计计划 |\n| CSA 1211 | 通过了解被审计单位及其环境识别和评估重大错报风险 | 风险评估、内部控制了解 |\n| CSA 1231 | 针对评估的重大错报风险采取的应对措施 | 进一步审计程序设计与执行 |\n| CSA 1301 | 审计证据 | 证据充分性适当性 |\n| CSA 1313 | 分析程序 | 用作风险评估和总体复核 |\n| CSA 1314 | 审计抽样 | 抽样方法、样本规模、评价 |\n| CSA 1131 | 审计工作底稿 | 底稿编制、归档、保管 |\n| CSA 1501 | 对财务报表形成审计意见和出具审计报告 | 标准审计报告结构 |\n| CSA 1502 | 在审计报告中发表非无保留意见 | 保留、否定、无法表示意见 |\n| CSA 1504 | 在审计报告中沟通关键审计事项 | 上市实体审计报告突出事项 |\n| CSA 1332 | 期后事项 | 报告日至出具日事项 |\n| CSA 1511 | 比较信息：对应数据和比较财务报表 | 对应数据和比较报表 |\n\n## 常见考点\n\n- 审计总体目标是合理保证报表不存在重大错报，合理保证是高水平但非绝对保证。\n- 风险导向审计三步：风险评估（CSA 1211）→ 风险应对（CSA 1231）→ 形成意见（CSA 1501）。\n- 审计证据的充分性（数量）和适当性（相关性和可靠性）。\n- 审计意见四种：无保留、保留、否定、无法表示意见，各自适用情形不同。\n- 关键审计事项（CSA 1504）适用于上市实体，旨在提高审计报告信息含量。\n- 期后事项区分报告日前事项（需调整）和报告日后事项（需披露或注明）。\n\n## 易混点\n\n- “合理保证”与“有限保证”：审计是合理保证，审阅是有限保证，措辞和程序强度不同。\n- “审计抽样”（CSA530）与“分析程序”（CSA520）：前者是证据获取方法，后者是证据评价方法。\n- “保留意见”与“否定意见”：保留是存在重大但非广泛错报，否定是存在重大且广泛错报。\n- “无法表示意见”不等于“不审计”：是审计了但范围受限广泛无法获取证据。\n\n## 典型场景\n\n### 场景 1：识别重大错报风险后设计程序\n抓手：CSA315识别风险 → CSA330设计进一步程序（控制测试+实质性程序）。\n\n### 场景 2：范围受限是否影响意见类型\n抓手：受限广泛性判断 → 保留意见（不广泛）或无法表示意见（广泛）。\n\n## 实务连接\n\n- 法律依据：[[concepts/cpa-law]] 第21条按执业准则出具报告。\n- 流程落地：[[concepts/practical-skills]] 审计流程是执业准则的操作化。\n- 标尺配合：[[concepts/accounting-standards]] 评价报表是否合规的标尺。\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-25*",
+    "relativePath": "concepts/audit-standards.md",
+    "backlinks": [
+      "concepts/accounting-standards",
+      "concepts/audit-case-library",
+      "concepts/audit-process",
+      "concepts/policy-update-tracker",
+      "concepts/question-bank-and-error-log",
+      "concepts/regulations-and-standards",
+      "index"
+    ],
+    "relatedResolved": [
+      "concepts/practical-skills"
+    ]
+  },
+  {
+    "id": "concepts/ethics-code",
+    "title": "中国注册会计师职业道德守则",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "principle",
+    "sourceType": "",
+    "created": "2026-06-25",
+    "updated": "2026-06-25",
+    "tags": [
+      "ethics",
+      "principle",
+      "cpa",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/ethics-and-independence]]",
+      "[[concepts/independence-standard-1]]",
+      "[[concepts/policy-integrity]"
+    ],
+    "excerpt": "中国注册会计师职业道德守则 定义 《中国注册会计师职业道德守则》是规范注册会计师职业行为的基本准则，确立职业道德基本原则和应对威胁的防范机制。 说明 职业道德守则是行业自律的核心。它把抽象的“诚信”转化为可操作的基本原则，并要求注册会计师识别威胁、评估影响、采取防范措施。独立性作为基本原则之一，在审计和审阅业务中被进一步强化（见独立性准则第1号）。 核心原则",
+    "links": [
+      "concepts/independence-standard-1",
+      "concepts/policy-integrity",
+      "concepts/cpa-law",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 中国注册会计师职业道德守则\n\n## 定义\n\n《中国注册会计师职业道德守则》是规范注册会计师职业行为的基本准则，确立职业道德基本原则和应对威胁的防范机制。\n\n## 说明\n\n职业道德守则是行业自律的核心。它把抽象的“诚信”转化为可操作的基本原则，并要求注册会计师识别威胁、评估影响、采取防范措施。独立性作为基本原则之一，在审计和审阅业务中被进一步强化（见独立性准则第1号）。\n\n## 核心原则（六大基本原则）\n\n| 原则 | 含义 | 典型违反 |\n|------|------|----------|\n| 诚信 | 诚实正直，不参与虚假误导 | 出具虚假报告、协助造假 |\n| 客观公正 | 不偏不倚，不受不当影响 | 利益冲突下发表意见 |\n| 职业胜任能力 | 保持专业知识和技能 | 承接超出能力业务 |\n| 保密 | 对执业中获知信息保密 | 泄露客户商业秘密 |\n| 职业行为 | 维护行业形象，不损害公众利益 | 贬损同行、夸大宣传 |\n| 独立性 | 审计审阅业务中保持实质和形式独立 | 与客户有利益关系 |\n\n## 威胁与防范框架\n\n| 威胁类型 | 说明 | 示例 |\n|----------|------|------|\n| 自身利益威胁 | 因自身利益影响判断 | 持有客户股票 |\n| 自我评价威胁 | 评价自己工作成果 | 审计自己设计的内控 |\n| 倡导威胁 | 过度推广客户利益 | 担任客户辩护人 |\n| 密切关系威胁 | 因熟悉或关系影响判断 | 亲属在客户任职 |\n| 外在压力威胁 | 受胁迫无法客观 | 客户以解聘施压 |\n\n## 结构与步骤\n\n| 模块 | 说明 |\n|------|------|\n| 基本原则 | 六大原则，适用于所有业务 |\n| 威胁识别 | 识别五类威胁对原则的影响 |\n| 防范措施 | 采取防范措施消除或降至可接受水平 |\n| 不可接受情形 | 无法消除威胁时应拒绝或终止业务 |\n| 业务承接与保持 | 以职业道德为前提承接业务 |\n\n## 常见考点\n\n- 六大基本原则的名称和含义，尤其独立性、保密、诚信。\n- 五类威胁的识别：自身利益、自我评价、倡导、密切关系、外在压力。\n- 当威胁无法消除或降至可接受水平时，应拒绝承接或终止业务。\n- 保密原则有例外：法律法规要求披露、行业自律检查、司法程序等。\n- 职业道德守则适用于所有注册会计师业务，不仅限审计。\n\n## 易混点\n\n- “实质独立”与“形式独立”：实质是精神状态，形式是第三方合理认知。两者都需满足。\n- “保密”不等于“绝对不披露”：法定披露、授权披露、行业检查等属例外。\n- 职业道德守则（普适）与独立性准则第1号（专门针对审计审阅）是层级关系，不是替代关系。\n\n## 典型场景\n\n### 场景 1：注册会计师持有客户股票\n抓手：自身利益威胁 → 独立性原则 → 应在承接前处置。\n\n### 场景 2：审计客户是注册会计师亲属任职企业\n抓手：密切关系威胁 → 评估是否可降至可接受水平，否则回避。\n\n## 实务连接\n\n- 衍生专项：[[concepts/independence-standard-1]] 独立性准则第1号。\n- 制度化：[[concepts/policy-integrity]] 诚信建设纲要把道德要求制度化。\n- 法律呼应：[[concepts/cpa-law]] 第18条回避、第19条保密是法律层表达。\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-25*",
+    "relativePath": "concepts/ethics-code.md",
+    "backlinks": [
+      "concepts/audit-case-library",
+      "concepts/comprehensive-competency",
+      "concepts/ethics-and-independence",
+      "concepts/independence-standard-1",
+      "concepts/industry-history",
+      "concepts/intelligent-tools",
+      "concepts/question-bank-and-error-log",
+      "index"
+    ],
+    "relatedResolved": [
+      "concepts/independence-standard-1"
+    ]
+  },
+  {
+    "id": "concepts/company-law",
+    "title": "中华人民共和国公司法",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "framework",
+    "sourceType": "",
+    "created": "2026-06-24",
+    "updated": "2026-06-24",
+    "tags": [
+      "law",
+      "company",
+      "governance",
+      "p1-core"
+    ],
+    "sources": [
+      "regulations-repo"
+    ],
+    "related": [
+      "[concepts/core-laws-map]]",
+      "[[concepts/securities-law]]",
+      "[[concepts/practical-skills]"
+    ],
+    "excerpt": "中华人民共和国公司法 定义 《中华人民共和国公司法》是规范公司设立、治理、资本、股东权利义务、财务会计和清算等事项的基础法律。 说明 公司法不是专门写给注册会计师的法律，但它决定了被审计主体如何存在、如何治理、如何决策、如何融资、如何清算。很多审计场景里的风险点，本质上都和公司治理结构、资本规则、关联关系和法定程序有关。 核心原则 1. 公司治理决定信息质量",
+    "links": [
+      "concepts/securities-law",
+      "concepts/practical-skills",
+      "sources/regulations-repo"
+    ],
+    "markdown": "# 中华人民共和国公司法\n\n## 定义\n\n《中华人民共和国公司法》是规范公司设立、治理、资本、股东权利义务、财务会计和清算等事项的基础法律。\n\n## 说明\n\n公司法不是专门写给注册会计师的法律，但它决定了被审计主体如何存在、如何治理、如何决策、如何融资、如何清算。很多审计场景里的风险点，本质上都和公司治理结构、资本规则、关联关系和法定程序有关。\n\n## 核心原则\n\n1. **公司治理决定信息质量环境**：股东会、董事会、监事会与高管结构会影响内部控制。\n2. **资本与股东责任影响风险判断**：出资、减资、清算、关联关系都可能影响审计关注点。\n3. **财务会计义务是审计切入点之一**：公司法中也包含财务会计和信息义务要求。\n\n## 结构与步骤\n\n| 模块 | 说明 | 示例 |\n|------|------|------|\n| 公司设立与登记 | 公司的成立、登记和变更 | 设立登记、变更登记 |\n| 组织机构 | 股东会、董事会、监事会、高管 | 决策权限和程序 |\n| 股东与资本 | 出资、转让、减资、责任 | 出资期限、资本规则 |\n| 财务会计与清算 | 报告、利润分配、清算程序 | 财务会计制度、注销清算 |\n\n## 重点条文\n\n| 条文 | 重要原因 | 记忆抓手 |\n|------|----------|----------|\n| 第10-11条 | 法定代表人规则与公司责任承担 | 法定代表人行为后果先归公司 |\n| 第21-23条 | 股东权利滥用、关联关系、法人人格否认 | 治理失真会反噬责任 |\n| 第24-28条 | 电子通信开会、决议无效/撤销/不成立 | 新公司法常考程序瑕疵 |\n| 第40条 | 企业信用信息公示义务 | 公示不实也会罚 |\n| 第220条以后 | 合并、减资、清算、债权人通知 | 债权人保护是高频抓手 |\n| 第231-239条 | 司法解散、清算义务、清算方案、破产衔接 | 清算链条特别适合案例题 |\n\n## 常见考点\n\n- 公司法定代表人因执行职务造成他人损害，民事责任先由公司承担。\n- 股东滥用股东权利、滥用法人独立地位和有限责任，会触发赔偿责任或连带责任。\n- 股东会、董事会会议可以采用电子通信方式，这属于新法环境下的治理变化点。\n- 决议违法可能出现三种后果：无效、可撤销、不成立，三者不能混用。\n- 合并、分立、减资、清算时，对债权人的通知和公告义务非常关键。\n\n## 易混点\n\n- “决议无效”与“决议可撤销”不同。内容违法通常无效，程序或章程层面瑕疵通常进入撤销分析。\n- “法定代表人有过错”不等于相对人直接找法定代表人主张。外部责任通常先由公司承担。\n- “公司解散”不等于“公司立即消灭”。解散后通常还要进入清算程序。\n\n## 典型场景\n\n### 场景 1：股东会程序有问题，决议还能不能用\n判断抓手：第二十五条至第二十八条。\n先区分内容违法、程序瑕疵、还是根本未成立，再判断救济路径。\n\n### 场景 2：减资或合并后债权人主张权利\n判断抓手：第二百二十条、减资条款、债权人通知公告规则。\n常见考点是“是否通知、公告期限、债权人能否要求清偿或担保”。\n\n### 场景 3：公司停摆但一直不清算\n判断抓手：第二百三十一条至第二百三十九条。\n这是公司法和审计、破产、债权人保护交叉最紧密的案例段。\n\n## 适用方式\n\n### 适用场景\n- 公司治理与内部控制类案例\n- 出资、减资、清算、关联交易类题目\n- 把审计程序与公司法定程序相连接\n\n### 不适用场景\n- 不替代证券法中的上市公司和资本市场规则\n\n## 关联主题\n\n### 相关页面\n- [[concepts/securities-law]] - 上市公司场景下需要继续衔接证券法\n- [[concepts/practical-skills]] - 审计中对治理层沟通、重大事项识别常受公司法影响\n\n## 来源\n- [[sources/regulations-repo]]\n\n---\n*最近更新：2026-06-24*",
+    "relativePath": "concepts/company-law.md",
+    "backlinks": [
+      "concepts/audit-case-library",
+      "concepts/core-laws-map",
+      "concepts/question-bank-and-error-log",
+      "concepts/regulations-and-standards",
+      "concepts/securities-law",
+      "index",
+      "sources/regulations-repo"
+    ],
+    "relatedResolved": [
+      "concepts/securities-law"
+    ]
+  },
+  {
+    "id": "concepts/accounting-law",
+    "title": "中华人民共和国会计法",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "framework",
+    "sourceType": "",
+    "created": "2026-06-24",
+    "updated": "2026-06-24",
+    "tags": [
+      "law",
+      "accounting",
+      "supervision",
+      "p1-core"
+    ],
+    "sources": [
+      "regulations-repo"
+    ],
+    "related": [
+      "[concepts/core-laws-map]]",
+      "[[concepts/regulations-and-standards]]",
+      "[[concepts/practical-skills]"
+    ],
+    "excerpt": "中华人民共和国会计法 定义 《中华人民共和国会计法》是规范会计行为、保障会计资料真实完整、明确会计核算与监督责任的基础法律。 说明 会计法关注的是财务信息如何被真实、完整、可核验地形成出来。对竞赛和执业实务来说，它相当于报表世界的底盘规则。审计工作并不是在真空中开展，而是建立在会计凭证、账簿、报告和内部监督的制度基础之上。 核心原则 1. 真实性和完整性是核",
+    "links": [
+      "concepts/practical-skills",
+      "concepts/regulations-and-standards",
+      "sources/regulations-repo"
+    ],
+    "markdown": "# 中华人民共和国会计法\n\n## 定义\n\n《中华人民共和国会计法》是规范会计行为、保障会计资料真实完整、明确会计核算与监督责任的基础法律。\n\n## 说明\n\n会计法关注的是财务信息如何被真实、完整、可核验地形成出来。对竞赛和执业实务来说，它相当于报表世界的底盘规则。审计工作并不是在真空中开展，而是建立在会计凭证、账簿、报告和内部监督的制度基础之上。\n\n## 核心原则\n\n1. **真实性和完整性是核心**：会计资料失真会直接破坏审计基础。\n2. **单位负责人负总责**：不是只有财务人员承担责任。\n3. **核算与监督并重**：不仅要求记账，也要求内部控制和会计监督。\n4. **法律责任覆盖面广**：伪造、变造、隐匿会计资料后果严重。\n\n## 结构与步骤\n\n| 模块 | 说明 | 示例 |\n|------|------|------|\n| 会计核算 | 凭证、账簿、报告、记账本位币等 | 原始凭证、财务会计报告 |\n| 会计监督 | 内部会计监督、财政等外部监督 | 单位内部控制、监管检查 |\n| 会计机构与人员 | 会计岗位、职责分离、能力要求 | 会计主管人员资格要求 |\n| 法律责任 | 虚假报告、毁损资料、授意造假等 | 罚款、处分、从业限制 |\n\n## 重点条文\n\n| 条文 | 重要原因 | 记忆抓手 |\n|------|----------|----------|\n| 第3-5条 | 账簿设置、真实性完整性、单位负责人负责 | 责任先锁定到单位负责人 |\n| 第9条、第13条 | 实际发生业务核算、资料符合统一制度 | 核算必须真实发生 |\n| 第21条 | 财务会计报告签章与负责人保证义务 | 谁签字谁担责 |\n| 第25-29条 | 内部会计监督、不得授意造假、向事务所如实提供资料 | 内控 + 监督 + 审计配合 |\n| 第40-43条 | 一般违法、造假、打击报复的责任 | 会计法责任链很完整 |\n\n## 常见考点\n\n- 单位负责人对会计工作和会计资料的真实性、完整性负责，这一点非常高频。\n- 会计核算必须以实际发生的经济业务事项为依据，不能凭虚假事项做账。\n- 原始凭证不真实、不合法时，会计机构和会计人员有权不予接受并向单位负责人报告。\n- 依法需要审计的财务会计报告，应当附随注册会计师审计报告一并提供。\n- 单位内部会计监督制度应纳入内部控制制度，不能把“监督”理解成可有可无。\n\n## 易混点\n\n- “会计人员做的账”不等于“会计人员独自承担责任”。单位负责人对真实性、完整性负总责。\n- “会计监督”不等于“外部审计”。会计法中的监督先包括单位内部会计监督。\n- “会计资料不真实”与“会计处理选择争议”不同。前者是法律底线问题，后者可能进入准则判断层面。\n\n## 典型场景\n\n### 场景 1：领导授意财务做假账\n判断抓手：第二十六条、第四十二条。\n不只是会计人员有风险，授意、指使、强令者本身也直接承担责任。\n\n### 场景 2：原始凭证明显不合法但仍入账\n判断抓手：第十三条及相关审核要求。\n题目常考“会计人员是否有权拒绝”，答案通常是有，并应报告。\n\n### 场景 3：财务会计报告失真后责任归属\n判断抓手：第四条、第二十一条、第四十一条。\n优先识别签字链条和单位负责人责任。\n\n## 适用方式\n\n### 适用场景\n- 会计信息真实性类考题\n- 单位负责人责任、内部监督责任类案例\n- 审计中发现凭证账簿异常时的法规定位\n\n### 不适用场景\n- 不直接解决具体准则下的确认计量问题\n\n## 关联主题\n\n### 相关页面\n- [[concepts/practical-skills]] - 审计底稿、抽样和取证都依赖会计资料基础\n- [[concepts/regulations-and-standards]] - 会计法与会计准则共同作用于报表形成\n\n## 来源\n- [[sources/regulations-repo]]\n\n---\n*最近更新：2026-06-24*",
+    "relativePath": "concepts/accounting-law.md",
+    "backlinks": [
+      "concepts/accounting-standards",
+      "concepts/core-laws-map",
+      "concepts/question-bank-and-error-log",
+      "concepts/regulations-and-standards",
+      "index",
+      "sources/regulations-repo"
+    ],
+    "relatedResolved": [
+      "concepts/regulations-and-standards"
+    ]
+  },
+  {
+    "id": "concepts/securities-law",
+    "title": "中华人民共和国证券法",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "framework",
+    "sourceType": "",
+    "created": "2026-06-24",
+    "updated": "2026-06-24",
+    "tags": [
+      "law",
+      "securities",
+      "disclosure",
+      "p1-core"
+    ],
+    "sources": [
+      "regulations-repo"
+    ],
+    "related": [
+      "[concepts/core-laws-map]]",
+      "[[concepts/company-law]]",
+      "[[concepts/ethics-and-independence]"
+    ],
+    "excerpt": "中华人民共和国证券法 定义 《中华人民共和国证券法》是规范证券发行、交易、信息披露、投资者保护和证券监管责任的基础法律。 说明 证券法与公司法相比，更聚焦资本市场规则。对注册会计师行业来说，它特别重要，因为上市公司审计、信息披露、证券服务机构责任、虚假陈述和投资者保护，都与证券法直接相关。很多监管和处罚案例，最后都会回到证券法语境下理解。 核心原则 1. 公",
+    "links": [
+      "concepts/company-law",
+      "concepts/ethics-and-independence",
+      "sources/regulations-repo"
+    ],
+    "markdown": "# 中华人民共和国证券法\n\n## 定义\n\n《中华人民共和国证券法》是规范证券发行、交易、信息披露、投资者保护和证券监管责任的基础法律。\n\n## 说明\n\n证券法与公司法相比，更聚焦资本市场规则。对注册会计师行业来说，它特别重要，因为上市公司审计、信息披露、证券服务机构责任、虚假陈述和投资者保护，都与证券法直接相关。很多监管和处罚案例，最后都会回到证券法语境下理解。\n\n## 核心原则\n\n1. **公开、公平、公正**：证券发行与交易活动遵循市场基本秩序原则。\n2. **信息披露是核心制度**：资本市场运行高度依赖真实、准确、完整披露。\n3. **中介机构责任严格**：证券服务机构和从业人员负有勤勉尽责义务。\n4. **违法成本高**：虚假陈述、内幕交易、操纵市场等处罚重。\n\n## 结构与步骤\n\n| 模块 | 说明 | 示例 |\n|------|------|------|\n| 证券发行 | 公开发行、注册、承销、募资用途 | 公开发行条件 |\n| 证券交易 | 上市、交易规则、禁止行为 | 内幕交易、操纵市场 |\n| 信息披露 | 发行文件、持续披露、重大事项 | 招股文件、公告 |\n| 投资者保护与责任 | 投资者保护、监管处罚、民事责任 | 虚假披露责任链条 |\n\n## 重点条文\n\n| 条文 | 重要原因 | 记忆抓手 |\n|------|----------|----------|\n| 第9条 | 公开发行须依法注册 | 发行先注册 |\n| 第19-24条 | 申请文件真实完整、预披露、注册、撤销注册后果 | 发行信息链条 |\n| 第42条 | 证券服务机构特定期间不得买卖证券 | 证券场景下的独立性红线 |\n| 第53-55条 | 内幕交易、利用未公开信息、操纵市场 | 三大高危违法行为 |\n| 第78、83、85条 | 信息披露真实准确完整、不得提前泄露、虚假披露赔偿 | 披露责任主线 |\n| 第160、162、163条 | 证券服务机构勤勉尽责、底稿保存、连带责任 | 注册会计师执业的资本市场重压区 |\n| 第197、213、214、221条 | 披露处罚、证券服务机构处罚、市场禁入 | 高压监管后果 |\n\n## 常见考点\n\n- 公开发行证券必须依法注册，未经注册不得公开发行。\n- 发行申请文件和信息披露资料必须真实、准确、完整，这是证券法最核心的表达之一。\n- 为证券发行出具审计报告等文件的证券服务机构和人员，在法定期间内不得买卖相关证券。\n- 信息披露义务人未按规定披露，或披露存在虚假记载、误导性陈述、重大遗漏，会触发赔偿责任和高额行政处罚。\n- 证券服务机构未勤勉尽责、出具问题文件时，可能与委托人承担连带赔偿责任。\n\n## 易混点\n\n- “注册制”不等于“放松审核”。它只是规则形态变化，不意味着信息披露责任降低。\n- “审计独立性”在证券法语境下不只是一条职业道德要求，还会落到证券买卖限制和证券服务责任。\n- “投资者损失赔偿”与“行政罚款”可以并存，不是二选一。\n\n## 典型场景\n\n### 场景 1：首次公开发行申报材料存在重大遗漏\n判断抓手：第十九条至第二十四条。\n先看是否影响注册，再看发行后是否触发返还、连带责任和赔偿。\n\n### 场景 2：会计师事务所在项目期间买卖相关证券\n判断抓手：第四十二条、第一百八十八条。\n这是证券法下非常具体的独立性和行为红线。\n\n### 场景 3：审计报告有重大虚假记载，投资者索赔\n判断抓手：第八十五条、第一百六十三条、第二百一十三条至第二百一十四条。\n这是连接信息披露责任、中介责任、民事赔偿和监管处罚的典型综合题。\n\n## 适用方式\n\n### 适用场景\n- 上市公司、首次公开发行、再融资相关题目\n- 虚假披露、证券服务机构责任类案例\n- 连接注册会计师审计责任与资本市场后果\n\n### 不适用场景\n- 不替代注册会计师法对职业资格和事务所制度的规定\n\n## 关联主题\n\n### 相关页面\n- [[concepts/company-law]] - 上市公司法律环境离不开公司法基础\n- [[concepts/ethics-and-independence]] - 信息披露责任和职业独立性在证券场景中更敏感\n\n## 来源\n- [[sources/regulations-repo]]\n\n---\n*最近更新：2026-06-24*",
+    "relativePath": "concepts/securities-law.md",
+    "backlinks": [
+      "concepts/audit-case-library",
+      "concepts/company-law",
+      "concepts/core-laws-map",
+      "concepts/independence-standard-1",
+      "concepts/question-bank-and-error-log",
+      "concepts/regulations-and-standards",
+      "index",
+      "sources/regulations-repo"
+    ],
+    "relatedResolved": [
+      "concepts/company-law"
+    ]
+  },
+  {
+    "id": "concepts/cpa-law",
+    "title": "中华人民共和国注册会计师法",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "framework",
+    "sourceType": "",
+    "created": "2026-06-24",
+    "updated": "2026-06-24",
+    "tags": [
+      "law",
+      "cpa",
+      "audit",
+      "p1-core"
+    ],
+    "sources": [
+      "regulations-repo"
+    ],
+    "related": [
+      "[concepts/core-laws-map]]",
+      "[[concepts/ethics-and-independence]]",
+      "[[concepts/practical-skills]"
+    ],
+    "excerpt": "中华人民共和国注册会计师法 定义 《中华人民共和国注册会计师法》是界定注册会计师资格取得、注册管理、业务范围、事务所组织及法律责任的基础法律。 说明 对竞赛而言，这部法律最直接，因为它正面回答“注册会计师是谁、怎么进入行业、能做什么、不能怎么做、违反后会怎样”。它是职业身份、业务边界和行业管理的起点，也是理解后续注册办法、考试办法、事务所许可办法等政策文件的",
+    "links": [
+      "concepts/ethics-and-independence",
+      "concepts/practical-skills",
+      "sources/regulations-repo"
+    ],
+    "markdown": "# 中华人民共和国注册会计师法\n\n## 定义\n\n《中华人民共和国注册会计师法》是界定注册会计师资格取得、注册管理、业务范围、事务所组织及法律责任的基础法律。\n\n## 说明\n\n对竞赛而言，这部法律最直接，因为它正面回答“注册会计师是谁、怎么进入行业、能做什么、不能怎么做、违反后会怎样”。它是职业身份、业务边界和行业管理的起点，也是理解后续注册办法、考试办法、事务所许可办法等政策文件的前置基础。\n\n## 核心原则\n\n1. **职业资格法定化**：注册会计师必须通过统一考试并依法注册。\n2. **业务承接机构化**：注册会计师执行业务应加入会计师事务所。\n3. **执业独立与公正**：独立性和回避要求直接写入法律层面。\n4. **法律责任明确化**：虚假报告、违规执业会触发行政甚至刑事责任。\n\n## 结构与步骤\n\n| 模块 | 说明 | 示例 |\n|------|------|------|\n| 考试与注册 | 统一考试、注册条件、不予注册情形 | 统一考试制度、从业年限要求 |\n| 业务范围 | 审计、验资、咨询服务等 | 审计报告、验资报告 |\n| 执业规则 | 回避、保密、拒绝出具报告等 | 与委托人有利害关系应回避 |\n| 事务所制度 | 事务所设立、责任与管理 | 合伙所、有限责任事务所 |\n| 法律责任 | 对事务所和注册会计师的处罚 | 警告、罚款、暂停、撤销 |\n\n## 重点条文\n\n| 条文 | 重要原因 | 记忆抓手 |\n|------|----------|----------|\n| 第7-10条 | 统一考试、注册条件与不予注册情形 | 先考试，再注册，负面情形卡入口 |\n| 第14条 | 审计业务范围 | 审计、验资、合并分立清算 |\n| 第18-20条 | 回避、保密、拒绝出具报告 | 独立性 + 保密 + 红线场景 |\n| 第21-22条 | 按准则出具报告、禁止行为 | 程序不能省，行为不能越线 |\n| 第39-42条 | 处罚、复议、赔偿责任 | 行政责任 + 民事责任 + 刑事风险 |\n\n## 常见考点\n\n- 注册会计师注册的前提不是只有考试合格，还包括从事审计业务工作二年以上。\n- 与委托人有利害关系时应当回避，这是执业独立性的直接法律要求。\n- 委托人示意不实、故意不提供资料、提出不合理要求致使无法正确表述时，应拒绝出具有关报告。\n- 执行业务时必须遵循执业准则和规则，不能把“经验判断”当作替代程序。\n- 故意出具虚假审计报告、验资报告，可能不仅是行政处罚，还可能构成犯罪。\n\n## 易混点\n\n- “可以承办业务”与“可以独立个人承办业务”不同。注册会计师执行业务应加入会计师事务所。\n- “不予注册”与“撤销注册”不同。前者发生在准入阶段，后者发生在注册后出现法定情形。\n- “回避义务”与“拒绝出具报告”不是一回事。前者是利益冲突场景，后者是证据或诚信基础被破坏的场景。\n\n## 典型场景\n\n### 场景 1：客户要求出具报告但关键资料不提供\n判断抓手：第二十条。\n如果委托人故意不提供有关会计资料和文件，或者提出其他不合理要求导致无法正确表述，应拒绝出具有关报告。\n\n### 场景 2：项目合伙人与被审计单位存在利益关系\n判断抓手：第十八条。\n先看是否构成利害关系，再判断是否应回避，而不是先讨论程序如何补救。\n\n### 场景 3：事务所或注册会计师故意出具虚假报告\n判断抓手：第三十九条至第四十二条。\n这是从行业管理题过渡到法律责任题的高频路径。\n\n## 适用方式\n\n### 适用场景\n- 资格准入与注册类考题\n- 注册会计师业务范围与执业边界类考题\n- 审计独立性、拒绝出具报告、事务所责任类案例\n\n### 不适用场景\n- 不能替代具体审计准则和独立性准则的操作层要求\n\n## 关联主题\n\n### 相关页面\n- [[concepts/ethics-and-independence]] - 法律层独立要求与职业道德层要求相互支撑\n- [[concepts/practical-skills]] - 业务执行规则最终要落到计划、证据和报告\n\n## 来源\n- [[sources/regulations-repo]]\n\n---\n*最近更新：2026-06-24*",
+    "relativePath": "concepts/cpa-law.md",
+    "backlinks": [
+      "concepts/audit-case-library",
+      "concepts/audit-standards",
+      "concepts/core-laws-map",
+      "concepts/ethics-code",
+      "concepts/policy-cpa-exam",
+      "concepts/policy-cpa-registration",
+      "concepts/policy-firm-license",
+      "concepts/question-bank-and-error-log",
+      "concepts/regulations-and-standards",
+      "index",
+      "sources/regulations-repo"
+    ],
+    "relatedResolved": [
+      "concepts/ethics-and-independence"
+    ]
+  },
+  {
+    "id": "concepts/policy-cpa-exam",
+    "title": "注册会计师全国统一考试办法（财政部令第115号）",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "policy",
+    "sourceType": "",
+    "created": "2026-06-25",
+    "updated": "2026-06-25",
+    "tags": [
+      "policy",
+      "exam",
+      "qualification",
+      "cpa",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/policy-documents]]",
+      "[[concepts/policy-cpa-registration]]",
+      "[[concepts/cpa-law]"
+    ],
+    "excerpt": "注册会计师全国统一考试办法（财政部令第115号） 定义 《注册会计师全国统一考试办法》是规范注册会计师考试科目、报名条件、考试组织、成绩管理和合格认定的部门规章。 说明 该办法是注册会计师法第7条“国家实行注册会计师统一考试制度”的具体落地。最新修订确立了“6+1”科目体系（专业阶段6科 + 综合阶段1科），明确了考试组织实施机构为财政部考委会和中注协。 核",
+    "links": [
+      "concepts/policy-cpa-registration",
+      "concepts/cpa-law",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 注册会计师全国统一考试办法（财政部令第115号）\n\n## 定义\n\n《注册会计师全国统一考试办法》是规范注册会计师考试科目、报名条件、考试组织、成绩管理和合格认定的部门规章。\n\n## 说明\n\n该办法是注册会计师法第7条“国家实行注册会计师统一考试制度”的具体落地。最新修订确立了“6+1”科目体系（专业阶段6科 + 综合阶段1科），明确了考试组织实施机构为财政部考委会和中注协。\n\n## 核心原则\n\n1. **考试法定化**：统一考试是取得注册会计师资格的唯一考试路径。\n2. **阶段递进**：专业阶段合格才能报考综合阶段。\n3. **成绩滚动管理**：专业阶段单科成绩在一定年限内有效。\n4. **考培分离**：考试组织与培训分离，保证公正性。\n\n## 结构与步骤\n\n| 模块 | 说明 | 要点 |\n|------|------|------|\n| 考试组织 | 财政部考委会、中注协、省级考办 | 三级组织架构 |\n| 报名条件 | 学历或职称要求 | 专科以上学历或会计相关中级职称 |\n| 考试科目 | 专业阶段6科 + 综合阶段1科 | 会计、审计、财务成本管理、税法、经济法、公司战略与风险管理；综合阶段职业能力综合测试 |\n| 成绩管理 | 专业阶段滚动有效期 | 连续5个年度内通过6科 |\n| 合格认定 | 财政部考委会颁发合格证 | 专业阶段合格证 + 全科合格证 |\n\n## 常见考点\n\n- 考试分为专业阶段和综合阶段，必须先通过专业阶段才能报考综合阶段。\n- 专业阶段单科成绩连续5个考试年度内有效。\n- 报名条件：高等专科以上学校毕业学历，或会计/相关专业中级以上技术职称。\n- 考试违纪违规处理依据相关办法，可取消成绩、禁考。\n- 综合阶段测试职业能力，不以单科形式计成绩。\n\n## 易混点\n\n- “考试合格”不等于“成为注册会计师”。考试合格只是取得注册资格的条件之一，还需注册（见 [[concepts/policy-cpa-registration]]）。\n- “专业阶段5年有效”是指单科成绩滚动，不是整体5年。\n- 考试办法管“考”，注册办法管“注册”，两者衔接但不同。\n\n## 典型场景\n\n### 场景 1：考生通过部分科目后成绩有效期判断\n抓手：连续5个年度滚动管理，按年度计算。\n\n### 场景 2：考试合格后能否直接执业\n抓手：不能。需依注册办法申请注册，且需从事审计业务满2年（见 [[concepts/cpa-law]] 第9条）。\n\n## 实务连接\n\n- 上位法：[[concepts/cpa-law]] 第7-8条。\n- 衔接：[[concepts/policy-cpa-registration]] 注册办法。\n- 备赛：考试科目体系与竞赛知识范围高度重合。\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-25*",
+    "relativePath": "concepts/policy-cpa-exam.md",
+    "backlinks": [
+      "concepts/policy-clause-comparison",
+      "concepts/policy-cpa-registration",
+      "concepts/policy-documents",
+      "concepts/policy-update-tracker",
+      "index"
+    ],
+    "relatedResolved": [
+      "concepts/policy-cpa-registration"
+    ]
+  },
+  {
+    "id": "concepts/policy-integrity",
+    "title": "注册会计师行业诚信建设纲要（财会〔2023〕5号）",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "policy",
+    "sourceType": "",
+    "created": "2026-06-25",
+    "updated": "2026-06-25",
+    "tags": [
+      "policy",
+      "integrity",
+      "credit",
+      "cpa",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/policy-documents]]",
+      "[[concepts/ethics-and-independence]]",
+      "[[concepts/policy-audit-order]"
+    ],
+    "excerpt": "注册会计师行业诚信建设纲要（财会〔2023〕5号） 定义 该纲要是财政部对注册会计师行业诚信建设的系统性安排，覆盖诚信教育、信用记录、失信惩戒和守信激励。 说明 诚信是注册会计师行业的生命线。该纲要把诚信从道德要求升级为制度化建设，强调“一处失信、处处受限”的联合惩戒机制，并与国办发30号、中办发4号的政策导向一脉相承。 核心原则 1. 诚信是行业基石：贯穿",
+    "links": [
+      "concepts/ethics-and-independence",
+      "concepts/policy-audit-order",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 注册会计师行业诚信建设纲要（财会〔2023〕5号）\n\n## 定义\n\n该纲要是财政部对注册会计师行业诚信建设的系统性安排，覆盖诚信教育、信用记录、失信惩戒和守信激励。\n\n## 说明\n\n诚信是注册会计师行业的生命线。该纲要把诚信从道德要求升级为制度化建设，强调“一处失信、处处受限”的联合惩戒机制，并与国办发30号、中办发4号的政策导向一脉相承。\n\n## 核心原则\n\n1. **诚信是行业基石**：贯穿资格考试、注册、执业、监管全链条。\n2. **信用记录制度化**：建立行业诚信档案和信用信息系统。\n3. **联合惩戒**：失信信息跨部门共享，实施市场禁入、限制等。\n4. **教育引导**：把诚信教育纳入考试、继续教育和事务所文化。\n\n## 结构与步骤\n\n| 模块 | 说明 | 要点 |\n|------|------|------|\n| 诚信教育 | 考试、继续教育、事务所内部教育 | 全周期诚信教育 |\n| 信用记录 | 行业诚信档案、信用信息归集 | 注册会计师和事务所双层记录 |\n| 失信惩戒 | 行政、市场、行业联合惩戒 | 市场禁入、限制从业 |\n| 守信激励 | 信用好的事务所在监管中减少检查频次 | 差异化监管 |\n| 信息公开 | 诚信信息向社会公开 | 接受社会监督 |\n\n## 常见考点\n\n- 诚信建设覆盖注册会计师和事务所两个层面。\n- 失信行为包括：虚假审计、挂名执业、违反独立性、恶性竞争、违反保密等。\n- 联合惩戒意味着失信后果不限于行业内部，可能联动市场监管、税务、司法。\n- 信用良好的事务所在监管检查频次上可享受差异化对待。\n\n## 易混点\n\n- “诚信建设”不等于“职业道德守则”。前者是制度建设，后者是行为准则。\n- “失信惩戒”与“行政处罚”不同。前者是信用层面的后果，后者是法定处罚，两者可并存。\n- “诚信档案”记录的是信用行为，与执业资格档案不同。\n\n## 典型场景\n\n### 场景 1：事务所因虚假审计被记入诚信档案\n抓手：本纲要 + 会计法/证券法处罚 + 联合惩戒机制。\n\n### 场景 2：注册会计师违反独立性被行业惩戒\n抓手：职业道德守则 + 诚信档案记录 + 差异化监管。\n\n## 实务连接\n\n- 与 [[concepts/ethics-and-independence]] 直接对应：诚信是道德的制度化表达。\n- 政策主线：[[concepts/policy-audit-order]] 国办发30号提出诚信建设要求，本纲要落地。\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-25*",
+    "relativePath": "concepts/policy-integrity.md",
+    "backlinks": [
+      "concepts/ethics-code",
+      "concepts/policy-audit-order",
+      "concepts/policy-clause-comparison",
+      "concepts/policy-documents",
+      "concepts/policy-firm-inspection",
+      "concepts/policy-update-tracker",
+      "index"
+    ],
+    "relatedResolved": [
+      "concepts/ethics-and-independence"
+    ]
+  },
+  {
+    "id": "overview",
+    "title": "注册会计师行业青年知识竞赛知识库总览",
+    "section": "overview",
+    "type": "concept",
+    "conceptType": "framework",
+    "sourceType": "",
+    "created": "2026-06-24",
+    "updated": "2026-06-26",
+    "tags": [
+      "cpa",
+      "competition",
+      "framework",
+      "reviewed"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/competition-scope]]",
+      "[[concepts/preparation-strategy]"
+    ],
+    "excerpt": "注册会计师行业青年知识竞赛知识库总览 定义 这是一个围绕注册会计师行业青年知识竞赛建立的结构化知识库，用来把原始清单拆解为可持续学习、可交叉引用、可继续扩展的知识网络。 说明 原始文档给出了竞赛考察范围，但它本身更像目录，不足以直接支持复习、答题和案例迁移。因此知识库的核心任务不是保存附件，而是把清单背后的法规、政策、职业道德和实务能力转化为可检索页面。 当",
+    "links": [
+      "concepts/regulations-and-standards",
+      "concepts/audit-case-library",
+      "concepts/question-bank-and-error-log",
+      "concepts/competition-scope",
+      "concepts/preparation-strategy",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 注册会计师行业青年知识竞赛知识库总览\n\n## 定义\n这是一个围绕注册会计师行业青年知识竞赛建立的结构化知识库，用来把原始清单拆解为可持续学习、可交叉引用、可继续扩展的知识网络。\n\n## 说明\n原始文档给出了竞赛考察范围，但它本身更像目录，不足以直接支持复习、答题和案例迁移。因此知识库的核心任务不是保存附件，而是把清单背后的法规、政策、职业道德和实务能力转化为可检索页面。\n\n当前知识体系分成六个主轴：法规与准则、政策文件、行业史与职业道德、实务技能与案例分析、模拟训练、备赛策略。每个主轴都对应一类后续可继续扩充的页面，形成由“来源页 -> 主题页 -> 具体法规/准则/案例/题目页”的结构。\n\n## 核心原则\n\n1. **从清单到知识图谱**：每个目录项都应逐步扩展为独立页面或子专题。\n2. **从记忆到应用**：法规和准则页面需要和实务案例、典型情境、常见考点建立连接。\n3. **从一次整理到持续维护**：政策性文件、考试办法与监管动态需要按时间持续更新。\n\n## 结构与步骤\n\n| 模块 | 说明 | 示例 |\n|------|------|------|\n| 来源层 | 保留原始附件和提取文本 | `raw/reports/2026-06-24-competition-knowledge-list.docx` |\n| 主题层 | 按板块建立概念页 | [[concepts/regulations-and-standards]] |\n| 扩展层 | 补充法规原文、准则细页、案例、题目、动态 | [[concepts/audit-case-library]]、[[concepts/question-bank-and-error-log]] |\n\n## 适用方式\n\n### 适用场景\n- 竞赛备赛知识框架梳理\n- 注册会计师行业入门学习地图\n- 后续题库、法规、案例材料的统一沉淀\n\n### 不适用场景\n- 不能替代法规原文精读\n- 目前还不包含历年真题和完整监管处罚原文材料\n\n## 关联主题\n\n### 相关页面\n- [[concepts/competition-scope]] - 竞赛清单的结构化入口\n- [[concepts/preparation-strategy]] - 如何把知识库用于复习训练\n- [[concepts/question-bank-and-error-log]] - 把知识页转化为题目训练\n- [[concepts/audit-case-library]] - 把法规和准则放入案例场景\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-26*",
+    "relativePath": "overview.md",
+    "backlinks": [
+      "index"
+    ],
+    "relatedResolved": []
+  },
+  {
+    "id": "concepts/policy-cpa-registration",
+    "title": "注册会计师注册办法（财政部令第99号）",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "policy",
+    "sourceType": "",
+    "created": "2026-06-25",
+    "updated": "2026-06-25",
+    "tags": [
+      "policy",
+      "registration",
+      "qualification",
+      "cpa",
+      "p1-core"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/policy-documents]]",
+      "[[concepts/policy-cpa-exam]]",
+      "[[concepts/cpa-law]"
+    ],
+    "excerpt": "注册会计师注册办法（财政部令第99号） 定义 《注册会计师注册办法》规定注册会计师注册的条件、申请程序、注册审批、不予注册情形及注册管理事项。 说明 该办法是注册会计师法第9条的落地。它把“考试合格”推进到“取得执业资格”。注册是注册会计师以个人身份签署审计报告的前提，未经注册不得以注册会计师名义执业。 核心原则 1. 注册是执业前置：考试合格不等于注册会计",
+    "links": [
+      "concepts/cpa-law",
+      "concepts/policy-cpa-exam",
+      "concepts/ethics-and-independence",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 注册会计师注册办法（财政部令第99号）\n\n## 定义\n\n《注册会计师注册办法》规定注册会计师注册的条件、申请程序、注册审批、不予注册情形及注册管理事项。\n\n## 说明\n\n该办法是注册会计师法第9条的落地。它把“考试合格”推进到“取得执业资格”。注册是注册会计师以个人身份签署审计报告的前提，未经注册不得以注册会计师名义执业。\n\n## 核心原则\n\n1. **注册是执业前置**：考试合格不等于注册会计师。\n2. **专职执业要求**：申请注册需专职在会计师事务所执业。\n3. **负面清单管理**：明确不予注册和撤销注册情形。\n4. **属地管理**：由所在事务所所在地的省级注协受理。\n\n## 结构与步骤\n\n| 模块 | 说明 | 要点 |\n|------|------|------|\n| 注册条件 | 考试全科合格 + 专职执业 + 审计业务年限 | 从事审计业务工作二年以上 |\n| 申请程序 | 所在地省级注协受理 | 提交申请表、合格证、执业证明等 |\n| 不予注册情形 | 刑事处罚、吊销未满5年、虚假材料等 | 负面清单 |\n| 撤销注册情形 | 自行停止执业、刑事处罚、死亡等 | 注册后动态管理 |\n| 注册管理与公告 | 省级注协审批，财政部统一公告 | 注册有效、注销公告 |\n\n## 常见考点\n\n- 注册条件包括：考试全科合格、专职在事务所执业、从事审计业务工作二年以上。\n- 不予注册情形：受刑事处罚未满五年、被吊销注册会计师证书未满五年、提供虚假材料等。\n- 撤销注册情形：完全丧失民事行为能力、自行停止执行注册会计师业务满一年、受刑事处罚等。\n- 注册由省级注协审批，不是财政部直接审批。\n- 未经注册不得以注册会计师名义从事业务。\n\n## 易混点\n\n- “考试合格”与“注册”是两步。考试合格取得全科合格证，注册后才取得注册会计师证书。\n- “不予注册”（准入阶段）与“撤销注册”（注册后）适用情形不同。\n- “注销注册”与“撤销注册”不同。注销多为自然情形（如死亡、转所注销），撤销带有惩戒性质。\n\n## 典型场景\n\n### 场景 1：考试合格但未满2年审计经验能否注册\n抓手：不能。审计业务工作二年以上是硬性条件。\n\n### 场景 2：注册后离开事务所另行执业如何处理\n抓手：应办理转所；自行停止执业满一年将被撤销注册。\n\n## 实务连接\n\n- 上位法：[[concepts/cpa-law]] 第9-11条。\n- 衔接：[[concepts/policy-cpa-exam]] 考试办法（提供全科合格证）。\n- 与 [[concepts/ethics-and-independence]] 关联：注册后即受职业道德和独立性约束。\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-25*",
+    "relativePath": "concepts/policy-cpa-registration.md",
+    "backlinks": [
+      "concepts/policy-audit-order",
+      "concepts/policy-clause-comparison",
+      "concepts/policy-cpa-exam",
+      "concepts/policy-documents",
+      "concepts/policy-update-tracker",
+      "index"
+    ],
+    "relatedResolved": [
+      "concepts/policy-cpa-exam"
+    ]
+  },
+  {
+    "id": "concepts/comprehensive-competency",
+    "title": "综合执业能力——跨学科整合与复杂场景应对",
+    "section": "concepts",
+    "type": "concept",
+    "conceptType": "competency",
+    "sourceType": "",
+    "created": "2026-06-25",
+    "updated": "2026-06-25",
+    "tags": [
+      "competency",
+      "integration",
+      "cpa",
+      "p2-important"
+    ],
+    "sources": [
+      "2026-06-24-competition-knowledge-list"
+    ],
+    "related": [
+      "[concepts/practical-skills]]",
+      "[[concepts/audit-process]]",
+      "[[concepts/intelligent-tools]"
+    ],
+    "excerpt": "综合执业能力——跨学科整合与复杂场景应对 定义 综合执业能力指注册会计师在复杂执业情境中，整合会计、审计、法律、税务、估值、IT等多学科知识，进行结构化分析和专业判断的能力。 说明 竞赛把“综合执业能力”单列，说明不只是考单点知识，而是考知识迁移和整合。这往往是拉开差距的部分——能背条文未必能解决复杂案例。它要求答题体现“识别问题—调用多学科—整合分析—给出",
+    "links": [
+      "concepts/audit-process",
+      "concepts/intelligent-tools",
+      "concepts/ethics-code",
+      "concepts/preparation-strategy",
+      "sources/2026-06-24-competition-knowledge-list"
+    ],
+    "markdown": "# 综合执业能力——跨学科整合与复杂场景应对\n\n## 定义\n\n综合执业能力指注册会计师在复杂执业情境中，整合会计、审计、法律、税务、估值、IT等多学科知识，进行结构化分析和专业判断的能力。\n\n## 说明\n\n竞赛把“综合执业能力”单列，说明不只是考单点知识，而是考知识迁移和整合。这往往是拉开差距的部分——能背条文未必能解决复杂案例。它要求答题体现“识别问题—调用多学科—整合分析—给出结论”的完整链条。\n\n## 核心原则\n\n1. **问题识别先行**：复杂场景先拆解成子问题，再逐个定位学科。\n2. **多学科联动**：一个案例常涉及会计、审计、税法、经济法、战略多科。\n3. **结构化输出**：用框架组织答案，避免零散堆砌。\n4. **判断要有依据**：结论必须挂到准则、法条或政策，不能空泛。\n\n## 能力维度\n\n| 维度 | 说明 | 典型涉及 |\n|------|------|----------|\n| 跨学科整合 | 调用多科知识解决一个问题 | 会计+审计+税法 |\n| 复杂场景应对 | 多主体、多业务、多期间叠加 | 重组、并购、跨境 |\n| 职业判断 | 在准则框架内权衡定夺 | 会计估计、持续经营 |\n| 沟通表达 | 与治理层、监管、客户沟通 | 管理建议书、沟通函 |\n\n## 典型复杂场景类型\n\n| 场景类型 | 涉及学科 | 审计关注 |\n|----------|----------|----------|\n| 企业并购重组 | 会计、税法、经济法、估值 | 商誉、对价分摊、税务影响 |\n| 关联交易 | 会计、审计、公司治理 | 定价公允性、披露完整 |\n| 收入确认争议 | 会计、审计、合同法 | 时点/时段、履约义务 |\n| 持续经营 | 会计、审计、破产法 | 重大不确定性、审计意见 |\n| 会计估计 | 会计、审计、估值 | 假设合理性、披露 |\n| 金融工具 | 会计、审计、风险管理 | 分类、减值、套期 |\n| 跨期事项 | 会计、审计、证券法 | 期后事项、比较信息 |\n\n## 解题框架（建议）\n\n1. **识别问题**：把案例拆成若干子问题，标注学科。\n2. **定位依据**：为每个子问题找到准则、法条或政策支撑。\n3. **分析判断**：在依据框架内分析事实，给出倾向性结论。\n4. **整合结论**：把各子问题结论串联，形成整体意见或建议。\n5. **风险提示**：补充不确定性和需进一步关注事项。\n\n## 常见考点\n\n- 综合题常以“案例 + 多问”形式出现，各问之间有逻辑关联。\n- 答题要求体现“定性 + 定量 + 依据”，不能只给结论。\n- 跨学科是难点：如并购涉及会计合并、税法递延、商誉减值联动。\n- 复杂场景要求识别主次风险，不能面面俱到无重点。\n\n## 易混点\n\n- “综合”不等于“堆砌”。综合是有逻辑地整合，不是把所有知识点罗列。\n- “复杂场景”不等于“偏题怪题”，往往是常规业务的组合叠加。\n- “职业判断”不等于“主观意见”，判断必须在准则框架内。\n\n## 典型场景\n\n### 场景 1：并购案例综合题\n抓手：会计（合并对价、商誉）+ 税法（递延所得税）+ 审计（合并日测试）联动。\n\n### 场景 2：持续经营不确定性\n抓手：审计（CSA570）+ 会计（披露）+ 破产法（衔接）整合判断意见类型。\n\n## 实务连接\n\n- 流程基础：[[concepts/audit-process]] 综合判断建立在流程之上。\n- 工具辅助：[[concepts/intelligent-tools]] 数据分析支撑复杂判断。\n- 守底线：[[concepts/ethics-code]] 复杂场景更需职业怀疑和独立性。\n- 备赛：[[concepts/preparation-strategy]] 通过模拟训练强化综合能力。\n\n## 来源\n- [[sources/2026-06-24-competition-knowledge-list]]\n\n---\n*最近更新：2026-06-25*",
+    "relativePath": "concepts/comprehensive-competency.md",
+    "backlinks": [
+      "concepts/audit-case-library",
+      "concepts/audit-process",
+      "concepts/intelligent-tools",
+      "concepts/practical-skills",
+      "concepts/question-bank-and-error-log",
+      "index"
+    ],
+    "relatedResolved": [
+      "concepts/audit-process"
+    ]
+  }
+]</script>
+  <script>
+    const docs = JSON.parse(document.getElementById("docsData").textContent);
+    const docMap = new Map(docs.map((doc) => [doc.id, doc]));
+    const navList = document.getElementById("navList");
+    const filtersWrap = document.getElementById("filters");
+    const article = document.getElementById("article");
+    const metaBar = document.getElementById("metaBar");
+    const searchInput = document.getElementById("searchInput");
+    const heroEyebrow = document.getElementById("heroEyebrow");
+    const heroTitle = document.getElementById("heroTitle");
+    const heroDescription = document.getElementById("heroDescription");
+    const CODE_FENCE = "\u0060\u0060\u0060";
+
+    const sections = ["all", ...Array.from(new Set(docs.map((doc) => doc.section)))];
+    let activeSection = "all";
+    let activeSearch = "";
+    let activeDocId = location.hash ? decodeURIComponent(location.hash.slice(1)) : "";
+
+    if (!activeDocId || !docMap.has(activeDocId)) {
+      activeDocId = docMap.has("overview") ? "overview" : docs[0].id;
+    }
+
+    document.getElementById("docCount").textContent = String(docs.length);
+    document.getElementById("conceptCount").textContent = String(docs.filter((doc) => doc.section === "concepts").length);
+
+    function normalize(value) {
+      return value.toLowerCase();
+    }
+
+    function getSectionLabel(section) {
+      const labels = {
+        all: "全部",
+        overview: "总览",
+        concepts: "专题",
+        sources: "来源"
+      };
+      return labels[section] || section;
+    }
+
+    function getSectionAccent(section) {
+      const labels = {
+        overview: "总览页",
+        concepts: "专题页",
+        sources: "来源页"
+      };
+      return labels[section] || "知识页";
+    }
+
+    function getTypeLabel(type) {
+      const labels = {
+        concept: "专题",
+        source: "来源",
+        index: "索引"
+      };
+      return labels[type] || type;
+    }
+
+    function getTagLabel(tag) {
+      const labels = {
+        cpa: "注册会计师",
+        competition: "竞赛",
+        structured: "结构化",
+        framework: "框架",
+        reviewed: "已整理",
+        law: "法律",
+        accounting: "会计",
+        supervision: "监督",
+        regulation: "法规",
+        standards: "准则",
+        policy: "政策",
+        audit: "审计",
+        ethics: "职业道德",
+        independence: "独立性",
+        skills: "技能",
+        company: "公司",
+        governance: "治理",
+        securities: "证券",
+        disclosure: "披露",
+        source: "来源",
+        practice: "练习",
+        questions: "题库",
+        update: "动态",
+        case: "案例",
+        comparison: "对照",
+        revenue: "收入",
+        evidence: "证据",
+        confirmation: "函证",
+        "data-analysis": "数据分析",
+        "intelligent-tools": "智能工具",
+        "study-plan": "备赛计划",
+        "p1-core": "核心",
+        "p2-important": "重点",
+        "p3-extension": "扩展",
+        rpa: "机器人流程自动化"
+      };
+      return labels[tag] || tag;
+    }
+
+    function filterDocs() {
+      return docs.filter((doc) => {
+        const sectionMatch = activeSection === "all" || doc.section === activeSection;
+        if (!sectionMatch) return false;
+        if (!activeSearch) return true;
+
+        const haystack = normalize([
+          doc.title,
+          doc.excerpt,
+          doc.markdown,
+          doc.tags.join(" "),
+          doc.id
+        ].join(" "));
+
+        return haystack.includes(normalize(activeSearch));
+      });
+    }
+
+    function renderFilters() {
+      filtersWrap.innerHTML = "";
+      for (const section of sections) {
+        const button = document.createElement("button");
+        button.className = "chip" + (activeSection === section ? " active" : "");
+        button.textContent = getSectionLabel(section);
+        button.type = "button";
+        button.addEventListener("click", () => {
+          activeSection = section;
+          renderFilters();
+          renderNav();
+        });
+        filtersWrap.appendChild(button);
+      }
+    }
+
+    function renderNav() {
+      const items = filterDocs();
+      navList.innerHTML = "";
+
+      if (!items.length) {
+        navList.innerHTML = '<div class="empty">没有匹配结果，换个关键词试试。</div>';
+        return;
+      }
+
+      for (const doc of items) {
+        const card = document.createElement("button");
+        card.type = "button";
+        card.className = "nav-item" + (doc.id === activeDocId ? " active" : "");
+        card.innerHTML = `
+          <div class="meta">
+            <span>${getSectionLabel(doc.section)}</span>
+            ${doc.type ? `<span>${getTypeLabel(doc.type)}</span>` : ""}
+          </div>
+          <strong>${escapeHtml(doc.title)}</strong>
+          <small>${escapeHtml(doc.excerpt || "打开查看详情")}</small>
+        `;
+        card.addEventListener("click", () => openDoc(doc.id));
+        navList.appendChild(card);
+      }
+    }
+
+    function escapeHtml(value) {
+      return value
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;");
+    }
+
+    function renderInline(text) {
+      let html = escapeHtml(text);
+      html = html.replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+      html = html.replace(/`([^`]+)`/g, "<code>$1</code>");
+      html = html.replace(/\[\[([^\]]+)\]\]/g, (_, id) => {
+        const normalizedId = id.trim();
+        const doc = docMap.get(normalizedId);
+        if (!doc) return "<code>" + escapeHtml(normalizedId) + "</code>";
+        return '<a href="#' + encodeURIComponent(doc.id) + '" data-doc-id="' + escapeHtml(doc.id) + '">' + escapeHtml(doc.title) + "</a>";
+      });
+      html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, href) => {
+        return '<a href="' + href + '" target="_blank" rel="noreferrer">' + escapeHtml(label) + "</a>";
+      });
+      return html;
+    }
+
+    function splitTableRow(line) {
+      return line
+        .trim()
+        .replace(/^\|/, "")
+        .replace(/\|$/, "")
+        .split("|")
+        .map((cell) => cell.trim());
+    }
+
+    function isTableSeparator(line) {
+      return /^\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?$/.test(line.trim());
+    }
+
+    function markdownToHtml(markdown) {
+      const lines = markdown.replace(/\r/g, "").split("\n");
+      const html = [];
+
+      for (let i = 0; i < lines.length; i += 1) {
+        const line = lines[i];
+        const trimmed = line.trim();
+
+        if (!trimmed) continue;
+
+        if (trimmed.startsWith(CODE_FENCE)) {
+          const codeLines = [];
+          i += 1;
+          while (i < lines.length && !lines[i].trim().startsWith(CODE_FENCE)) {
+            codeLines.push(lines[i]);
+            i += 1;
+          }
+          html.push("<pre><code>" + escapeHtml(codeLines.join("\n")) + "</code></pre>");
+          continue;
+        }
+
+        const headingMatch = trimmed.match(/^(#{1,6})\s+(.*)$/);
+        if (headingMatch) {
+          const level = headingMatch[1].length;
+          html.push("<h" + level + ">" + renderInline(headingMatch[2]) + "</h" + level + ">");
+          continue;
+        }
+
+        if (trimmed === "---") {
+          html.push("<hr />");
+          continue;
+        }
+
+        if (trimmed.startsWith(">")) {
+          const quoteLines = [];
+          while (i < lines.length && lines[i].trim().startsWith(">")) {
+            quoteLines.push(lines[i].trim().replace(/^>\s?/, ""));
+            i += 1;
+          }
+          i -= 1;
+          html.push("<blockquote>" + quoteLines.map(renderInline).join("<br />") + "</blockquote>");
+          continue;
+        }
+
+        if (trimmed.startsWith("|") && i + 1 < lines.length && isTableSeparator(lines[i + 1])) {
+          const headers = splitTableRow(lines[i]);
+          const rows = [];
+          i += 2;
+          while (i < lines.length && lines[i].trim().startsWith("|")) {
+            rows.push(splitTableRow(lines[i]));
+            i += 1;
+          }
+          i -= 1;
+
+          html.push("<table><thead><tr>" + headers.map((cell) => "<th>" + renderInline(cell) + "</th>").join("") + "</tr></thead><tbody>" +
+            rows.map((row) => "<tr>" + row.map((cell) => "<td>" + renderInline(cell) + "</td>").join("") + "</tr>").join("") +
+            "</tbody></table>");
+          continue;
+        }
+
+        if (/^[-*]\s+/.test(trimmed)) {
+          const items = [];
+          while (i < lines.length && /^[-*]\s+/.test(lines[i].trim())) {
+            items.push(lines[i].trim().replace(/^[-*]\s+/, ""));
+            i += 1;
+          }
+          i -= 1;
+          html.push("<ul>" + items.map((item) => "<li>" + renderInline(item) + "</li>").join("") + "</ul>");
+          continue;
+        }
+
+        if (/^\d+\.\s+/.test(trimmed)) {
+          const items = [];
+          while (i < lines.length && /^\d+\.\s+/.test(lines[i].trim())) {
+            items.push(lines[i].trim().replace(/^\d+\.\s+/, ""));
+            i += 1;
+          }
+          i -= 1;
+          html.push("<ol>" + items.map((item) => "<li>" + renderInline(item) + "</li>").join("") + "</ol>");
+          continue;
+        }
+
+        const paragraphLines = [trimmed];
+        while (
+          i + 1 < lines.length &&
+          lines[i + 1].trim() &&
+          !/^(#{1,6})\s+/.test(lines[i + 1].trim()) &&
+          !/^[-*]\s+/.test(lines[i + 1].trim()) &&
+          !/^\d+\.\s+/.test(lines[i + 1].trim()) &&
+          !lines[i + 1].trim().startsWith(">") &&
+          !(lines[i + 1].trim().startsWith("|") && i + 2 < lines.length && isTableSeparator(lines[i + 2])) &&
+          !lines[i + 1].trim().startsWith(CODE_FENCE) &&
+          lines[i + 1].trim() !== "---"
+        ) {
+          paragraphLines.push(lines[i + 1].trim());
+          i += 1;
+        }
+
+        html.push("<p>" + renderInline(paragraphLines.join(" ")) + "</p>");
+      }
+
+      return html.join("");
+    }
+
+    function renderMeta(doc) {
+      const pills = [];
+      pills.push('<span class="pill">模块 · ' + getSectionLabel(doc.section) + "</span>");
+      if (doc.updated) pills.push('<span class="pill">更新 · ' + escapeHtml(doc.updated) + "</span>");
+      if (doc.type) pills.push('<span class="pill">类型 · ' + escapeHtml(getTypeLabel(doc.type)) + "</span>");
+      for (const tag of doc.tags.slice(0, 6)) {
+        pills.push('<span class="pill">#' + escapeHtml(getTagLabel(tag)) + "</span>");
+      }
+      metaBar.innerHTML = pills.join("");
+    }
+
+    function renderSupportCards(doc) {
+      const related = doc.relatedResolved.map((id) => docMap.get(id)).filter(Boolean);
+      const backlinks = doc.backlinks.map((id) => docMap.get(id)).filter(Boolean);
+
+      return `
+        <div class="support-grid">
+          <section class="support-card">
+            <h4>相关页面</h4>
+            ${related.length
+              ? '<div class="link-list">' + related.map((item) => '<button type="button" class="doc-link" data-doc-link="' + escapeHtml(item.id) + '">' + escapeHtml(item.title) + "</button>").join("") + "</div>"
+              : '<div class="empty">当前页面还没有整理出相关页面。</div>'}
+          </section>
+          <section class="support-card">
+            <h4>反向引用</h4>
+            ${backlinks.length
+              ? '<div class="link-list">' + backlinks.map((item) => '<button type="button" class="doc-link" data-doc-link="' + escapeHtml(item.id) + '">' + escapeHtml(item.title) + "</button>").join("") + "</div>"
+              : '<div class="empty">暂时没有其他页面引用它。</div>'}
+          </section>
+        </div>
+      `;
+    }
+
+    function openDoc(docId) {
+      const doc = docMap.get(docId);
+      if (!doc) return;
+
+      activeDocId = doc.id;
+      location.hash = encodeURIComponent(doc.id);
+      renderNav();
+
+      heroEyebrow.textContent = getSectionAccent(doc.section);
+      heroTitle.textContent = doc.title;
+      heroDescription.textContent = doc.excerpt || "已打开文档。";
+
+      renderMeta(doc);
+      article.innerHTML = markdownToHtml(doc.markdown) + renderSupportCards(doc) + '<p class="footer-note">文档路径：' + escapeHtml(doc.relativePath) + "</p>";
+
+      article.querySelectorAll("[data-doc-id], [data-doc-link]").forEach((element) => {
+        element.addEventListener("click", (event) => {
+          event.preventDefault();
+          openDoc(element.getAttribute("data-doc-id") || element.getAttribute("data-doc-link"));
+        });
+      });
+    }
+
+    searchInput.addEventListener("input", () => {
+      activeSearch = searchInput.value.trim();
+      renderNav();
+    });
+
+    window.addEventListener("hashchange", () => {
+      const nextId = location.hash ? decodeURIComponent(location.hash.slice(1)) : "";
+      if (nextId && docMap.has(nextId)) openDoc(nextId);
+    });
+
+    renderFilters();
+    renderNav();
+    openDoc(activeDocId);
+  </script>
+</body>
+</html>

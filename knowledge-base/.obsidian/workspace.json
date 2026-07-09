@@ -1,0 +1,206 @@
+{
+  "main": {
+    "id": "7c53c02008ffecbf",
+    "type": "split",
+    "children": [
+      {
+        "id": "e0c820e9e54efda5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "06a48db5ddc3a8b9",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "未命名.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
+              },
+              "icon": "lucide-layout-dashboard",
+              "title": "未命名"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7aea04e6f4ae89f7",
+    "type": "split",
+    "children": [
+      {
+        "id": "81b236a6ca47106d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f66e817cc84ffd05",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "f78b968df630f82b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "c8c18a9907c532b6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "23ae31fd7b58ff14",
+    "type": "split",
+    "children": [
+      {
+        "id": "9389b457da9d7bec",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "571dcebf8efd225e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "未命名.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "未命名 的反向链接列表"
+            }
+          },
+          {
+            "id": "c2c578f595a88031",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "未命名.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "未命名 的出链列表"
+            }
+          },
+          {
+            "id": "aa95361cea4bda3e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "e08f6f397aec1614",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "c1f5d66a4728c0c0",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "未命名.canvas",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "未命名 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "06a48db5ddc3a8b9",
+  "lastOpenFiles": [
+    "未命名.canvas",
+    "CPA-ZH/wiki/concepts/accounting-standards/cas-25.md",
+    "CPA-ZH/wiki/sources/2026-06-26-initial-structure.md",
+    "CPA-ZH/wiki/concepts/policy-caihui-supervision.md",
+    "CPA-ZH/wiki/concepts/policy-audit-order.md",
+    "CPA-ZH/wiki/concepts/law-cpa.md",
+    "CPA-ZH/wiki/concepts/accounting-standards/cas-41.md",
+    "CPA-ZH/wiki/concepts/accounting-standards/calibration/interp-01.md",
+    "CPA-ZH/wiki/concepts/accounting-standards/calibration/cas-22-financial-instruments.md",
+    "CPA-ZH/wiki/concepts/accounting-standards/calibration/cas-19-foreign-currency-translation.md",
+    "CPA-ZH/wiki/concepts/accounting-standards/calibration/cas-13-contingencies.md",
+    "CPA-ZH/wiki/concepts/accounting-standards/calibration/cas-11-share-based-payment.md",
+    "CPA-ZH/wiki/cases/2026-07-first-issue-government-grant-free-use-equipment.md",
+    "CPA-ZH/wiki/cases/2026-07-first-issue-equipment-sales-revenue-recognition.md"
+  ]
+}

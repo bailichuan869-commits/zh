@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>发行类第9号：研发人员与研发投入零基础课程</title>
+<style>
+/* ===== CSS Variables & Theme ===== */
+:root {
+  --bg: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --text: #2d3436;
+  --text-secondary: #636e72;
+  --primary: #0984e3;
+  --primary-light: #dfe6fd;
+  --success: #00b894;
+  --danger: #e17055;
+  --warning: #fdcb6e;
+  --border: #dfe6e9;
+  --card-bg: #ffffff;
+  --shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --radius: 8px;
+  --transition: 0.2s ease;
+  --sidebar-bg: #ffffff;
+}
+[data-theme="dark"] {
+  --bg: #1a1a2e;
+  --bg-secondary: #16213e;
+  --text: #e0e0e0;
+  --text-secondary: #a0a0a0;
+  --primary: #74b9ff;
+  --primary-light: #2d3a5c;
+  --success: #55efc4;
+  --danger: #ff7675;
+  --warning: #ffeaa7;
+  --border: #2d3a5c;
+  --card-bg: #1e2a45;
+  --shadow: 0 2px 8px rgba(0,0,0,0.3);
+  --sidebar-bg: #16213e;
+}
+
+/* ===== Base Styles ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  transition: background var(--transition), color var(--transition);
+}
+
+/* ===== Floating Sidebar TOC ===== */
+.sidebar-toc {
+  position: fixed; left: 0; top: 0;
+  width: 260px; height: 100vh;
+  background: var(--sidebar-bg);
+  border-right: 1px solid var(--border);
+  overflow-y: auto;
+  padding: 16px;
+  z-index: 200;
+  transition: transform 0.3s ease;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.06);
+}
+.sidebar-toc.hidden { transform: translateX(-100%); }
+.sidebar-toc h3 { font-size: 14px; color: var(--text-secondary); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+.sidebar-toc a {
+  display: block; padding: 5px 8px; font-size: 13px;
+  color: var(--text-secondary); text-decoration: none;
+  border-radius: 4px; transition: all var(--transition);
+}
+.sidebar-toc a:hover, .sidebar-toc a.active { color: var(--primary); background: var(--primary-light); }
+.sidebar-toc .toc-chapter { font-weight: 600; color: var(--text); margin-top: 8px; font-size: 14px; }
+.sidebar-toc .toc-section { padding-left: 14px; }
+.sidebar-toggle {
+  position: fixed; left: 260px; top: 12px; z-index: 210;
+  width: 28px; height: 28px; border: 1px solid var(--border);
+  background: var(--sidebar-bg); color: var(--text); cursor: pointer;
+  border-radius: 50%; font-size: 14px; display: flex; align-items: center; justify-content: center;
+  transition: left 0.3s ease; box-shadow: var(--shadow);
+}
+.sidebar-toggle.shifted { left: 8px; }
+
+/* ===== Main wrapper (shifted for sidebar) ===== */
+.main-wrapper { margin-left: 260px; transition: margin-left 0.3s ease; }
+.main-wrapper.full { margin-left: 0; }
+
+/* ===== Top Bar ===== */
+.top-bar {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 20px;
+  display: flex; align-items: center; gap: 12px;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow);
+}
+.top-bar input[type="search"] {
+  flex: 1; min-width: 180px;
+  padding: 8px 14px; border: 2px solid var(--border); border-radius: 20px;
+  font-size: 14px; background: var(--bg-secondary); color: var(--text);
+  outline: none; transition: border var(--transition);
+}
+.top-bar input[type="search"]:focus { border-color: var(--primary); }
+.top-bar button, .top-bar select {
+  padding: 8px 14px; border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--bg-secondary); color: var(--text); cursor: pointer;
+  font-size: 13px; transition: all var(--transition); white-space: nowrap;
+}
+.top-bar button:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+.progress-bar-wrap {
+  width: 120px; height: 8px; background: var(--border); border-radius: 4px; overflow: hidden;
+}
+.progress-bar-fill {
+  height: 100%; background: var(--success); border-radius: 4px; transition: width 0.5s ease;
+}
+.progress-text { font-size: 12px; color: var(--text-secondary); white-space: nowrap; }
+
+/* ===== Main Content ===== */
+.container { max-width: 900px; margin: 0 auto; padding: 20px; }
+
+/* ===== Course Header ===== */
+.course-header {
+  text-align: center; padding: 40px 20px; margin-bottom: 30px;
+  background: linear-gradient(135deg, var(--primary-light), var(--bg-secondary));
+  border-radius: 16px;
+}
+.course-header h1 { font-size: 2em; margin-bottom: 10px; color: var(--primary); }
+.course-header p { color: var(--text-secondary); font-size: 1.1em; }
+.course-meta { display: flex; justify-content: center; gap: 24px; margin-top: 16px; flex-wrap: wrap; }
+.course-meta span { background: var(--card-bg); padding: 6px 14px; border-radius: 20px; font-size: 13px; box-shadow: var(--shadow); }
+
+/* ===== Chapters ===== */
+.chapter {
+  margin-bottom: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  scroll-margin-top: 80px;
+}
+.chapter-header {
+  display: flex; align-items: center;
+  padding: 16px 20px;
+  background: var(--bg-secondary);
+  cursor: pointer;
+  user-select: none;
+  transition: background var(--transition);
+}
+.chapter-header:hover { background: var(--primary-light); }
+.chapter-header .arrow {
+  margin-right: 12px;
+  transition: transform 0.3s ease;
+  font-size: 14px;
+  color: var(--primary);
+}
+.chapter.open .chapter-header .arrow { transform: rotate(90deg); }
+.chapter-header h3 { flex: 1; font-size: 1.15em; }
+.chapter-checkbox {
+  width: 20px; height: 20px; cursor: pointer;
+  accent-color: var(--success);
+}
+.chapter-body {
+  display: none;
+  padding: 20px;
+  background: var(--card-bg);
+}
+.chapter.open .chapter-body { display: block; }
+
+/* ===== Chapter Navigation Buttons ===== */
+.chapter-nav {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 16px 0; margin-top: 20px; border-top: 1px solid var(--border);
+}
+.chapter-nav button {
+  padding: 8px 18px; border: 1px solid var(--border); border-radius: var(--radius);
+  background: var(--bg-secondary); color: var(--text); cursor: pointer;
+  font-size: 13px; transition: all var(--transition);
+}
+.chapter-nav button:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
+.chapter-nav button:disabled { opacity: 0.4; cursor: not-allowed; }
+.chapter-nav button:disabled:hover { background: var(--bg-secondary); color: var(--text); border-color: var(--border); }
+
+/* ===== Section Styles ===== */
+.section { margin-bottom: 24px; }
+.section h4 { color: var(--primary); margin-bottom: 8px; font-size: 1.05em; }
+.section p { margin-bottom: 10px; }
+
+/* Blockquote tips */
+.tip {
+  padding: 14px 18px; border-left: 4px solid var(--primary);
+  background: var(--primary-light); border-radius: 0 var(--radius) var(--radius) 0;
+  margin: 14px 0;
+}
+.tip::before { content: "💡 "; }
+.warning {
+  padding: 14px 18px; border-left: 4px solid var(--danger);
+  background: #ffeaea; border-radius: 0 var(--radius) var(--radius) 0;
+  margin: 14px 0;
+}
+[data-theme="dark"] .warning { background: #3d2020; }
+.warning::before { content: "⚠️ "; }
+
+/* ===== Memory Aid Cards ===== */
+.memory-aids h4 { color: var(--primary); font-size: 1.1em; margin: 20px 0 10px; border-bottom: 2px solid var(--primary-light); padding-bottom: 6px; }
+
+/* Comparison Table */
+.comparison-table {
+  width: 100%; border-collapse: collapse; margin: 12px 0;
+  font-size: 14px;
+}
+.comparison-table th, .comparison-table td {
+  border: 1px solid var(--border); padding: 10px 12px; text-align: left;
+}
+.comparison-table th { background: var(--primary); color: #fff; font-weight: 600; }
+.comparison-table tr:nth-child(even) { background: var(--bg-secondary); }
+.comparison-table .confuse-col { color: var(--danger); font-weight: 600; }
+
+/* Mnemonic Card */
+.mnemonic-card {
+  background: linear-gradient(135deg, #ffeaa7, #fdcb6e);
+  color: #2d3436; padding: 18px; border-radius: var(--radius);
+  margin: 12px 0; font-size: 1.05em; line-height: 1.8;
+}
+[data-theme="dark"] .mnemonic-card { background: linear-gradient(135deg, #5a4a0a, #6d5a1a); color: #ffeaa7; }
+.mnemonic-card::before { content: "🎵 记忆口诀："; display: block; font-weight: bold; margin-bottom: 6px; }
+
+/* Mistake Card */
+.mistake-card {
+  border: 2px solid var(--danger); border-radius: var(--radius);
+  padding: 16px; margin: 12px 0; position: relative;
+}
+.mistake-card::before { content: "⚠️ 易错提醒"; position: absolute; top: -12px; left: 12px; background: var(--danger); color: #fff; padding: 2px 10px; border-radius: 4px; font-size: 13px; font-weight: bold; }
+.mistake-card .wrong { color: var(--danger); text-decoration: line-through; margin-bottom: 4px; }
+.mistake-card .right { color: var(--success); font-weight: 600; }
+.mistake-card .reason { color: var(--text-secondary); font-size: 13px; margin-top: 4px; }
+
+/* Mind Map */
+.mind-map {
+  font-family: "Courier New", monospace;
+  background: var(--bg-secondary);
+  padding: 18px; border-radius: var(--radius);
+  margin: 12px 0; white-space: pre; font-size: 13px;
+  line-height: 1.6; overflow-x: auto;
+}
+
+/* Analogy Map */
+.analogy-map {
+  background: var(--bg-secondary);
+  padding: 18px; border-radius: var(--radius);
+  margin: 12px 0; font-size: 14px; line-height: 1.8;
+}
+.analogy-map::before { content: "🗺️ 比喻地图"; display: block; font-weight: bold; color: var(--primary); margin-bottom: 8px; }
+.analogy-map .analogy-row { display: flex; gap: 12px; padding: 6px 0; border-bottom: 1px dashed var(--border); }
+.analogy-map .analogy-concept { flex: 1; }
+.analogy-map .analogy-arrow { color: var(--primary); font-weight: bold; }
+.analogy-map .analogy-real { flex: 1; color: var(--text-secondary); font-style: italic; }
+
+/* One-liner Summary */
+.one-liner-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px; margin: 12px 0;
+}
+.one-liner-card {
+  padding: 12px; background: var(--bg-secondary);
+  border-radius: var(--radius); border-left: 3px solid var(--primary);
+}
+
+/* ===== Summary Box ===== */
+.summary-box {
+  background: var(--primary-light);
+  padding: 18px; border-radius: var(--radius);
+  margin: 16px 0;
+}
+.summary-box h4 { color: var(--primary); margin-bottom: 8px; }
+
+/* ===== Exercises / Quiz ===== */
+.quiz-section h4 { color: var(--primary); font-size: 1.1em; margin: 24px 0 12px; }
+
+.quiz-item {
+  background: var(--bg-secondary);
+  padding: 18px; border-radius: var(--radius);
+  margin: 12px 0; border-left: 3px solid var(--primary);
+  transition: border-color var(--transition);
+}
+.quiz-item.correct-done { border-left-color: var(--success); }
+.quiz-item.incorrect-done { border-left-color: var(--danger); }
+.quiz-item .q { font-weight: 600; margin-bottom: 10px; }
+.quiz-item .q .type-badge {
+  font-size: 11px; padding: 2px 8px; border-radius: 4px;
+  background: var(--primary); color: #fff; margin-left: 8px;
+  vertical-align: middle;
+}
+
+/* Options */
+.options { display: flex; flex-direction: column; gap: 6px; }
+.option { display: flex; align-items: flex-start; gap: 8px; cursor: pointer; padding: 8px; border-radius: 4px; transition: background var(--transition); }
+.option:hover { background: var(--primary-light); }
+.option input[type="radio"], .option input[type="checkbox"] { margin-top: 3px; accent-color: var(--primary); }
+
+/* Fill-in-the-blank */
+.fill-blank { padding: 6px 10px; border: none; border-bottom: 2px dashed var(--primary); background: transparent; color: var(--text); font-size: 1em; outline: none; min-width: 120px; text-align: center; }
+
+/* Matching */
+.matching-table { width: 100%; border-collapse: collapse; margin: 8px 0; }
+.matching-table td, .matching-table th { padding: 8px; border: 1px solid var(--border); text-align: center; }
+.matching-table select { padding: 4px 8px; border: 1px solid var(--border); border-radius: 4px; background: var(--bg); color: var(--text); }
+
+/* Feedback */
+.feedback {
+  display: none; margin-top: 10px; padding: 10px; border-radius: 4px; font-size: 14px;
+}
+.feedback.show { display: block; }
+.feedback.correct { background: #d4edda; color: #155724; }
+[data-theme="dark"] .feedback.correct { background: #1a3a2a; color: #55efc4; }
+.feedback.incorrect { background: #fce4e4; color: #721c24; }
+[data-theme="dark"] .feedback.incorrect { background: #3a1a1a; color: #ff7675; }
+
+/* Check / Show Answer Button */
+.quiz-check-btn {
+  padding: 6px 14px; border: none; border-radius: var(--radius);
+  background: var(--primary); color: #fff; cursor: pointer;
+  margin-top: 8px; font-size: 13px; transition: opacity var(--transition);
+}
+.quiz-check-btn:hover { opacity: 0.85; }
+
+/* ===== Global Review ===== */
+.global-review {
+  background: var(--bg-secondary); padding: 24px; border-radius: var(--radius);
+  margin: 30px 0;
+}
+.global-review h2 { color: var(--primary); margin-bottom: 16px; }
+
+/* ===== Glossary ===== */
+.glossary { margin: 30px 0; }
+.glossary h2 { color: var(--primary); margin-bottom: 16px; }
+.glossary dt { font-weight: 600; margin-top: 10px; color: var(--primary); }
+.glossary dd { margin-left: 20px; color: var(--text-secondary); font-size: 14px; }
+.glossary dd a { color: var(--primary); text-decoration: none; font-size: 12px; }
+
+/* ===== Progress Checklist ===== */
+.progress-checklist { list-style: none; }
+.progress-checklist li { margin: 6px 0; }
+.progress-checklist input[type="checkbox"] { margin-right: 8px; accent-color: var(--success); }
+
+/* ===== Canvas Container ===== */
+.canvas-diagram { margin: 16px 0; text-align: center; }
+.canvas-diagram canvas { max-width: 100%; border: 1px solid var(--border); border-radius: var(--radius); }
+
+/* ===== Search Highlight ===== */
+.search-highlight { background: var(--warning); padding: 0 2px; border-radius: 2px; }
+
+/* ===== Back to Top ===== */
+.back-to-top {
+  position: fixed; bottom: 24px; right: 24px; z-index: 150;
+  width: 40px; height: 40px; border-radius: 50%;
+  border: 1px solid var(--border); background: var(--card-bg);
+  color: var(--text); cursor: pointer; font-size: 18px;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: var(--shadow); opacity: 0; transition: opacity 0.3s ease;
+}
+.back-to-top.visible { opacity: 1; }
+
+/* ===== Print Styles ===== */
+@media print {
+  .sidebar-toc, .sidebar-toggle, .top-bar, .back-to-top, .chapter-nav { display: none !important; }
+  .main-wrapper { margin-left: 0 !important; }
+  .chapter-body { display: block !important; }
+  .chapter { break-inside: avoid; }
+  .quiz-check-btn, .feedback { display: none !important; }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .sidebar-toc { transform: translateX(-100%); }
+  .sidebar-toc.mobile-open { transform: translateX(0); }
+  .sidebar-toggle { left: 8px; }
+  .main-wrapper { margin-left: 0 !important; }
+  .container { padding: 10px; }
+  .course-header h1 { font-size: 1.4em; }
+  .top-bar { padding: 8px 10px; gap: 6px; }
+  .top-bar input[type="search"] { min-width: 120px; font-size: 13px; }
+  .comparison-table { font-size: 12px; }
+  .comparison-table th, .comparison-table td { padding: 6px 8px; }
+  .one-liner-grid { grid-template-columns: 1fr; }
+}
+
+.sidebar-toc-header {
+  display: none;
+}
+
+.top-bar .sidebar-toggle {
+  position: relative;
+  left: auto;
+  top: auto;
+  z-index: auto;
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  margin-right: 8px;
+}
+
+.top-bar .sidebar-toggle.shifted {
+  left: auto;
+}
+
+@media (max-width: 900px) {
+  .sidebar-toggle {
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+  }
+  .top-bar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    padding: 6px 10px;
+    min-height: 48px;
+    gap: 6px;
+    align-items: center;
+  }
+  .top-bar input[type="search"] {
+    display: block;
+    flex: 1 1 auto;
+    min-width: 0;
+    width: auto;
+    max-width: none;
+    margin: 0;
+    padding: 7px 12px;
+    font-size: 13px;
+  }
+  .top-bar button:not(.sidebar-toggle),
+  .top-bar select,
+  .top-bar .progress-bar-wrap,
+  .top-bar .progress-text {
+    display: none;
+  }
+  .sidebar-toc {
+    width: min(84vw, 320px);
+    padding: 0;
+  }
+  .sidebar-toc-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px 10px;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    background: var(--sidebar-bg);
+    z-index: 2;
+  }
+  .sidebar-toc-header h3 {
+    margin: 0;
+    font-size: 15px;
+    letter-spacing: 0;
+    text-transform: none;
+  }
+  .sidebar-close {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    background: var(--bg-secondary);
+    color: var(--text);
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+  }
+  .sidebar-toc nav {
+    padding: 8px 12px 16px;
+  }
+}
+
+</style>
+</head>
+<body data-theme="light">
+
+<!-- FLOATING SIDEBAR TOC -->
+<aside class="sidebar-toc" id="sidebarToc">
+  <div class="sidebar-toc-header">
+    <h3>课程目录</h3>
+    <button class="sidebar-close" onclick="toggleSidebar()" title="收起目录">×</button>
+  </div>
+  <h3>📋 课程目录</h3>
+  <nav id="sidebarNav">
+    <a href="#ch0" class="toc-chapter">第0章：课程导引</a>
+<a href="#ch1" class="toc-chapter">第1章：这份指引到底在管什么</a>
+<a href="#ch2" class="toc-chapter">第2章：什么样的人才算研发人员</a>
+<a href="#ch3" class="toc-chapter">第3章：什么钱才能算研发投入</a>
+<a href="#ch4" class="toc-chapter">第4章：几类最容易出错的特殊情形</a>
+<a href="#ch5" class="toc-chapter">第5章：企业要建立哪些研发内控</a>
+<a href="#ch6" class="toc-chapter">第6章：中介机构会怎么核查</a>
+<a href="#ch7" class="toc-chapter">第7章：招股说明书里要怎么披露</a>
+<a href="#ch8" class="toc-chapter">第8章：全流程案例串讲与总复习</a>
+<a href="#globalReview" class="toc-chapter">课程总复习</a>
+<a href="#glossary" class="toc-chapter">术语表</a>
+<a href="#progressSection" class="toc-chapter">学习进度</a>
+  </nav>
+</aside>
+<!-- MAIN WRAPPER -->
+<div class="main-wrapper" id="mainWrapper">
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <button class="sidebar-toggle" id="sidebarToggle" onclick="toggleSidebar()" title="显示/隐藏目录">☰</button>
+  <input type="search" id="searchBox" placeholder="搜索课程内容..." oninput="doSearch()" onsearch="doSearch()">
+  <button onclick="toggleTheme()" title="切换深色/浅色模式">🌓 主题</button>
+  <button onclick="expandAll()">📖 展开</button>
+  <button onclick="collapseAll()">📕 折叠</button>
+  <button onclick="resetProgress()" title="重置学习进度">🔄 重置</button>
+  <select id="fontSize" onchange="changeFontSize()" title="字体大小">
+    <option value="14px">小</option>
+    <option value="16px" selected>中</option>
+    <option value="18px">大</option>
+  </select>
+  <div class="progress-bar-wrap" title="学习进度">
+    <div class="progress-bar-fill" id="progressBar" style="width:0%"></div>
+  </div>
+  <span class="progress-text" id="progressText">0%</span>
+  <span class="progress-text" title="使用键盘 ← → 切换章节">⌨️ ←→</span>
+</div>
+
+<div class="container">
+
+<!-- COURSE HEADER -->
+<header class="course-header">
+  <h1>发行类第9号：研发人员与研发投入零基础课程</h1>
+  <p>基于《监管规则适用指引——发行类第9号》的零基础自学课程</p>
+  <div class="course-meta">
+    <span>🎯 零基础友好</span>
+    <span>⏱️ 预计 8 小时</span>
+    <span>📅 2026-06-23</span>
+  </div>
+</header>
+
+<!-- ==================== COURSE CONTENT ==================== -->
+
+<div class="chapter open" id="ch0">
+  <div class="chapter-header" onclick="toggleChapter('ch0')">
+    <span class="arrow">▶</span>
+    <h3>第0章：课程导引</h3>
+    <input type="checkbox" class="chapter-checkbox" onchange="updateProgress()" onclick="event.stopPropagation()" title="标记本章完成">
+  </div>
+  <div class="chapter-body">
+    
+    
+    
+    
+    
+    <div class="chapter-nav">
+      <button onclick="" disabled>◀ 上一章</button>
+      <span>第0章：课程导引</span>
+      <button onclick="goToChapter('ch1')" >下一章 ▶</button>
+    </div>
+  </div>
+</div>
+
+<div class="chapter " id="ch1">
+  <div class="chapter-header" onclick="toggleChapter('ch1')">
+    <span class="arrow">▶</span>
+    <h3>第1章：这份指引到底在管什么</h3>
+    <input type="checkbox" class="chapter-checkbox" onchange="updateProgress()" onclick="event.stopPropagation()" title="标记本章完成">
+  </div>
+  <div class="chapter-body">
+    <div class="section"><h4>学习目标</h4><ul><li>说清楚“发行类第9号”这份指引的用途</li><li>理解它为什么重点盯研发人员和研发投入</li><li>能分辨这份规则更关心“真实发生”还是“会计分类”</li></ul></div>
+    <div class="section"><h4>核心内容</h4><h4>1.1 先用生活类比理解这份指引</h4><p>如果把企业说成一个准备参加重要考试的学生，那么招股说明书就是它交出去的正式答卷。  </p><p>监管机构和中介机构关心的，不只是“你答了什么”，还关心“你是不是自己真的会”“你的过程是不是真的”。</p><p>研发人员和研发投入，就是企业在申报时经常被重点关注的两项“硬证据”：</p><ul><li>研发人员代表企业是不是有持续研发能力</li><li>研发投入代表企业是不是持续真金白银地做研发</li></ul><p>这份指引就是一套“判卷标准”，用来减少企业在这两个问题上的随意认定和口径混乱。</p><h4>1.2 这份指引的直接作用</h4><p>这份指引明确了三件事：</p><p>1. 什么样的人可以认定为研发人员</p><p>2. 什么样的支出可以认定为研发投入</p><p>3. 企业、中介机构、律师分别要怎么留痕、核查和披露</p><p>所以它不是单纯的会计规则，也不是单纯的人事规则，而是一份把：</p><ul><li>业务真实性</li><li>会计核算</li><li>内部控制</li><li>信息披露</li></ul><p>串在一起的监管指引。</p><h4>1.3 监管真正想防什么</h4><p>表面上，这份规则在讨论“研发人员”和“研发投入”；本质上，它在防四类问题：</p><p>1. 把不该算研发的人硬算成研发人员</p><p>2. 把不该算研发的钱硬塞进研发投入</p><p>3. 用复杂合同或会计处理掩盖研发真实性不足</p><p>4. 对外披露口径和内部管理口径不一致</p><p>换句话说，监管不是只关心“数字漂不漂亮”，更关心：</p><ul><li>这些人是不是真的在做研发</li><li>这些钱是不是真的投到了研发</li><li>这些结论能不能被资料证明</li></ul><h4>1.4 这份指引适用在什么场景</h4><p>它主要服务于发行申报场景，特别是招股说明书相关披露和中介核查。</p><p>实际工作里，通常会影响这些环节：</p><ul><li>企业内部统计研发人员人数</li><li>企业归集研发费用和研发投入</li><li>项目组编写招股说明书中的研发相关章节</li><li>会计师、保荐机构、律师出核查意见</li><li>底稿中留存研发人员、研发投入、内控制度相关证据</li></ul><h4>1.5 先建立一个总框架</h4><p>后面学习时，你可以一直用下面这个“五问框架”：</p><p>1. 这个人是不是直接参与研发？</p><p>2. 这笔钱是不是实际投入研发？</p><p>3. 这项成果是谁控制、谁受益？</p><p>4. 这笔支出该按什么会计规则处理？</p><p>5. 对外披露口径和内部口径是不是一致？</p><p>只要这五问能答清楚，整份指引的主线就不会乱。</p></div>
+    <div class="section memory-aids"><h4>记忆辅助</h4><h4>对比表格</h4><h4>一句话总结</h4><div class="one-liner-grid"><div class="one-liner-card">研发人员看“人是不是真的在做研发”。</div><div class="one-liner-card">研发投入看“钱是不是真的投到了研发”。</div><div class="one-liner-card">核查看“这些说法有没有证据能撑住”。</div><div class="one-liner-card">披露看“对外讲法和内部做法是不是一致”。</div></div><h4>易错警示卡</h4><div class="mistake-card"><div><strong>常见错误</strong>：把这份指引理解成“只要会计上进了研发支出，就肯定算研发投入”。</div><div></div><div><strong>为什么会错</strong>：这份指引强调的是“实际投入研发活动”和“准确归集核算”，不是只看账面科目名称。</div><div></div><div><strong>正确理解</strong>：账务处理只是结果的一部分，前面还要先过真实性、相关性、可归集性和准则适用四道关。</div><div></div><div><strong>记住</strong>：像研发，不等于真研发；记进研发支出，也不等于一定能算研发投入。</div></div></div>
+    <div class="summary-box"><h4>本章小结</h4><div>1. 这份指引是发行申报场景下关于研发人员和研发投入的统一判断框架。</div><div>2. 它既管认定，也管核算、内控、核查和披露。</div><div>3. 它最核心的目标，是防止“人和钱被包装成研发”。</div></div>
+    <div class="section quiz-section"><h4>知识检测</h4><h4>一、判断题</h4>
+<div class="quiz-item" id="q-1-1" data-type="radio" data-correct="错误" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">这份指引主要是为了告诉企业如何提高研发投入金额。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-1-1" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-1-1" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-1-1')">检查答案</button>
+  <div class="feedback"></div>
+</div>
+<div class="quiz-item" id="q-1-2" data-type="radio" data-correct="错误" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">这份指引只和会计核算有关，和中介核查关系不大。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-1-2" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-1-2" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-1-2')">检查答案</button>
+  <div class="feedback"></div>
+</div>
+<div class="quiz-item" id="q-1-3" data-type="radio" data-correct="正确" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">监管关注研发人员和研发投入，本质上是在关注企业研发活动的真实性。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-1-3" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-1-3" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-1-3')">检查答案</button>
+  <div class="feedback"></div>
+</div><h4>二、单选题</h4><div class="quiz-item" id="q-1-4" data-type="radio" data-correct="B" data-explain="请结合章节内容和参考答案判断。"><div class="q">这份指引最核心的功能是： <span class="type-badge">单选题</span></div><div class="options"><label class="option"><input type="radio" name="q-1-4" value="A"> A. 统一税务加计扣除与高新认定的申报口径</label><label class="option"><input type="radio" name="q-1-4" value="B"> B. 统一研发人员和研发投入的认定、核查与披露逻辑</label><label class="option"><input type="radio" name="q-1-4" value="C"> C. 单独规定研发费用会计分录和报表列示方法</label><label class="option"><input type="radio" name="q-1-4" value="D"> D. 作为问询回复阶段临时补材料的操作模板</label></div><button class="quiz-check-btn" onclick="checkAnswer('q-1-4')">检查答案</button><div class="feedback"></div></div><div class="quiz-item" id="q-1-5" data-type="radio" data-correct="C" data-explain="请结合章节内容和参考答案判断。"><div class="q">下列哪一项最符合这份指引的关注重点？ <span class="type-badge">单选题</span></div><div class="options"><label class="option"><input type="radio" name="q-1-5" value="A"> A. 研发投入金额是否持续增长</label><label class="option"><input type="radio" name="q-1-5" value="B"> B. 企业内部制度文件是否形式完备</label><label class="option"><input type="radio" name="q-1-5" value="C"> C. 研发相关认定是否真实、合理、可验证</label><label class="option"><input type="radio" name="q-1-5" value="D"> D. 与同行业可比公司平均水平是否接近</label></div><button class="quiz-check-btn" onclick="checkAnswer('q-1-5')">检查答案</button><div class="feedback"></div></div><h4>三、概念辨析</h4><div class="quiz-item" id="q-1-6" data-type="text" data-explain="“研发投入”强调支出是否真实投入研发并符合归集口径； “记入研发支出科目的金额”只是账面归类结果，二者不一定完全等同。"><div class="q">“研发投入”与“记入研发支出科目的金额”有什么区别？请用一句话说明核心差异。 <span class="type-badge">分析题</span></div><button class="quiz-check-btn" onclick="checkAnswer('q-1-6')">显示参考答案</button><div class="feedback"></div></div></div>
+    <div class="chapter-nav">
+      <button onclick="goToChapter('ch0')" >◀ 上一章</button>
+      <span>第1章：这份指引到底在管什么</span>
+      <button onclick="goToChapter('ch2')" >下一章 ▶</button>
+    </div>
+  </div>
+</div>
+
+<div class="chapter " id="ch2">
+  <div class="chapter-header" onclick="toggleChapter('ch2')">
+    <span class="arrow">▶</span>
+    <h3>第2章：什么样的人才算研发人员</h3>
+    <input type="checkbox" class="chapter-checkbox" onchange="updateProgress()" onclick="event.stopPropagation()" title="标记本章完成">
+  </div>
+  <div class="chapter-body">
+    <div class="section"><h4>学习目标</h4><ul><li>理解研发人员的正式定义</li><li>能判断哪些人原则上不能算研发人员</li><li>能识别非全时研发、受托研发、非标准聘用三类高风险情形</li></ul></div>
+    <div class="section"><h4>核心内容</h4><h4>2.1 研发人员的基本定义</h4><p>先记一句最核心的话：  </p><p>研发人员，不是“挂在研发部门的人”，而是“直接从事研发活动的人，以及与研发活动密切相关的管理人员和直接服务人员”。</p><p>这一定义至少包含三层：</p><p>1. 直接做研发项目的专业人员</p><p>2. 在专业人员指导下参与研发的技术人员</p><p>3. 参与研发活动的技工等直接支持人员</p><p>所以判断研发人员时，要看“实际参与研发的程度”，而不是只看：</p><ul><li>所在部门</li><li>岗位名称</li><li>劳动合同上的称呼</li></ul><h4>2.2 哪些人不能算研发人员</h4><p>指引明确举了反例：与研发活动无直接关系的人员，不能认定为研发人员。</p><p>典型例子包括：</p><ul><li>文秘</li><li>前台</li><li>餐饮</li><li>安保</li><li>其他后勤支持人员</li></ul><p>为什么这些人不能算？  </p><p>因为他们服务的是企业整体运营，不是直接服务某项研发活动。</p><h4>2.3 关于非全时研发人员</h4><p>这是实务里最容易出争议的一类。</p><p>非全时研发人员，指既从事研发活动，也从事非研发活动的人。  </p><p>指引给出的核心规则是：</p><ul><li>当期研发工时占比低于 <code>50%</code> 的，原则上不应认定为研发人员。</li></ul><p>这里有两个关键词必须记牢：</p><ul><li><strong>工时占比</strong></li><li><strong>原则上</strong></li></ul><p>“工时占比”说明判断要落到记录上，不能靠口头估计。  </p><p>“原则上”说明不是绝对禁止，但如果仍要认定，就必须审慎论证。</p><p>也就是说，如果企业坚持把这类人员算作研发人员，就要能说明：</p><ul><li>他实际对研发做了什么贡献</li><li>为什么虽然研发工时不高，仍然可以合理纳入</li><li>这种认定有没有充分资料支撑</li></ul><h4>2.4 关于受托研发人员</h4><p>受托研发，是指发行人与客户签订合同，为客户提供研发服务。</p><p>指引的基本态度是：</p><ul><li>单纯从事受托研发的人员，原则上不能认定为发行人的研发人员。</li></ul><p>为什么？  </p><p>因为这类研发活动的成果，并不当然归发行人控制，也不当然代表发行人自己的研发能力。</p><p>只有在少数例外情况下，如果有充分证据表明：</p><ul><li>履约过程中形成的研发成果由发行人能够控制</li><li>该成果预期能给发行人带来收益</li></ul><p>才可能进一步讨论其合理性。</p><h4>2.5 关于研发人员聘用形式</h4><p>指引要求：</p><ul><li>研发人员原则上应为与发行人签订劳动合同的人员。</li></ul><p>这背后的监管逻辑很简单：</p><ul><li>劳动合同关系更稳定</li><li>权责更明确</li><li>身份更可核验</li></ul><p>因此：</p><ul><li>劳务派遣人员原则上不能认定为研发人员</li><li>未签劳动合同、签其他形式合同的人员，如要认定为研发人员，必须补充论证</li></ul><p>论证通常要覆盖：</p><ul><li>专业背景</li><li>工作内容</li><li>未签劳动合同的原因</li><li>这种认定是否合理</li></ul><h4>2.6 为什么口径一致也很重要</h4><p>研发人员聘用形式的计算口径，还要和招股说明书披露员工人数的口径一致。</p><p>这意味着企业不能：</p><ul><li>内部讲一套</li><li>招股书披露一套</li><li>核查时再临时改一套</li></ul><p>否则即使单个判断看起来勉强说得过去，整体口径也会失真。</p></div>
+    <div class="section memory-aids"><h4>记忆辅助</h4><h4>对比表格</h4><h4>比喻地图</h4><div class="analogy-map"><div><strong>比喻地图：谁算“球队主力”</strong></div><div></div><div>| 抽象概念 | -&gt; | 日常类比 |</div><div>|----------|---|----------|</div><div>| 研发人员 | -&gt; | 真正上场参加比赛、直接影响比分的球员 |</div><div>| 与研发密切相关的直接服务人员 | -&gt; | 场边直接服务比赛、与比赛结果紧密相连的技术保障人员 |</div><div>| 非研发后勤人员 | -&gt; | 虽然服务整支球队，但不直接参与比赛的后勤支持 |</div><div>| 单纯受托研发人员 | -&gt; | 临时代表别的队打比赛的人，不能直接算成你队的自有实力 |</div><div></div><div><strong>整体比喻</strong>：监管想看的不是“球队场馆里一共有多少人”，而是“真正代表你这支队伍上场并形成核心能力的有多少人”。</div></div><h4>一句话总结</h4><div class="one-liner-grid"><div class="one-liner-card">看研发人员，不看名册，看实干。</div><div class="one-liner-card">看非全时人员，不看嘴说，看工时。</div><div class="one-liner-card">看受托研发人员，不看是否做研发，看成果归谁。</div><div class="one-liner-card">看聘用形式，不看能不能解释，看能不能证明。</div></div></div>
+    <div class="summary-box"><h4>本章小结</h4><div>1. 研发人员认定的核心是“是否直接参与研发活动或直接服务研发活动”。</div><div>2. 非全时研发、受托研发、非标准聘用，是最容易出问题的三类情形。</div><div>3. 任何偏离原则的认定，都必须有清楚、可验证的论证依据。</div></div>
+    <div class="section quiz-section"><h4>知识检测</h4><h4>一、判断题</h4>
+<div class="quiz-item" id="q-2-1" data-type="radio" data-correct="错误" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">只要员工在研发部门工作，就当然属于研发人员。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-2-1" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-2-1" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-2-1')">检查答案</button>
+  <div class="feedback"></div>
+</div>
+<div class="quiz-item" id="q-2-2" data-type="radio" data-correct="正确" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">非全时研发人员当期研发工时占比低于50%的，原则上不应认定为研发人员。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-2-2" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-2-2" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-2-2')">检查答案</button>
+  <div class="feedback"></div>
+</div>
+<div class="quiz-item" id="q-2-3" data-type="radio" data-correct="正确" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">单纯从事受托研发的人员，原则上不能认定为发行人的研发人员。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-2-3" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-2-3" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-2-3')">检查答案</button>
+  <div class="feedback"></div>
+</div><h4>二、单选题</h4><div class="quiz-item" id="q-2-4" data-type="radio" data-correct="B" data-explain="请结合章节内容和参考答案判断。"><div class="q">下列哪类人员最符合研发人员的典型定义？ <span class="type-badge">单选题</span></div><div class="options"><label class="option"><input type="radio" name="q-2-4" value="A"> A. 在研发部门任职但主要从事行政协调的人员</label><label class="option"><input type="radio" name="q-2-4" value="B"> B. 直接从事研发项目的专业人员</label><label class="option"><input type="radio" name="q-2-4" value="C"> C. 为研发部门提供后勤保障但不直接参与研发活动的人员</label><label class="option"><input type="radio" name="q-2-4" value="D"> D. 参与市场调研但不直接服务研发项目的人员</label></div><button class="quiz-check-btn" onclick="checkAnswer('q-2-4')">检查答案</button><div class="feedback"></div></div><div class="quiz-item" id="q-2-5" data-type="radio" data-correct="C" data-explain="请结合章节内容和参考答案判断。"><div class="q">企业把未签劳动合同的人员认定为研发人员时，最需要补充说明的是： <span class="type-badge">单选题</span></div><div class="options"><label class="option"><input type="radio" name="q-2-5" value="A"> A. 其考勤记录是否完整、办公地点是否固定</label><label class="option"><input type="radio" name="q-2-5" value="B"> B. 其薪酬水平是否高于同岗位平均值</label><label class="option"><input type="radio" name="q-2-5" value="C"> C. 其专业背景、工作内容及未签劳动合同原因</label><label class="option"><input type="radio" name="q-2-5" value="D"> D. 其个人意愿及与团队配合是否稳定</label></div><button class="quiz-check-btn" onclick="checkAnswer('q-2-5')">检查答案</button><div class="feedback"></div></div><h4>三、概念辨析</h4><div class="quiz-item" id="q-2-6" data-type="text" data-explain="“在研发部门任职”是组织关系； “能认定为研发人员”是实质判断，必须看实际工作内容、研发参与程度和证据支持。"><div class="q">“在研发部门任职”和“能认定为研发人员”有什么区别？ <span class="type-badge">分析题</span></div><button class="quiz-check-btn" onclick="checkAnswer('q-2-6')">显示参考答案</button><div class="feedback"></div></div></div>
+    <div class="chapter-nav">
+      <button onclick="goToChapter('ch1')" >◀ 上一章</button>
+      <span>第2章：什么样的人才算研发人员</span>
+      <button onclick="goToChapter('ch3')" >下一章 ▶</button>
+    </div>
+  </div>
+</div>
+
+<div class="chapter " id="ch3">
+  <div class="chapter-header" onclick="toggleChapter('ch3')">
+    <span class="arrow">▶</span>
+    <h3>第3章：什么钱才能算研发投入</h3>
+    <input type="checkbox" class="chapter-checkbox" onchange="updateProgress()" onclick="event.stopPropagation()" title="标记本章完成">
+  </div>
+  <div class="chapter-body">
+    <div class="section"><h4>学习目标</h4><ul><li>理解研发投入的正式定义与基本计算口径</li><li>说清楚常见研发投入构成</li><li>理解“实际投入研发”与“准确归集核算”这两个前提</li></ul></div>
+    <div class="section"><h4>核心内容</h4><h4>3.1 研发投入的本质</h4><p>研发投入，简单说，就是企业为了研发活动实际付出的、与研发直接相关的支出。</p><p>请注意三个关键词：</p><ul><li><strong>研发活动</strong></li><li><strong>直接相关</strong></li><li><strong>实际投入</strong></li></ul><p>这意味着不是所有“看起来跟技术有关”的费用都能算研发投入，也不是所有进了某个会计科目的费用都当然能算。</p><h4>3.2 常见研发投入包括什么</h4><p>指引列举的常见项目包括：</p><ul><li>研发人员职工薪酬</li><li>直接投入费用</li><li>折旧费用与长期待摊费用</li><li>设计费用</li><li>装备调试费</li><li>无形资产摊销费用</li><li>委托外部研究开发费用</li><li>其他费用</li></ul><p>这些项目只是常见构成，不代表只要名字对上就一定能计入。  </p><p>关键仍然是：这笔钱是否实际投到了研发活动中。</p><h4>3.3 研发投入的基本计算口径</h4><p>指引给出的原则是：</p><ul><li>本期研发投入 = 本期费用化的研发费用 + 本期资本化的开发支出</li></ul><p>这句话特别重要，因为它把两个容易混淆的部分放到了一起：</p><ul><li>费用化：当期直接计入费用</li><li>资本化：符合条件的开发支出形成资产</li></ul><p>所以“研发投入”不是只看费用表上的研发费用，还要考虑资本化开发支出。</p><h4>3.4 为什么“实际投入研发活动”是前提</h4><p>监管最怕的是“看起来像研发，实际上不是研发”。</p><p>因此，研发投入的归集和计算必须建立在一个前提上：</p><ul><li>相关资源真的投入到了研发活动</li></ul><p>比如：</p><ul><li>人员薪酬，要看这个人是不是真的做研发</li><li>设备折旧，要看设备是不是真的用于研发</li><li>场地费用，要看场地是不是真的承载研发活动</li></ul><p>如果只是企业一般经营使用，或者无法证明与研发直接相关，就不能随意计入。</p><h4>3.5 为什么“准确归集核算”同样关键</h4><p>就算一项资源确实被用于研发，如果企业：</p><ul><li>没有记录</li><li>不能区分研发与非研发部分</li><li>不能给出合理分摊依据</li></ul><p>那么它仍然可能不能计入研发支出。</p><p>也就是说，研发投入不仅要求“真的投了”，还要求“算得清楚”。</p><h4>3.6 三类最常见的基础项目</h4><p>##### 研发人员职工薪酬</p><p>这类支出要跟研发人员认定联动起来看。</p><p>如果存在非全时研发人员，就要能统计他们从事不同职能的工时情况，再按工时将相关薪酬合理分摊进研发支出。</p><p>##### 共用资源费用</p><p>设备、产线、场地等常常会被研发和生产共同使用。  </p><p>这时要准确记录使用情况，并按工时占比、面积占比等标准合理分配。</p><p>关键结论：</p><ul><li>无法合理分配或未分配的，不得计入研发支出。</li></ul><p>##### 研发过程中产出的产品或副产品</p><p>这类内容非常容易被忽视。</p><p>如果研发过程中产出了产品或副产品，这些产品符合存货或其他资产确认条件时，应按相关准则确认并核算其成本。  </p><p>原则上，这些产品或副产品的成本，不得计入研发投入。</p></div>
+    <div class="section memory-aids"><h4>记忆辅助</h4><h4>对比表格</h4><h4>思维导图概要</h4><div class="mind-map">研发投入
+├─ 前提一：真实投入研发活动
+│  ├─ 人员真的做研发
+│  ├─ 设备真的用于研发
+│  └─ 场地/材料真的用于研发
+├─ 前提二：准确归集核算
+│  ├─ 有工时记录
+│  ├─ 有分配标准
+│  └─ 有项目台账
+├─ 常见项目
+│  ├─ 薪酬
+│  ├─ 直接投入
+│  ├─ 折旧/摊销
+│  ├─ 设计/调试
+│  └─ 委外研发
+└─ 典型排除
+   ├─ 无法分配的共用资源
+   ├─ 与研发无关的费用
+   └─ 研发过程中产出产品的成本</div><h4>一句话总结</h4><div class="one-liner-grid"><div class="one-liner-card">研发投入不是“看起来像研发的钱”，而是“真投研发、算得清楚的钱”。</div></div></div>
+    <div class="summary-box"><h4>本章小结</h4><div>1. 研发投入的核心判断要抓住“实际投入研发活动”和“准确归集核算”。</div><div>2. 研发投入的计算口径不仅看费用化研发费用，还要看资本化开发支出。</div><div>3. 共用资源分不清、产品副产品成本混进去，都是高频错误。</div></div>
+    <div class="section quiz-section"><h4>知识检测</h4><h4>一、判断题</h4>
+<div class="quiz-item" id="q-3-1" data-type="radio" data-correct="错误" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">只要属于技术相关支出，就可以计入研发投入。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-3-1" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-3-1" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-3-1')">检查答案</button>
+  <div class="feedback"></div>
+</div>
+<div class="quiz-item" id="q-3-2" data-type="radio" data-correct="正确" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">本期研发投入原则上包括本期费用化研发费用和本期资本化开发支出。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-3-2" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-3-2" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-3-2')">检查答案</button>
+  <div class="feedback"></div>
+</div>
+<div class="quiz-item" id="q-3-3" data-type="radio" data-correct="正确" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">共用资源费用如果无法合理分配，不得计入研发支出。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-3-3" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-3-3" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-3-3')">检查答案</button>
+  <div class="feedback"></div>
+</div><h4>二、单选题</h4><div class="quiz-item" id="q-3-4" data-type="radio" data-correct="B" data-explain="请结合章节内容和参考答案判断。"><div class="q">判断一笔费用能否进入研发投入，最核心的两个前提是： <span class="type-badge">单选题</span></div><div class="options"><label class="option"><input type="radio" name="q-3-4" value="A"> A. 金额较大、已经在账上费用化处理</label><label class="option"><input type="radio" name="q-3-4" value="B"> B. 实际投入研发活动、准确归集核算</label><label class="option"><input type="radio" name="q-3-4" value="C"> C. 已经完成研发立项、取得管理层批准</label><label class="option"><input type="radio" name="q-3-4" value="D"> D. 与同行业公司口径接近、便于对外披露</label></div><button class="quiz-check-btn" onclick="checkAnswer('q-3-4')">检查答案</button><div class="feedback"></div></div><div class="quiz-item" id="q-3-5" data-type="radio" data-correct="C" data-explain="请结合章节内容和参考答案判断。"><div class="q">下列哪项原则上不得计入研发投入？ <span class="type-badge">单选题</span></div><div class="options"><label class="option"><input type="radio" name="q-3-5" value="A"> A. 与研发项目直接相关且按工时归集的人员薪酬</label><label class="option"><input type="radio" name="q-3-5" value="B"> B. 可按合理标准分摊到研发项目的共用设备折旧</label><label class="option"><input type="radio" name="q-3-5" value="C"> C. 研发过程中产出的产品或副产品成本</label><label class="option"><input type="radio" name="q-3-5" value="D"> D. 符合条件并纳入研发投入口径的资本化开发支出</label></div><button class="quiz-check-btn" onclick="checkAnswer('q-3-5')">检查答案</button><div class="feedback"></div></div><h4>三、概念辨析</h4><div class="quiz-item" id="q-3-6" data-type="text" data-explain="二者不是互相排斥的口径； 在研发投入计算里，两者通常需要合并考虑，即“费用化研发费用 + 资本化开发支出”。"><div class="q">“费用化研发费用”和“资本化开发支出”在研发投入口径里是什么关系？ <span class="type-badge">分析题</span></div><button class="quiz-check-btn" onclick="checkAnswer('q-3-6')">显示参考答案</button><div class="feedback"></div></div></div>
+    <div class="chapter-nav">
+      <button onclick="goToChapter('ch2')" >◀ 上一章</button>
+      <span>第3章：什么钱才能算研发投入</span>
+      <button onclick="goToChapter('ch4')" >下一章 ▶</button>
+    </div>
+  </div>
+</div>
+
+<div class="chapter " id="ch4">
+  <div class="chapter-header" onclick="toggleChapter('ch4')">
+    <span class="arrow">▶</span>
+    <h3>第4章：几类最容易出错的特殊情形</h3>
+    <input type="checkbox" class="chapter-checkbox" onchange="updateProgress()" onclick="event.stopPropagation()" title="标记本章完成">
+  </div>
+  <div class="chapter-body">
+    <div class="section"><h4>学习目标</h4><ul><li>理解国拨研发项目、受托研发、委外研发、股份支付四类特殊情形的判断重点</li><li>能识别“成果控制权”“准则适用”“可归集性”三条主线</li><li>知道为什么这些场景最容易被质疑虚增研发投入</li></ul></div>
+    <div class="section"><h4>核心内容</h4><h4>4.1 国拨研发项目：先看适用什么准则</h4><p>国拨研发项目，是发行人承担由国家或指定方拨付款项的研发项目。</p><p>这里最关键的，不是先问“能不能算研发支出”，而是先问：</p><ul><li>从政府取得的经济资源，适用哪一项会计准则？</li></ul><p>指引给出两类核心情形：</p><p>1. 适用《企业会计准则第14号——收入》的，相关支出原则上不得计入研发支出。</p><p>2. 适用《企业会计准则第16号——政府补助》的，如果采用净额法核算政府补助，在计算研发投入指标时可以按总额法做相应调整。</p><p>所以这类问题的思路一定是：</p><ul><li>先判断准则</li><li>再判断口径</li><li>最后判断研发投入指标怎么表达</li></ul><h4>4.2 受托研发：重点不是“有没有做研发”，而是“成果归谁”</h4><p>受托研发最容易误判。</p><p>很多人看到企业确实做了研发动作，就直觉认为：</p><ul><li>人员可以算研发人员</li><li>支出可以算研发投入</li></ul><p>这恰恰是指引最想纠正的地方。</p><p>在受托研发中，要抓三件事：</p><p>1. 发行人能不能控制相关研发成果</p><p>2. 研发成果是否预期给发行人带来经济利益</p><p>3. 发行人能不能准确归集和核算相关支出</p><p>如果不能控制成果，相关支出通常应按合同履约成本处理，最终进入营业成本，原则上不得计入研发支出。</p><h4>4.3 委外研发：外包不是原罪，虚构才是风险</h4><p>委外研发本身并不违规，关键在于它是否真实、必要、合理、公允。</p><p>要成立，通常需要满足：</p><ul><li>签订委外研发合同</li><li>相关项目与发行人的研发项目或经营活动直接相关</li><li>委外研发具备必要性</li><li>交易价格具备合理性和公允性</li><li>研发成果归属于发行人</li></ul><p>监管尤其警惕两类问题：</p><p>1. 把与研发无关的成本通过委外研发包装进研发支出</p><p>2. 虚构委外研发交易来做大研发投入</p><h4>4.4 研发投入中含股份支付：最怕被用来调指标</h4><p>如果企业把股份支付费用计入研发支出，指引要求重点关注：</p><ul><li>股份支付的背景</li><li>授予对象及其职务、职责</li><li>权益工具数量及确定依据</li><li>与授予对象贡献是否匹配</li><li>公允价值及确认方法</li><li>等待期及费用分摊方式是否合理</li></ul><p>为什么这类问题敏感？  </p><p>因为股份支付会直接影响研发投入金额，如果依据不清、对象不匹配，就容易被怀疑是为了调节研发投入指标。</p><h4>4.5 研发过程中产出的产品或副产品</h4><p>这一类问题看似简单，实务中却非常容易“混”。</p><p>如果研发过程中产出产品或副产品：</p><ul><li>符合存货确认条件的，应确认为存货</li><li>符合其他资产确认条件的，应确认为相关资产</li></ul><p>并且其成本应按相关会计准则归集处理。  </p><p>原则上，这些产品或副产品成本不得计入研发投入。</p><h4>4.6 用一个统一判断框架看特殊情形</h4><p>只要你碰到特殊情形，都可以按这个三步法：</p><p>1. 谁控制成果？</p><p>2. 适用什么准则？</p><p>3. 能不能准确归集？</p><p>只要三步中有一步说不清，这项支出就很难稳当地进入研发投入。</p></div>
+    <div class="section memory-aids"><h4>记忆辅助</h4><h4>对比表格</h4><h4>易错警示卡</h4><div class="mistake-card"><div><strong>常见错误</strong>：把受托研发、委外研发、国拨项目都统称成“研发项目”，然后统一按研发支出处理。</div><div></div><div><strong>为什么会错</strong>：这些场景虽然都带“研发”二字，但控制权、准则适用、成本归属和收益归属完全可能不同。</div><div></div><div><strong>正确理解</strong>：名称相同，不代表会计处理和研发投入口径相同。</div><div></div><div><strong>记住</strong>：先分场景，再下结论。</div></div><h4>一句话总结</h4><div class="one-liner-grid"><div class="one-liner-card">特殊情形不怕复杂，怕“混着看”。</div><div class="one-liner-card">只要成果归属、准则适用、支出归集三点没讲清，就别急着算研发投入。</div></div></div>
+    <div class="summary-box"><h4>本章小结</h4><div>1. 特殊情形的判断核心，不在“名字像不像研发”，而在成果控制权、准则适用和归集能力。</div><div>2. 受托研发和委外研发是最常见、也最容易被质疑的高风险区。</div><div>3. 股份支付、产品副产品、政府资源处理不当，都会直接扭曲研发投入指标。</div></div>
+    <div class="section quiz-section"><h4>知识检测</h4><h4>一、判断题</h4>
+<div class="quiz-item" id="q-4-1" data-type="radio" data-correct="错误" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">只要项目名称里有“研发”，相关支出就可以进入研发投入。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-4-1" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-4-1" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-4-1')">检查答案</button>
+  <div class="feedback"></div>
+</div>
+<div class="quiz-item" id="q-4-2" data-type="radio" data-correct="正确" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">受托研发中，若发行人不能控制相关研发成果，相关支出原则上不得计入研发支出。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-4-2" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-4-2" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-4-2')">检查答案</button>
+  <div class="feedback"></div>
+</div>
+<div class="quiz-item" id="q-4-3" data-type="radio" data-correct="错误" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">委外研发只要签了合同，就一定可以计入研发投入。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-4-3" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-4-3" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-4-3')">检查答案</button>
+  <div class="feedback"></div>
+</div><h4>二、单选题</h4><div class="quiz-item" id="q-4-4" data-type="radio" data-correct="C" data-explain="请结合章节内容和参考答案判断。"><div class="q">判断特殊研发情形时，最关键的第一反应应是： <span class="type-badge">单选题</span></div><div class="options"><label class="option"><input type="radio" name="q-4-4" value="A"> A. 先看金额和增幅是否足够显著</label><label class="option"><input type="radio" name="q-4-4" value="B"> B. 先看合同或项目名称中是否明确写了“研发”</label><label class="option"><input type="radio" name="q-4-4" value="C"> C. 先看成果控制权、准则适用和归集能力</label><label class="option"><input type="radio" name="q-4-4" value="D"> D. 先看企业是否已经在招股书中作了披露</label></div><button class="quiz-check-btn" onclick="checkAnswer('q-4-4')">检查答案</button><div class="feedback"></div></div><div class="quiz-item" id="q-4-5" data-type="radio" data-correct="C" data-explain="请结合章节内容和参考答案判断。"><div class="q">下列哪一项最符合指引对委外研发的要求？ <span class="type-badge">单选题</span></div><div class="options"><label class="option"><input type="radio" name="q-4-5" value="A"> A. 只要签了委外合同并完成付款，就可以直接计入研发投入</label><label class="option"><input type="radio" name="q-4-5" value="B"> B. 只要受托方具备研发资质，就可以直接认定为合规</label><label class="option"><input type="radio" name="q-4-5" value="C"> C. 必须具有必要性、合理性、公允性，且成果归属于发行人</label><label class="option"><input type="radio" name="q-4-5" value="D"> D. 只要形成专利或技术成果，成果就当然归属于发行人</label></div><button class="quiz-check-btn" onclick="checkAnswer('q-4-5')">检查答案</button><div class="feedback"></div></div><h4>三、概念辨析</h4><div class="quiz-item" id="q-4-6" data-type="text" data-explain="核心差异不在于“有没有研发动作”，而在于研发成果由谁控制、给谁带来经济利益，以及相关支出应按什么规则处理。"><div class="q">“受托研发支出”与“发行人自主研发支出”的核心区别是什么？ <span class="type-badge">分析题</span></div><button class="quiz-check-btn" onclick="checkAnswer('q-4-6')">显示参考答案</button><div class="feedback"></div></div></div>
+    <div class="chapter-nav">
+      <button onclick="goToChapter('ch3')" >◀ 上一章</button>
+      <span>第4章：几类最容易出错的特殊情形</span>
+      <button onclick="goToChapter('ch5')" >下一章 ▶</button>
+    </div>
+  </div>
+</div>
+
+<div class="chapter " id="ch5">
+  <div class="chapter-header" onclick="toggleChapter('ch5')">
+    <span class="arrow">▶</span>
+    <h3>第5章：企业要建立哪些研发内控</h3>
+    <input type="checkbox" class="chapter-checkbox" onchange="updateProgress()" onclick="event.stopPropagation()" title="标记本章完成">
+  </div>
+  <div class="chapter-body">
+    <div class="section"><h4>学习目标</h4><ul><li>理解研发内控为什么不是“附属材料”，而是研发认定的基础</li><li>说清研发内控至少要覆盖哪些制度和记录</li><li>知道为什么没有台账、工时、流程，就很难证明研发真实性</li></ul></div>
+    <div class="section"><h4>核心内容</h4><h4>5.1 为什么研发内控这么重要</h4><p>如果说研发人员和研发投入是结论，那么研发内控就是支撑这些结论的过程证据。</p><p>监管为什么反复强调内控？  </p><p>因为很多争议不是出在“完全没做研发”，而是出在：</p><ul><li>做了，但说不清谁做的</li><li>做了，但说不清花了多少钱</li><li>做了，但资料留不下来</li></ul><p>内控的作用，就是把“口头上做过”变成“资料上可证明”。</p><h4>5.2 指引要求企业建立什么制度</h4><p>企业应制定并严格执行研发相关内控制度，至少包括：</p><ul><li>研发活动认定制度</li><li>研发人员认定制度</li><li>研发业务流程</li><li>研发项目管理制度</li><li>研发人员管理制度</li></ul><p>这些制度的共同作用，是把“什么算研发、谁算研发、钱怎么进研发、资料怎么留”全都前置约定清楚。</p><h4>5.3 企业至少要管住哪几件事</h4><p>##### 研发项目</p><p>要做到：</p><ul><li>研发项目有设立</li><li>研发项目有过程跟踪</li><li>研发项目有台账</li><li>研发项目有阶段记录</li></ul><p>##### 研发人员</p><p>要做到：</p><ul><li>研发人员范围清楚</li><li>全时/非全时区分清楚</li><li>工时记录准确</li><li>岗位职责与研发内容能对应起来</li></ul><p>##### 研发支出</p><p>要做到：</p><ul><li>开支范围明确</li><li>归集标准明确</li><li>审批流程明确</li><li>分摊逻辑明确</li></ul><p>##### 研发资源</p><p>要做到：</p><ul><li>领料用料可追踪</li><li>共用设备使用情况可记录</li><li>折旧摊销归集逻辑可说明</li></ul><h4>5.4 台账为什么是高频关键词</h4><p>台账本质上是把分散的研发活动串成一条证据链。</p><p>它至少应该能帮助回答这些问题：</p><ul><li>这个研发项目是什么时候开始的？</li><li>谁参与了？</li><li>每个人投入了多少工时？</li><li>用了哪些材料、设备和资源？</li><li>哪些费用进入了研发支出？</li><li>依据是什么？</li></ul><p>如果这些问题不能靠台账和相关记录回答，后续核查就容易落回“企业口头解释”，说服力会大幅下降。</p><h4>5.5 内控常见失效表现</h4><p>常见问题包括：</p><ul><li>有制度但不执行</li><li>有项目名但没有过程记录</li><li>有研发人员名单但没有工时记录</li><li>有费用归集结果但没有分配依据</li><li>研发和生产共用资源却没有区分记录</li></ul><p>这些问题最致命的地方在于：  </p><p>它们不一定直接证明企业虚假，但会让企业难以证明自己真实。</p></div>
+    <div class="section memory-aids"><h4>记忆辅助</h4><h4>对比表格</h4><h4>思维导图概要</h4><div class="mind-map">研发内控
+├─ 制度层
+│  ├─ 研发活动认定
+│  ├─ 研发人员认定
+│  ├─ 研发业务流程
+│  └─ 项目管理
+├─ 记录层
+│  ├─ 项目台账
+│  ├─ 工时记录
+│  ├─ 用料记录
+│  └─ 折旧摊销记录
+├─ 审批层
+│  ├─ 开支范围
+│  ├─ 归集标准
+│  └─ 审批程序
+└─ 目标
+   ├─ 证明研发真实性
+   ├─ 证明人员认定合理
+   └─ 证明费用归集合规</div><h4>一句话总结</h4><div class="one-liner-grid"><div class="one-liner-card">没有内控，研发人员和研发投入就很容易只剩“口头存在”。</div></div></div>
+    <div class="summary-box"><h4>本章小结</h4><div>1. 研发内控不是附属材料，而是研发认定和核算的证据基础。</div><div>2. 项目、人员、支出、资源四条线必须同时留痕。</div><div>3. 制度存在不等于制度有效，执行记录比制度文本更重要。</div></div>
+    <div class="section quiz-section"><h4>知识检测</h4><h4>一、判断题</h4>
+<div class="quiz-item" id="q-5-1" data-type="radio" data-correct="错误" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">只要企业写了研发管理制度，就说明研发内控已经充分有效。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-5-1" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-5-1" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-5-1')">检查答案</button>
+  <div class="feedback"></div>
+</div>
+<div class="quiz-item" id="q-5-2" data-type="radio" data-correct="正确" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">项目台账和工时记录是研发内控中非常关键的基础证据。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-5-2" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-5-2" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-5-2')">检查答案</button>
+  <div class="feedback"></div>
+</div>
+<div class="quiz-item" id="q-5-3" data-type="radio" data-correct="错误" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">研发和生产共用资源时，如果没有使用记录，相关费用仍可凭经验计入研发支出。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-5-3" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-5-3" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-5-3')">检查答案</button>
+  <div class="feedback"></div>
+</div><h4>二、单选题</h4><div class="quiz-item" id="q-5-4" data-type="radio" data-correct="B" data-explain="请结合章节内容和参考答案判断。"><div class="q">下列哪项最能体现“研发内控有效执行”？ <span class="type-badge">单选题</span></div><div class="options"><label class="option"><input type="radio" name="q-5-4" value="A"> A. 制度文件齐全且每年都有更新版本</label><label class="option"><input type="radio" name="q-5-4" value="B"> B. 能提供项目台账、工时记录、领料记录和审批痕迹</label><label class="option"><input type="radio" name="q-5-4" value="C"> C. 管理层能够口头解释研发流程和职责分工</label><label class="option"><input type="radio" name="q-5-4" value="D"> D. 财务部门在期末统一调整研发归集结果</label></div><button class="quiz-check-btn" onclick="checkAnswer('q-5-4')">检查答案</button><div class="feedback"></div></div><div class="quiz-item" id="q-5-5" data-type="radio" data-correct="C" data-explain="请结合章节内容和参考答案判断。"><div class="q">研发内控的核心目的之一是： <span class="type-badge">单选题</span></div><div class="options"><label class="option"><input type="radio" name="q-5-5" value="A"> A. 让制度文本更完整、更规范</label><label class="option"><input type="radio" name="q-5-5" value="B"> B. 提高研发费用率和资本市场认可度</label><label class="option"><input type="radio" name="q-5-5" value="C"> C. 让研发活动、人员和支出能够被持续记录和验证</label><label class="option"><input type="radio" name="q-5-5" value="D"> D. 尽量减少研发项目组的留痕和填报工作</label></div><button class="quiz-check-btn" onclick="checkAnswer('q-5-5')">检查答案</button><div class="feedback"></div></div><h4>三、概念辨析</h4><div class="quiz-item" id="q-5-6" data-type="text" data-explain="“有制度”强调纸面存在； “制度被有效执行”强调真实发生、持续留痕、能够抽查验证。"><div class="q">“有制度”和“制度被有效执行”有什么区别？ <span class="type-badge">分析题</span></div><button class="quiz-check-btn" onclick="checkAnswer('q-5-6')">显示参考答案</button><div class="feedback"></div></div></div>
+    <div class="chapter-nav">
+      <button onclick="goToChapter('ch4')" >◀ 上一章</button>
+      <span>第5章：企业要建立哪些研发内控</span>
+      <button onclick="goToChapter('ch6')" >下一章 ▶</button>
+    </div>
+  </div>
+</div>
+
+<div class="chapter " id="ch6">
+  <div class="chapter-header" onclick="toggleChapter('ch6')">
+    <span class="arrow">▶</span>
+    <h3>第6章：中介机构会怎么核查</h3>
+    <input type="checkbox" class="chapter-checkbox" onchange="updateProgress()" onclick="event.stopPropagation()" title="标记本章完成">
+  </div>
+  <div class="chapter-body">
+    <div class="section"><h4>学习目标</h4><ul><li>理解保荐机构、申报会计师通常关注哪些研发问题</li><li>知道哪些异常信号会触发重点核查</li><li>理解“核查”不是抄制度，而是验证真实性、合理性和一致性</li></ul></div>
+    <div class="section"><h4>核心内容</h4><h4>6.1 中介核查到底在核什么</h4><p>中介机构通常不是在替企业“重新做研发”，而是在核查：</p><ul><li>企业关于研发的说法是不是真的</li><li>企业的认定口径合不合理</li><li>企业的资料能不能支撑这些结论</li></ul><p>换句话说，核查的核心是三件事：</p><p>1. 真实性</p><p>2. 合理性</p><p>3. 可验证性</p><h4>6.2 指引列出的重点核查方向</h4><p>保荐机构和申报会计师通常应重点关注：</p><ul><li>研发活动认定是否合理，是否与同行存在重大差异</li><li>研发人员认定是否合理，是否与同行存在重大差异</li><li>研发投入计算口径是否合理</li><li>研发投入归集是否准确</li><li>研发投入数据来源是否可验证</li><li>研发内控制度是否健全且有效执行</li><li>研发项目是否有跟踪管理系统和对应的人财物管理机制</li><li>研发支出范围、标准、审批程序是否明确并有效执行</li><li>研发支出核算是否符合企业会计准则</li></ul><h4>6.3 哪些异常信号会被重点盯住</h4><p>指引特别提醒了一批高风险信号：</p><ul><li>研发人员在报告期内尤其最近一年异常增长</li><li>出现临时招募、跨部门调岗等异常变化</li><li>非全时研发人员占比较高</li><li>研发人员专业背景和工作经历与研发活动不匹配</li><li>研发人员普遍任职年限较短</li><li>研发人员主要由非全时人员或未签劳动合同人员构成</li><li>研发投入金额、占比或构成显著变化</li><li>委外研发占比高</li><li>股份支付计入研发投入</li><li>存在受托研发业务</li></ul><p>这些信号本身不等于有问题，但意味着：</p><ul><li>企业必须能把原因解释清楚</li><li>中介必须把证据查扎实</li></ul><h4>6.4 对委外研发和股份支付为什么特别敏感</h4><p>因为这两类事项都兼具两个特点：</p><p>1. 金额可能较大</p><p>2. 主观判断空间较大</p><p>例如：</p><ul><li>委外研发容易被质疑真实性、必要性、公允性</li><li>股份支付容易被质疑授予对象、计量依据和费用归属是否合理</li></ul><p>所以中介核查时往往会深挖：</p><ul><li>交易背景</li><li>业务实质</li><li>价格依据</li><li>贡献匹配性</li><li>会计处理依据</li></ul><h4>6.5 律师关注什么</h4><p>律师在这份指引下的重点更集中在“人员聘用形式”和“法律关系一致性”。</p><p>重点包括：</p><ul><li>研发人员聘用形式的计算口径，与招股说明书员工人数口径是否一致</li><li>对于未签劳动合同却认定为研发人员的情形，核查：</li><li>合同法律性质</li><li>工作内容</li><li>未签劳动合同的原因</li></ul><p>所以律师和会计师、保荐机构不是完全重复，而是从不同角度共同验证同一件事。</p></div>
+    <div class="section memory-aids"><h4>记忆辅助</h4><h4>对比表格</h4><h4>一句话总结</h4><div class="one-liner-grid"><div class="one-liner-card">中介核查不是“找文件”，而是“用文件验证企业讲的话能不能成立”。</div></div><h4>易错警示卡</h4><div class="mistake-card"><div><strong>常见错误</strong>：觉得只要把制度、合同、名单都提供出来，核查就算完成。</div><div></div><div><strong>为什么会错</strong>：核查看的不是材料数量，而是材料之间能不能互相印证，能不能支撑结论。</div><div></div><div><strong>正确理解</strong>：核查是“证据链思维”，不是“资料堆积思维”。</div><div></div><div><strong>记住</strong>：材料多，不等于证据强；能互相印证，才叫核查有效。</div></div></div>
+    <div class="summary-box"><h4>本章小结</h4><div>1. 中介核查的核心是验证研发活动、研发人员和研发投入的真实性、合理性和可验证性。</div><div>2. 人员异常、委外研发、股份支付、投入波动大，是重点关注区。</div><div>3. 律师、会计师、保荐机构的核查角度不同，但都指向同一个目标：口径真实一致。</div></div>
+    <div class="section quiz-section"><h4>知识检测</h4><h4>一、判断题</h4>
+<div class="quiz-item" id="q-6-1" data-type="radio" data-correct="错误" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">研发人员最近一年异常增长，一定说明企业存在问题。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-6-1" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-6-1" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-6-1')">检查答案</button>
+  <div class="feedback"></div>
+</div>
+<div class="quiz-item" id="q-6-2" data-type="radio" data-correct="正确" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">中介核查会重点关注研发投入数据来源是否可验证。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-6-2" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-6-2" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-6-2')">检查答案</button>
+  <div class="feedback"></div>
+</div>
+<div class="quiz-item" id="q-6-3" data-type="radio" data-correct="正确" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">律师对研发人员聘用形式口径的一致性也要进行核查。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-6-3" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-6-3" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-6-3')">检查答案</button>
+  <div class="feedback"></div>
+</div><h4>二、单选题</h4><div class="quiz-item" id="q-6-4" data-type="radio" data-correct="B" data-explain="请结合章节内容和参考答案判断。"><div class="q">下列哪项最符合中介核查的本质？ <span class="type-badge">单选题</span></div><div class="options"><label class="option"><input type="radio" name="q-6-4" value="A"> A. 帮企业补齐研发统计口径、重新整理底稿</label><label class="option"><input type="radio" name="q-6-4" value="B"> B. 用证据验证企业关于研发的认定和披露是否成立</label><label class="option"><input type="radio" name="q-6-4" value="C"> C. 只核对财务报表中的研发费用数字</label><label class="option"><input type="radio" name="q-6-4" value="D"> D. 主要参考同行案例判断企业是否合规</label></div><button class="quiz-check-btn" onclick="checkAnswer('q-6-4')">检查答案</button><div class="feedback"></div></div><div class="quiz-item" id="q-6-5" data-type="radio" data-correct="B" data-explain="请结合章节内容和参考答案判断。"><div class="q">下列哪类情形通常会触发重点核查？ <span class="type-badge">单选题</span></div><div class="options"><label class="option"><input type="radio" name="q-6-5" value="A"> A. 报告期内研发人员、投入和项目结构整体稳定且与项目进展匹配</label><label class="option"><input type="radio" name="q-6-5" value="B"> B. 委外研发支出比例明显偏高</label><label class="option"><input type="radio" name="q-6-5" value="C"> C. 研发台账、工时记录与披露口径长期一致</label><label class="option"><input type="radio" name="q-6-5" value="D"> D. 研发费用变动与业务规模变动基本同步且能合理解释</label></div><button class="quiz-check-btn" onclick="checkAnswer('q-6-5')">检查答案</button><div class="feedback"></div></div><h4>三、概念辨析</h4><div class="quiz-item" id="q-6-6" data-type="text" data-explain="“异常信号”是需要重点解释和核查的提示； “违规事实”是经过核查后被证实的不合规结论。"><div class="q">“异常信号”与“违规事实”有什么区别？ <span class="type-badge">分析题</span></div><button class="quiz-check-btn" onclick="checkAnswer('q-6-6')">显示参考答案</button><div class="feedback"></div></div></div>
+    <div class="chapter-nav">
+      <button onclick="goToChapter('ch5')" >◀ 上一章</button>
+      <span>第6章：中介机构会怎么核查</span>
+      <button onclick="goToChapter('ch7')" >下一章 ▶</button>
+    </div>
+  </div>
+</div>
+
+<div class="chapter " id="ch7">
+  <div class="chapter-header" onclick="toggleChapter('ch7')">
+    <span class="arrow">▶</span>
+    <h3>第7章：招股说明书里要怎么披露</h3>
+    <input type="checkbox" class="chapter-checkbox" onchange="updateProgress()" onclick="event.stopPropagation()" title="标记本章完成">
+  </div>
+  <div class="chapter-body">
+    <div class="section"><h4>学习目标</h4><ul><li>知道研发人员和研发投入分别要披露哪些核心内容</li><li>理解“披露口径”为什么必须和内部管理口径一致</li><li>能识别哪些披露点最容易被问询</li></ul></div>
+    <div class="section"><h4>核心内容</h4><h4>7.1 信息披露不是复述制度，而是解释口径</h4><p>很多人以为披露就是把制度搬上去，其实不够。</p><p>监管更关心的是：</p><ul><li>你是怎么认定研发人员的</li><li>你是怎么计算研发投入的</li><li>报告期内这些指标是什么样子</li><li>有没有异常变化，为什么变</li></ul><p>也就是说，披露不是“企业有研发管理制度”，而是“企业的研发口径是什么、数据是什么、原因是什么”。</p><h4>7.2 研发人员应披露什么</h4><p>指引要求发行人在招股说明书“业务与技术”部分披露：</p><ul><li>研发人员认定口径</li><li>尤其是非全时研发人员的认定口径</li><li>报告期各期研发人员数量</li><li>研发人员占比</li><li>学历分布情况</li></ul><p>这背后反映的是三个监管问题：</p><p>1. 你的人是怎么认出来的</p><p>2. 你的人多不多、变没变</p><p>3. 你的研发队伍结构是否合理</p><h4>7.3 研发投入应披露什么</h4><p>在“财务会计信息与管理层分析”部分，应披露：</p><ul><li>研发投入的计算口径</li><li>报告期各期研发投入金额</li><li>研发投入明细构成</li></ul><p>明细构成通常包括：</p><ul><li>研发人员职工薪酬</li><li>直接材料</li><li>资产摊销</li><li>委外研发</li><li>其他相关项目</li></ul><p>此外，还要披露：</p><ul><li>最近三年累计研发投入金额</li><li>最近三年累计研发投入占最近三年累计营业收入的比例</li><li>最近三年研发投入复合增长率</li></ul><h4>7.4 为什么披露最怕“口径不一致”</h4><p>披露时最常见的问题不是“没数字”，而是“同一个数字在不同地方代表不同含义”。</p><p>例如：</p><ul><li>员工人数口径和研发人员口径对不上</li><li>财务里的研发费用口径和披露中的研发投入口径对不上</li><li>内部项目台账和对外披露明细对不上</li></ul><p>一旦出现这种情况，哪怕数字本身不是假的，也会让整体可信度下降。</p><h4>7.5 哪些地方最容易被问询</h4><p>通常高频问询点包括：</p><ul><li>非全时研发人员到底怎么认定</li><li>研发人员报告期内为什么大幅波动</li><li>委外研发为什么占比较高</li><li>研发投入口径和税务加计扣除口径为什么差异较大</li><li>受托研发相关人员或支出是否被错误纳入研发口径</li><li>股份支付为什么进入研发投入</li></ul><p>所以好的披露不是“把数字列出来”，而是提前把这些可能被追问的逻辑讲明白。</p></div>
+    <div class="section memory-aids"><h4>记忆辅助</h4><h4>对比表格</h4><h4>一句话总结</h4><div class="one-liner-grid"><div class="one-liner-card">好披露不是把数字堆上去，而是把口径讲清楚、把变化说明白。</div></div><h4>易错警示卡</h4><div class="mistake-card"><div><strong>常见错误</strong>：认为披露阶段只要把内部统计表原样搬到招股说明书里即可。</div><div></div><div><strong>为什么会错</strong>：内部统计表是管理工具，招股说明书是对外披露文件，必须讲清口径、依据和异常解释。</div><div></div><div><strong>正确理解</strong>：披露是“数字 + 口径 + 解释”的组合。</div><div></div><div><strong>记住</strong>：没有口径解释的数字，越大越容易被问。</div></div></div>
+    <div class="summary-box"><h4>本章小结</h4><div>1. 研发人员和研发投入披露的核心，是把口径、数据和变化原因说清楚。</div><div>2. 非全时研发人员、委外研发、口径差异，是高频敏感点。</div><div>3. 对外披露必须与内部管理和核查口径一致。</div></div>
+    <div class="section quiz-section"><h4>知识检测</h4><h4>一、判断题</h4>
+<div class="quiz-item" id="q-7-1" data-type="radio" data-correct="错误" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">研发人员披露时，只需要列示人数，不需要解释认定口径。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-7-1" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-7-1" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-7-1')">检查答案</button>
+  <div class="feedback"></div>
+</div>
+<div class="quiz-item" id="q-7-2" data-type="radio" data-correct="正确" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">研发投入披露时，应说明计算口径和明细构成。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-7-2" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-7-2" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-7-2')">检查答案</button>
+  <div class="feedback"></div>
+</div>
+<div class="quiz-item" id="q-7-3" data-type="radio" data-correct="正确" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">披露口径与内部管理口径不一致，会带来较大核查风险。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-7-3" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-7-3" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-7-3')">检查答案</button>
+  <div class="feedback"></div>
+</div><h4>二、单选题</h4><div class="quiz-item" id="q-7-4" data-type="radio" data-correct="C" data-explain="请结合章节内容和参考答案判断。"><div class="q">下列哪项最符合高质量研发披露的特点？ <span class="type-badge">单选题</span></div><div class="options"><label class="option"><input type="radio" name="q-7-4" value="A"> A. 数字列示完整，但不解释口径差异和异常变化</label><label class="option"><input type="radio" name="q-7-4" value="B"> B. 制度描述充分，但缺少研发投入构成和计算口径</label><label class="option"><input type="radio" name="q-7-4" value="C"> C. 数字、口径、异常变化解释相互匹配</label><label class="option"><input type="radio" name="q-7-4" value="D"> D. 主要参照同行模板披露，较少结合自身情况解释</label></div><button class="quiz-check-btn" onclick="checkAnswer('q-7-4')">检查答案</button><div class="feedback"></div></div><div class="quiz-item" id="q-7-5" data-type="radio" data-correct="B" data-explain="请结合章节内容和参考答案判断。"><div class="q">下列哪类事项最可能需要重点补充说明？ <span class="type-badge">单选题</span></div><div class="options"><label class="option"><input type="radio" name="q-7-5" value="A"> A. 报告期内研发人员和投入变化平稳且与项目进度一致</label><label class="option"><input type="radio" name="q-7-5" value="B"> B. 非全时研发人员认定口径</label><label class="option"><input type="radio" name="q-7-5" value="C"> C. 研发费用附注中的表格排版样式</label><label class="option"><input type="radio" name="q-7-5" value="D"> D. 已披露信息的目录层级设置</label></div><button class="quiz-check-btn" onclick="checkAnswer('q-7-5')">检查答案</button><div class="feedback"></div></div><h4>三、概念辨析</h4><div class="quiz-item" id="q-7-6" data-type="text" data-explain="“研发费用”更偏财务报表中的费用化部分； “研发投入”通常更宽，原则上包括费用化研发费用和资本化开发支出。"><div class="q">“披露研发费用”与“披露研发投入”有什么区别？ <span class="type-badge">分析题</span></div><button class="quiz-check-btn" onclick="checkAnswer('q-7-6')">显示参考答案</button><div class="feedback"></div></div></div>
+    <div class="chapter-nav">
+      <button onclick="goToChapter('ch6')" >◀ 上一章</button>
+      <span>第7章：招股说明书里要怎么披露</span>
+      <button onclick="goToChapter('ch8')" >下一章 ▶</button>
+    </div>
+  </div>
+</div>
+
+<div class="chapter " id="ch8">
+  <div class="chapter-header" onclick="toggleChapter('ch8')">
+    <span class="arrow">▶</span>
+    <h3>第8章：全流程案例串讲与总复习</h3>
+    <input type="checkbox" class="chapter-checkbox" onchange="updateProgress()" onclick="event.stopPropagation()" title="标记本章完成">
+  </div>
+  <div class="chapter-body">
+    <div class="section"><h4>学习目标</h4><ul><li>用一个完整案例把“人、钱、项目、核查、披露”串起来</li><li>形成可复用的判断框架</li><li>能独立识别常见高风险点</li></ul></div>
+    <div class="section"><h4>核心内容</h4><h4>8.1 案例背景</h4><p>假设某拟申报企业 A 公司，存在以下情况：</p><ul><li>有 80 名“研发相关人员”，其中 25 名为非全时人员</li><li>最近一年研发人员数量显著增加</li><li>部分项目为受托研发</li><li>委外研发占研发投入比例较高</li><li>研发投入中包含股份支付费用</li><li>研发与生产共用设备和场地</li></ul><p>现在我们要判断：  </p><p>这些研发人员和研发投入披露口径，是否站得住。</p><h4>8.2 第一步：先看“人”</h4><p>要先拆开看：</p><ul><li>80 人里，哪些是真正直接从事研发的人</li><li>哪些只是支持企业运营、但不直接服务研发的人</li><li>25 名非全时人员的研发工时占比是多少</li><li>最近一年新增人员是否具备匹配的专业背景和研发贡献</li><li>是否有未签劳动合同或其他特殊聘用形式人员</li></ul><p>如果这些问题答不清，研发人员数量就不能直接采用。</p><h4>8.3 第二步：再看“钱”</h4><p>然后判断研发投入：</p><ul><li>人员薪酬是否只计入研发工时部分</li><li>共用资源是否有合理分配依据</li><li>受托研发支出是否误计入研发支出</li><li>委外研发是否真实、必要、公允</li><li>股份支付是否具有明确合理依据</li><li>研发产出产品成本是否被错误计入研发投入</li></ul><h4>8.4 第三步：看“制度和记录”</h4><p>接着验证证据链：</p><ul><li>有没有研发项目台账</li><li>有没有工时记录</li><li>有没有领料记录</li><li>有没有分摊依据</li><li>有没有项目进展资料</li><li>有没有委外研发合同和成果归属资料</li></ul><p>如果制度、流程、台账不能闭环，再漂亮的数字也会变得不稳。</p><h4>8.5 第四步：看“披露”</h4><p>最后看披露能否自洽：</p><ul><li>研发人员认定口径是否清楚</li><li>非全时研发人员是否单独说明</li><li>研发投入计算口径是否清楚</li><li>委外研发、股份支付等高风险构成是否说清</li><li>报告期变化是否有合理解释</li></ul><h4>8.6 最终判断框架</h4><p>现在把整份课程压缩成一个万能清单：</p><p>1. <strong>人对不对</strong></p><p>2. <strong>钱对不对</strong></p><p>3. <strong>项目真不真</strong></p><p>4. <strong>台账全不全</strong></p><p>5. <strong>披露顺不顺</strong></p><p>只要五项中有一项明显站不住，这个研发口径就需要重新评估。</p></div>
+    <div class="section memory-aids"><h4>记忆辅助</h4><h4>对比表格</h4><h4>一句话总结</h4><div class="one-liner-grid"><div class="one-liner-card">学完这份指引，最重要的不是会背条文，而是能用“人、钱、项目、台账、披露”五步法做判断。</div></div><h4>思维导图概要</h4><div class="mind-map">发行类第9号
+├─ 人
+│  ├─ 谁算研发人员
+│  ├─ 非全时怎么认
+│  └─ 受托研发人员怎么排
+├─ 钱
+│  ├─ 研发投入怎么构成
+│  ├─ 共用资源怎么分
+│  ├─ 特殊项目怎么处理
+│  └─ 哪些不能算
+├─ 控
+│  ├─ 制度
+│  ├─ 台账
+│  ├─ 工时
+│  └─ 审批
+├─ 查
+│  ├─ 会计师
+│  ├─ 保荐机构
+│  └─ 律师
+└─ 披露
+   ├─ 口径
+   ├─ 数量与金额
+   ├─ 构成
+   └─ 异常解释</div></div>
+    <div class="summary-box"><h4>本章小结</h4><div>1. 全流程判断不能只盯一个点，必须把人、钱、项目、记录、披露一起看。</div><div>2. 研发相关问题最怕“看起来都有，实则串不起来”。</div><div>3. 你真正要掌握的是判断框架，而不是零散结论。</div></div>
+    <div class="section quiz-section"><h4>知识检测</h4><h4>一、判断题</h4>
+<div class="quiz-item" id="q-8-1" data-type="radio" data-correct="错误" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">只要研发人员和研发投入两个数字看起来合理，企业研发口径就可以认为没有问题。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-8-1" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-8-1" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-8-1')">检查答案</button>
+  <div class="feedback"></div>
+</div>
+<div class="quiz-item" id="q-8-2" data-type="radio" data-correct="正确" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">判断研发口径是否可靠，应同时关注人员、支出、项目、内控和披露。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-8-2" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-8-2" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-8-2')">检查答案</button>
+  <div class="feedback"></div>
+</div>
+<div class="quiz-item" id="q-8-3" data-type="radio" data-correct="正确" data-explain="请结合本章规则判断，并对照章节答案核对原因。">
+  <div class="q">高比例委外研发和非全时研发人员占比较高，通常都值得重点关注。 <span class="type-badge">判断题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-8-3" value="正确"> 正确</label>
+    <label class="option"><input type="radio" name="q-8-3" value="错误"> 错误</label>
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-8-3')">检查答案</button>
+  <div class="feedback"></div>
+</div><h4>二、单选题</h4><div class="quiz-item" id="q-8-4" data-type="radio" data-correct="C" data-explain="请结合章节内容和参考答案判断。"><div class="q">下列哪项最适合作为学完整份课程后的“总判断框架”？ <span class="type-badge">单选题</span></div><div class="options"><label class="option"><input type="radio" name="q-8-4" value="A"> A. 看部门归属和会计科目归类是否一致</label><label class="option"><input type="radio" name="q-8-4" value="B"> B. 看管理层说明和同行口径是否大体接近</label><label class="option"><input type="radio" name="q-8-4" value="C"> C. 看人、看钱、看项目、看台账、看披露</label><label class="option"><input type="radio" name="q-8-4" value="D"> D. 只看最近一年研发投入变动和问询回复</label></div><button class="quiz-check-btn" onclick="checkAnswer('q-8-4')">检查答案</button><div class="feedback"></div></div><div class="quiz-item" id="q-8-5" data-type="radio" data-correct="B" data-explain="请结合章节内容和参考答案判断。"><div class="q">如果企业披露研发人员很多、研发投入也很高，但没有完整工时和项目台账，最应该警惕的是： <span class="type-badge">单选题</span></div><div class="options"><label class="option"><input type="radio" name="q-8-5" value="A"> A. 披露框架较复杂，阅读成本较高</label><label class="option"><input type="radio" name="q-8-5" value="B"> B. 证据链不完整，真实性和归集合理性难以验证</label><label class="option"><input type="radio" name="q-8-5" value="C"> C. 研发人员学历结构可能不够理想</label><label class="option"><input type="radio" name="q-8-5" value="D"> D. 披露篇幅偏短、图表数量偏少</label></div><button class="quiz-check-btn" onclick="checkAnswer('q-8-5')">检查答案</button><div class="feedback"></div></div><h4>三、综合题</h4><div class="quiz-item" id="q-8-6" data-type="text" data-explain="第一条主线：人员认定是否真实合理，重点看工时、职责、背景、实际贡献； 第二条主线：委外研发是否真实、必要、公允，成果是否归属于发行人； 第三条主线：研发投入增长的原因是否合理，相关支出归集和披露口径是否一致、可验证。"><div class="q">某企业存在非全时研发人员占比高、委外研发比例高、研发投入增长快三种情况。请说明中介机构应沿着哪三条主线重点核查。 <span class="type-badge">分析题</span></div><button class="quiz-check-btn" onclick="checkAnswer('q-8-6')">显示参考答案</button><div class="feedback"></div></div></div>
+    <div class="chapter-nav">
+      <button onclick="goToChapter('ch7')" >◀ 上一章</button>
+      <span>第8章：全流程案例串讲与总复习</span>
+      <button onclick="" disabled>下一章 ▶</button>
+    </div>
+  </div>
+</div>
+<!--
+Each content chapter uses this pattern:
+
+<div class="chapter open" id="chN">
+  <div class="chapter-header" onclick="toggleChapter('chN')">
+    <span class="arrow">▶</span>
+    <h3>第N章：标题</h3>
+    <input type="checkbox" class="chapter-checkbox" onchange="updateProgress()" onclick="event.stopPropagation()" title="标记本章完成">
+  </div>
+  <div class="chapter-body">
+    ...
+    <div class="chapter-nav">
+      <button onclick="goToChapter('ch(N-1)')" ...>◀ 上一章</button>
+      <span>第N章</span>
+      <button onclick="goToChapter('ch(N+1)')" ...>下一章 ▶</button>
+    </div>
+  </div>
+</div>
+
+Quiz items use:
+
+<div class="quiz-item" id="q-N-M" data-type="radio" data-correct="B" data-explain="解释文本">
+  <div class="q">题目<span class="type-badge">单选题</span></div>
+  <div class="options">
+    <label class="option"><input type="radio" name="q-N-M" value="A"> A. 选项</label>
+    ...
+  </div>
+  <button class="quiz-check-btn" onclick="checkAnswer('q-N-M')">检查答案</button>
+  <div class="feedback"></div>
+</div>
+
+data-type values: radio, checkbox, fill, select, text
+For radio/checkbox/fill/select: data-correct contains the answer(s)
+For text: data-explain contains the reference answer shown by showAnswer()
+-->
+
+<section class="global-review" id="globalReview"><h2>课程总复习</h2><p>### 核心知识地图</p><ul><li>研发人员认定</li><li>直接参与研发</li><li>与研发密切相关的管理和直接服务人员</li><li>非全时要看工时和贡献</li><li>受托研发、派遣、未签劳动合同人员要慎重</li><li>研发投入认定</li><li>真实投入研发活动</li><li>能准确归集和合理分配</li><li>基本口径 = 费用化研发费用 + 资本化开发支出</li><li>特殊情形要看成果控制权、准则适用、归集能力</li><li>研发内控</li><li>制度</li><li>台账</li><li>工时</li><li>领料与资源分配</li><li>审批程序</li><li>中介核查</li><li>真实性</li><li>合理性</li><li>可验证性</li><li>信息披露</li><li>口径清楚</li><li>数据完整</li><li>异常可解释</li><li>前后一致</li></ul><p>### 易混概念总对比</p><table class="comparison-table"><thead><tr><th>概念A</th><th>概念B</th><th>核心区别</th></tr></thead><tbody><tr><td>研发人员</td><td>研发部门员工</td><td>前者看实质参与研发，后者只是组织归属</td></tr><tr><td>研发投入</td><td>研发费用</td><td>研发投入通常更宽，还包括资本化开发支出</td></tr><tr><td>受托研发</td><td>自主研发</td><td>关键差异在成果控制权和经济利益归属</td></tr><tr><td>委外研发</td><td>虚构研发支出</td><td>前者可以真实合规存在，后者是风险和违规情形</td></tr><tr><td>内控制度存在</td><td>内控制度有效执行</td><td>前者是纸面，后者是证据链和留痕</td></tr><tr><td>异常信号</td><td>违规事实</td><td>前者提示风险，后者是核查结论</td></tr></tbody></table></div></section>
+
+<section class="glossary" id="glossary"><h2>术语表</h2><table class="comparison-table"><thead><tr><th>术语</th><th>定义</th><th>所在章节</th></tr></thead><tbody><tr><td>研发人员</td><td>直接从事研发活动的人员，以及与研发活动密切相关的管理人员和直接服务人员</td><td>第2章</td></tr><tr><td>非全时研发人员</td><td>同时从事研发和非研发活动的人员</td><td>第2章</td></tr><tr><td>受托研发</td><td>发行人与客户签约，为客户提供研发服务的业务形态</td><td>第2章、第4章</td></tr><tr><td>研发投入</td><td>企业研发活动直接相关的支出</td><td>第3章</td></tr><tr><td>研发支出</td><td>企业按会计准则核算的研发相关支出科目或口径</td><td>第3章</td></tr><tr><td>资本化开发支出</td><td>符合条件后形成资产的开发支出</td><td>第3章</td></tr><tr><td>国拨研发项目</td><td>由国家或指定方拨付款项支持的研发项目</td><td>第4章</td></tr><tr><td>委外研发</td><td>委托外部单位开展研发活动</td><td>第4章</td></tr><tr><td>股份支付</td><td>以权益工具或其价值为基础向员工或其他对象支付对价的安排</td><td>第4章</td></tr><tr><td>项目台账</td><td>用于持续记录研发项目、人员、资源和费用的基础记录体系</td><td>第5章</td></tr><tr><td>核查</td><td>中介机构对企业研发相关认定、核算与披露进行验证的过程</td><td>第6章</td></tr><tr><td>披露口径</td><td>对外说明研发人员或研发投入时采用的判断和计算标准</td><td>第7章</td></tr></tbody></table></section>
+
+<!-- ==================== PROGRESS CHECKLIST ==================== -->
+<section class="section" id="progressSection">
+  <h2>✅ 学习进度检查表</h2>
+  <ul class="progress-checklist" id="progressChecklist">
+    <li><label><input type="checkbox" onchange="this.checked = this.checked">第0章：课程导引</label></li>
+<li><label><input type="checkbox" onchange="this.checked = this.checked">第1章：这份指引到底在管什么</label></li>
+<li><label><input type="checkbox" onchange="this.checked = this.checked">第2章：什么样的人才算研发人员</label></li>
+<li><label><input type="checkbox" onchange="this.checked = this.checked">第3章：什么钱才能算研发投入</label></li>
+<li><label><input type="checkbox" onchange="this.checked = this.checked">第4章：几类最容易出错的特殊情形</label></li>
+<li><label><input type="checkbox" onchange="this.checked = this.checked">第5章：企业要建立哪些研发内控</label></li>
+<li><label><input type="checkbox" onchange="this.checked = this.checked">第6章：中介机构会怎么核查</label></li>
+<li><label><input type="checkbox" onchange="this.checked = this.checked">第7章：招股说明书里要怎么披露</label></li>
+<li><label><input type="checkbox" onchange="this.checked = this.checked">第8章：全流程案例串讲与总复习</label></li>
+  </ul>
+</section>
+
+</div><!-- /container -->
+</div><!-- /main-wrapper -->
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="回到顶部">↑</button>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+// ===== Course ID for localStorage isolation =====
+var COURSE_ID = (function() {
+  var title = document.querySelector('.course-header h1');
+  var raw = title ? title.textContent.trim() : 'default';
+  // Simple hash to keep keys short
+  var hash = 0;
+  for (var i = 0; i < raw.length; i++) {
+    hash = ((hash << 5) - hash) + raw.charCodeAt(i);
+    hash |= 0;
+  }
+  return 'course-' + Math.abs(hash).toString(36);
+})();
+function lsKey(name) { return COURSE_ID + '-' + name; }
+
+// ===== Safe HTML escaping =====
+function escapeHtml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+// ===== Sidebar Toggle =====
+function toggleSidebar() {
+  const sidebar = document.getElementById('sidebarToc');
+  const toggle = document.getElementById('sidebarToggle');
+  const wrapper = document.getElementById('mainWrapper');
+  if (window.innerWidth <= 900) {
+    sidebar.classList.toggle('mobile-open');
+  } else {
+    sidebar.classList.toggle('hidden');
+    toggle.classList.toggle('shifted');
+    wrapper.classList.toggle('full');
+  }
+  localStorage.setItem(lsKey('sidebar-hidden'), sidebar.classList.contains('hidden'));
+}
+
+// ===== Chapter Toggle =====
+function toggleChapter(id) {
+  const ch = document.getElementById(id);
+  if (!ch) return;
+  ch.classList.toggle('open');
+  saveState();
+}
+
+// ===== Chapter Navigation =====
+function goToChapter(id) {
+  const ch = document.getElementById(id);
+  if (!ch) return;
+  // Close all chapters, open target
+  ch.classList.add('open');
+  ch.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  saveState();
+  // Update active TOC link
+  document.querySelectorAll('.sidebar-toc a').forEach(a => a.classList.remove('active'));
+  const link = document.querySelector('.sidebar-toc a[href="#' + id + '"]');
+  if (link) link.classList.add('active');
+}
+
+// ===== Expand / Collapse All =====
+function expandAll() {
+  document.querySelectorAll('.chapter').forEach(c => c.classList.add('open'));
+  saveState();
+}
+function collapseAll() {
+  document.querySelectorAll('.chapter').forEach(c => c.classList.remove('open'));
+  saveState();
+}
+
+// ===== Theme Toggle =====
+function toggleTheme() {
+  const body = document.body;
+  const current = body.getAttribute('data-theme');
+  const next = current === 'dark' ? 'light' : 'dark';
+  body.setAttribute('data-theme', next);
+  localStorage.setItem(lsKey('theme'), next);
+  // Redraw canvases for theme
+  redrawAllCanvases();
+}
+
+// ===== Font Size =====
+function changeFontSize() {
+  const size = document.getElementById('fontSize').value;
+  document.querySelector('.container').style.fontSize = size;
+  localStorage.setItem(lsKey('font-size'), size);
+}
+
+// ===== Progress Tracking =====
+function updateProgress() {
+  const totalQuizzes = document.querySelectorAll('.quiz-item').length;
+  const quizResults = JSON.parse(localStorage.getItem(lsKey('quiz-results')) || '{}');
+  const answeredQuizzes = Object.values(quizResults).filter(r => r.answered).length;
+
+  const chapters = document.querySelectorAll('.chapter');
+  const checkboxes = document.querySelectorAll('.chapter-checkbox');
+  const checkedChapters = Array.from(checkboxes).filter(cb => cb.checked).length;
+
+  // Progress = weighted average: 40% chapter completion + 60% quiz completion
+  const chapterPct = chapters.length > 0 ? checkedChapters / chapters.length : 0;
+  const quizPct = totalQuizzes > 0 ? answeredQuizzes / totalQuizzes : 0;
+  const pct = Math.round((chapterPct * 0.4 + quizPct * 0.6) * 100);
+
+  document.getElementById('progressBar').style.width = pct + '%';
+  document.getElementById('progressText').textContent = pct + '%';
+  localStorage.setItem(lsKey('progress-chapters'), JSON.stringify(
+    Array.from(checkboxes).map(cb => cb.checked)
+  ));
+}
+
+// ===== Reset Progress =====
+function resetProgress() {
+  if (!confirm('确定要重置所有学习进度吗？此操作不可撤销。')) return;
+  localStorage.removeItem(lsKey('progress-chapters'));
+  localStorage.removeItem(lsKey('quiz-results'));
+  localStorage.removeItem(lsKey('open-chapters'));
+  document.querySelectorAll('.chapter-checkbox').forEach(cb => cb.checked = false);
+  document.querySelectorAll('.quiz-item').forEach(q => {
+    q.classList.remove('correct-done', 'incorrect-done');
+    const fb = q.querySelector('.feedback');
+    if (fb) { fb.classList.remove('show', 'correct', 'incorrect'); fb.textContent = ''; }
+    const radio = q.querySelector('input[type="radio"]:checked');
+    if (radio) radio.checked = false;
+    q.querySelectorAll('input[type="checkbox"]:not(.chapter-checkbox):checked').forEach(cb => cb.checked = false);
+    const fill = q.querySelector('.fill-blank');
+    if (fill) fill.value = '';
+    q.querySelectorAll('select').forEach(s => s.selectedIndex = 0);
+  });
+  updateProgress();
+}
+
+// ===== Search =====
+function doSearch() {
+  const q = document.getElementById('searchBox').value.trim();
+  // Remove previous highlights safely
+  document.querySelectorAll('.search-highlight').forEach(el => {
+    const parent = el.parentNode;
+    parent.replaceChild(document.createTextNode(el.textContent), el);
+    parent.normalize();
+  });
+  if (!q) {
+    document.querySelectorAll('.chapter').forEach(c => c.style.display = '');
+    return;
+  }
+  const qLower = q.toLowerCase();
+  document.querySelectorAll('.chapter').forEach(ch => {
+    const body = ch.querySelector('.chapter-body');
+    const text = body ? body.textContent.toLowerCase() : '';
+    if (text.includes(qLower)) {
+      ch.style.display = '';
+      ch.classList.add('open');
+      safeHighlight(body, q);
+    } else {
+      const headerText = ch.querySelector('.chapter-header h3');
+      ch.style.display = headerText && headerText.textContent.toLowerCase().includes(qLower) ? '' : 'none';
+    }
+  });
+}
+
+function safeHighlight(element, query) {
+  if (!element || !query) return;
+  var qLower = query.toLowerCase();
+  var walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, null, false);
+  var textNodes = [];
+  while (walker.nextNode()) textNodes.push(walker.currentNode);
+  textNodes.forEach(function(node) {
+    var text = node.textContent;
+    var lower = text.toLowerCase();
+    var idx = lower.indexOf(qLower);
+    if (idx < 0 || !node.parentNode) return;
+    var fragment = document.createDocumentFragment();
+    var lastEnd = 0;
+    while (idx >= 0) {
+      fragment.appendChild(document.createTextNode(text.slice(lastEnd, idx)));
+      var mark = document.createElement('span');
+      mark.className = 'search-highlight';
+      mark.textContent = text.slice(idx, idx + query.length);
+      fragment.appendChild(mark);
+      lastEnd = idx + query.length;
+      idx = lower.indexOf(qLower, lastEnd);
+    }
+    fragment.appendChild(document.createTextNode(text.slice(lastEnd)));
+    node.parentNode.replaceChild(fragment, node);
+  });
+}
+
+// ===== Quiz Check =====
+function checkAnswer(quizId) {
+  const quiz = document.getElementById(quizId);
+  if (!quiz) return;
+  const fb = quiz.querySelector('.feedback');
+  if (!fb) return;
+  const type = quiz.getAttribute('data-type');
+  const correctRaw = quiz.getAttribute('data-correct') || '';
+  const correctAnswers = correctRaw.split(',').map(s => s.trim().toLowerCase());
+  let userAnswer;
+  let isCorrect = false;
+
+  if (type === 'radio') {
+    const checked = quiz.querySelector('input[type="radio"]:checked');
+    userAnswer = checked ? checked.value.toLowerCase() : null;
+    isCorrect = correctAnswers.includes(userAnswer);
+  } else if (type === 'checkbox') {
+    const checked = Array.from(quiz.querySelectorAll('input[type="checkbox"]:checked'))
+      .map(cb => cb.value.toLowerCase()).sort().join(',');
+    userAnswer = checked;
+    isCorrect = checked === correctAnswers.sort().join(',');
+  } else if (type === 'fill') {
+    const input = quiz.querySelector('.fill-blank');
+    userAnswer = input ? input.value.trim() : '';
+    isCorrect = correctAnswers.some(a => a === userAnswer.toLowerCase());
+  } else if (type === 'select') {
+    var selects = quiz.querySelectorAll('select');
+    var selAnswers = Array.from(selects).map(function(s) { return s.value.trim().toLowerCase(); });
+    // Compare as sorted sets to be order-independent for matching questions
+    var sortedUser = selAnswers.slice().sort().join(',');
+    var sortedCorrect = correctAnswers.slice().sort().join(',');
+    isCorrect = sortedUser === sortedCorrect;
+    userAnswer = selAnswers.join(',');
+  } else if (type === 'text') {
+    // Short answer / concept analysis — always show reference answer
+    fb.classList.add('show', 'correct');
+    fb.textContent = '📝 参考答案：' + (quiz.getAttribute('data-explain') || '请参考章节内容');
+    quiz.classList.add('correct-done');
+    saveQuizResult(quizId, true, 'text');
+    return;
+  }
+
+  // Sanitize explanation for safe display
+  var explainText = quiz.getAttribute('data-explain') || '';
+  var safeExplain = explainText ? ' — ' + explainText : '';
+
+  fb.classList.add('show');
+  fb.classList.remove('correct', 'incorrect');
+  if (isCorrect) {
+    fb.classList.add('correct');
+    fb.innerHTML = '✅ 正确！' + escapeHtml(safeExplain);
+    quiz.classList.add('correct-done');
+    quiz.classList.remove('incorrect-done');
+  } else {
+    fb.classList.add('incorrect');
+    fb.innerHTML = '❌ 不正确。' + escapeHtml(safeExplain) +
+      '<br>正确答案：' + escapeHtml(correctRaw);
+    quiz.classList.add('incorrect-done');
+    quiz.classList.remove('correct-done');
+  }
+
+  saveQuizResult(quizId, isCorrect, userAnswer);
+  updateProgress();
+}
+
+function saveQuizResult(quizId, correct, answer) {
+  var results = JSON.parse(localStorage.getItem(lsKey('quiz-results')) || '{}');
+  results[quizId] = { answered: true, correct: correct, answer: answer };
+  localStorage.setItem(lsKey('quiz-results'), JSON.stringify(results));
+}
+
+// ===== Show Answer (for text-type questions) =====
+function showAnswer(answerId) {
+  var el = document.getElementById(answerId);
+  if (!el) return;
+  el.classList.toggle('show');
+  if (el.classList.contains('show')) {
+    el.classList.add('correct');
+  }
+}
+
+// ===== State Persistence =====
+function saveState() {
+  var openChapters = Array.from(document.querySelectorAll('.chapter.open')).map(function(c) { return c.id; });
+  localStorage.setItem(lsKey('open-chapters'), JSON.stringify(openChapters));
+}
+
+function loadState() {
+  // Theme
+  var theme = localStorage.getItem(lsKey('theme'));
+  if (theme) document.body.setAttribute('data-theme', theme);
+
+  // Font size
+  var fontSize = localStorage.getItem(lsKey('font-size'));
+  if (fontSize) {
+    document.getElementById('fontSize').value = fontSize;
+    document.querySelector('.container').style.fontSize = fontSize;
+  }
+
+  // Sidebar
+  if (localStorage.getItem(lsKey('sidebar-hidden')) === 'true' && window.innerWidth > 900) {
+    document.getElementById('sidebarToc').classList.add('hidden');
+    document.getElementById('sidebarToggle').classList.add('shifted');
+    document.getElementById('mainWrapper').classList.add('full');
+  }
+
+  // Open chapters
+  var openChapters = JSON.parse(localStorage.getItem(lsKey('open-chapters')) || '[]');
+  openChapters.forEach(function(id) {
+    var ch = document.getElementById(id);
+    if (ch) ch.classList.add('open');
+  });
+
+  // Chapter progress
+  var progress = JSON.parse(localStorage.getItem(lsKey('progress-chapters')) || '[]');
+  var checkboxes = document.querySelectorAll('.chapter-checkbox');
+  checkboxes.forEach(function(cb, i) { if (progress[i]) cb.checked = true; });
+
+  // Restore quiz results visual state
+  var quizResults = JSON.parse(localStorage.getItem(lsKey('quiz-results')) || '{}');
+  Object.keys(quizResults).forEach(function(qid) {
+    var quiz = document.getElementById(qid);
+    if (!quiz) return;
+    var r = quizResults[qid];
+    if (r.answered) {
+      if (r.correct) {
+        quiz.classList.add('correct-done');
+      } else {
+        quiz.classList.add('incorrect-done');
+      }
+    }
+  });
+
+  updateProgress();
+}
+
+// ===== Canvas Theme-Aware Helpers =====
+function getThemeColor(varName) {
+  return getComputedStyle(document.body).getPropertyValue(varName).trim();
+}
+
+function drawArrow(ctx, fromX, fromY, toX, toY) {
+  var color = getThemeColor('--primary');
+  ctx.strokeStyle = color;
+  ctx.fillStyle = color;
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.moveTo(fromX, fromY);
+  ctx.lineTo(toX, toY);
+  ctx.stroke();
+  var angle = Math.atan2(toY - fromY, toX - fromX);
+  var headLen = 10;
+  ctx.beginPath();
+  ctx.moveTo(toX, toY);
+  ctx.lineTo(toX - headLen * Math.cos(angle - Math.PI/6), toY - headLen * Math.sin(angle - Math.PI/6));
+  ctx.lineTo(toX - headLen * Math.cos(angle + Math.PI/6), toY - headLen * Math.sin(angle + Math.PI/6));
+  ctx.closePath();
+  ctx.fill();
+}
+
+function drawRoundedBox(ctx, x, y, w, h, text) {
+  var r = 8;
+  var bgColor = getThemeColor('--primary-light');
+  var textColor = getThemeColor('--text');
+  ctx.fillStyle = bgColor;
+  ctx.beginPath();
+  ctx.moveTo(x + r, y);
+  ctx.lineTo(x + w - r, y);
+  ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+  ctx.lineTo(x + w, y + h - r);
+  ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+  ctx.lineTo(x + r, y + h);
+  ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+  ctx.lineTo(x, y + r);
+  ctx.quadraticCurveTo(x, y, x + r, y);
+  ctx.closePath();
+  ctx.fill();
+  ctx.fillStyle = textColor;
+  ctx.font = '14px sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillText(text, x + w/2, y + h/2);
+  ctx.textAlign = 'start';
+  ctx.textBaseline = 'alphabetic';
+}
+
+// Track canvas draw functions for theme redraw
+var _canvasRedraws = [];
+function registerCanvasRedraw(fn) { _canvasRedraws.push(fn); }
+function redrawAllCanvases() { _canvasRedraws.forEach(function(fn) { try { fn(); } catch(e) {} }); }
+
+// ===== Back to Top Button =====
+function updateBackToTop() {
+  var btn = document.getElementById('backToTop');
+  if (window.scrollY > 400) {
+    btn.classList.add('visible');
+  } else {
+    btn.classList.remove('visible');
+  }
+}
+
+// ===== Keyboard Shortcuts =====
+document.addEventListener('keydown', function(e) {
+  // Don't trigger shortcuts when typing in inputs
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') return;
+
+  var chapters = Array.from(document.querySelectorAll('.chapter'));
+  if (chapters.length === 0) return;
+
+  // Find current chapter (first open or scrolled-to chapter)
+  var currentIdx = -1;
+  var scrollTop = window.scrollY;
+  for (var i = 0; i < chapters.length; i++) {
+    var rect = chapters[i].getBoundingClientRect();
+    if (rect.top <= 200) currentIdx = i;
+  }
+  if (currentIdx < 0) currentIdx = 0;
+
+  if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+    e.preventDefault();
+    var targetIdx = e.key === 'ArrowRight' ? currentIdx + 1 : currentIdx - 1;
+    if (targetIdx >= 0 && targetIdx < chapters.length) {
+      goToChapter(chapters[targetIdx].id);
+    }
+  }
+});
+
+// ===== Init =====
+window.addEventListener('scroll', updateBackToTop);
+window.addEventListener('resize', function() {
+  // Reset sidebar state on resize
+  var sidebar = document.getElementById('sidebarToc');
+  var toggle = document.getElementById('sidebarToggle');
+  var wrapper = document.getElementById('mainWrapper');
+  if (window.innerWidth <= 900) {
+    sidebar.classList.remove('hidden');
+    toggle.classList.remove('shifted');
+    wrapper.classList.remove('full');
+  }
+});
+
+loadState();
+document.querySelectorAll('.chapter-checkbox').forEach(function(cb) {
+  cb.addEventListener('change', updateProgress);
+});
+updateBackToTop();
+</script>
+
+</body>
+</html>

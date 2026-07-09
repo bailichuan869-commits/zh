@@ -1,0 +1,23 @@
+{
+  "slug": "issuance-class-09-rd-staff-investment",
+  "title": "监管规则适用指引——发行类第9号：研发人员及研发投入",
+  "document_no": "发行类第9号",
+  "issuing_authority": "中国证监会",
+  "official_source": "中国证监会",
+  "official_url": "https://www.csrc.gov.cn/csrc/c101802/c7445462/content.shtml",
+  "attachment_url": "https://www.csrc.gov.cn/csrc/c101802/c7445462/7445462/files/%E7%9B%91%E7%AE%A1%E8%A7%84%E5%88%99%E9%80%82%E7%94%A8%E6%8C%87%E5%BC%95%E2%80%94%E2%80%94%E5%8F%91%E8%A1%8C%E7%B1%BB%E7%AC%AC9%E5%8F%B7%20%E7%A0%94%E5%8F%91%E4%BA%BA%E5%91%98%E5%8F%8A%E7%A0%94%E5%8F%91%E6%8A%95%E5%85%A5%E8%B5%B7%E8%8D%89%E8%AF%B4%E6%98%8E.pdf",
+  "source_note": "已核验证监会官网原文页。本地归档原文来自用户提供的本地项目底稿目录 PDF：D:\\中华的工作夹\\立信北分\\09-长春捷翼25\\2025.6.30申报\\3、底稿资料\\4、SV-研发费用\\发行类第9号.pdf。当前终端网络仍无法直连下载官网页面。",
+  "archived_on": "2026-07-09",
+  "content_type": "application/pdf",
+  "bytes": 147042,
+  "sha256": "4C14CB05C4805D4EBBD20B3D8237F32747EC675450D62778473CEDFC2CC1E419",
+  "local_file": "knowledge-base/CPA-ZH/raw/policies/issuance-guidance/issuance-class-09-rd-staff-investment/official.pdf",
+  "official_page_status": "verified",
+  "text_extraction_status": "extracted_by_pypdf",
+  "ocr_status": "not_required",
+  "notes": [
+    "安装 pypdf 6.14.2 后，本地 PDF 已可抽取文本；文本缓存记录正文长度约 3742 字符。",
+    "证监会官网原文页已核验，可作为官方链接来源。",
+    "未将同目录的集团口径研发人员调整清单 Excel 纳入 CPA-ZH；该文件属于项目明细资料，不是监管规则原文。"
+  ]
+}
