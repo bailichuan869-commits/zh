@@ -1,33 +1,93 @@
-# 工作区说明
+# ai-audit 工作区
 
-这个工作区按“活跃内容在顶层、过程材料进 workspace、历史材料进 archived”的逻辑整理。
+这个仓库是一个面向审计、会计准则和监管资料的本地知识工作台。当前主线是 `CPA-ZH` 知识库，同时保留课程产物、维护脚本和历史归档。
 
-## 顶层入口
+## 快速入口
 
-- `knowledge-base/`
-  - 当前主知识库，核心内容是 `CPA-ZH`。
-  - 相关脚本默认仍以 `knowledge-base/CPA-ZH` 为工作根目录。
-- `regulations/`
-  - 法规原文与整理稿。
-  - `markdown/` 存放整理后的 Markdown 文本。
-  - `source_docs/` 存放原始法规文档。
-- `course/`
-  - 课程材料与生成结果。
-  - `source/` 存放课程 Markdown。
-  - `dist/` 存放生成后的 HTML。
-  - `slides/` 存放演示页或网页 PPT。
-- `tools/`
-  - 脚本与自动化工具。
-- `workspace/`
-  - 工作过程材料、说明文档、临时产物和一次性输出。
-- `archived/`
-  - 已归档项目与历史材料，默认不作为当前活跃工作内容处理。
+| 入口 | 用途 |
+|---|---|
+| `knowledge-base/CPA-ZH/README.md` | 主知识库说明、检索命令、维护流程 |
+| `knowledge-base/CPA-ZH/wiki/index.md` | CPA-ZH wiki 总索引 |
+| `start-kb.bat` | 双击启动 CPA-ZH 知识库 Web 界面 |
+| `stop-kb.bat` | 停止本机 CPA-ZH 知识库 Web 服务 |
+| `tools/kb.py` | CPA-ZH 统一维护入口 |
+| `course/` | 课程 Markdown、HTML 和网页 PPT |
+| `archived/regulations/` | 已归档法规原文与整理稿，后续默认不维护 |
+| `workspace/docs/` | 工作区说明、检查记录和架构说明 |
+| `workspace/docs/generated-artifacts.md` | 源资产、可重建产物和发布产物边界 |
+| `requirements.txt` | Python 运行依赖清单 |
 
-## 约定
+## 目录分层
 
-- 新增知识库内容优先进入 `knowledge-base/`。
-- 新增法规资料优先进入 `regulations/`。
-- 新增脚本放入 `tools/`。
-- 临时文件、过程说明、一次性输出放入 `workspace/`。
-- 已完成且短期不再维护的项目放入 `archived/`。
-- `.codex/`、`.agents/`、`.git/`、`.venv/`、`.workbuddy/` 是工具或环境目录，通常不手动整理。
+```text
+ai-audit/
+├── frontend/                # Vue 3 + Vite 知识库浏览器
+├── backend/                 # FastAPI 只读 API
+├── knowledge-base/          # 当前活跃知识库
+│   └── CPA-ZH/              # CPA 行业知识库主线
+├── tools/                   # 自动化脚本和维护入口
+├── requirements.txt         # Python 运行依赖
+├── start-kb.bat             # 知识库 API 启动入口
+├── stop-kb.bat              # 知识库 UI 停止入口
+├── course/                  # 课程资料与生成结果
+├── workspace/               # 过程资料、临时输出和说明文档
+└── archived/                # 已完成或暂不维护的历史项目
+    └── regulations/         # 已归档法规资料
+```
+
+## 常用命令
+
+所有 Python 命令建议使用工作区虚拟环境：
+
+```powershell
+.\.venv\Scripts\python.exe
+```
+
+启动或停止知识库 Web 界面：
+
+```powershell
+.\start-kb.bat
+.\stop-kb.bat
+```
+
+## CPA-ZH 前后端运行
+
+知识库浏览器已拆分为独立的 Vue 前端和 FastAPI 后端。`start-kb.bat` 只启动本机 API（`http://127.0.0.1:8765/api/docs`）；另开终端运行前端：
+
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+前端开发服务地址为 `http://127.0.0.1:5173`，通过 Vite 代理调用后端。生产部署时先执行 `npm run build`，再由独立静态 Web 服务托管 `frontend/dist/`。
+
+CPA-ZH 维护建议优先使用统一入口：
+
+```powershell
+.\.venv\Scripts\python.exe tools\kb.py health
+.\.venv\Scripts\python.exe tools\kb.py search "收入确认"
+.\.venv\Scripts\python.exe tools\kb.py cache build
+.\.venv\Scripts\python.exe tools\kb.py index
+.\.venv\Scripts\python.exe tools\kb.py readme
+.\.venv\Scripts\python.exe tools\kb.py verify
+```
+
+旧脚本入口仍然保留，例如 `tools/kb_search.py`、`tools/kb_health_check.py`、`tools/kb_text_cache.py`。
+
+## 放置规则
+
+- 新增知识库内容：优先放入 `knowledge-base/CPA-ZH/raw/`，再加工到 `wiki/`。
+- 法规资料库已归档到 `archived/regulations/`，后续默认不新增、不维护。
+- 新增课程资料：Markdown 放入 `course/source/`，生成品放入 `course/dist/` 或 `course/slides/`。
+- 新增脚本：放入 `tools/`，并在 `tools/README.md` 归类。
+- 新增 Python 依赖：同步更新 `requirements.txt`。
+- 临时文件、一次性输出、过程说明：放入 `workspace/`。
+- 已完成且短期不维护的项目：移入 `archived/`。
+
+## 架构原则
+
+- `raw/` 保存原始资料，`wiki/` 保存结构化知识，`cache/` 和 `search/` 是可重建产物；具体规则见 `workspace/docs/generated-artifacts.md`。
+- 顶层目录按业务域分层，脚本只做维护和生成，不混入知识正文。
+- 能复用 `tools/kb.py` 的维护动作，优先通过统一入口执行。
+- 不在历史归档里继续建设新功能；需要复活时先迁回活跃目录。

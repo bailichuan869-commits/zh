@@ -1,0 +1,3 @@
+:root { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; color: #17211f; --app-bg: #f5f7f5; --app-surface: #ffffff; --app-text: #17211f; --app-muted: #66736d; --app-border: #dce5e0; --app-accent: #0a7a71; --app-code: #f1f5f3; }
+:root[data-theme="dark"] { color: #edf3ef; --app-bg: #141816; --app-surface: #1c221f; --app-text: #edf3ef; --app-muted: #a9b6af; --app-border: #37413c; --app-accent: #69c9bc; --app-code: #222b26; }
+body { margin: 0; background: var(--app-bg); color: var(--app-text); } a { color: var(--app-accent); } .ant-card { border-radius: 6px; }

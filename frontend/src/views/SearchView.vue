@@ -1,0 +1,13 @@
+<script setup lang="ts">
+import { computed, ref, watch } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
+import { api, type SearchResult } from '@/services/api'
+const route = useRoute(); const router = useRouter()
+const query = ref(String(route.query.q ?? '')); const domain = ref(String(route.query.domain ?? '')); const kind = ref(String(route.query.kind ?? ''))
+const results = ref<SearchResult[]>([]); const total = ref(0); const facets = ref<[string, number][]>([]); const loading = ref(false); const error = ref('')
+async function run() { if (!query.value.trim()) return; loading.value = true; error.value = ''; try { const data = await api.search(query.value.trim(), domain.value, kind.value); results.value = data.results; total.value = data.total; facets.value = data.facets; router.replace({ query: { q: query.value, ...(domain.value ? { domain: domain.value } : {}), ...(kind.value ? { kind: kind.value } : {}) } }) } catch (reason) { error.value = reason instanceof Error ? reason.message : '检索失败' } finally { loading.value = false } }
+watch(() => route.query.q, value => { if (value && value !== query.value) { query.value = String(value); run() } }, { immediate: true })
+const title = computed(() => total.value ? `检索结果（${total.value}）` : '检索')
+function open(item: SearchResult) { router.push({ path: item.path.startsWith('wiki/') ? '/document' : '/raw', query: { path: item.path } }) }
+</script>
+<template><a-space direction="vertical" size="large" style="width:100%"><a-input-search v-model:value="query" size="large" placeholder="输入检索词" :loading="loading" @search="run" /><a-space wrap><a-select v-model:value="kind" style="width:130px" @change="run"><a-select-option value="">全部类型</a-select-option><a-select-option value="wiki">知识页面</a-select-option><a-select-option value="raw">原始资料</a-select-option></a-select><a-select v-model:value="domain" style="width:180px" @change="run"><a-select-option value="">全部领域</a-select-option><a-select-option v-for="facet in facets" :key="facet[0]" :value="facet[0]">{{ facet[0] }} ({{ facet[1] }})</a-select-option></a-select></a-space><a-alert v-if="error" type="error" :message="error" show-icon /><a-list :header="title" :data-source="results" :loading="loading" item-layout="vertical"><template #renderItem="{ item }"><a-list-item><a-list-item-meta :description="item.path"><template #title><a @click="open(item)">{{ item.title }}</a></template></a-list-item-meta><p v-html="item.snippet" /><a-space><a-tag>{{ item.kind }}</a-tag><a-tag v-if="item.domain">{{ item.domain }}</a-tag><a-tag v-if="item.maturity">{{ item.maturity }}</a-tag></a-space></a-list-item></template></a-list></a-space></template>
