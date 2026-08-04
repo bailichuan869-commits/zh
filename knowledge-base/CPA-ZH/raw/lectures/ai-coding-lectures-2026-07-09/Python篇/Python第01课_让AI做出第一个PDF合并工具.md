@@ -1,0 +1,125 @@
+---
+source_type: "local-lecture"
+source_role: "content"
+representation: "semantic-transcript"
+extraction_profile: "readable"
+structure_status: "verified-auto"
+source_pages: 0
+heading_count: 8
+table_count: 0
+extraction_engine: "markdown-pass-through"
+extraction_status: "ok"
+structure_updated_at: "2026-07-28"
+---
+
+# Python 第 01 课：让 AI 做出第一个 PDF 合并工具
+
+## 今天先做出第一个小工具
+
+我们不从 Python 语法开始，也不先讲一堆工程概念。
+
+今天只做一件事：
+
+> 让 AI 帮我们写一个能合并 PDF 的小工具。
+
+## 今天要解决的问题
+
+很多时候我们会有多个 PDF：
+
+- 多个底稿附件。
+- 多个扫描件。
+- 多个说明文件。
+- 多个需要装订到一起的材料。
+
+我们希望把它们按顺序合并成一个 PDF。
+
+## 你会学到
+
+- 怎么把一个文件处理需求讲给 AI。
+- 什么是输入文件。
+- 什么是输出文件。
+- 什么是处理规则。
+- 怎么先做出一个能跑的最小版本。
+
+## 我们一起动手做
+
+先建立一个简单目录：
+
+```text
+pdf_tools_demo/
+  input_pdfs/
+  output/
+  pdf_merger.py
+```
+
+准备 2-3 个测试 PDF，放进：
+
+```text
+input_pdfs/
+```
+
+在vscode中新建一个虚拟环境
+
+提示词：
+```
+我想做一个最简单的 Python PDF 合并工具。
+
+业务场景：
+把 input_pdfs 文件夹里的多个 PDF 文件，按文件名顺序合并成一个 PDF。
+
+要求：
+- 输入文件夹：input_pdfs
+- 输出文件：output\merged.pdf
+- 代码适合零基础学员阅读，加必要注释
+
+```
+
+## 今天先不要纠结
+
+今天先不展开讲：
+
+- 虚拟环境的原理。
+- Git。
+- 项目标准结构。
+- GUI。
+- JSON 配置。
+
+但安装 `pypdf` 时，要让 AI 先创建并激活项目自己的 `.venv`，不要直接装到全局 Python。
+
+今天只要先看到结果：
+
+> AI 真的帮我们做出了第一个能运行的小工具。
+
+## 做完以后你应该能
+
+- 说清 PDF 合并工具的输入、处理、输出。
+- 看懂 AI 生成代码的大致结构。
+- 用测试 PDF 生成一个合并后的 PDF。
+
+## 本节课提示词
+
+把下面这段发给 AI：
+
+```text
+我想做一个最简单的 Python PDF 合并工具。
+
+业务场景：
+把 input_pdfs 文件夹里的多个 PDF 文件，按文件名顺序合并成一个 PDF。
+
+要求：
+- 输入文件夹：input_pdfs
+- 输出文件：output\merged.pdf
+- 如果 input_pdfs 不存在，要给出中文提示
+- 如果 input_pdfs 里没有 PDF，要给出中文提示
+- 合并成功后，提示合并了几个 PDF，以及输出路径
+- 代码适合零基础学员阅读，加必要注释
+
+请输出：
+1. 需求理解
+2. 需要安装什么 Python 库
+3. 如何在当前项目中创建并激活 .venv
+4. 如何在 .venv 中安装 pypdf，不要全局安装
+5. Python 代码
+6. 怎么准备测试 PDF
+7. 怎么运行这个脚本
+```

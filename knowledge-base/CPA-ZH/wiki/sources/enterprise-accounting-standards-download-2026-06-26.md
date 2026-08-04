@@ -7,6 +7,8 @@ updated: 2026-06-26
 raw_path: raw/standards/accounting/
 tags: [accounting, standards, official-download, p1-core]
 related: [[concepts/accounting-standards-system]]
+domain: sources
+topic: batches
 ---
 
 # 企业会计准则专题下载批次
@@ -15,11 +17,11 @@ related: [[concepts/accounting-standards-system]]
 
 本批次从财政部会计司“企业会计准则”专题下载：
 
-- 专题跳转页：`raw/standards/accounting/mof-accounting-standards-topic.html`
-- 企业会计准则专题真实入口页：`raw/standards/accounting/mof-accounting-standards-implementation.html`
-- 企业会计准则专题分页：`raw/standards/accounting/mof-accounting-standards-implementation-index_1.html` 至 `index_4.html`
+- 专题跳转页：`raw/standards/accounting/mof-accounting-standards-topic.html.md`
+- 企业会计准则专题真实入口页：`raw/standards/accounting/mof-accounting-standards-implementation.html.md`
+- 企业会计准则专题分页：`raw/standards/accounting/mof-accounting-standards-implementation-index_1.html.md` 至 `index_4.html`
 - 企业会计准则条目 HTML 原文：`raw/standards/accounting/standards-pages/`
-- 下载清单：`raw/standards/accounting/downloaded-enterprise-accounting-standards.csv`
+- 下载清单：`raw/standards/accounting/downloaded-enterprise-accounting-standards.csv.md`
 
 ## 下载结果
 

@@ -1,0 +1,403 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:47:47+00:00",
+  "source_file": "raw/_archive/standards/audit/archives/2023-23-audit-standards/3.《中国注册会计师审计准则第1101号——注册会计师的总体目标和审计工作的基本要求》等23项一致性修订的准则/3.13.中国注册会计师审计准则第1323号——关联方（2022年12月22日修订）.pdf",
+  "derived_file": "raw/standards/audit/archives/2023-23-audit-standards/3.《中国注册会计师审计准则第1101号——注册会计师的总体目标和审计工作的基本要求》等23项一致性修订的准则/3.13.中国注册会计师审计准则第1323号——关联方（2022年12月22日修订）.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 10,
+  "heading_count": 48,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "3.13.中国注册会计师审计准则第1323号——关联方（2022年12月22日修订）",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "中国注册会计师审计准则第1323 号",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[2]/line[2]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "——关联方",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范注册会计师在财务报表审计中与关联方关系及其",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二条 在涉及与关联方关系及其交易相关的重大错报风险时，本",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三条 许多关联方交易是在正常经营过程中发生的，与类似的非",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四条 由于关联方之间彼此并不独立，为使财务报表使用者了解",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五条 即使适用的财务报告编制基础对关联方作出很少的规定或",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六条 由于关联方之间更容易发生舞弊，因此注册会计师了解被",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七条 由于审计的固有限制，即使注册会计师按照审计准则的规",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八条 由于存在未披露关联方关系及其交易的可能性，注册会计",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 定 义",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 关联方，在适用的财务报告编制基础对关联方作出规定的",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十条 公平交易，是指按照互不关联、各自独立行事且追求自身",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 目 标",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 注册会计师的目标是：",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 要 求",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 风险评估程序和相关工作",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十二条 《中国注册会计师审计准则第1211 号——重大错报风",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十三条 项目组按照《中国注册会计师审计准则第1211 号——",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十四条 注册会计师应当向管理层询问下列事项：",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十五条 如果管理层建立了下列与关联方关系及其交易相关的控",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十六条 某些安排或其他信息可能显示管理层以前未识别或未向",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十七条 在实施本准则第十六条规定的审计程序或其他审计程序",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十八条 在整个审计过程中，注册会计师应当与项目组其他成员",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 识别和评估与关联方关系及其交易",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "相关的重大错报风险",
+      "page": 6,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[6]/block[11]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 3,
+      "text": "第十九条 注册会计师应当按照《中国注册会计师审计准则第1211",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十条 如果在实施与关联方有关的风险评估程序和相关工作中",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 针对与关联方关系及其交易相关的重大错报风险的",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[24]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "应对措施",
+      "page": 7,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[7]/block[2]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 3,
+      "text": "第二十一条 注册会计师应当按照《中国注册会计师审计准则第",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十二条 如果识别出可能表明存在管理层以前未识别出或未向",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十三条 如果识别出管理层以前未识别出或未向注册会计师披",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十四条 对于识别出的超出正常经营过程的重大关联方交易，",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十五条 如果管理层在财务报表中作出认定，声明关联方交易",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 评价识别出的关联方关系及其交易",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "的会计处理和披露",
+      "page": 8,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[8]/block[21]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 3,
+      "text": "第二十六条 当按照《中国注册会计师审计准则第1501 号——对",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 书面声明",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十七条 如果适用的财务报告编制基础对关联方作出规定，注",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六节 与治理层的沟通",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十八条 除非治理层全部成员参与管理被审计单位，注册会计",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七节 审计工作底稿",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十九条 注册会计师应当就识别出的关联方名称、关联方关系",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 附 则",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十条 本准则自2023 年7 月1 日起施行。",
+      "page": 10,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[10]/block[2]/line[1]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

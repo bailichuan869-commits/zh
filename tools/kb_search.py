@@ -14,6 +14,22 @@ from typing import Any, Iterable
 
 TEXT_SUFFIXES = {".md", ".txt", ".csv", ".json", ".html", ".htm", ".xml"}
 
+# 已被新法（2026修订草案）取代、仅作历史版本的旧法文件，不进入常规检索索引。
+# 文件物理保留，仍可通过 wiki/concepts/law-cpa.md 的历史链接访问。
+SUPERSEDED_SEARCH_EXCLUDES = [
+    "wiki/concepts/laws/cpa-law/cpa-law-article-*.md",
+    "wiki/concepts/laws/cpa-law/index.md",
+    "raw/laws/中华人民共和国注册会计师法.md",
+]
+
+
+def is_search_excluded(rel_path: str) -> bool:
+    """True 表示该文件属于已被取代的旧法版本，应从检索索引中排除。"""
+    import fnmatch
+    return rel_path.endswith(".structure.json") or any(
+        fnmatch.fnmatch(rel_path, pat) for pat in SUPERSEDED_SEARCH_EXCLUDES
+    )
+
 
 class TextExtractor(HTMLParser):
     def __init__(self) -> None:
@@ -67,7 +83,44 @@ def extract_docx(path: Path) -> str:
         return ""
 
 
+def extract_pdf_pymupdf(path: Path) -> str:
+    try:
+        import fitz  # type: ignore
+
+        document = fitz.open(str(path))
+        try:
+            return normalize_text("\n".join(page.get_text("text") for page in document))
+        finally:
+            document.close()
+    except Exception:
+        return ""
+
+
+def extract_pdf_pdfplumber(path: Path) -> str:
+    try:
+        import pdfplumber  # type: ignore
+
+        with pdfplumber.open(str(path)) as pdf:
+            return normalize_text("\n".join(page.extract_text() or "" for page in pdf.pages))
+    except Exception:
+        return ""
+
+
+def extract_pdf_pdfminer(path: Path) -> str:
+    try:
+        from pdfminer.high_level import extract_text  # type: ignore
+
+        return normalize_text(extract_text(str(path)) or "")
+    except Exception:
+        return ""
+
+
 def extract_pdf(path: Path) -> str:
+    for extractor in (extract_pdf_pymupdf, extract_pdf_pdfplumber, extract_pdf_pdfminer):
+        text = extractor(path)
+        if text:
+            return text
+
     try:
         from pypdf import PdfReader  # type: ignore
 
@@ -151,6 +204,17 @@ def frontmatter_title(text: str, fallback: str) -> str:
     return fallback
 
 
+_LEAD_NUM_TITLE = re.compile(r"^\s*\d{1,4}[-_.\u3001、\s]+")
+
+
+def clean_title(title: str) -> str:
+    """去掉来源文档标题前缀的编号（如 '058-'、'058、'、'058.'），用于检索结果展示。"""
+    if not title:
+        return title
+    cleaned = _LEAD_NUM_TITLE.sub("", title).strip()
+    return cleaned or title
+
+
 def load_manifest(path: Path) -> list[dict[str, Any]]:
     data = json.loads(path.read_text(encoding="utf-8"))
     if isinstance(data, list):
@@ -164,8 +228,13 @@ def resolve_local_file(root: Path, local_file: str) -> Path:
     path = Path(local_file)
     if path.is_absolute():
         return path
+    normalized = local_file.replace("\\", "/")
+    kb_prefix = "knowledge-base/CPA-ZH/"
+    if normalized.startswith(kb_prefix):
+        normalized = normalized[len(kb_prefix):]
     candidates = [
         root / path,
+        root / normalized,
         Path.cwd() / path,
         root.parent / path,
         root.parents[1] / path if len(root.parents) > 1 else root / path,
@@ -181,14 +250,31 @@ def iter_documents(root: Path) -> Iterable[dict[str, str]]:
 
     wiki_root = root / "wiki"
     for md in sorted(wiki_root.rglob("*.md")):
+        if "_trash" in md.parts or "_maintenance" in md.parts:
+            continue
+        rel = md.relative_to(root).as_posix()
+        if is_search_excluded(rel):
+            continue
         text = read_text(md)
         yield {
             "kind": "wiki",
-            "title": frontmatter_title(text, md.stem),
-            "path": md.relative_to(root).as_posix(),
+            "title": clean_title(frontmatter_title(text, md.stem)),
+            "path": rel,
             "source_url": "",
             "body": normalize_text(text),
         }
+
+    pdf_markdown_root = root / "cache" / "pdf-markdown" / "files"
+    if pdf_markdown_root.exists():
+        for md in sorted(pdf_markdown_root.rglob("*.md")):
+            text = read_text(md)
+            yield {
+                "kind": "pdf-markdown",
+                "title": clean_title(frontmatter_title(text, md.stem)),
+                "path": md.relative_to(root).as_posix(),
+                "source_url": "",
+                "body": normalize_text(text),
+            }
 
     manifest_files = sorted((root / "raw").rglob("manifest.json"))
     manifest_local_files: set[str] = set()
@@ -197,8 +283,18 @@ def iter_documents(root: Path) -> Iterable[dict[str, str]]:
             local_file = str(item.get("local_file") or "")
             if local_file:
                 manifest_local_files.add(local_file.replace("\\", "/"))
+                manifest_local_files.add(local_file.replace("\\", "/").replace("knowledge-base/CPA-ZH/", ""))
+            derived_markdown = str(item.get("derived_markdown") or "")
+            if derived_markdown:
+                manifest_local_files.add(derived_markdown.replace("\\", "/"))
+                manifest_local_files.add(derived_markdown.replace("\\", "/").replace("knowledge-base/CPA-ZH/", ""))
             local_path = resolve_local_file(root, local_file) if local_file else manifest_path
-            extracted = cached_file_text(root, local_path, text_cache) if local_path.exists() else ""
+            derived_path = resolve_local_file(root, derived_markdown) if derived_markdown else Path()
+            extracted = ""
+            if derived_markdown and derived_path.exists():
+                extracted = cached_file_text(root, derived_path, text_cache)
+            if not extracted and local_path.exists():
+                extracted = cached_file_text(root, local_path, text_cache)
             metadata_text = " ".join(
                 str(item.get(key, ""))
                 for key in [
@@ -209,12 +305,13 @@ def iter_documents(root: Path) -> Iterable[dict[str, str]]:
                     "url",
                     "source_url",
                     "local_file",
+                    "derived_markdown",
                     "wiki_page",
                 ]
             )
             yield {
                 "kind": "raw-manifest",
-                "title": str(item.get("title") or item.get("slug") or local_path.name),
+                "title": clean_title(str(item.get("title") or item.get("slug") or local_path.name)),
                 "path": local_file or manifest_path.relative_to(root).as_posix(),
                 "source_url": str(item.get("url") or item.get("source_url") or ""),
                 "body": normalize_text(metadata_text + " " + extracted),
@@ -224,7 +321,11 @@ def iter_documents(root: Path) -> Iterable[dict[str, str]]:
         if not raw_file.is_file():
             continue
         rel_path = raw_file.relative_to(root).as_posix()
+        if "_archive/" in rel_path or rel_path.startswith("_archive/"):
+            continue
         if rel_path in manifest_local_files:
+            continue
+        if is_search_excluded(rel_path):
             continue
         if raw_file.name in {"metadata.json", "source-url.txt", "manifest.json"}:
             continue
@@ -232,7 +333,7 @@ def iter_documents(root: Path) -> Iterable[dict[str, str]]:
         if text:
             yield {
                 "kind": "raw-file",
-                "title": raw_file.stem,
+                "title": clean_title(raw_file.stem),
                 "path": rel_path,
                 "source_url": "",
                 "body": text,
@@ -246,10 +347,55 @@ def connect(db_path: Path) -> sqlite3.Connection:
     return connection
 
 
+def load_classifier(root: Path):
+    """Load the repository-level CPA-ZH classification helper when available."""
+    tools_dir = Path(__file__).resolve().parent
+    if not (tools_dir / "classify_wiki.py").exists():
+        return None
+    if str(tools_dir) not in sys.path:
+        sys.path.insert(0, str(tools_dir))
+    try:
+        import classify_wiki  # type: ignore
+
+        return classify_wiki
+    except Exception:
+        return None
+
+
+def classify_document(classifier, document: dict[str, str]) -> tuple[str, str]:
+    if classifier is None:
+        return "", ""
+    try:
+        path = document["path"]
+        if document["kind"] == "wiki":
+            return classifier.classify_wiki(path, {})
+        if document["kind"] == "pdf-markdown":
+            # cache/pdf-markdown/files 目前全部为审计准则应用指南
+            return "audit-standards", "raw-audit"
+        prefix = "knowledge-base/CPA-ZH/"
+        if path.startswith(prefix):
+            path = path[len(prefix):]
+        if path.startswith("raw/"):
+            return classifier.classify_raw(path)
+        return "", ""
+    except Exception:
+        return "", ""
+
+
 def build_index(root: Path, db_path: Path) -> None:
+    classifier = load_classifier(root)
+    kb_tools = root / "tools"
+    if str(kb_tools) not in sys.path:
+        sys.path.insert(0, str(kb_tools))
+    try:
+        from kb_common import page_metadata, parse_frontmatter, section_chunks, is_authoritative_path
+    except Exception:
+        page_metadata = parse_frontmatter = section_chunks = is_authoritative_path = None
     connection = connect(db_path)
     connection.executescript(
         """
+        DROP TABLE IF EXISTS chunks_fts;
+        DROP TABLE IF EXISTS chunks;
         DROP TABLE IF EXISTS documents;
         DROP TABLE IF EXISTS documents_fts;
         CREATE TABLE documents (
@@ -258,26 +404,94 @@ def build_index(root: Path, db_path: Path) -> None:
             title TEXT NOT NULL,
             path TEXT NOT NULL,
             source_url TEXT NOT NULL,
-            body TEXT NOT NULL
+            body TEXT NOT NULL,
+            domain TEXT NOT NULL DEFAULT '',
+            topic TEXT NOT NULL DEFAULT '',
+            page_role TEXT NOT NULL DEFAULT 'reference',
+            maturity TEXT NOT NULL DEFAULT 'reviewed',
+            answer_ready INTEGER NOT NULL DEFAULT 0,
+            authority TEXT NOT NULL DEFAULT 'curated',
+            rank_boost REAL NOT NULL DEFAULT 0
         );
         CREATE VIRTUAL TABLE documents_fts USING fts5(
             title,
             body,
             content='documents',
-            content_rowid='id'
+            content_rowid='id',
+            tokenize='trigram'
         );
+        CREATE TABLE chunks (
+            id INTEGER PRIMARY KEY,
+            document_id INTEGER NOT NULL,
+            heading TEXT NOT NULL,
+            body TEXT NOT NULL,
+            FOREIGN KEY(document_id) REFERENCES documents(id)
+        );
+        CREATE VIRTUAL TABLE chunks_fts USING fts5(
+            heading,
+            body,
+            content='chunks',
+            content_rowid='id',
+            tokenize='trigram'
+        );
+        CREATE INDEX idx_documents_delivery ON documents(answer_ready, page_role, authority);
+        CREATE INDEX idx_chunks_document ON chunks(document_id);
         """
     )
     count = 0
     for document in iter_documents(root):
+        domain, topic = classify_document(classifier, document)
+        rel_path = document["path"].replace("\\", "/")
+        role = "reference"
+        maturity = "reviewed"
+        answer_ready = False
+        authority = "curated"
+        chunk_body = document["body"]
+        if document["kind"] == "wiki" and page_metadata is not None:
+            source_text = read_text(root / rel_path)
+            metadata = page_metadata(rel_path, source_text)
+            role = str(metadata["page_role"])
+            maturity = str(metadata["maturity"])
+            answer_ready = bool(metadata["answer_ready"])
+            authority = str(metadata["authority"])
+            if parse_frontmatter is not None:
+                frontmatter, chunk_body = parse_frontmatter(source_text)
+                # A curated page can declare a more precise topic than the
+                # path-based classifier, especially for cross-domain cases.
+                domain = str(frontmatter.get("domain") or domain)
+                topic = str(frontmatter.get("topic") or topic)
+        elif is_authoritative_path is not None:
+            authority = "official" if is_authoritative_path(rel_path, {}) else "curated"
+            answer_ready = authority == "official"
+        rank_boost = 0.0
+        if answer_ready and role in {"knowledge", "case"}:
+            rank_boost += 150.0
+        elif role == "case":
+            rank_boost += 90.0
+        elif role == "knowledge":
+            rank_boost += 75.0
+        if authority == "official":
+            rank_boost += 55.0
+        if role == "index":
+            rank_boost -= 35.0
+        if maturity == "skeleton":
+            rank_boost -= 60.0
         cursor = connection.execute(
-            "INSERT INTO documents(kind, title, path, source_url, body) VALUES (?, ?, ?, ?, ?)",
+            "INSERT INTO documents(kind, title, path, source_url, body, domain, topic, page_role, maturity, answer_ready, authority, rank_boost)"
+            " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (
                 document["kind"],
                 document["title"],
                 document["path"],
                 document["source_url"],
                 document["body"],
+                domain,
+                topic,
+                role,
+                maturity,
+                int(answer_ready),
+                authority,
+                rank_boost,
             ),
         )
         row_id = cursor.lastrowid
@@ -285,6 +499,18 @@ def build_index(root: Path, db_path: Path) -> None:
             "INSERT INTO documents_fts(rowid, title, body) VALUES (?, ?, ?)",
             (row_id, document["title"], document["body"]),
         )
+        chunks = section_chunks(chunk_body) if section_chunks is not None else [("正文", chunk_body)]
+        for heading, chunk_text in chunks:
+            if not normalize_text(chunk_text):
+                continue
+            chunk_cursor = connection.execute(
+                "INSERT INTO chunks(document_id, heading, body) VALUES (?, ?, ?)",
+                (row_id, heading, normalize_text(chunk_text)),
+            )
+            connection.execute(
+                "INSERT INTO chunks_fts(rowid, heading, body) VALUES (?, ?, ?)",
+                (chunk_cursor.lastrowid, heading, normalize_text(chunk_text)),
+            )
         count += 1
     connection.commit()
     connection.close()
@@ -309,6 +535,12 @@ def make_snippet(text: str, query: str, limit: int = 150) -> str:
     return snippet
 
 
+def fts_match_query(query: str) -> str:
+    """把用户输入转成 FTS5 MATCH 表达式：每个词组加引号，AND 连接。"""
+    terms = [term for term in query.split() if term] or [query]
+    return " AND ".join('"' + term.replace('"', '""') + '"' for term in terms)
+
+
 def query_index(db_path: Path, query: str, limit: int) -> int:
     if not db_path.exists():
         print(f"Search index not found: {db_path}", file=sys.stderr)
@@ -316,6 +548,37 @@ def query_index(db_path: Path, query: str, limit: int) -> int:
         return 2
 
     connection = sqlite3.connect(db_path)
+
+    # 优先 FTS5 trigram MATCH（要求词长>=3字符；中文3字即3字符）
+    if min((len(t) for t in query.split() if t), default=len(query)) >= 3:
+        try:
+            rows = connection.execute(
+                """
+                SELECT d.kind, d.title, d.path, d.source_url,
+                       snippet(documents_fts, 1, '[', ']', '...', 40) AS snip,
+                       bm25(documents_fts) AS score
+                FROM documents_fts
+                JOIN documents d ON d.id = documents_fts.rowid
+                WHERE documents_fts MATCH ?
+                ORDER BY score
+                LIMIT ?
+                """,
+                (fts_match_query(query), limit),
+            ).fetchall()
+            if rows:
+                for index, row in enumerate(rows, start=1):
+                    kind, title, path, source_url, snip, _score = row
+                    print(f"{index}. [{kind}] {title}")
+                    print(f"   path: {path}")
+                    if source_url:
+                        print(f"   url: {source_url}")
+                    print(f"   hit: {snip}")
+                print(f"results={len(rows)}")
+                connection.close()
+                return 0
+        except sqlite3.OperationalError:
+            pass
+
     like_terms = [term for term in query.split() if term] or [query]
     where = " AND ".join(["(title LIKE ? OR body LIKE ?)" for _ in like_terms])
     score_parts = [

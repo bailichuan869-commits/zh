@@ -1,0 +1,93 @@
+---
+title: "enterprise-accounting-standards-unmapped-review"
+type: "raw-source"
+source_type: "table"
+source_role: "source-registry"
+original_file: "raw/indexes/enterprise-accounting-standards-unmapped-review.csv"
+created: "2026-06-26"
+converted_at: "2026-07-24"
+---
+
+# enterprise-accounting-standards-unmapped-review
+
+| ﻿SourceType | Title | Url | LocalPath | SuggestedBucket | Reason | Confidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| 准则解释 | 关于印发《企业会计准则解释第16号》的通知 | https://kjs.mof.gov.cn/gongzuotongzhi/202212/t20221212_3857395.htm | raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第16号-的通知.html | 解释第16号 | 标题中明确给出解释编号 | high |
+| 准则解释 | 关于印发《企业会计准则解释第1号》的通知 | https://kjs.mof.gov.cn/zhengcefabu/200805/t20080522_33804.htm | raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第1号-的通知.html | 解释第1号 | 标题中明确给出解释编号 | high |
+| 准则解释 | 关于印发企业会计准则解释第2号的通知 | https://kjs.mof.gov.cn/zhengcefabu/200809/t20080912_74645.htm | raw/standards/accounting/interpretations-pages/关于印发企业会计准则解释第2号的通知.html | 解释第2号 | 标题中明确给出解释编号 | high |
+| 准则解释 | 关于印发企业会计准则解释第3号的通知 | https://kjs.mof.gov.cn/zhengcefabu/200906/t20090625_172281.htm | raw/standards/accounting/interpretations-pages/关于印发企业会计准则解释第3号的通知.html | 解释第3号 | 标题中明确给出解释编号 | high |
+| 准则解释 | 关于印发《企业会计准则解释第9号——关于权益法下投资净损失的会计处理》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201706/t20170621_2628433.htm | raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第9号-关于权益法下投资净损失的会计处理-的通知.html | 解释第9号 | 标题中明确给出解释编号 | high |
+| 准则解释 | 关于印发《企业会计准则解释第12号——关于关键管理人员服务的提供方与接受方是否为关联方》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201706/t20170621_2628439.htm | raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第12号-关于关键管理人员服务的提供方与接受方是否为关联方-的通知.html | 解释第12号 | 标题中明确给出解释编号 | high |
+| 准则解释 | 关于印发《企业会计准则解释第13号》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201912/t20191213_3441493.htm | raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第13号-的通知.html | 解释第13号 | 标题中明确给出解释编号 | high |
+| 准则解释 | 关于印发《企业会计准则解释第14号》的通知 | https://kjs.mof.gov.cn/zhengcefabu/202102/t20210202_3653110.htm | raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第14号-的通知.html | 解释第14号 | 标题中明确给出解释编号 | high |
+| 准则解释 | 关于印发《企业会计准则解释第15号》的通知 | https://kjs.mof.gov.cn/zhengcefabu/202112/t20211231_3779983.htm | raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第15号-的通知.html | 解释第15号 | 标题中明确给出解释编号 | high |
+| 准则解释 | 关于印发《企业会计准则解释第17号》的通知 | https://kjs.mof.gov.cn/zhengcefabu/202311/t20231109_3915491.htm | raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第17号-的通知.html | 解释第17号 | 标题中明确给出解释编号 | high |
+| 准则解释 | 关于印发《企业会计准则解释第18号》的通知 | https://kjs.mof.gov.cn/zhengcefabu/202412/t20241223_3950344.htm | raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第18号-的通知.html | 解释第18号 | 标题中明确给出解释编号 | high |
+| 应用案例 | PPP项目合同社会资本方会计处理应用案例——金融资产模式 | https://kjs.mof.gov.cn/zt/kjzzss/srzzzq/202108/t20210810_3744014.htm | raw/standards/accounting/application-cases-pages/021-PPP项目合同社会资本方会计处理应用案例-金融资产模式.html | 解释第14号 / PPP专题 | PPP 会计处理专题 | medium |
+| 应用案例 | PPP项目合同社会资本方会计处理应用案例——混合模式 | https://kjs.mof.gov.cn/zt/kjzzss/srzzzq/202108/t20210810_3744016.htm | raw/standards/accounting/application-cases-pages/022-PPP项目合同社会资本方会计处理应用案例-混合模式.html | 解释第14号 / PPP专题 | PPP 会计处理专题 | medium |
+| 应用案例 | 资金集中管理会计处理应用案例 | https://kjs.mof.gov.cn/zt/kjzzss/srzzzq/202201/t20220124_3784577.htm | raw/standards/accounting/application-cases-pages/023-资金集中管理会计处理应用案例.html | 其他规定 / 资金集中管理 | 更接近专题性会计处理规定 | medium |
+| 实施问答 | 问：企业对于当期直接减免的增值税，应当如何进行会计处理？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202012/t20201211_3634038.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-006.html | 其他规定 / 增值税会计处理规定 | 明显属于增值税会计处理专题 | high |
+| 实施问答 | 问：小微企业达到增值税制度规定的免征增值税条件时，应当如何进行会计处理？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202012/t20201211_3634040.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-007.html | 其他规定 / 增值税会计处理规定 | 明显属于增值税会计处理专题 | high |
+| 实施问答 | 问：企业缴纳残疾人就业保障金应当计入哪个会计科目？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202012/t20201211_3634041.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-008.html | 待人工核验 | 标题不够明确 | low |
+| 实施问答 | 问：外币预收账款和预付账款是货币性项目还是非货币性项目，上述项目在资产负债表日是否... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202103/t20210302_3664191.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-013.html | CAS 19 / 外币折算 | 与外币折算相关 | high |
+| 实施问答 | 问：承租人于新冠肺炎疫情期间欠付租金，出租人应当如何进行会计处理？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202103/t20210302_3664201.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-017.html | CAS 21 / 租赁 | 与租赁准则直接相关 | high |
+| 实施问答 | 问：封闭式基金、理财产品、信托计划等寿命固定或可确定的结构化主体，是否符合持续经营... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202103/t20210302_3664205.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-019.html | CAS 33 / 合并财务报表 | 结构化主体控制判断 | medium |
+| 实施问答 | 问：如果企业判断以“贷款基准利率”为基础确定利息的金融资产符合本金加利息的合同现金... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202103/t20210302_3664208.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-020.html | CAS 22 / 金融工具确认和计量 | 金融资产或金融负债专题 | medium |
+| 实施问答 | 问：某企业于资产负债表日对金融资产计提损失准备，资产负债表日至财务报告批准报出日之... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202103/t20210302_3664210.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-021.html | CAS 22 / 金融工具确认和计量 | 金融资产或金融负债专题 | medium |
+| 实施问答 | 问：企业支付永续债利息的会计处理是否与税务处理一致？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202103/t20210302_3664213.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-023.html | CAS 22 / 金融工具确认和计量 | 金融资产或金融负债专题 | medium |
+| 实施问答 | 问：在金融工具确认计量准则施行日，将原分类为可供出售金融资产的权益工具投资按照准则... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202103/t20210302_3664215.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-024.html | CAS 22 / 金融工具确认和计量 | 金融资产或金融负债专题 | medium |
+| 实施问答 | 问：企业按照管理金融资产的业务模式对相关金融资产进行分类，在评估确定管理金融资产的... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202103/t20210302_3664220.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-027.html | CAS 22 / 金融工具确认和计量 | 金融资产或金融负债专题 | medium |
+| 实施问答 | 问：企业应当如何对持有的结构性存款进行会计处理，假设该结构性存款符合《中国银保监会... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202104/t20210425_3691867.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-034.html | CAS 22 / 金融工具确认和计量 | 金融资产或金融负债专题 | medium |
+| 实施问答 | 问：企业对向其他企业提供的委托贷款、财务担保或向集团关联企业提供的资金借贷等进行减... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202104/t20210425_3691868.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-035.html | CAS 22 / 金融工具确认和计量 | 金融资产或金融负债专题 | medium |
+| 实施问答 | 问：银行收回已核销的贷款，应当如何进行会计处理？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202104/t20210425_3691870.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-037.html | CAS 22 / 金融工具确认和计量 | 金融资产或金融负债专题 | medium |
+| 实施问答 | 问：如果企业持有的金融资产以收取合同现金流量为目标，企业是否完全不能或者只能在一定... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202104/t20210425_3691872.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-039.html | CAS 22 / 金融工具确认和计量 | 金融资产或金融负债专题 | medium |
+| 实施问答 | 问：某企业执行2017年修订发布的企业会计准则第22、23、24和37号。该企业的联营（或合营... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202104/t20210425_3691992.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-040.html | CAS 20 / 企业合并或 CAS 2 / 长期股权投资 | 涉及联营/合营判断 | medium |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，应当如何应用“双特征”？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744017.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-042.html | 待人工核验 | 标题不够明确 | low |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，应当如何应用“双控制”条件（1）“政... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744018.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-043.html | CAS 33 / 合并财务报表 | 涉及子公司、控制或合并范围 | medium |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，应当如何应用“双控制”条件（2）“PP... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744019.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-044.html | CAS 33 / 合并财务报表 | 涉及子公司、控制或合并范围 | medium |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，当PPP项目资产部分受到政府方控制时，... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744020.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-045.html | CAS 33 / 合并财务报表 | 涉及子公司、控制或合并范围 | medium |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，社会资本方在PPP项目建造期间形成的合... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744021.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-046.html | 待人工核验 | 标题不够明确 | low |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，社会资本方在PPP项目建造期间发生的借... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744022.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-047.html | 待人工核验 | 标题不够明确 | low |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，社会资本方在PPP项目建造期间发生的建... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744024.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-048.html | 待人工核验 | 标题不够明确 | low |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，集团合并范围内甲公司（发包方）承接P... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744025.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-049.html | CAS 33 / 合并财务报表 | 涉及子公司、控制或合并范围 | medium |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，如何确定履约义务的单独售价？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744028.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-050.html | 待人工核验 | 标题不够明确 | low |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，社会资本方应当如何对PPP项目合同进行... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744029.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-051.html | 待人工核验 | 标题不够明确 | low |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，如何对2020年12月31日前开始实施且至... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744030.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-052.html | 待人工核验 | 标题不够明确 | low |
+| 实施问答 | 问：某集团公司新设一家子公司，将现有其他子公司或业务注入该新设公司，假定在新设公司... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202111/t20211102_3762826.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-053.html | CAS 33 / 合并财务报表 | 涉及子公司、控制或合并范围 | medium |
+| 实施问答 | 《新冠肺炎疫情相关租金减让会计处理规定》简化处理方法适用问答 | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202205/t20220527_3813704.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-059.html | CAS 21 / 租赁 | 与租赁准则直接相关 | high |
+| 实施问答 | 问：甲公司在202×年报告期内处置了唯一的子公司，并且于202×年12月31日已经没有子公司... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202206/t20220621_3819698.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-061.html | CAS 33 / 合并财务报表 | 涉及子公司、控制或合并范围 | medium |
+| 实施问答 | 问：执行企业会计准则的企业应当如何对增值税期末留抵退税业务相关现金流量进行列示？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202206/t20220621_3819699.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-062.html | 其他规定 / 增值税会计处理规定 | 明显属于增值税会计处理专题 | high |
+| 实施问答 | 问：执行《小企业会计准则》的企业应当如何对增值税期末留抵退税业务相关现金流量进行列示？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202206/t20220621_3819702.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-063.html | 其他规定 / 增值税会计处理规定 | 明显属于增值税会计处理专题 | high |
+| 实施问答 | 问：投资方与其联营企业或合营企业之间发生投出或出售资产交易（构成业务的除外）而产生... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202301/t20230103_3861811.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-064.html | CAS 20 / 企业合并或 CAS 2 / 长期股权投资 | 涉及联营/合营判断 | medium |
+| 实施问答 | 问：上市公司乙公司是甲公司的联营企业。乙公司向员工以非公开发行的方式授予限售期为3年... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202301/t20230103_3861812.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-065.html | CAS 20 / 企业合并或 CAS 2 / 长期股权投资 | 涉及联营/合营判断 | medium |
+| 实施问答 | 问：汽车销售企业在日常活动中购进并用于销售的二手车，应当如何进行会计处理？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202301/t20230103_3861813.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-066.html | 待人工核验 | 标题不够明确 | low |
+| 实施问答 | 问：商业银行应当如何确定一项主营业务活动中发生的支出属于金融工具的交易费用、“手续... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202306/t20230625_3892061.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-072.html | CAS 22 / 金融工具确认和计量 | 金融资产或金融负债专题 | medium |
+| 实施问答 | 问：企业通过签订衍生金融工具对日常销售或采购非金融项目的合同或合同组合（能够以现金... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202306/t20230625_3892063.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-073.html | CAS 22 / 金融工具确认和计量 | 金融资产或金融负债专题 | medium |
+| 实施问答 | 问：甲公司持有某结构化主体的份额（甲公司对该结构化主体不具有控制、共同控制或重大影... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202307/t20230717_3896759.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-078.html | CAS 33 / 合并财务报表 | 涉及子公司、控制或合并范围 | medium |
+| 实施问答 | 问：某企业对职工实行股权激励计划，并约定了服务期和业绩条件。在等待期内，某已参加该... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202307/t20230717_3896761.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-079.html | CAS 11 / 股份支付 | 股权激励类问题 | high |
+| 实施问答 | 问：企业对于期限在一年或一个营业周期以上的保证类质量保证形成的预计负债，如何区分流... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202504/t20250417_3962195.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-086.html | CAS 13 / 或有事项 | 预计负债专题 | medium |
+| 实施问答 | 问：企业在期货交易场所频繁买卖标准仓单（即由交割库开具并经期货交易场所登记的标准化... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202507/t20250703_3967195.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-087.html | 待人工核验 | 标题不够明确 | low |
+| 实施问答 | 问：对于包含导致合同现金流量时间分布或金额变动的或有特征条款的金融资产，企业应当如... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202604/t20260430_3988923.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-088.html | CAS 22 / 金融工具确认和计量 | 金融资产或金融负债专题 | medium |
+| 实施问答 | 问：甲银行委托信托公司设立资产证券化信托计划，将不良贷款转让给该信托计划，作为发行... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202604/t20260430_3988924.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-089.html | CAS 22 / 金融工具确认和计量 | 金融资产或金融负债专题 | medium |
+| 实施问答 | 问：根据《关于加强万能型人身保险监管有关事项的通知》（金规〔2025〕14号）计提特别储... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202604/t20260430_3988925.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-090.html | CAS 25 / 保险合同 | 保险公司或保险合同专题 | high |
+| 实施问答 | 问：乙公司为中国境内非上市保险企业。甲公司持有乙公司30%股权，对乙公司采用权益法核算... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202606/t20260618_3991862.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-093.html | CAS 25 / 保险合同 | 保险公司或保险合同专题 | high |
+| 实施问答 | 问：甲公司主要从事某材料的生产，于2×25年9月1日在乙经济开发区投资建设某项目，并与乙... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202606/t20260618_3991864.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-095.html | 待人工核验 | 标题不够明确 | low |
+| 实施问答 | 问：甲公司委托乙设备生产商建造大型定制专用设备，定制周期超过1年，设备到场后在甲公司... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202606/t20260618_3991866.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-097.html | 待人工核验 | 标题不够明确 | low |
+| 实施问答 | 问：《中华人民共和国增值税法》（以下简称增值税法）2026年1月1日起施行后，一般用电企... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202606/t20260618_3991869.htm | raw/standards/accounting/implementation-qa-pages-v2/qa-100.html | 其他规定 / 增值税会计处理规定 | 明显属于增值税会计处理专题 | high |
+| 其他规定 | 关于修订印发2018年度金融企业财务报表格式的通知 | https://kjs.mof.gov.cn/gongzuotongzhi/201812/t20181227_3109872.htm | raw/standards/accounting/other-rules-pages/001-关于修订印发2018年度金融企业财务报表格式的通知.html | CAS 30 / 财务报表列报 | 财务报表列报专题 | medium |
+| 其他规定 | 关于印发《企业产品成本核算制度（试行）》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201309/t20130906_986492.htm | raw/standards/accounting/other-rules-pages/002-关于印发-企业产品成本核算制度-试行-的通知.html | 其他规定专题 | 更接近财政部专题处理规定 | medium |
+| 其他规定 | 关于印发《农业保险大灾风险准备金会计处理规定》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201403/t20140307_1052943.htm | raw/standards/accounting/other-rules-pages/003-关于印发-农业保险大灾风险准备金会计处理规定-的通知.html | 待人工核验 | 标题不够明确 | low |
+| 其他规定 | 关于印发《企业产品成本核算制度——石油石化行业》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201412/t20141229_1173216.htm | raw/standards/accounting/other-rules-pages/005-关于印发-企业产品成本核算制度-石油石化行业-的通知.html | 其他规定专题 | 更接近财政部专题处理规定 | medium |
+| 其他规定 | 关于印发《企业产品成本核算制度——钢铁行业》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201511/t20151130_1590105.htm | raw/standards/accounting/other-rules-pages/006-关于印发-企业产品成本核算制度-钢铁行业-的通知.html | 其他规定专题 | 更接近财政部专题处理规定 | medium |
+| 其他规定 | 关于印发《规范“三去一降一补”有关业务的会计处理规定》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201609/t20160927_2428006.htm | raw/standards/accounting/other-rules-pages/007-关于印发-规范“三去一降一补”有关业务的会计处理规定-的通知.html | 待人工核验 | 标题不够明确 | low |
+| 其他规定 | 关于印发《企业产品成本核算制度——煤炭行业》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201610/t20161027_2445062.htm | raw/standards/accounting/other-rules-pages/008-关于印发-企业产品成本核算制度-煤炭行业-的通知.html | 其他规定专题 | 更接近财政部专题处理规定 | medium |
+| 其他规定 | 关于印发《增值税会计处理规定》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201612/t20161212_2479869.htm | raw/standards/accounting/other-rules-pages/009-关于印发-增值税会计处理规定-的通知.html | 其他规定 / 增值税会计处理规定 | 增值税专题规定 | high |
+| 其他规定 | 关于印发《企业破产清算有关会计处理规定》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201612/t20161227_2505655.htm | raw/standards/accounting/other-rules-pages/010-关于印发-企业破产清算有关会计处理规定-的通知.html | 其他规定专题 | 更接近财政部专题处理规定 | medium |
+| 其他规定 | 关于保险公司执行新金融工具相关会计准则有关过渡办法的通知 | https://kjs.mof.gov.cn/zhengcefabu/201707/t20170705_2638917.htm | raw/standards/accounting/other-rules-pages/011-关于保险公司执行新金融工具相关会计准则有关过渡办法的通知.html | CAS 22 / 金融工具确认和计量 | 金融工具或金融资产专题 | medium |
+| 其他规定 | 关于印发《企业产品成本核算制度——电网经营行业》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201801/t20180119_2798185.htm | raw/standards/accounting/other-rules-pages/012-关于印发-企业产品成本核算制度-电网经营行业-的通知.html | 其他规定专题 | 更接近财政部专题处理规定 | medium |
+| 其他规定 | 关于印发《知识产权相关会计信息披露规定》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201811/t20181113_3065822.htm | raw/standards/accounting/other-rules-pages/013-关于印发-知识产权相关会计信息披露规定-的通知.html | 待人工核验 | 标题不够明确 | low |
+| 其他规定 | 关于印发《永续债相关会计处理的规定》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201901/t20190130_3138955.htm | raw/standards/accounting/other-rules-pages/014-关于印发-永续债相关会计处理的规定-的通知.html | CAS 22 / 金融工具确认和计量 | 金融工具或金融资产专题 | medium |
+| 其他规定 | 关于修订印发2019年度一般企业财务报表格式的通知 | https://kjs.mof.gov.cn/zhengcefabu/201905/t20190510_3254992.htm | raw/standards/accounting/other-rules-pages/015-关于修订印发2019年度一般企业财务报表格式的通知.html | CAS 30 / 财务报表列报 | 财务报表列报专题 | medium |
+| 其他规定 | 关于印发《碳排放权交易有关会计处理暂行规定》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201912/t20191223_3448268.htm | raw/standards/accounting/other-rules-pages/017-关于印发-碳排放权交易有关会计处理暂行规定-的通知.html | CAS 22 / 金融工具确认和计量 | 金融工具或金融资产专题 | medium |
+| 其他规定 | 关于印发《新冠肺炎疫情相关租金减让会计处理规定》的通知 | https://kjs.mof.gov.cn/zhengcefabu/202006/t20200624_3538070.htm | raw/standards/accounting/other-rules-pages/018-关于印发-新冠肺炎疫情相关租金减让会计处理规定-的通知.html | 其他规定 / 新冠肺炎疫情相关租金减让会计处理规定 | 疫情租金减让专题 | high |
+| 其他规定 | 关于印发《企业产品成本核算制度——油气管网行业》的通知 | https://kjs.mof.gov.cn/zhengcefabu/202110/t20211008_3756964.htm | raw/standards/accounting/other-rules-pages/019-关于印发-企业产品成本核算制度-油气管网行业-的通知.html | 其他规定专题 | 更接近财政部专题处理规定 | medium |

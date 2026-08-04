@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "text/html",
   "bytes": 35149,
-  "local_file": "knowledge-base/CPA-ZH/raw/policies/second-section/cpa-exam-2024-115/official.html"
+  "local_file": "raw/policies/second-section/cpa-exam-2024-115/official.html",
+  "derived_markdown": "raw/policies/second-section/cpa-exam-2024-115/official.html.md",
+  "derived_sha256": "96bf4afff56aa50d9fb66231800b67a3b5a92e5e619f724bbb1e85a9f2ede1fe",
+  "text_extraction_status": "ok",
+  "sha256": "20c8d26d724e63dfa7f8b3faaa85d27e3956c45ab884965bc466765f2f193f6e",
+  "archive_policy": "dual-track"
 }

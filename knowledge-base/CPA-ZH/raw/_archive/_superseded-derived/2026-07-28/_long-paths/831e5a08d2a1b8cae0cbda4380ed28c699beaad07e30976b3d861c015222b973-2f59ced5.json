@@ -1,0 +1,267 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:47:46+00:00",
+  "source_file": "raw/_archive/standards/audit/archives/2023-23-audit-standards/3.《中国注册会计师审计准则第1101号——注册会计师的总体目标和审计工作的基本要求》等23项一致性修订的准则/3.10.中国注册会计师审计准则第1251号——评价审计过程中识别出的错报（2022年12月22日修订）.pdf",
+  "derived_file": "raw/standards/audit/archives/2023-23-audit-standards/3.《中国注册会计师审计准则第1101号——注册会计师的总体目标和审计工作的基本要求》等23项一致性修订的准则/3.10.中国注册会计师审计准则第1251号——评价审计过程中识别出的错报（2022年12月22日修订）.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 5,
+  "heading_count": 31,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "3.10.中国注册会计师审计准则第1251号——评价审计过程中识别出的错报（2022年12月22日修订）",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "中国注册会计师审计准则第1251 号",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "——评价审计过程中识别出的错报",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范注册会计师评价识别出的错报对审计的影响",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二条 《中国注册会计师审计准则第1501 号——对财务报表",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 定 义",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 错报，是指某一财务报表项目的金额、分类或列报，与",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四条 未更正错报，是指注册会计师在审计过程中累积的且被",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 目 标",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 注册会计师的目标是：",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 要 求",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 累积识别出的错报",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六条 注册会计师应当累积审计过程中识别出的错报，除非错",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 随着审计的推进考虑识别出的错报",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七条 如果出现下列情况之一，注册会计师应当确定是否需要",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八条 如果管理层应注册会计师的要求，检查了某类交易、账",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 沟通和更正错报",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九条 除非法律法规禁止，注册会计师应当及时将审计过程中",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十条 如果管理层拒绝更正沟通的部分或全部错报，注册会计",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 评价未更正错报的影响",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十一条 在评价未更正错报的影响之前，注册会计师应当重新",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十二条 注册会计师应当确定未更正错报单独或汇总起来是",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十三条 除非法律法规禁止，注册会计师应当与治理层沟通未",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十四条 注册会计师应当与治理层沟通与以前期间相关的未",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 书面声明",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十五条 注册会计师应当要求管理层和治理层（如适用）提供",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六节 审计工作底稿",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十六条 注册会计师应当就下列事项形成审计工作底稿：",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 附 则",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十七条 本准则自2023 年7 月1 日起施行。",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[4]/line[1]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

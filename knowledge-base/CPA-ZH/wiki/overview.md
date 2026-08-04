@@ -6,7 +6,9 @@ created: 2026-06-26
 updated: 2026-06-26
 sources: [2026-06-26-initial-structure]
 tags: [cpa, framework, structured]
-related: [[concepts/regulations-and-standards]], [[concepts/policy-documents]], [[concepts/history-ethics-independence]], [[concepts/practice-skills-cases]]
+related: [[concepts/regulations-and-standards]], [[concepts/policy-documents]], [[concepts/history-ethics-independence]], [[concepts/practice-skills-cases]], [[concepts/ai-coding-lectures]]
+domain: meta
+topic: root
 ---
 
 # CPA-ZH 知识库总览
@@ -15,7 +17,7 @@ CPA-ZH 是面向中国注册会计师行业的专业知识库。它不是简单�
 
 ## 知识主线
 
-当前知识库分为四条主线：
+当前知识库分为五条主线：
 
 | 主线 | 解决的问题 | 入口 |
 |---|---|---|
@@ -23,6 +25,7 @@ CPA-ZH 是面向中国注册会计师行业的专业知识库。它不是简单�
 | 行业重要政策性文件 | 财会监督、行业治理、考试注册、事务所监管的政策导向是什么 | [[concepts/policy-documents]] |
 | 行业史与职业道德 | 行业如何发展、职业伦理和独立性如何约束执业判断 | [[concepts/history-ethics-independence]] |
 | 实务技能与案例分析 | 如何把规则转化为审计计划、底稿、抽样、数据分析和复杂场景应对 | [[concepts/practice-skills-cases]] |
+| AI 编程与自动化 | 如何把重复工作转化为 Agent、Python、VBA 插件和本地工具 | [[concepts/ai-coding-lectures]] |
 
 ## 维护原则
 
@@ -37,3 +40,4 @@ CPA-ZH 是面向中国注册会计师行业的专业知识库。它不是简单�
 - 第二阶段：搭建企业会计准则和注册会计师执业准则的分层索引。
 - 第三阶段：建立职业道德、独立性、审计实务与监管案例之间的交叉引用。
 - 第四阶段：沉淀智能化工具应用、数据分析程序和复杂案例处理模板。
+- 第五阶段：把 AI 编程、自动化讲义和已落地工具反哺审计实务工作流。

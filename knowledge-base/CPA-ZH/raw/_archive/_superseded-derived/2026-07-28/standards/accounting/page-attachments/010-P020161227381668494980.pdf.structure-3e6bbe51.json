@@ -1,0 +1,314 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:47:34+00:00",
+  "source_file": "raw/_archive/standards/accounting/page-attachments/010-P020161227381668494980.pdf",
+  "derived_file": "raw/standards/accounting/page-attachments/010-P020161227381668494980.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "needs-review",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 19,
+  "heading_count": 31,
+  "table_count": 4,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "关于印发《企业破产清算有关会计处理规定》的通知",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "企业破产清算有关会计处理规定",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为规范企业破产清算的会计处理，向人民法院和债权人",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 本规定适用于经法院宣告破产处于破产清算期间的企业",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 编制基础和计量属性",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 破产企业会计确认、计量和报告以非持续经营为前提。",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 企业经法院宣告破产的，应当按照法院或债权人会议要",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 破产企业在破产清算期间的资产应当以破产资产清算净",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 破产企业在破产清算期间的负债应当以破产债务清偿价",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 确认和计量",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 破产企业被法院宣告破产的，应当按照破产资产清算净",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 破产企业在破产清算期间的资产，应当按照破产资产清",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 破产清算期间发生资产处置的，破产企业应当终止确认",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 破产清算期间发生各项费用、取得各项收益应当直接计",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 在破产清算期间，破产企业按照税法规定需缴纳企业",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 破产企业因盘盈、追回等方式在破产清算期间取得的",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 破产企业在破产清算期间新承担的债务，应当按照破",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 清算财务报表的列报",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 破产企业应当按照本规定编制清算财务报表，向法院、",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 破产企业的财务报表包括清算资产负债表、清算损益",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十六条 清算资产负债表反映破产企业在破产报表日资产的破",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十七条 清算损益表反映破产企业在破产清算期间发生的各项",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十八条 清算现金流量表反映破产企业在破产清算期间货币资",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十九条 债务清偿表反映破产企业在破产清算期间发生的债务",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十条 破产企业应当在清算财务报表附注中披露下列信息：",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 附 则",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十一条 在本规定施行之后经法院宣告破产的企业，应当按",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十二条 本规定自发布之日起施行。《国有企业试行破产有",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "会计科目使用说明及账务处理",
+      "page": 7,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[7]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "破产企业清算财务报表及其附注",
+      "page": 14,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[14]/block[4]/line[1]",
+      "confidence": 0.85
+    }
+  ],
+  "tables": [
+    {
+      "index": 1,
+      "page": 14,
+      "rows": 18,
+      "columns": 6,
+      "representation": "html",
+      "locator": "pdf/page[14]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 2,
+      "page": 16,
+      "rows": 2,
+      "columns": 4,
+      "representation": "html",
+      "locator": "pdf/page[16]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 3,
+      "page": 17,
+      "rows": 2,
+      "columns": 4,
+      "representation": "html",
+      "locator": "pdf/page[17]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 4,
+      "page": 18,
+      "rows": 3,
+      "columns": 8,
+      "representation": "html",
+      "locator": "pdf/page[18]/table[1]",
+      "needs_review": true
+    }
+  ],
+  "warnings": [
+    "complex-pdf-table:page-14-table-1",
+    "complex-pdf-table:page-16-table-1",
+    "complex-pdf-table:page-17-table-1",
+    "complex-pdf-table:page-18-table-1"
+  ],
+  "review_pages": [
+    14,
+    16,
+    17,
+    18
+  ]
+}

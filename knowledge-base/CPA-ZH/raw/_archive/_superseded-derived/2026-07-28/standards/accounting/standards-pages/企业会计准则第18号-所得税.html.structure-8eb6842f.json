@@ -1,0 +1,275 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:43:24+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第18号-所得税.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第18号-所得税.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 32,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第18号-所得税",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范企业所得税的确认、计量和相关信息的 列报 ，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 本准则所称 所得税包括企业以应纳税所得额为基础的各种境内和境外税额。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 本准则不涉及政府补助的确认和计量，但因政府补助产生暂时性差异的所得税影响，应当按照本准则 进行 确认和计量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[5]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 计税基础",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[7]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 企业在取得资产、负债时，应当确定其计税基础。资产、负债的账面价值与其计税基础存在差异的，应当按照本准则规定确认所产生的递延所得税资产或递延所得税负债。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[8]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 资产的计税基础，是指企业收回资产账面价值过程中，计算应纳税所得额时按照税法规定可以自应税经济利益中抵扣的金额。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[9]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 负债的计税基础，是指负债的账面价值减去未来期间计算应纳税所得额时按照税法规定可予抵扣的金额。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[10]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 暂时性差异",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[12]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 暂时性差异，是指资产或负债的账面价值与其计税基础之间的差额；未作为资产和负债确认的项目，按照税法规定可以确定其计税基础的，该计税基础与其账面价值之间的差额也属于暂时性差异。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[13]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 应纳税暂时性差异，是指在确定未来收回资产或清偿负债期间的应纳税所得额时，将导致产生应税金额的暂时性差异。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[15]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 可抵扣暂时性差异，是指在确定未来收回资产或清偿负债期间的应纳税所得额时，将导致产生可抵扣金额的暂时性差异。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[16]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 确认",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[18]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 企业应当将当期和以前期间应交未交的所得税确认为负债，将已支付的所得税超过应支付的部分确认为资产。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[19]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 除下列交易中产生的递延所得税负债以外，企业应当确认所有应纳税暂时性差异产生的递延所得税负债：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[21]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 企业对与子公司、联营企业及合营企业投资相关的应纳税暂时性差异，应当确认相应的递延所得税负债。但是，同时满足下列条件的除外：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[27]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 企业应当以很可能取得用来抵扣可抵扣暂时性差异的应纳税所得额为限，确认由可抵扣暂时性差异产生的递延所得税资产。但是 ， 同时具有下 列 特征的交易中因资产或负债的初始确认所产生的递延所得税资产不予确认 ：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[30]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 企业对与子公司、联营企业及合营企业投资相关的可抵扣暂时性差异，同时满足下列条件的，应当确认相应的递延所得税资产：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[34]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 企业对于能够结转以后年度的可抵扣亏损和税款抵减，应当以很可能获得用来抵扣可抵扣亏损和税款抵减的未来应纳税所得额为限，确认相应的递延所得税资产。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[37]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[39]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十六条 资产负债表日，对于当期和以前期间形成的当期所得税负债（或资产），应当按照税法规定计算的预期应交纳（或返还）的所得税金额计量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[40]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十七条 资产负债表日，对于递延所得税资产和递延所得税负债，应当 根 据税法规定，按照预期收回该资产或清偿该负债期间的适用税率计量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[41]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十八条 递延所得税资产和递延所得税负债的计量，应当反映资产负债表日企业预期收回资产或清偿负债方式的 所得 税影响，即在计量递延所得税资产和递延所得税负债时，应当采用与收回资产或清偿债务的预期方式相一致的税率和计税基础。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[43]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十九条 企业不应当对递延所得税资产和递延所得税负债进行折现。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[44]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十条 资产负债表日，企业应当对递延所得税资产的账面价值进行复核。如果未来期间很可能无法获得足够的应纳税所得额用以抵扣递延所得税资产的利益，应当减记递延所得税资产的账面价值。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[45]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十一条 企业当期所得税和递延所得税应当作为所得税费用或收益计入当期损益，但不包括下列情况产生的所得税：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[47]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十二条 与直接计入 所有者 权益的交易或者事项相关的当期所得税和递延所得税，应当计入 所有者 权益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[50]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 列报",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[52]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十三条 递延所得税资产和递延所得税负债应当分别作为非流动资产和非流动负债在资产负债表中列示。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[53]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十四条 所得税费用应当在利润表中单独列示。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[54]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十五条 企业应当在附注中披露与所得税有关的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[55]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

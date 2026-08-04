@@ -1,0 +1,155 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:34:43+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第19号-外币折算.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第19号-外币折算.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 17,
+  "table_count": 0,
+  "text_coverage": 0.9843,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第19号-外币折算",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范外币交易的会计处理、外币财务报表的折算和相关信息的披露，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 外币交易，是指以外币计价或者结算的交易。外币是企业记账本位币以外的货币。外币交易包括：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 下列各项适用其他相关会计准则：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[6]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 记账本位币，是指企业经营所处的主要经济环境中的货币。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[11]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 企业选定记账本位币，应当考虑下列因素：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[13]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 企业选定境外经营的记账本位币，还应当考虑下列因素：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[17]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 境外经营，是指企业在境外的子公司、合营企业、联营企业、分支机构。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[22]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 企业记账本位币一经确定，不得随意变更，除非企业经营所处的主要经济环境发生重大变化。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[24]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 企业对于发生的外币交易，应当将外币金额折算为记账本位币金额。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[26]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 外币交易应当在初始确认时，采用交易发生日的即期汇率将外币金额折算为记账本位币金额；也可以采用按照系统合理的方法确定的、与交易发生日即期汇率近似的汇率折算。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[27]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 企业在资产负债表日，应当按照下列规定对外币货币性项目和外币非货币性项目进行处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[28]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 企业对境外经营的财务报表进行折算时，应当遵循下列规定：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[33]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 企业对处于恶性通货膨胀经济中的境外经营的财务报表，应当按照下列规定进行折算：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[37]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 企业在处置境外经营时，应当将资产负债表中所有者权益项目下列示的、与该境外经营相关的外币财务报表折算差额，自所有者权益项目转入处置当期损益；部分处置境外经营的，应当按处置的比例计算处置部分 的外币财务报表折算差额，转入处置当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[40]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 企业选定的记账本位币不是人民币的，应当按照本准则第十二条规定将其财务报表折算为人民币财务报表。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[41]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十六条 企业应当在附注中披露与外币折算有关的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[42]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

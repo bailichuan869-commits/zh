@@ -1,0 +1,235 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:47:46+00:00",
+  "source_file": "raw/_archive/standards/audit/archives/2023-23-audit-standards/3.《中国注册会计师审计准则第1101号——注册会计师的总体目标和审计工作的基本要求》等23项一致性修订的准则/3.11.中国注册会计师审计准则第1301号——审计证据（2022年12月22日修订）.pdf",
+  "derived_file": "raw/standards/audit/archives/2023-23-audit-standards/3.《中国注册会计师审计准则第1101号——注册会计师的总体目标和审计工作的基本要求》等23项一致性修订的准则/3.11.中国注册会计师审计准则第1301号——审计证据（2022年12月22日修订）.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 5,
+  "heading_count": 27,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "3.11.中国注册会计师审计准则第1301号——审计证据（2022年12月22日修订）",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "中国注册会计师审计准则第1301 号",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[1]/line[2]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "——审计证据",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[2]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范注册会计师在财务报表审计中确定审计证据的",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二条 本准则适用于注册会计师在审计过程中获取和评价所有",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三条 审计证据的可靠性受其来源和性质的影响，并取决于获",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 定 义",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 审计证据，是指注册会计师为了得出审计结论和形成审",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五条 会计记录，是指对初始会计分录形成的记录和支持性记",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六条 审计证据的充分性，是对审计证据数量的衡量。注册会",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七条 审计证据的适当性，是对审计证据质量的衡量，即审计",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八条 管理层的专家，是指在会计、审计以外的某一领域具有",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 目 标",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 注册会计师的目标是，通过恰当的方式设计和实施审计",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 要 求",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 充分、适当的审计证据",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十条 注册会计师应当根据具体情况设计和实施恰当的审计程",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 用作审计证据的信息",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十一条 在设计和实施审计程序时，注册会计师应当考虑用作",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十二条 如果用作审计证据的信息在编制时利用了管理层的专",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十三条 在使用被审计单位生成的信息时，注册会计师应当评",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 选取测试项目以获取审计证据",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十四条 在设计控制测试和细节测试时，注册会计师应当确定",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 审计证据之间存在不一致或",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "对审计证据可靠性存有疑虑",
+      "page": 4,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[4]/block[19]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 3,
+      "text": "第十五条 如果存在下列情形之一，注册会计师应当确定需要修",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[20]/line[1]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

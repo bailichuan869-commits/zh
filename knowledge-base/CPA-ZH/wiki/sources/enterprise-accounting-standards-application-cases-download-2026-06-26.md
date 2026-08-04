@@ -7,6 +7,8 @@ updated: 2026-06-26
 raw_path: raw/standards/accounting/
 tags: [accounting, standards, application-cases, official-download, p1-core]
 related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounting-standards-download-2026-06-26]]
+domain: sources
+topic: batches
 ---
 
 # 企业会计准则应用案例下载批次
@@ -15,11 +17,11 @@ related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounti
 
 本批次从财政部会计司“企业会计准则”专题下的“应用案例”栏目下载：
 
-- 栏目首页：`raw/standards/accounting/mof-accounting-standards-application-cases.html`
+- 栏目首页：`raw/standards/accounting/mof-accounting-standards-application-cases.html.md`
 - 子栏目索引页：`raw/standards/accounting/application-cases-indexes/`
 - 应用案例 HTML 原文：`raw/standards/accounting/application-cases-pages/`
-- 子栏目清单：`raw/standards/accounting/downloaded-enterprise-accounting-standards-application-case-categories.csv`
-- 下载清单：`raw/standards/accounting/downloaded-enterprise-accounting-standards-application-cases.csv`
+- 子栏目清单：`raw/standards/accounting/downloaded-enterprise-accounting-standards-application-case-categories.csv.md`
+- 下载清单：`raw/standards/accounting/downloaded-enterprise-accounting-standards-application-cases.csv.md`
 
 ## 下载结果
 

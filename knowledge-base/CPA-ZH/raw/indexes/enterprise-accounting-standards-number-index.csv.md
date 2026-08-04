@@ -1,0 +1,56 @@
+---
+title: "enterprise-accounting-standards-number-index"
+type: "raw-source"
+source_type: "table"
+source_role: "source-registry"
+original_file: "raw/indexes/enterprise-accounting-standards-number-index.csv"
+created: "2026-06-26"
+converted_at: "2026-07-24"
+---
+
+# enterprise-accounting-standards-number-index
+
+| ﻿StandardNo | StandardKey | Title | WikiPage | StandardCount | InterpretationCount | ApplicationCaseCount | ImplementationQaCount | OtherRuleCount | TotalMappedRecords |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  | basic | 企业会计准则——基本准则 | concepts/accounting-standards/basic | 1 | 0 | 0 | 0 | 0 | 1 |
+| 1 | cas-01 | 企业会计准则第1号——存货 | concepts/accounting-standards/cas-01 | 1 | 0 | 0 | 2 | 0 | 3 |
+| 2 | cas-02 | 企业会计准则第2号——长期股权投资 | concepts/accounting-standards/cas-02 | 1 | 3 | 0 | 6 | 0 | 10 |
+| 3 | cas-03 | 企业会计准则第3号——投资性房地产 | concepts/accounting-standards/cas-03 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 4 | cas-04 | 企业会计准则第4号——固定资产 | concepts/accounting-standards/cas-04 | 1 | 2 | 0 | 2 | 0 | 5 |
+| 5 | cas-05 | 企业会计准则第5号——生物资产 | concepts/accounting-standards/cas-05 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 6 | cas-06 | 企业会计准则第6号——无形资产 | concepts/accounting-standards/cas-06 | 1 | 1 | 1 | 2 | 1 | 6 |
+| 7 | cas-07 | 企业会计准则第7号——非货币性资产交换 | concepts/accounting-standards/cas-07 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 8 | cas-08 | 企业会计准则第8号——资产减值 | concepts/accounting-standards/cas-08 | 1 | 0 | 0 | 2 | 0 | 3 |
+| 9 | cas-09 | 企业会计准则第9号——职工薪酬 | concepts/accounting-standards/cas-09 | 1 | 1 | 0 | 0 | 0 | 2 |
+| 10 | cas-10 | 企业会计准则第10号——企业年金基金 | concepts/accounting-standards/cas-10 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 11 | cas-11 | 企业会计准则第11号——股份支付 | concepts/accounting-standards/cas-11 | 1 | 1 | 7 | 2 | 0 | 11 |
+| 12 | cas-12 | 企业会计准则第12号——债务重组 | concepts/accounting-standards/cas-12 | 1 | 0 | 0 | 4 | 0 | 5 |
+| 13 | cas-13 | 企业会计准则第13号——或有事项 | concepts/accounting-standards/cas-13 | 1 | 1 | 0 | 0 | 0 | 2 |
+| 14 | cas-14 | 企业会计准则第14号——收入 | concepts/accounting-standards/cas-14 | 1 | 3 | 14 | 9 | 0 | 27 |
+| 16 | cas-16 | 企业会计准则第16号——政府补助 | concepts/accounting-standards/cas-16 | 1 | 0 | 0 | 2 | 0 | 3 |
+| 17 | cas-17 | 企业会计准则第17号——借款费用 | concepts/accounting-standards/cas-17 | 1 | 0 | 0 | 3 | 0 | 4 |
+| 18 | cas-18 | 企业会计准则第18号——所得税 | concepts/accounting-standards/cas-18 | 1 | 1 | 1 | 2 | 0 | 5 |
+| 19 | cas-19 | 企业会计准则第19号——外币折算 | concepts/accounting-standards/cas-19 | 1 | 1 | 0 | 1 | 0 | 3 |
+| 20 | cas-20 | 企业会计准则第20号——企业合并 | concepts/accounting-standards/cas-20 | 1 | 2 | 1 | 5 | 0 | 9 |
+| 21 | cas-21 | 企业会计准则第21号——租赁 | concepts/accounting-standards/cas-21 | 1 | 0 | 4 | 10 | 0 | 15 |
+| 22 | cas-22 | 企业会计准则第22号——金融工具确认和计量（财会〔2017〕7号） | concepts/accounting-standards/cas-22 | 2 | 6 | 5 | 9 | 0 | 22 |
+| 23 | cas-23 | 企业会计准则第23号——金融资产转移（财会〔2017〕8号） | concepts/accounting-standards/cas-23 | 2 | 3 | 0 | 0 | 0 | 5 |
+| 24 | cas-24 | 企业会计准则第24号——套期会计（财会〔2017〕9号） | concepts/accounting-standards/cas-24 | 2 | 0 | 0 | 1 | 0 | 3 |
+| 25 | cas-25 | 企业会计准则第25号——保险合同（财会〔2020〕20号） | concepts/accounting-standards/cas-25 | 2 | 2 | 0 | 10 | 1 | 15 |
+| 26 | cas-26 | 企业会计准则第26号——再保险合同（财会〔2006〕3号） | concepts/accounting-standards/cas-26 | 1 | 2 | 0 | 0 | 0 | 3 |
+| 27 | cas-27 | 企业会计准则第27号——石油天然气开采 | concepts/accounting-standards/cas-27 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 28 | cas-28 | 企业会计准则第28号——会计政策、会计估计变更和差错更正 | concepts/accounting-standards/cas-28 | 1 | 2 | 0 | 2 | 0 | 5 |
+| 29 | cas-29 | 企业会计准则第29号——资产负债表日后事项 | concepts/accounting-standards/cas-29 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 30 | cas-30 | 企业会计准则第30号——财务报表列报 | concepts/accounting-standards/cas-30 | 1 | 2 | 0 | 1 | 0 | 4 |
+| 31 | cas-31 | 企业会计准则第31号——现金流量表 | concepts/accounting-standards/cas-31 | 1 | 0 | 0 | 1 | 0 | 2 |
+| 32 | cas-32 | 企业会计准则第32号——中期财务报告 | concepts/accounting-standards/cas-32 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 33 | cas-33 | 企业会计准则第33号——合并财务报表 | concepts/accounting-standards/cas-33 | 1 | 3 | 0 | 2 | 1 | 7 |
+| 34 | cas-34 | 企业会计准则第34号——每股收益 | concepts/accounting-standards/cas-34 | 1 | 1 | 0 | 0 | 0 | 2 |
+| 35 | cas-35 | 企业会计准则第35号——分部报告 | concepts/accounting-standards/cas-35 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 36 | cas-36 | 企业会计准则第36号——关联方披露 | concepts/accounting-standards/cas-36 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 37 | cas-37 | 企业会计准则第37号——金融工具列报（财会〔2017〕14号） | concepts/accounting-standards/cas-37 | 2 | 5 | 6 | 1 | 1 | 15 |
+| 38 | cas-38 | 企业会计准则第38号——首次执行企业会计准则 | concepts/accounting-standards/cas-38 | 1 | 0 | 0 | 1 | 0 | 2 |
+| 39 | cas-39 | 企业会计准则第39号——公允价值计量 | concepts/accounting-standards/cas-39 | 1 | 1 | 1 | 2 | 0 | 5 |
+| 40 | cas-40 | 企业会计准则第40号——合营安排 | concepts/accounting-standards/cas-40 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 41 | cas-41 | 企业会计准则第41号——在其他主体中权益的披露 | concepts/accounting-standards/cas-41 | 1 | 0 | 0 | 0 | 0 | 1 |
+| 42 | cas-42 | 企业会计准则第42号——持有待售的非流动资产、处置组和终止经营 | concepts/accounting-standards/cas-42 | 1 | 0 | 0 | 0 | 0 | 1 |

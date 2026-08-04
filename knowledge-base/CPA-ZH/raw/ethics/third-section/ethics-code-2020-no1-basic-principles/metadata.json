@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "application/pdf",
   "bytes": 479544,
-  "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-2020-no1-basic-principles/official.pdf"
+  "local_file": "raw/ethics/third-section/ethics-code-2020-no1-basic-principles/official.pdf",
+  "derived_markdown": "raw/ethics/third-section/ethics-code-2020-no1-basic-principles/official.pdf.md",
+  "derived_sha256": "34c79590d6b6179cfa791ded4c4cc250190b829ee2c821c2c433a17fc7f3a17c",
+  "text_extraction_status": "ok",
+  "sha256": "708f397c4d7043203a21bd70dd75cd7dfc316fcfcd8fe5e3929f7add75c31bb3",
+  "archive_policy": "dual-track"
 }

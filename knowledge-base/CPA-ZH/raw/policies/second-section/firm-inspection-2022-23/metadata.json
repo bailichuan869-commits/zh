@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "text/html",
   "bytes": 27710,
-  "local_file": "knowledge-base/CPA-ZH/raw/policies/second-section/firm-inspection-2022-23/official.html"
+  "local_file": "raw/policies/second-section/firm-inspection-2022-23/official.html",
+  "derived_markdown": "raw/policies/second-section/firm-inspection-2022-23/official.html.md",
+  "derived_sha256": "e1432f9ce770c104f0c85e9ab6471dadbdd459df0f8d286300b17f331fd97ad2",
+  "text_extraction_status": "ok",
+  "sha256": "5b4ffdc8de2f469ea7523de997dc5bc30aad92178dcbe3aecc160294bdb29313",
+  "archive_policy": "dual-track"
 }

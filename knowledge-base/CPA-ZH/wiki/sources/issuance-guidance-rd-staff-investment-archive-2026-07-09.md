@@ -7,6 +7,8 @@ updated: 2026-07-09
 sources: [local-pdf-user-provided-2026-07-09]
 tags: [csrc, securities-issuance, rd-expense, archive]
 related: [[concepts/securities-issuance-rd-staff-investment]], [[concepts/first-section-topics/securities-service-liability]], [[concepts/first-section-topics/income-tax-deferred-tax]]
+domain: sources
+topic: batches
 ---
 
 # 发行监管规则适用指引第9号本地原文归档
@@ -18,7 +20,7 @@ related: [[concepts/securities-issuance-rd-staff-investment]], [[concepts/first-
 | 文件名称 | 监管规则适用指引——发行类第9号：研发人员及研发投入 |
 | 文号/编号 | 发行类第9号 |
 | 发布机构 | 中国证监会 |
-| 本地归档 | `raw/policies/issuance-guidance/issuance-class-09-rd-staff-investment/official.pdf` |
+| 本地归档 | `raw/policies/issuance-guidance/issuance-class-09-rd-staff-investment/official.pdf.md` |
 | 来源路径 | `D:\中华的工作夹\立信北分\09-长春捷翼25\2025.6.30申报\3、底稿资料\4、SV-研发费用\发行类第9号.pdf` |
 | 文件大小 | 147,042 bytes |
 | SHA256 | `4C14CB05C4805D4EBBD20B3D8237F32747EC675450D62778473CEDFC2CC1E419` |

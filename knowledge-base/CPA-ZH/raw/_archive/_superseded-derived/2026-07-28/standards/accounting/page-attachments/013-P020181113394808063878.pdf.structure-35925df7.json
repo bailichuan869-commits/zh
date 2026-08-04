@@ -1,0 +1,60 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:40:41+00:00",
+  "source_file": "raw/_archive/standards/accounting/page-attachments/013-P020181113394808063878.pdf",
+  "derived_file": "raw/standards/accounting/page-attachments/013-P020181113394808063878.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "needs-review",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 3,
+  "heading_count": 2,
+  "table_count": 2,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "关于印发《知识产权相关会计信息披露规定》的通知",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "知识产权相关会计信息披露规定",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    }
+  ],
+  "tables": [
+    {
+      "index": 1,
+      "page": 1,
+      "rows": 11,
+      "columns": 6,
+      "representation": "html",
+      "locator": "pdf/page[1]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 2,
+      "page": 2,
+      "rows": 18,
+      "columns": 6,
+      "representation": "html",
+      "locator": "pdf/page[2]/table[1]",
+      "needs_review": true
+    }
+  ],
+  "warnings": [
+    "complex-pdf-table:page-1-table-1",
+    "complex-pdf-table:page-2-table-1"
+  ],
+  "review_pages": [
+    1,
+    2
+  ]
+}

@@ -1,3 +1,8 @@
+---
+source_type: "generated-index"
+source_role: "index-page"
+---
+
 # CPA-ZH 原始资料区
 
 本目录用于保存不可变的原始资料。建议按以下目录放置：
@@ -14,7 +19,7 @@
 
 已有本地法规文本可作为后续摄入来源参考：
 
-- `D:\ai-audit\regulations\markdown\中华人民共和国注册会计师法.md`
-- `D:\ai-audit\regulations\markdown\中华人民共和国会计法.md`
-- `D:\ai-audit\regulations\markdown\中华人民共和国公司法.md`
-- `D:\ai-audit\regulations\markdown\中华人民共和国证券法.md`
+- `raw/laws/中华人民共和国注册会计师法.md`
+- `raw/laws/中华人民共和国会计法.md`
+- `raw/laws/中华人民共和国公司法.md`
+- `raw/laws/中华人民共和国证券法.md`

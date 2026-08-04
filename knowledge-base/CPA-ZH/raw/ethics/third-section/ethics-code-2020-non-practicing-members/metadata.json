@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "application/pdf",
   "bytes": 659461,
-  "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-2020-non-practicing-members/official.pdf"
+  "local_file": "raw/ethics/third-section/ethics-code-2020-non-practicing-members/official.pdf",
+  "derived_markdown": "raw/ethics/third-section/ethics-code-2020-non-practicing-members/official.pdf.md",
+  "derived_sha256": "32006b7f5fd9caf99b5fd678b5166975047ba4a0ee93e50d9cce0ebcbfd56a8d",
+  "text_extraction_status": "ok",
+  "sha256": "a64b2ebaf45edcc108ea84919dd0f0618ef7d58c64d163cc984e1ab7542252d1",
+  "archive_policy": "dual-track"
 }

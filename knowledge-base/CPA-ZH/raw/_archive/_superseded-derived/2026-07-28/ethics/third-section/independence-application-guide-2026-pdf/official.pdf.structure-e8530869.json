@@ -1,0 +1,743 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:40:18+00:00",
+  "source_file": "raw/ethics/third-section/independence-application-guide-2026-pdf/official.pdf",
+  "derived_file": "raw/ethics/third-section/independence-application-guide-2026-pdf/official.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "needs-review",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 85,
+  "heading_count": 90,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "《中国注册会计师独立性准则第1号——财务报表审计和审阅业务对独立性的要求》应用指南",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "附件",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[1]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "《中国注册会计师独立性准则第1 号",
+      "page": 1,
+      "source": "pdf-toc",
+      "locator": "pdf/page[1]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "——财务报表审计和审阅业务对独立性的",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[2]/line[2]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "要求》应用指南",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "目",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[5]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "录",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[5]/line[2]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "一、总则",
+      "page": 2,
+      "source": "pdf-toc",
+      "locator": "pdf/page[2]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "二、定义",
+      "page": 2,
+      "source": "pdf-toc",
+      "locator": "pdf/page[2]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（一）审计项目组（参见本准则第四条）",
+      "page": 2,
+      "source": "pdf-toc",
+      "locator": "pdf/page[2]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（二）关键审计合伙人（参见本准则第六条）",
+      "page": 2,
+      "source": "pdf-toc",
+      "locator": "pdf/page[2]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（三）审计业务期间（参见本准则第九条）",
+      "page": 3,
+      "source": "pdf-toc",
+      "locator": "pdf/page[3]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "三、独立性基本要求",
+      "page": 3,
+      "source": "pdf-toc",
+      "locator": "pdf/page[3]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（一）恪守独立性原则",
+      "page": 3,
+      "source": "pdf-toc",
+      "locator": "pdf/page[3]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（二）公众利益实体",
+      "page": 7,
+      "source": "pdf-toc",
+      "locator": "pdf/page[7]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "确定公众利益实体（参见本准则第二十七条和第二十八条）",
+      "page": 7,
+      "source": "pdf-toc",
+      "locator": "pdf/page[7]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "公开交易实体（参见本准则第十条和第二十九条第（一）项）",
+      "page": 7,
+      "source": "pdf-toc",
+      "locator": "pdf/page[7]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "中央企业集团公司（参见本准则第二十九条第（四）项）",
+      "page": 8,
+      "source": "pdf-toc",
+      "locator": "pdf/page[8]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "非上市金融机构（参见本准则第三十条第（二）项）",
+      "page": 9,
+      "source": "pdf-toc",
+      "locator": "pdf/page[9]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "披露相关信息（参见本准则第三十二条）",
+      "page": 9,
+      "source": "pdf-toc",
+      "locator": "pdf/page[9]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（三）保持独立性的期间（参见本准则第三十三条至第三十五条）",
+      "page": 9,
+      "source": "pdf-toc",
+      "locator": "pdf/page[9]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "针对公众利益实体审计客户（参见本准则第三十五条）",
+      "page": 11,
+      "source": "pdf-toc",
+      "locator": "pdf/page[11]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（五）与客户治理层的沟通（参见本准则第三十八条至第四十条）",
+      "page": 12,
+      "source": "pdf-toc",
+      "locator": "pdf/page[12]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "四、收费",
+      "page": 13,
+      "source": "pdf-toc",
+      "locator": "pdf/page[13]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（一）一般规定",
+      "page": 13,
+      "source": "pdf-toc",
+      "locator": "pdf/page[13]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（二）审计收费水平（参见本准则第四十一条和第四十二条）",
+      "page": 14,
+      "source": "pdf-toc",
+      "locator": "pdf/page[14]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "向审计客户提供其他服务的影响（参见本准则第四十二条）",
+      "page": 15,
+      "source": "pdf-toc",
+      "locator": "pdf/page[15]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（三）或有收费（参见本准则第四十三条和第四十四条）",
+      "page": 15,
+      "source": "pdf-toc",
+      "locator": "pdf/page[15]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（四）审计以外的服务收费（参见本准则第四十五条）",
+      "page": 17,
+      "source": "pdf-toc",
+      "locator": "pdf/page[17]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（五）逾期收费（参见本准则第四十六条）",
+      "page": 17,
+      "source": "pdf-toc",
+      "locator": "pdf/page[17]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（六）收费的依赖程度（参见本准则第四十七条至第五十一条）",
+      "page": 18,
+      "source": "pdf-toc",
+      "locator": "pdf/page[18]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "针对所有审计客户",
+      "page": 18,
+      "source": "pdf-toc",
+      "locator": "pdf/page[18]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "针对公众利益实体审计客户（参见本准则第五十条和第五十一条）",
+      "page": 21,
+      "source": "pdf-toc",
+      "locator": "pdf/page[21]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（七）沟通有关公众利益实体审计客户的收费信息",
+      "page": 21,
+      "source": "pdf-toc",
+      "locator": "pdf/page[21]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "财务报表审计收费（参见本准则第五十二条）",
+      "page": 21,
+      "source": "pdf-toc",
+      "locator": "pdf/page[21]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "审计以外的服务收费（参见本准则第五十三条）",
+      "page": 22,
+      "source": "pdf-toc",
+      "locator": "pdf/page[22]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "对审阅客户的特殊考虑（参见本准则第五十二条至第五十五条）",
+      "page": 24,
+      "source": "pdf-toc",
+      "locator": "pdf/page[24]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "五、礼品和款待（参见本准则第五十六条至第五十八条）",
+      "page": 24,
+      "source": "pdf-toc",
+      "locator": "pdf/page[24]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "六、经济利益",
+      "page": 24,
+      "source": "pdf-toc",
+      "locator": "pdf/page[24]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（一）一般规定（参见本准则第五十九条）",
+      "page": 24,
+      "source": "pdf-toc",
+      "locator": "pdf/page[24]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（二）在审计客户中拥有经济利益（参见本准则第六十条）",
+      "page": 26,
+      "source": "pdf-toc",
+      "locator": "pdf/page[26]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（三）其他情况下的经济利益",
+      "page": 27,
+      "source": "pdf-toc",
+      "locator": "pdf/page[27]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "与审计客户的相关人员拥有共同经济利益",
+      "page": 27,
+      "source": "pdf-toc",
+      "locator": "pdf/page[27]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "其他近亲属在审计客户中拥有经济利益",
+      "page": 27,
+      "source": "pdf-toc",
+      "locator": "pdf/page[27]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "其他人员在审计客户中拥有经济利益",
+      "page": 28,
+      "source": "pdf-toc",
+      "locator": "pdf/page[28]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "通过退休金计划在审计客户中拥有经济利益",
+      "page": 29,
+      "source": "pdf-toc",
+      "locator": "pdf/page[29]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "七、贷款和担保",
+      "page": 29,
+      "source": "pdf-toc",
+      "locator": "pdf/page[29]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（一）一般规定",
+      "page": 29,
+      "source": "pdf-toc",
+      "locator": "pdf/page[29]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "八、商业关系",
+      "page": 31,
+      "source": "pdf-toc",
+      "locator": "pdf/page[31]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（一）一般规定",
+      "page": 31,
+      "source": "pdf-toc",
+      "locator": "pdf/page[31]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（二）审计项目团队成员主要近亲属的商业关系",
+      "page": 31,
+      "source": "pdf-toc",
+      "locator": "pdf/page[31]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（三）购买商品或服务",
+      "page": 32,
+      "source": "pdf-toc",
+      "locator": "pdf/page[32]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（四）提供、销售、转售或授权技术",
+      "page": 32,
+      "source": "pdf-toc",
+      "locator": "pdf/page[32]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "九、家庭关系和私人关系",
+      "page": 32,
+      "source": "pdf-toc",
+      "locator": "pdf/page[32]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（一）一般规定",
+      "page": 32,
+      "source": "pdf-toc",
+      "locator": "pdf/page[32]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（二）审计项目团队成员的主要近亲属（参见本准则第七十二条）",
+      "page": 33,
+      "source": "pdf-toc",
+      "locator": "pdf/page[33]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（三）审计项目团队成员的其他近亲属（参见本准则第七十三条）",
+      "page": 34,
+      "source": "pdf-toc",
+      "locator": "pdf/page[34]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "十、与审计客户之间的人员交流",
+      "page": 36,
+      "source": "pdf-toc",
+      "locator": "pdf/page[36]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（一）一般规定",
+      "page": 36,
+      "source": "pdf-toc",
+      "locator": "pdf/page[36]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "十一、与审计客户长期存在业务关系",
+      "page": 39,
+      "source": "pdf-toc",
+      "locator": "pdf/page[39]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（一）一般规定",
+      "page": 39,
+      "source": "pdf-toc",
+      "locator": "pdf/page[39]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（二）与特定实体审计客户长期存在业务关系的相关规定",
+      "page": 41,
+      "source": "pdf-toc",
+      "locator": "pdf/page[41]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "十二、为审计客户提供非鉴证服务",
+      "page": 43,
+      "source": "pdf-toc",
+      "locator": "pdf/page[43]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（一）一般规定",
+      "page": 43,
+      "source": "pdf-toc",
+      "locator": "pdf/page[43]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "薪酬与业绩评价（参见本准则第九十八条）",
+      "page": 45,
+      "source": "pdf-toc",
+      "locator": "pdf/page[45]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "重要性",
+      "page": 46,
+      "source": "pdf-toc",
+      "locator": "pdf/page[46]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "工作记录",
+      "page": 51,
+      "source": "pdf-toc",
+      "locator": "pdf/page[51]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "对关联实体的考虑",
+      "page": 52,
+      "source": "pdf-toc",
+      "locator": "pdf/page[52]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（三）行政事务性服务（参见本准则第一百一十一条）",
+      "page": 54,
+      "source": "pdf-toc",
+      "locator": "pdf/page[54]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（四）评估服务（参见本准则第一百一十二条和第一百一十三条）",
+      "page": 55,
+      "source": "pdf-toc",
+      "locator": "pdf/page[55]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（五）税务服务（参见本准则第一百一十四条至第一百二十一条）",
+      "page": 56,
+      "source": "pdf-toc",
+      "locator": "pdf/page[56]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "编制纳税申报表",
+      "page": 57,
+      "source": "pdf-toc",
+      "locator": "pdf/page[57]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "为进行会计处理计算税额（参见本准则第一百一十五条）",
+      "page": 58,
+      "source": "pdf-toc",
+      "locator": "pdf/page[58]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "涉及评估的税务服务（参见本准则第一百一十八条）",
+      "page": 60,
+      "source": "pdf-toc",
+      "locator": "pdf/page[60]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（九）法律服务（参见本准则第一百二十八条至第一百三十一条）",
+      "page": 71,
+      "source": "pdf-toc",
+      "locator": "pdf/page[71]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "法律咨询",
+      "page": 71,
+      "source": "pdf-toc",
+      "locator": "pdf/page[71]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "担任辩护人",
+      "page": 73,
+      "source": "pdf-toc",
+      "locator": "pdf/page[73]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（十）招聘服务（参见本准则第一百三十二条至第一百三十四条）",
+      "page": 73,
+      "source": "pdf-toc",
+      "locator": "pdf/page[73]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "十三、诉讼或诉讼威胁（参见本准则第一百三十八条）",
+      "page": 76,
+      "source": "pdf-toc",
+      "locator": "pdf/page[76]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "十四、违反本准则的规定时应当采取的措施（参见本准则",
+      "page": 76,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[76]/block[16]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "十五、工作记录（参见本准则第一百四十六条至第一百四十",
+      "page": 78,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[78]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "十六、特殊情况下对准则的运用",
+      "page": 78,
+      "source": "pdf-toc",
+      "locator": "pdf/page[78]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（一）涉及审计客户合并、收购的情况",
+      "page": 78,
+      "source": "pdf-toc",
+      "locator": "pdf/page[78]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "一般规定",
+      "page": 81,
+      "source": "pdf-toc",
+      "locator": "pdf/page[81]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "公众利益实体",
+      "page": 82,
+      "source": "pdf-toc",
+      "locator": "pdf/page[82]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "关联实体",
+      "page": 82,
+      "source": "pdf-toc",
+      "locator": "pdf/page[82]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "网络与网络事务所",
+      "page": 82,
+      "source": "pdf-toc",
+      "locator": "pdf/page[82]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "与审计客户之间的人员交流",
+      "page": 84,
+      "source": "pdf-toc",
+      "locator": "pdf/page[84]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "提供非鉴证服务",
+      "page": 84,
+      "source": "pdf-toc",
+      "locator": "pdf/page[84]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "（三）涉及中国内地以外人员适用本准则的情况",
+      "page": 84,
+      "source": "pdf-toc",
+      "locator": "pdf/page[84]/block[14]/line[1]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [
+    "low-pdf-text:page-85"
+  ],
+  "review_pages": [
+    85
+  ]
+}

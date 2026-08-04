@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [first-section-master-index-2026-06-26]
 tags: [key-audit-matters, audit-report, listed-company, p1-core]
 related: [[concepts/first-section-topic-matrix]], [[concepts/audit-standards/csa-1504]], [[concepts/audit-standards/csa-1151]], [[concepts/law-securities]]
+domain: practice
+topic: first-section
 ---
 
 # 关键审计事项专题

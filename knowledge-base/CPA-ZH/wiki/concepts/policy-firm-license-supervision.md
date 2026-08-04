@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [2026-06-26-initial-structure, archived-cpa-competition-policy-pages]
 tags: [policy, accounting-firm, license, supervision, p2-important]
 related: [[concepts/policy-documents]], [[concepts/law-cpa]], [[concepts/policy-audit-order]], [[concepts/policy-firm-inspection]]
+domain: policies
+topic: firm
 ---
 
 # 会计师事务所执业许可和监督管理办法
@@ -16,7 +18,7 @@ related: [[concepts/policy-documents]], [[concepts/law-cpa]], [[concepts/policy-
 - 文号：财政部令第97号
 - 定位：会计师事务所准入、变更、备案和日常监督管理制度。
 - 官方来源：[中国政府网国务院公报：财政部令第97号及《会计师事务所执业许可和监督管理办法》](https://www.gov.cn/gongbao/content/2019/content_5392297.htm)（已核验，2026-06-29）。
-- 本地归档：`raw/policies/second-section/firm-license-supervision-2019-97/official.html`。
+- 本地归档：`raw/policies/second-section/firm-license-supervision-2019-97/official.html.md`。
 
 ## 政策定位
 

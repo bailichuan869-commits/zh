@@ -7,6 +7,8 @@ updated: 2026-06-29
 sources: [2026-06-26-initial-structure, third-section-official-archive-2026-06-29, archived-cpa-competition-policy-pages]
 tags: [cpa, history, industry, p2-important]
 related: [[concepts/history-ethics-independence]], [[concepts/law-cpa]], [[concepts/policy-audit-order]], [[concepts/policy-caihui-supervision]], [[concepts/ethics-code]]
+domain: ethics
+topic: history
 ---
 
 # 中国注册会计师行业发展基础知识
@@ -17,10 +19,10 @@ related: [[concepts/history-ethics-independence]], [[concepts/law-cpa]], [[conce
 
 | 来源 | 本地归档 |
 |---|---|
-| 中注协职业道德规范专题页 | `raw/ethics/third-section/professional-ethics-index/official.html` |
-| 《中国注册会计师行业发展报告2024》出版发行 | `raw/ethics/third-section/industry-development-report-2024/official.html` |
-| 致敬45年：中国注册会计师制度恢复重建45周年 | `raw/ethics/third-section/cpa-system-restoration-45th/official.html` |
-| 庆祝中国注册会计师制度恢复重建暨行业改革发展45周年 | `raw/ethics/third-section/industry-reform-development-45th/official.html` |
+| 中注协职业道德规范专题页 | `raw/ethics/third-section/professional-ethics-index/official.html.md` |
+| 《中国注册会计师行业发展报告2024》出版发行 | `raw/ethics/third-section/industry-development-report-2024/official.html.md` |
+| 致敬45年：中国注册会计师制度恢复重建45周年 | `raw/ethics/third-section/cpa-system-restoration-45th/official.html.md` |
+| 庆祝中国注册会计师制度恢复重建暨行业改革发展45周年 | `raw/ethics/third-section/industry-reform-development-45th/official.html.md` |
 
 ## 发展脉络
 

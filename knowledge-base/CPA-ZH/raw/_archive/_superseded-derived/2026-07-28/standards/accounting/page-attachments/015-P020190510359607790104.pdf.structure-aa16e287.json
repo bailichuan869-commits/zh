@@ -1,0 +1,115 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:40:43+00:00",
+  "source_file": "raw/_archive/standards/accounting/page-attachments/015-P020190510359607790104.pdf",
+  "derived_file": "raw/standards/accounting/page-attachments/015-P020190510359607790104.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "needs-review",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 18,
+  "heading_count": 3,
+  "table_count": 7,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "关于修订印发2019年度一般企业财务报表格式的通知",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "一般企业财务报表格式（适用于已执行新金融准则、",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "新收入准则和新租赁准则的企业）",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[4]/line[1]",
+      "confidence": 0.85
+    }
+  ],
+  "tables": [
+    {
+      "index": 1,
+      "page": 2,
+      "rows": 37,
+      "columns": 6,
+      "representation": "html",
+      "locator": "pdf/page[2]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 2,
+      "page": 3,
+      "rows": 6,
+      "columns": 6,
+      "representation": "html",
+      "locator": "pdf/page[3]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 3,
+      "page": 10,
+      "rows": 15,
+      "columns": 3,
+      "representation": "markdown",
+      "locator": "pdf/page[10]/table[1]",
+      "needs_review": false
+    },
+    {
+      "index": 4,
+      "page": 11,
+      "rows": 31,
+      "columns": 3,
+      "representation": "markdown",
+      "locator": "pdf/page[11]/table[1]",
+      "needs_review": false
+    },
+    {
+      "index": 5,
+      "page": 15,
+      "rows": 5,
+      "columns": 3,
+      "representation": "markdown",
+      "locator": "pdf/page[15]/table[1]",
+      "needs_review": false
+    },
+    {
+      "index": 6,
+      "page": 16,
+      "rows": 34,
+      "columns": 3,
+      "representation": "markdown",
+      "locator": "pdf/page[16]/table[1]",
+      "needs_review": false
+    },
+    {
+      "index": 7,
+      "page": 17,
+      "rows": 27,
+      "columns": 23,
+      "representation": "html",
+      "locator": "pdf/page[17]/table[1]",
+      "needs_review": true
+    }
+  ],
+  "warnings": [
+    "complex-pdf-table:page-17-table-1",
+    "complex-pdf-table:page-2-table-1",
+    "complex-pdf-table:page-3-table-1"
+  ],
+  "review_pages": [
+    2,
+    3,
+    17
+  ]
+}

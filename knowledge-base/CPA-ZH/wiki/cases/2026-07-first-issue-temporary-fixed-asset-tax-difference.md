@@ -8,8 +8,13 @@ sources: [case-batch-2026-07-first-issue]
 raw_path: raw/cases/2026-07-first-issue/11部研讨会议题【暂估转固税会差异问题】（7月-第1期）.docx
 tags: [case, fixed-assets, tax-accounting-difference, deferred-tax, temporary-difference, practice]
 related: [[sources/case-batch-2026-07-first-issue]], [[concepts/case-analysis]], [[concepts/accounting-standards/cas-18]], [[concepts/accounting-standards/cas-08]]
+domain: cases
+topic: case-other
+page_role: case
+maturity: draft
+answer_ready: false
+review_status: pending-human-review
 ---
-
 # 暂估转固超过12个月的税会差异处理
 
 ## 一句话结论
@@ -21,7 +26,7 @@ related: [[sources/case-batch-2026-07-first-issue]], [[concepts/case-analysis]],
 | 项目 | 内容 |
 |---|---|
 | 批次 | [[sources/case-batch-2026-07-first-issue]] |
-| 原始文件 | `raw/cases/2026-07-first-issue/11部研讨会议题【暂估转固税会差异问题】（7月-第1期）.docx` |
+| 原始文件 | `raw/cases/2026-07-first-issue/11部研讨会议题【暂估转固税会差异问题】（7月-第1期）.docx.md` |
 | 主题 | 固定资产暂估转固、税会差异、递延所得税 |
 
 ## 事实背景
@@ -94,3 +99,18 @@ B 公司某新建生产线 2024 年 11 月完工并达到预定可使用状态�
 | 折旧先税前扣除再说 | 可能导致申报口径不一致 |
 | 不确认递延所得税资产 | 可能漏报资产和所得税费用 |
 
+
+
+## 缺失事实
+
+将本案例用于其他项目时，需补齐完整合同及补充协议、交易时间线、金额、关联关系、审批和期后执行情况。任何影响控制、可执行权利或计量基础的事实变化，均可能改变结论。
+
+## 结论确定性
+
+现有结论属于对所列事实的专业判断意见，尚待指定复核人对原始材料和报告期准则逐项复核；复核前不进入 AI 主检索集。
+
+## 原文引用与边界
+
+- [S1] [[raw/cases/2026-07-first-issue/11部研讨会议题【暂估转固税会差异问题】（7月-第1期）.docx|本案例原始材料]]
+
+原始材料来自内部研讨，不属于财政部准则原文；页面中的个人意见必须与官方准则依据分层使用。

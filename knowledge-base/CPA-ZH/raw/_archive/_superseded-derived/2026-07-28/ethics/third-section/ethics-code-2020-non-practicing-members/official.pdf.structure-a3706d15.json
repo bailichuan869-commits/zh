@@ -1,0 +1,1355 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:42:56+00:00",
+  "source_file": "raw/ethics/third-section/ethics-code-2020-non-practicing-members/official.pdf",
+  "derived_file": "raw/ethics/third-section/ethics-code-2020-non-practicing-members/official.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 44,
+  "heading_count": 167,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "中国注册会计师协会非执业会员职业道德守则",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "中国注册会计师协会非执业会员",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "职业道德守则",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范中国注册会计师协会非执业会员的职业活动，",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二条 非执业会员可能是其所在工作单位的正式或非正式员",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三条 非执业会员在从事专业服务时，应当遵守本守则，履行",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四条 本守则并未涵盖非执业会员所能遇到的所有涉及职业",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五条 非执业会员应当遵守相关的法律法规。如果某些法律法",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六条 非执业会员的职位越高，越能够获取更多的信息，也越",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 职业道德基本原则",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七条 非执业会员应当遵循下列职业道德基本原则：",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八条 职业道德基本原则旨在为非执业会员的行为确立道德",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 诚 信",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九条 非执业会员应当遵循诚信原则，在所有的职业活动中保",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十条 非执业会员如果认为业务报告、申报资料、沟通函件或",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十一条 如果非执业会员按照相关职业准则的规定出具了恰",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 客观公正",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十二条 非执业会员应当遵循客观公正原则，公正处事，实事",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十三条 如果存在对职业判断产生过度不当影响的情形，非执",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 专业胜任能力和勤勉尽责",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十四条 非执业会员应当遵循专业胜任能力和勤勉尽责原则，",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十五条 非执业会员应当通过教育、培训和工作实践获取和保",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十六条 非执业会员应当持续了解并掌握当前法律、技术和实",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十七条 在运用专业知识和技能时，非执业会员应当合理运用",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十八条 非执业会员应当勤勉尽责，即遵守法律法规、相关职",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十九条 非执业会员应当采取适当措施，确保在其授权下工作",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十条 在适当时，非执业会员应当使其工作单位或专业服务",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 保 密",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十一条 非执业会员应当遵循保密原则，对职业活动中获知",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十二条 保密原则是符合公众利益的，因为遵循这一原则可",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十三条 在决定是否披露涉密信息时，非执业会员需要考虑",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十四条 在终止与工作单位的关系后，非执业会员应当对以",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六节 良好职业行为",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十五条 非执业会员应当遵循良好职业行为原则，遵守相关",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十六条 非执业会员在向公众传递信息以及推介自己和工",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十七条 非执业会员应当诚实、实事求是，不得有下列行为：",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 职业道德概念框架",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十八条 职业道德概念框架，是指解决职业道德问题的思路",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十九条 在运用职业道德概念框架时，非执业会员应当运用",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十条 如果发现存在可能违反职业道德基本原则的情形，非",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十一条 如果认为对职业道德基本原则的不利影响超出可",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 识别对职业道德基本原则的不利影响",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十二条 可能对职业道德基本原则产生不利影响的因素包",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十三条 下列事项可能因自身利益对职业道德基本原则产",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十四条 下列事项可能因自我评价对职业道德基本原则产",
+      "page": 10,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[10]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十五条 下列事项可能因过度推介对职业道德基本原则产",
+      "page": 10,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[10]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十六条 下列事项可能因密切关系对职业道德基本原则产",
+      "page": 10,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[10]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十七条 下列事项可能因外在压力对职业道德基本原则产",
+      "page": 11,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[11]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 评价不利影响的严重程度",
+      "page": 11,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[11]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十八条 非执业会员对不利影响严重程度的评价可能受多",
+      "page": 11,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[11]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十九条 当非执业会员认为工作单位的其他人员已经发生",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 应对不利影响",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十条 在极其特殊的情况下，如果非执业会员无法采取防范",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 与治理层的沟通",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十一条 当按照本守则的规定与治理层沟通时，非执业会员",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十二条 如果非执业会员与同时承担管理层职责和治理层",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 利益冲突",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十三条 利益冲突可能对客观公正原则产生不利影响，也可",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十四条 非执业会员不得因利益冲突损害其职业判断。",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 利益冲突的识别",
+      "page": 14,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[14]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十五条 非执业会员应当采取合理措施识别可能产生利益",
+      "page": 14,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[14]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 利益冲突产生的不利影响",
+      "page": 14,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[14]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十六条 一般来说，非执业会员的职业活动与产生利益冲突",
+      "page": 14,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[14]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 披露与同意",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十七条 当非执业会员遇到利益冲突时，通常有必要执行下",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十八条 如果非执业会员有充分证据表明相关方从一开始",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十九条 如果披露或同意未采用书面形式，本守则鼓励非执",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十条 在应对利益冲突时，本守则鼓励非执业会员向工作单",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 信息的编制和列报",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五十一条 就本章而言，信息的编制和列报包括信息的记录、",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十二条 非执业会员编制和列报信息，可能因自身利益、外",
+      "page": 17,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[17]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十三条 不当影响合同或监管结果的一个例子是使用脱离",
+      "page": 17,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[17]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十四条 非执业会员在运用职业判断编制和列报信息时，可",
+      "page": 17,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[17]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十五条 非执业会员在从事职业活动，尤其是无须遵守财务",
+      "page": 18,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[18]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十六条 如果非执业会员拟利用他人（包括工作单位内部或",
+      "page": 18,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[18]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十七条 当非执业会员知悉或有理由相信与其相关的信息",
+      "page": 19,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[19]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十八条 如果非执业会员认为工作单位未采取适当的行动，",
+      "page": 19,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[19]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十九条 如果在考虑了本守则第五十七条至第五十八条所",
+      "page": 20,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[20]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十条 针对信息的编制和列报，本守则鼓励非执业会员记录",
+      "page": 20,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[20]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十一条 针对信息的编制和列报，如果对职业道德基本原则",
+      "page": 20,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[20]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 专业知识和技能",
+      "page": 20,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[20]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六十二条 非执业会员应当遵循专业胜任能力和勤勉尽责原",
+      "page": 20,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[20]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十三条 如果非执业会员存在下列情况，可能因自身利益对",
+      "page": 21,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[21]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十四条 如果非执业会员认为没有防范措施可以应对不利",
+      "page": 21,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[21]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十五条 如果对职业道德基本原则的不利影响源自相关压",
+      "page": 21,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[21]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七章 与财务报告和决策相关的经济利益、薪酬和激励",
+      "page": 22,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[22]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六十六条 非执业会员不得操纵信息或利用涉密信息谋取个",
+      "page": 22,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[22]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十七条 举例来说，当非执业会员及其近亲属存在下列情况",
+      "page": 22,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[22]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十八条 由薪酬或激励政策产生的不利影响可能因来自上",
+      "page": 23,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[23]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第八章 利益诱惑（包括礼品和款待）",
+      "page": 23,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[23]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": 23,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[23]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十九条 非执业会员提供或接受利益诱惑，可能会因自身利",
+      "page": 23,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[23]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十条 利益诱惑是指影响其他人员行为的物质、事件或行",
+      "page": 23,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[23]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 法律法规禁止的利益诱惑",
+      "page": 23,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[23]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十一条 法律法规可能禁止在特定情况下提供或接受利益",
+      "page": 23,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[23]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 意图不当影响行为的利益诱惑",
+      "page": 24,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[24]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十二条 非执业会员不得提供或授意他人提供任何意图不",
+      "page": 24,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[24]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十三条 非执业会员不得接受或授意他人接受任何意图不",
+      "page": 24,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[24]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十四条 如果某项利益诱惑导致某人以不道德的方式行事，",
+      "page": 24,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[24]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十五条 非执业会员提供或接受，或者授意他人提供或接受",
+      "page": 24,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[24]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十六条 在确定是否可能存在不当影响行为的意图时，非执",
+      "page": 24,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[24]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十七条 如果非执业会员知悉被提供的利益诱惑可能存在",
+      "page": 25,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[25]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 无不当影响行为意图的利益诱惑",
+      "page": 26,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[26]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十八条 即使非执业会员认为某项利益诱惑无不当影响行",
+      "page": 26,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[26]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十九条 举例来说，下列防范措施可能能够消除因提供或接",
+      "page": 26,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[26]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十条 举例来说，下列防范措施可能能够将因提供或接受此",
+      "page": 26,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[26]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 主要近亲属或其他近亲属",
+      "page": 27,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[27]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十一条 非执业会员应当对下列可能对职业道德基本原则",
+      "page": 27,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[27]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十二条 如果非执业会员知悉其主要近亲属或其他近亲属",
+      "page": 27,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[27]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十三条 除本守则第七十六条规定的因素外，在确定是否可",
+      "page": 28,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[28]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十四条 即使非执业会员的主要近亲属或其他近亲属已经",
+      "page": 28,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[28]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十五条 如果非执业会员发现存在本守则第八十一条所述",
+      "page": 28,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[28]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六节 其他方面的考虑",
+      "page": 29,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[29]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十六条 如果工作单位向非执业会员提供与业绩挂钩的经",
+      "page": 29,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[29]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第九章 应对违反法律法规行为",
+      "page": 29,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[29]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": 29,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[29]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十七条 非执业会员在实施职业活动的过程中，可能遇到、",
+      "page": 29,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[29]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十八条 本章所称的法律法规，通常包括下列两种类型：",
+      "page": 29,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[29]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十九条 在应对违反法律法规或涉嫌违反法律法规行为时，",
+      "page": 30,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[30]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十条 违反法律法规行为包括下列各方有意或无意作出的",
+      "page": 30,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[30]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十一条 举例来说，本章所述的法律法规可能包括涉及下列",
+      "page": 30,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[30]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十二条 违反法律法规行为可能给工作单位带来罚款、诉讼",
+      "page": 31,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[31]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十三条 某些法律法规可能已就非执业会员如何处理违反",
+      "page": 31,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[31]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十四条 无论工作单位属于什么性质的实体，以及是否属于",
+      "page": 32,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[32]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十五条 如果非执业会员遇到或知悉的事项明显不重要，则",
+      "page": 32,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[32]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十六条 本章的规定不涉及下列行为：",
+      "page": 32,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[32]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 管理层和治理层的责任",
+      "page": 32,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[32]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十七条 工作单位的管理层负责在治理层的监督下确保工",
+      "page": 32,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[32]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 非执业会员的责任",
+      "page": 32,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[32]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十八条 某些实体建立了对违反法律法规或涉嫌违反法律",
+      "page": 32,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[32]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十九条 如果非执业会员知悉适用于本章规定的违反法律",
+      "page": 33,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[33]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 处于高级职位的非执业会员的责任",
+      "page": 33,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[33]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百条 处于高级职位的非执业会员（以下简称高级非执业会",
+      "page": 33,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[33]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零一条 如果高级非执业会员在实施职业活动的过程中",
+      "page": 33,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[33]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零二条 高级非执业会员需要运用专业知识、技能和职业",
+      "page": 34,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[34]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零三条 根据相关事项的性质和重要程度，高级非执业会",
+      "page": 34,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[34]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零四条 如果高级非执业会员识别出或怀疑存在已发生",
+      "page": 34,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[34]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零五条 高级非执业会员应当采取下列措施：",
+      "page": 34,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[34]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零六条 与治理层沟通该事项的目的在于就应对该事项",
+      "page": 35,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[35]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零七条 某些法律法规可能规定了向适当机构报告违反",
+      "page": 35,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[35]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零八条 高级非执业会员应当确定是否需要向工作单位",
+      "page": 35,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[35]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零九条 针对本守则第一百零四条的要求，高级非执业会",
+      "page": 35,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[35]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十条 针对上级（如有）和治理层的应对，高级非执业",
+      "page": 35,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[35]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十一条 高级非执业会员应当运用职业判断确定是否",
+      "page": 36,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[36]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十二条 对事项的评估可能涉及复杂的分析和判断，高",
+      "page": 37,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[37]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十三条 向适当机构报告相关事项的目的在于使该机",
+      "page": 37,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[37]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十四条 确定是否向适当机构报告主要取决于下列外",
+      "page": 38,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[38]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十五条 如果高级非执业会员确定向适当机构报告违",
+      "page": 38,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[38]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十六条 在某些情况下，高级非执业会员可能知悉了或",
+      "page": 38,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[38]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十七条 针对本节所述的违反法律法规或涉嫌违反法",
+      "page": 39,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[39]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 其他非执业会员的责任",
+      "page": 39,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[39]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十八条 如果其他非执业会员在从事职业活动的过程",
+      "page": 39,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[39]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十九条 如果其他非执业会员识别出或怀疑存在已经",
+      "page": 40,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[40]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十条 如果其他非执业会员确定向适当机构报告违反",
+      "page": 40,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[40]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六节 文件记录",
+      "page": 40,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[40]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十一条 针对本章所述的违反法律法规或涉嫌违反法",
+      "page": 40,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[40]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十章 违反职业道德基本原则的压力",
+      "page": 40,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[40]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一百二十二条 非执业会员不得有下列行为：",
+      "page": 40,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[40]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十三条 非执业会员可能面临使其违反职业道德基本",
+      "page": 41,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[41]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十四条 因上述压力而对职业道德基本原则产生不利",
+      "page": 42,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[42]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十五条 沟通产生压力的各种情况，并就这些情况向其",
+      "page": 42,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[42]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十六条 举例来说，如果对非执业会员的某些职责和责",
+      "page": 43,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[43]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十七条 本守则鼓励非执业会员记录下列事项：",
+      "page": 43,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[43]/block[20]/line[1]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

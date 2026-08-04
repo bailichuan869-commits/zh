@@ -1,3 +1,8 @@
+---
+source_type: "generated-index"
+source_role: "index-page"
+---
+
 # 企业会计准则、应用指南及解释：官方链接清单
 
 核验日期：2026-06-26

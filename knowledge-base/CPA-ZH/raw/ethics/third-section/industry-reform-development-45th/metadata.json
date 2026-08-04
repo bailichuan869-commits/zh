@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "text/html; charset=UTF-8",
   "bytes": 8857,
-  "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/industry-reform-development-45th/official.html"
+  "local_file": "raw/ethics/third-section/industry-reform-development-45th/official.html",
+  "derived_markdown": "raw/ethics/third-section/industry-reform-development-45th/official.html.md",
+  "derived_sha256": "668ec3dfcf423f6f75f4744c5cae0ce5f9aebca7a61f2e3501aceef6c629fb5f",
+  "text_extraction_status": "ok",
+  "sha256": "78634c49cf45f9b1eaf3e4dcf30be2b5fe32053830994ae520338c843e6c735c",
+  "archive_policy": "dual-track"
 }

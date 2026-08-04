@@ -7,14 +7,16 @@ updated: 2026-06-26
 raw_path: raw/indexes/enterprise-accounting-standards-number-index.csv
 tags: [accounting, standards, cas, generated-index, p1-core]
 related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounting-standards-download-2026-06-26]], [[sources/enterprise-accounting-standards-interpretations-download-2026-06-26]], [[sources/enterprise-accounting-standards-application-cases-download-2026-06-26]], [[sources/enterprise-accounting-standards-implementation-qa-download-2026-06-26]]
+domain: sources
+topic: batches
 ---
 
 # 企业会计准则编号级索引
 
 ## 文件位置
 
-- 编号汇总 CSV：`raw/indexes/enterprise-accounting-standards-number-index.csv`
-- 映射明细 CSV：`raw/indexes/enterprise-accounting-standards-number-mapping.csv`
+- 编号汇总 CSV：`raw/indexes/enterprise-accounting-standards-number-index.csv.md`
+- 映射明细 CSV：`raw/indexes/enterprise-accounting-standards-number-mapping.csv.md`
 - Markdown 总览：`raw/indexes/enterprise-accounting-standards-number-index.md`
 - 分准则 wiki 页：`wiki/concepts/accounting-standards/`
 - 生成脚本：`tools/generate_accounting_standards_number_index.py`

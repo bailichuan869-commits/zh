@@ -1,0 +1,653 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:51:30+00:00",
+  "source_file": "raw/_archive/standards/accounting/page-attachments/016-P020190927495702300413.pdf",
+  "derived_file": "raw/standards/accounting/page-attachments/016-P020190927495702300413.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "needs-review",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 11,
+  "heading_count": 70,
+  "table_count": 7,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "关于修订印发合并财务报表格式（2019版）的通知",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "附件1：",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[2]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "合并财务报表格式（2019 版）",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "金融企业资产负债表中的有关行项目在本表中的列示说明：",
+      "page": 2,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[2]/block[32]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "1．金融企业资产负债表中的“现金及存放中央银行款项”行项",
+      "page": 2,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[2]/block[33]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "目在本表中的“货币资金”行项目中列示。",
+      "page": 2,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[2]/block[34]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "2．金融企业资产负债表中的“存放同业款项”“融出资金”行项",
+      "page": 2,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[2]/block[35]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "目在本表中的“拆出资金”行项目中列示。",
+      "page": 2,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[2]/block[36]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "3. 金融企业资产负债表中的“应收款项”行项目在本表中的“应",
+      "page": 2,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[2]/block[37]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "收票据”“应收账款”“应收款项融资”行项目中列示。",
+      "page": 2,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[2]/block[38]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "4．金融企业资产负债表中的“存出保证金”“应收代位追偿款”",
+      "page": 2,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[2]/block[39]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "“保户质押贷款”行项目在本表中的“其他流动资产”行项目中列示。",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[2]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "5．金融企业资产负债表中的“应收分保未到期责任准备金”“应",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "收分保未决赔款准备金”“应收分保寿险责任准备金”“应收分保长期",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "健康险责任准备金”行项目在本表中的“应收分保合同准备金”行项",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[5]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "目中列示。",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[6]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "6．金融企业资产负债表中“金融投资”行项目下的“交易性金",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[7]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "融资产”“债权投资”“其他债权投资”“其他权益工具投资”子项目",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[8]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "分别在本表中的“交易性金融资产”“债权投资”“其他债权投资”“其",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[9]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "他权益工具投资”行项目中列示。",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[10]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "7．金融企业资产负债表中的“存出资本保证金”“独立账户资产”",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[11]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "行项目在本表中的“其他非流动资产”行项目中列示。",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[12]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "8．金融企业资产负债表中的“应付短期融资款”行项目在本表",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[13]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "中的“短期借款”行项目中列示。",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[14]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "9．金融企业资产负债表中的“应付款项”行项目在本表中的“应",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[15]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "付票据”“应付账款”行项目中列示。",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[16]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "10．金融企业资产负债表中的“应付赔付款”行项目在本表中的",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[17]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "“应付账款”行项目中列示。",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[18]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "11．金融企业资产负债表中的“预收保费”行项目在本表中的“预",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[19]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "收款项”行项目中列示。",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[20]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "12．金融企业资产负债表中的“同业及其他金融机构存放款项”",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[21]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "“吸收存款”行项目在本表中的“吸收存款及同业存放”行项目中列",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[22]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "示。",
+      "page": 3,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[3]/block[23]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "13．金融企业资产负债表中的“应付保单红利”行项目在本表中",
+      "page": 4,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[4]/block[2]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "的“其他应付款”行项目中列示。",
+      "page": 4,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[4]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "14．金融企业资产负债表中的“保户储金及投资款”行项目在本",
+      "page": 4,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[4]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "表中的“其他流动负债”行项目中列示。",
+      "page": 4,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[4]/block[5]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "15．金融企业资产负债表中的“未到期责任准备金”“未决赔款",
+      "page": 4,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[4]/block[6]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "准备金”“寿险责任准备金”“长期健康险责任准备金”行项目在本表",
+      "page": 4,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[4]/block[7]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "中的“保险合同准备金”行项目中列示。",
+      "page": 4,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[4]/block[8]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "16．金融企业资产负债表中的“独立账户负债”行项目在本表中",
+      "page": 4,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[4]/block[9]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "的“其他非流动负债”行项目中列示。",
+      "page": 4,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[4]/block[10]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "17．金融企业资产负债表中的“其他资产”“其他负债”行项目",
+      "page": 4,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[4]/block[11]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "进行分析后在本表相关项目中列示。",
+      "page": 4,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[4]/block[12]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "18．有贵金属业务的，在本表中增加“贵金属”行项目对相关贵",
+      "page": 4,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[4]/block[13]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "金属资产进行列示。",
+      "page": 4,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[4]/block[14]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "金融企业利润表中的有关行项目在本表中的列示说明：",
+      "page": 6,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[6]/block[32]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "1．金融企业利润表中的“其他业务收入”行项目在本表中的“营",
+      "page": 6,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[6]/block[33]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "业收入”行项目中列示。",
+      "page": 6,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[6]/block[34]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "2．金融企业利润表中的“赔付支出”与“减：摊回赔付支出”",
+      "page": 6,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[6]/block[35]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "行项目的净额在本表中的“赔付支出净额”行项目中列示。",
+      "page": 6,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[6]/block[36]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "3．金融企业利润表中的“提取保险责任准备金”与“减：摊回",
+      "page": 6,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[6]/block[37]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "保险责任准备金”行项目的净额在本表中的“提取保险责任准备金净",
+      "page": 7,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[7]/block[2]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "额”行项目中列示。",
+      "page": 7,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[7]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "4．金融企业利润表中的“业务及管理费”与“减：摊回分保费",
+      "page": 7,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[7]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "用”行项目的净额在本表中的“管理费用”行项目中列示。",
+      "page": 7,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[7]/block[5]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "5．金融企业利润表中的“其他资产减值损失”行项目在本表中",
+      "page": 7,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[7]/block[6]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "的“资产减值损失”行项目中列示。",
+      "page": 7,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[7]/block[7]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "6．金融企业利润表中的“其他业务成本”行项目在本表中的“营",
+      "page": 7,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[7]/block[8]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "业成本”行项目中列示。",
+      "page": 7,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[7]/block[9]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "金融企业现金流量表中的有关行项目在本表中的列示说明：",
+      "page": 9,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[9]/block[23]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "1．金融企业现金流量表中“一、经营活动产生的现金流量”下",
+      "page": 9,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[9]/block[24]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "的“返售业务资金净增加额”行项目（银行、证券公司专用）在本表",
+      "page": 9,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[9]/block[25]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "中的“支付其他与经营活动有关的现金”行项目中列示。",
+      "page": 9,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[9]/block[26]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "2．金融企业现金流量表中“二、投资活动产生的现金流量”下",
+      "page": 9,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[9]/block[27]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "的“返售业务资金净增加额”行项目（保险公司专用）在本表中的“支",
+      "page": 9,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[9]/block[28]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "付其他与投资活动有关的现金”行项目中列示。",
+      "page": 9,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[9]/block[29]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "3．金融企业现金流量表中“回购业务资金净增加额”行项目（保",
+      "page": 9,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[9]/block[30]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "险公司专用）在本表中的“收到其他与筹资活动有关的现金”行项目",
+      "page": 9,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[9]/block[31]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "中列示。",
+      "page": 9,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[9]/block[32]/line[1]",
+      "confidence": 0.85
+    }
+  ],
+  "tables": [
+    {
+      "index": 1,
+      "page": 1,
+      "rows": 33,
+      "columns": 6,
+      "representation": "html",
+      "locator": "pdf/page[1]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 2,
+      "page": 2,
+      "rows": 22,
+      "columns": 6,
+      "representation": "html",
+      "locator": "pdf/page[2]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 3,
+      "page": 5,
+      "rows": 39,
+      "columns": 3,
+      "representation": "markdown",
+      "locator": "pdf/page[5]/table[1]",
+      "needs_review": false
+    },
+    {
+      "index": 4,
+      "page": 6,
+      "rows": 29,
+      "columns": 3,
+      "representation": "markdown",
+      "locator": "pdf/page[6]/table[1]",
+      "needs_review": false
+    },
+    {
+      "index": 5,
+      "page": 8,
+      "rows": 39,
+      "columns": 3,
+      "representation": "markdown",
+      "locator": "pdf/page[8]/table[1]",
+      "needs_review": false
+    },
+    {
+      "index": 6,
+      "page": 9,
+      "rows": 20,
+      "columns": 3,
+      "representation": "markdown",
+      "locator": "pdf/page[9]/table[1]",
+      "needs_review": false
+    },
+    {
+      "index": 7,
+      "page": 10,
+      "rows": 29,
+      "columns": 29,
+      "representation": "html",
+      "locator": "pdf/page[10]/table[1]",
+      "needs_review": true
+    }
+  ],
+  "warnings": [
+    "complex-pdf-table:page-1-table-1",
+    "complex-pdf-table:page-10-table-1",
+    "complex-pdf-table:page-2-table-1",
+    "low-pdf-text:page-11"
+  ],
+  "review_pages": [
+    1,
+    2,
+    10,
+    11
+  ]
+}

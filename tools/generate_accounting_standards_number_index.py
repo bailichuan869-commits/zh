@@ -132,6 +132,10 @@ def fullwidth_to_ascii(text: str) -> str:
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
+    if not path.exists():
+        archived = KB / "raw" / "_archive" / "standards" / "accounting" / path.name
+        if archived.exists():
+            path = archived
     with path.open("r", encoding="utf-8-sig", newline="") as fh:
         return list(csv.DictReader(fh))
 
@@ -220,12 +224,13 @@ def choose_mapping(source_type: str, title: str, url: str, local_file: str) -> t
 
 
 def make_record(source_type: str, source_row: dict[str, str]) -> dict[str, str]:
+    local_source = source_row.get("DerivedMarkdown") or source_row.get("LocalFile", "")
     return {
         "SourceType": source_type,
         "SourceTypeLabel": TYPE_LABELS[source_type],
         "Title": source_row.get("Title", ""),
         "Url": source_row.get("Url", ""),
-        "LocalPath": rel(source_row.get("LocalFile", "")),
+        "LocalPath": rel(local_source),
         "Seq": source_row.get("Seq", ""),
     }
 

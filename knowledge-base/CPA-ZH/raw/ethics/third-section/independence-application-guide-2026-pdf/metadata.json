@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "application/pdf",
   "bytes": 524995,
-  "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/independence-application-guide-2026-pdf/official.pdf"
+  "local_file": "raw/ethics/third-section/independence-application-guide-2026-pdf/official.pdf",
+  "derived_markdown": "raw/ethics/third-section/independence-application-guide-2026-pdf/official.pdf.md",
+  "derived_sha256": "f9ecc3f9164ff8c92f28d9f6bd1338259de1ec1598a056e5597a9f2a394ca265",
+  "text_extraction_status": "ok",
+  "sha256": "4a48fd4cc614caaea63d21144e20b74fbde45c5d6846b0e48a7c1de1cc15574b",
+  "archive_policy": "dual-track"
 }

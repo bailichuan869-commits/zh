@@ -1,0 +1,27 @@
+{
+  "schema": "cpa-zh-archive-doc-v1",
+  "generated_at": "2026-07-13T09:11:37+00:00",
+  "items": [
+    {
+      "slug": "file-source-summary",
+      "title": "首届全国注册会计师行业胜任能力青年挑战赛考察知识清单文件来源汇总",
+      "document_no": "",
+      "url": "",
+      "official_source": "本地HTML来源汇总",
+      "source_type": "local-source",
+      "wiki_page": "sources/challenge-knowledge-source-summary-verification-2026-07-13",
+      "archived_on": "2026-07-13",
+      "content_type": "text/html",
+      "bytes": 24303,
+      "sha256": "268dc427485429b96c29bcc9da7f7a6aeaf69af80769f5236b5af13e56d00929",
+      "local_file": "raw/sources/challenge-knowledge-source-summary-2026-07-13/file-source-summary/official.html",
+      "official_page_status": "local",
+      "text_extraction_status": "source-html",
+      "ocr_status": "not-required",
+      "source_note": "用户提供的考察知识清单文件来源汇总，用于核实CPA-ZH第一、第二、第三板块来源覆盖情况。",
+      "derived_markdown": "raw/sources/challenge-knowledge-source-summary-2026-07-13/file-source-summary/official.html.md",
+      "derived_sha256": "dbcb6d7781d84fd4ec80e4bbe5745798807ffc84e693abcb36b7260302172965",
+      "archive_policy": "dual-track"
+    }
+  ]
+}

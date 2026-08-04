@@ -1,0 +1,317 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:52:29+00:00",
+  "source_file": "raw/_archive/standards/audit/pdfs/058-中国注册会计师审阅准则第2101号-财务报表审阅-应用指南.pdf",
+  "derived_file": "raw/standards/audit/pdfs/058-中国注册会计师审阅准则第2101号-财务报表审阅-应用指南.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "needs-review",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 100,
+  "heading_count": 27,
+  "table_count": 7,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "中国注册会计师审阅准则第2101号-财务报表审阅-应用指南",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "《中国注册会计师审阅准则第2101 号",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[2]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "——财务报表审阅》应用指南",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 审阅范围和保证程度",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 业务约定书",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 审阅计划",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 审阅程序和审阅证据",
+      "page": 11,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[11]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 结论和报告",
+      "page": 20,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[20]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七章 中期财务信息审阅的补充规定",
+      "page": 27,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[27]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "审阅业务约定书参考格式",
+      "page": 28,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[28]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "审阅程序表参考范例",
+      "page": 34,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[34]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "管理层声明书范例",
+      "page": 44,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[44]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "审阅事项完成情况核对表参考范例",
+      "page": 48,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[48]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "审阅报告参考格式",
+      "page": 52,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[52]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "国际审阅准则第2410 号——注册会计师",
+      "page": 57,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[57]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "对审计客户执行的中期财务信息审阅",
+      "page": 57,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[57]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "中期财务信息审阅业务约定书参考格式",
+      "page": 77,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[77]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "注册会计师执行中期财务信息审阅时可能考虑的分析程序",
+      "page": 79,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[79]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "管理层声明书范例",
+      "page": 81,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[81]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "中期财务信息审阅报告参考格式",
+      "page": 85,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[85]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "因背离适用的财务报告框架而发表保留结论的",
+      "page": 89,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[89]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "审阅报告范例",
+      "page": 89,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[89]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "非管理层原因导致的审阅范围受限而发表保留结论的",
+      "page": 93,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[93]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "审阅报告范例",
+      "page": 93,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[93]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "因背离适用的财务报告框架而发表否定结论的",
+      "page": 97,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[97]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "审阅报告范例",
+      "page": 97,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[97]/block[4]/line[1]",
+      "confidence": 0.85
+    }
+  ],
+  "tables": [
+    {
+      "index": 1,
+      "page": 2,
+      "rows": 3,
+      "columns": 4,
+      "representation": "html",
+      "locator": "pdf/page[2]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 2,
+      "page": 3,
+      "rows": 4,
+      "columns": 4,
+      "representation": "html",
+      "locator": "pdf/page[3]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 3,
+      "page": 4,
+      "rows": 4,
+      "columns": 4,
+      "representation": "html",
+      "locator": "pdf/page[4]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 4,
+      "page": 48,
+      "rows": 8,
+      "columns": 4,
+      "representation": "html",
+      "locator": "pdf/page[48]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 5,
+      "page": 49,
+      "rows": 10,
+      "columns": 4,
+      "representation": "html",
+      "locator": "pdf/page[49]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 6,
+      "page": 50,
+      "rows": 15,
+      "columns": 4,
+      "representation": "html",
+      "locator": "pdf/page[50]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 7,
+      "page": 51,
+      "rows": 7,
+      "columns": 4,
+      "representation": "html",
+      "locator": "pdf/page[51]/table[1]",
+      "needs_review": true
+    }
+  ],
+  "warnings": [
+    "complex-pdf-table:page-2-table-1",
+    "complex-pdf-table:page-3-table-1",
+    "complex-pdf-table:page-4-table-1",
+    "complex-pdf-table:page-48-table-1",
+    "complex-pdf-table:page-49-table-1",
+    "complex-pdf-table:page-50-table-1",
+    "complex-pdf-table:page-51-table-1",
+    "low-pdf-text:page-88"
+  ],
+  "review_pages": [
+    2,
+    3,
+    4,
+    48,
+    49,
+    50,
+    51,
+    88
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:51:36+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第3号-投资性房地产.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第3号-投资性房地产.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 11,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第3号-投资性房地产",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范投资性房地产的确认、计量和相关信息的披露，根据《企业会计准则 —— 基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 投资性房地产，是指为赚取租金或资本增值，或两者兼有而持有的房地产。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 本准则规范下列投资性房地产 ：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[6]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 确认和初始计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[17]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 后续计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[27]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 有确凿证据表明投资性房地产的公允价值能够持续可靠取得的，可以对投资性房地产采用公允价值模式进行后续计量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[31]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 转换",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[39]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 处置",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[49]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 披露",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[53]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

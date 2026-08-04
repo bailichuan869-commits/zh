@@ -1,0 +1,227 @@
+---
+source_type: "local-lecture"
+source_role: "content"
+representation: "semantic-transcript"
+extraction_profile: "readable"
+structure_status: "verified-auto"
+source_pages: 0
+heading_count: 12
+table_count: 0
+extraction_engine: "markdown-pass-through"
+extraction_status: "ok"
+structure_updated_at: "2026-07-28"
+---
+
+# Python 第 23 课：Web 服务路线 FastAPI + 前端
+
+## 这一课要解决的问题
+
+上一课讲的是本地桌面路线：
+
+```text
+React 前端 -> pywebview 桥接 -> Python 工具层
+```
+
+这一课换一条路线：把 Python 工具变成 Web 服务。
+
+```text
+React / HTML 前端 -> HTTP 请求 -> FastAPI -> Python 工具层
+```
+
+> 当工具不只是自己电脑用，而是要被浏览器、同事、脚本或其他系统调用时，就需要服务化。
+
+## FastAPI 解决的是什么问题
+
+pywebview 适合本地桌面软件。
+
+FastAPI 适合把 Python 能力变成标准接口。
+
+比如：
+
+- 同事在浏览器上传文件，后端统一处理。
+- 内部系统调用你的 Python 工具。
+- AI Agent 通过接口调用已有工具。
+- 工具部署到局域网或服务器上。
+- 前端和后端可以分开开发、分开部署。
+
+这时前端不再直接调用 `window.pywebview.api`。
+
+它会用 HTTP 请求调用后端：
+
+```text
+fetch("http://127.0.0.1:8000/tools/pdf-merge")
+```
+
+## 两条路线的本质差别
+
+```text
+本地桌面路线：
+React 页面 -> pywebview -> 本机 Python 方法
+
+Web 服务路线：
+React 页面 -> HTTP 请求 -> FastAPI 接口 -> Python 工具函数
+```
+
+两条路线不冲突。
+
+它们共享同一个核心原则：
+
+> 业务逻辑仍然放在工具层，不要写进界面或接口文件里。
+
+也就是说，我们不是把工具重写一遍，而是给同一套工具层换一个“对外入口”。
+
+## 这条路线的项目结构
+
+可以让 AI 按下面的结构整理项目：
+
+```text
+excel_tools/
+  core/
+  excel/
+  pdf/
+  word/
+
+  api/
+    main.py
+    schemas.py
+
+  web/
+    src/
+      App.jsx
+    package.json
+```
+
+各层职责：
+
+- `core/`、`excel/`、`pdf/`、`word/`：业务工具层。
+- `api/main.py`：FastAPI 服务入口，接收请求、校验参数、调用工具层、返回结果。
+- `web/`：前端页面，通过 `fetch` 调用接口。
+
+如果只是做最小演示，也可以先用更简单的结构：
+
+```text
+api_main.py
+web/index.html
+```
+
+重点不是目录多漂亮，而是职责分开。
+
+## 这一课你要看懂什么
+
+这一课主要看懂路线判断：
+
+1. 只给自己电脑用时，pywebview 更轻。
+2. 多人访问时，FastAPI 更自然。
+3. API 文件不是业务层，它只是入口层。
+4. 文件上传、下载、权限和部署会让 Web 路线更复杂。
+
+代码依然可以让 AI 写，但你要会检查 AI 有没有犯这些错误：
+
+- 把 PDF 合并、Excel 清洗逻辑写进 `api/main.py`。
+- 前端直接假设后端一定在固定路径。
+- 上传文件后没有临时目录清理。
+- 接口返回结果不清楚，前端不知道成功还是失败。
+- 没有说明启动后端和打开前端的步骤。
+
+## 这条路线的优点
+
+- 架构标准，前后端分离清楚。
+- 适合多人访问和局域网部署。
+- 接口可以被浏览器、脚本、其他系统、AI Agent 调用。
+- 以后扩展权限、日志、队列、数据库更自然。
+
+## 这条路线的缺点
+
+- 比 pywebview 多了服务、端口、网络、安全等概念。
+- 文件上传下载要设计清楚。
+- 如果只是本机处理 Excel/Word，可能显得重。
+- 调用本机 Excel COM 这类能力时会更麻烦。
+
+## 最小演示案例
+
+这一课不需要一口气把整个工具箱都服务化。
+
+可以只选一个最简单的工具，比如 PDF 合并：
+
+```text
+POST /tools/pdf-merge
+```
+
+接口负责：
+
+- 接收上传的多个 PDF。
+- 保存到临时目录。
+- 调用已有 PDF 合并函数。
+- 返回结果文件或下载地址。
+- 出错时返回清晰的中文错误信息。
+
+前端负责：
+
+- 选择文件。
+- 点击按钮。
+- 显示处理中。
+- 展示成功或失败。
+- 提供下载入口。
+
+这样你就能看清楚：FastAPI 不是用来重写 PDF 合并逻辑的，它只是把已有工具包装成一个可访问的接口。
+
+## 路线选择对比
+
+```text
+如果是自己电脑用、处理本地文件、要像桌面软件一样打开：
+选 React + pywebview。
+
+如果是多人访问、浏览器访问、接口复用、未来部署：
+选 FastAPI + 前端。
+
+不管选哪条路：
+业务逻辑都应该放在工具层。
+```
+
+## 本节课提示词
+
+把下面这段发给 AI：
+
+```text
+我有一个 Python 办公自动化工具箱项目，业务能力已经放在 core、excel、pdf、word 等模块中。
+
+现在我想演示 Web 服务路线：
+React / HTML 前端 -> HTTP 请求 -> FastAPI -> Python 工具层。
+
+请先以 PDF 合并工具为例，设计一个最小可运行版本。
+
+目标：
+- 不重写 PDF 合并逻辑
+- FastAPI 只负责接收请求、保存临时文件、调用工具层、返回结果
+- 前端只负责选择文件、发起请求、显示状态和下载结果
+- 业务逻辑不能写进前端或 api/main.py
+
+接口要求：
+- POST /tools/pdf-merge
+- 支持上传多个 PDF 文件
+- 调用已有 PDF 合并函数
+- 返回合并后的 PDF 文件或下载地址
+- 出错时返回中文错误信息
+
+请输出：
+1. FastAPI + 前端路线的架构说明
+2. 推荐项目结构
+3. 需要安装的依赖
+4. FastAPI 示例代码
+5. 前端如何用 fetch 上传文件
+6. 如何启动后端并测试
+7. 这条路线和 pywebview 路线的优劣势对比
+8. 常见错误和检查清单
+
+请用适合零基础同学理解的语言说明。
+```
+
+## 今天要记住
+
+FastAPI 解决的是：
+
+> 把 Python 工具变成可被网络访问的服务。
+
+它适合多人访问、系统集成、接口复用和未来部署。
+
+但不管是 FastAPI 还是 pywebview，真正的资产都是同一套业务工具层。

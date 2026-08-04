@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [enterprise-accounting-standards-number-index-2026-06-26]
 tags: [accounting, standards, cas, p1-core]
 related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounting-standards-number-index-2026-06-26]]
+domain: accounting-standards
+topic: cas
 ---
 
 # 企业会计准则第17号——借款费用
@@ -35,6 +37,14 @@ related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounti
 | 类型 | 标题 | 官方链接 | 本地文件 | 映射 |
 |---|---|---|---|---|
 | 准则原文 | 企业会计准则第17号——借款费用 | https://kjs.mof.gov.cn/zt/kjzzss/kuaijizhunzeshishi/200806/t20080618_46231.htm | `raw/standards/accounting/standards-pages/企业会计准则第17号-借款费用.html` | title-standard-number/high |
-| 实施问答 | 问：用于开发建造房屋建筑物的土地使用权是否满足《企业会计准则第17号——借款费用》（财会〔2006〕3号）关于“符合资本化条件的资产”的定义？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/jkwd/202012/t20201211_3634037.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-114.html` | title-standard-number/high |
-| 实施问答 | 新矿产资源法下探矿权专门借款费用资本化问题 | https://kjs.mof.gov.cn/zt/kjzzss/sswd/jkwd/202606/t20260618_3991865.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-115.html` | url-category-slug/high |
-| 实施问答 | 问：甲公司委托乙设备生产商建造大型定制专用设备，定制周期超过1年，设备到场后在甲公司安装调试时间不足1年。甲公司需在签署委托合同时点提前向乙公司预付相关款项，为此甲公司借入专门借款。该专门借款利息是否满足《企业会计准则第17号——借款费用》（以下简称借款费用准则）下的借款费用资本化条件？若满足，借款费用资本化的起止时间如何确定？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/jkwd/202606/t20260618_3991866.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-116.html` | title-standard-number/high |
+| 实施问答 | 问：用于开发建造房屋建筑物的土地使用权是否满足《企业会计准则第17号——借款费用》（... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/jkwd/202012/t20201211_3634037.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-005.html.md` | title-standard-number/high |
+| 实施问答 | 新矿产资源法下探矿权专门借款费用资本化问题 | https://kjs.mof.gov.cn/zt/kjzzss/sswd/jkwd/202606/t20260618_3991865.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-096.html.md` | url-category-slug/high |
+| 实施问答 | 问：甲公司委托乙设备生产商建造大型定制专用设备，定制周期超过1年，设备到场后在甲公司... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/jkwd/202606/t20260618_3991866.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-097.html.md` | url-category-slug/high |
+
+<!-- golden-judgments:start -->
+
+## 会计判断专题
+
+- [[concepts/accounting-judgments/borrowing-cost-capitalisation|借款费用资本化]]
+
+<!-- golden-judgments:end -->

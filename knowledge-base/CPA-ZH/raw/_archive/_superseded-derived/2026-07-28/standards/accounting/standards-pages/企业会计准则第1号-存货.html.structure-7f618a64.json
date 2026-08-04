@@ -1,0 +1,187 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:40:47+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第1号-存货.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第1号-存货.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 21,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第1号-存货",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范存货的确认、计量和相关信息的披露，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 下列各项适用其他相关会计准则：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 确认",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[8]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 存货，是指企业在日常活动中持有以备出售的产成品或商品、处在生产过程中的在产品、在生产过程或提供劳务过程中耗用的材料和物料等。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[9]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 存货同时满足下列条件的，才能予以确认：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[10]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[14]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 存货应当按照成本 进行初始 计量。存货成本包括采购成本、加工成本和其他成本。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[15]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 存货的采购成本，包括购买价款、 相关 税费、运输费、装卸费、保险费以及其他可归属于存货采购成本的费用。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[16]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 存货的加工成本，包括直接人工以及按照一定方法分配的制造费用。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[17]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 存货的其他成本，是指除采购成本、加工成本以外的，使存货达到目前场所和状态所发生的其他支出。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[20]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 下列费用应当在发生时确认为当期损益，不计入存货成本：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[21]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 应计入 存货成本的借款费用，按照《企业会计准则第17号——借款费用》处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[25]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 投资者投入存货的成本，应当按照投资合同或协议约定的价值确定，但合同或协议约定价值不公允的除外。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[26]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 收获时农产品的成本 、非货币性资产交换、 债务重组 和企业合并取得的存货的成本，应当分别按照 《企业会计准则第5号——生物资产》 、 《企业会计准则第7号——非货币性资产交换》 、 《企业会计准则第12号——债务重组》 和 《企业会计准则第20号——企业合并》 确定 。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[27]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 企业提供劳务的，所发生的从事劳务提供人员的直接人工和其他直接费用以及可归属的间接费用， 计入存货 成本。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[28]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 企业应当采用先进先出法、加权平均法或者个别计价法确定发出存货的实际成本。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[29]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 资产负债表日，存货应当按照成本与可变现净值孰低计量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[33]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十条 企业应当采用一次转销法或者五五摊销法对低值易耗品和包装物进行摊销，计入相关资产的成本或者当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[44]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 披露",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[48]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

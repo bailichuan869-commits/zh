@@ -1,0 +1,275 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:43:27+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第5号-生物资产.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第5号-生物资产.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 32,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第5号-生物资产",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范与农业生产相关的生物资产的确认、计量和相关信息的披露，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 生物资产，是指有生命的动物和植物。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 生物资产分为消耗性生物资产、生产性生物资产和公益性生物资产。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 下列各项适用其他相关会计准则：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[8]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 确认和初始计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[12]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 生物资产同时满足下列条件的，才能予以确认：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[13]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 生物资产应当按照成本进行初始计量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[17]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 外购生物资产的成本 ， 包括购买价款 、 相关税费、运输费、保险费以及可直接归属于购买该资产的其他支出。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[18]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 自行栽培、营造、繁殖或养殖的消耗性生物资产的成本，应当按照下列规定确定：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[19]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 自行营造或繁殖的生产性生物资产的成本，应当按照下列规定确定：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[24]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 自行营造的公益性生物资产的成本，应当按照郁闭前发生的造林费、抚育费、森林保护费、营林设施费、良种试验费、调查设计费 和应分摊的间接 费 用 等必要支出确定。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[28]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 应 计入生物资产成本的借款费用，按照《企业会计准则第17号——借款费用》处理 。 消耗性林木类生物资产发生的借款费用，应当在郁闭时停止资本化。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[29]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 投资者投入生物资产的成本，应当按照投资合同或协议约定的价值确定，但合同或协议约定价值不公允的除外。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[30]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 天然起源 的 生物资产的成本，应当按照名义金额确定。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[31]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 非货币性资产交换 、债务重组和企业合并 取得的生物资产的成本，应当 分别 按照《企业会计准则第7号——非货币性资产交换》 、 《企业会计准则第12号——债务重组》 和 《企业会计准则第20号——企业合并》确定。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[32]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 后续计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[36]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十七条 企业对达到预定生产经营目的的生产性生物资产，应当按期计提折旧，并根据用途分别计入相关资产的成本或当期 损益 。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[38]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十八条 企业应当根据生产性生物资产的性质、使用情况和 有关 经济利益 的 预期 实现 方式，合理确定其使用寿命、预计净残值和折旧方法。可选用的折旧方法包括年限平均法、 工作量法、 产量法等。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[39]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十九条 企业确定生产性生物资产的使用寿命，应当考虑下列因素：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[41]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十条 企业 至少 应当 于每年年度终了 对生产性生物资产的使用寿命、预计净残值和折旧方法进行复核。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[45]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十一条 企业 至少 应当于 每年 年度终了对消耗性生物资产和生产性生物资产进行检查，有确凿证据表明由于遭受自然灾害、病虫害、动物疫病侵袭或市场需求变化等原因，使消耗性生物资产的可变现净值或生产性生物资产的可收回金额低于其账面价值的，应当按照可变现净值或可收回金额低于账面价值的差额，计提生物资产跌价准备或减值准备，并 计入当期损益 。上述可变现净值和可收回金额，应当分别按照《企业会计准则第1号——存货》和《企业会计准则第8号——资产减值》确定。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[47]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十二条 有确凿证据表明生物资产的公允价值能够持续可靠取得的，应当对生物资产采用公允价值计量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[51]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 收获与处置",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[56]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十三条 对于消耗性生物资产，应当在收获或出售时，按照其账面价值结转成本。结转成本的方法包括加权平均法、个别计价法、蓄积量比例法、轮伐期年限法等。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[57]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十四条 生产性生物资产收获的农产品成本，按照产出或采收过程中发生的材料费、人工费和应分摊的间接费用等必要支出计算确定，并采用加权平均法、个别计价法、蓄积量比例法、轮伐期年限法等方法，将其账面价值结转为农产品成本。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[58]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十五条 生物资产 改 变用途后的成本 ， 应当按照 改 变用途时的账面价值确定。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[60]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十六条 生物资产出售、盘亏或死亡、毁损时，应当将处置收入扣除其账面价值和相关税费后的余额计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[61]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 披露",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[63]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十七条 企业应当在附注中披露与生物资产有关的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[64]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十八条 企业应当在附注中披露与生物资产增减变动有关的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[70]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

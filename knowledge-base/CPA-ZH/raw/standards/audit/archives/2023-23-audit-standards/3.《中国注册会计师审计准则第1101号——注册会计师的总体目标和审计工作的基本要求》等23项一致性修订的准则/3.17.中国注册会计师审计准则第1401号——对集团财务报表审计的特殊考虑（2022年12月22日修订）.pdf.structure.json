@@ -1,0 +1,699 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:51:40+00:00",
+  "source_file": "raw/_archive/standards/audit/archives/2023-23-audit-standards/3.《中国注册会计师审计准则第1101号——注册会计师的总体目标和审计工作的基本要求》等23项一致性修订的准则/3.17.中国注册会计师审计准则第1401号——对集团财务报表审计的特殊考虑（2022年12月22日修订）.pdf",
+  "derived_file": "raw/standards/audit/archives/2023-23-audit-standards/3.《中国注册会计师审计准则第1101号——注册会计师的总体目标和审计工作的基本要求》等23项一致性修订的准则/3.17.中国注册会计师审计准则第1401号——对集团财务报表审计的特殊考虑（2022年12月22日修订）.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 18,
+  "heading_count": 85,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "3.17.中国注册会计师审计准则第1401号——对集团财务报表审计的特殊考虑（2022年12月22日修订）",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "中国注册会计师审计准则第1401 号",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[2]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "——对集团财务报表审计的特殊考虑",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[2]/line[2]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范注册会计师执行集团审计时的特殊考虑，特别是",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二条 本准则规范集团审计的特定方面，其他审计准则同样适用",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三条 在执行非集团审计时，如果利用其他注册会计师的工作",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四条 因法律法规要求或其他原因，组成部分注册会计师可能需",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五条 按照《中国注册会计师审计准则第1121 号——对财务报",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六条 无论是集团项目组还是组成部分注册会计师对组成部分",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七条 审计风险取决于重大错报风险和检查风险。在集团审计中，",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 定 义",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 集团，是指由所有组成部分构成的整体，并且所有组成部",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九条 集团财务报表，是指包括一个以上组成部分财务信息的财",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十条 本准则所称适用的财务报告编制基础，是指适用于集团财",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十一条 集团管理层，是指负责编制集团财务报表的管理层。",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十二条 集团层面控制，是指集团管理层设计、执行和维护的与",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十三条 集团审计，是指对集团财务报表进行的审计。",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十四条 集团审计意见，是指对集团财务报表发表的审计意见。",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十五条 集团项目合伙人，是指会计师事务所中负责某项集团审",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十六条 集团项目组，是指参与集团审计的，包括集团项目合伙",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十七条 组成部分，是指某一实体或某项业务活动，其财务信息",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十八条 重要组成部分，是指集团项目组识别出的具有下列特征",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十九条 组成部分管理层，是指负责编制组成部分财务信息的管",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十条 组成部分注册会计师，是指基于集团审计目的，按照集",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十一条 组成部分重要性，是指集团项目组为组成部分确定的",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十二条 合并过程，是指：",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 目 标",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十三条 注册会计师的目标是：",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 要 求",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 责 任",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十四条 集团项目合伙人应当按照职业准则和适用的法律法",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 集团审计业务的承接与保持",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十五条 在具体运用《中国注册会计师审计准则第1121 号——",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十六条 如果集团项目合伙人认为由于集团管理层施加的限",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十七条 集团项目合伙人应当按照《中国注册会计师审计准则",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 总体审计策略和具体审计计划",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十八条 集团项目组应当按照《中国注册会计师审计准则第",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十九条 集团项目合伙人应当复核集团总体审计策略和具体",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[23]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 了解集团及其环境、集团组成部分及其环境",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十条 注册会计师应当通过了解被审计单位及其环境、适用的",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十一条 集团项目组应当对集团及其环境、集团组成部分及其",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 了解组成部分注册会计师",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十二条 如果计划要求组成部分注册会计师执行组成部分财",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十三条 如果组成部分注册会计师不符合与集团审计相关的",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六节 重要性",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十四条 集团项目组应当确定与重要性相关的下列事项：",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十五条 如果基于集团审计目的，由组成部分注册会计师对组",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十六条 如果因法律法规或其他原因要求对组成部分进行审",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七节 针对评估的风险采取的应对措施",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十七条 注册会计师应当针对评估的财务报表重大错报风险",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十八条 在确定对合并过程或组成部分财务信息拟执行的工",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十九条 就集团而言，对于具有财务重大性的单个组成部分，",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[23]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十条 对由于其特定性质或情况，可能存在导致集团财务报表",
+      "page": 10,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[10]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十一条 对于不重要的组成部分，集团项目组应当在集团层面",
+      "page": 10,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[10]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十二条 如果集团项目组认为执行下列工作不能获取形成集",
+      "page": 10,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[10]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十三条 如果组成部分注册会计师对重要组成部分财务信息",
+      "page": 11,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[11]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十四条 如果在由组成部分注册会计师执行相关工作的组成",
+      "page": 11,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[11]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八节 合并过程",
+      "page": 11,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[11]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十五条 根据本准则第三十条的规定，集团项目组应当了解集",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十六条 集团项目组应当针对合并过程设计和实施进一步审",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十七条 集团项目组应当评价合并调整和重分类事项的适当",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十八条 如果组成部分财务信息没有按照集团财务报表采用",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十九条 集团项目组应当确定，组成部分注册会计师按照本准",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十条 如果集团财务报表包括的组成部分财务报表的报告期",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九节 期后事项",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十一条 如果集团项目组或组成部分注册会计师对组成部分",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十二条 如果组成部分注册会计师执行组成部分财务信息审",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十节 与组成部分注册会计师的沟通",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十三条 集团项目组应当及时向组成部分注册会计师通报工",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十四条 集团项目组应当要求组成部分注册会计师沟通与得",
+      "page": 14,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[14]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一节 评价审计证据的充分性和适当性",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十五条 集团项目组应当评价与组成部分注册会计师的沟通。",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十六条 如果认为组成部分注册会计师的工作不充分，集团项",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十七条 注册会计师应当获取充分、适当的审计证据，将审计",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十八条 集团项目合伙人应当评价未更正错报（无论该错报是",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二节 与集团管理层和集团治理层的沟通",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十九条 集团项目组应当按照《中国注册会计师审计准则第",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十条 如果集团项目组识别出舞弊或组成部分注册会计师提",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十一条 因法律法规要求或其他原因，组成部分注册会计师可",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十二条 除《中国注册会计师审计准则第1151 号——与治理",
+      "page": 17,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[17]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三节 审计工作底稿",
+      "page": 17,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[17]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十三条 集团项目组应当就下列事项形成审计工作底稿：",
+      "page": 17,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[17]/block[23]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 附 则",
+      "page": 18,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[18]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六十四条 本准则自2023 年7 月1 日起施行。",
+      "page": 18,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[18]/block[12]/line[1]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

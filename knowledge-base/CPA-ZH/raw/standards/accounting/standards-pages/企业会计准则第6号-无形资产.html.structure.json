@@ -1,0 +1,267 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:51:37+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第6号-无形资产.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第6号-无形资产.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 31,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第6号-无形资产",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范无形资产的确认、计量和相关信息的披露，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 下列各项适用其他相关会计准则：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 确认",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[9]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 无形资产，是指企业拥有或者控制的没有实物形态的可辨认非货币性资产。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[10]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 无形资产同时满足下列条件的，才能予以确认：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[14]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 企业在判断无形资产产生的经济利益是否很可能流入时，应 当 对无形资产在预计使用 寿命 内可能存在的各种经济因素作出合理估计，并且应当有明确证据支持。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[17]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 企业无形项目的支出，除下列情形外，均应于发生时计入当期损益 ：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[18]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 企业内部研究开发项目的支出，应当区分研究阶段支出与开发阶段支出 。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[21]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 企业内部研究开发项目研究阶段的支出，应当于发生时计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[24]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 企业内部研究开发项目开发阶段的支出 ，同时满足下列条件的 ， 才能 确认为无形资产：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[25]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 企业取得的已作为无形资产确认的正在进行中 的 研究开发项目 ，在 取得后发生的支出应当按照本准则 第七条至第九条的 规定处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[31]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 企业自创商誉以及内部产生的品牌、报刊名等，不应确认为无形资产。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[32]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 初始计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[34]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 无形资产应当 按照成本 进行初始 计量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[35]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 自行开发的无形资产，其成本包括自满足本准则第四条和第九条规定后至达到预定用途前所发生的支出总额，但是对于以前期间已经费用化的支出不再调整。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[38]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 投资者投入无形资产 的成本 ，应当按照投资合同或协议约定的价值 确定 ，但合同或协议约定价值不公允的除外。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[39]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 非货币性资产交换 、债务重组、政府补助和企业合并 取得的无形资产的成本，应当 分别 按照《企业会计准则第7号——非货币性资产交换》 、 《企业会计准则第12号——债务重组》 、 《企业会计准则第16号——政府补助》 和 《企业会计准则第20号——企业合并》确定。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[40]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 后续计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[42]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十六条 企业应当于取得无形资产时分析判断其使用寿命。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[43]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十七条 使用寿命有限的无形资产，其应摊销金额应当在使用寿命内系统合理摊销。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[45]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十八条 无形资产的应摊销金额为其 成本 扣除 预计 残值后的金额 。 已计提减值准备的 无形资产 ，还应扣除已 计 提的 无形资产 减值准备 累计 金额。使用寿命有限的无形资产，其残值应当视为零 ，但下列情况除外：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[49]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十九条 使用寿命不确定的无形资产不应摊销。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[52]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十条 无形资产的减值，应当按照《企业会计准则第8号——资产减值》处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[53]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十一条 企业至少 应当 于每年年度终了，对使用寿命有限的无形资产的使用寿命及 摊销方法 进行复核。无形资产的使用寿命及 摊销方法 与以前估计不同的，应当改变摊销期限和摊销方法。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[54]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 处置和报废",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[57]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十二条 企业出售无形资产，应当将取得的价款与该无形资产账面价值的差额计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[58]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十三条 无形资产预期不能为企业带来经济利益的，应当将该无形资产的账面价值予以转销。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[59]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 披露",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[61]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十四条 企业应当按照无形资产的类别在附注中披露与无形资产有关的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[62]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [2026-06-26-initial-structure, archived-cpa-competition-policy-pages]
 tags: [policy, audit-order, accounting-firm, p2-important]
 related: [[concepts/policy-documents]], [[concepts/policy-caihui-supervision]], [[concepts/policy-firm-license-supervision]], [[concepts/policy-integrity]], [[concepts/policy-firm-inspection]]
+domain: policies
+topic: supervision
 ---
 
 # 关于进一步规范财务审计秩序促进注册会计师行业健康发展的意见
@@ -16,7 +18,7 @@ related: [[concepts/policy-documents]], [[concepts/policy-caihui-supervision]], 
 - 文号：国办发〔2021〕30号
 - 定位：注册会计师行业秩序治理和健康发展主线文件。
 - 官方来源：[中国政府网：国务院办公厅关于进一步规范财务审计秩序促进注册会计师行业健康发展的意见](https://www.gov.cn/zhengce/content/2021-08/23/content_5632714.htm)（已核验，2026-06-29）。
-- 本地归档：`raw/policies/second-section/audit-order-2021-30/official.html`。
+- 本地归档：`raw/policies/second-section/audit-order-2021-30/official.html.md`。
 
 ## 政策定位
 

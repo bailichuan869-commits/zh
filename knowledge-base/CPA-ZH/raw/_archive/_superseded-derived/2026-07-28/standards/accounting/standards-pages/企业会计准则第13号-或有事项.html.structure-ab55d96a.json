@@ -1,0 +1,171 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:40:46+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第13号-或有事项.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第13号-或有事项.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 19,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第13号-或有事项",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范或有事项的确认、计量和相关信息的披露，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 或有事项，是指过去的交易或者事项形成的，其结果须由某些未来事项的发生或不发生才能决定的不确定事项。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 职工薪酬、建造合同、所得税、企业合并、租赁、原保险合同和再保险合同等形成的或有事项，适用其他相关会计准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[5]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 确认和计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[7]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 与或有事项相关的义务同时满足下列条件的，应当确认为预计负债：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[8]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 预计负债应当按照履行相关现时义务所需支出的最佳估计数进行初始计量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[12]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 企业在确定最佳估计数时，应当综合考虑与或有事项有关的风险、不确定性和货币时间价值等因素。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[17]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 企业清偿预计负债所需支出全部或部分预期由第三方补偿的，补偿金额只有在基本确定能够收到时才能作为资产单独确认。确认的补偿金额不应当超过预计负债的账面价值。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[19]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 待执行合同变成亏损合同的，该亏损合同产生的义务满足本准则第四条规定的，应当确认为预计负债。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[20]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 企业不应当就未来经营亏损确认预计负债。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[23]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 企业承担的重组义务满足本准则第四条规定的，应当确认预计负债。同时存在下列情况时，表明企业承担了重组义务：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[24]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 企业应当按照与重组有关的直接支出确定预计负债金额。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[27]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 企业应当在资产负债表日对预计负债的账面价值进行复核。有确凿证据表明该账面价值不能真实反映当前最佳估计数的，应当按照当前最佳估计数对该账面价值进行调整。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[29]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 企业不应当确认或有负债和或有资产。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[30]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 披露",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[34]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 企业应当在附注中披露与或有事项有关的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[35]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 在涉及未决诉讼、未决仲裁的情况下，按照本准则第十四条披露全部或部分信息预期对企业造成重大不利影响的，企业无须披露这些信息，但应当披露该未决诉讼、未决仲裁的性质，以及没有披露这些信息的事实和原因。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[45]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

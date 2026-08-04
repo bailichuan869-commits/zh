@@ -1,0 +1,37 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:47:07+00:00",
+  "source_file": "raw/ethics/third-section/ethics-code-release-2009/official.html",
+  "derived_file": "raw/ethics/third-section/ethics-code-release-2009/official.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "needs-review",
+  "extraction_engine": "beautifulsoup-lxml:body-fallback",
+  "source_pages": 1,
+  "heading_count": 2,
+  "table_count": 0,
+  "text_coverage": 0.9865,
+  "headings": [
+    {
+      "level": 1,
+      "text": "中注协发布《中国注册会计师职业道德守则》全面推进行业诚信建设",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "中注协发布《中国注册会计师职业道德守则》 全面推进行业诚信建设",
+      "page": null,
+      "source": "html-tag",
+      "locator": "body-fallback h2[2]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [
+    "html-content-container-fallback"
+  ],
+  "review_pages": []
+}

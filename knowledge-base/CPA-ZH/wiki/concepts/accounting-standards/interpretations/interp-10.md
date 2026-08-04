@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [enterprise-accounting-standards-interpretations-download-2026-06-26]
 tags: [accounting, standards, interpretation, p1-core]
 related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounting-standards-interpretations-download-2026-06-26]]
+domain: accounting-standards
+topic: interpretations
 ---
 
 # 企业会计准则解释第10号
@@ -15,13 +17,13 @@ related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounti
 
 - 解释编号：10
 - 标题：关于以使用固定资产产生的收入为基础的折旧方法》的通知
-- 本地文件：`raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第10号-关于以使用固定资产产生的收入为基础的折旧方法-的通知.html`
+- 本地文件：`raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第10号-关于以使用固定资产产生的收入为基础的折旧方法-的通知.html.md`
 - 官方链接：https://kjs.mof.gov.cn/zhengcefabu/201706/t20170621_2628435.htm
 
 ## 原文入口
 
 - 通知/原文页面：https://kjs.mof.gov.cn/zhengcefabu/201706/t20170621_2628435.htm
-- 本地 HTML：`raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第10号-关于以使用固定资产产生的收入为基础的折旧方法-的通知.html`
+- 本地 HTML：`raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第10号-关于以使用固定资产产生的收入为基础的折旧方法-的通知.html.md`
 
 ## 备注
 

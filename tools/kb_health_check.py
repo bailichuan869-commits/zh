@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Any
 
 import kb_manifest_audit
+from kb_common import parse_frontmatter
 
 
 @dataclass
@@ -30,7 +31,14 @@ class TextCacheStats:
     generated_at: str
 
 
-TEXT_CACHE_SKIP_NAMES = {"metadata.json", "source-url.txt", "manifest.json"}
+TEXT_CACHE_SKIP_NAMES = {"metadata.json", "source-url.txt", "manifest.json", "archive-index.jsonl"}
+
+# 与 kb_text_cache.py 保持一致：归档与位图类文件无可抽取文本，不进文本缓存。
+TEXT_CACHE_SKIP_SUFFIXES = {
+    ".zip", ".rar", ".7z", ".tar", ".gz", ".tgz", ".tar.gz",
+    ".bz2", ".xz", ".jar", ".iso",
+    ".png", ".jpg", ".jpeg", ".gif", ".bmp", ".tif", ".tiff", ".webp",
+}
 
 
 def rel(root: Path, path: Path) -> str:
@@ -51,13 +59,15 @@ def load_manifest(path: Path) -> list[dict[str, Any]]:
 
 def count_wiki_links(root: Path) -> tuple[int, list[tuple[str, str]]]:
     wiki_root = root / "wiki"
-    pages = {p.relative_to(wiki_root).with_suffix("").as_posix() for p in wiki_root.rglob("*.md")}
+    active_pages = [p for p in wiki_root.rglob("*.md") if "_trash" not in p.relative_to(wiki_root).parts]
+    pages = {p.relative_to(wiki_root).with_suffix("").as_posix() for p in active_pages}
     missing: list[tuple[str, str]] = []
-    for page in wiki_root.rglob("*.md"):
+    for page in active_pages:
         text = page.read_text(encoding="utf-8")
         for match in re.finditer(r"\[\[([^\]|#]+)", text):
             target = match.group(1)
-            if target not in pages:
+            raw_target_exists = target.startswith("raw/") and (root / target).is_file()
+            if target not in pages and not raw_target_exists:
                 missing.append((rel(root, page), target))
     return len(pages), missing
 
@@ -79,6 +89,10 @@ def search_stats(root: Path) -> SearchStats:
         if indexed_root.exists():
             for source in indexed_root.rglob("*"):
                 if source.is_file():
+                    if indexed_root == root / "raw":
+                        source_rel = source.relative_to(indexed_root)
+                        if "_archive" in source_rel.parts or source.name.endswith(".structure.json"):
+                            continue
                     newest_source_mtime = max(newest_source_mtime, source.stat().st_mtime)
 
     return SearchStats(
@@ -107,7 +121,12 @@ def text_cache_stats(root: Path) -> TextCacheStats:
 
     cacheable_raw_files = []
     for raw_file in (root / "raw").rglob("*"):
-        if raw_file.is_file() and raw_file.name not in TEXT_CACHE_SKIP_NAMES:
+        if (
+            raw_file.is_file()
+            and raw_file.name not in TEXT_CACHE_SKIP_NAMES
+            and not raw_file.name.endswith(".structure.json")
+            and raw_file.suffix.lower() not in TEXT_CACHE_SKIP_SUFFIXES
+        ):
             cacheable_raw_files.append(raw_file)
 
     stale = False
@@ -148,14 +167,35 @@ def case_link_issues(root: Path) -> list[str]:
     index_text = (root / "wiki" / "index.md").read_text(encoding="utf-8")
     case_analysis_path = root / "wiki" / "concepts" / "case-analysis.md"
     case_analysis_text = case_analysis_path.read_text(encoding="utf-8") if case_analysis_path.exists() else ""
+    case_topic_index_path = root / "wiki" / "concepts" / "case-topic-index.md"
+    case_topic_index_text = case_topic_index_path.read_text(encoding="utf-8") if case_topic_index_path.exists() else ""
+    golden_index_path = cases_root / "golden-cases-index.md"
+    golden_index_text = golden_index_path.read_text(encoding="utf-8") if golden_index_path.exists() else ""
+    entrypoint_targets = {
+        match.group(1)
+        for text in [index_text, case_analysis_text, case_topic_index_text, golden_index_text]
+        for match in re.finditer(r"\[\[([^\]|#]+)", text)
+    }
 
-    for case_page in sorted(cases_root.rglob("*.md")):
-        link = f"[[{case_page.relative_to(root / 'wiki').with_suffix('').as_posix()}]]"
-        if link not in index_text:
-            issues.append(f"{rel(root, case_page)} not linked from wiki/index.md")
-        if link not in case_analysis_text:
-            issues.append(f"{rel(root, case_page)} not linked from concepts/case-analysis.md")
+    for case_page in case_card_paths(root):
+        target = case_page.relative_to(root / "wiki").with_suffix("").as_posix()
+        if target not in entrypoint_targets:
+            issues.append(
+                f"{rel(root, case_page)} not linked from wiki/index.md, concepts/case-analysis.md, or concepts/case-topic-index.md"
+            )
     return issues
+
+
+def case_card_paths(root: Path) -> list[Path]:
+    cases_root = root / "wiki" / "cases"
+    if not cases_root.exists():
+        return []
+    cards: list[Path] = []
+    for path in sorted(cases_root.rglob("*.md")):
+        metadata, _body = parse_frontmatter(path.read_text(encoding="utf-8"))
+        if metadata.get("page_role") == "case":
+            cards.append(path)
+    return cards
 
 
 def readme_stat_warnings(root: Path, stats: dict[str, int], search: SearchStats) -> list[str]:
@@ -210,7 +250,7 @@ def main() -> int:
         "raw_files": sum(1 for p in raw_root.rglob("*") if p.is_file()),
         "manifest_count": len(manifests),
         "manifest_items": manifest_items,
-        "case_cards": sum(1 for p in (wiki_root / "cases").rglob("*.md")) if (wiki_root / "cases").exists() else 0,
+        "case_cards": len(case_card_paths(root)),
     }
     readme_warnings = readme_stat_warnings(root, stats, search)
 

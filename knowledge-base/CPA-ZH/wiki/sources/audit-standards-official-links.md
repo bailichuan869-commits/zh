@@ -7,6 +7,8 @@ updated: 2026-06-26
 raw_path: raw/standards/audit/official-links-2026-06-26.md
 tags: [audit, standards, official-links, p1-core]
 related: [[concepts/audit-standards-system]]
+domain: sources
+topic: batches
 ---
 
 # 中国注册会计师执业准则及应用指南官方链接

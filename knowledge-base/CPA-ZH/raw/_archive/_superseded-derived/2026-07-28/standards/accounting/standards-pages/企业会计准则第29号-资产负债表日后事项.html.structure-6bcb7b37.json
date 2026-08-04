@@ -1,0 +1,139 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:43:26+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第29号-资产负债表日后事项.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第29号-资产负债表日后事项.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 15,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第29号-资产负债表日后事项",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范资产负债表日后事项的确认、计量和相关信息的披露， 根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 资产负债表日后事项，是指资产负债表日至财务报 告 批准报出日之间发生的有利或不利事项。财务报告批准报出日，是指董事会或类似机构批准财务报 告 报出的日期。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 资产负债表日后事项表明持续经营假设不再适用的，企业不应当在持续经营基础上编制财务报表。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[8]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 资产负债表日后调整事项",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[10]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 企业发生的资产负债表日后调整事项，应当调整资产负债表日的财务报表。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[11]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 企业发生的资产负债表日后调整事项，通常包括下列 各 项：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[12]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 资产负债表日后非调整事项",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[18]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 企业发生的资产负债表日后非调整事项，不应当调整资产负债表日的财务报表。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[19]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 企业发生的资产负债表日后非调整事项，通常包括下列 各 项：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[20]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 资产负债表日后，企业利润分配方案中拟分配的以及经审议批准宣告发放的股利或利润，不确认为资产负债表日 的 负债，但应当在附注中单独披露。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[28]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 披露",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[30]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 企业应当在附注中披露与资产负债表日后事项有关的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[31]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 企业在资产负债表日后取得了影响资产负债表日存在情况的新 的或进一步的 证据，应当调整与之相关的披露信息。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[35]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

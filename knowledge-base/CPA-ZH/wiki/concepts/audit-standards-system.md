@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [2026-06-26-initial-structure, audit-standards-official-links, cicpa-professional-standards-download-2026-06-26]
 tags: [audit, standards, p1-core, draft]
 related: [[concepts/regulations-and-standards]], [[concepts/law-cpa]], [[concepts/audit-process]]
+domain: audit-standards
+topic: overview
 ---
 
 # 中国注册会计师执业准则及应用指南
@@ -28,8 +30,8 @@ related: [[concepts/regulations-and-standards]], [[concepts/law-cpa]], [[concept
 ## 编号级索引
 
 - [[sources/cicpa-professional-standards-number-index-2026-06-26]] - 中国注册会计师执业准则编号级索引。
-- 编号汇总：`raw/indexes/cicpa-professional-standards-number-index.csv`
-- 映射明细：`raw/indexes/cicpa-professional-standards-number-mapping.csv`
+- 编号汇总：`raw/indexes/cicpa-professional-standards-number-index.csv.md`
+- 映射明细：`raw/indexes/cicpa-professional-standards-number-mapping.csv.md`
 - 分准则页面目录：`wiki/concepts/audit-standards/`
 - 已生成 40 个准则编号页和 1 个未映射资料页，100 条资料记录全部映射到具体准则编号。
 
@@ -43,6 +45,11 @@ related: [[concepts/regulations-and-standards]], [[concepts/law-cpa]], [[concept
 - [[concepts/audit-standards/csa-1504]] - 关键审计事项。
 - [[concepts/audit-standards/topics]] - 审计准则实务主题导航。
 - [[concepts/audit-standards/unmapped]] - 暂未稳定映射到具体准则编号的资料。
+
+<!-- 补充接入：审计准则（CSA）（原孤立页，2026-07-23 接入） -->
+- [[concepts/audit-standards/csa-1152]] - 中国注册会计师审计准则第1152号——向治理层和管理层通报内部控制缺陷。
+- [[concepts/audit-standards/csa-1241]] - 中国注册会计师审计准则第1241号——对被审计单位使用服务机构的考虑。
+- [[concepts/audit-standards/csa-1331]] - 中国注册会计师审计准则第1331号——首次审计业务涉及的期初余额。
 
 ## 待补充
 
@@ -62,6 +69,6 @@ related: [[concepts/regulations-and-standards]], [[concepts/law-cpa]], [[concept
 - 已下载 4 个已核验通知页。
 - 已下载 62 个直接 PDF 附件。
 - 已下载并解压 1 个 ZIP 附件，包含 23 项审计准则 PDF。
-- PDF 下载清单：`raw/standards/audit/downloaded-cicpa-professional-standards-pdfs.csv`
-- 专题条目清单：`raw/standards/audit/cicpa-professional-standards-topic-items.csv`
+- PDF 下载清单：`raw/standards/audit/downloaded-cicpa-professional-standards-pdfs.csv.md`
+- 专题条目清单：`raw/standards/audit/cicpa-professional-standards-topic-items.csv.md`
 - 已生成审计准则实务主题导航：`wiki/concepts/audit-standards/topics.md`

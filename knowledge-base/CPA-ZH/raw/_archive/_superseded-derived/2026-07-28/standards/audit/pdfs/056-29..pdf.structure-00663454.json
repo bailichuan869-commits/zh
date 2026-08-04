@@ -1,0 +1,304 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:48:24+00:00",
+  "source_file": "raw/_archive/standards/audit/pdfs/056-29..pdf",
+  "derived_file": "raw/standards/audit/pdfs/056-29..pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "needs-review",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 58,
+  "heading_count": 16,
+  "table_count": 14,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "29.",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "《中国注册会计师审计准则第1631 号",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[2]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "——财务报表审计中对环境",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "事项的考虑》应用指南",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 实施风险评估程序时对环境事项的考虑",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 了解环境保护要求和问题",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 了解内部控制",
+      "page": 14,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[14]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 考虑与环境事项相关的法律法规",
+      "page": 20,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[20]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 评估重大错报风险",
+      "page": 23,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[23]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 针对评估的重大错报风险实施审计程序时对",
+      "page": 25,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[25]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "环境事项的考虑",
+      "page": 25,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[25]/block[19]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "第四章 出具审计报告时对环境事项的考虑",
+      "page": 41,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[41]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "中国证监会关于上市公司环境事项的信息披露规定",
+      "page": 45,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[45]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "重污染行业主要环境风险示例",
+      "page": 48,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[48]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "与环境事项相关的内部控制调查表",
+      "page": 53,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[53]/block[3]/line[1]",
+      "confidence": 0.85
+    }
+  ],
+  "tables": [
+    {
+      "index": 1,
+      "page": 45,
+      "rows": 2,
+      "columns": 2,
+      "representation": "html",
+      "locator": "pdf/page[45]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 2,
+      "page": 46,
+      "rows": 3,
+      "columns": 2,
+      "representation": "html",
+      "locator": "pdf/page[46]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 3,
+      "page": 47,
+      "rows": 1,
+      "columns": 2,
+      "representation": "html",
+      "locator": "pdf/page[47]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 4,
+      "page": 48,
+      "rows": 4,
+      "columns": 3,
+      "representation": "html",
+      "locator": "pdf/page[48]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 5,
+      "page": 49,
+      "rows": 5,
+      "columns": 3,
+      "representation": "html",
+      "locator": "pdf/page[49]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 6,
+      "page": 50,
+      "rows": 6,
+      "columns": 3,
+      "representation": "html",
+      "locator": "pdf/page[50]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 7,
+      "page": 51,
+      "rows": 4,
+      "columns": 3,
+      "representation": "html",
+      "locator": "pdf/page[51]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 8,
+      "page": 52,
+      "rows": 3,
+      "columns": 3,
+      "representation": "html",
+      "locator": "pdf/page[52]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 9,
+      "page": 53,
+      "rows": 10,
+      "columns": 5,
+      "representation": "html",
+      "locator": "pdf/page[53]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 10,
+      "page": 54,
+      "rows": 10,
+      "columns": 5,
+      "representation": "html",
+      "locator": "pdf/page[54]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 11,
+      "page": 55,
+      "rows": 12,
+      "columns": 5,
+      "representation": "html",
+      "locator": "pdf/page[55]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 12,
+      "page": 56,
+      "rows": 11,
+      "columns": 5,
+      "representation": "html",
+      "locator": "pdf/page[56]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 13,
+      "page": 57,
+      "rows": 13,
+      "columns": 5,
+      "representation": "html",
+      "locator": "pdf/page[57]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 14,
+      "page": 58,
+      "rows": 12,
+      "columns": 5,
+      "representation": "html",
+      "locator": "pdf/page[58]/table[1]",
+      "needs_review": true
+    }
+  ],
+  "warnings": [
+    "complex-pdf-table:page-45-table-1",
+    "complex-pdf-table:page-46-table-1",
+    "complex-pdf-table:page-47-table-1",
+    "complex-pdf-table:page-48-table-1",
+    "complex-pdf-table:page-49-table-1",
+    "complex-pdf-table:page-50-table-1",
+    "complex-pdf-table:page-51-table-1",
+    "complex-pdf-table:page-52-table-1",
+    "complex-pdf-table:page-53-table-1",
+    "complex-pdf-table:page-54-table-1",
+    "complex-pdf-table:page-55-table-1",
+    "complex-pdf-table:page-56-table-1",
+    "complex-pdf-table:page-57-table-1",
+    "complex-pdf-table:page-58-table-1"
+  ],
+  "review_pages": [
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58
+  ]
+}

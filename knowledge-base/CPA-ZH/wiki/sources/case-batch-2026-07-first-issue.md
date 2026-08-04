@@ -7,11 +7,13 @@ updated: 2026-06-29
 raw_path: raw/cases/2026-07-first-issue/
 tags: [case, audit-practice, accounting-judgment, local-source]
 related: [[concepts/case-analysis]], [[concepts/practice-skills-cases]], [[concepts/first-section-topics/revenue-recognition-misstatement]], [[concepts/first-section-topics/government-grants-special-funds]], [[concepts/first-section-topics/long-term-equity-investments]]
+domain: sources
+topic: batches
 ---
 
 # 2026年7月第一期实务案例导入批次
 
-本批次来自本地目录 `C:\Users\zhaozhonghua\桌面\7月第一期案例`，已复制到 CPA-ZH 原始资料层：
+本批次来自本地培训资料（摄入前路径已脱敏），已复制到 CPA-ZH 原始资料层：
 
 `raw/cases/2026-07-first-issue/`
 
@@ -21,11 +23,11 @@ related: [[concepts/case-analysis]], [[concepts/practice-skills-cases]], [[conce
 
 | 案例主题 | 原始文件 | 知识库归档路径 | 初步挂接专题 |
 |---|---|---|---|
-| 暂估转固税会差异问题 | `11部研讨会议题【暂估转固税会差异问题】（7月-第1期）.docx` | `raw/cases/2026-07-first-issue/11部研讨会议题【暂估转固税会差异问题】（7月-第1期）.docx` | 固定资产、所得税、税会差异 |
-| 政府补助确认 | `29部研讨会议题【政府补助确认】（7月-第一期）.docx` | `raw/cases/2026-07-first-issue/29部研讨会议题【政府补助确认】（7月-第一期）.docx` | [[concepts/first-section-topics/government-grants-special-funds]]；已加工为 [[cases/2026-07-first-issue-government-grant-free-use-equipment]] |
-| 收入确认 | `2部研讨会议题【收入确认】（7月-第一期）.docx` | `raw/cases/2026-07-first-issue/2部研讨会议题【收入确认】（7月-第一期）.docx` | [[concepts/first-section-topics/revenue-recognition-misstatement]]；已加工为 [[cases/2026-07-first-issue-equipment-sales-revenue-recognition]] |
-| 长期股权投资的确认 | `32部研讨会议题【长期股权投资的确认】（7月-第一期）.docx` | `raw/cases/2026-07-first-issue/32部研讨会议题【长期股权投资的确认】（7月-第一期）.docx` | [[concepts/first-section-topics/long-term-equity-investments]]；已加工为 [[cases/2026-07-first-issue-long-term-equity-investment-confirmation]] |
-| 收入确认 | `天津分所审计6部研讨会议题【收入确认】（7月-第一期）.docx` | `raw/cases/2026-07-first-issue/天津分所审计6部研讨会议题【收入确认】（7月-第一期）.docx` | [[concepts/first-section-topics/revenue-recognition-misstatement]]；已加工为 [[cases/2026-07-first-issue-overseas-sales-revenue-recognition]] |
+| 暂估转固税会差异问题 | `11部研讨会议题【暂估转固税会差异问题】（7月-第1期）.docx` | `raw/cases/2026-07-first-issue/11部研讨会议题【暂估转固税会差异问题】（7月-第1期）.docx.md` | 固定资产、所得税、税会差异 |
+| 政府补助确认 | `29部研讨会议题【政府补助确认】（7月-第一期）.docx` | `raw/cases/2026-07-first-issue/29部研讨会议题【政府补助确认】（7月-第一期）.docx.md` | [[concepts/first-section-topics/government-grants-special-funds]]；已加工为 [[cases/2026-07-first-issue-government-grant-free-use-equipment]] |
+| 收入确认 | `2部研讨会议题【收入确认】（7月-第一期）.docx` | `raw/cases/2026-07-first-issue/2部研讨会议题【收入确认】（7月-第一期）.docx.md` | [[concepts/first-section-topics/revenue-recognition-misstatement]]；已加工为 [[cases/2026-07-first-issue-equipment-sales-revenue-recognition]] |
+| 长期股权投资的确认 | `32部研讨会议题【长期股权投资的确认】（7月-第一期）.docx` | `raw/cases/2026-07-first-issue/32部研讨会议题【长期股权投资的确认】（7月-第一期）.docx.md` | [[concepts/first-section-topics/long-term-equity-investments]]；已加工为 [[cases/2026-07-first-issue-long-term-equity-investment-confirmation]] |
+| 收入确认 | `天津分所审计6部研讨会议题【收入确认】（7月-第一期）.docx` | `raw/cases/2026-07-first-issue/天津分所审计6部研讨会议题【收入确认】（7月-第一期）.docx.md` | [[concepts/first-section-topics/revenue-recognition-misstatement]]；已加工为 [[cases/2026-07-first-issue-overseas-sales-revenue-recognition]] |
 
 ## 后续加工口径
 

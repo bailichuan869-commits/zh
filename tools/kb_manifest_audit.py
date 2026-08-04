@@ -29,8 +29,14 @@ def resolve_local_file(root: Path, local_file: str) -> Path:
     if path.is_absolute():
         return path
 
+    normalized = local_file.replace("\\", "/")
+    kb_prefix = "knowledge-base/CPA-ZH/"
+    if normalized.startswith(kb_prefix):
+        normalized = normalized[len(kb_prefix):]
+
     candidates = [
         root / path,
+        root / normalized,
         Path.cwd() / path,
         root.parent / path,
         root.parents[1] / path if len(root.parents) > 1 else root / path,
@@ -99,10 +105,24 @@ def audit_manifest(root: Path, manifest_path: Path) -> list[str]:
             else:
                 metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
                 metadata_file = str(metadata.get("local_file", "")).strip()
-                if metadata_file and metadata_file != local_file:
+            if metadata_file and metadata_file != local_file:
+                issues.append(
+                    f"{rel(root, manifest_path)} {slug}: metadata local_file differs "
+                    f"metadata={metadata_file} manifest={local_file}"
+                )
+
+            derived_markdown = str(item.get("derived_markdown") or metadata.get("derived_markdown") or "").strip()
+            if derived_markdown:
+                derived_path = resolve_local_file(root, derived_markdown)
+                if not derived_path.exists():
                     issues.append(
-                        f"{rel(root, manifest_path)} {slug}: metadata local_file differs "
-                        f"metadata={metadata_file} manifest={local_file}"
+                        f"{rel(root, manifest_path)} {slug}: derived_markdown does not exist: {derived_markdown}"
+                    )
+                metadata_derived = str(metadata.get("derived_markdown", "")).strip()
+                if metadata_derived and metadata_derived != derived_markdown:
+                    issues.append(
+                        f"{rel(root, manifest_path)} {slug}: metadata derived_markdown differs "
+                        f"metadata={metadata_derived} manifest={derived_markdown}"
                     )
 
             source_url_path = manifest_dir / slug / "source-url.txt"

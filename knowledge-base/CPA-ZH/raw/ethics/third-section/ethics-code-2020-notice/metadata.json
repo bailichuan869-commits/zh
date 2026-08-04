@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "text/html",
   "bytes": 14932,
-  "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-2020-notice/official.html"
+  "local_file": "raw/ethics/third-section/ethics-code-2020-notice/official.html",
+  "derived_markdown": "raw/ethics/third-section/ethics-code-2020-notice/official.html.md",
+  "derived_sha256": "82b83444c59375983f72bbd39bd06d2e778dbab72b6718fdd520d07416481167",
+  "text_extraction_status": "ok",
+  "sha256": "402e65576e769c34c85c05b37825c6a25a1544b12ae990d42a249d3baac74c3c",
+  "archive_policy": "dual-track"
 }

@@ -1,0 +1,43 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:43:01+00:00",
+  "source_file": "raw/policies/issuance-guidance/issuance-class-09-rd-staff-investment/official.pdf",
+  "derived_file": "raw/policies/issuance-guidance/issuance-class-09-rd-staff-investment/official.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 8,
+  "heading_count": 3,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "监管规则适用指引——发行类第9号：研发人员及研发投入",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "监管规则适用指引——发行类第9 号：研发人员及研",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[1]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "发投入",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[2]/line[1]",
+      "confidence": 0.85
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

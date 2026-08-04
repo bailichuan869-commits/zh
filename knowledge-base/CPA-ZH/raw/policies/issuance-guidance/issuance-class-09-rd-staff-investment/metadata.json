@@ -10,8 +10,8 @@
   "archived_on": "2026-07-09",
   "content_type": "application/pdf",
   "bytes": 147042,
-  "sha256": "4C14CB05C4805D4EBBD20B3D8237F32747EC675450D62778473CEDFC2CC1E419",
-  "local_file": "knowledge-base/CPA-ZH/raw/policies/issuance-guidance/issuance-class-09-rd-staff-investment/official.pdf",
+  "sha256": "4c14cb05c4805d4ebbd20b3d8237f32747ec675450d62778473cedfc2cc1e419",
+  "local_file": "raw/policies/issuance-guidance/issuance-class-09-rd-staff-investment/official.pdf",
   "official_page_status": "verified",
   "text_extraction_status": "extracted_by_pypdf",
   "ocr_status": "not_required",
@@ -19,5 +19,8 @@
     "安装 pypdf 6.14.2 后，本地 PDF 已可抽取文本；文本缓存记录正文长度约 3742 字符。",
     "证监会官网原文页已核验，可作为官方链接来源。",
     "未将同目录的集团口径研发人员调整清单 Excel 纳入 CPA-ZH；该文件属于项目明细资料，不是监管规则原文。"
-  ]
+  ],
+  "derived_markdown": "raw/policies/issuance-guidance/issuance-class-09-rd-staff-investment/official.pdf.md",
+  "derived_sha256": "889eaf571012ac0ea8a2d30cd3ec3f7aeaa423734abac46e41793333c255d04a",
+  "archive_policy": "dual-track"
 }

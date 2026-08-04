@@ -1,0 +1,54 @@
+---
+title: "cicpa-professional-standards-number-index"
+type: "raw-source"
+source_type: "table"
+source_role: "source-registry"
+original_file: "raw/indexes/cicpa-professional-standards-number-index.csv"
+created: "2026-06-26"
+converted_at: "2026-07-24"
+---
+
+# cicpa-professional-standards-number-index
+
+| ﻿StandardKey | StandardFamily | StandardTitle | WikiPage | StandardCount | GuidelineCount | TopicEntryCount | TotalMappedRecords |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| assurance-basic | 鉴证业务基本准则 | 中国注册会计师鉴证业务基本准则 | concepts/audit-standards/assurance-basic | 1 | 1 | 1 | 3 |
+| coa-3111 | 其他鉴证业务准则 | 中国注册会计师其他鉴证业务准则第3111号——预测性财务信息的审核 | concepts/audit-standards/coa-3111 | 0 | 1 | 0 | 1 |
+| crs-2101 | 审阅准则 | 中国注册会计师审阅准则第2101号——财务报表审阅 | concepts/audit-standards/crs-2101 | 0 | 1 | 0 | 1 |
+| crs-svc-4101 | 相关服务准则 | 中国注册会计师相关服务准则第4101号——对财务信息执行商定程序 | concepts/audit-standards/crs-svc-4101 | 0 | 1 | 0 | 1 |
+| crs-svc-4111 | 相关服务准则 | 中国注册会计师相关服务准则第4111号——代编财务信息 | concepts/audit-standards/crs-svc-4111 | 0 | 1 | 0 | 1 |
+| csa-1101 | 审计准则 | 中国注册会计师审计准则第1101号——注册会计师的总体目标和审计工作的基本要求 | concepts/audit-standards/csa-1101 | 2 | 2 | 4 | 8 |
+| csa-1111 | 审计准则 | 中国注册会计师审计准则第1111号——就审计业务约定条款达成一致意见 | concepts/audit-standards/csa-1111 | 1 | 2 | 1 | 4 |
+| csa-1121 | 审计准则 | 中国注册会计师审计准则第1121号——对财务报表审计实施的质量管理 | concepts/audit-standards/csa-1121 | 0 | 1 | 1 | 2 |
+| csa-1131 | 审计准则 | 中国注册会计师审计准则第1131号——审计工作底稿 | concepts/audit-standards/csa-1131 | 2 | 2 | 0 | 4 |
+| csa-1141 | 审计准则 | 中国注册会计师审计准则第1141号——财务报表审计中与舞弊相关的责任 | concepts/audit-standards/csa-1141 | 1 | 1 | 1 | 3 |
+| csa-1142 | 审计准则 | 中国注册会计师审计准则第1142号——财务报表审计中对法律法规的考虑 | concepts/audit-standards/csa-1142 | 1 | 2 | 0 | 3 |
+| csa-1151 | 审计准则 | 中国注册会计师审计准则第1151号——与治理层的沟通 | concepts/audit-standards/csa-1151 | 2 | 2 | 0 | 4 |
+| csa-1152 | 审计准则 | 中国注册会计师审计准则第1152号——向治理层和管理层通报内部控制缺陷 | concepts/audit-standards/csa-1152 | 1 | 1 | 0 | 2 |
+| csa-1201 | 审计准则 | 中国注册会计师审计准则第1201号——计划审计工作 | concepts/audit-standards/csa-1201 | 2 | 2 | 0 | 4 |
+| csa-1211 | 审计准则 | 中国注册会计师审计准则第1211号——通过了解被审计单位及其环境识别和评估重大错报风险 | concepts/audit-standards/csa-1211 | 1 | 1 | 2 | 4 |
+| csa-1231 | 审计准则 | 中国注册会计师审计准则第1231号——针对评估的重大错报风险采取的应对措施 | concepts/audit-standards/csa-1231 | 1 | 1 | 0 | 2 |
+| csa-1241 | 审计准则 | 中国注册会计师审计准则第1241号——对被审计单位使用服务机构的考虑 | concepts/audit-standards/csa-1241 | 1 | 1 | 0 | 2 |
+| csa-1251 | 审计准则 | 中国注册会计师审计准则第1251号——评价审计过程中识别出的错报 | concepts/audit-standards/csa-1251 | 1 | 1 | 0 | 2 |
+| csa-1301 | 审计准则 | 中国注册会计师审计准则第1301号——审计证据 | concepts/audit-standards/csa-1301 | 1 | 2 | 0 | 3 |
+| csa-1311 | 审计准则 | 中国注册会计师审计准则第1311号——对存货、诉讼和索赔、分部信息等特定项目获取审计证据的具体考虑 | concepts/audit-standards/csa-1311 | 0 | 1 | 0 | 1 |
+| csa-1312 | 审计准则 | 中国注册会计师审计准则第1312号——函证 | concepts/audit-standards/csa-1312 | 0 | 1 | 0 | 1 |
+| csa-1313 | 审计准则 | 中国注册会计师审计准则第1313号——分析程序 | concepts/audit-standards/csa-1313 | 1 | 1 | 0 | 2 |
+| csa-1314 | 审计准则 | 中国注册会计师审计准则第1314号——审计抽样 | concepts/audit-standards/csa-1314 | 0 | 1 | 0 | 1 |
+| csa-1321 | 审计准则 | 中国注册会计师审计准则第1321号——审计会计估计 | concepts/audit-standards/csa-1321 | 1 | 1 | 0 | 2 |
+| csa-1323 | 审计准则 | 中国注册会计师审计准则第1323号——关联方 | concepts/audit-standards/csa-1323 | 1 | 1 | 0 | 2 |
+| csa-1324 | 审计准则 | 中国注册会计师审计准则第1324号——持续经营 | concepts/audit-standards/csa-1324 | 1 | 1 | 0 | 2 |
+| csa-1331 | 审计准则 | 中国注册会计师审计准则第1331号——首次审计业务涉及的期初余额 | concepts/audit-standards/csa-1331 | 1 | 0 | 0 | 1 |
+| csa-1341 | 审计准则 | 中国注册会计师审计准则第1341号——书面声明 | concepts/audit-standards/csa-1341 | 1 | 1 | 0 | 2 |
+| csa-1401 | 审计准则 | 中国注册会计师审计准则第1401号——对集团财务报表审计的特殊考虑 | concepts/audit-standards/csa-1401 | 2 | 1 | 1 | 4 |
+| csa-1411 | 审计准则 | 中国注册会计师审计准则第1411号——利用内部审计人员的工作 | concepts/audit-standards/csa-1411 | 2 | 2 | 0 | 4 |
+| csa-1421 | 审计准则 | 中国注册会计师审计准则第1421号——利用专家的工作 | concepts/audit-standards/csa-1421 | 1 | 2 | 0 | 3 |
+| csa-1501 | 审计准则 | 中国注册会计师审计准则第1501号——对财务报表形成审计意见和出具审计报告 | concepts/audit-standards/csa-1501 | 2 | 2 | 0 | 4 |
+| csa-1503 | 审计准则 | 中国注册会计师审计准则第1503号——在审计报告中增加强调事项段和其他事项段 | concepts/audit-standards/csa-1503 | 1 | 0 | 0 | 1 |
+| csa-1504 | 审计准则 | 中国注册会计师审计准则第1504号——在审计报告中沟通关键审计事项 | concepts/audit-standards/csa-1504 | 1 | 2 | 2 | 5 |
+| csa-1521 | 审计准则 | 中国注册会计师审计准则第1521号——注册会计师对其他信息的责任 | concepts/audit-standards/csa-1521 | 0 | 2 | 0 | 2 |
+| csa-1601 | 审计准则 | 中国注册会计师审计准则第1601号——审计特殊目的财务报表的特殊考虑 | concepts/audit-standards/csa-1601 | 1 | 0 | 2 | 3 |
+| csa-1602 | 审计准则 | 中国注册会计师审计准则第1602号——验资 | concepts/audit-standards/csa-1602 | 0 | 1 | 0 | 1 |
+| csa-1611 | 审计准则 | 中国注册会计师审计准则第1611号——商业银行财务报表审计 | concepts/audit-standards/csa-1611 | 0 | 1 | 0 | 1 |
+| csa-1631 | 审计准则 | 中国注册会计师审计准则第1631号——财务报表审计中对环境事项的考虑 | concepts/audit-standards/csa-1631 | 1 | 1 | 0 | 2 |
+| csa-1633 | 审计准则 | 中国注册会计师审计准则第1633号——电子商务对财务报表审计的影响 | concepts/audit-standards/csa-1633 | 1 | 1 | 0 | 2 |

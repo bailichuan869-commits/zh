@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [2026-06-26-initial-structure]
 tags: [competency, practice, p2-important, draft]
 related: [[concepts/practice-skills-cases]], [[concepts/case-analysis]]
+domain: practice
+topic: audit-practice
 ---
 
 # 综合执业能力

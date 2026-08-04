@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "text/html",
   "bytes": 8858,
-  "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/cpa-system-restoration-45th/official.html"
+  "local_file": "raw/ethics/third-section/cpa-system-restoration-45th/official.html",
+  "derived_markdown": "raw/ethics/third-section/cpa-system-restoration-45th/official.html.md",
+  "derived_sha256": "7e22862deeeee0bba381f5b36460385bf21bf751a5cb3aac755510ce8f2d253a",
+  "text_extraction_status": "ok",
+  "sha256": "b77deebfed74fe93a5f2f9f07715248d38105fc5a4b3c4113af0d74a7a2044f6",
+  "archive_policy": "dual-track"
 }

@@ -7,6 +7,8 @@ updated: 2026-06-29
 sources: [policy-documents-official-links-2026-06-29, policy-documents-raw-archive-2026-06-29]
 tags: [policy, checklist, accounting-firm, audit-quality, p2-important]
 related: [[concepts/policy-documents]], [[concepts/policy-implementation-map]], [[concepts/policy-version-validity-tracker]], [[concepts/first-section-responsibility-risk-map]]
+domain: policies
+topic: trackers
 ---
 
 # 第二板块政策执行检查清单

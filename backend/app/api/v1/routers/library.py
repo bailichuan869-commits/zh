@@ -9,7 +9,8 @@ from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
 
 from app.core.config import CATEGORIES_PATH, DB_PATH
 from app.core.files import read_text, safe_resolve
-from app.schemas.library import BacklinksResponse, DocumentResponse, HealthResponse, SearchResponse, SummaryResponse
+from app.schemas.library import AnswerRequest, AnswerResponse, BacklinksResponse, DocumentResponse, HealthResponse, SearchResponse, SummaryResponse
+from app.services.answers import answer_service
 from app.services.library import library_service, normalize_link, parse_frontmatter
 
 router = APIRouter(tags=["knowledge-base"])
@@ -51,6 +52,11 @@ def tree() -> JSONResponse:
 @router.get("/search", response_model=SearchResponse)
 def search(q: str = Query(..., min_length=1), domain: str = "", kind: str = "", limit: int = Query(30, le=100), offset: int = Query(0, ge=0)) -> dict:
     return library_service.search(q, domain, kind, limit, offset)
+
+
+@router.post("/answers", response_model=AnswerResponse)
+def answer(payload: AnswerRequest) -> dict:
+    return answer_service.answer(payload.question, payload.topic)
 
 
 @router.get("/documents", response_model=DocumentResponse)

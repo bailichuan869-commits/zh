@@ -1,0 +1,138 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:44:03+00:00",
+  "source_file": "raw/_archive/standards/audit/pdfs/060-中国注册会计师相关服务准则第4101号-对财务信息执行商定程序-应用指南.pdf",
+  "derived_file": "raw/standards/audit/pdfs/060-中国注册会计师相关服务准则第4101号-对财务信息执行商定程序-应用指南.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "needs-review",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 26,
+  "heading_count": 9,
+  "table_count": 4,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "中国注册会计师相关服务准则第4101号-对财务信息执行商定程序-应用指南",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "《中国注册会计师相关服务准则第4101 号",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[2]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "——对财务信息执行商定程序》应用指南",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 业务约定书",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[31]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 计划、程序与记录",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 报 告",
+      "page": 10,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[10]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "对财务信息执行商定程序业务约定书参考格式",
+      "page": 15,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[15]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "对财务信息执行商定程序的报告参考格式",
+      "page": 20,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[20]/block[3]/line[1]",
+      "confidence": 0.85
+    }
+  ],
+  "tables": [
+    {
+      "index": 1,
+      "page": 4,
+      "rows": 4,
+      "columns": 5,
+      "representation": "html",
+      "locator": "pdf/page[4]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 2,
+      "page": 11,
+      "rows": 2,
+      "columns": 3,
+      "representation": "html",
+      "locator": "pdf/page[11]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 3,
+      "page": 12,
+      "rows": 2,
+      "columns": 3,
+      "representation": "html",
+      "locator": "pdf/page[12]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 4,
+      "page": 24,
+      "rows": 8,
+      "columns": 4,
+      "representation": "html",
+      "locator": "pdf/page[24]/table[1]",
+      "needs_review": true
+    }
+  ],
+  "warnings": [
+    "complex-pdf-table:page-11-table-1",
+    "complex-pdf-table:page-12-table-1",
+    "complex-pdf-table:page-24-table-1",
+    "complex-pdf-table:page-4-table-1"
+  ],
+  "review_pages": [
+    4,
+    11,
+    12,
+    24
+  ]
+}

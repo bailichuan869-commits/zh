@@ -1,15 +1,14 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '@/views/HomeView.vue'
-import SearchView from '@/views/SearchView.vue'
-import DocumentView from '@/views/DocumentView.vue'
-import RawFileView from '@/views/RawFileView.vue'
 
 export default createRouter({
   history: createWebHashHistory(),
   routes: [
-    { path: '/', component: HomeView },
-    { path: '/search', component: SearchView },
-    { path: '/document', component: DocumentView },
-    { path: '/raw', component: RawFileView },
+    { path: '/', component: () => import('@/views/HomeView.vue') },
+    { path: '/search', component: () => import('@/views/SearchView.vue') },
+    { path: '/document', component: () => import('@/views/DocumentView.vue') },
+    { path: '/raw', component: () => import('@/views/RawFileView.vue') },
+    { path: '/answers', component: () => import('@/views/AnswerView.vue') },
+    { path: '/maintenance', component: () => import('@/views/MaintenanceView.vue') },
+    { path: '/ai-config', component: () => import('@/views/AIConfigView.vue') },
   ],
 })

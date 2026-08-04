@@ -4,8 +4,11 @@ type: source
 source_type: maintenance-batch
 created: 2026-06-29
 updated: 2026-06-29
+sources: [local-maintenance-tools]
 tags: [search, maintenance, manifest, link-check, registry]
 related: [[concepts/kb-maintenance-workflow]]
+domain: sources
+topic: batches
 ---
 
 # CPA-ZH 检索能力升级批次

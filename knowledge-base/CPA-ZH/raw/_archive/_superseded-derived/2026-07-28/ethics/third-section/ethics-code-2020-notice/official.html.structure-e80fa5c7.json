@@ -1,0 +1,35 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:47:07+00:00",
+  "source_file": "raw/ethics/third-section/ethics-code-2020-notice/official.html",
+  "derived_file": "raw/ethics/third-section/ethics-code-2020-notice/official.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.content",
+  "source_pages": 1,
+  "heading_count": 2,
+  "table_count": 0,
+  "text_coverage": 0.9767,
+  "headings": [
+    {
+      "level": 1,
+      "text": "中国注册会计师协会关于印发《中国注册会计师职业道德守则（2020）》和《中国注册会计师协会非执业会员职业道德守则（2020）》的通知",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "附件：",
+      "page": null,
+      "source": "html-tag",
+      "locator": ".content h3[1]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

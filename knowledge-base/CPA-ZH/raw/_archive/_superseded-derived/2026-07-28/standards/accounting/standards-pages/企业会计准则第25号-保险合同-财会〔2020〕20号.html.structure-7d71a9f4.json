@@ -1,0 +1,163 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:47:43+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第25号-保险合同-财会〔2020〕20号.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第25号-保险合同-财会〔2020〕20号.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 18,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第25号-保险合同-财会〔2020〕20号",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 保险合同的识别、合并和分拆",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[26]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 保险合同的分组",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[37]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 确认",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[47]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[58]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[59]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 具有直接参与分红特征的保险合同组计量的特殊规定",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[118]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 亏损保险合同组计量的特殊规定",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[148]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 保险合同组计量的简化处理规定",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[162]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 分出的再保险合同组的确认和计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[176]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七章 合同转让或非同一控制下企业合并中",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[222]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第八章 保险合同的修改和终止确认",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[228]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第九章 列报",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[249]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 资产负债表和利润表相关项目的列示及披露",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[250]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 与保险合同计量相关的披露",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[305]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 与风险相关的披露",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[320]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十章 衔接规定",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[347]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十一章 附则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[411]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

@@ -1,0 +1,122 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:52:15+00:00",
+  "source_file": "raw/_archive/standards/audit/pdfs/045-中国注册会计师审计准则第1314号-审计抽样-应用指南.pdf",
+  "derived_file": "raw/standards/audit/pdfs/045-中国注册会计师审计准则第1314号-审计抽样-应用指南.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "needs-review",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 14,
+  "heading_count": 7,
+  "table_count": 4,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "中国注册会计师审计准则第1314号-审计抽样-应用指南",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "《中国注册会计师审计准则第1314 号",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[2]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "——审计抽样》应用指南",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "分层和金额加权选样",
+      "page": 7,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[7]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "控制测试中影响样本规模的因素示例",
+      "page": 9,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[9]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "细节测试中影响样本规模的因素示例",
+      "page": 11,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[11]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "选样方法",
+      "page": 13,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[13]/block[3]/line[1]",
+      "confidence": 0.85
+    }
+  ],
+  "tables": [
+    {
+      "index": 1,
+      "page": 9,
+      "rows": 6,
+      "columns": 3,
+      "representation": "html",
+      "locator": "pdf/page[9]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 2,
+      "page": 10,
+      "rows": 1,
+      "columns": 3,
+      "representation": "markdown",
+      "locator": "pdf/page[10]/table[1]",
+      "needs_review": false
+    },
+    {
+      "index": 3,
+      "page": 11,
+      "rows": 6,
+      "columns": 3,
+      "representation": "html",
+      "locator": "pdf/page[11]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 4,
+      "page": 12,
+      "rows": 3,
+      "columns": 3,
+      "representation": "html",
+      "locator": "pdf/page[12]/table[1]",
+      "needs_review": true
+    }
+  ],
+  "warnings": [
+    "complex-pdf-table:page-11-table-1",
+    "complex-pdf-table:page-12-table-1",
+    "complex-pdf-table:page-9-table-1",
+    "low-pdf-text:page-10"
+  ],
+  "review_pages": [
+    9,
+    10,
+    11,
+    12
+  ]
+}

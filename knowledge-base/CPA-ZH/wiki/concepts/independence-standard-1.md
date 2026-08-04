@@ -7,6 +7,8 @@ updated: 2026-06-29
 sources: [2026-06-26-initial-structure, third-section-official-archive-2026-06-29]
 tags: [independence, ethics, audit, review, p1-core]
 related: [[concepts/history-ethics-independence]], [[concepts/ethics-code]], [[concepts/audit-process]], [[concepts/policy-execution-checklist]]
+domain: ethics
+topic: independence
 ---
 
 # 中国注册会计师独立性准则第1号
@@ -21,15 +23,15 @@ related: [[concepts/history-ethics-independence]], [[concepts/ethics-code]], [[c
 
 | 文件 | 本地归档 | 状态 |
 |---|---|---|
-| 中注协职业道德规范专题页 | `raw/ethics/third-section/professional-ethics-index/official.html` | 已归档 |
-| 财政部印发独立性准则第1号页面 | `raw/ethics/third-section/independence-standard-2024-29-mof-page/official.html` | 已归档 |
-| 中注协转载独立性准则第1号页面 | `raw/ethics/third-section/independence-standard-2024-29-cicpa-page/official.html` | 已归档 |
-| 独立性准则第1号 PDF | `raw/ethics/third-section/independence-standard-2024-29-pdf/official.pdf` | 已归档 |
-| 中注协答记者问 | `raw/ethics/third-section/independence-standard-qa-2025/official.html` | 已归档 |
-| 独立性准则第1号应用指南通知 | `raw/ethics/third-section/independence-application-guide-2026-page/official.html` | 已归档 |
-| 独立性准则第1号应用指南 PDF | `raw/ethics/third-section/independence-application-guide-2026-pdf/official.pdf` | 已归档 |
-| 应用指南征求意见稿页面 | `raw/ethics/third-section/independence-application-guide-exposure-2025-page/official.html` | 历史参考 |
-| 应用指南征求意见稿 PDF | `raw/ethics/third-section/independence-application-guide-exposure-2025-pdf/official.pdf` | 历史参考 |
+| 中注协职业道德规范专题页 | `raw/ethics/third-section/professional-ethics-index/official.html.md` | 已归档 |
+| 财政部印发独立性准则第1号页面 | `raw/ethics/third-section/independence-standard-2024-29-mof-page/official.html.md` | 已归档 |
+| 中注协转载独立性准则第1号页面 | `raw/ethics/third-section/independence-standard-2024-29-cicpa-page/official.html.md` | 已归档 |
+| 独立性准则第1号 PDF | `raw/ethics/third-section/independence-standard-2024-29-pdf/official.pdf.md` | 已归档 |
+| 中注协答记者问 | `raw/ethics/third-section/independence-standard-qa-2025/official.html.md` | 已归档 |
+| 独立性准则第1号应用指南通知 | `raw/ethics/third-section/independence-application-guide-2026-page/official.html.md` | 已归档 |
+| 独立性准则第1号应用指南 PDF | `raw/ethics/third-section/independence-application-guide-2026-pdf/official.pdf.md` | 已归档 |
+| 应用指南征求意见稿页面 | `raw/ethics/third-section/independence-application-guide-exposure-2025-page/official.html.md` | 历史参考 |
+| 应用指南征求意见稿 PDF | `raw/ethics/third-section/independence-application-guide-exposure-2025-pdf/official.pdf.md` | 历史参考 |
 
 ## 核心定位
 

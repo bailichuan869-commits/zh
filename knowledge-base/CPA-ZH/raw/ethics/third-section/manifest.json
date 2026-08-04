@@ -9,7 +9,12 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html",
     "bytes": 16254,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/professional-ethics-index/official.html"
+    "local_file": "raw/ethics/third-section/professional-ethics-index/official.html",
+    "derived_markdown": "raw/ethics/third-section/professional-ethics-index/official.html.md",
+    "derived_sha256": "f59423bf3e36ce4c70d9246b3b5aefb223a848b92f26f2a25e4e54c89eef73b0",
+    "text_extraction_status": "ok",
+    "sha256": "7492783c051542ca54bd0c71b2dd6c77629c7ac34bf21f02805f341b93b0ed7b",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "industry-development-report-2024",
@@ -21,7 +26,12 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html; charset=UTF-8",
     "bytes": 8772,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/industry-development-report-2024/official.html"
+    "local_file": "raw/ethics/third-section/industry-development-report-2024/official.html",
+    "derived_markdown": "raw/ethics/third-section/industry-development-report-2024/official.html.md",
+    "derived_sha256": "bf388fefbdaa298f8eec0f30f27e55c703518210e6772768bebf602b15c00877",
+    "text_extraction_status": "ok",
+    "sha256": "8f598690c668af133028fa6fbe8e9e8c0e425b3148761c867be8709fd711e77a",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "cpa-system-restoration-45th",
@@ -33,7 +43,12 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html",
     "bytes": 8858,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/cpa-system-restoration-45th/official.html"
+    "local_file": "raw/ethics/third-section/cpa-system-restoration-45th/official.html",
+    "derived_markdown": "raw/ethics/third-section/cpa-system-restoration-45th/official.html.md",
+    "derived_sha256": "7e22862deeeee0bba381f5b36460385bf21bf751a5cb3aac755510ce8f2d253a",
+    "text_extraction_status": "ok",
+    "sha256": "b77deebfed74fe93a5f2f9f07715248d38105fc5a4b3c4113af0d74a7a2044f6",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "industry-reform-development-45th",
@@ -45,7 +60,12 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html; charset=UTF-8",
     "bytes": 8857,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/industry-reform-development-45th/official.html"
+    "local_file": "raw/ethics/third-section/industry-reform-development-45th/official.html",
+    "derived_markdown": "raw/ethics/third-section/industry-reform-development-45th/official.html.md",
+    "derived_sha256": "668ec3dfcf423f6f75f4744c5cae0ce5f9aebca7a61f2e3501aceef6c629fb5f",
+    "text_extraction_status": "ok",
+    "sha256": "78634c49cf45f9b1eaf3e4dcf30be2b5fe32053830994ae520338c843e6c735c",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "ethics-code-2020-notice",
@@ -57,7 +77,12 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html",
     "bytes": 14932,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-2020-notice/official.html"
+    "local_file": "raw/ethics/third-section/ethics-code-2020-notice/official.html",
+    "derived_markdown": "raw/ethics/third-section/ethics-code-2020-notice/official.html.md",
+    "derived_sha256": "82b83444c59375983f72bbd39bd06d2e778dbab72b6718fdd520d07416481167",
+    "text_extraction_status": "ok",
+    "sha256": "402e65576e769c34c85c05b37825c6a25a1544b12ae990d42a249d3baac74c3c",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "ethics-code-release-2009",
@@ -69,7 +94,12 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html",
     "bytes": 25621,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-release-2009/official.html"
+    "local_file": "raw/ethics/third-section/ethics-code-release-2009/official.html",
+    "derived_markdown": "raw/ethics/third-section/ethics-code-release-2009/official.html.md",
+    "derived_sha256": "dea480406cda7af3b6d14e926d78092914e6b53a1893117b77ce8b8e2c9f2426",
+    "text_extraction_status": "ok",
+    "sha256": "f29c0a48ab67cdfa66e7ff2ea9e35354fde8b710d41b2c881e835d318c549924",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "ethics-code-2020-no1-basic-principles",
@@ -81,7 +111,12 @@
     "archived_on": "2026-06-29",
     "content_type": "application/pdf",
     "bytes": 479544,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-2020-no1-basic-principles/official.pdf"
+    "local_file": "raw/ethics/third-section/ethics-code-2020-no1-basic-principles/official.pdf",
+    "derived_markdown": "raw/ethics/third-section/ethics-code-2020-no1-basic-principles/official.pdf.md",
+    "derived_sha256": "34c79590d6b6179cfa791ded4c4cc250190b829ee2c821c2c433a17fc7f3a17c",
+    "text_extraction_status": "ok",
+    "sha256": "708f397c4d7043203a21bd70dd75cd7dfc316fcfcd8fe5e3929f7add75c31bb3",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "ethics-code-2020-no2-conceptual-framework",
@@ -93,7 +128,12 @@
     "archived_on": "2026-06-29",
     "content_type": "application/pdf",
     "bytes": 407951,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-2020-no2-conceptual-framework/official.pdf"
+    "local_file": "raw/ethics/third-section/ethics-code-2020-no2-conceptual-framework/official.pdf",
+    "derived_markdown": "raw/ethics/third-section/ethics-code-2020-no2-conceptual-framework/official.pdf.md",
+    "derived_sha256": "c1aeb3e7b10ae703bad1c1ef17eab56786e0738bffe45c040c87f984555ae80a",
+    "text_extraction_status": "ok",
+    "sha256": "806a2a9fd865758d2e7f3787506896363c4150df990800ab4c6b1f60f4d98c4d",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "ethics-code-2020-no3-professional-services",
@@ -105,7 +145,12 @@
     "archived_on": "2026-06-29",
     "content_type": "application/pdf",
     "bytes": 732313,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-2020-no3-professional-services/official.pdf"
+    "local_file": "raw/ethics/third-section/ethics-code-2020-no3-professional-services/official.pdf",
+    "derived_markdown": "raw/ethics/third-section/ethics-code-2020-no3-professional-services/official.pdf.md",
+    "derived_sha256": "f9bf39a0435586e53c1d3983773fb8c4eae7e3661ba66f9cddae02a76251f0dc",
+    "text_extraction_status": "ok",
+    "sha256": "e6f9f0ee61dda0ef6e1b1eeb9abf4e45bd109d2892e4aae3c56cd8829ed1bfb5",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "ethics-code-2020-no4-audit-review-independence-superseded",
@@ -117,7 +162,12 @@
     "archived_on": "2026-06-29",
     "content_type": "application/pdf",
     "bytes": 995080,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-2020-no4-audit-review-independence-superseded/official.pdf"
+    "local_file": "raw/ethics/third-section/ethics-code-2020-no4-audit-review-independence-superseded/official.pdf",
+    "derived_markdown": "raw/ethics/third-section/ethics-code-2020-no4-audit-review-independence-superseded/official.pdf.md",
+    "derived_sha256": "089280d6a0c3946e3ad3792cecc3c8d19a26a799785eabba419bb09e29985782",
+    "text_extraction_status": "ok",
+    "sha256": "f86c4ae459c85fb07fd08a360510ec409927ac3ac34362bfeb90bfdaf5d6c6e4",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "ethics-code-2020-no5-other-assurance-independence",
@@ -129,7 +179,12 @@
     "archived_on": "2026-06-29",
     "content_type": "application/pdf",
     "bytes": 646670,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-2020-no5-other-assurance-independence/official.pdf"
+    "local_file": "raw/ethics/third-section/ethics-code-2020-no5-other-assurance-independence/official.pdf",
+    "derived_markdown": "raw/ethics/third-section/ethics-code-2020-no5-other-assurance-independence/official.pdf.md",
+    "derived_sha256": "51db0d11fd3bc5d23f3541f0f7d9363a7592b76c7af558474932e57200c983ff",
+    "text_extraction_status": "ok",
+    "sha256": "90b866480cda9d9ef074de8475a519d07a3579a42fb566e64bed90cc1b3320a0",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "ethics-code-2020-glossary",
@@ -141,7 +196,12 @@
     "archived_on": "2026-06-29",
     "content_type": "application/pdf",
     "bytes": 256869,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-2020-glossary/official.pdf"
+    "local_file": "raw/ethics/third-section/ethics-code-2020-glossary/official.pdf",
+    "derived_markdown": "raw/ethics/third-section/ethics-code-2020-glossary/official.pdf.md",
+    "derived_sha256": "10d8bf332c50d992fb6f3611ff9041cfdee6a2c18be576708e3a97e2d1ff33b7",
+    "text_extraction_status": "ok",
+    "sha256": "fbb824ff5d323fb57e63cb36ef62ce70f63d6d1fbc97ec81fa6ddd30b9060807",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "ethics-code-2020-non-practicing-members",
@@ -153,7 +213,12 @@
     "archived_on": "2026-06-29",
     "content_type": "application/pdf",
     "bytes": 659461,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-2020-non-practicing-members/official.pdf"
+    "local_file": "raw/ethics/third-section/ethics-code-2020-non-practicing-members/official.pdf",
+    "derived_markdown": "raw/ethics/third-section/ethics-code-2020-non-practicing-members/official.pdf.md",
+    "derived_sha256": "32006b7f5fd9caf99b5fd678b5166975047ba4a0ee93e50d9cce0ebcbfd56a8d",
+    "text_extraction_status": "ok",
+    "sha256": "a64b2ebaf45edcc108ea84919dd0f0618ef7d58c64d163cc984e1ab7542252d1",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "ethics-code-2020-non-practicing-members-glossary",
@@ -165,7 +230,12 @@
     "archived_on": "2026-06-29",
     "content_type": "application/pdf",
     "bytes": 182060,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-2020-non-practicing-members-glossary/official.pdf"
+    "local_file": "raw/ethics/third-section/ethics-code-2020-non-practicing-members-glossary/official.pdf",
+    "derived_markdown": "raw/ethics/third-section/ethics-code-2020-non-practicing-members-glossary/official.pdf.md",
+    "derived_sha256": "5f88e8fe306d6d12ece305774fb2a2702645a7ed4d6a199c088f726675f86e56",
+    "text_extraction_status": "ok",
+    "sha256": "2a2e47f6061746e727a1f7c20c3155e8cdec7d127560e53de9a267cab2c2180b",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "independence-standard-2024-29",
@@ -178,7 +248,12 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html",
     "bytes": 15973,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/independence-standard-2024-29/official.html"
+    "local_file": "raw/ethics/third-section/independence-standard-2024-29/official.html",
+    "derived_markdown": "raw/ethics/third-section/independence-standard-2024-29/official.html.md",
+    "derived_sha256": "72646cb5d24510f536acb585f156c7efa967748095fb8cb2b09524a9aa2f588f",
+    "text_extraction_status": "ok",
+    "sha256": "74ba86f6c91952bd202a43edb25ca78263b01a356c0b5f6c0b1118436285b652",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "independence-standard-2024-29-mof-page",
@@ -191,7 +266,12 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html",
     "bytes": 15973,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/independence-standard-2024-29-mof-page/official.html"
+    "local_file": "raw/ethics/third-section/independence-standard-2024-29-mof-page/official.html",
+    "derived_markdown": "raw/ethics/third-section/independence-standard-2024-29-mof-page/official.html.md",
+    "derived_sha256": "877af15524130a2a7b4440e2897d6fdf03b4760e7c131beb182dda63bd40b7eb",
+    "text_extraction_status": "ok",
+    "sha256": "74ba86f6c91952bd202a43edb25ca78263b01a356c0b5f6c0b1118436285b652",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "independence-standard-2024-29-cicpa-page",
@@ -204,7 +284,12 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html",
     "bytes": 9291,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/independence-standard-2024-29-cicpa-page/official.html"
+    "local_file": "raw/ethics/third-section/independence-standard-2024-29-cicpa-page/official.html",
+    "derived_markdown": "raw/ethics/third-section/independence-standard-2024-29-cicpa-page/official.html.md",
+    "derived_sha256": "f26b11a2a4a3beaf4c1feafcae214274687005ec682897134d65beda25f47502",
+    "text_extraction_status": "ok",
+    "sha256": "e0a3cafdeae0f86b045c75ad0df3f2c90fe9adc0c1335bbda803ec3272724fd4",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "independence-standard-2024-29-pdf",
@@ -217,7 +302,12 @@
     "archived_on": "2026-06-29",
     "content_type": "application/pdf",
     "bytes": 321436,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/independence-standard-2024-29-pdf/official.pdf"
+    "local_file": "raw/ethics/third-section/independence-standard-2024-29-pdf/official.pdf",
+    "derived_markdown": "raw/ethics/third-section/independence-standard-2024-29-pdf/official.pdf.md",
+    "derived_sha256": "17faecc111cb5cc0fe46ecebce3c64723c5dcadb63fa5d8762a6dffe75af31a5",
+    "text_extraction_status": "ok",
+    "sha256": "8c68eae830bffca3545527fb9baca348a63c987f835ffa8edaa442210914dfd6",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "independence-standard-qa-2025",
@@ -229,7 +319,12 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html",
     "bytes": 36759,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/independence-standard-qa-2025/official.html"
+    "local_file": "raw/ethics/third-section/independence-standard-qa-2025/official.html",
+    "derived_markdown": "raw/ethics/third-section/independence-standard-qa-2025/official.html.md",
+    "derived_sha256": "0837174b37ac71d191a53ecb6e7e36b8529ce16fd7b3a3eb537c7d58058671ea",
+    "text_extraction_status": "ok",
+    "sha256": "402ef459053dc5203781cf200ae1fa21e0905cba7eac8a9ae510f33bc899b271",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "independence-application-guide-2026-page",
@@ -241,7 +336,12 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html",
     "bytes": 12486,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/independence-application-guide-2026-page/official.html"
+    "local_file": "raw/ethics/third-section/independence-application-guide-2026-page/official.html",
+    "derived_markdown": "raw/ethics/third-section/independence-application-guide-2026-page/official.html.md",
+    "derived_sha256": "6e1b137c4473b001346f70e094bd90cbc2e48b0ace49c6b762f88c65216480f3",
+    "text_extraction_status": "ok",
+    "sha256": "54d138bbf71db29910adbb1bc4be86d1d3c5c266c8b6188526c50644f4dd4535",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "independence-application-guide-2026-pdf",
@@ -253,7 +353,12 @@
     "archived_on": "2026-06-29",
     "content_type": "application/pdf",
     "bytes": 524995,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/independence-application-guide-2026-pdf/official.pdf"
+    "local_file": "raw/ethics/third-section/independence-application-guide-2026-pdf/official.pdf",
+    "derived_markdown": "raw/ethics/third-section/independence-application-guide-2026-pdf/official.pdf.md",
+    "derived_sha256": "f9ecc3f9164ff8c92f28d9f6bd1338259de1ec1598a056e5597a9f2a394ca265",
+    "text_extraction_status": "ok",
+    "sha256": "4a48fd4cc614caaea63d21144e20b74fbde45c5d6846b0e48a7c1de1cc15574b",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "independence-application-guide-exposure-2025",
@@ -265,7 +370,12 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html",
     "bytes": 14461,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/independence-application-guide-exposure-2025/official.html"
+    "local_file": "raw/ethics/third-section/independence-application-guide-exposure-2025/official.html",
+    "derived_markdown": "raw/ethics/third-section/independence-application-guide-exposure-2025/official.html.md",
+    "derived_sha256": "271224255975432ac658d567d1a18e2a06a7f44e76fdfbbf11149f8f4c2980f1",
+    "text_extraction_status": "ok",
+    "sha256": "725ecc520bec8406f4b17d1dbd4816168ad3523a5a819b30b4f332d155c42e15",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "independence-application-guide-exposure-2025-page",
@@ -277,7 +387,12 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html",
     "bytes": 14461,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/independence-application-guide-exposure-2025-page/official.html"
+    "local_file": "raw/ethics/third-section/independence-application-guide-exposure-2025-page/official.html",
+    "derived_markdown": "raw/ethics/third-section/independence-application-guide-exposure-2025-page/official.html.md",
+    "derived_sha256": "2bc204669c23f78fc41b5274b50073ba4b38b225530cda06d6eb21fd78db551f",
+    "text_extraction_status": "ok",
+    "sha256": "bdae8e2412a960d8687bb2ed93e6e73eb6f870662ada44fb0538c1257bc63876",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "independence-application-guide-exposure-2025-pdf",
@@ -289,6 +404,11 @@
     "archived_on": "2026-06-29",
     "content_type": "application/pdf",
     "bytes": 476804,
-    "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/independence-application-guide-exposure-2025-pdf/official.pdf"
+    "local_file": "raw/ethics/third-section/independence-application-guide-exposure-2025-pdf/official.pdf",
+    "derived_markdown": "raw/ethics/third-section/independence-application-guide-exposure-2025-pdf/official.pdf.md",
+    "derived_sha256": "42b3159061e4d254f4e56e03900495317d18f35a1af181c28e809b973f44cbc0",
+    "text_extraction_status": "ok",
+    "sha256": "0c2808e05b2f0cc90b66cf67b918fe0608201c9bcee53c1787d55cad8df8c0de",
+    "archive_policy": "dual-track"
   }
 ]

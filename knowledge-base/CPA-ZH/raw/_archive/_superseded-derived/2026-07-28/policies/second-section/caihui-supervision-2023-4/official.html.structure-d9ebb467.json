@@ -1,0 +1,27 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:43:01+00:00",
+  "source_file": "raw/policies/second-section/caihui-supervision-2023-4/official.html",
+  "derived_file": "raw/policies/second-section/caihui-supervision-2023-4/official.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-html.parser:#UCAP-CONTENT",
+  "source_pages": 1,
+  "heading_count": 1,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "关于进一步加强财会监督工作的意见",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

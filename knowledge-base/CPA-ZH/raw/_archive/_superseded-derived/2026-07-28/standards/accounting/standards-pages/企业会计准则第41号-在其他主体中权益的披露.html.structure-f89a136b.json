@@ -1,0 +1,283 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:40:50+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第41号-在其他主体中权益的披露.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第41号-在其他主体中权益的披露.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 33,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第41号-在其他主体中权益的披露",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范在其他主体中权益的披露，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 企业披露的在其他主体中权益的信息，应当有助于财务报表使用者评估企业在其他主体中权益的性质和相关风险，以及该权益对企业财务状况、经营成果和现金流量的影响。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 本准则所指的在其他主体中的权益，是指通过合同或其他形式能够使企业参与其他主体的相关活动并因此享有可变回报的权益。参与方式包括持有其他主体的股权、债权,或向其他主体提供资金、流动性支持、信用增级和担保等。企业通过这些参与方式实现对其他主体的控制、共同控制或重大影响。其他主体包括企业的子公司、合营安排（包括共同经营和合营企业）、联营企业以及未纳入合并财务报表范围的结构化主体等。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 本准则适用于企业在子公司、合营安排、联营企业和未纳入合并财务报表范围的结构化主体中权益的披露。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[6]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 下列各项的披露适用其他相关会计准则：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[8]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 重大判断和假设的披露",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[12]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 企业应当披露对其他主体实施控制、共同控制或重大影响的重大判断和假设，以及这些判断和假设变更的情况，包括但不限于下列各项：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[13]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 企业应当披露按照《企业会计准则第33号——合并财务报表》被确定为投资性主体的重大判断和假设，以及虽然不符合《企业会计准则第33号——合并财务报表》有关投资性主体的一项或多项特征但仍被确定为投资性主体的原因。 企业（母公司）由非投资性主体转变为投资性主体的，应当披露该变化及其原因，并披露该变化对财务报表的影响，包括对变化当日不再纳入合并财务报表范围子公司的投资的公允价值、按照公允价值重新计量产生的利得或损失以及相应的列报项目。 企业（母公司）由投资性主体转变为非投资性主体的，应当披露该变化及其原因。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[18]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 在子公司中权益的披露",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[19]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 企业应当在合并财务报表附注中披露企业集团的构成，包括子公司的名称、主要经营地及注册地、业务性质、企业的持股比例（或类似权益比例，下同）等。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[20]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 使用企业集团资产和清偿企业集团债务存在重大限制的，企业应当在合并财务报表附注中披露下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[26]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 企业存在纳入合并财务报表范围的结构化主体的，应当在合并财务报表附注中披露下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[30]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 企业在其子公司所有者权益份额发生变化且该变化未导致企业丧失对子公司控制权的，应当在合并财务报表附注中披露该变化对本企业所有者权益的影响。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[34]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 企业是投资性主体且存在未纳入合并财务报表范围的子公司、并对该子公司权益按照公允价值计量且其变动计入当期损益的，应当在财务报表附注中对该情况予以说明。同时，对于未纳入合并财务报表范围的子公司，企业应当披露下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[38]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 企业是投资性主体的，对其在未纳入合并财务报表范围的子公司中的权益，应当披露与该权益相关的风险信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[41]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 在合营安排或联营企业中权益的披 露",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[46]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 存在重要的合营安排或联营企业的，企业应当披露下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[47]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 对于重要的合营企业或联营企业，企业除了应当按照本准则第十四条披露相关信息外，还应当披露对合营企业或联营企业投资的会计处理方法，从合营企业或联营企业收到的股利，以及合营企业或联营企业在其自身财务报表中的主要财务信息。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[51]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十六条 企业在单个合营企业或联营企业中的权益不重要的，应当分别就合营企业和联营企业两类披露下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[53]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十七条 合营企业或联营企业以发放现金股利、归还贷款或垫款等形式向企业转移资金的能力存在重大限制的，企业应当披露该限制的性质和程度。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[56]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十八条 企业对合营企业或联营企业投资采用权益法进行会计处理，被投资方发生超额亏损且投资方不再确认其应分担合营企业或联营企业损失份额的，应当披露未确认的合营企业或联营企业损失份额，包括当期份额和累积份额。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[57]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十九条 企业应当单独披露与其对合营企业投资相关的未确认承诺，以及与其对合营企业或联营企业投资相关的或有负债。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[58]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十条 企业是投资性主体的，不需要披露本准则第十五条和第十六条规定的信息。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[59]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 在未纳入合并财务报表范围的结构化主体中权益的披露",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[60]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十一条 对于未纳入合并财务报表范围的结构化主体，企业应当披露下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[61]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十二条 企业应当披露其向未纳入合并财务报表范围的结构化主体提供财务支持或其他支持的意图，包括帮助该结构化主体获得财务支持的意图。在没有合同约定的情况下，企业当期向结构化主体（包括企业前期或当期持有权益的结构化主体）提供财务支持或其他支持的，还应当披露提供支持的类型、金额及原因，包括帮助该结构化主体获得财务支持的情况。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[66]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十三条 企业是投资性主体的，对受其控制但未纳入合并财务报表范围的结构化主体，应当按照本准则第十二条和第十三条的规定进行披露，不需要按照本章规定进行披露。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[67]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 衔接规定",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[68]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十四条 企业比较财务报表中披露的本准则施行日之前的信息与本准则要求不一致的，应当按照本准则的规定进行调整，但有关未纳入合并财务报表范围的结构化主体的披露要求除外。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[69]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七章 附 则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[70]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十五条 本准则自2014年7月1日起施行。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[71]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

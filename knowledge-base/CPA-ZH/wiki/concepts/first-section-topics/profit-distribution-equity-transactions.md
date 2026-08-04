@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [first-section-master-index-2026-06-26]
 tags: [profit-distribution, equity-transactions, presentation, p1-core]
 related: [[concepts/first-section-topic-matrix]], [[concepts/law-company]], [[concepts/accounting-standards/cas-30]], [[concepts/accounting-standards/cas-37]]
+domain: practice
+topic: first-section
 ---
 
 # 利润分配和权益交易专题

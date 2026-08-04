@@ -23,8 +23,11 @@ class SourceItem:
     document_no: str
     local_file: str
     local_exists: bool
+    derived_markdown: str
+    derived_exists: bool
     suffix: str
     url: str
+    source_type: str
     official_source: str
     official_page_status: str
     text_extraction_status: str
@@ -99,12 +102,27 @@ def cache_text_length(root: Path, local_path: Path, text_cache: dict[str, dict[s
         return None
 
 
+def best_cache_text_length(
+    root: Path,
+    local_path: Path,
+    derived_path: Path | None,
+    text_cache: dict[str, dict[str, Any]],
+) -> int | None:
+    if derived_path is not None and derived_path.exists():
+        derived_length = cache_text_length(root, derived_path, text_cache)
+        if derived_length is not None:
+            return derived_length
+    return cache_text_length(root, local_path, text_cache) if local_path.exists() else None
+
+
 def classify_actions(
     *,
     manifest_path: str,
     local_exists: bool,
+    derived_exists: bool,
     suffix: str,
     url: str,
+    source_type: str,
     official_page_status: str,
     text_extraction_status: str,
     ocr_status: str,
@@ -113,11 +131,21 @@ def classify_actions(
 ) -> list[str]:
     actions: list[str] = []
     local_source_manifest = manifest_path.startswith("raw/cases/")
+    local_source_type = source_type in {"local-lecture", "local-case", "local-note", "local-source"}
+
     if not local_exists:
         actions.append("missing-local-file")
-    if not url and not local_source_manifest:
+    text_native_suffixes = {".md", ".txt", ".csv", ".json", ".html", ".htm"}
+    if (
+        not derived_exists
+        and not local_source_type
+        and suffix not in text_native_suffixes
+        and text_extraction_status not in {"not-required", "raw-only"}
+    ):
+        actions.append("missing-derived-markdown")
+    if not url and not local_source_manifest and not local_source_type:
         actions.append("missing-official-url")
-    elif official_page_status not in {"verified", "official", "valid"}:
+    elif official_page_status not in {"verified", "official", "valid", "local"}:
         if "待复核" in official_source or "待复核" in url or url.rstrip("/") == "https://www.csrc.gov.cn":
             actions.append("verify-official-url")
     if suffix == ".pdf" and (text_length == 0 or text_extraction_status in {"empty", "local_pdf_empty"}):
@@ -138,8 +166,12 @@ def collect_items(root: Path) -> list[SourceItem]:
             local_file = first_value(item.get("local_file"), metadata.get("local_file"))
             local_path = kb_manifest_audit.resolve_local_file(root, local_file) if local_file else manifest_path
             local_exists = bool(local_file and local_path.exists())
+            derived_markdown = first_value(item.get("derived_markdown"), metadata.get("derived_markdown"))
+            derived_path = kb_manifest_audit.resolve_local_file(root, derived_markdown) if derived_markdown else None
+            derived_exists = bool(derived_path and derived_path.exists())
             suffix = local_path.suffix.lower() if local_exists else ""
             url = first_value(item.get("url"), item.get("source_url"), metadata.get("official_url"), metadata.get("url"))
+            source_type = first_value(item.get("source_type"), metadata.get("source_type"))
             official_source = first_value(item.get("official_source"), metadata.get("official_source"))
             official_page_status = first_value(item.get("official_page_status"), metadata.get("official_page_status"))
             text_extraction_status = first_value(
@@ -147,12 +179,14 @@ def collect_items(root: Path) -> list[SourceItem]:
                 metadata.get("text_extraction_status"),
             )
             ocr_status = first_value(item.get("ocr_status"), metadata.get("ocr_status"))
-            text_length = cache_text_length(root, local_path, text_cache) if local_exists else None
+            text_length = best_cache_text_length(root, local_path, derived_path, text_cache)
             actions = classify_actions(
                 manifest_path=rel(root, manifest_path),
                 local_exists=local_exists,
+                derived_exists=derived_exists,
                 suffix=suffix,
                 url=url,
+                source_type=source_type,
                 official_page_status=official_page_status,
                 text_extraction_status=text_extraction_status,
                 ocr_status=ocr_status,
@@ -167,8 +201,11 @@ def collect_items(root: Path) -> list[SourceItem]:
                     document_no=first_value(item.get("document_no"), metadata.get("document_no")),
                     local_file=local_file,
                     local_exists=local_exists,
+                    derived_markdown=derived_markdown,
+                    derived_exists=derived_exists,
                     suffix=suffix,
                     url=url,
+                    source_type=source_type,
                     official_source=official_source,
                     official_page_status=official_page_status or "unknown",
                     text_extraction_status=text_extraction_status or "unknown",
@@ -194,6 +231,7 @@ def render_markdown(root: Path, items: list[SourceItem]) -> str:
     with_urls = sum(1 for item in items if item.url)
     with_cache = sum(1 for item in items if item.cache_text_length is not None)
     cached_text = sum(1 for item in items if (item.cache_text_length or 0) > 0)
+    with_derived = sum(1 for item in items if item.derived_exists)
 
     lines = [
         "---",
@@ -203,13 +241,15 @@ def render_markdown(root: Path, items: list[SourceItem]) -> str:
         f"created: {date.today().isoformat()}",
         f"updated: {date.today().isoformat()}",
         "sources: [kb-source-status]",
-        "tags: [maintenance, source-status, archive, ocr, official-link]",
+        "tags: [maintenance, source-status, archive, ocr, official-link, dual-track]",
         "related: [[concepts/kb-maintenance-workflow]], [[concepts/kb-user-guide]]",
+        "domain: sources",
+        "topic: dashboards",
         "---",
         "",
         "# 来源状态仪表盘",
         "",
-        "本页由 `tools/kb_source_status.py write-report` 生成，用于追踪 raw manifest 来源的官方链接、文本抽取、OCR 和后续维护动作。",
+        "本页由 `tools/kb_source_status.py write-report` 生成，用于追踪 raw manifest 来源的官方链接、原件、Markdown 派生件、文本缓存和后续维护动作。",
         "",
         "## 总览",
         "",
@@ -218,6 +258,7 @@ def render_markdown(root: Path, items: list[SourceItem]) -> str:
         f"| manifest 条目 | {len(items)} |",
         f"| 有 URL 条目 | {with_urls} |",
         f"| 官方页面已核验 | {verified} |",
+        f"| 有 Markdown 派生件 | {with_derived} |",
         f"| 已进入文本缓存 | {with_cache} |",
         f"| 缓存中有可检索正文 | {cached_text} |",
         "",
@@ -248,7 +289,10 @@ def render_markdown(root: Path, items: list[SourceItem]) -> str:
     )
     if flagged:
         for item in flagged:
-            status = f"url={item.official_page_status}; text={item.text_extraction_status}; ocr={item.ocr_status}"
+            status = (
+                f"source={item.official_page_status}; text={item.text_extraction_status}; "
+                f"ocr={item.ocr_status}; derived={'ok' if item.derived_exists else 'missing'}"
+            )
             source = item.official_source or item.manifest_path
             actions = ", ".join(f"`{action}`" for action in item.actions)
             lines.append(
@@ -262,24 +306,28 @@ def render_markdown(root: Path, items: list[SourceItem]) -> str:
             "",
             "## 全部 manifest 条目",
             "",
-            "| 条目 | 文件 | URL | 缓存正文长度 | wiki |",
-            "|---|---|---|---:|---|",
+            "| 条目 | 原件 | Markdown 派生件 | URL | 缓存正文长度 | wiki |",
+            "|---|---|---|---|---:|---|",
         ]
     )
     for item in items:
         text_length = "" if item.cache_text_length is None else str(item.cache_text_length)
         url = item.url or ""
-        lines.append(f"| {item.title} | `{item.local_file}` | {url} | {text_length} | {wiki_link(item.wiki_page)} |")
+        lines.append(
+            f"| {item.title} | `{item.local_file}` | `{item.derived_markdown}` | {url} | {text_length} | {wiki_link(item.wiki_page)} |"
+        )
 
     lines.extend(
         [
             "",
             "## 使用说明",
             "",
-            "- `ocr-pending`：PDF 已归档但缓存正文为空，适合后续安装 OCR 工具或手工补正文。",
+            "- `missing-local-file`：manifest 指向的原件不存在，应恢复官方 PDF/HTML/DOCX 或补来源说明。",
+            "- `missing-derived-markdown`：原件存在但缺少 Markdown 派生件，检索和加工体验会下降。",
+            "- `ocr-pending`：PDF 已归档但文本为空，适合后续 OCR 或手工补正文。",
             "- `verify-official-url`：已有来源但官方具体原文页仍需复核。",
             "- `missing-official-url`：manifest 中没有 URL，应补官方来源或本地来源说明。",
-            "- `not-in-text-cache`：raw 文件还没有进入 `cache/text/`，运行 `kb_text_cache.py build`。",
+            "- `not-in-text-cache`：raw 文件还没有进入 `cache/text/`，运行 `tools/kb.py cache build`。",
             "",
             f"_生成路径：`{rel(root, root / REPORT_PATH)}`_",
         ]

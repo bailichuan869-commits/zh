@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [first-section-master-index-2026-06-26]
 tags: [income-tax, deferred-tax, estimates, p1-core]
 related: [[concepts/first-section-topic-matrix]], [[concepts/accounting-standards/cas-18]], [[concepts/audit-standards/csa-1321]]
+domain: practice
+topic: first-section
 ---
 
 # 所得税和递延所得税专题

@@ -3,26 +3,31 @@ title: 第一板块资料总表
 type: source
 source_type: master-index
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-07-14
+sources: [first-section-master-index-2026-06-26, challenge-knowledge-source-summary-2026-07-13]
 raw_path: raw/indexes/first-section-master-index.csv
 tags: [cpa, law, accounting, audit, standards, master-index, p1-core]
 related: [[concepts/regulations-and-standards]], [[concepts/accounting-standards-system]], [[concepts/audit-standards-system]]
+domain: sources
+topic: batches
 ---
 
 # 第一板块资料总表
 
 ## 文件位置
 
-- CSV 明细：`raw/indexes/first-section-master-index.csv`
+- CSV 明细：`raw/indexes/first-section-master-index.csv.md`
 - Markdown 总览：`raw/indexes/first-section-master-index.md`
 
 ## 汇总口径
 
 本总表汇总“行业重要法规与准则”板块已纳入 raw 层的资料，覆盖四部核心法律、企业会计准则体系资料，以及中国注册会计师执业准则及应用指南资料。
 
+2026-07-14 维护说明：根据 [[sources/challenge-knowledge-source-summary-verification-2026-07-13]]，本表中的《中华人民共和国注册会计师法》本地 raw 文本为 2014 修正版线索，应标记为修订前版本；2026-06-26 修订、2027-01-01 施行的新版本待官方全文归档后纳入本表。
+
 | 类别 | 数量 | 状态 |
 |---|---:|---|
-| 核心法律 | 4 | 已纳入本地 raw 层 |
+| 核心法律 | 4 | 已纳入本地 raw 层；《注册会计师法》为修订前版本，2026 修订版待补 |
 | 企业会计准则 | 47 | 已下载财政部会计司 HTML 原文页 |
 | 企业会计准则解释 | 20 | 已下载财政部会计司 HTML 原文页 |
 | 企业会计准则其他规定 | 22 | 已下载财政部会计司 HTML 原文页 |

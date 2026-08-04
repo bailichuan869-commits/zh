@@ -1,0 +1,107 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:52:19+00:00",
+  "source_file": "raw/_archive/standards/audit/pdfs/049-21..pdf",
+  "derived_file": "raw/standards/audit/pdfs/049-21..pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 44,
+  "heading_count": 11,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "21.",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "《中国注册会计师审计准则第1401 号——",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[2]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "对集团财务报表审计的特殊考虑》",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "应用指南",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "集团项目组无法获取充分、适当的审计证据而出具保留意见",
+      "page": 24,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[24]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "的审计报告的参考格式",
+      "page": 24,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[24]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "集团项目组需要了解的事项的示例",
+      "page": 33,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[33]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "可能表明集团财务报表存在重大错报风险",
+      "page": 37,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[37]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "的情况或事项的示例",
+      "page": 37,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[37]/block[5]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "组成部分注册会计师确认函参考格式",
+      "page": 39,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[39]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "列入集团项目组指令函的事项",
+      "page": 42,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[42]/block[4]/line[1]",
+      "confidence": 0.85
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

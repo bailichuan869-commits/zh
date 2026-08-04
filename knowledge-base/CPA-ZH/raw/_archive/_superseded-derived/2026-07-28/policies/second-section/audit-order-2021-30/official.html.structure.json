@@ -1,0 +1,27 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:34:27+00:00",
+  "source_file": "raw/policies/second-section/audit-order-2021-30/official.html",
+  "derived_file": "raw/policies/second-section/audit-order-2021-30/official.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-html.parser:#UCAP-CONTENT",
+  "source_pages": 1,
+  "heading_count": 1,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "关于进一步规范财务审计秩序促进注册会计师行业健康发展的意见",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

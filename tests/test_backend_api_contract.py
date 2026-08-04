@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 import json
+import os
 import sys
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 from fastapi import HTTPException
 
@@ -15,7 +17,9 @@ if str(BACKEND) not in sys.path:
 
 from app.api.v1.routers import library
 from app.main import app
-from app.schemas.library import DocumentResponse, HealthResponse, SearchResponse, SummaryResponse
+from app.schemas.library import AnswerRequest, AnswerResponse, DocumentResponse, HealthResponse, SearchResponse, SummaryResponse
+from app.services import answers as answer_service
+from app.services.library import plain_snippet
 
 
 class BackendApiContractTests(unittest.TestCase):
@@ -40,6 +44,7 @@ class BackendApiContractTests(unittest.TestCase):
         self.assertTrue(expected.issubset(routes))
         for path in expected:
             self.assertEqual({"GET"}, routes[path])
+        self.assertEqual({"POST"}, routes["/api/v1/answers"])
         self.assertNotIn("/ui", routes)
         self.assertNotIn("/wiki", routes)
         self.assertNotIn("/raw", routes)
@@ -62,6 +67,52 @@ class BackendApiContractTests(unittest.TestCase):
         self.assertEqual("wiki/index.md", document.path)
         self.assertTrue(document.markdown)
 
+    def test_search_snippets_are_plain_text(self) -> None:
+        malicious = '<mark>收入</mark><img src=x onerror="alert(1)"><script>bad()</script>'
+        snippet = plain_snippet(malicious)
+        self.assertEqual("收入bad()", snippet)
+        self.assertNotIn("<", snippet)
+
+    def test_answers_return_evidence_gap_without_model_access(self) -> None:
+        answer = AnswerResponse.model_validate(library.answer(AnswerRequest(question="不存在的虚构会计事项")))
+        self.assertTrue(answer.insufficient_evidence)
+        self.assertEqual("insufficient", answer.confidence)
+
+    def test_answers_demo_mode_returns_local_citations_without_model_access(self) -> None:
+        original = answer_service.DEMO_MODE
+        answer_service.DEMO_MODE = True
+        try:
+            answer = AnswerResponse.model_validate(library.answer(AnswerRequest(question="收入确认")))
+        finally:
+            answer_service.DEMO_MODE = original
+        self.assertFalse(answer.insufficient_evidence)
+        self.assertEqual("demo", answer.confidence)
+        self.assertTrue(answer.citations)
+
+    def test_answers_require_model_key_when_reviewed_evidence_exists(self) -> None:
+        with patch.object(answer_service, "DEMO_MODE", False), patch.object(
+            answer_service, "load_ai_config", return_value={"enabled": False, "api_key": "", "model": "", "base_url": ""}
+        ), patch.dict(os.environ, {"OPENAI_API_KEY": ""}, clear=False), self.assertRaises(HTTPException) as context:
+            library.answer(AnswerRequest(question="医疗经销模式下签收", topic="revenue-recognition"))
+        self.assertEqual(503, context.exception.status_code)
+
+    def test_answer_topic_uses_canonical_and_legacy_topic_values(self) -> None:
+        canonical = answer_service.answer_service.evidence("与标题无关的具体事实", "revenue-recognition")
+        legacy = answer_service.answer_service.evidence("与标题无关的具体事实", "收入确认")
+        self.assertEqual([], canonical)
+        self.assertEqual([item["path"] for item in canonical], [item["path"] for item in legacy])
+
+    def test_topic_does_not_make_an_unrelated_question_answerable(self) -> None:
+        answer = AnswerResponse.model_validate(
+            library.answer(AnswerRequest(question="火星矿产权益如何计量", topic="revenue-recognition"))
+        )
+        self.assertTrue(answer.insufficient_evidence)
+        self.assertEqual([], answer.citations)
+
+    def test_responses_api_text_is_read_from_rest_response_shape(self) -> None:
+        payload = {"output": [{"content": [{"type": "output_text", "text": "第一段"}, {"type": "output_text", "text": "第二段"}]}]}
+        self.assertEqual("第一段\n第二段", answer_service._response_text(payload))
+
     def test_navigation_tree_and_raw_file_access_stay_within_asset_boundaries(self) -> None:
         tree = library.tree()
         payload = json.loads(tree.body)
@@ -71,9 +122,14 @@ class BackendApiContractTests(unittest.TestCase):
         self.assertEqual("text/plain; charset=utf-8", raw.media_type)
         self.assertIn("no-store", raw.headers["cache-control"])
 
-        for invalid_path in ("wiki/index.md", "../README.md", "C:/Windows/win.ini"):
+        for invalid_path in ("wiki/index.md", "../README.md", "raw/../wiki/index.md", "raw\\..\\wiki\\index.md", "C:/Windows/win.ini"):
             with self.assertRaises(HTTPException) as context:
                 library.file(invalid_path)
+            self.assertEqual(400, context.exception.status_code)
+
+        for invalid_path in ("raw/README.md", "wiki/../raw/README.md", "wiki\\..\\raw\\README.md"):
+            with self.assertRaises(HTTPException) as context:
+                library.document(invalid_path)
             self.assertEqual(400, context.exception.status_code)
 
 

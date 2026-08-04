@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "text/html",
   "bytes": 33688,
-  "local_file": "knowledge-base/CPA-ZH/raw/policies/second-section/cpa-registration-2019-99/official.html"
+  "local_file": "raw/policies/second-section/cpa-registration-2019-99/official.html",
+  "derived_markdown": "raw/policies/second-section/cpa-registration-2019-99/official.html.md",
+  "derived_sha256": "ed0647dd85756019786b52563a7e122d3edae0944ddc4f2e2e0a4b23944c8256",
+  "text_extraction_status": "ok",
+  "sha256": "fcb2b961b463df5ed2dff9b136e18079b87c71bf29fd1a2570a0e3ff7f4f4f2a",
+  "archive_policy": "dual-track"
 }

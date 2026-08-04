@@ -7,6 +7,8 @@ updated: 2026-07-09
 sources: [issuance-guidance-rd-staff-investment-archive-2026-07-09]
 tags: [csrc, securities-issuance, ipo, rd-expense, rd-staff, disclosure]
 related: [[sources/issuance-guidance-rd-staff-investment-archive-2026-07-09]], [[concepts/first-section-topics/securities-service-liability]], [[concepts/first-section-topics/income-tax-deferred-tax]], [[concepts/accounting-standards/cas-06]]
+domain: practice
+topic: audit-practice
 ---
 
 # 监管规则适用指引——发行类第9号：研发人员及研发投入
@@ -23,7 +25,7 @@ related: [[sources/issuance-guidance-rd-staff-investment-archive-2026-07-09]], [
 |---|---|
 | 发布机构 | 中国证监会 |
 | 文号/编号 | 发行类第9号 |
-| 本地归档 | `raw/policies/issuance-guidance/issuance-class-09-rd-staff-investment/official.pdf` |
+| 本地归档 | `raw/policies/issuance-guidance/issuance-class-09-rd-staff-investment/official.pdf.md` |
 | 来源说明 | [[sources/issuance-guidance-rd-staff-investment-archive-2026-07-09]] |
 | 官方原文页 | https://www.csrc.gov.cn/csrc/c101802/c7445462/content.shtml |
 | 起草说明附件 | https://www.csrc.gov.cn/csrc/c101802/c7445462/7445462/files/%E7%9B%91%E7%AE%A1%E8%A7%84%E5%88%99%E9%80%82%E7%94%A8%E6%8C%87%E5%BC%95%E2%80%94%E2%80%94%E5%8F%91%E8%A1%8C%E7%B1%BB%E7%AC%AC9%E5%8F%B7%20%E7%A0%94%E5%8F%91%E4%BA%BA%E5%91%98%E5%8F%8A%E7%A0%94%E5%8F%91%E6%8A%95%E5%85%A5%E8%B5%B7%E8%8D%89%E8%AF%B4%E6%98%8E.pdf |

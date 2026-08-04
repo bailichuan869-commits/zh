@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [2026-06-26-initial-structure, archived-cpa-competition-policy-pages]
 tags: [policy, integrity, ethics, p2-important]
 related: [[concepts/policy-documents]], [[concepts/ethics-code]], [[concepts/independence-standard-1]], [[concepts/policy-audit-order]]
+domain: policies
+topic: integrity
 ---
 
 # 注册会计师行业诚信建设纲要
@@ -16,7 +18,7 @@ related: [[concepts/policy-documents]], [[concepts/ethics-code]], [[concepts/ind
 - 文号：财会〔2023〕5号
 - 定位：注册会计师行业诚信体系和信用监管建设文件。
 - 官方来源：[中国政府网：财政部关于印发《注册会计师行业诚信建设纲要》的通知](https://www.gov.cn/zhengce/zhengceku/2023-04/02/content_5749779.htm)（已核验，2026-06-29）。
-- 本地归档：`raw/policies/second-section/integrity-2023-5/official.html`。
+- 本地归档：`raw/policies/second-section/integrity-2023-5/official.html.md`。
 
 ## 政策定位
 

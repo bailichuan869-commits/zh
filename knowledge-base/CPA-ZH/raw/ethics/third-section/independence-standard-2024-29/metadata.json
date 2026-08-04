@@ -9,5 +9,10 @@
   "archived_on": "2026-06-29",
   "content_type": "text/html",
   "bytes": 15973,
-  "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/independence-standard-2024-29/official.html"
+  "local_file": "raw/ethics/third-section/independence-standard-2024-29/official.html",
+  "derived_markdown": "raw/ethics/third-section/independence-standard-2024-29/official.html.md",
+  "derived_sha256": "72646cb5d24510f536acb585f156c7efa967748095fb8cb2b09524a9aa2f588f",
+  "text_extraction_status": "ok",
+  "sha256": "74ba86f6c91952bd202a43edb25ca78263b01a356c0b5f6c0b1118436285b652",
+  "archive_policy": "dual-track"
 }

@@ -1,0 +1,163 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:43:26+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第32号-中期财务报告.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第32号-中期财务报告.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 18,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第32号-中期财务报告",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范中期财务报告的内容和编制中期财务报告应当遵循的确认与计量原则 ， 根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 中期财务报告，是指以中期为基础编制的财务报告。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 中期财务报告的内容",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[6]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 中期财务报告至少应当包括资产负债表、利润表、现金流量表和附注。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[7]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 上年度编制合并财务报表的，中期期末应当编制合并财务报表。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[11]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 中期财务报告应当按照下列规定提供比较财务报表：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[14]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 财务报表项目在报告中期作了调整或者修订的，上年度比较财务报表项目有关金额应当按照本年度中期财务报表的要求重新分类，并在附注中说明重新分类的原因及其内容，无法重新分类的，应当在附注中说明不能重新分类的原因。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[18]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 中期财务报告中的附注应当以年初至本中期末为基础编制，披露自上年度资产负债表日之后发生的，有助于理解企业财务状况、经营成果和现金流量变化情况的重要交易或者事项。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[19]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 中期财务报告中的附注至少应当包括下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[21]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 企业在确认、计量和报告各中期财务报表项目时，对项目重要性程度的判断，应当以中期财务数据为基础，不应以年度财务数据为基础。中期会计计量与年度财务数据相比，可在更大程度上依赖于估计，但是，企业应当确保所提供的中期财务报告包括了相关的重要信息。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[38]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 在同一会计年度内，以前中期财务报告中报告的某项估计金额在最后一个中期发生了重大变更、企业又不单独编制该中期财务报告的，应当在年度财务报告的附注中披露该项估计变更的内容、 原因 及其影响金额。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[39]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 确认和计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[41]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 企业在中期财务报表中应当采用与年度财务报表相一致的会计政策。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[42]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 中期会计计量应当以年初至本中期末为基础，财务报告的频率不应当影响年度结果的计量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[44]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 企业取得的季节性、周期性或者偶然性收入，应当在发生时予以确认和计量，不应在中期财务报表中预计或者递延， 但 会计年度末允许预计或者递延的除外。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[46]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 企业在中期发生了会计政策变更的，应当按照《企业会计准则第28号——会计政策、会计估计变更和差错更正》处理，并按照本准则第八条（一）的规定在附注中作相应披露。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[48]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

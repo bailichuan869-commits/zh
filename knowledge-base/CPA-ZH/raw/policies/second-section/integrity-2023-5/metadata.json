@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "text/html",
   "bytes": 28078,
-  "local_file": "knowledge-base/CPA-ZH/raw/policies/second-section/integrity-2023-5/official.html"
+  "local_file": "raw/policies/second-section/integrity-2023-5/official.html",
+  "derived_markdown": "raw/policies/second-section/integrity-2023-5/official.html.md",
+  "derived_sha256": "124b1f5a10972be5ba41060f2c368d67cb6ff581aa4d214f31124731d76318fb",
+  "text_extraction_status": "ok",
+  "sha256": "70ed1f61301352bdd56b77cf22e40bf6bd052f77dcd0059a46aded819ac567a9",
+  "archive_policy": "dual-track"
 }

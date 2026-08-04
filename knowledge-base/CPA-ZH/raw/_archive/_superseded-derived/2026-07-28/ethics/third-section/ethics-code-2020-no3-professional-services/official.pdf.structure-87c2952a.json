@@ -1,0 +1,1379 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:42:52+00:00",
+  "source_file": "raw/ethics/third-section/ethics-code-2020-no3-professional-services/official.pdf",
+  "derived_file": "raw/ethics/third-section/ethics-code-2020-no3-professional-services/official.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 42,
+  "heading_count": 170,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "中国注册会计师职业道德守则第3号——提供专业服务的具体要求",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "中国注册会计师职业道德守则第3 号",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "——提供专业服务的具体要求",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范注册会计师职业活动，指导注册会计师运用职",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二条 在提供专业服务的过程中，可能存在许多对职业道德基",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三条 注册会计师不得在明知的情况下从事任何损害或可能",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 利益冲突",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四条 注册会计师不得因利益冲突损害其职业判断。",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五条 利益冲突通常对客观公正原则产生不利影响，也可能对",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六条 举例来说，可能产生利益冲突的情形有：",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 利益冲突的识别",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七条 在承接新的客户、业务或发生商业关系前，注册会计师",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八条 在决定是否承接一项业务之前，以及在业务开展的过程",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九条 建立有效的冲突识别流程，需要考虑下列因素：",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十条 在执行业务的过程中，所提供服务的性质、利益和关系",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十一条 如果会计师事务所是网络的成员，并且注册会计师有",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 利益冲突产生的不利影响",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十二条 一般来说，注册会计师提供的专业服务与产生利益冲",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十三条 在评价因利益冲突产生的不利影响的严重程度时，注",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十四条 下列防范措施可能能够应对因利益冲突产生的不利",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 披露和同意",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十五条 在应对因利益冲突产生的不利影响时，注册会计师应",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十六条 在确定是否有必要进行具体披露并获取明确同意时，",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十七条 披露和同意可能采取不同的形式，例如：",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十八条 当存在利益冲突时，下列披露和同意通常是必要的：",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十九条 如果上述披露或同意未采用书面形式，本守则鼓励注",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十条 如果注册会计师根据本守则第十五条的规定，确定有",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 保 密",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十一条 注册会计师应当对可能违反保密原则的情况保持",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十二条 如果为获取客户的明确同意而进行的披露会违反",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十三条 举例来说，当注册会计师寻求客户同意以提供下列",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六节 文件记录",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十四条 针对本守则第二十二条所述的情况，注册会计师应",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 专业服务委托",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 客户关系和业务的承接",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十五条 如果注册会计师知悉客户存在某些问题（如涉嫌违",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十六条 与评价上述不利影响严重程度有关的因素包括：",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十七条 如果项目组不具备或不能获得恰当执行业务所必",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十八条 下列因素与评价此类不利影响的严重程度相关：",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十九条 举例来说，下列防范措施可能能够应对因自身利益",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 专业服务委托的变更",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十条 当注册会计师遇到下列情况时，应当确定是否有理由",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十一条 拒绝承接业务可能有多种原因，如无法采取防范措",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十二条 如果客户要求注册会计师执行某些工作以作为对",
+      "page": 10,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[10]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十三条 在评价此类不利影响的严重程度时，相关的考虑因",
+      "page": 10,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[10]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十四条 举例来说，下列防范措施可能能够应对上述因自身",
+      "page": 10,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[10]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十五条 在与现任或前任注册会计师沟通前，拟接任注册会",
+      "page": 10,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[10]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十六条 当被要求对拟接任注册会计师的沟通作出答复时，",
+      "page": 11,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[11]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十七条 在与拟接任注册会计师沟通时，现任或前任注册会",
+      "page": 11,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[11]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十八条 在财务报表审计和审阅业务中，拟接任注册会计师",
+      "page": 11,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[11]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 客户关系和业务的保持",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十九条 在连续业务中，注册会计师应当定期评价是否继续",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 利用专家的工作",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十条 如果拟利用专家的工作，注册会计师应当确定对专家",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 第二意见",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四十一条 注册会计师可能被要求就某实体或以其名义运用",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十二条 如果要求提供第二意见的实体不允许与现任或前",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 收 费",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 收费水平",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十三条 会计师事务所在确定收费水平时应当主要考虑下",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十四条 收费报价水平可能影响注册会计师按照职业准则",
+      "page": 14,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[14]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 或有收费",
+      "page": 14,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[14]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十五条 除非法律法规允许，注册会计师不得以或有收费方",
+      "page": 14,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[14]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十六条 尽管某些非鉴证服务可以采用或有收费的形式，或",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 介绍费或佣金",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十七条 注册会计师收取与客户相关的介绍费或佣金，将因",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十八条 注册会计师为获得客户而支付业务介绍费，将因自",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 利益诱惑（包括礼品和款待）",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十九条 注册会计师提供或接受利益诱惑，可能因自身利",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十条 利益诱惑是指影响其他人员行为的物质、事件或行",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十一条 某些法律法规禁止在特定情况下提供或接受利益",
+      "page": 17,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[17]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 意图不当影响行为的利益诱惑",
+      "page": 17,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[17]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十二条 注册会计师不得提供或授意他人提供任何意图不",
+      "page": 17,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[17]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十三条 注册会计师不得接受或授意他人接受任何意图不",
+      "page": 17,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[17]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十四条 如果某项利益诱惑导致某人以违反道德的方式行",
+      "page": 17,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[17]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十五条 注册会计师提供或接受，或者授意他人提供或接受",
+      "page": 17,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[17]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十六条 在确定是否存在或被认为存在不当影响行为的意",
+      "page": 18,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[18]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十七条 如果注册会计师知悉被提供的利益诱惑存在或被",
+      "page": 18,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[18]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 无不当影响行为意图的利益诱惑",
+      "page": 19,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[19]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十八条 如果注册会计师认为某项利益诱惑不存在不当影",
+      "page": 19,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[19]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十九条 即使注册会计师认为某项利益诱惑无不当影响行",
+      "page": 19,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[19]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十条 在评价因提供或接受此类利益诱惑产生的不利影响",
+      "page": 19,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[19]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十一条 举例来说，下列防范措施可能能够消除因提供或接",
+      "page": 19,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[19]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十二条 举例来说，下列防范措施可能能够将提供或接受此",
+      "page": 20,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[20]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十三条 如果某项利益诱惑无不当影响行为的意图，并且从",
+      "page": 20,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[20]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 主要近亲属或其他近亲属",
+      "page": 20,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[20]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十四条 注册会计师应当对下列可能对职业道德基本原则",
+      "page": 20,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[20]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十五条 如果注册会计师知悉其主要近亲属或其他近亲属",
+      "page": 21,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[21]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十六条 除本守则第五十六条规定的因素外，在确定是否存",
+      "page": 21,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[21]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十七条 即使注册会计师的主要近亲属或其他近亲属已经",
+      "page": 21,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[21]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十八条 如果注册会计师发现存在本守则第六十四条所述",
+      "page": 21,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[21]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 其他方面的考虑",
+      "page": 22,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[22]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十九条 如果注册会计师遇到或知悉客户或者在客户指令",
+      "page": 22,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[22]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十条 如果审计客户向会计师事务所、网络事务所或审计项",
+      "page": 22,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[22]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十一条 如果其他鉴证业务客户向会计师事务所或鉴证业",
+      "page": 22,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[22]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七章 保管客户资产",
+      "page": 23,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[23]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七十二条 保管客户资产可能因自身利益或其他原因而对客",
+      "page": 23,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[23]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十三条 在承接某项业务时，对于可能涉及保管客户资产的",
+      "page": 23,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[23]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十四条 注册会计师如果接受委托保管客户资金或其他资",
+      "page": 23,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[23]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第八章 应对违反法律法规行为",
+      "page": 23,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[23]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": 24,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[24]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十五条 注册会计师在向客户提供专业服务的过程中，可能",
+      "page": 24,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[24]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十六条 本章所称的法律法规，通常包括下列两种类型：",
+      "page": 24,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[24]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十七条 在应对违反法律法规或涉嫌违反法律法规行为时，",
+      "page": 24,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[24]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十八条 违反法律法规行为包括下列各方有意或无意作出",
+      "page": 25,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[25]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十九条 举例来说，本章所述的法律法规包括涉及下列方面",
+      "page": 25,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[25]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十条 违反法律法规行为可能给客户带来罚款、诉讼或其他",
+      "page": 25,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[25]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十一条 某些法律法规可能已就注册会计师如何处理违反",
+      "page": 26,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[26]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十二条 无论客户属于什么性质的实体，以及是否属于公众",
+      "page": 26,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[26]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十三条 如果注册会计师遇到或知悉的事项明显不重要，则",
+      "page": 26,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[26]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十四条 本章的规定不涉及下列行为：",
+      "page": 26,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[26]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 管理层和治理层的责任",
+      "page": 27,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[27]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十五条 客户的管理层负责在治理层的监督下确保客户的",
+      "page": 27,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[27]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 注册会计师的责任",
+      "page": 27,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[27]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十六条 如果注册会计师知悉适用于本章规定的违反法律",
+      "page": 27,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[27]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 执行财务报表审计时应对违反法律法规行为",
+      "page": 27,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[27]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十七条 如果注册会计师在执行财务报表审计时，知悉了有",
+      "page": 27,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[27]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十八条 注册会计师可能在执行业务的过程中或通过其他",
+      "page": 28,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[28]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十九条 在了解和应对违反法律法规或涉嫌违反法律法规",
+      "page": 28,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[28]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十条 根据事项的性质和重要程度，注册会计师可以在遵循",
+      "page": 28,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[28]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十一条 如果注册会计师识别出或怀疑存在已经发生或可",
+      "page": 28,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[28]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十二条 注册会计师需要运用职业判断确定与哪个适当级",
+      "page": 28,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[28]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十三条 适当级别的管理层通常至少比该事项涉及或可能",
+      "page": 29,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[29]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十四条 在适当的情况下，注册会计师还可以考虑与内部审",
+      "page": 29,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[29]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十五条 如果注册会计师认为违反法律法规或涉嫌违反法",
+      "page": 29,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[29]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十六条 在与管理层和治理层（如适用）沟通违反法律法规",
+      "page": 29,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[29]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十七条 注册会计师应当考虑管理层和治理层是否了解其",
+      "page": 29,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[29]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十八条 注册会计师应当遵守下列规定：",
+      "page": 29,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[29]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十九条 在集团审计中，下列两种情况下，如果组成部分注",
+      "page": 30,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[30]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百条 在集团审计中，如果集团项目合伙人知悉违反法律法",
+      "page": 30,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[30]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零一条 如果违反法律法规或涉嫌违反法律法规行为可",
+      "page": 31,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[31]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零二条 针对本守则第九十一条第一款所述的与适当级",
+      "page": 31,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[31]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零三条 注册会计师应当根据管理层和治理层（如适用）",
+      "page": 32,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[32]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零四条 注册会计师应当运用职业判断确定是否需要采",
+      "page": 33,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[33]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零五条 如果注册会计师根据本守则第一百零三条第一",
+      "page": 33,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[33]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零六条 如果拟接任注册会计师无法与前任注册会计师",
+      "page": 34,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[34]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零七条 对事项的评估可能涉及复杂的分析和判断，注册",
+      "page": 34,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[34]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零八条 向适当机构报告该事项的目的是为了使该机构",
+      "page": 34,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[34]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零九条 注册会计师在确定是否向适当机构报告该事项",
+      "page": 34,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[34]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十条 确定是否向适当机构报告主要取决于下列外部",
+      "page": 35,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[35]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十一条 如果注册会计师确定向适当机构报告违反法",
+      "page": 35,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[35]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十二条 在某些情况下，注册会计师可能知悉了或有理",
+      "page": 35,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[35]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十三条 针对违反法律法规或涉嫌违反法律法规行为，",
+      "page": 36,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[36]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十四条 本守则第一百一十三条的规定是对中国注册",
+      "page": 36,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[36]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 提供其他服务时应对违反法律法规行为",
+      "page": 37,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[37]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十五条 如果注册会计师在提供财务报表审计以外的",
+      "page": 37,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[37]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十六条 在了解和应对违反法律法规或涉嫌违反法律",
+      "page": 37,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[37]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十七条 根据事项的性质和重要程度，注册会计师可以",
+      "page": 37,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[37]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十八条 如果注册会计师识别出或怀疑存在已经发生",
+      "page": 37,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[37]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十九条 注册会计师需要运用职业判断确定与哪个适",
+      "page": 37,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[37]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十条 如果注册会计师为下列实体提供非审计服务时",
+      "page": 38,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[38]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十一条 如果注册会计师为下列实体提供非审计服务",
+      "page": 38,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[38]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十二条 如果注册会计师为满足下列条件的实体提供",
+      "page": 38,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[38]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十三条 当注册会计师按照本守则第一百二十条至第",
+      "page": 39,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[39]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十四条 注册会计师按照本守则第一百二十条至第一",
+      "page": 39,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[39]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十五条 注册会计师还应当考虑是否需要为了维护公",
+      "page": 39,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[39]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十六条 注册会计师可以采取的进一步行动包括：",
+      "page": 40,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[40]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十七条 在考虑是否向适当机构报告时，注册会计师需",
+      "page": 40,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[40]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十八条 如果注册会计师确定向适当机构报告违反法",
+      "page": 40,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[40]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十九条 在某些情况下，注册会计师可能知悉了或有理",
+      "page": 40,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[40]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百三十条 注册会计师可能需要考虑下列事项：",
+      "page": 41,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[41]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百三十一条 针对违反法律法规或涉嫌违反法律法规行为，",
+      "page": 41,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[41]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第九章 与治理层的沟通",
+      "page": 41,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[41]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一百三十二条 当按照本守则的规定与治理层沟通时，注册会",
+      "page": 41,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[41]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百三十三条 如果注册会计师与同时承担管理层职责和治",
+      "page": 42,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[42]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百三十四条 在确定具体沟通对象时，注册会计师可能需要",
+      "page": 42,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[42]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百三十五条 在某些情况下，治理层全部成员均参与客户的",
+      "page": 42,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[42]/block[10]/line[1]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

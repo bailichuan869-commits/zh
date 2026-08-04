@@ -1,0 +1,523 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:51:33+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第22号-金融工具确认和计量-财会〔2017〕7号.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第22号-金融工具确认和计量-财会〔2017〕7号.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 63,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第22号-金融工具确认和计量-财会〔2017〕7号",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范金融工具的确认和计量，根据《企业会计准则 —— 基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 金融工具，是指形成一方的金融资产并形成其他方的金融负债或权益工具的合同。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 金融资产，是指企业持有的现金、其他方的权益工具以及符合下列条件之一的资产：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 金融负债，是指企业符合下列条件之一的负债：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[9]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 衍生工具，是指属于本准则范围并同时具备下列特征的金融工具或其他合同：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[14]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 除下列各项外，本准则适用于所有企业各种类型的金融工具：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[19]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 本准则适用于下列贷款承诺：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[34]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 对于能够以 现金或其他金融工具净额结算，或者通过交换金融工具结算的 买入或卖出非金融项目的合同，除了企业按照预定的购买、销售或使用要求签订并持有旨在收取或交付非金融项目的合同适用其他相关会计准则外，企业应当将该合同视同金融工具，适用本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[40]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 金融工具的确认和终止确认",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[43]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 企业成为 金融工具合同的一方时，应当确认一项金融资产或金融负债。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[44]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 对于以 常规方式购买或出售金融资产的，企业应当 在交易日确认将收到的资产和为此将承担的负债，或者在交易日终止确认已出售的资产，同时确认处置利得或损失以及应向买方收取的应收款项。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[45]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 金融资产满足下列条件之一的，应当终止确认：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[47]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 金融负债（或其一部分）的现时义务已经解除的，企业应当终止确认该金融负债（或该部分金融负债）。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[51]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 企业（借入方）与借出方之间签订协议，以承担新金融负债方式替换原金融负债，且新金融负债与原金融负债的合同条款实质上不同的，企业应当 终止确认原金融负债，同时确认一项新金融负债。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[52]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 金融负债（或其一部分）终止确认的，企业应当将其账面价值与支付的对价（包括转出的非现金资产或承担的负债）之间的差额，计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[54]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 企业回购金融负债一部分的，应当按照继续确认部分和终止确认部分在回购日各自的公允价值占整体公允价值的比例，对该金融负债整体的账面价值进行分配。分配给终止确认部分的账面价值与支付的对价（包括转出的非现金资产或承担的负债）之间的差额，应当计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[55]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 金融资产的分类",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[56]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十六条 企业应当根据其管理金融资产的业务模式和金融资产的合同现金流量特征，将金融资产划分为以下三类：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[57]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十七条 金融资产同时符合下列条件的，应当分类为以摊余成本计量的金融资产：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[63]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十八条 金融资产同时符合下列条件的，应当分类为以公允价值计量且其变动计入其他综合收益的金融资产：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[66]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十九条 按照本准则第十七条分类为以摊余成本计量的金融资产和按照本准则第十八条分类为以公允价值计量且其变动计入其他综合收益的金融资产之外的金融资产，企业应当将其分类为以公允价值计量且其变动计入当期损益的金融资产。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[69]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十条 在初始确认时，如果能够消除或显著减少会计错配，企业可以将金融资产指定为以公允价值计量且其变动计入当期损益的金融资产。该指定一经做出，不得撤销。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[75]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 金融负债的分类",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[76]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十一条 除下列各项外，企业应当将金融负债分类为以摊余成本计量的金融负债：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[77]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十二条 在初始确认时，为了提供更相关的会计信息，企业可以将金融负债指定为以公允价值计量且其变动计入当期损益的金融负债，但该指定应当满足下列条件之一：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[82]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 嵌入衍生工具",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[86]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十三条 嵌入衍生工具，是指嵌入到非衍生工具（即主合同）中的衍生工具。嵌入衍生工具与主合同构成混合合同。该嵌入衍生工具对混合合同的现金流量产生影响的方式，应当与单独存在的衍生工具类似，且该混合合同的全部或部分现金流量随特定利率、金融工具价格、商品价格、汇率、价格指数、费率指数、信用等级、信用指数或其他变量变动而变 动 ，变量为非金融变量的，该变量不应与合同的任何一方存在特定关系。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[87]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十四条 混合合同包含的主合同属于本准则规范的资产的，企业不应从该混合合同中分拆嵌入衍生工具，而应当将该混合合同作为一个整体适用本准则关于金融资产分类的相关规定。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[89]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十五条 混合合同包含的主合同不属于本准则规范的资产， 且同时符合下列条件的，企业应当从混合合同中分拆嵌入衍生工具，将其作为单独存在的衍生工具处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[90]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十六条 混合合同包含一项或多项嵌入衍生工具 ，且其主合同不属于本准则规范的资产的，企业可以将其整体指定为以公允价值计量且其变动计入当期损益的金融工具。但下列情况除外：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[95]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 金融工具的重分类",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[98]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十七条 企业改变其管理金融资产的业务模式时，应当按照本准则的规定对所有受影响的相关金融资产进行重分类。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[99]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十八条 企业发生下列情况的，不属于金融资产或金融负债的重分类：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[101]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七章 金融工具的计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[114]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十四条 企业应当根据《企业会计准则第 39 号 —— 公允价值计量》的规定，确定金融资产和金融负债在初始确认时的公允价值。公允价值通常为相关金融资产或金融负债的交易价格。金融资产或金融负债公允价值与交易价格存在差异的，企业应当区别下列情况进行处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[117]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四十四条 企业对权益工具的投资和与此类投资相联系的合同应当以公允价值计量。但在有限情况下，如果用以确定公允价值的近期信息不足，或者公允价值的可能估计金额分布范围很广，而成本代表了该范围内对公允价值的最佳估计的，该成本可代表其在该分布范围内对公允价值的恰当估计。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[145]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四十五条 权益工具投资或合同存在报价的，企业不应当将成本作为对其公允价值的最佳估计。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[154]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第八章 金融工具的减值",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[155]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四十七条 预期信用损失，是指以发生违约的风险为权重的金融工具信用损失的加权平均值。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[162]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五十九条 对于适用本准则金融工具减值规定的各类金融工具，企业应当按照下列方法确定其信用损失：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[188]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第九章 利得和损失",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[203]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六十七条 属于套期关系中被套期项目的金融资产或金融负债所产生的利得或损失，应当按照《企业会计准则第 24 号 —— 套期会计》相关规定进行处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[215]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六十八条 企业根据本准则第二十二条和第二十六条规定将金融负债指定为以公允价值计量且其变动计入当期损益的金融负债的，该金融负债所产生的利得或损失应当按照下列规定进行处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[216]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六十九条 企业根据本准则第十九条规定将非交易性权益工具投资指定为以公允价值计量且其变动计入其他综合收益的金融资产的，当该金融资产终止确认时，之前计入其他综合收益的累计利得或损失应当从其他综合收益中转出，计入留存收益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[221]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七十条 指定为以公允价值计量且其变动计入当期损益的金融负债的财务担保合同和不可撤销贷款承诺所产生的全部利得或损失，应当计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[222]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七十一条 按照本准则第十八条分类为以公允价值计量且其变动计入其他综合收益的金融资产所产生的所有利得或损失，除减值利得或损失和汇兑损益之外，均应当计入其他综合收益，直至该金融资产终止确认或被重分类。但是，采用实际利率法计算的该金融资产的利息应当计入当期损益。该金融资产计入各期损益的金额应当与视同其一直按摊余成本计量而计入各期损益的金额相等。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[223]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十章 衔接规定",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[226]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七十二条 本准则施行日之前的金融工具确认和计量与本准则要求不一致的，企业应当追溯调整，但本准则第七十三条至八十三条另有规定的除外。在本准则施行日已经终止确认的项目不适用本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[227]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七十三条 在本准则施行日，企业应当按照本准则的规定对金融工具进行分类和计量（含减值），涉及前期比较财务报表数据与本准则要求不一致的，无需调整。金融工具原账面价值和在本准则施行日的新账面价值之间的差额，应当计入本准则施行日所在年度报告期间的期初留存收益或其他综合收益。同时，企业应当按照《企业会计准则第 37 号——金融工具列报》的相关规定在附注中进行披露。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[228]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七十四条 在本准则施行日，企业应当以该日的既有事实和情况为基础，根据本准则第十七条（一）或第十八条（一）的相关规定评估其管理金融资产的业务模式是以收取合同现金流量为目标，还是以既收取合同现金流量又出售金融资产为目标，并据此确定金融资产的分类，进行追溯调整，无须考虑企业之前的业务模式。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[230]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七十五条 在本准则施行日，企业在考虑具有本准则第十六条所述修正的货币时间价值要素的金融资产的合同现金流量特征时，需要对特定货币时间价值要素修正进行评估的，该评估应当以该金融资产初始确认时存在的事实和情况为基础。该评估不切实可行的，企业不应考虑本准则关于货币时间价值要素修正的规定。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[231]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七十六条 在本准则施行日，企业在考虑具有本准则第十六条所述提前偿付特征的金融资产的合同现金流量特征时，需要对该提前偿付特征的公允价值是否非常小进行评估的，该评估应当以该金融资产初始确认时存在的事实和情况为基础。该评估不切实可行的，企业不应考虑本准则关于提前偿付特征例外情形的规定。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[232]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七十七条 在本准则施行日，企业存在根据本准则相关规定应当以公允价值计量的混合合同但之前未以公允价值计量的，该混合合同在前期比较财务报表期末的公允价值应当等于其各组成部分在前期比较财务报表期末公允价值之和。在本准则施行日，企业应当将整个混合合同在该日的公允价值与该混合合同各组成部分在该日的公允价值之和之间的差额，计入本准则施行日所在报告期间的期初留存收益或其他综合收益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[233]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七十八条 在本准则施行日，企业应当以该日的既有事实和情况为基础，根据本准则的相关规定，对相关金融资产进行指定或撤销指定，并追溯调整：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[234]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七十九条 在本准则施行日，企业应当以该日的既有事实和情况为基础，根据本准则的相关规定，对相关金融负债进行指定或撤销指定，并追溯调整：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[237]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八十条 在本准则施行日，企业按照本准则规定对相关金融资产或金融负债以摊余成本进行计量、应用实际利率法追溯调整不切实可行的，应当按照以下原则进行处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[240]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八十一条 在本准则施行日，对于之前以成本计量的、在活跃市场中没有报价且其公允价值不能可靠计量的权益工具投资或与该权益工具挂钩并须通过交付该工具进行结算的衍生金融资产，企业应当以其在本准则施行日的公允价值计量。原账面价值与公允价值之间的差额，应当计入本准则施行日所在报告期间的期初留存收益或其他综合收益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[243]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八十二条 在本准则施行日，企业存在根据本准则第二十二条规定将金融负债指定为以公允价值计量且其变动计入当期损益的金融负债，并且按照本准则第六十八条（一）规定将由企业自身信用风险变动引起的该金融负债公允价值的变动金额计入其他综合收益的，企业应当以该日的既有事实和情况为基础，判断按照上述规定处理是否将会造成或扩大损益的会计错配，进而确定是否应当将该金融负债的全部利得或损失（包括企业自身信用风险变动的影响金额）计入当期损益，并按照上述结果追溯调整。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[245]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八十三条 在本准则施行日，企业按照本准则计量金融工具减值的，应当使用无须付出不必要的额外成本或努力即可获得的合理且有依据的信息，确定金融工具在初始确认日的信用风险，并将该信用风险与本准则施行日的信用风险进行比较。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[246]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十一章 附 则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[248]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八十四条 本准则自 2018 年 1 月 1 日起施行。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[249]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class SearchResult(BaseModel):
@@ -56,3 +56,25 @@ class HealthResponse(BaseModel):
     index_ready: bool
     wiki_pages: int
     backlink_targets: int
+
+
+class AnswerRequest(BaseModel):
+    question: str = Field(min_length=2, max_length=1000)
+    topic: str = Field(default="", max_length=100)
+
+
+class AnswerCitation(BaseModel):
+    path: str
+    title: str
+    excerpt: str
+    source_url: str = ""
+    maturity: str = ""
+    authority: str = ""
+    answer_ready: bool = False
+
+
+class AnswerResponse(BaseModel):
+    answer: str = ""
+    citations: list[AnswerCitation]
+    confidence: str
+    insufficient_evidence: bool

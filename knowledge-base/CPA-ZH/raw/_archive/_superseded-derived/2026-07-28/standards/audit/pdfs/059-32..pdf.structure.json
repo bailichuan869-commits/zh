@@ -1,0 +1,155 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:35:27+00:00",
+  "source_file": "raw/_archive/standards/audit/pdfs/059-32..pdf",
+  "derived_file": "raw/standards/audit/pdfs/059-32..pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 64,
+  "heading_count": 17,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "32.",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "《中国注册会计师其他鉴证业务准则第",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[2]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "3111 号——预测性财务信息的审核》",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "应用指南",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[2]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 保证程度",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 接受业务委托",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 了解被审核单位情况",
+      "page": 11,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[11]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 涵盖期间",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 审核程序",
+      "page": 18,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[18]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七章 列 报",
+      "page": 27,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[27]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第八章 审核报告",
+      "page": 28,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[28]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "预测性财务信息审核报告的参考格式",
+      "page": 33,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[33]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "预测性财务信息审核业务约定书参考格式",
+      "page": 40,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[40]/block[2]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "（合同式，以预测的审核业务为例）",
+      "page": 40,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[40]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "审核程序表参考范例",
+      "page": 47,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[47]/block[2]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "管理层声明书范例",
+      "page": 59,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[59]/block[3]/line[1]",
+      "confidence": 0.85
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

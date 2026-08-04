@@ -7,6 +7,8 @@ updated: 2026-06-26
 raw_path: raw/standards/accounting/
 tags: [accounting, standards, implementation-qa, official-download, p1-core]
 related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounting-standards-download-2026-06-26]]
+domain: sources
+topic: batches
 ---
 
 # 企业会计准则实施问答下载批次
@@ -15,11 +17,11 @@ related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounti
 
 本批次从财政部会计司“企业会计准则”专题下的“实施问答”栏目下载：
 
-- 栏目首页：`raw/standards/accounting/mof-accounting-standards-implementation-qa.html`
+- 栏目首页：`raw/standards/accounting/mof-accounting-standards-implementation-qa.html.md`
 - 子栏目索引页：`raw/standards/accounting/implementation-qa-indexes/`
 - 实施问答 HTML 原文：`raw/standards/accounting/implementation-qa-pages-v2/`
-- 子栏目清单：`raw/standards/accounting/downloaded-enterprise-accounting-standards-implementation-qa-categories.csv`
-- 下载清单：`raw/standards/accounting/downloaded-enterprise-accounting-standards-implementation-qa-v2.csv`
+- 子栏目清单：`raw/standards/accounting/downloaded-enterprise-accounting-standards-implementation-qa-categories.csv.md`
+- 下载清单：`raw/standards/accounting/downloaded-enterprise-accounting-standards-implementation-qa-v2.csv.md`
 
 ## 下载结果
 

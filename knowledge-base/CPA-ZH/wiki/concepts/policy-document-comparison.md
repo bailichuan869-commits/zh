@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [2026-06-26-initial-structure, archived-cpa-competition-policy-pages]
 tags: [policy, comparison, p2-important]
 related: [[concepts/policy-documents]], [[concepts/policy-implementation-map]], [[concepts/policy-official-link-checklist]]
+domain: policies
+topic: trackers
 ---
 
 # 第二板块政策文件对照表

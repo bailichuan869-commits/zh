@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "text/html",
   "bytes": 25621,
-  "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-release-2009/official.html"
+  "local_file": "raw/ethics/third-section/ethics-code-release-2009/official.html",
+  "derived_markdown": "raw/ethics/third-section/ethics-code-release-2009/official.html.md",
+  "derived_sha256": "dea480406cda7af3b6d14e926d78092914e6b53a1893117b77ce8b8e2c9f2426",
+  "text_extraction_status": "ok",
+  "sha256": "f29c0a48ab67cdfa66e7ff2ea9e35354fde8b710d41b2c881e835d318c549924",
+  "archive_policy": "dual-track"
 }

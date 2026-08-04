@@ -3,10 +3,12 @@ title: 行业重要法规与准则
 type: concept
 concept_type: framework
 created: 2026-06-26
-updated: 2026-06-26
-sources: [2026-06-26-initial-structure]
+updated: 2026-07-14
+sources: [2026-06-26-initial-structure, challenge-knowledge-source-summary-2026-07-13]
 tags: [cpa, law, standards, p1-core]
 related: [[concepts/law-cpa]], [[concepts/law-accounting]], [[concepts/law-company]], [[concepts/law-securities]], [[concepts/accounting-standards-system]], [[concepts/audit-standards-system]]
+domain: laws
+topic: overview
 ---
 
 # 行业重要法规与准则
@@ -16,6 +18,11 @@ related: [[concepts/law-cpa]], [[concepts/law-accounting]], [[concepts/law-compa
 ## 完成度
 
 - [[concepts/first-section-completion-map]] - 第一板块完成度、关键索引文件和后续清单。
+
+## 版本提醒
+
+- 《中华人民共和国注册会计师法》按 2026-07-13 来源汇总已出现 2026-06-26 修订、2027-01-01 施行的最新版本线索；当前知识库中的 46 个注册会计师法条款页为 2014 修正版历史索引。
+- 正式引用注册会计师法时，应优先使用 2026 修订后的官方最新文本；知识库将在取得官方全文后重建 [[concepts/law-cpa]] 和 [[concepts/laws/cpa-law/index]]。
 
 ## 子专题
 
@@ -32,9 +39,9 @@ related: [[concepts/law-cpa]], [[concepts/law-accounting]], [[concepts/law-compa
 ## 资料总表
 
 - [[sources/first-section-master-index-2026-06-26]] - 汇总本板块 raw 层已纳入资料 476 条，包括 4 部核心法律、315 条企业会计准则体系资料、85 个中注协准则 PDF/解压附件，以及 72 条中注协执业准则专题索引条目。
-- 明细文件：`raw/indexes/first-section-master-index.csv`
+- 明细文件：`raw/indexes/first-section-master-index.csv.md`
 - 总览文件：`raw/indexes/first-section-master-index.md`
-- [[sources/core-laws-article-index-2026-06-26]] - 四部核心法律条款级索引，生成 589 条条款页记录。
+- [[sources/core-laws-article-index-2026-06-26]] - 四部核心法律条款级索引，生成 589 条条款页记录；其中注册会计师法条款页已标记为修订前历史索引。
 - [[sources/enterprise-accounting-standards-number-index-2026-06-26]] - 企业会计准则编号级索引，去重后 296 条资料记录，其中 216 条已映射到具体准则编号。
 - [[sources/accounting-interpretations-index-2026-06-26]] - 企业会计准则解释 1-20 号编号级索引。
 - [[concepts/accounting-standards/calibration/index]] - 企业会计准则未映射资料校准入口。

@@ -68,6 +68,9 @@ def main() -> int:
     raw_structure_parser.add_argument(
         "--output", default="workspace/outputs/raw_structure_audit.md", help="Markdown report path."
     )
+    raw_structure_parser.add_argument(
+        "--write-maintenance-report", action="store_true", help="Also write wiki/_maintenance/raw-structure-review.md."
+    )
     raw_reextract_parser = subparsers.add_parser(
         "raw-reextract", help="Rebuild raw Markdown with source-backed structure."
     )
@@ -106,8 +109,10 @@ def main() -> int:
     ingest_parser.add_argument("--wiki-page", default="", help="Wiki page to link manifest items to.")
     ingest_parser.add_argument("--tags", default="", help="Comma-separated tags.")
     ingest_parser.add_argument("--source-page", default="", help="Optional wiki/sources page slug to create.")
+    ingest_parser.add_argument("--source-label", default="", help="Portable source label stored instead of the local path.")
     ingest_parser.add_argument("--imported-on", default="", help="Import date, defaults to today.")
     ingest_parser.add_argument("--append", action="store_true", help="Append to an existing batch manifest.")
+    ingest_parser.add_argument("--derived-markdown", default="", help="Extracted Markdown for a single source file.")
     ingest_parser.add_argument("--commit", action="store_true", help="Actually copy files and write metadata.")
 
     case_card_parser = subparsers.add_parser("case-card", help="Generate a draft case card from a local source file.")
@@ -124,11 +129,6 @@ def main() -> int:
 
     case_index_parser = subparsers.add_parser("case-index", help="Suggest case-topic-index back-links.")
     case_index_parser.add_argument("--write-report", action="store_true", help="Write the suggestion report.")
-    case_index_parser.add_argument(
-        "--apply-batch-index",
-        action="store_true",
-        help="Append/update the generated batch-case index section in case-topic-index.",
-    )
     case_index_parser.add_argument(
         "--output",
         default="wiki/concepts/case-index-suggestion-report.md",
@@ -149,25 +149,6 @@ def main() -> int:
     qa_parser.add_argument("--asked-on", default="", help="Question date, defaults to today in the helper.")
     qa_parser.add_argument("--commit", action="store_true", help="Write the question page.")
     qa_parser.add_argument("--overwrite", action="store_true", help="Overwrite an existing question page.")
-
-    qa_summary_parser = subparsers.add_parser("qa-summary-index", help="Build a split workbench for a long local Q&A summary.")
-    qa_summary_parser.add_argument("--source", required=True, help="Extracted Markdown source under the project or KB root.")
-    qa_summary_parser.add_argument(
-        "--output",
-        default="wiki/concepts/chen-teacher-qa-split-workbench.md",
-        help="Output path under the knowledge base root.",
-    )
-    qa_summary_parser.add_argument("--commit", action="store_true", help="Write the workbench page.")
-
-    qa_batch_parser = subparsers.add_parser("qa-batch-process", help="Process a long Q&A summary into case cards and a classification dashboard.")
-    qa_batch_parser.add_argument("--source", required=True, help="Extracted Markdown source under the project root.")
-    qa_batch_parser.add_argument("--max-cards", type=int, default=12, help="Maximum case cards to create in this run.")
-    qa_batch_parser.add_argument("--start-no", type=int, default=1, help="Only consider entries with number >= this value.")
-    qa_batch_parser.add_argument("--commit", action="store_true", help="Write case cards and classification page.")
-    qa_batch_parser.add_argument("--overwrite", action="store_true", help="Overwrite existing generated case cards.")
-
-    qa_feature_parser = subparsers.add_parser("qa-feature-cases", help="Create one featured Chen Q&A case card per topic.")
-    qa_feature_parser.add_argument("--commit", action="store_true", help="Write featured case cards and featured index.")
 
     archive_doc_parser = subparsers.add_parser("archive-doc", help="Archive one official/local source document.")
     archive_doc_parser.add_argument("--source", required=True, help="Local source file to archive.")
@@ -255,10 +236,13 @@ def main() -> int:
             repair_args.append("--apply")
         return run_script("kb_raw_repair.py", args.root, repair_args)
     if args.command == "raw-structure-audit":
+        structure_args = ["audit", "--scope", args.scope, "--output", args.output]
+        if args.write_maintenance_report:
+            structure_args.append("--write-maintenance-report")
         return run_script(
             "kb_raw_structure.py",
             args.root,
-            ["audit", "--scope", args.scope, "--output", args.output],
+            structure_args,
         )
     if args.command == "raw-reextract":
         structure_args = [
@@ -297,7 +281,9 @@ def main() -> int:
             "--wiki-page": args.wiki_page,
             "--tags": args.tags,
             "--source-page": args.source_page,
+            "--source-label": args.source_label,
             "--imported-on": args.imported_on,
+            "--derived-markdown": args.derived_markdown,
         }
         add_present_options(ingest_args, optional_pairs)
         add_enabled_flags(ingest_args, {"--append": args.append, "--commit": args.commit})
@@ -320,8 +306,6 @@ def main() -> int:
         case_index_args: list[str] = []
         if args.write_report:
             case_index_args.append("--write-report")
-        if args.apply_batch_index:
-            case_index_args.append("--apply-batch-index")
         if args.output != "wiki/concepts/case-index-suggestion-report.md":
             case_index_args.extend(["--output", args.output])
         return run_script("kb_case_index_suggest.py", args.root, case_index_args)
@@ -343,30 +327,6 @@ def main() -> int:
         add_present_options(qa_args, optional_pairs)
         add_enabled_flags(qa_args, {"--commit": args.commit, "--overwrite": args.overwrite})
         return run_script("kb_qa_capture.py", args.root, qa_args)
-    if args.command == "qa-summary-index":
-        qa_summary_args = ["--source", args.source, "--output", args.output]
-        if args.commit:
-            qa_summary_args.append("--commit")
-        return run_script("kb_qa_summary_index.py", args.root, qa_summary_args)
-    if args.command == "qa-batch-process":
-        qa_batch_args = [
-            "--source",
-            args.source,
-            "--max-cards",
-            str(args.max_cards),
-            "--start-no",
-            str(args.start_no),
-        ]
-        if args.commit:
-            qa_batch_args.append("--commit")
-        if args.overwrite:
-            qa_batch_args.append("--overwrite")
-        return run_script("kb_qa_batch_process.py", args.root, qa_batch_args)
-    if args.command == "qa-feature-cases":
-        qa_feature_args: list[str] = []
-        if args.commit:
-            qa_feature_args.append("--commit")
-        return run_script("kb_feature_qa_cases.py", args.root, qa_feature_args)
     if args.command == "archive-doc":
         archive_args = [
             "--source",

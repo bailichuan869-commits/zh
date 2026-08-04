@@ -7,6 +7,8 @@ updated: 2026-06-29
 sources: [2026-06-26-initial-structure, third-section-official-archive-2026-06-29]
 tags: [ethics, cpa, integrity, p1-core]
 related: [[concepts/history-ethics-independence]], [[concepts/independence-standard-1]], [[concepts/policy-integrity]], [[concepts/policy-execution-checklist]]
+domain: ethics
+topic: code
 ---
 
 # 中国注册会计师职业道德守则
@@ -19,17 +21,17 @@ related: [[concepts/history-ethics-independence]], [[concepts/independence-stand
 
 | 文件 | 本地归档 | 状态 |
 |---|---|---|
-| 中注协职业道德规范专题页 | `raw/ethics/third-section/professional-ethics-index/official.html` | 已归档 |
-| 职业道德守则（2020）通知 | `raw/ethics/third-section/ethics-code-2020-notice/official.html` | 已归档 |
-| 职业道德守则发布历史材料（2009） | `raw/ethics/third-section/ethics-code-release-2009/official.html` | 历史参考 |
-| 第1号：职业道德基本原则 | `raw/ethics/third-section/ethics-code-2020-no1-basic-principles/official.pdf` | 已归档 |
-| 第2号：职业道德概念框架 | `raw/ethics/third-section/ethics-code-2020-no2-conceptual-framework/official.pdf` | 已归档 |
-| 第3号：提供专业服务的具体要求 | `raw/ethics/third-section/ethics-code-2020-no3-professional-services/official.pdf` | 已归档 |
-| 第4号：审计和审阅业务对独立性的要求 | `raw/ethics/third-section/ethics-code-2020-no4-audit-review-independence-superseded/official.pdf` | 已被独立性准则及应用指南替代 |
-| 第5号：其他鉴证业务对独立性的要求 | `raw/ethics/third-section/ethics-code-2020-no5-other-assurance-independence/official.pdf` | 已归档 |
-| 术语表 | `raw/ethics/third-section/ethics-code-2020-glossary/official.pdf` | 已归档 |
-| 非执业会员职业道德守则 | `raw/ethics/third-section/ethics-code-2020-non-practicing-members/official.pdf` | 已归档 |
-| 非执业会员职业道德守则术语表 | `raw/ethics/third-section/ethics-code-2020-non-practicing-members-glossary/official.pdf` | 已归档 |
+| 中注协职业道德规范专题页 | `raw/ethics/third-section/professional-ethics-index/official.html.md` | 已归档 |
+| 职业道德守则（2020）通知 | `raw/ethics/third-section/ethics-code-2020-notice/official.html.md` | 已归档 |
+| 职业道德守则发布历史材料（2009） | `raw/ethics/third-section/ethics-code-release-2009/official.html.md` | 历史参考 |
+| 第1号：职业道德基本原则 | `raw/ethics/third-section/ethics-code-2020-no1-basic-principles/official.pdf.md` | 已归档 |
+| 第2号：职业道德概念框架 | `raw/ethics/third-section/ethics-code-2020-no2-conceptual-framework/official.pdf.md` | 已归档 |
+| 第3号：提供专业服务的具体要求 | `raw/ethics/third-section/ethics-code-2020-no3-professional-services/official.pdf.md` | 已归档 |
+| 第4号：审计和审阅业务对独立性的要求 | `raw/ethics/third-section/ethics-code-2020-no4-audit-review-independence-superseded/official.pdf.md` | 已被独立性准则及应用指南替代 |
+| 第5号：其他鉴证业务对独立性的要求 | `raw/ethics/third-section/ethics-code-2020-no5-other-assurance-independence/official.pdf.md` | 已归档 |
+| 术语表 | `raw/ethics/third-section/ethics-code-2020-glossary/official.pdf.md` | 已归档 |
+| 非执业会员职业道德守则 | `raw/ethics/third-section/ethics-code-2020-non-practicing-members/official.pdf.md` | 已归档 |
+| 非执业会员职业道德守则术语表 | `raw/ethics/third-section/ethics-code-2020-non-practicing-members-glossary/official.pdf.md` | 已归档 |
 
 ## 体系结构
 

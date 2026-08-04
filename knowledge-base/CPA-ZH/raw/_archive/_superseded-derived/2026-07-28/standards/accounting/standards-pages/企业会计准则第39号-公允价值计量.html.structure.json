@@ -1,0 +1,555 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:34:46+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第39号-公允价值计量.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第39号-公允价值计量.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 67,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第39号-公允价值计量",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范公允价值的计量和披露，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 公允价值，是指市场参与者在计量日发生的有序交易中，出售一项资产所能收到或者转移一项负债所需支付的价格。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 本准则适用于其他相关会计准则要求或者允许采用公允价值进行计量或披露的情形，本准则第四条和第五条所列情形除外。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 下列各项的计量和披露适用其他相关会计准则：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[5]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 下列各项的披露适用其他相关会计准则：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[9]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 相关资产或负债",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[13]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 企业以公允价值计量相关资产或负债，应当考虑该资产或负债的特征。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[14]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 以公允价值计量的相关资产或负债可以是单项资产或负债（如一项金融工具、一项非金融资产等），也可以是资产组合、负债组合或者资产和负债的组合（如《企业会计准则第8号——资产减值》规范的资产组、《企业会计准则第20号——企业合并》规范的业务等）。企业是以单项还是以组合的方式对相关资产或负债进行公允价值计量，取决于该资产或负债的计量单元。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[16]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 有序交易和市场",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[18]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 企业以公允价值计量相关资产或负债，应当假定市场参与者在计量日出售资产或者转移负债的交易，是在当前市场条件下的有序交易。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[19]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 企业以公允价值计量相关资产或负债，应当假定出售资产或者转移负债的有序交易在相关资产或负债的主要市场进行。不存在主要市场的，企业应当假定该交易在相关资产或负债的最有利市场进行。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[21]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 企业在识别主要市场（或最有利市场）时，应当考虑所有可合理取得的信息，但没有必要考察所有市场。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[26]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 主要市场（或最有利市场）应当是企业在计量日能够进入的交易市场，但不要求企业于计量日在该市场上实际出售资产或者转移负债。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[28]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 企业应当以主要市场的价格计量相关资产或负债的公允价值。不存在主要市场的，企业应当以最有利市场的价格计量相关资产或负债的公允价值。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[30]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 当计量日不存在能够提供出售资产或者转移负债的相关价格信息的可观察市场时，企业应当从持有资产或者承担负债的市场参与者角度，假定计量日发生了出售资产或者转移负债的交易，并以该假定交易的价格为基础计量相关资产或负债的公允价值。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[33]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 市场参与者",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[34]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 企业以公允价值计量相关资产或负债，应当采用市场参与者在对该资产或负债定价时为实现其经济利益最大化所使用的假设。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[35]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 企业在确定市场参与者时，应当考虑所计量的相关资产或负债、该资产或负债的主要市场（或最有利市场）以及在该市场上与企业进行交易的市场参与者等因素，从总体上识别市场参与者。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[40]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 公允价值初始计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[41]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十六条 企业应当根据交易性质和相关资产或负债的特征等，判断初始确认时的公允价值是否与其交易价格相等。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[42]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十七条 其他相关会计准则要求或者允许企业以公允价值对相关资产或负债进行初始计量，且其交易价格与公允价值不相等的，企业应当将相关利得或损失计入当期损益，但其他相关会计准则另有规定的除外。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[48]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 估值技术",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[49]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十八条 企业以公允价值计量相关资产或负债，应当采用在当前情况下适用并且有足够可利用数据和其他信息支持的估值技术。企业使用估值技术的目的，是为了估计在计量日当前市场条件下，市场参与者在有序交易中出售一项资产或者转移一项负债的价格。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[50]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十九条 企业在估值技术的应用中，应当优先使用相关可观察输入值，只有在相关可观察输入值无法取得或取得不切实可行的情况下，才可以使用不可观察输入值。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[55]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十条 企业以交易价格作为初始确认时的公允价值，且在公允价值后续计量中使用了涉及不可观察输入值的估值技术的，应当在估值过程中校正该估值技术，以使估值技术确定的初始确认结果与交易价格相等。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[59]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十一条 公允价值计量使用的估值技术一经确定，不得随意变更，但变更估值技术或其应用能使计量结果在当前情况下同样或者更能代表公允价值的情况除外，包括但不限于下列情况：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[61]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十二条 企业采用估值技术计量公允价值时，应当选择与市场参与者在相关资产或负债的交易中所考虑的资产或负债特征相一致的输入值，包括流动性折溢价、控制权溢价或少数股东权益折价等，但不包括与本准则第七条规定的计量单元不一致的折溢价。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[68]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十三条 以公允价值计量的相关资产或负债存在出价和要价的，企业应当以在出价和要价之间最能代表当前情况下公允价值的价格确定该资产或负债的公允价值。企业可以使用出价计量资产头寸、使用要价计量负债头寸。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[70]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七章 公允价值层次",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[72]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十四条 企业应当将公允价值计量所使用的输入值划分为三个层次，并首先使用第一层次输入值，其次使用第二层次输入值，最后使用第三层次输入值。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[73]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十五条 第一层次输入值为公允价值提供了最可靠的证据。在所有情况下，企业只要能够获得相同资产或负债在活跃市场上的报价，就应当将该报价不加调整地应用于该资产或负债的公允价值计量，但下列情况除外：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[78]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十六条 企业在使用第二层次输入值对相关资产或负债进行公允价值计量时，应当根据该资产或负债的特征，对第二层次输入值进行调整。这些特征包括资产状况或所在位置、输入值与类似资产或负债的相关程度（包括本准则第三十四条（二）规定的因素）、可观察输入值所在市场的交易量和活跃程度等。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[83]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十七条 企业只有在相关资产或负债不存在市场活动或者市场活动很少导致相关可观察输入值无法取得或取得不切实可行的情况下，才能使用第三层次输入值，即不可观察输入值。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[91]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十八条 企业在确定不可观察输入值时，应当使用在当前情况下可合理取得的最佳信息，包括所有可合理取得的市场参与者假设。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[93]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第八章 非金融资产的公允价值计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[95]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十九条 企业以公允价值计量非金融资产，应当考虑市场参与者将该资产用于最佳用途产生经济利益的能力，或者将该资产出售给能够用于最佳用途的其他市场参与者产生经济利益的能力。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[96]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十条 企业确定非金融资产的最佳用途，应当考虑法律上是否允许、实物上是否可能以及财务上是否可行等因素。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[98]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十一条 企业应当从市场参与者的角度确定非金融资产的最佳用途。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[102]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十二条 企业以公允价值计量非金融资产，应当基于最佳用途确定下列估值前提：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[104]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第九章 负债和企业自身权益工具的公允价值计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[108]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十三条 企业以公允价值计量负债，应当假定在计量日将该负债转移给其他市场参与者，而且该负债在转移后继续存在，并由作为受让方的市场参与者履行义务。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[109]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十四条 企业以公允价值计量负债或自身权益工具，应当遵循下列原则：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[111]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十五条 企业以公允价值计量负债，应当考虑不履约风险，并假定不履约风险在负债转移前后保持不变。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[116]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十六条 企业以公允价值计量负债或自身权益工具，并且该负债或自身权益工具存在限制转移因素的，如果公允价值计量的输入值中已经考虑了该因素，企业不应当再单独设置相关输入值，也不应当对其他输入值进行相关调整。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[118]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十七条 企业以公允价值计量活期存款等具有可随时要求偿还特征的金融负债的，该金融负债的公允价值不应当低于债权人随时要求偿还时的应付金额，即从债权人可要求偿还的第一天起折现的现值。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[119]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十章 市场风险或信用风险可抵销的金融资产和金融负债的公允价值计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[120]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十八条 企业以市场风险或信用风险的净敞口为基础管理金融资产和金融负债的，可以以计量日市场参与者在当前市场条件下有序交易中出售净多头（即资产）或者转移净空头（即负债）的价格为基础，计量该金融资产和金融负债组合的公允价值。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[121]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十九条 企业按照本准则第三十八条规定计量金融资产和金融负债组合的公允价值的，应当同时满足下列条件：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[124]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四十条 企业按照本准则第三十八条规定计量金融资产和金融负债组合的公允价值的，该金融资产和金融负债面临的特定市场风险及其期限实质上应当相同。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[128]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四十一条 企业采用本准则第三十八条规定的，应当按照《企业会计准则第28号——会计政策、会计估计变更和差错更正》的规定确定相关会计政策，并且一经确定，不得随意变更。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[130]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十一章 公允价值披露",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[131]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四十二条 企业应当根据相关资产或负债的性质、特征、风险以及公允价值计量的层次对该资产或负债进行恰当分组，并按照组别披露公允价值计量的相关信息。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[132]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四十三条 企业应当区分持续的公允价值计量和非持续的公允价值计量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[135]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四十四条 在相关资产或负债初始确认后的每个资产负债表日，企业至少应当在附注中披露持续以公允价值计量的每组资产和负债的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[138]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四十五条 在相关资产或负债初始确认后的资产负债表中，企业至少应当在附注中披露非持续以公允价值计量的每组资产和负债的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[149]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四十六条 企业调整公允价值计量层次转换时点的相关会计政策应当在前后各会计期间保持一致，并按照本准则第四十四条（三）的规定进行披露。企业调整公允价值计量层次转换时点的相关会计政策应当一致地应用于转出的公允价值计量层次和转入的公允价值计量层次。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[155]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四十七条 企业采用本准则第三十八条规定的会计政策的，应当披露该事实。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[156]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四十八条 对于在资产负债表中不以公允价值计量但以公允价值披露的各组资产和负债，企业应当按照本准则第四十四条（二）、（四）、（五）和（八）披露信息，但不需要按照本准则第四十四条（五）披露第三层次公允价值计量的估值流程和使用的重要不可观察输入值的量化信息。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[157]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四十九条 对于以公允价值计量且在发行时附有不可分割的第三方信用增级的负债，发行人应当披露这一事实，并说明该信用增级是否已反映在该负债的公允价值计量中。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[158]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五十条 企业应当以表格形式披露本准则要求的量化信息，除非其他形式更适当。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[159]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十二章 衔接规定",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[160]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五十一条 本准则施行日之前的公允价值计量与本准则要求不一致的，企业不作追溯调整。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[161]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五十二条 比较财务报表中披露的本准则施行日之前的信息与本准则要求不一致的，企业不需要按照本准则的规定进行调整。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[162]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十三章 附则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[163]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五十三条 本准则自2014年7月1日起施行。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[164]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

@@ -2,6 +2,8 @@
 .codex/
 .agents/
 .workbuddy/
+frontend/node_modules/
+frontend/dist/
 
 __pycache__/
 *.py[cod]
@@ -15,6 +17,13 @@ knowledge-base/**/cache/
 knowledge-base/**/search/*.sqlite
 knowledge-base/**/search/*.sqlite-*
 
+# Runtime lock files written by knowledge-base tools (e.g. kb_server.py PID lock),
+# now kept under workspace/tmp/ so the knowledge-base root stays asset-only.
+**/*.lock
+!tools/**/*.lock
+!course/**/*.lock*
+
 # Historical local inspections and downloaded skill packages, not project source.
 archived/skill-assets/
 workspace/outputs/
+workspace/tmp/

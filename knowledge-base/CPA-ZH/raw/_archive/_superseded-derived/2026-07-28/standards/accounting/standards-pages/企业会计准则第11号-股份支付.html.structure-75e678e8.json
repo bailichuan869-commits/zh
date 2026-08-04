@@ -1,0 +1,147 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:43:24+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第11号-股份支付.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第11号-股份支付.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 16,
+  "table_count": 0,
+  "text_coverage": 0.9878,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第11号-股份支付",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一条 为了规范股份支付的确认、计量和相关信息的披露，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 股份支付，是指企业为获取职工和其他方提供服务而授予权益工具或者承担以权益工具为基础确定的负债的交易。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 下列各项适用其他相关会计准则：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[8]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 以权益结算的股份支付换取职工提供服务的，应当以授予职工权益工具的公允价值计量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[11]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 授予后立即可行权的换取职工服务的以权益结算的股份支付，应当在授予日按照权益工具的公允价值计入相关成本或费用，相应增加资本公积。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[13]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 完成等待期内的服务或达到规定业绩条件才可行权的换取职工服务的以权益结算的股份支付，在等待期内的每个资产负债表日，应当以对可行权权益工具数量的最佳估计为基础，按照权益工具授予日的公允价值，将当期取得的服务计入相关成本或费用和资本公积。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[15]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 企业在可行权日之后不再对已确认的相关成本或费用和所有者权益总额进行调整。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[20]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 以权益结算的股份支付换取其他方服务的，应当分别下列情况处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[21]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 在行权日，企业根据实际行权的权益工具数量，计算确定应转入实收资本或股本的金额，将其转入实收资本或股本。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[24]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 以现金结算的股份支付，应当按照企业承担的以股份或其他权益工具为基础计算确定的负债的公允价值计量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[26]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 授予后立即可行权的以现金结算的股份支付，应当在授予日以企业承担负债的公允价值计入相关成本或费用，相应增加负债。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[27]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 完成等待期内的服务或达到规定业绩条件以后才可行权的以现金结算的股份支付，在等待期内的每个资产负债表日，应当以对可行权情况的最佳估计为基础，按照企业承担负债的公允价值金额，将当期取得的服务计入成本或费用和相应的负债。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[28]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 企业应当在相关负债结算前的每个资产负债表日以及结算日，对负债的公允价值重新计量，其变动计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[30]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 企业应当在附注中披露与股份支付有关的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[31]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 企业应当在附注中披露股份支付交易对当期财务状况和经营成果的影响，至少包括下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[37]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

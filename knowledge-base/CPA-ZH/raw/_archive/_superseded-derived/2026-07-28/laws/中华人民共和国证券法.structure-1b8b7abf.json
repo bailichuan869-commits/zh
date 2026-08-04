@@ -1,0 +1,299 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:43:00+00:00",
+  "source_file": "raw/laws/中华人民共和国证券法.md",
+  "derived_file": "raw/laws/中华人民共和国证券法.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "markdown-pass-through",
+  "source_pages": 0,
+  "heading_count": 35,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "中华人民共和国证券法",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[7]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 证券发行",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[9]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 证券交易",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[11]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[13]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 证券上市",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[15]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 禁止的交易行为",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[17]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 上市公司的收购",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[19]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 信息披露",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[21]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 投资者保护",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[23]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七章 证券交易场所",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[25]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第八章 证券公司",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[27]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第九章 证券登记结算机构",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[29]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十章 证券服务机构",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[31]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十一章 证券业协会",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[33]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十二章 证券监督管理机构",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[35]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十三章 法律责任",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[37]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十四章 附 则",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[39]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[41]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 证券发行",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[67]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 证券交易",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[245]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[247]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 证券上市",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[291]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 禁止的交易行为",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[307]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 上市公司的收购",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[397]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 信息披露",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[485]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 投资者保护",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[579]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七章 证券交易场所",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[623]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第八章 证券公司",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[705]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第九章 证券登记结算机构",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[865]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十章 证券服务机构",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[949]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十一章 证券业协会",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[971]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十二章 证券监督管理机构",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[1001]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十三章 法律责任",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[1079]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十四章 附 则",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[1207]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

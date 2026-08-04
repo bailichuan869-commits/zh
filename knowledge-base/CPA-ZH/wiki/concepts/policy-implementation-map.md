@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [2026-06-26-initial-structure, archived-cpa-competition-policy-pages]
 tags: [policy, implementation, accounting-firm, p2-important]
 related: [[concepts/policy-documents]], [[concepts/policy-document-comparison]], [[concepts/first-section-responsibility-risk-map]]
+domain: policies
+topic: trackers
 ---
 
 # 第二板块政策落地地图

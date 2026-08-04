@@ -4,18 +4,16 @@
 
 ## 一、检查范围
 
-本次检查覆盖当前已安装的以下 10 个非系统 skill：
+本次检查覆盖当前已安装的以下 8 个非系统 skill：
 
-1. `chen-yiwei-perspective`
-2. `chenyiwei-bbs`
-3. `course-generator`
-4. `darwin-skill`
-5. `find-skills`
-6. `guizang-ppt-skill`
-7. `llm-wiki`
-8. `multi-search-engine`
-9. `regulatory-penalty-evaluator`
-10. `tianchuan-audit-perspective`
+1. `course-generator`
+2. `darwin-skill`
+3. `find-skills`
+4. `guizang-ppt-skill`
+5. `llm-wiki`
+6. `multi-search-engine`
+7. `regulatory-penalty-evaluator`
+8. `tianchuan-audit-perspective`
 
 ## 二、检查目标
 
@@ -42,7 +40,6 @@
 1. `find-skills`
 2. `guizang-ppt-skill`
 3. `darwin-skill`
-4. `chen-yiwei-perspective`
 
 ### 2. 工具依赖与 fallback 修复
 
@@ -50,8 +47,7 @@
 
 1. `find-skills`：`npx skills` 不再被写成唯一入口，增加手工浏览 `skills.sh` 和运行时自带安装流程的 fallback。
 2. `llm-wiki`：`qmd search` 改为可选优化能力，补充 `wiki/index.md + 文件检索 + 直接读取页面` 的 fallback。
-3. `chen-yiwei-perspective`：去掉对特定网页读取工具名的绑定，改为当前运行时可用的网页阅读或抓取能力。
-4. `multi-search-engine`：主说明中已不再把伪工具调用当成前提。
+3. `multi-search-engine`：主说明中已不再把伪工具调用当成前提。
 
 ### 3. 路径硬编码修复
 
@@ -62,9 +58,8 @@
 
 涉及的主要 skill：
 
-1. `chen-yiwei-perspective`
-2. `guizang-ppt-skill`
-3. `darwin-skill`
+1. `guizang-ppt-skill`
+2. `darwin-skill`
 
 ### 4. 参考文档误导性示例修复
 
@@ -80,7 +75,6 @@
 
 1. `tianchuan-audit-perspective` 补充了与监管处罚/问询类 skill 的协同边界
 2. `regulatory-penalty-evaluator` 调整了“底稿编号/底稿要求”的默认措辞，避免无依据发明编号体系
-3. `chenyiwei-bbs` 收紧触发边界，避免被误用为所有会计审计问题的默认入口
 
 ## 四、当前状态
 

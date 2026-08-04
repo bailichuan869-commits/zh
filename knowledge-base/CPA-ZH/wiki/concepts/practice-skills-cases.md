@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [2026-06-26-initial-structure]
 tags: [cpa, audit, practice, tools, p1-core]
 related: [[concepts/audit-practice-operations]], [[concepts/audit-process]], [[concepts/intelligent-tools]], [[concepts/comprehensive-competency]], [[concepts/case-analysis]]
+domain: practice
+topic: audit-practice
 ---
 
 # 实务技能与案例分析

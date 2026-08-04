@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [first-section-master-index-2026-06-26]
 tags: [consolidation, control, group-audit, p1-core]
 related: [[concepts/first-section-topic-matrix]], [[concepts/accounting-standards/cas-33]], [[concepts/audit-standards/csa-1401]], [[concepts/law-company]]
+domain: practice
+topic: first-section
 ---
 
 # 合并范围与控制判断专题

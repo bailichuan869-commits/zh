@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "text/html",
   "bytes": 14461,
-  "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/independence-application-guide-exposure-2025-page/official.html"
+  "local_file": "raw/ethics/third-section/independence-application-guide-exposure-2025-page/official.html",
+  "derived_markdown": "raw/ethics/third-section/independence-application-guide-exposure-2025-page/official.html.md",
+  "derived_sha256": "2bc204669c23f78fc41b5274b50073ba4b38b225530cda06d6eb21fd78db551f",
+  "text_extraction_status": "ok",
+  "sha256": "bdae8e2412a960d8687bb2ed93e6e73eb6f870662ada44fb0538c1257bc63876",
+  "archive_policy": "dual-track"
 }

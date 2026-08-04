@@ -23,12 +23,12 @@
 .\.venv\Scripts\python.exe tools\kb.py case-card --source "knowledge-base/CPA-ZH/raw/cases/batch/case.docx" --slug "draft-case"
 .\.venv\Scripts\python.exe tools\kb.py case-index --write-report
 .\.venv\Scripts\python.exe tools\kb.py qa-capture --question "客户有售后回购条款，能不能确认收入？" --answer "需要围绕控制权是否转移、回购条款实质和客户是否存在重大经济动因判断。"
-.\.venv\Scripts\python.exe tools\kb.py qa-summary-index --source "knowledge-base/CPA-ZH/cache/pdf-markdown/files/official-a5f41e751162.md" --commit
-.\.venv\Scripts\python.exe tools\kb.py qa-batch-process --source "knowledge-base/CPA-ZH/cache/pdf-markdown/files/official-a5f41e751162.md" --max-cards 999 --commit
-.\.venv\Scripts\python.exe tools\kb.py qa-feature-cases --commit
 .\.venv\Scripts\python.exe tools\kb.py archive-doc --source "D:\path\to\official.pdf" --raw-subdir "policies/new-batch" --slug "official-doc" --title "文件标题"
 .\.venv\Scripts\python.exe tools\kb.py pdf-md --source "knowledge-base\CPA-ZH\raw" --engine auto
 ```
+
+`raw-structure-audit` 默认只写 `--output` 指定的工作区报告；只有显式传入
+`--write-maintenance-report` 时才会同步写入 `wiki/_maintenance/raw-structure-review.md`。
 
 ## 写入模式
 
@@ -36,7 +36,7 @@
 |---|---|---|
 | 只读 | `health`、`verify`、`manifest`、`search`、`stats`、`sources summary`、`case-index` | 查询、检查当前状态或打印建议 |
 | 重建报告 | `index`、`cache build`、`schema --write-report`、`sources write-report`、`case-index --write-report`、`readme` | 可重复生成索引、缓存、建议报告或仪表盘 |
-| 显式写入 | `ingest-local --commit`、`case-card --commit`、`qa-capture --commit`、`qa-summary-index --commit`、`qa-batch-process --commit`、`qa-feature-cases --commit`、`archive-doc --commit`、`pdf-md --commit` | 新增 raw、wiki 或转换缓存文件，执行前先 dry-run |
+| 显式写入 | `ingest-local --commit`、`case-card --commit`、`qa-capture --commit`、`archive-doc --commit`、`pdf-md --commit` | 新增 raw、wiki 或转换缓存文件，执行前先 dry-run |
 
 ## CPA-ZH 维护脚本
 
@@ -52,13 +52,10 @@
 | `kb_link_check.py` | 汇总或联网检查官方链接。 |
 | `kb_source_status.py` | 生成来源状态统计和 wiki 仪表盘。 |
 | `kb_update_readme_stats.py` | 刷新 CPA-ZH README 中的统计数字。 |
-| `kb_ingest_local.py` | 本地入库助手：dry-run 预览或复制本地文件到 raw，并生成 manifest、metadata、source-url。 |
+| `kb_ingest_local.py` | 本地入库助手：dry-run 预览或复制本地文件到 raw，生成 manifest、metadata、source-url，并可关联自动抽取的 Markdown 派生正文。 |
 | `kb_case_card.py` | 案例卡片生成助手：从本地原文生成 `wiki/cases/` 案例卡片草稿。 |
 | `kb_case_index_suggest.py` | 案例主题索引回挂助手：扫描案例卡片并生成主题、准则、风险和底稿用途回挂建议。 |
 | `kb_qa_capture.py` | 本地问答日志回写助手：把有价值的问答保存到 `wiki/questions/`，并建议 related 链接。 |
-| `kb_qa_summary_index.py` | 长篇答疑汇总拆分工作台助手：从已抽取 Markdown 中识别问答标题，生成候选问题池、主题分类和优先拆分队列。 |
-| `kb_qa_batch_process.py` | 长篇答疑汇总批量案例加工助手：将问答条目分流为草稿案例卡片、问答沉淀候选和主题素材，并生成分类总览。 |
-| `kb_feature_qa_cases.py` | 主题精选案例生成助手：从陈老师答疑草稿案例中按每个主题生成 1 张精选代表案例卡片。 |
 | `kb_archive_doc.py` | 原文归档助手：归档单个 PDF/HTML/DOCX 原文为 `official.*`，并生成 manifest、metadata、source-url。 |
 | `kb_pdf_to_markdown.py` | PDF 转 Markdown助手：用 PyMuPDF、pdfplumber、pdfminer、pypdf 多引擎抽取 PDF，转成 Markdown 并标记文本质量。 |
 | `kb_schema_check.py` | 检查 wiki 概念页 frontmatter schema 一致性，生成升级仪表盘 `wiki/concepts/kb-section-upgrade-dashboard.md`。 |

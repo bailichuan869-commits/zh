@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [2026-06-26-initial-structure, local-regulations-inventory]
 tags: [securities-law, law, p1-core, draft]
 related: [[concepts/regulations-and-standards]], [[concepts/policy-audit-order]], [[concepts/case-analysis]]
+domain: laws
+topic: securities-law
 ---
 
 # 中华人民共和国证券法
@@ -25,7 +27,7 @@ related: [[concepts/regulations-and-standards]], [[concepts/policy-audit-order]]
 - 当前有效版本与官方来源；
 - 信息披露、证券服务机构责任、行政处罚和民事赔偿相关条款；
 - 与上市公司审计、IPO审计、年报问询和监管处罚案例的连接；
-- 本地文本摄入：`D:\ai-audit\regulations\markdown\中华人民共和国证券法.md`。
+- 本地文本摄入：`raw/laws/中华人民共和国证券法.md`。
 
 <!-- practice-framework:start -->
 ## 有效版本线索

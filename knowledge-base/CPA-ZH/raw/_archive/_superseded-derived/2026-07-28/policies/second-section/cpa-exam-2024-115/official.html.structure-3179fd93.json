@@ -1,0 +1,163 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:47:12+00:00",
+  "source_file": "raw/policies/second-section/cpa-exam-2024-115/official.html",
+  "derived_file": "raw/policies/second-section/cpa-exam-2024-115/official.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-html.parser:#UCAP-CONTENT",
+  "source_pages": 1,
+  "heading_count": 18,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "注册会计师全国统一考试办法",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一条 为规范注册会计师全国统一考试工作，根据《中华人民共和国注册会计师法》，制定本办法。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": "#UCAP-CONTENT p[27]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二条 财政部成立注册会计师考试委员会（以下简称财政部考委会），组织领导注册会计师全国统一考试工作。财政部考委会设立注册会计师考试委员会办公室（以下简称财政部考办），组织实施注册会计师全国统一考试工作。财政部考办设在中国注册会计师协会。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": "#UCAP-CONTENT p[28]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三条 财政部考委会确定考试组织工作原则，制定考试工作方针、政策，审定考试大纲，确定考试命题原则，处理考试组织工作的重大问题，指导地方考委会工作。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": "#UCAP-CONTENT p[30]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四条 符合下列条件的中国公民，可以报名参加注册会计师全国统一考试：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": "#UCAP-CONTENT p[32]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五条 有下列情形之一的人员，不得报名参加注册会计师全国统一考试：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": "#UCAP-CONTENT p[35]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六条 考试划分为专业阶段考试和综合阶段考试。考生在通过专业阶段考试的全部科目后，才能参加综合阶段考试。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": "#UCAP-CONTENT p[38]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七条 考试为闭卷，采用计算机化考试方式或者纸笔考试方式。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": "#UCAP-CONTENT p[42]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第八条 报名参加考试的人员报名时需要交纳考试报名费。报名费标准按各省、自治区、直辖市价格主管部门、财政部门制定的相关规定执行。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": "#UCAP-CONTENT p[43]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第九条 报名的具体时间在各年度财政部考委会发布的报名简章中规定，地方考委会应当据此确定本地区具体报名日期，并向社会公告。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": "#UCAP-CONTENT p[44]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十条 报名人员可以在一次考试中同时报考专业阶段考试６个科目，也可以选择报考部分科目。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": "#UCAP-CONTENT p[45]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十一条 具有会计或者相关专业高级技术职称的人员，可以申请免予专业阶段考试1个专长科目的考试。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": "#UCAP-CONTENT p[46]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十二条 应考人员答卷由财政部考办集中组织评阅，考试成绩由财政部考委会负责认定，由财政部考办发布。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": "#UCAP-CONTENT p[47]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十三条 专业阶段考试的单科考试合格成绩５年内有效。对在连续5个年度考试中取得专业阶段考试全部科目考试合格成绩的考生，财政部考委会颁发注册会计师全国统一考试专业阶段考试合格证书。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": "#UCAP-CONTENT p[50]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十四条 参加注册会计师全国统一考试的人员及组织考试相关人员，必须遵守注册会计师全国统一考试的相关规则、守则等，违者按照《注册会计师全国统一考试违规行为处理办法》予以处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": "#UCAP-CONTENT p[53]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十五条 注册会计师全国统一考试启用前的试题、参考答案和评分标准按照国家秘密管理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": "#UCAP-CONTENT p[54]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十六条 香港特别行政区、澳门特别行政区、台湾地区居民及外国人参加注册会计师全国统一考试办法，由财政部另行规定。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": "#UCAP-CONTENT p[56]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十七条 本办法自公布之日起施行。2001年8月1日财政部发布的《注册会计师全国统一考试办法》（财会〔2001〕1053号）同时废止。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": "#UCAP-CONTENT p[57]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [2026-06-26-initial-structure, archived-cpa-competition-policy-pages]
 tags: [policy, inspection, accounting-firm, p2-important]
 related: [[concepts/policy-documents]], [[concepts/policy-firm-license-supervision]], [[concepts/policy-audit-order]], [[concepts/first-section-responsibility-risk-map]]
+domain: policies
+topic: firm
 ---
 
 # 会计师事务所监督检查办法
@@ -16,7 +18,7 @@ related: [[concepts/policy-documents]], [[concepts/policy-firm-license-supervisi
 - 文号：财办〔2022〕23号
 - 定位：会计师事务所监督检查程序、整改和处理的操作性制度。
 - 官方来源：[中国政府网：财政部办公厅关于印发《会计师事务所监督检查办法》的通知](https://www.gov.cn/zhengce/zhengceku/2022-05/16/content_5690682.htm)（已核验，2026-06-29）。
-- 本地归档：`raw/policies/second-section/firm-inspection-2022-23/official.html`。
+- 本地归档：`raw/policies/second-section/firm-inspection-2022-23/official.html.md`。
 
 ## 政策定位
 

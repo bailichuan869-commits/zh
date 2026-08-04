@@ -7,6 +7,8 @@ updated: 2026-07-09
 sources: [first-section-master-index-2026-06-26, issuance-guidance-rd-staff-investment-archive-2026-07-09]
 tags: [securities-service, liability, audit-report, p1-core]
 related: [[concepts/first-section-topic-matrix]], [[concepts/law-securities]], [[concepts/law-cpa]], [[concepts/policy-audit-order]], [[concepts/securities-issuance-rd-staff-investment]]
+domain: practice
+topic: first-section
 ---
 
 # 证券服务责任专题

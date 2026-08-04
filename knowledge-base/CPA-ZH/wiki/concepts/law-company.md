@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [2026-06-26-initial-structure, local-regulations-inventory]
 tags: [company-law, law, p1-core, draft]
 related: [[concepts/regulations-and-standards]], [[concepts/law-securities]], [[concepts/accounting-standards-system]]
+domain: laws
+topic: company-law
 ---
 
 # 中华人民共和国公司法
@@ -25,7 +27,7 @@ related: [[concepts/regulations-and-standards]], [[concepts/law-securities]], [[
 - 当前有效版本与官方来源；
 - 财务会计制度、公司治理、资本交易相关条款；
 - 与审计客户治理结构、关联方、权益性交易和财务报表列报的连接；
-- 本地文本摄入：`D:\ai-audit\regulations\markdown\中华人民共和国公司法.md`。
+- 本地文本摄入：`raw/laws/中华人民共和国公司法.md`。
 
 <!-- practice-framework:start -->
 ## 有效版本线索

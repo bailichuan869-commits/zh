@@ -1,0 +1,83 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:52:07+00:00",
+  "source_file": "raw/_archive/standards/audit/pdfs/030-2..pdf",
+  "derived_file": "raw/standards/audit/pdfs/030-2..pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 30,
+  "heading_count": 8,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "2.",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "《中国注册会计师审计准则第1111 号",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "——就审计业务约定条款达成",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "一致意见》应用指南",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[5]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "审计业务约定书参考格式（合同式）",
+      "page": 15,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[15]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "审计业务约定书",
+      "page": 15,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[15]/block[14]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "审计业务约定书参考格式（信函式）",
+      "page": 23,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[23]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "确定通用目的编制基础的可接受性",
+      "page": 28,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[28]/block[4]/line[1]",
+      "confidence": 0.85
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

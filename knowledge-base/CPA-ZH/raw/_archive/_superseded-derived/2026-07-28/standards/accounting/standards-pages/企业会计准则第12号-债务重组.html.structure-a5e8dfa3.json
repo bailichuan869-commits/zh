@@ -1,0 +1,131 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:40:46+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第12号-债务重组.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第12号-债务重组.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 14,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第12号-债务重组",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范债务重组的确认、计量和相关信息的披露，根据《企业会计准则 —— 基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 债务重组，是指在不改变交易对手方的情况下， 经 债权人和债务人协定或法院裁定 ， 就清偿债务的时间、金额或方式等重新达成协议的交易。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 债务重组一般包括下列方式，或 下列 一种以上方式的组合：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[6]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 本准则适用于所有债务重组，但下列各项适用其他相关会计准则：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[10]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 债权人的会计处理",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[15]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 以资产清偿债务或者将债务转为权益工具 方式进行债务重组 的，债权人应当在相关资产符合其定义和确认条件时予以确认。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[16]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 以资产清偿债务 方式进行债务重组 的，债权人初始确认受让的金融资产以外的资产时，应当按照下列原则以成本计量：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[17]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 债务人的会计处理",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[29]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 以资产清偿债务 方式进行债务重组 的，债务人应当在相关资产 和所清偿债务 符合终止确认条件时予以终止确认 ，所 清偿债务账面价值与转让资产账面价值之间的差额计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[30]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 披露",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[35]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 衔接规定",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[43]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 附则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[46]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

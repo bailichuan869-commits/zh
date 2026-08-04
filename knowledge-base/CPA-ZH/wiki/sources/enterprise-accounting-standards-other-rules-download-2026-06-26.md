@@ -7,6 +7,8 @@ updated: 2026-06-26
 raw_path: raw/standards/accounting/
 tags: [accounting, standards, other-rules, official-download, p1-core]
 related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounting-standards-download-2026-06-26]]
+domain: sources
+topic: batches
 ---
 
 # 企业会计准则其他规定下载批次
@@ -15,10 +17,10 @@ related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounti
 
 本批次从财政部会计司“企业会计准则”专题下的“其他规定”栏目下载：
 
-- 栏目首页：`raw/standards/accounting/mof-accounting-standards-other-rules.html`
-- 栏目分页：`raw/standards/accounting/mof-accounting-standards-other-rules-index_1.html`、`raw/standards/accounting/mof-accounting-standards-other-rules-index_2.html`
+- 栏目首页：`raw/standards/accounting/mof-accounting-standards-other-rules.html.md`
+- 栏目分页：`raw/standards/accounting/mof-accounting-standards-other-rules-index_1.html.md`、`raw/standards/accounting/mof-accounting-standards-other-rules-index_2.html.md`
 - 其他规定 HTML 原文：`raw/standards/accounting/other-rules-pages/`
-- 下载清单：`raw/standards/accounting/downloaded-enterprise-accounting-standards-other-rules.csv`
+- 下载清单：`raw/standards/accounting/downloaded-enterprise-accounting-standards-other-rules.csv.md`
 
 ## 下载结果
 

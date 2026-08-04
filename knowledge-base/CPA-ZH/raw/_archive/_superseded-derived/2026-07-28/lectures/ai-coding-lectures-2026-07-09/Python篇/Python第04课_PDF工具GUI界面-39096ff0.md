@@ -1,0 +1,117 @@
+---
+source_type: "local-lecture"
+source_role: "content"
+representation: "semantic-transcript"
+extraction_profile: "readable"
+structure_status: "verified-auto"
+source_pages: 0
+heading_count: 8
+table_count: 0
+extraction_engine: "markdown-pass-through"
+extraction_status: "ok"
+structure_updated_at: "2026-07-28"
+---
+
+# Python 第 04 课：PDF 工具 GUI 界面  CLI
+
+## 今天让工具可以点按钮使用
+
+命令行适合开发和调试，但普通用户更希望点按钮。
+
+今天我们给 PDF 合并工具做一个简单界面。
+
+这节课先追求“看得见、点得动”。
+
+配置文件、Git 提交这些整理工作后面再做。
+
+## 今天要解决的问题
+
+我们希望用户不用记命令，也能完成：
+
+- 选择 PDF 文件夹。
+- 选择输出 PDF 路径。
+- 点击按钮开始合并。
+- 在窗口里看到运行结果。
+
+## 你会学到
+
+- GUI 是什么。
+- 文件夹选择框是什么。
+- 运行按钮怎么连接后台函数。
+- 为什么界面和工具逻辑要分开。
+- 为什么 GUI 也只是程序的一个入口。
+
+## 我们一起动手做
+
+界面包含：
+
+- 输入 PDF 文件夹选择。
+- 输出 PDF 路径选择。
+- 合并按钮。
+- 日志显示区域。
+
+先安装界面库：
+
+```powershell
+python -m pip install PySide6
+```
+
+推荐结构：
+
+```text
+src/
+  tools/
+    pdf_merger.py
+  ui/
+    app.py
+```
+
+## 今天要记住
+
+GUI 只是入口。
+
+真正干活的，仍然是后面的 PDF 合并函数。
+
+今天先不把配置、版本管理、工具箱结构一次性讲完。
+
+先让学生看到：同一个 PDF 合并功能，既可以命令行运行，也可以做成按钮。
+
+## 做完以后你应该能
+
+- 打开一个简单 PDF 合并窗口。
+- 通过按钮运行 PDF 合并。
+- 解释 GUI 和后台工具逻辑的区别。
+- 知道 GUI 代码不要和合并逻辑混在一起。
+
+## 本节课提示词
+
+把下面这段发给 AI：
+
+```text
+我想给 Python PDF 合并工具做一个简单 GUI。
+
+这是课程第 04 课，前面已经有能运行的 PDF 合并脚本和虚拟环境。
+这一节先做一个最小可用界面，不要一次性加入 JSON 配置和复杂工具箱结构。
+
+界面要求：
+- 可以选择输入 PDF 文件夹
+- 可以选择输出 PDF 文件路径
+- 有“开始合并”按钮
+- 有日志显示区域
+- 合并成功或失败都要在界面中显示中文提示
+
+结构要求：
+- PDF 合并逻辑放在 src\tools\pdf_merger.py
+- GUI 代码放在 src\ui\app.py
+- GUI 不要直接堆所有合并逻辑，而是调用 pdf_merger.py 中的函数
+- 如果需要依赖 PySide6，请给出安装命令
+- 代码先保持简单，后续课程再补 README、Git、JSON 配置和工具注册表
+
+请输出：
+1. 推荐项目结构
+2. 后台 pdf_merger.py 代码
+3. GUI app.py 代码
+4. 安装 PySide6 的命令
+5. 启动 GUI 的命令
+6. 如何测试界面功能
+```

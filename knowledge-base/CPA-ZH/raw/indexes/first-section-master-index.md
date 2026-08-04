@@ -1,3 +1,8 @@
+---
+source_type: "generated-index"
+source_role: "index-page"
+---
+
 ﻿# 第一板块资料总表
 
 生成日期：2026-06-26

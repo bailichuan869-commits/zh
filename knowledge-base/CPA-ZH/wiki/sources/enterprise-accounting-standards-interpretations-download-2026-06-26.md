@@ -7,6 +7,8 @@ updated: 2026-06-26
 raw_path: raw/standards/accounting/
 tags: [accounting, standards, interpretations, official-download, p1-core]
 related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounting-standards-download-2026-06-26]]
+domain: sources
+topic: batches
 ---
 
 # 企业会计准则解释下载批次
@@ -15,10 +17,10 @@ related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounti
 
 本批次从财政部会计司“企业会计准则解释”栏目下载：
 
-- 栏目首页：`raw/standards/accounting/mof-accounting-standards-interpretations.html`
-- 栏目第二页：`raw/standards/accounting/mof-accounting-standards-interpretations-index_1.html`
+- 栏目首页：`raw/standards/accounting/mof-accounting-standards-interpretations.html.md`
+- 栏目第二页：`raw/standards/accounting/mof-accounting-standards-interpretations-index_1.html.md`
 - 企业会计准则解释 HTML 原文：`raw/standards/accounting/interpretations-pages/`
-- 下载清单：`raw/standards/accounting/downloaded-enterprise-accounting-standards-interpretations.csv`
+- 下载清单：`raw/standards/accounting/downloaded-enterprise-accounting-standards-interpretations.csv.md`
 
 ## 下载结果
 

@@ -7,6 +7,8 @@ updated: 2026-06-29
 sources: [policy-documents-official-links-2026-06-29, policy-documents-raw-archive-2026-06-29]
 tags: [policy, validity, version-control, p2-important]
 related: [[concepts/policy-documents]], [[concepts/policy-official-link-checklist]], [[concepts/policy-execution-checklist]]
+domain: policies
+topic: trackers
 ---
 
 # 第二板块政策版本与效力跟踪
@@ -17,13 +19,13 @@ related: [[concepts/policy-documents]], [[concepts/policy-official-link-checklis
 
 | 文件 | 文号 | 类型 | 官方来源状态 | 本地归档 | 效力复核状态 | 下次复核 |
 |---|---|---|---|---|---|---|
-| [[concepts/policy-caihui-supervision]] | 中办发〔2023〕4号 | 顶层政策文件 | 已核验 | `raw/policies/second-section/caihui-supervision-2023-4/official.html` | 未发现替代或废止线索，需定期复核 | 2026-12-31 |
-| [[concepts/policy-audit-order]] | 国办发〔2021〕30号 | 国办政策文件 | 已核验 | `raw/policies/second-section/audit-order-2021-30/official.html` | 未发现替代或废止线索，需定期复核 | 2026-12-31 |
-| [[concepts/policy-cpa-exam]] | 财政部令第115号 | 部门规章 | 已核验 | `raw/policies/second-section/cpa-exam-2024-115/official.html` | 以财政部令第115号公布版本为当前维护版本 | 2026-12-31 |
-| [[concepts/policy-cpa-registration]] | 财政部令第99号 | 部门规章 | 已核验 | `raw/policies/second-section/cpa-registration-2019-99/official.html` | 以财政部令第99号修改版本为当前维护版本 | 2026-12-31 |
-| [[concepts/policy-firm-license-supervision]] | 财政部令第97号 | 部门规章 | 已核验 | `raw/policies/second-section/firm-license-supervision-2019-97/official.html` | 以财政部令第97号修改版本为当前维护版本 | 2026-12-31 |
-| [[concepts/policy-integrity]] | 财会〔2023〕5号 | 行业治理文件 | 已核验 | `raw/policies/second-section/integrity-2023-5/official.html` | 未发现替代或废止线索，需定期复核 | 2026-12-31 |
-| [[concepts/policy-firm-inspection]] | 财办〔2022〕23号 | 监督检查文件 | 已核验 | `raw/policies/second-section/firm-inspection-2022-23/official.html` | 未发现替代或废止线索，需定期复核 | 2026-12-31 |
+| [[concepts/policy-caihui-supervision]] | 中办发〔2023〕4号 | 顶层政策文件 | 已核验 | `raw/policies/second-section/caihui-supervision-2023-4/official.html.md` | 未发现替代或废止线索，需定期复核 | 2026-12-31 |
+| [[concepts/policy-audit-order]] | 国办发〔2021〕30号 | 国办政策文件 | 已核验 | `raw/policies/second-section/audit-order-2021-30/official.html.md` | 未发现替代或废止线索，需定期复核 | 2026-12-31 |
+| [[concepts/policy-cpa-exam]] | 财政部令第115号 | 部门规章 | 已核验 | `raw/policies/second-section/cpa-exam-2024-115/official.html.md` | 以财政部令第115号公布版本为当前维护版本 | 2026-12-31 |
+| [[concepts/policy-cpa-registration]] | 财政部令第99号 | 部门规章 | 已核验 | `raw/policies/second-section/cpa-registration-2019-99/official.html.md` | 以财政部令第99号修改版本为当前维护版本 | 2026-12-31 |
+| [[concepts/policy-firm-license-supervision]] | 财政部令第97号 | 部门规章 | 已核验 | `raw/policies/second-section/firm-license-supervision-2019-97/official.html.md` | 以财政部令第97号修改版本为当前维护版本 | 2026-12-31 |
+| [[concepts/policy-integrity]] | 财会〔2023〕5号 | 行业治理文件 | 已核验 | `raw/policies/second-section/integrity-2023-5/official.html.md` | 未发现替代或废止线索，需定期复核 | 2026-12-31 |
+| [[concepts/policy-firm-inspection]] | 财办〔2022〕23号 | 监督检查文件 | 已核验 | `raw/policies/second-section/firm-inspection-2022-23/official.html.md` | 未发现替代或废止线索，需定期复核 | 2026-12-31 |
 
 ## 复核触发条件
 

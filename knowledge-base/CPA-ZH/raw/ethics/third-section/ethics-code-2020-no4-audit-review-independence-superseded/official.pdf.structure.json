@@ -1,0 +1,2195 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:51:03+00:00",
+  "source_file": "raw/ethics/third-section/ethics-code-2020-no4-audit-review-independence-superseded/official.pdf",
+  "derived_file": "raw/ethics/third-section/ethics-code-2020-no4-audit-review-independence-superseded/official.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 81,
+  "heading_count": 272,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "中国注册会计师职业道德守则第4号——审计和审阅业务对独立性的要求",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "中国注册会计师职业道德守则第4 号",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "——审计和审阅业务对独立性的要求",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[2]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范注册会计师职业活动，指导注册会计师运用职",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二条 注册会计师在执行审计和审阅业务时，应当遵守相同的",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三条 《会计师事务所质量管理准则第5101 号——业务质量",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 基本要求",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四条 注册会计师在执行审计业务时应当保持独立性。",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五条 独立性包括实质上的独立性和形式上的独立性：",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六条 在执行审计业务时，注册会计师应当遵循职业道德基本",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 公众利益实体",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七条 本守则的某些条款仅适用于对公众利益实体的审计业",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八条 如果公众利益实体以外的其他实体拥有数量众多且分",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 关联实体",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九条 在审计客户是上市实体的情况下，本守则所称审计客户",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 保持独立性的期间",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十条 注册会计师应当在业务期间和财务报表涵盖的期间独",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十一条 如果一个实体委托会计师事务所对其财务报表发表",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十二条 如果在财务报表涵盖的期间或之后，在审计项目组开",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 与治理层的沟通",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十三条 注册会计师应当根据职业判断，定期就可能影响独立",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六节 网络与网络事务所",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十四条 如果会计师事务所属于某一网络，应当与网络事务所",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十五条 会计师事务所通常与其他会计师事务所或实体构成",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十六条 在判断一个联合体是否形成网络时，注册会计师应当",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十七条 网络，是指由多个实体组成，旨在通过合作实现下列",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十八条 除本守则第十七条所述的情况外，构成联合体的会计",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十九条 针对本守则第十七条第（一）项所述的情况，如果联",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十条 针对本守则第十七条第（二）项所述的情况，共享所",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十一条 针对本守则第十七条第（三）项所述的情况，统一",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十二条 针对本守则第十七条第（四）项所述的情况，执行",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十三条 针对本守则第十七条第（五）项所述的情况，同一",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十四条 即使某一会计师事务所不属于某一网络，也不使用",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十五条 针对本守则第十七条第（六）项所述的情况，专业",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十六条 注册会计师应当根据相关事实和情况，确定联合体",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十七条 如果会计师事务所或网络转让了其业务的某一部",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七节 工作记录",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十八条 会计师事务所应当记录遵守独立性要求的情况，包",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十九条 如果需要采取防范措施将某种不利影响降低至可",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十条 如果通过对某种不利影响进行重要性分析，注册会计",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十一条 工作记录可以提供证据证明会计师事务所在遵守",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八节 合并与收购",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十二条 如果由于合并或收购，某一实体成为审计客户的关",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十三条 会计师事务所应当在合并或收购生效日前采取必",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十四条 当按照本守则第三十三条第三款第（一）项的规定",
+      "page": 10,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[10]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十五条 如果按照本守则第三十三条第三款第（二）项的规",
+      "page": 10,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[10]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十六条 在合并或收购生效日之前，会计师事务所可能已经",
+      "page": 11,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[11]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十七条 在处理以往和目前存在的利益或关系时，即使会计",
+      "page": 11,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[11]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十八条 注册会计师应当记录下列事项：",
+      "page": 11,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[11]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九节 违反本守则的规定",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十九条 如果会计师事务所认为已发生违反本守则规定（以",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十条 即使会计师事务所已经制定了旨在合理保证独立性",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十一条 上述违规行为的严重程度及其对会计师事务所客",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十二条 会计师事务所应当根据违规的严重程度采取必要",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十三条 如果会计师事务所确定无法采取行动妥善处理违",
+      "page": 14,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[14]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十四条 如果会计师事务所确定能够采取措施妥善处理违",
+      "page": 14,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[14]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十五条 会计师事务所应当以书面形式与治理层沟通下列",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十六条 如果治理层认为上述已采取或拟采取的措施不能",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十七条 如果违规行为发生在上期审计报告出具之前，会计",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十八条 会计师事务所应当记录下列事项：",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 收 费",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 收费结构",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十九条 如果会计师事务所从某一审计客户收取的全部费",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十条 如果从某一审计客户收取的全部费用占某一合伙人",
+      "page": 17,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[17]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十一条 如果对审计客户财务报表发表意见的会计师事务",
+      "page": 17,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[17]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 逾期收费",
+      "page": 18,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[18]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十二条 如果审计客户长期未支付应付的费用，尤其是相当",
+      "page": 18,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[18]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 或有收费",
+      "page": 19,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[19]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十三条 或有收费是指收费与否或收费多少取决于交易的",
+      "page": 19,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[19]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十四条 会计师事务所在执行审计业务时，以直接或间接形",
+      "page": 19,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[19]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十五条 会计师事务所在向审计客户提供非鉴证服务时，如",
+      "page": 19,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[19]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十六条 在向审计客户提供非鉴证服务时，如果会计师事务",
+      "page": 20,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[20]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 薪酬和业绩评价政策",
+      "page": 21,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[21]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五十七条 如果某一审计项目团队成员的薪酬或业绩评价与",
+      "page": 21,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[21]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十八条 关键审计合伙人的薪酬或业绩评价不得与其向审",
+      "page": 21,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[21]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 礼品和款待",
+      "page": 22,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[22]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五十九条 会计师事务所或审计项目团队成员接受审计客户",
+      "page": 22,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[22]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十条 如果会计师事务所或审计项目团队成员接受审计客",
+      "page": 22,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[22]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十一条 会计师事务所或审计项目团队成员应当评价接受",
+      "page": 22,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[22]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十二条 如果会计师事务所或审计项目团队成员向审计客",
+      "page": 22,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[22]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 诉讼或诉讼威胁",
+      "page": 22,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[22]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六十三条 如果会计师事务所或审计项目团队成员与审计客",
+      "page": 22,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[22]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七章 经济利益",
+      "page": 23,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[23]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": 23,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[23]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十四条 在审计客户中拥有经济利益，可能因自身利益产生",
+      "page": 23,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[23]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十五条 受益人可能通过集合投资工具、信托等投资工具拥",
+      "page": 23,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[23]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十六条 在确定经济利益对于某个人来说的重要程度时，可",
+      "page": 24,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[24]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 在审计客户中拥有经济利益",
+      "page": 24,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[24]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十七条 除本守则第六十九条规定的例外情况外，下列各方",
+      "page": 24,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[24]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十八条 项目合伙人执行某项审计业务时所处的分部并不",
+      "page": 24,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[24]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十九条 本守则第六十七条的规定存在例外情况。如果与执",
+      "page": 24,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[24]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 在控制审计客户的实体中拥有经济利益",
+      "page": 25,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[25]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十条 当一个实体在审计客户中拥有控制性的权益，并且审",
+      "page": 25,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[25]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 作为受托管理人拥有经济利益",
+      "page": 25,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[25]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十一条 如果本守则第六十七条第（一）项至第（四）项所",
+      "page": 25,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[25]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 与审计客户拥有共同经济利益",
+      "page": 26,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[26]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十二条 如果会计师事务所、审计项目团队成员或其主要近",
+      "page": 26,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[26]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六节 无意中获取的经济利益",
+      "page": 26,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[26]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十三条 如果会计师事务所、审计项目团队成员或其主要近",
+      "page": 26,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[26]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七节 其他情况下的经济利益",
+      "page": 27,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[27]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十四条 会计师事务所、审计项目团队成员或其主要近亲属",
+      "page": 27,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[27]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十五条 如果审计项目团队成员知悉其其他近亲属在审计",
+      "page": 28,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[28]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十六条 如果审计项目团队成员知悉下列其他人员在审计",
+      "page": 28,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[28]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十七条 如果会计师事务所通过退休金计划在审计客户中",
+      "page": 29,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[29]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十八条 会计师事务所应当致力于防止违规的情形，在整个",
+      "page": 29,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[29]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第八章 贷款和担保",
+      "page": 29,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[29]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七十九条 涉及审计客户的贷款或贷款担保可能因自身利益",
+      "page": 30,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[30]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十条 会计师事务所、审计项目团队成员或其主要近亲属从",
+      "page": 30,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[30]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十一条 会计师事务所、审计项目团队成员或其主要近亲属",
+      "page": 30,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[30]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十二条 即使会计师事务所从银行或类似金融机构等审计",
+      "page": 30,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[30]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十三条 会计师事务所、审计项目团队成员或其主要近亲属",
+      "page": 31,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[31]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十四条 会计师事务所、审计项目团队成员或其主要近亲属",
+      "page": 31,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[31]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第九章 商业关系",
+      "page": 31,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[31]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八十五条 会计师事务所、审计项目团队成员或其主要近亲属",
+      "page": 31,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[31]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十六条 会计师事务所、审计项目团队成员不得与审计客户",
+      "page": 31,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[31]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十七条 如果审计客户或其董事、高级管理人员，或上述各",
+      "page": 32,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[32]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十八条 会计师事务所、审计项目团队成员或其主要近亲属",
+      "page": 32,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[32]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十章 家庭和私人关系",
+      "page": 33,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[33]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": 33,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[33]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十九条 如果审计项目团队成员与审计客户的董事、高级管",
+      "page": 33,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[33]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 审计项目团队成员的主要近亲属",
+      "page": 33,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[33]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十条 如果审计项目团队成员的主要近亲属担任的职位能",
+      "page": 33,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[33]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十一条 如果审计项目团队成员的主要近亲属是审计客户",
+      "page": 34,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[34]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 审计项目团队成员的其他近亲属",
+      "page": 34,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[34]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十二条 如果审计项目团队成员的其他近亲属是审计客户",
+      "page": 34,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[34]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 审计项目团队成员的其他密切关系",
+      "page": 35,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[35]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十三条 如果审计项目团队成员与审计客户的董事、高级管",
+      "page": 35,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[35]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 审计项目团队以外人员的家庭和私人关系",
+      "page": 35,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[35]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十四条 会计师事务所中审计项目团队以外的合伙人或员",
+      "page": 35,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[35]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十一章 审计项目团队成员最近曾担任审计客户的董事、",
+      "page": 36,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[36]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "高级管理人员或特定员工",
+      "page": 36,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[36]/block[19]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 3,
+      "text": "第九十五条 如果审计项目团队成员最近曾担任审计客户的董",
+      "page": 36,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[36]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十六条 如果在审计报告涵盖的期间，审计项目团队成员曾",
+      "page": 37,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[37]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十七条 如果在审计报告涵盖的期间之前，审计项目团队成",
+      "page": 37,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[37]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十二章 兼任审计客户的董事或高级管理人员",
+      "page": 37,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[37]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九十八条 如果会计师事务所的合伙人或员工兼任审计客户",
+      "page": 37,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[37]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十三章 与审计客户发生雇佣关系",
+      "page": 38,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[38]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": 38,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[38]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十九条 如果审计客户的董事、高级管理人员或特定员工，",
+      "page": 38,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[38]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百条 如果会计师事务所前任合伙人或审计项目团队前任",
+      "page": 38,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[38]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零一条 如果会计师事务所的前任合伙人加入某一实体",
+      "page": 38,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[38]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零二条 如果审计项目团队某一成员参与审计业务，当知",
+      "page": 39,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[39]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 属于公众利益实体的审计客户",
+      "page": 40,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[40]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零三条 如果某公众利益实体的关键审计合伙人加入该",
+      "page": 40,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[40]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零四条 如果会计师事务所前任高级合伙人（或管理合伙",
+      "page": 40,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[40]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零五条 如果由于企业合并，导致出现第一百零三条和第",
+      "page": 40,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[40]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十四章 临时借出员工",
+      "page": 41,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[41]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一百零六条 如果会计师事务所向审计客户借出员工，可能因",
+      "page": 41,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[41]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零七条 除非同时满足下列条件，否则会计师事务所不得",
+      "page": 41,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[41]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十五章 与审计客户长期存在业务关系",
+      "page": 42,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[42]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": 42,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[42]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零八条 会计师事务所与某一审计客户长期存在业务关",
+      "page": 42,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[42]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百零九条 在审计中，了解审计客户及其环境对审计质量至",
+      "page": 42,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[42]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十条 本守则第一百零九条第三款第（一）项至第（九）",
+      "page": 43,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[43]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 与公众利益实体审计客户长期存在业务关系",
+      "page": 44,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[44]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "的相关规定",
+      "page": 44,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[44]/block[19]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 3,
+      "text": "第一百一十一条 会计师事务所应当制定政策和程序，指定专门",
+      "page": 44,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[44]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十二条 如果会计师事务所为某一公众利益实体审计",
+      "page": 45,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[45]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 与公众利益实体审计客户关键审计合伙人轮换相",
+      "page": 46,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[46]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "关的任职期规定",
+      "page": 46,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[46]/block[12]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 3,
+      "text": "第一百一十三条 如果审计客户属于公众利益实体，会计师事务",
+      "page": 46,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[46]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十四条 注册会计师担任本守则第一百一十三条第",
+      "page": 46,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[46]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十五条 在极其特殊的情况下，会计师事务所可能因无",
+      "page": 47,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[47]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十六条 如果审计客户成为公众利益实体，在确定关键",
+      "page": 47,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[47]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十七条 在评价某人员与审计客户的长期关系产生的",
+      "page": 48,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[48]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 与公众利益实体审计客户关键审计合伙人轮换相",
+      "page": 48,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[48]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "关的冷却期规定",
+      "page": 48,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[48]/block[18]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 3,
+      "text": "第一百一十八条 如果某人员担任项目合伙人或其他签字注册",
+      "page": 48,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[48]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百一十九条 如果某人员相继担任多项关键审计合伙人职",
+      "page": 49,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[49]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十条 在确定某人员担任关键审计合伙人的年限时，服",
+      "page": 49,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[49]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十一条 在冷却期内，关键审计合伙人不得有下列行",
+      "page": 49,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[49]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 与公众利益实体审计客户关键审计合伙人轮",
+      "page": 50,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[50]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "换相关的其他规定",
+      "page": 50,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[50]/block[10]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 3,
+      "text": "第一百二十二条 针对本守则第一百一十三条至第一百二十一",
+      "page": 50,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[50]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十六章 为审计客户提供非鉴证服务",
+      "page": 51,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[51]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": 51,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[51]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十三条 会计师事务所可能向其审计客户提供与其技",
+      "page": 51,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[51]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十四条 在接受委托向审计客户提供非鉴证服务之前，",
+      "page": 51,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[51]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十五条 在评价不利影响存在与否及其严重程度时，注",
+      "page": 51,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[51]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十六条 本章的相关规定涉及对财务报表重要性的考",
+      "page": 52,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[52]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十七条 会计师事务所可能向同一审计客户提供多种",
+      "page": 52,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[52]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十八条 如果本守则不允许会计师事务所为其审计客",
+      "page": 52,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[52]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 承担管理层职责",
+      "page": 52,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[52]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百二十九条 会计师事务所承担审计客户的管理层职责，将",
+      "page": 52,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[52]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百三十条 会计师事务所应当根据具体情况并运用职业判",
+      "page": 52,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[52]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百三十一条 为避免在向审计客户提供非鉴证服务时承担",
+      "page": 53,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[53]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百三十二条 当审计客户成为公众利益实体时，除非同时满",
+      "page": 54,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[54]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百三十三条 本章禁止会计师事务所承担审计客户的管理",
+      "page": 54,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[54]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 会计和记账服务",
+      "page": 55,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[55]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百三十四条 会计和记账服务主要包括下列多种类型：",
+      "page": 55,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[55]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百三十五条 按照适用的财务报告编制基础编制财务报表",
+      "page": 55,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[55]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百三十六条 在审计过程中，会计师事务所可能就下列事项",
+      "page": 56,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[56]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百三十七条 审计客户可能要求会计师事务所在下列方面",
+      "page": 56,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[56]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百三十八条 日常性或机械性的会计和记账服务通常不需",
+      "page": 57,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[57]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百三十九条 除非同时满足下列条件，否则会计师事务所不",
+      "page": 57,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[57]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百四十条 除本守则第一百四十一条所规定的情形外，会计",
+      "page": 58,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[58]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百四十一条 在同时满足下列条件的情况下，会计师事务所",
+      "page": 58,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[58]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 行政事务性服务",
+      "page": 58,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[58]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百四十二条 行政事务性服务包括协助客户执行正常经营",
+      "page": 58,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[58]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 评估服务",
+      "page": 59,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[59]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百四十三条 评估包括对未来发展趋势提出相关假设，运用",
+      "page": 59,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[59]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百四十四条 如果审计客户要求会计师事务所提供评估服",
+      "page": 59,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[59]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百四十五条 会计师事务所向审计客户提供评估服务，可能",
+      "page": 59,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[59]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百四十六条 如果评估结果涉及高度主观性，并且评估服务",
+      "page": 60,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[60]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百四十七条 在审计客户属于公众利益实体的情况下，如果",
+      "page": 60,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[60]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六节 税务服务",
+      "page": 60,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[60]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百四十八条 税务服务通常包括下列种类：",
+      "page": 60,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[60]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百四十九条 会计师事务所向审计客户提供某种税务服务，",
+      "page": 61,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[61]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百五十条 编制纳税申报表的服务包括：",
+      "page": 61,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[61]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百五十一条 注册会计师基于进行会计处理的目的，为审计",
+      "page": 62,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[62]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百五十二条 如果审计客户不属于公众利益实体，举例来",
+      "page": 62,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[62]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百五十三条 在审计客户属于公众利益实体的情况下，会计",
+      "page": 62,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[62]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百五十四条 税务筹划或其他税务咨询服务有多种类型，例",
+      "page": 62,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[62]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百五十五条 如果税务建议的有效性取决于某项特定会计",
+      "page": 63,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[63]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百五十六条 在向审计客户提供税务服务时，会计师事务所",
+      "page": 64,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[64]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百五十七条 如果会计师事务所协助审计客户解决税务纠",
+      "page": 65,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[65]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百五十八条 在同时满足下列条件时，会计师事务所不得向",
+      "page": 66,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[66]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七节 内部审计服务",
+      "page": 66,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[66]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百五十九条 内部审计的目标和工作范围因被审计单位的",
+      "page": 66,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[66]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百六十条 如果会计师事务所人员在为审计客户提供内部",
+      "page": 67,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[67]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百六十一条 如果在审计中利用内部审计人员的工作，按照",
+      "page": 68,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[68]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百六十二条 在审计客户属于公众利益实体的情况下，会计",
+      "page": 69,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[69]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八节 信息技术系统服务",
+      "page": 69,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[69]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百六十三条 信息技术系统服务可能包括硬件或软件系统",
+      "page": 69,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[69]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百六十四条 如果会计师事务所人员不承担管理层职责，则",
+      "page": 70,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[70]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百六十五条 如果向审计客户提供信息技术系统服务，会计",
+      "page": 70,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[70]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百六十六条 如果存在下列情形之一时，会计师事务所不得",
+      "page": 71,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[71]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九节 诉讼支持服务",
+      "page": 71,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[71]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百六十七条 诉讼支持服务可能包括下列活动：",
+      "page": 71,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[71]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百六十八条 如果会计师事务所向审计客户提供诉讼支持",
+      "page": 72,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[72]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十节 法律服务",
+      "page": 72,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[72]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百六十九条 法律服务通常是指必须由符合下列条件之一",
+      "page": 72,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[72]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百七十条 法律咨询服务可能包含多种类型，包括为审计客",
+      "page": 73,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[73]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百七十一条 会计师事务所的合伙人或员工担任审计客户",
+      "page": 73,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[73]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百七十二条 在审计客户解决纠纷或应对诉讼时，如果会计",
+      "page": 74,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[74]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百七十三条 在审计客户解决纠纷或应对诉讼时，如果会计",
+      "page": 74,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[74]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一节 招聘服务",
+      "page": 74,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[74]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百七十四条 招聘服务可能包括下列方面：",
+      "page": 74,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[74]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百七十五条 当向审计客户提供下列招聘服务时，只要会计",
+      "page": 75,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[75]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百七十六条 当向审计客户提供招聘服务时，为避免承担管",
+      "page": 75,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[75]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百七十七条 向审计客户提供招聘服务，可能因自身利益、",
+      "page": 75,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[75]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百七十八条 在向审计客户提供招聘服务时，会计师事务所",
+      "page": 76,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[76]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百七十九条 如果审计客户拟招聘董事、高级管理人员或特",
+      "page": 76,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[76]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二节 公司财务服务",
+      "page": 76,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[76]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百八十条 向审计客户提供公司财务服务可能因自我评价",
+      "page": 76,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[76]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百八十一条 会计师事务所不得提供涉及推荐、交易或承销",
+      "page": 77,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[77]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百八十二条 如果财务建议的有效性取决于某项特定会计",
+      "page": 77,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[77]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十七章 含有使用和分发限制条款的特殊目的财务报表",
+      "page": 77,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[77]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "审计报告",
+      "page": 77,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[77]/block[20]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": 77,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[77]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百八十三条 本章规定了涉及特殊目的财务报表审计且审",
+      "page": 77,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[77]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百八十四条 对于会计师事务所针对特殊目的财务报表出",
+      "page": 78,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[78]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百八十五条 如果预期使用者为某一类使用者，且在确定业",
+      "page": 78,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[78]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百八十六条 当会计师事务所执行符合条件的审计业务时，",
+      "page": 78,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[78]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百八十七条 如果对同一审计客户既出具含有使用和分发",
+      "page": 79,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[79]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 公众利益实体",
+      "page": 79,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[79]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百八十八条 当执行符合条件的审计业务时，会计师事务所",
+      "page": 79,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[79]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 关联实体",
+      "page": 79,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[79]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百八十九条 当执行符合条件的审计业务时，审计客户不包",
+      "page": 79,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[79]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 网络与网络事务所",
+      "page": 79,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[79]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百九十条 当执行符合条件的审计业务时，会计师事务所不",
+      "page": 79,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[79]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 经济利益、贷款和担保、密切的商业关系，以及家",
+      "page": 79,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[79]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "庭和私人关系",
+      "page": 80,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[80]/block[1]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 3,
+      "text": "第一百九十一条 当执行符合条件的审计业务时，如果出现本守",
+      "page": 80,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[80]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百九十二条 当执行符合条件的审计业务时，如果审计项目",
+      "page": 80,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[80]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百九十三条 当执行符合条件的审计业务时，在运用本守则",
+      "page": 81,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[81]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六节 与审计客户发生雇佣关系",
+      "page": 81,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[81]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百九十四条 当执行符合条件的审计业务时，会计师事务所",
+      "page": 81,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[81]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七节 提供非鉴证服务",
+      "page": 81,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[81]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第一百九十五条 如果会计师事务所执行符合条件的审计业务，",
+      "page": 81,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[81]/block[10]/line[1]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

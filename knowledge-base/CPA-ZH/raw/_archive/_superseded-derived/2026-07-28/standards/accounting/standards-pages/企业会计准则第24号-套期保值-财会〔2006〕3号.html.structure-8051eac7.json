@@ -1,0 +1,283 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:47:43+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第24号-套期保值-财会〔2006〕3号.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第24号-套期保值-财会〔2006〕3号.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 33,
+  "table_count": 0,
+  "text_coverage": 0.9992,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第24号-套期保值-财会〔2006〕3号",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一条 为了规范套期保值的确认和计量，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 套期保值（以下简称套期），是指企业为规避外汇风险、利率风险、商品价格风险、股票价格风险、信用风险等，指定一项或一项以上套期工具，使套期工具的公允价值或现金流量变动，预期抵销被套期项目全部或部分公允价值或现金流量变动。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 套期分为公允价值套期、现金流量套期和境外经营净投资套期。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 对于满足本准则第三章规定条件的套期，企业可运用套期会计方法进行处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[8]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 套期工具，是指企业为进行套期而指定的、其公允价值或现金流量变动预期可抵销被套期项目的公允价值或现金流量变动的衍生工具，对外汇风险进行套期还可以将非衍生金融资产或非衍生金融负债作为套期工具。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[10]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 企业在确立套期关系时，应当将套期工具整体或其一定比例（不含套期工具剩余期限内的某一时段）进行指定，但下列情况除外：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[11]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 企业通常可将单项衍生工具指定为对一种风险进行套期，但同时满足下列条件的，可以指定单项衍生工具对一种以上的风险进行套期：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[14]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 企业可以将两项或两项以上衍生工具的组合或该组合的一定比例指定为套期工具。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[19]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 被套期项目，是指使企业面临公允价值或现金流量变动风险，且被指定为被套期对象的下列项目：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[22]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 被套期风险是信用风险或外汇风险的，持有至到期投资可以指定为被套期项目。被套期风险是利率风险或提前还款风险的，持有至到期投资不能指定为被套期项目。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[28]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 企业集团内部交易形成的货币性项目的汇兑收益或损失，不能在合并财务报表中全额抵销的，该货币性项目的外汇风险可以在合并财务报表中指定为被套期项目。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[29]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 对于与金融资产或金融负债现金流量或公允价值的一部分相关的风险，其套期有效性可以计量的，企业可以就该风险将金融资产或金融负债指定为被套期项目。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[31]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 在金融资产或金融负债组合的利率风险公允价值套期中，可以将某货币金额（如人民币、美元或欧元金额）的资产或负债指定为被套期项目。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[32]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 企业可以将金融资产或金融负债现金流量的全部指定为被套期项目。但金融资产或金融负债现金流量的一部分被指定为被套期项目的，被指定部分的现金流量应当少于该金融资产或金融负债现金流量总额。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[33]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 非金融资产或非金融负债指定为被套期项目的，被套期风险应当是该非金融资产或非金融负债相关的全部风险或外汇风险。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[34]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十六条 对具有类似风险特征的资产或负债组合进行套期时，该组合中的各单项资产或单项负债应当同时承担被套期风险，且该组合内各单项资产或单项负债由被套期风险引起的公允价值变动，应当预期与该组合由被套期风险引起的公允价值整体变动基本成比例。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[35]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十七条 公允价值套期、现金流量套期或境外经营净投资套期同时满足下列条件的，才能运用本准则规定的套期会计方法进行处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[36]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十八条 套期同时满足下列条件的，企业应当认定其为高度有效：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[43]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十九条 企业至少应当在编制中期或年度财务报告时对套期有效性进行评价。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[46]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十条 对利率风险进行套期的，企业可以通过编制金融资产和金融负债的到期时间表，标明每期的利率净风险，据此对套期有效性进行评价。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[47]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十一条 公允价值套期满足运用套期会计方法条件的，应当按照下列规定处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[48]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十二条 对于金融资产或金融负债组合一部分的利率风险公允价值套期，为符合本准则第二十一条（二）的要求，企业对被套期项目形成的利得或损失可按下列方法处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[51]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十三条 满足下列条件之一的，企业不应当再按照本准则第二十一条的规定处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[54]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十四条 被套期项目是以摊余成本计量的金融工具的，按照本准则第二十一条（二）对被套期项目账面价值所作的调整，应当按照调整日重新计算的实际利率在调整日至到期日的期间内进行摊销，计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[59]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十五条 被套期项目为尚未确认的确定承诺的，该确定承诺因被套期风险引起的公允价值变动累计额应当确认为一项资产或负债，相关的利得或损失应当计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[62]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十六条 在购买资产或承担负债的确定承诺的公允价值套期中，该确定承诺因被套期风险引起的公允价值变动累计额（已确认为资产或负债），应当调整履行该确定承诺所取得的资产或承担的负债的初始确认金额。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[63]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十七条 现金流量套期满足运用套期会计方法条件的，应当按照下列规定处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[64]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十八条 被套期项目为预期交易，且该预期交易使企业随后确认一项金融资产或一项金融负债的，原直接确认为所有者权益的相关利得或损失，应当在该金融资产或金融负债影响企业损益的相同期间转出，计入当期损益。但是，企业预期原直接在所有者权益中确认的净损失全部或部分在未来会计期间不能弥补时，应当将不能弥补的部分转出，计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[72]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十九条 被套期项目为预期交易，且该预期交易使企业随后确认一项非金融资产或一项非金融负债的，企业可以选择下列方法处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[73]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十条 对于不属于本准则第二十八条和第二十九条涉及的现金流量套期，原直接计入所有者权益中的套期工具利得或损失，应当在被套期预期交易影响损益的相同期间转出，计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[78]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十一条 在下列情况下，企业不应当再按照本准则第二十七条至第三十条的规定处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[79]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十二条 对境外经营净投资的套期，应当按照类似于现金流量套期会计的规定处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[89]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

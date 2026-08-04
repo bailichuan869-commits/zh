@@ -1,3 +1,8 @@
+---
+source_type: "generated-index"
+source_role: "index-page"
+---
+
 # 四部核心法律条款级索引
 
 生成日期：2026-06-26

@@ -11,7 +11,15 @@ from typing import Any, Iterable
 import kb_search
 
 
-SKIP_NAMES = {"metadata.json", "source-url.txt", "manifest.json"}
+SKIP_NAMES = {"metadata.json", "source-url.txt", "manifest.json", "archive-index.jsonl"}
+
+# 归档与位图类文件没有可抽取的单一文本，送进抽取器只会产出空缓存，
+# 且它们本就不在搜索索引（TEXT_SUFFIXES）范围内，应从文本缓存跳过。
+SKIP_SUFFIXES = {
+    ".zip", ".rar", ".7z", ".tar", ".gz", ".tgz", ".tar.gz",
+    ".bz2", ".xz", ".jar", ".iso",
+    ".png", ".jpg", ".jpeg", ".gif", ".bmp", ".tif", ".tiff", ".webp",
+}
 
 
 def utc_now() -> str:
@@ -40,12 +48,44 @@ def cache_paths(root: Path, raw_rel_path: str) -> tuple[Path, str]:
     return root / cache_rel, cache_rel
 
 
+def sidecar_candidates(root: Path, raw_file: Path) -> list[Path]:
+    raw_root = root / "raw"
+    candidates = [Path(str(raw_file) + ".md")]
+    try:
+        relative = raw_file.relative_to(raw_root)
+    except ValueError:
+        return candidates
+    parts = list(relative.parts)
+    if parts and parts[0] == "_archive":
+        parts.pop(0)
+        if parts:
+            candidates.append(Path(str(raw_root / Path(*parts)) + ".md"))
+    return list(dict.fromkeys(candidates))
+
+
+def extract_with_sidecar(root: Path, raw_file: Path) -> tuple[str, Path]:
+    text = kb_search.extract_file_text(raw_file)
+    if text:
+        return text, raw_file
+    for sidecar in sidecar_candidates(root, raw_file):
+        if not sidecar.exists():
+            continue
+        text = kb_search.extract_file_text(sidecar)
+        if text:
+            return text, sidecar
+    return "", raw_file
+
+
 def iter_raw_files(root: Path) -> Iterable[Path]:
     raw_root = root / "raw"
     for path in sorted(raw_root.rglob("*")):
         if not path.is_file():
             continue
         if path.name in SKIP_NAMES:
+            continue
+        if path.name.endswith(".structure.json"):
+            continue
+        if path.suffix.lower() in SKIP_SUFFIXES:
             continue
         yield path
 
@@ -79,24 +119,38 @@ def build(root: Path, force: bool = False) -> dict[str, int]:
         file_stat = raw_file.stat()
         cache_file, cache_rel_path = cache_paths(root, raw_rel_path)
         old = existing.get(raw_rel_path, {})
+        old_text_source = str(old.get("text_source") or raw_rel_path)
+        old_text_source_path = root / old_text_source
+        old_text_source_stat = old_text_source_path.stat() if old_text_source_path.exists() else None
         should_reuse = (
             not force
             and cache_file.exists()
             and old.get("mtime_ns") == file_stat.st_mtime_ns
             and old.get("bytes") == file_stat.st_size
+            and old_text_source_stat is not None
+            and old.get("text_source_mtime_ns", old.get("mtime_ns")) == old_text_source_stat.st_mtime_ns
+            and old.get("text_source_bytes", old.get("bytes")) == old_text_source_stat.st_size
+            and int(old.get("text_length") or 0) > 0
         )
 
         if should_reuse:
             text_length = int(old.get("text_length") or 0)
             text_sha256 = str(old.get("text_sha256") or "")
             source_sha256 = str(old.get("sha256") or "")
+            text_source = old_text_source
+            text_source_mtime_ns = old_text_source_stat.st_mtime_ns
+            text_source_bytes = old_text_source_stat.st_size
             stats["unchanged"] += 1
         else:
             try:
-                text = kb_search.extract_file_text(raw_file)
+                text, text_source_path = extract_with_sidecar(root, raw_file)
                 text_length = len(text)
                 text_sha256 = hashlib.sha256(text.encode("utf-8")).hexdigest()
                 source_sha256 = sha256_file(raw_file)
+                text_source = rel(root, text_source_path)
+                text_source_stat = text_source_path.stat()
+                text_source_mtime_ns = text_source_stat.st_mtime_ns
+                text_source_bytes = text_source_stat.st_size
                 cache_file.parent.mkdir(parents=True, exist_ok=True)
                 cache_file.write_text(text, encoding="utf-8", newline="\n")
                 stats["updated"] += 1
@@ -107,6 +161,9 @@ def build(root: Path, force: bool = False) -> dict[str, int]:
                 text_length = 0
                 text_sha256 = ""
                 source_sha256 = ""
+                text_source = raw_rel_path
+                text_source_mtime_ns = file_stat.st_mtime_ns
+                text_source_bytes = file_stat.st_size
                 cache_file = root / cache_rel_path
                 print(f"ERROR {raw_rel_path}: {exc}", file=sys.stderr)
 
@@ -122,6 +179,9 @@ def build(root: Path, force: bool = False) -> dict[str, int]:
                 "bytes": file_stat.st_size,
                 "text_length": text_length,
                 "text_sha256": text_sha256,
+                "text_source": text_source,
+                "text_source_mtime_ns": text_source_mtime_ns,
+                "text_source_bytes": text_source_bytes,
             }
         )
 

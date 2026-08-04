@@ -1,0 +1,26 @@
+{
+  "schema": "cpa-zh-pdf-markdown-v1",
+  "generated_at": "2026-07-13T09:19:19+00:00",
+  "items": [
+    {
+      "slug": "practice-question-bank-paper-1-answer-explanations",
+      "title": "练习题库（试卷一）答案解析",
+      "document_no": "",
+      "url": "",
+      "official_source": "北京国家会计学院国会在线",
+      "wiki_page": "sources/practice-question-bank-paper-1-answer-explanations-2026-07-13",
+      "archived_on": "2026-07-13",
+      "content_type": "practice-answer-explanations",
+      "bytes": 2158605,
+      "sha256": "c1bde78dcc1f77e22712cb0646699414c95b8e7581d1ab38aea21897618ac4cb",
+      "local_file": "raw/outlines/practice-question-bank-2026-07-13/practice-question-bank-paper-1-answer-explanations/official.pdf",
+      "official_page_status": "local",
+      "text_extraction_status": "ok",
+      "ocr_status": "not-required",
+      "source_note": "用户提供的练习题库（试卷一）答案解析 PDF；用于校准题库答案与复盘易错点，不作为法规原文依据。",
+      "derived_markdown": "raw/outlines/practice-question-bank-2026-07-13/practice-question-bank-paper-1-answer-explanations/official.pdf.md",
+      "derived_sha256": "3e50e53f24336497d2f092c3a6919c70849720bda832faa89c5804bbb474aabb",
+      "archive_policy": "dual-track"
+    }
+  ]
+}

@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [cicpa-professional-standards-number-index-2026-06-26]
 tags: [audit, standards, topic-map, p1-core]
 related: [[concepts/audit-standards-system]], [[sources/cicpa-professional-standards-number-index-2026-06-26]]
+domain: audit-standards
+topic: overview
 ---
 
 # 中国注册会计师审计准则实务主题导航

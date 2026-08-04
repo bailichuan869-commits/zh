@@ -1,0 +1,331 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:40:50+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第42号-持有待售的非流动资产-处置组和终止经营.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第42号-持有待售的非流动资产-处置组和终止经营.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 39,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第42号-持有待售的非流动资产-处置组和终止经营",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范企业持有待售的非流动资产或处置组的分类、计量和列报，以及终止经营的列报，根据《企业会计准则 —— 基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 本准则的分类和列报规定适用于所有非流动资产和处置组。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 本准则的计量规定适用于所有非流动资产，但下列各项的计量适用其他相关会计准则：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[5]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 终止经营，是指企业满足下列条件之一的、能够单独区分的组成部分，且该组成部分已经处置或划分为持有待售类别：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[13]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 持有待售的非流动资产或处置组的分类",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[17]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 企业主要通过出售（包括具有商业实质的非货币性资产交换，下同）而非持续使用一项非流动资产或处置组收回其账面价值的，应当将其划分为持有待售类别。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[18]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 非流动资产或处置组划分为持有待售类别，应当同时满足下列条件：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[19]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 企业专为转售而取得的非流动资产或处置组，在取得日满足 “ 预计出售将在一年内完成 ” 的规定条件，且短期（通常为 3 个月）内很可能满足持有待售类别的其他划分条件的，企业应当在取得日将其划分为持有待售类别。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[23]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 因企业无法控制的下列原因之一，导致非关联方之间的交易未能在一年内完成，且有充分证据表明企业仍然承诺出售非流动资产或处置组的，企业应当继续将非流动资产或处置组划分为持有待售类别：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[24]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 持有待售的非流动资产或处置组不再满足持有待售类别划分条件的，企业不应当继续将其划分为持有待售类别。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[27]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 企业因出售对子公司的投资等原因导致其丧失对子公司控制权的，无论出售后企业是否保留部分权益性投资，应当在拟出售的对子公司投资满足持有待售类别划分条件时，在母公司个别财务报表中将对子公司投资整体划分为持有待售类别，在合并财务报表中将子公司所有资产和负债划分为持有待售类别。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[29]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 企业不应当将拟结束使用而非出售的非流动资产或处置组划分为持有待售类别。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[30]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 持有待售的非流动资产或处置组的计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[31]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 企业将非流动资产或处置组首次划分为持有待售类别前，应当按照相关会计准则规定计量非流动资产或处置组中各项资产和负债的账面价值。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[32]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 企业初始计量或在资产负债表日重新计量持有待售的非流动资产或处置组时，其账面价值高于公允价值减去出售费用后的净额的，应当将账面价值减记至公允价值减去出售费用后的净额，减记的金额确认为资产减值损失，计入当期损益，同时计提持有待售资产减值准备。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[33]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 对于取得日划分为持有待售类别的非流动资产或处置组，企业应当在初始计量时比较假定其不划分为持有待售类别情况下的初始计量金额和公允价值减去出售费用后的净额，以两者孰低计量。除企业合并中取得的非流动资产或处置组外，由非流动资产或处置组以公允价值减去出售费用后的净额作为初始计量金额而产生的差额，应当计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[34]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 企业在资产负债表日重新计量持有待售的处置组时，应当首先按照相关会计准则规定计量处置组中不适用本准则计量规定的资产和负债的账面价值，然后按照本准则第十三条的规定进行会计处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[35]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十六条 对于持有待售的处置组确认的资产减值损失金额，应当先抵减处置组中商誉的账面价值，再根据处置组中适用本准则计量规定的各项非流动资产账面价值所占比重，按比例抵减其账面价值。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[36]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十七条 后续资产负债表日持有待售的非流动资产公允价值减去出售费用后的净额增加的，以前减记的金额应当予以恢复，并在划分为持有待售类别后确认的资产减值损失金额内转回，转回金额计入当期损益。划分为持有待售类别前确认的资产减值损失不得转回。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[37]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十八条 后续资产负债表日持有待售的处置组公允价值减去出售费用后的净额增加的，以前减记的金额应当予以恢复，并在划分为持有待售类别后适用本准则计量规定的非流动资产确认的资产减值损失金额内转回，转回金额计入当期损益。已抵减的商誉账面价值，以及适用本准则计量规定的非流动资产在划分为持有待售类别前确认的资产减值损失不得转回。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[38]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十九条 持有待售的处置组确认的资产减值损失后续转回金额，应当根据处置组中除商誉外适用本准则计量规定的各项非流动资产账面价值所占比重，按比例增加其账面价值。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[39]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十条 持有待售的非流动资产或处置组中的非流动资产不应计提折旧或摊销，持有待售的处置组中负债的利息和其他费用应当继续予以确认。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[40]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十一条 非流动资产或处置组因不再满足持有待售类别的划分条件而不再继续划分为持有待售类别或非流动资产从持有待售的处置组中移除时，应当按照以下两者孰低计量：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[41]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十二条 企业终止确认持有待售的非流动资产或处置组时，应当将尚未确认的利得或损失计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[44]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 列报",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[45]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十三条 企业应当在资产负债表中区别于其他资产单独列示持有待售的非流动资产或持有待售的处置组中的资产，区别于其他负债单独列示持有待售的处置组中的负债。持有待售的非流动资产或持有待售的处置组中的资产与持有待售的处置组中的负债不应当相互抵销，应当分别作为流动资产和流动负债列示。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[46]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十四条 企业应当在利润表中分别列示持续经营损益和终止经营损益。不符合终止经营定义的持有待售的非流动资产或处置组，其减值损失和转回金额及处置损益应当作为持续经营损益列报。终止经营的减值损失和转回金额等经营损益及处置损益应当作为终止经营损益列报。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[47]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十五条 企业应当在附注中披露下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[48]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十六条 对于当期首次满足持有待售类别划分条件的非流动资产或处置组，不应当调整可比会计期间资产负债表。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[61]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十七条 对于当期列报的终止经营，企业应当在当期财务报表中，将原来作为持续经营损益列报的信息重新作为可比会计期间的终止经营损益列报，并按照本准则第二十五条（六）、（七）、（九）、（十）的规定披露可比会计期间的信息。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[62]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十八条 拟结束使用而非出售的处置组满足终止经营定义中有关组成部分的条件的，应当自停止使用日起作为终止经营列报。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[63]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十九条 企业因出售对子公司的投资等原因导致其丧失对子公司控制权，且该子公司符合终止经营定义的，应当在合并利润表中列报相关终止经营损益，并按照本准则第二十五条（六）至（十）的规定进行披露。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[64]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十条 企业应当在利润表中将终止经营处置损益的调整金额作为终止经营损益列报，并在附注中披露调整的性质和金额。可能引起调整的情形包括：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[65]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十一条 非流动资产或处置组不再继续划分为持有待售类别或非流动资产从持有待售的处置组中移除的，企业应当在当期利润表中将非流动资产或处置组的账面价值调整金额作为持续经营损益列报。企业的子公司、共同经营、合营企业、联营企业以及部分对合营企业或联营企业的投资不再继续划分为持有待售类别或从持有待售的处置组中移除的，企业应当在当期财务报表中相应调整各个划分为持有待售类别后可比会计期间的比较数据。企业应当在附注中披露下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[69]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十二条 终止经营不再满足持有待售类别划分条件的，企业应当在当期财务报表中，将原来作为终止经营损益列报的信息重新作为可比会计期间的持续经营损益列报，并在附注中说明这一事实。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[72]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 附则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[73]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十三条 本准则自 2017 年 5 月 28 日起施行。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[74]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

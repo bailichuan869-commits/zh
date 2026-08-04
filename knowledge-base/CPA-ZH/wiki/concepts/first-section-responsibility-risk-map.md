@@ -3,15 +3,19 @@ title: 第一板块责任风险总表
 type: concept
 concept_type: responsibility-map
 created: 2026-06-26
-updated: 2026-06-26
-sources: [core-laws-article-index-2026-06-26, first-section-master-index-2026-06-26]
+updated: 2026-07-14
+sources: [core-laws-article-index-2026-06-26, first-section-master-index-2026-06-26, challenge-knowledge-source-summary-2026-07-13]
 tags: [law, audit-risk, responsibility, p1-core]
 related: [[concepts/first-section-topic-matrix]], [[concepts/core-laws-official-verification]], [[concepts/law-cpa]], [[concepts/law-accounting]], [[concepts/law-company]], [[concepts/law-securities]]
+domain: practice
+topic: topic-index
 ---
 
 # 第一板块责任风险总表
 
 本表把第一板块中常见责任风险按“责任主体-法律入口-准则入口-审计收口”组织，便于从实务问题快速回到法规和准则依据。
+
+版本提醒：本表中指向 [[concepts/laws/cpa-law/index]] 的注册会计师法条款链接目前基于 2014 修正版历史索引。根据 2026-07-13 来源汇总，《注册会计师法》存在 2026-06-26 修订、2027-01-01 施行的最新版本线索；正式引用相关条款前应复核 2026 修订后官方文本。
 
 ## 责任风险矩阵
 

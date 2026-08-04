@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "text/html",
   "bytes": 41750,
-  "local_file": "knowledge-base/CPA-ZH/raw/policies/second-section/caihui-supervision-2023-4/official.html"
+  "local_file": "raw/policies/second-section/caihui-supervision-2023-4/official.html",
+  "derived_markdown": "raw/policies/second-section/caihui-supervision-2023-4/official.html.md",
+  "derived_sha256": "d5ec9277c3608a7dd24453fc53f799d820a357818991179eb4f4cc0cee2b696b",
+  "text_extraction_status": "ok",
+  "sha256": "3b612d5eb0cad5c550ae097896f7dd5357c1be5be6ae2030227a2fa96a361325",
+  "archive_policy": "dual-track"
 }

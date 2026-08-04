@@ -26,4 +26,35 @@ describe('knowledge API client', () => {
   it('constructs raw asset URLs through the versioned API', () => {
     expect(api.rawUrl('raw/laws/example.md')).toBe('/api/v1/files?path=raw%2Flaws%2Fexample.md')
   })
+
+  it('posts questions to the answer endpoint', async () => {
+    const fetchMock = vi.fn().mockResolvedValue(new Response(JSON.stringify({ answer: '', citations: [], confidence: 'insufficient', insufficient_evidence: true }), { status: 200 }))
+    vi.stubGlobal('fetch', fetchMock)
+
+    await api.answer('收入确认要看什么')
+
+    expect(fetchMock).toHaveBeenCalledWith('/api/v1/answers', expect.objectContaining({ method: 'POST' }))
+  })
+
+  it('sends AI configuration only to the protected maintenance API', async () => {
+    const fetchMock = vi.fn().mockResolvedValue(new Response(JSON.stringify({ provider: 'openai-compatible', base_url: 'https://example.com/v1', model: 'demo', enabled: true, key_configured: true }), { status: 200 }))
+    vi.stubGlobal('fetch', fetchMock)
+
+    await api.saveAiConfig({ provider: 'openai-compatible', base_url: 'https://example.com/v1', model: 'demo', enabled: true, api_key: 'secret' }, 'maintenance-token')
+
+    expect(fetchMock).toHaveBeenCalledWith('/maintenance/v1/ai-config', expect.objectContaining({ method: 'POST', headers: expect.objectContaining({ Authorization: 'Bearer maintenance-token' }) }))
+  })
+
+  it('uploads one or more files as protected multipart data', async () => {
+    const fetchMock = vi.fn().mockResolvedValue(new Response(JSON.stringify({ session_token: 'session', items: [], expires_in: 1800 }), { status: 200 }))
+    vi.stubGlobal('fetch', fetchMock)
+    const file = new File(['# 收入确认'], 'case.md', { type: 'text/markdown' })
+
+    await api.uploadIngest([file], 'maintenance-token')
+
+    const [, options] = fetchMock.mock.calls[0]
+    expect(options.headers).toEqual({ Authorization: 'Bearer maintenance-token' })
+    expect(options.body).toBeInstanceOf(FormData)
+    expect(options.body.getAll('files')).toHaveLength(1)
+  })
 })

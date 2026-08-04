@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [enterprise-accounting-standards-number-index-2026-06-26]
 tags: [accounting, standards, other-rules, p1-core]
 related: [[concepts/accounting-standards-system]], [[concepts/accounting-standards/calibration/index]]
+domain: accounting-standards
+topic: other-rules
 ---
 
 # 企业会计准则其他规定入口

@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [first-section-master-index-2026-06-26]
 tags: [financial-instruments, valuation, impairment, p1-core]
 related: [[concepts/first-section-topic-matrix]], [[concepts/accounting-standards/cas-22]], [[concepts/audit-standards/csa-1321]], [[concepts/law-securities]]
+domain: practice
+topic: first-section
 ---
 
 # 金融工具估值与减值专题

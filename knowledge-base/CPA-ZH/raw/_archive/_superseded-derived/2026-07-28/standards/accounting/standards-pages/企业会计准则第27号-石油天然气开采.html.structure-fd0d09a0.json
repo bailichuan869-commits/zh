@@ -1,0 +1,275 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:43:26+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第27号-石油天然气开采.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第27号-石油天然气开采.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 32,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第27号-石油天然气开采",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范石油天然气（以下简称油气）开采活动的会计处理和相关信息的披露，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 油气开采活动包括矿区权益的取得以及油气的勘探、开发和生产等阶段。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 油气开采活动以外的油气储存、集输、加工和销售等业务的会计处理，适用其他相关会计准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[5]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 矿区权益的会计处理",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[7]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 矿区权益，是指企业取得的在矿区内勘探、开发和生产油气的权利。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[8]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 为取得矿区权益而发生的 成本 应当在发生时予以资本化。企业取得的矿区权益，应当按照取得时的成本进行初始计量：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[11]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 企业应当采用产量法或年限平均法对探明矿区权益计提折耗。采用产量法计提折耗的，折耗额可按照单个矿区计算，也可按照若干具有相同或类似地质构造特征或储层条件 的 相邻 矿区所组成的 矿区组计算。计算公式如下：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[15]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 企业对于矿区权益的减值，应当分别不同情况确认减值损失：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[18]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 企业转让矿区权益的，应当按照下列规定进行处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[22]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 未探明矿区（组）内发现探明经济可采储量而将未探明矿区 （组） 转为探明矿区（组） 的 ，应当按照其账面价值转为探明矿区权益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[29]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 未探明矿区因最终未能发现 探明 经济可采储量而放弃 的 ，应 当 按照放弃时的账面价值转销未探明矿区权益并 计入 当期 损益 。 因未完成义务工作量等因素导致发生的放弃成本，计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[30]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 油气勘探的会计处理",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[32]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 油气勘探，是指为了识别勘探区域或探明油气储量而进行的地质调查、地球物理勘探、钻探活动以及其他相关活动。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[33]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 油气勘探支出包括钻井勘探支出和非钻井勘探支出。钻井勘探支出主要包括钻探区域探井、勘探型详探井、评价井和资料井等活动发生的支出；非钻井勘探支出主要包括进行地质调查、地球物理勘探等活动发生的支出。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[34]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 钻井勘探支出 在完井后， 确定该井发现了探明经济可采储量的，应当将钻探该井的支出结转为井及相关设施成本。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[35]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 在完井一年 时 仍未能确定 该探井 是否发现探明经济可采储量， 同时满足下列条件的， 应当 将钻探该井的资本化支出继续暂时资本化，否则应当 计入当期损益 ：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[39]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 非钻井勘探支出于发生时计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[43]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 油气 开发的会计处理",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[45]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十六条 油气开发，是指为了取得探明矿区中的油气而建造或更新井 及 相关设施的活动。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[46]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十七条 油气开发活动所发生的支出，应当根据其用途分别予以资本化，作为油气开发形成的井及相关设施的成本。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[47]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十八条 在探明矿区内，钻井至现有已探明层位的支出，作为油气开发支出；为获取新增探明经济可采储量而继续钻至未探明层位的支出，作为钻井勘探支出，按照本准则第十三条 和第十四条处理 。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[53]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 油气生产的会计处理",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[55]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十九条 油气生产 ， 是指将油气 从油气藏 提取到地表以及 在矿区内 收集、拉运、处理、现场储存和矿区管理等活动。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[56]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十条 油气的生产成本包括相关矿区权益折耗、井及相关设施折耗、辅助设备及设施折旧以及操作费用等。操作费用包括 油气生产 和矿区管理 过程 中发生的直接和间接费用。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[57]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十一条 企业应当采用产量法或年限平均法对井及相关设施计提折耗。井及相关设施包括确定发现了探明经济可采储量的探井和开采活动中形成的井，以及与开采活动直接相关的各种设施。采用产量法计提折耗的，折耗额可按照单个矿区计算，也可按照若干具有相同或类似地质构造特征或储层条件 的 相邻 矿区所组成的 矿区组计算。计算公式如下：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[58]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十二条 地震设备、建造设备、车辆、修理车间、仓库、供应站、通讯设备、办公设施等辅助设备及设施，应当按照《企业会计准则第4号——固定资产》处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[62]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十三条 企业 承担 的 矿区废弃处置义务 ，满足《企业会计准则第13号 —— 或有事项》中预计负债确认条件的 ，应当将该义务确认为 预计 负债，并相应增加井及相关设施的账面价值。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[63]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十四条 井及相关设施、辅助设备及设施的减值， 应当按照 《企业会计准则第8号——资产减值》 处理 。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[66]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 披露",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[68]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十五条 企业应当在附注中披露与石油天然气开采活动有关的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[69]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

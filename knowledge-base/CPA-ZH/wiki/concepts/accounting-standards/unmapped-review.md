@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [enterprise-accounting-standards-number-index-2026-06-26]
 tags: [accounting, standards, calibration, p1-core]
 related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounting-standards-number-index-2026-06-26]]
+domain: accounting-standards
+topic: overview
 ---
 
 # 企业会计准则未映射资料校准表

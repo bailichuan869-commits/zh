@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "application/pdf",
   "bytes": 182060,
-  "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-2020-non-practicing-members-glossary/official.pdf"
+  "local_file": "raw/ethics/third-section/ethics-code-2020-non-practicing-members-glossary/official.pdf",
+  "derived_markdown": "raw/ethics/third-section/ethics-code-2020-non-practicing-members-glossary/official.pdf.md",
+  "derived_sha256": "5f88e8fe306d6d12ece305774fb2a2702645a7ed4d6a199c088f726675f86e56",
+  "text_extraction_status": "ok",
+  "sha256": "2a2e47f6061746e727a1f7c20c3155e8cdec7d127560e53de9a267cab2c2180b",
+  "archive_policy": "dual-track"
 }

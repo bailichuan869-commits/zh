@@ -1,0 +1,86 @@
+---
+title: "cicpa-professional-standards-topic-items"
+type: "raw-source"
+source_type: "table"
+source_role: "source-registry"
+original_file: "raw/standards/audit/cicpa-professional-standards-topic-items.csv"
+created: "2026-06-26"
+converted_at: "2026-07-24"
+---
+
+# cicpa-professional-standards-topic-items
+
+| ﻿"Title" | Date | Url |
+| --- | --- | --- |
+| 中国注册会计师协会关于印发《企业内部控制审计指引实施意见》的通知 | 2026-01-30 | https://www.cicpa.org.cn/xxfb/tzgg/202601/t20260130_65798.html |
+| 财政部关于印发《可持续信息鉴证业务准则第6101号——基本准则（试行）》的通知 | 2026-01-27 | https://www.cicpa.org.cn/xxfb/tzgg/202601/t20260127_65792.html |
+| 中注协有关负责人就印发《可持续信息鉴证业务准则第6101号——基本准则（试行）》答记者问 | 2026-01-27 | https://www.cicpa.org.cn/xxfb/news/202601/t20260127_65793.html |
+| 中国注册会计师协会关于印发《可持续信息鉴证业务准则第X号——基本准则（征求意见稿）》的通知 | 2025-07-31 | https://www.cicpa.org.cn/xxfb/tzgg/202507/t20250731_65576.html |
+| 中注协就可持续信息鉴证业务基本准则公开征求意见 | 2025-07-31 | https://www.cicpa.org.cn/xxfb/news/202507/t20250731_65577.html |
+| 中国注册会计师协会关于印发《<中国注册会计师独立性准则第1号——财务报表审计和审阅业务对独立性的要求>应用指南（征求意见稿）》的通知 | 2025-04-30 | https://www.cicpa.org.cn/xxfb/tzgg/202504/t20250430_65411.html |
+| 中注协就独立性准则应用指南公开征求意见 | 2025-04-30 | https://www.cicpa.org.cn/xxfb/news/202504/t20250430_65412.html |
+| 中注协针对识别和应对财务报告舞弊风险发布两项审计准则问题解答 | 2025-01-23 | https://www.cicpa.org.cn/xxfb/news/202501/t20250123_65229.html |
+| 中国注册会计师协会关于印发《中国注册会计师审计准则第1401号——对集团财务报表审计的特殊考虑（征求意见稿）》的通知 | 2024-09-30 | https://www.cicpa.org.cn/xxfb/tzgg/202409/t20240930_65062.html |
+| 中注协就集团审计准则公开征求意见 | 2024-09-30 | https://www.cicpa.org.cn/xxfb/news/202409/t20240930_65063.html |
+| 中国注册会计师协会关于印发《<中国注册会计师审计准则第1101号——注册会计师的总体目标和审计工作的基本要求>应用指南》等34项应用指南的通知 | 2023-04-10 | https://www.cicpa.org.cn/xxfb/tzgg/202304/t20230410_64066.html |
+| 中国注册会计师协会关于印发《<中国注册会计师审计准则第1211号——重大错报风险的识别和评估>应用指南》等两项应用指南的通知 | 2023-02-07 | https://www.cicpa.org.cn/xxfb/tzgg/202302/t20230207_63923.html |
+| 财政部关于印发《中国注册会计师审计准则第1211号——重大错报风险的识别和评估》等准则的通知 | 2023-01-03 | https://www.cicpa.org.cn/xxfb/tzgg/202301/t20230103_63902.html |
+| 财政部修订发布“重大错报风险的识别和评估”等25项审计准则 | 2023-01-03 | https://www.cicpa.org.cn/xxfb/news/202301/t20230103_63903.html |
+| 中国注册会计师协会关于印发《<中国注册会计师鉴证业务基本准则>应用指南》等15项应用指南的通知 | 2022-01-20 | https://www.cicpa.org.cn/xxfb/tzgg/202201/t20220120_63335.html |
+| 财政部关于印发《中国注册会计师鉴证业务基本准则》等11项准则的通知 | 2022-01-20 | https://www.cicpa.org.cn/xxfb/tzgg/202201/t20220120_63336.html |
+| 11项准则及15项应用指南一致性修订发布 | 2022-01-20 | https://www.cicpa.org.cn/xxfb/news/202201/t20220120_63337.html |
+| 中国注册会计师协会关于印发《中国注册会计师审计准则第1211号——识别和评估重大错报风险》等两项准则及其应用指南征求意见稿的通知 | 2021-12-31 | https://www.cicpa.org.cn/xxfb/tzgg/202112/t20211231_63312.html |
+| 中注协就“识别和评估重大错报风险”等两项审计准则及其应用指南（修订）公开征求意见 | 2021-12-31 | https://www.cicpa.org.cn/xxfb/news/202112/t20211231_63313.html |
+| 关于印发《<中国注册会计师审计准则第1601号——审计特殊目的财务报表的特殊考虑>应用指南》等三项应用指南的通知 | 2021-12-21 | https://www.cicpa.org.cn/xxfb/tzgg/202112/t20211221_63266.html |
+| 特殊目的审计准则及配套应用指南修订发布 | 2021-12-21 | https://www.cicpa.org.cn/xxfb/news/202112/t20211221_63267.html |
+| 关于印发《中国注册会计师审计准则第1601号——审计特殊目的财务报表的特殊考虑》等三项准则的通知 | 2021-12-16 | https://www.cicpa.org.cn/xxfb/tzgg/202112/t20211216_63077.html |
+| 中国注册会计师协会关于印发《<会计师事务所质量管理准则第5101号——业务质量管理>应用指南》等三项应用指南的通知 | 2021-11-02 | https://www.cicpa.org.cn/xxfb/tzgg/202111/t20211102_63018.html |
+| 中注协印发会计师事务所质量管理相关准则应用指南 | 2021-11-02 | https://www.cicpa.org.cn/xxfb/news/202111/t20211102_63019.html |
+| 中注协就会计师事务所质量管理相关准则应用指南公开征求意见 | 2021-04-21 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/202104/t20210421_60989.html |
+| 中国注册会计师协会关于印发《<会计师事务所质量管理准则第5101号——业务质量管理>应用指南》等三项应用指南征求意见稿的通知 | 2021-04-21 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/202104/t20210421_60990.html |
+| 中国注册会计师协会关于印发《中国注册会计师审计准则问题解答第16号——审计报告中的非无保留意见》的通知 | 2021-02-07 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/202102/t20210207_60596.html |
+| 中注协针对审计报告中的非无保留意见发布问题解答 | 2021-02-07 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/202102/t20210207_60597.html |
+| 中国注册会计师协会关于对《中国注册会计师审计准则问题解答第16号——审计报告中的非无保留意见（征求意见稿）》征求意见的通知 | 2021-01-07 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/202101/t20210107_60595.html |
+| 财政部关于印发《会计师事务所质量管理准则第5101号——业务质量管理》等三项准则的通知 | 2020-12-02 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/202012/t20201202_60593.html |
+| 财政部印发会计师事务所质量管理相关准则 | 2020-12-02 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/202012/t20201202_60594.html |
+| 中国注册会计师协会关于印发《会计师事务所质量管理准则第5101号——业务质量管理》等三项准则征求意见稿的通知 | 2020-01-22 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/202001/t20200122_60591.html |
+| 中注协就会计师事务所质量管理相关准则公开征求意见 | 2020-01-22 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/202001/t20200122_60592.html |
+| 中注协修订五项审计准则问题解答 | 2020-01-08 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/202001/t20200108_60589.html |
+| 中国注册会计师协会关于修订印发《中国注册会计师审计准则问题解答第1号——职业怀疑》等五项审计准则问题解答的通知 | 2020-01-08 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/202001/t20200108_60590.html |
+| 中国注册会计师协会关于印发《中国注册会计师审计准则问题解答第1号——职业怀疑》等五项审计准则问题解答征求意见稿的通知 | 2019-10-21 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201910/t20191021_60587.html |
+| 中注协就“职业怀疑”等五项审计准则问题解答修订文本公开征求意见 | 2019-10-21 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201910/t20191021_60588.html |
+| 财政部关于印发《中国注册会计师审计准则第1101号——注册会计师的总体目标和审计工作的基本要求》等18项审计准则的通知 | 2019-04-10 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201904/t20190410_60584.html |
+| 中国注册会计师协会关于印发《<中国注册会计师审计准则第1101号——注册会计师的总体目标和审计工作的基本要求>应用指南》等24项应用指南的通知 | 2019-04-10 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201904/t20190410_60585.html |
+| 新修订的18项审计准则及应用指南发布 | 2019-04-10 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201904/t20190410_60586.html |
+| 中注协就“特殊目的财务报表审计”等三项审计准则及其应用指南修订文本公开征求意见 | 2019-01-24 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201901/t20190124_60582.html |
+| 中国注册会计师协会关于印发《中国注册会计师审计准则第1601号——对按照特殊目的编制基础编制的财务报表审计的特殊考虑》等3项审计准则及其应用指南征求意见稿的通知 | 2019-01-24 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201901/t20190124_60583.html |
+| 中国注册会计师协会关于印发“利用内部审计人员的工作”等三方面准则项目修订文本征求意见稿的通知 | 2018-08-17 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/202104/t20210421_60986.html |
+| 中注协就“利用内部审计人员的工作”等三方面审计准则项目修订文本征求意见 | 2018-08-17 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201808/t20180817_60581.html |
+| 中注协关于印发中国注册会计师审计准则问题解答第14号、第15号的通知 | 2018-04-24 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201804/t20180424_60579.html |
+| 中注协针对新审计报告准则实施发布相关问题解答 | 2018-04-24 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201804/t20180424_60580.html |
+| 中注协秘书长陈毓圭就新审计报告准则全面实施答记者问 | 2018-01-04 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201801/t20180104_60578.html |
+| 中注协关于印发《<中国注册会计师审计准则第1504号——在审计报告中沟通关键审计事项>应用指南》等16项应用指南的通知 | 2017-03-20 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201703/t20170320_60576.html |
+| 中国注册会计师协会发布新审计报告准则应用指南 | 2017-03-20 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201703/t20170320_60577.html |
+| 新审计报告准则发布 | 2016-12-28 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201612/t20161228_60575.html |
+| 财政部关于印发《中国注册会计师审计准则第1504号——在审计报告中沟通关键审计事项》等12项准则的通知 | 2016-12-28 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201612/t20161228_60574.html |
+| 中注协发布审计报告相关准则征求意见稿 | 2016-01-08 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201601/t20160108_60573.html |
+| 中注协关于印发《中国注册会计师审计准则第1504号——在审计报告中沟通关键审计事项》等7项审计准则征求意见稿的通知 | 2016-01-08 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201601/t20160108_60572.html |
+| 中注协关于印发《中国注册会计师审计准则问题解答第7号——会计分录测试》等七项审计准则问题解答的通知 | 2015-01-05 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201501/t20150105_60570.html |
+| 中注协发布七项审计准则问题解答 | 2015-01-05 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201501/t20150105_60571.html |
+| 中注协关于印发《企业内部控制审计问题解答（征求意见稿）》的通知 | 2013-12-16 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201312/t20131216_60568.html |
+| 中注协发布企业内部控制审计问题解答征求意见稿 | 2013-12-16 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201312/t20131216_60569.html |
+| 中国注册会计师协会关于印发《中国注册会计师审计准则问题解答第7号——会计分录测试》等七项问题解答征求意见稿的通知 | 2013-11-04 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201311/t20131104_60566.html |
+| 中注协发布第二批审计准则问题解答征求意见稿 | 2013-11-04 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201311/t20131104_60567.html |
+| 中国注册会计师协会关于印发《中国注册会计师审计准则问题解答第1号——职业怀疑》等六项审计准则问题解答的通知 | 2013-11-01 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201311/t20131101_60564.html |
+| 中注协发布6项审计准则问题解答 | 2013-11-01 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201311/t20131101_60565.html |
+| 中注协关于印发《中国注册会计师审计准则问题解答第1号——职业怀疑》等六项问题解答征求意见稿的通知 | 2013-03-08 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201303/t20130308_60563.html |
+| 财政部关于印发《中国注册会计师审计准则第1101号——注册会计师的总体目标和审计工作的基本要求》等38项准则的通知 | 2011-10-24 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201211/t20121104_60554.html |
+| 中国注册会计师协会关于印发《中国注册会计师审计准则第1101号——注册会计师的总体目标和审计工作的基本要求》等38项审计准则征求意见稿的通知 | 2010-08-25 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201211/t20121104_60558.html |
+| 中注协发布第四批九项审计准则的修订征求意见稿 | 2010-01-28 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201211/t20121104_60559.html |
+| 中国注册会计师协会关于印发《中国注册会计师审计准则第1141号——财务报表审计中与舞弊相关的责任》等九项审计准则征求意见稿的通知 | 2010-01-28 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201211/t20121104_60560.html |
+| 中国注册会计师协会关于印发《中国注册会计师审计准则第1121号——对财务报表审计实施的质量控制》等十项审计准则征求意见稿的通知 | 2010-01-18 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201211/t20121104_60561.html |
+| 中国注册会计师协会关于印发《中国注册会计师审计准则第1111号——就审计业务约定条款达成一致意见》等十项审计准则征求意见稿的通知 | 2009-12-31 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201211/t20121104_60562.html |
+| 中国注册会计师协会关于印发《中国注册会计师审计准则第1101号——注册会计师的总体目标和按照审计准则执行审计工作的要求》等九项审计准则征求意见稿的通知 | 2009-12-11 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/200912/t20091211_60553.html |
+| 中国注册会计师执业准则指南简介 | 2007-01-09 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201211/t20121104_60557.html |
+| 中注协发布中国注册会计师执业准则指南 | 2007-01-09 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201211/t20121104_60556.html |
+| 财政部关于印发中国注册会计师执业准则的通知 | 2007-01-09 | https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_guidelines/201211/t20121104_60555.html |

@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "application/pdf",
   "bytes": 646670,
-  "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-2020-no5-other-assurance-independence/official.pdf"
+  "local_file": "raw/ethics/third-section/ethics-code-2020-no5-other-assurance-independence/official.pdf",
+  "derived_markdown": "raw/ethics/third-section/ethics-code-2020-no5-other-assurance-independence/official.pdf.md",
+  "derived_sha256": "51db0d11fd3bc5d23f3541f0f7d9363a7592b76c7af558474932e57200c983ff",
+  "text_extraction_status": "ok",
+  "sha256": "90b866480cda9d9ef074de8475a519d07a3579a42fb566e64bed90cc1b3320a0",
+  "archive_policy": "dual-track"
 }

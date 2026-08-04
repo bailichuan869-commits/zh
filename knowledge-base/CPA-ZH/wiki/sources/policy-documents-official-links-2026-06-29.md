@@ -3,9 +3,12 @@ title: 第二板块政策文件官方链接核验批次
 type: source
 source_type: official-link-verification
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-13
+sources: [official-link-verification-2026-06-29, challenge-knowledge-source-summary-2026-07-13]
 tags: [policy, official-links, second-section, cpa]
 related: [[concepts/policy-documents]], [[concepts/policy-official-link-checklist]], [[concepts/policy-document-comparison]]
+domain: sources
+topic: batches
 ---
 
 # 第二板块政策文件官方链接核验批次
@@ -29,3 +32,16 @@ related: [[concepts/policy-documents]], [[concepts/policy-official-link-checklis
 - 中国政府网、国务院公报和财政部页面作为本批次官方链接依据。
 - 搜索引擎结果仅用于发现候选链接，不作为最终来源。
 - 若后续发现财政部规章库、财政部 PDF 或中注协专题页提供更适合下载归档的版本，可补充为备选官方链接，但不替代本页已核验链接，除非现有链接失效。
+
+## 2026-07-13 来源汇总补充链接
+
+用户提供的 [[sources/challenge-knowledge-source-summary-verification-2026-07-13]] 对第二板块 7 份政策文件逐项列出来源。与本页相比，以下链接可作为备选核验入口或附件镜像：
+
+| 文件 | 补充链接 | 用途 |
+|---|---|---|
+| 《关于进一步加强财会监督工作的意见》 | `http://www.iap.cas.cn/gb/jgsz/glxt/jhcwc/qt_cwc/202303/P020230310639037294387.pdf`；`https://www.btnsss.gov.cn/wcm.files/upload/CMS13s/202304/202304281203057.pdf` | PDF 镜像备查；本页仍以中国政府网页面为主。 |
+| 《关于进一步规范财务审计秩序促进注册会计师行业健康发展的意见》 | `https://www.gov.cn/gongbao/content/2021/content_5636141.htm` | 国务院公报备选入口。 |
+| 《注册会计师全国统一考试办法》 | `https://www.cicpa.org.cn/xxfb/tzgg/202402/t20240208_64689.html`；`https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/202410/t20241031_508783.html` | 中注协和司法部备选入口。 |
+| 《注册会计师注册办法》 | `https://www.gov.cn/gongbao/content/2021/content_5581069.htm` | 中国政府网公报备选入口，可与财政部文告页面互校。 |
+| 《会计师事务所执业许可和监督管理办法》 | `https://www.gov.cn/zhengce/2017-08/20/content_5717194.htm`；`https://www.moj.gov.cn/pub/sfbgw/flfggz/flfggzbmgz/201710/t20171009_146050.html` | 第89号原文和司法部备选入口，用于追踪原发布与第97号修改关系。 |
+| 《注册会计师行业诚信建设纲要》 | `https://www.mof.gov.cn/zhengwuxinxi/zhengcefabu/202303/P020230329601419400871.pdf`；`https://m.mof.gov.cn/czxw/202303/t20230329_3875834.htm` | 财政部 PDF 和通知页面备查。 |

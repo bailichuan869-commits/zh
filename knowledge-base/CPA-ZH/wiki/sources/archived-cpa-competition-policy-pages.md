@@ -4,8 +4,11 @@ type: source
 source_type: internal-archive-summary
 created: 2026-06-26
 updated: 2026-06-26
+sources: [archived-cpa-competition-policy-pages]
 tags: [policy, archive, second-section, cpa]
 related: [[concepts/policy-documents]], [[concepts/policy-document-comparison]], [[concepts/policy-implementation-map]], [[concepts/policy-official-link-checklist]]
+domain: sources
+topic: batches
 ---
 
 # 归档政策文件页维护来源
@@ -14,7 +17,7 @@ related: [[concepts/policy-documents]], [[concepts/policy-document-comparison]],
 
 ## 使用的归档资料
 
-来源目录：`D:\ai-audit\archived\cpa-competition\wiki\concepts`
+来源目录：`archived/cpa-competition/wiki/concepts`
 
 | 归档页 | 本知识库对应页 |
 |---|---|

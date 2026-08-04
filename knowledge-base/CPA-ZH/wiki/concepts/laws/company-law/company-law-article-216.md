@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [local-core-laws-2026-06-26]
 tags: [company-law, law, article, p1-core]
 related: [[concepts/law-company]], [[sources/core-laws-article-index-2026-06-26]]
+domain: laws
+topic: company-law
 ---
 
 # 中华人民共和国公司法第二百一十六条

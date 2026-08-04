@@ -1,7 +1,7 @@
 # 当前已安装 Skill 使用说明
 日期：2026-06-24
 
-这份说明面向当前已经安装的 10 个非系统 skill，重点回答 3 个问题：
+这份说明面向当前已经安装的 8 个非系统 skill，重点回答 3 个问题：
 
 1. 什么时候该用它
 2. 怎么提问更容易触发到位
@@ -11,50 +11,20 @@
 
 ## 一、当前已安装的 Skill
 
-1. `chen-yiwei-perspective`
-2. `chenyiwei-bbs`
-3. `course-generator`
-4. `darwin-skill`
-5. `find-skills`
-6. `guizang-ppt-skill`
-7. `llm-wiki`
-8. `multi-search-engine`
-9. `regulatory-penalty-evaluator`
-10. `tianchuan-audit-perspective`
+1. `course-generator`
+2. `darwin-skill`
+3. `find-skills`
+4. `guizang-ppt-skill`
+5. `llm-wiki`
+6. `multi-search-engine`
+7. `regulatory-penalty-evaluator`
+8. `tianchuan-audit-perspective`
 
 ---
 
 ## 二、逐个说明
 
-### 1. `chen-yiwei-perspective`
-
-**适用场景**
-
-- 会计准则实务判断
-- 审计和财务处理口径分析
-- 合并报表、收入确认、权益性交易、长期股权投资等复杂会计问题
-- 需要“陈版主式”分析框架，而不是单纯给结论
-
-**怎么提问**
-
-- 直接写明“请用陈奕蔚/陈版主视角分析”
-- 把交易背景、合同安排、金额口径、会计处理争议点一次说清
-- 明确你要的是“准则判断”“分录思路”“披露建议”还是“争议点拆解”
-
-**示例提问**
-
-- “请用陈版主视角分析：附回购条款的股权转让，是否应确认投资收益？”
-- “按企业会计准则，集团内部股权划转导致的资本公积处理，请用陈奕蔚风格拆一下逻辑。”
-
-**不适合的场景**
-
-- 不适合拿来检索真实论坛历史答疑
-- 不适合替代最新监管案例检索
-- 不适合只给一个模糊问题就希望直接落结论
-
----
-
-### 2. `tianchuan-audit-perspective`
+### 1. `tianchuan-audit-perspective`
 
 **适用场景**
 
@@ -82,7 +52,7 @@
 
 ---
 
-### 3. `regulatory-penalty-evaluator`
+### 2. `regulatory-penalty-evaluator`
 
 **适用场景**
 
@@ -110,34 +80,7 @@
 
 ---
 
-### 4. `chenyiwei-bbs`
-
-**适用场景**
-
-- 明确要查“陈版主”“陈奕蔚”“会计视野论坛”上的真实历史答疑
-- 想补充论坛原始口径、历史案例、真实问答记录
-- 想拿论坛答疑作为分析参考材料
-
-**怎么提问**
-
-- 最好直接给关键词：准则主题、交易类型、争议问题
-- 也可以明确说“帮我查陈版主以前怎么答过这个问题”
-- 如果要缩小范围，可以附行业、年份、会计准则关键词
-
-**示例提问**
-
-- “帮我检索陈版主关于附回购股权转让的历史答疑。”
-- “查一下会计视野论坛里陈奕蔚对内部股权划转资本公积问题的答复。”
-
-**不适合的场景**
-
-- 不适合作为所有会计问题的默认入口
-- 不适合代替独立职业判断
-- 不适合在没有检索价值时强行调用
-
----
-
-### 5. `multi-search-engine`
+### 3. `multi-search-engine`
 
 **适用场景**
 
@@ -164,7 +107,7 @@
 
 ---
 
-### 6. `llm-wiki`
+### 4. `llm-wiki`
 
 **适用场景**
 
@@ -192,7 +135,7 @@
 
 ---
 
-### 7. `find-skills`
+### 5. `find-skills`
 
 **适用场景**
 
@@ -218,7 +161,7 @@
 
 ---
 
-### 8. `course-generator`
+### 6. `course-generator`
 
 **适用场景**
 
@@ -245,7 +188,7 @@
 
 ---
 
-### 9. `guizang-ppt-skill`
+### 7. `guizang-ppt-skill`
 
 **适用场景**
 
@@ -272,7 +215,7 @@
 
 ---
 
-### 10. `darwin-skill`
+### 8. `darwin-skill`
 
 **适用场景**
 
@@ -303,10 +246,8 @@
 
 | 需求 | 优先用哪个 Skill |
 |---|---|
-| 会计准则判断、会计处理争议 | `chen-yiwei-perspective` |
 | 审计底稿、审计程序、风险应对 | `tianchuan-audit-perspective` |
 | 处罚先例、问询函、舞弊风险 | `regulatory-penalty-evaluator` |
-| 查陈版主历史答疑 | `chenyiwei-bbs` |
 | 全网多引擎搜索 | `multi-search-engine` |
 | 做个人知识库 / wiki | `llm-wiki` |
 | 找新 skill | `find-skills` |
@@ -323,7 +264,7 @@
 1. **任务目标**：你最终要什么
 2. **材料背景**：业务背景、文件、原文、草稿、链接、截图
 3. **输出形式**：要结论、表格、清单、问询函、底稿意见、课程、PPT 还是 wiki
-4. **风格要求**：要不要陈版主风格、田川风格、监管问询风格
+4. **风格要求**：要不要田川风格、监管问询风格
 5. **边界要求**：是否需要保守判断、是否要引用先例、是否只做检索不下结论
 
 一个比较好的提问模板可以写成：
@@ -340,10 +281,8 @@
 
 如果你现在拿不准，可以先按下面这条最短判断线来分：
 
-- 你要**判断准则和会计处理**，先用 `chen-yiwei-perspective`
 - 你要**看审计底稿和审计程序是否站得住**，先用 `tianchuan-audit-perspective`
 - 你要**从处罚、问询、舞弊风险角度穿透**，先用 `regulatory-penalty-evaluator`
-- 你要**查历史答疑原话或真实论坛记录**，先用 `chenyiwei-bbs`
 - 你要**搜资料**，先用 `multi-search-engine`
 - 你要**沉淀知识库**，先用 `llm-wiki`
 

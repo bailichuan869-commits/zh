@@ -1,0 +1,227 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:34:45+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第31号-现金流量表.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第31号-现金流量表.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 26,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第31号-现金流量表",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "html-tag",
+      "locator": ".TRS_Editor h2[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一条 为了规范现金流量表的编制和列报，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二条 现金流量表，是指反映企业在一定会计期间现金和现金等价物流入和流出的报表。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三条 合并现金流量表的编制和列报，适用《企业会计准则第33号——合并财务报表》。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[7]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 基本要求",
+      "page": null,
+      "source": "html-tag",
+      "locator": ".TRS_Editor h2[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四条 现金流量表应当分别经营活动、投资活动和筹资活动列报现金流量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[9]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五条 现金流量应当分别按照现金流入和现金流出总额列报 。 但是，下列各项可以 按照 净额 列报 ：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[10]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六条 自然灾害损失、保险索赔等特殊项目，应当根据其性质，分别归并到经营活动、投资活动和筹资活动现金流量类别中单独列报。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[14]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七条 外币现金流量以及境外子公司的现金流量，应当采用现金流量发生日的即期汇率或按照系统合理的方法确定的、与现金流量发生日即期汇率近似的汇率折算。汇率变动对现金的影响额应当作为调节项目，在现金流量表中单独列报。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[15]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 经营活动现金流量",
+      "page": null,
+      "source": "html-tag",
+      "locator": ".TRS_Editor h2[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第八条 企业应当采用直接法列示经营活动产生的现金流量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[17]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第九条 有关经营活动现金流量的信息，可以通过下列途径之一取得：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[20]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十条 经营活动产生的现金流量至少应当单独列示 反映 下列 信息的 项目：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[26]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十一条 金融企业可以根据行业特点和现金流量实际情况，合理确定 经营活动 现金流量项目的类别。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[34]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 投资活动现金流量",
+      "page": null,
+      "source": "html-tag",
+      "locator": ".TRS_Editor h2[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十二条 投资活动，是指企业长期资产的购建和不包括在现金等价物范围的投资及其处置活动。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[36]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十三条 投资活动产生的现金流量至少应当单独列示 反映 下列 信息的 项目：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[37]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 筹资活动现金流量",
+      "page": null,
+      "source": "html-tag",
+      "locator": ".TRS_Editor h2[5]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十四条 筹资活动，是指导致企业资本及债务规模和构成发生变化的活动。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[48]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十五条 筹资活动产生的现金流量至少应当单独列示 反映 下列 信息的 项目：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[49]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 披露",
+      "page": null,
+      "source": "html-tag",
+      "locator": ".TRS_Editor h2[6]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十六条 企业应当在附注中披露将净利润调节为经营活动现金流量的信息。至少应当单独披露对净利润进行调节的下列项目：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[57]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十七条 企业应当在附注中以总额披露当期 取得 或处置子公司及其他营业单位的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[73]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十八条 企业应当在附注中披露不涉及当期现金收支、但影响企业财务状况或在未来可能影响企业现金流量的重大投资和筹资活动。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[78]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十九条 企业应当在附注中披露与现金和现金等价物有关的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[79]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

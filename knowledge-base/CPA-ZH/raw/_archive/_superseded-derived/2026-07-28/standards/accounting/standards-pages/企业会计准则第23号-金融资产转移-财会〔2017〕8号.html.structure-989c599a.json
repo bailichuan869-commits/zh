@@ -1,0 +1,323 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:47:42+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第23号-金融资产转移-财会〔2017〕8号.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第23号-金融资产转移-财会〔2017〕8号.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 38,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第23号-金融资产转移-财会〔2017〕8号",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范金融资产（包括单项或一组类似金融资产）转移和终止确认的会计处理，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 金融资产转移，是指企业（转出方）将金融资产（或其现金流量）让与或交付给该金融资产发行方之外的另一方（转入方）。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 企业对金融资产转入方具有控制权的，除在该企业个别财务报表基础上应用本准则外，在编制合并财务报表时，还应当按照《企业会计准则第 33 号——合并财务报表》的规定合并所有纳入合并范围的子公司（含结构化主体），并在合并财务报表层面应用本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[5]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 金融资产终止确认的一般原则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[6]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 金融资产的一部分满足下列条件之一的，企业应当将终止确认的规定适用于该金融资产部分，除此之外，企业应当将终止确认的规定适用于该金融资产整体：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[7]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 金融资产满足下列条件之一的，应当终止确认：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[12]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 金融资产转移的情形及其终止确认",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[15]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 金融资产转移，包括下列两种情形：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[16]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 企业在发生金融资产转移时，应当评估其保留金融资产所有权上的风险和报酬的程度，并分别下列情形处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[22]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 企业在评估金融资产所有权上风险和报酬的转移程度时，应当比较转移前后其所承担的该金融资产未来净现金流量金额及其时间分布变动的风险。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[29]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 企业在判断是否保留了对被转移金融资产的控制时，应当根据转入方是否具有出售被转移金融资产的实际能力而确定。转入方能够单方面将被转移金融资产整体出售给不相关的第三方，且没有额外条件对此项出售加以限制的，表明转入方有出售被转移金融资产的实际能力，从而表明企业未保留对被转移金融资产的控制；在其他情形下，表明企业保留了对被转移金融资产的控制。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[33]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 企业认定金融资产所有权上几乎所有风险和报酬已经转移的，除企业在新的交易中重新获得被转移金融资产外，不应当在未来期间再次确认该金融资产。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[36]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 在金融资产转移不满足终止确认条件的情况下，如果同时确认衍生工具和被转移金融资产或转移产生的负债会导致对同一权利或义务的重复确认，则企业（转出方）与转移有关的合同权利或义务不应当作为衍生工具进行单独会计处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[37]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 在金融资产转移不满足终止确认条件的情况下，转入方不应当将被转移金融资产全部或部分确认为自己的资产。转入方应当终止确认所支付的现金或其他对价，同时确认一项应收转出方的款项。企业（转出方）同时拥有以固定金额重新控制整个被转移金融资产的权利和义务的（如以固定金额回购被转移金融资产），在满足《企业会计准则第 22 号——金融工具确认和计量》关于摊余成本计量规定的情况下，转入方可以将其应收款项以摊余成本计量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[38]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 企业在判断金融资产转移是否满足本准则规定的金融资产终止确认条件时，应当注重金融资产转移的实质。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[39]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 满足终止确认条件的金融资产转移的会计处理",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[54]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 金融资产转移整体满足终止确认条件的，应当将下列两项金额的差额计入当期损益：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[55]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 企业转移了金融资产的一部分，且该被转移部分整体满足终止确认条件的，应当将转移前金融资产整体的账面价值，在终止确认部分和继续确认部分（在此种情形下，所保留的服务资产应当视同继续确认金融资产的一部分）之间，按照转移日各自的相对公允价值进行分摊，并将下列两项金额的差额计入当期损益：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[59]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十六条 根据本准则 第十五条 的规定，企业将转移前金融资产整体的账面价值按相对公允价值在终止确认部分和继续确认部分之间进行分摊时，应当按照下列规定确定继续确认部分的公允价值：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[63]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 继续确认被转移金融资产的会计处理",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[66]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十七条 企业保留了被转移金融资产所有权上几乎所有风险和报酬而不满足终止确认条件的，应当继续确认被转移金融资产整体，并将收到的对价确认为一项金融负债。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[67]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十八条 在继续确认被转移金融资产的情形下，金融资产转移所涉及的金融资产与所确认的相关金融负债不得相互抵销。在后续会计期间，企业应当继续确认该金融资产产生的收入（或利得）和该金融负债产生的费用（或损失），不得相互抵销。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[68]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 继续涉入被转移金融资产的会计处理",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[69]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十九条 企业既没有转移也没有保留金融资产所有权上几乎所有风险和报酬，且保留了对该金融资产控制的，应当按照其继续涉入被转移金融资产的程度继续确认该被转移金融资产，并相应确认相关负债。被转移金融资产和相关负债应当在充分反映企业因金融资产转移所保留的权利和承担的义务的基础上进行计量。企业应当按照下列规定对相关负债进行计量：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[70]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十条 企业通过对被转移金融资产提供担保方式继续涉入的，应当在转移日按照金融资产的账面价值和担保金额两者的较低者，继续确认被转移金融资产，同时按照担保金额和担保合同的公允价值（通常是提供担保收到的对价）之和确认相关负债。担保金额，是指企业所收到的对价中，可被要求偿还的最高金额。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[73]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十一条 企业因持有看涨期权或签出看跌期权而继续涉入被转移金融资产，且该金融资产以摊余成本计量的， 应当按照其可能回购的被转移金融资产的金额 继续确认被转移金融资产 ， 在转移日按照收到的对价确认相关负债。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[75]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十二条 企业因持有看涨期权或签出看跌期权（或两者兼有，即上下限期权）而继续涉入被转移金融资产，且以公允价值计量该金融资产的，应当分别以下情形进行处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[77]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十三条 企业采用基于被转移金融资产的现金结算期权或类似条款的形式继续涉入的，其会计处理方法与本准则 第二十一条 和 第二十二条 中规定的以非现金结算期权形式继续涉入的会计处理方法相同。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[85]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十四条 企业按继续涉入程度继续确认的被转移金融资产以及确认的相关负债不应当相互抵销。企业应当对继续确认的被转移金融资产确认所产生的收入（或利得），对相关负债确认所产生的费用（或损失），两者不得相互抵销。继续确认的被转移金融资产以公允价值计量的，在后续计量时对其公允价值变动应根据《企业会计准则第 22 号 —— 金融工具确认和计量》第六十四条的规定进行确认，同时相关负债公允价值变动的确认应当与之保持一致，且两者不得相互抵销。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[86]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十五条 企业对金融资产的继续涉入仅限于金融资产一部分的，企业应当根据本准则 第十六条 的规定，按照转移日因继续涉入而继续确认部分和不再确认部分的相对公允价值，在两者之间分配金融资产的账面价值，并将下列两项金额的差额计入当期损益：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[87]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七章 向转入方提供非现金担保物的会计处理",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[91]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十六条 企业向金融资产转入方提供了非现金担保物（如债务工具或权益工具投资等）的，企业（转出方）和转入方应当按照下列规定进行处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[92]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第八章 衔接规定",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[97]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十七条 在本准则施行日，企业仍继续涉入被转移金融资产的，应当按照《企业会计准则第 22 号——金融工具确认和计量》及本准则关于被转移金融资产确认和计量的相关规定进行追溯调整，再按照本准则的规定对其所确认的相关负债进行重新计量，并将相关影响按照与被转移金融资产一致的方式在本准则施行日进行调整。追溯调整不切实可行的除外。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[98]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第九章 附则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[99]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十八条 本准则自 2018 年 1 月 1 日起施行。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[100]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

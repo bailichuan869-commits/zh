@@ -3,10 +3,12 @@ title: 案例分析
 type: concept
 concept_type: method
 created: 2026-06-26
-updated: 2026-07-09
-sources: [2026-06-26-initial-structure, case-batch-2026-07-first-issue]
+updated: 2026-07-30
+sources: [2026-06-26-initial-structure, case-batch-2026-07-first-issue, case-batch-2026-08-first-issue-second-seminar]
 tags: [case, audit, practice, p2-important, structured]
-related: [[concepts/practice-skills-cases]], [[concepts/comprehensive-competency]], [[concepts/policy-firm-inspection]], [[concepts/case-topic-index]], [[sources/case-batch-2026-07-first-issue]]
+related: [[concepts/practice-skills-cases]], [[concepts/comprehensive-competency]], [[concepts/policy-firm-inspection]], [[concepts/case-topic-index]], [[cases/golden-cases-index]], [[sources/case-batch-2026-07-first-issue]], [[sources/case-batch-2026-08-first-issue-second-seminar]]
+domain: cases
+topic: index
 ---
 
 # 案例分析
@@ -27,6 +29,7 @@ related: [[concepts/practice-skills-cases]], [[concepts/comprehensive-competency
 | 批次 | 原始路径 | 来源页 | 状态 |
 |---|---|---|---|
 | 2026年7月第一期实务案例 | `raw/cases/2026-07-first-issue/` | [[sources/case-batch-2026-07-first-issue]] | 已导入原始资料层 |
+| 2026年8月第一期（第二期研讨会）案例 | `raw/cases/2026-08-first-issue-second-seminar/` | [[sources/case-batch-2026-08-first-issue-second-seminar]] | 原件和 Markdown 已归档，4 张卡片已复核 |
 
 ## 已加工案例卡片
 
@@ -39,6 +42,10 @@ related: [[concepts/practice-skills-cases]], [[concepts/comprehensive-competency
 | [[cases/2026-07-first-issue-government-grant-free-use-equipment]] | [[sources/case-batch-2026-07-first-issue]] | 免费使用设备是否属于政府补助 |
 | [[cases/2026-07-first-issue-equipment-sales-revenue-recognition]] | [[sources/case-batch-2026-07-first-issue]] | 骨科手术导航设备销售的收入确认 |
 | [[cases/2026-07-first-issue-overseas-sales-revenue-recognition]] | [[sources/case-batch-2026-07-first-issue]] | 海外销售定制化产品的收入确认 |
+| [[cases/2026-08-first-issue-consolidation-structured-platform]] | [[sources/case-batch-2026-08-first-issue-second-seminar]] | 结构化不良资产平台控制判断及原地产项目能否出表 |
+| [[cases/2026-08-first-issue-lease-asset-not-ready]] | [[sources/case-batch-2026-08-first-issue-second-seminar]] | 未达预定可使用状态的融资租赁设备确认、折旧和资本化 |
+| [[cases/2026-08-first-issue-medical-distributor-revenue]] | [[sources/case-batch-2026-08-first-issue-second-seminar]] | 医疗经销模式签收时点、纯销折扣和滞销退货 |
+| [[cases/2026-08-first-issue-space-test-bench-capitalization]] | [[sources/case-batch-2026-08-first-issue-second-seminar]] | 商业航天动力试车台转固和工作量法折旧 |
 
 ## 推荐模板
 

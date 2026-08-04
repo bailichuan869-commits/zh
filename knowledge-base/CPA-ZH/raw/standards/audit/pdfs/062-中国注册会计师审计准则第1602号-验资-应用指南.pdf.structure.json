@@ -1,0 +1,317 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:52:34+00:00",
+  "source_file": "raw/_archive/standards/audit/pdfs/062-中国注册会计师审计准则第1602号-验资-应用指南.pdf",
+  "derived_file": "raw/standards/audit/pdfs/062-中国注册会计师审计准则第1602号-验资-应用指南.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "needs-review",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 115,
+  "heading_count": 12,
+  "table_count": 19,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "中国注册会计师审计准则第1602号-验资-应用指南",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "《中国注册会计师审计准则第1602 号",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[2]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "——验资》应用指南",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 业务约定书",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 计划、程序与记录",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 验 资 报 告",
+      "page": 20,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[20]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 附 则",
+      "page": 30,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[30]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "设立验资的取证与审验程序",
+      "page": 31,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[31]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "变更验资的取证与审验程序",
+      "page": 44,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[44]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "工作底稿参考格式",
+      "page": 51,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[51]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "验资报告参考格式",
+      "page": 76,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[76]/block[3]/line[1]",
+      "confidence": 0.85
+    }
+  ],
+  "tables": [
+    {
+      "index": 1,
+      "page": 51,
+      "rows": 14,
+      "columns": 14,
+      "representation": "markdown",
+      "locator": "pdf/page[51]/table[1]",
+      "needs_review": false
+    },
+    {
+      "index": 2,
+      "page": 52,
+      "rows": 15,
+      "columns": 13,
+      "representation": "markdown",
+      "locator": "pdf/page[52]/table[1]",
+      "needs_review": false
+    },
+    {
+      "index": 3,
+      "page": 53,
+      "rows": 18,
+      "columns": 17,
+      "representation": "html",
+      "locator": "pdf/page[53]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 4,
+      "page": 64,
+      "rows": 17,
+      "columns": 9,
+      "representation": "html",
+      "locator": "pdf/page[64]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 5,
+      "page": 65,
+      "rows": 4,
+      "columns": 3,
+      "representation": "markdown",
+      "locator": "pdf/page[65]/table[1]",
+      "needs_review": false
+    },
+    {
+      "index": 6,
+      "page": 66,
+      "rows": 2,
+      "columns": 7,
+      "representation": "markdown",
+      "locator": "pdf/page[66]/table[1]",
+      "needs_review": false
+    },
+    {
+      "index": 7,
+      "page": 68,
+      "rows": 3,
+      "columns": 10,
+      "representation": "html",
+      "locator": "pdf/page[68]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 8,
+      "page": 70,
+      "rows": 2,
+      "columns": 7,
+      "representation": "markdown",
+      "locator": "pdf/page[70]/table[1]",
+      "needs_review": false
+    },
+    {
+      "index": 9,
+      "page": 78,
+      "rows": 16,
+      "columns": 13,
+      "representation": "html",
+      "locator": "pdf/page[78]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 10,
+      "page": 84,
+      "rows": 4,
+      "columns": 13,
+      "representation": "html",
+      "locator": "pdf/page[84]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 11,
+      "page": 89,
+      "rows": 15,
+      "columns": 18,
+      "representation": "html",
+      "locator": "pdf/page[89]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 12,
+      "page": 94,
+      "rows": 4,
+      "columns": 13,
+      "representation": "html",
+      "locator": "pdf/page[94]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 13,
+      "page": 95,
+      "rows": 15,
+      "columns": 11,
+      "representation": "html",
+      "locator": "pdf/page[95]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 14,
+      "page": 100,
+      "rows": 16,
+      "columns": 12,
+      "representation": "html",
+      "locator": "pdf/page[100]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 15,
+      "page": 101,
+      "rows": 15,
+      "columns": 12,
+      "representation": "html",
+      "locator": "pdf/page[101]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 16,
+      "page": 106,
+      "rows": 4,
+      "columns": 10,
+      "representation": "html",
+      "locator": "pdf/page[106]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 17,
+      "page": 109,
+      "rows": 6,
+      "columns": 5,
+      "representation": "markdown",
+      "locator": "pdf/page[109]/table[1]",
+      "needs_review": false
+    },
+    {
+      "index": 18,
+      "page": 112,
+      "rows": 3,
+      "columns": 9,
+      "representation": "html",
+      "locator": "pdf/page[112]/table[1]",
+      "needs_review": true
+    },
+    {
+      "index": 19,
+      "page": 113,
+      "rows": 4,
+      "columns": 10,
+      "representation": "markdown",
+      "locator": "pdf/page[113]/table[1]",
+      "needs_review": false
+    }
+  ],
+  "warnings": [
+    "complex-pdf-table:page-100-table-1",
+    "complex-pdf-table:page-101-table-1",
+    "complex-pdf-table:page-106-table-1",
+    "complex-pdf-table:page-112-table-1",
+    "complex-pdf-table:page-53-table-1",
+    "complex-pdf-table:page-64-table-1",
+    "complex-pdf-table:page-68-table-1",
+    "complex-pdf-table:page-78-table-1",
+    "complex-pdf-table:page-84-table-1",
+    "complex-pdf-table:page-89-table-1",
+    "complex-pdf-table:page-94-table-1",
+    "complex-pdf-table:page-95-table-1",
+    "low-pdf-text:page-107",
+    "low-pdf-text:page-79"
+  ],
+  "review_pages": [
+    53,
+    64,
+    68,
+    78,
+    79,
+    84,
+    89,
+    94,
+    95,
+    100,
+    101,
+    106,
+    107,
+    112
+  ]
+}

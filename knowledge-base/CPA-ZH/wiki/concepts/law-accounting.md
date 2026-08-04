@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [2026-06-26-initial-structure, local-regulations-inventory]
 tags: [accounting, law, p1-core, draft]
 related: [[concepts/regulations-and-standards]], [[concepts/accounting-standards-system]], [[concepts/policy-caihui-supervision]]
+domain: laws
+topic: accounting-law
 ---
 
 # 中华人民共和国会计法
@@ -26,7 +28,7 @@ related: [[concepts/regulations-and-standards]], [[concepts/accounting-standards
 - 当前有效版本与官方来源；
 - 会计资料真实完整、会计监督、单位负责人责任等核心条款；
 - 与企业会计准则、财会监督政策、审计程序的连接；
-- 本地文本摄入：`D:\ai-audit\regulations\markdown\中华人民共和国会计法.md`。
+- 本地文本摄入：`raw/laws/中华人民共和国会计法.md`。
 
 <!-- practice-framework:start -->
 ## 有效版本线索

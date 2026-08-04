@@ -1,0 +1,227 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:40:47+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第16号-政府补助.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第16号-政府补助.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 26,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第16号-政府补助",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范政府补助的确认、计量和列报，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 本准则中的政府补助，是指企业从政府无偿取得货币性资产或非货币性资产。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 政府补助具有下列特征：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 政府补助分为与资产相关的政府补助和与收益相关的政府补助。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[7]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 下列各项适用其他相关会计准则：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[10]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 确认和计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[14]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 政府补助同时满足下列条件的，才能予以确认：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[15]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 政府补助为货币性资产的，应当按照收到或应收的金额计量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[18]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 与资产相关的政府补助，应当冲减相关资产的账面价值或确认为递延收益。与资产相关的政府补助确认为递延收益的，应当在相关资产使用寿命内按照合理、系统的方法分期计入损益。按照名义金额计量的政府补助，直接计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[20]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 与收益相关的政府补助，应当分情况按照以下规定进行会计处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[22]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 对于同时包含与资产相关部分和与收益相关部分的政府补助，应当区分不同部分分别进行会计处理；难以区分的，应当整体归类为与收益相关的政府补助。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[25]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 与企业日常活动相关的政府补助，应当按照经济业务实质，计入其他收益或冲减相关成本费用。与企业日常活动无关的政府补助，应当计入营业外收支。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[26]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 企业取得政策性优惠贷款贴息的，应当区分财政将贴息资金拨付给贷款银行和财政将贴息资金直接拨付给企业两种情况，分别按照本准则第十三条和第十四条进行会计处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[27]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 财政将贴息资金拨付给贷款银行，由贷款银行以政策性优惠利率向企业提供贷款的，企业可以选择下列方法之一进行会计处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[28]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 财政将贴息资金直接拨付给企业，企业应当将对应的贴息冲减相关借款费用。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[32]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 已确认的政府补助需要退回的，应当在需要退回的当期分情况按照以下规定进行会计处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[33]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 列报",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[37]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十六条 企业应当在利润表中的“营业利润”项目之上单独列报“其他收益”项目，计入其他收益的政府补助在该项目中反映。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[38]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十七条 企业应当在附注中单独披露与政府补助有关的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[39]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 衔接规定",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[43]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十八条 企业对2017年1月1日存在的政府补助采用未来适用法处理，对2017年1月1日至本准则施行日之间新增的政府补助根据本准则进行调整。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[44]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 附则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[45]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十九条 本准则自2017年6月12日起施行。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[46]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十条 2006年2月15日财政部印发的《财政部关于印发〈企业会计准则第1号——存货〉等38项具体准则的通知》（财会〔2006〕3号）中的《企业会计准则第16号——政府补助》同时废止。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[47]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

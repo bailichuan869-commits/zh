@@ -1,0 +1,83 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:48:10+00:00",
+  "source_file": "raw/_archive/standards/audit/pdfs/032-5..pdf",
+  "derived_file": "raw/standards/audit/pdfs/032-5..pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 41,
+  "heading_count": 8,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "5.",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "《中国注册会计师审计准则第1141 号——",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[2]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "财务报表审计中与舞弊相关的责任》",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "应用指南",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "舞弊风险因素的示例",
+      "page": 26,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[26]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "应对评估的舞弊导致的重大错报风险",
+      "page": 34,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[34]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "可能实施的审计程序的示例",
+      "page": 34,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[34]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "表明可能存在舞弊情形的示例",
+      "page": 39,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[39]/block[3]/line[1]",
+      "confidence": 0.85
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

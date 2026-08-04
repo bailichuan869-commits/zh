@@ -1,3 +1,8 @@
+---
+source_type: "generated-index"
+source_role: "index-page"
+---
+
 # 中国注册会计师执业准则及应用指南：官方链接清单
 
 核验日期：2026-06-26

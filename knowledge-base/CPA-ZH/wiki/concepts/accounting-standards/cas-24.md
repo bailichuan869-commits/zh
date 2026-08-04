@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [enterprise-accounting-standards-number-index-2026-06-26]
 tags: [accounting, standards, cas, p1-core]
 related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounting-standards-number-index-2026-06-26]]
+domain: accounting-standards
+topic: cas
 ---
 
 # 企业会计准则第24号——套期会计（财会〔2017〕9号）
@@ -36,4 +38,4 @@ related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounti
 |---|---|---|---|---|
 | 准则原文 | 企业会计准则第24号——套期保值（财会〔2006〕3号） | https://kjs.mof.gov.cn/zt/kjzzss/kuaijizhunzeshishi/200806/t20080618_46224.htm | `raw/standards/accounting/standards-pages/企业会计准则第24号-套期保值-财会〔2006〕3号.html` | title-standard-number/high |
 | 准则原文 | 企业会计准则第24号——套期会计（财会〔2017〕9号） | https://kjs.mof.gov.cn/zt/kjzzss/kuaijizhunzeshishi/201709/t20170908_2694624.htm | `raw/standards/accounting/standards-pages/企业会计准则第24号-套期会计-财会〔2017〕9号.html` | title-standard-number/high |
-| 实施问答 | 问：对于满足《企业会计准则第24号——套期会计》规定条件的套期关系，企业应当如何认定... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202306/t20230625_3892064.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-074.html` | title-standard-number/high |
+| 实施问答 | 问：对于满足《企业会计准则第24号——套期会计》规定条件的套期关系，企业应当如何认定... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/jrgjzzss/202306/t20230625_3892064.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-074.html.md` | title-standard-number/high |

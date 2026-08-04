@@ -1,0 +1,387 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:43:25+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第24号-套期会计-财会〔2017〕9号.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第24号-套期会计-财会〔2017〕9号.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 46,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第24号-套期会计-财会〔2017〕9号",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范套期会计处理，根据《企业会计准则 —— 基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 套期，是指企业为管理外汇风险、利率风险、价格风险、信用风险等特定风险引起的风险敞口，指定金融工具为套期工具，以使套期工具的公允价值或现金流量变动，预期抵销被套期项目全部或部分公允价值或现金流量变动的风险管理活动。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 套期分为公允价值套期、现金流量套期和境外经营净投资套期。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 对于满足本准则第二章和第三章规定条件的套期，企业可以运用套期会计方法进行处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[9]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 套期工具和被套期项目",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[11]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 套期工具，是指企业为进行套期而指定的、其公允价值或现金流量变动预期可抵销被套期项目的公允价值或现金流量变动的金融工具，包括：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[12]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 对于外汇风险套期，企业可以将非衍生金融资产（选择以公允价值计量且其变动计入其他综合收益的非交易性权益工具投资除外）或非衍生金融负债的外汇风险成分指定为套期工具。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[16]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 在确立套期关系时，企业应当将符合条件的金融工具整体指定为套期工具，但下列情形除外：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[17]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 企业可以将 两项或两项以上金融工具（或其一定比例） 的组合指定为套期工具（包括组合内的金融工具形成风险头寸相互抵销的情形）。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[22]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 被套期项目，是指使企业面临公允价值或现金流量变动风险，且被指定为被套期对象的、能够可靠计量的项目。企业可以将下列单个项目、项目组合或其组成部分指定为被套期项目：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[24]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 企业可以将符合被套期项目条件的风险敞口与衍生工具组合形成的汇总风险敞口指定为被套期项目。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[33]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 当企业出于风险管理目的对一组项目进行组合管理、且组合中的每一个项目（包括其组成部分）单独都属于符合条件的被套期项目时，可以将该项目组合指定为被套期项目。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[34]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 企业将一组项目 名义金额的组成部分 指定为被套期项目时，应当分别满足以下条件：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[36]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 如果被套期项目是净敞口为零的项目组合（即各项目之间的风险完全相互抵销），同时满足下列条件时，企业可以将该组项目指定在不含套期工具的套期关系中：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[45]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 运用套期会计时，在合并财务报表层面，只有与企业集团之外的对手方之间交易形成的资产、负债、尚未确认的确定承诺或极可能发生的预期交易才能被指定为被套期项目；在合并财务报表层面，只有与企业集团之外的对手方签订的合同才能被指定为套期工具。对于同一企业集团内的主体之间的交易，在企业个别财务报表层面可以运用套期会计，在企业集团合并财务报表层面不得运用套期会计，但下列情形除外：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[49]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 套期关系评估",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[53]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 公允价值套期、现金流量套期或境外经营净投资套期同时满足下列条件的，才能运用本准则规定的套期会计方法进行处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[54]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十六条 套期同时满足下列条件的，企业应当认定套期关系符合套期有效性要求：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[59]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十七条 企业应当在套期开始日及以后期间持续地对套期关系是否符合套期有效性要求进行评估，尤其应当分析在套期剩余期限内预期将影响套期关系的套期无效部分产生的原因。企业至少应当在资产负债表日及相关情形发生重大变化将影响套期有效性要求时对套期关系进行评估。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[63]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十八条 套期关系由于套期比率的原因而不再符合套期有效性要求，但指定该套期关系的风险管理目标没有改变的，企业应当进行套期关系再平衡。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[64]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十九条 企业发生下列情形之一的，应当终止运用套期会计：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[67]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十条 套期关系同时满足下列条件的，企业不得撤销套期关系的指定并由此终止套期关系：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[73]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十一条 企业发生下列情形之一的，不作为套期工具已到期或合同终止处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[76]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 确认和计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[79]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十二条 公允价值套期满足运用套期会计方法条件的，应当按照下列规定处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[80]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十三条 公允价值套期中，被套期项目为以摊余成本计量的金融工具（或其组成部分）的，企业对被套期项目账面价值所作的调整应当按照开始摊销日重新计算的实际利率进行摊销，并计入当期损益。该摊销可以自调整日开始，但不应当晚于对被套期项目终止进行套期利得和损失调整的时点。被套期项目为按照《企业会计准则第 22 号 —— 金融工具确认和计量》第十八条分类为以公允价值计量且其变动计入其他综合收益的金融资产（或其组成部分）的，企业应当按照相同的方式对累计已确认的套期利得或损失进行摊销，并计入当期损益，但不调整金融资产（或其组成部分）的账面价值。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[84]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十四条 现金流量套期满足运用套期会计方法条件的，应当按照下列规定处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[85]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十五条 现金流量套期储备的金额，应当按照下列规定处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[91]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十六条 当企业对现金流量套期终止运用套期会计时，在其他综合收益中确认的累计现金流量套期储备金额，应当按照下列规定进行处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[95]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十七条 对境外经营净投资的套期，包括对作为净投资的一部分进行会计处理的货币性项目的套期，应当按照类似于现金流量套期会计的规定处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[98]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十八条 企业根据本准则 第十八条 规定对套期关系作出再平衡的，应当在调整套期关系之前确定套期关系的套期无效部分，并将相关利得或损失计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[102]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十九条 对于被套期项目为风险净敞口的套期，被套期风险影响利润表不同列报项目的，企业应当将相关套期利得或损失单独列报，不应当影响利润表中与被套期项目相关的损益列报项目金额（如营业收入或营业成本）。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[104]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十条 除本准则 第二十九条 规定外，对于被套期项目为一组项目的公允价值套期，企业在套期关系存续期间，应当针对被套期项目组合中各组成项目，分别确认公允价值变动所引起的相关利得或损失，按照本准则 第二十二条 的规定进行相应处理，计入当期损益或其他综合收益。涉及调整被套期各组成项目账面价值的，企业应当对各项资产和负债的账面价值做相应调整。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[106]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十一条 企业根据本准则 第七条 规定将期权的内在价值和时间价值分开，只将期权的内在价值变动指定为套期工具时，应当区分被套期项目的性质是与交易相关还是与时间段相关。被套期项目与交易相关的，对其进行套期的期权时间价值具备交易成本的特征；被套期项目与时间段相关的，对其进行套期的期权时间价值具备为保护企业在特定时间段内规避风险所需支付成本的特征。企业应当根据被套期项目的性质分别进行以下会计处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[108]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十二条 在套期关系开始时，期权的实际时间价值高于校准时间价值的，企业应当以校准时间价值为基础，将其累计公允价值变动计入其他综合收益，并将这两个时间价值的公允价值变动差额计入当期损益；在套期关系开始时，期权的实际时间价值低于校准时间价值的，企业应当将两个时间价值中累计公允价值变动的较低者计入其他综合收益，如果实际时间价值的累计公允价值变动扣减累计计入其他综合收益金额后尚有剩余的，应当计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[112]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十三条 企业根据本准则 第七条 规定将远期合同的远期要素和即期要素分开、只将即期要素的价值变动指定为套期工具的，或者 将金融工具的外汇基差单独分拆、只将排除外汇基差后的金融工具指定为套期工具 的，可以按照与期权时间价值相同的处理方式对远期合同的远期要素或金融工具的外汇基差进行会计处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[113]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 信用风险敞口的公允价值选择权",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[114]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十四条 企业使用以公允价值计量且其变动计入当期损益的信用衍生工具管理金融工具（或其组成部分）的信用风险敞口时，可以在该金融工具（或其组成部分）初始确认时、后续计量中或尚未确认时，将其指定为以公允价值计量且其变动计入当期损益的金融工具，并同时作出书面记录，但应当同时满足下列条件：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[115]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十五条 同时满足下列条件的，企业应当对按照本准则 第三十四条 规定的金融工具（或其一定比例）终止以公允价值计量且其变动计入当期损益：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[119]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 衔接规定",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[123]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十六条 本准则施行日之前套期会计处理与本准则要求不一致的，企业不作追溯调整，但本准则第三十七条所规定的情况除外。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[124]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十七条 下列情况下，企业应当按照本准则的规定，对在比较期间最早的期初已经存在的、以及在此之后被指定的套期关系进行追溯调整：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[126]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七章 附则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[130]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十八条 本准则自 2018 年 1 月 1 日起施行。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[131]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

@@ -1,0 +1,75 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:51:11+00:00",
+  "source_file": "raw/laws/中华人民共和国会计法.md",
+  "derived_file": "raw/laws/中华人民共和国会计法.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "markdown-pass-through",
+  "source_pages": 0,
+  "heading_count": 7,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "中华人民共和国会计法",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[15]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 会计核算",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[45]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 会计监督",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[125]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 会计机构和会计人员",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[173]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 法律责任",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[205]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 附则",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[251]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

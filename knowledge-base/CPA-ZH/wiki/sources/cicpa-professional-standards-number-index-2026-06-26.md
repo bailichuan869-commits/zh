@@ -7,14 +7,16 @@ updated: 2026-06-26
 raw_path: raw/indexes/cicpa-professional-standards-number-index.csv
 tags: [audit, standards, cicpa, generated-index, p1-core]
 related: [[concepts/audit-standards-system]], [[sources/cicpa-professional-standards-download-2026-06-26]]
+domain: sources
+topic: batches
 ---
 
 # 中国注册会计师执业准则编号级索引
 
 ## 文件位置
 
-- 编号汇总 CSV：`raw/indexes/cicpa-professional-standards-number-index.csv`
-- 映射明细 CSV：`raw/indexes/cicpa-professional-standards-number-mapping.csv`
+- 编号汇总 CSV：`raw/indexes/cicpa-professional-standards-number-index.csv.md`
+- 映射明细 CSV：`raw/indexes/cicpa-professional-standards-number-mapping.csv.md`
 - Markdown 总览：`raw/indexes/cicpa-professional-standards-number-index.md`
 - 分准则 wiki 页：`wiki/concepts/audit-standards/`
 - 生成脚本：`tools/generate_cicpa_professional_standards_number_index.py`

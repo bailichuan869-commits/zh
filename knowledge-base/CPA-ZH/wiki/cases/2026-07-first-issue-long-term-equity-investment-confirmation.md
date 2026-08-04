@@ -8,8 +8,13 @@ sources: [case-batch-2026-07-first-issue]
 raw_path: raw/cases/2026-07-first-issue/32部研讨会议题【长期股权投资的确认】（7月-第一期）.docx
 tags: [case, long-term-equity-investments, non-monetary-asset-exchange, common-control, internal-reorganization, audit-practice]
 related: [[sources/case-batch-2026-07-first-issue]], [[concepts/case-analysis]], [[concepts/first-section-topics/long-term-equity-investments]], [[concepts/accounting-standards/cas-02]], [[concepts/accounting-standards/cas-07]], [[concepts/first-section-topics/consolidation-scope-control]]
+domain: cases
+topic: accounting-judgment
+page_role: case
+maturity: draft
+answer_ready: false
+review_status: pending-human-review
 ---
-
 # A公司持有D公司长期股权投资转换为C公司投资的确认
 
 ## 一句话结论
@@ -21,7 +26,7 @@ related: [[sources/case-batch-2026-07-first-issue]], [[concepts/case-analysis]],
 | 项目 | 内容 |
 |---|---|
 | 批次 | [[sources/case-batch-2026-07-first-issue]] |
-| 原始文件 | `raw/cases/2026-07-first-issue/32部研讨会议题【长期股权投资的确认】（7月-第一期）.docx` |
+| 原始文件 | `raw/cases/2026-07-first-issue/32部研讨会议题【长期股权投资的确认】（7月-第一期）.docx.md` |
 | 主题 | 子公司 C 吸收合并孙公司 D 后，A 公司原直接持有 D 的长期股权投资如何转为对 C 的投资 |
 | 适用场景 | 集团内部重组、同一控制下资产或股权转换、长期股权投资初始计量、非货币性资产交换商业实质判断 |
 
@@ -132,3 +137,18 @@ A 公司个别报表中，对原持有 D 公司 16.67% 股权转为对 C 公司�
 ## 后续待分析
 
 本卡片主要解决 A 公司个别报表问题。B 公司由持有 D 公司 83.33% 控股权变为持有 C 公司 9% 并改按权益法核算，可能涉及丧失控制权、投资处置、权益法初始计量以及集团内部重组的更复杂判断，建议另行形成案例卡片。
+
+
+## 缺失事实
+
+将本案例用于其他项目时，需补齐完整合同及补充协议、交易时间线、金额、关联关系、审批和期后执行情况。任何影响控制、可执行权利或计量基础的事实变化，均可能改变结论。
+
+## 结论确定性
+
+现有结论属于对所列事实的专业判断意见，尚待指定复核人对原始材料和报告期准则逐项复核；复核前不进入 AI 主检索集。
+
+## 原文引用与边界
+
+- [S1] [[raw/cases/2026-07-first-issue/32部研讨会议题【长期股权投资的确认】（7月-第一期）.docx|本案例原始材料]]
+
+原始材料来自内部研讨，不属于财政部准则原文；页面中的个人意见必须与官方准则依据分层使用。

@@ -1,0 +1,715 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:43:25+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第21号-租赁.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第21号-租赁.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 87,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第21号-租赁",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范租赁的确认、计量和相关信息的列报，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二条 租赁，是指在一定期间内，出租人将资产的使用权让与承租人以获取对价的合同。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三条 本准则适用于所有租赁，但下列各项除外：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[5]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 租赁的识别、分拆和合并",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[9]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 租赁的识别",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[10]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四条 在合同开始日，企业应当评估合同是否为租赁或者包含租赁。如果合同中一方让渡了在一定期间内控制一项或多项已识别资产使用的权利以换取对价，则该合同为租赁或者包含租赁。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[11]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五条 为确定合同是否让渡了在一定期间内控制已识别资产使用的权利，企业应当评估合同中的客户是否有权获得在使用期间内因使用已识别资产所产生的几乎全部经济利益，并有权在该使用期间主导已识别资产的使用。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[13]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六条 已识别资产通常由合同明确指定，也可以在资产可供客户使用时隐性指定。但是，即使合同已对资产进行指定，如果资产的供应方在整个使用期间拥有对该资产的实质性替换权，则该资产不属于已识别资产。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[14]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七条 在评估是否有权获得因使用已识别资产所产生的几乎全部经济利益时，企业应当在约定的客户可使用资产的权利范围内考虑其所产生的经济利益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[20]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八条 存在下列情况之一的，可视为客户有权主导对已识别资产在整个使用期间内的使用：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[21]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 租赁的分拆和合并",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[24]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九条 合同中同时包含多项单独租赁的，承租人和出租人应当将合同予以分拆，并分别各项单独租赁进行会计处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[25]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十条 同时符合下列条件的，使用已识别资产的权利构成合同中的一项单独租赁：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[27]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十一条 在分拆合同包含的租赁和非租赁部分时，承租人应当按照各租赁部分单独价格及非租赁部分的单独价格之和的相对比例分摊合同对价，出租人应当根据《企业会计准则第14号——收入》关于交易价格分摊的规定分摊合同对价。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[30]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十二条 为简化处理，承租人可以按照租赁资产的类别选择是否分拆合同包含的租赁和非租赁部分。承租人选择不分拆的，应当将各租赁部分及与其相关的非租赁部分分别合并为租赁，按照本准则进行会计处理。但是，对于按照《企业会计准则第22号——金融工具确认和计量》应分拆的嵌入衍生工具，承租人不应将其与租赁部分合并进行会计处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[31]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十三条 企业与同一交易方或其关联方在同一时间或相近时间订立的两份或多份包含租赁的合同，在符合下列条件之一时，应当合并为一份合同进行会计处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[32]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 承租人的会计处理",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[36]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 确认和初始计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[37]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十四条 在租赁期开始日，承租人应当对租赁确认使用权资产和租赁负债，应用本准则第三章第三节进行简化处理的短期租赁和低价值资产租赁除外。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[38]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十五条 租赁期，是指承租人有权使用租赁资产且不可撤销的期间。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[41]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十六条 使用权资产应当按照成本进行初始计量。该成本包括：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[45]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十七条 租赁负债应当按照租赁期开始日尚未支付的租赁付款额的现值进行初始计量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[53]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十八条 租赁付款额，是指承租人向出租人支付的与在租赁期内使用租赁资产的权利相关的款项，包括：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[57]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十九条 担保余值，是指与出租人无关的一方向出租人提供担保，保证在租赁结束时租赁资产的价值至少为某指定的金额。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[65]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 后续计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[67]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十条 在租赁期开始日后，承租人应当按照本准则第二十一条、第二十二条、第二十七条及第二十九条的规定，采用成本模式对使用权资产进行后续计量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[68]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十一条 承租人应当参照《企业会计准则第4号——固定资产》有关折旧规定，对使用权资产计提折旧。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[69]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十二条 承租人应当按照《企业会计准则第8号——资产减值》的规定，确定使用权资产是否发生减值，并对已识别的减值损失进行会计处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[71]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十三条 承租人应当按照固定的周期性利率计算租赁负债在租赁期内各期间的利息费用，并计入当期损益。按照《企业会计准则第17号——借款费用》等其他准则规定应当计入相关资产成本的，从其规定。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[72]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十四条 未纳入租赁负债计量的可变租赁付款额应当在实际发生时计入当期损益。按照《企业会计准则第1号——存货》等其他准则规定应当计入相关资产成本的，从其规定。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[74]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十五条 在租赁期开始日后，发生下列情形的，承租人应当重新确定租赁付款额，并按变动后租赁付款额和修订后的折现率计算的现值重新计量租赁负债：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[75]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十六条 在租赁期开始日后，根据担保余值预计的应付金额发生变动，或者因用于确定租赁付款额的指数或比率变动而导致未来租赁付款额发生变动的，承租人应当按照变动后租赁付款额的现值重新计量租赁负债。在这些情形下，承租人采用的折现率不变；但是，租赁付款额的变动源自浮动利率变动的，使用修订后的折现率。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[79]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十七条 承租人在根据本准则第二十五条、第二十六条或因实质固定付款额变动重新计量租赁负债时，应当相应调整使用权资产的账面价值。使用权资产的账面价值已调减至零，但租赁负债仍需进一步调减的，承租人应当将剩余金额计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[80]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十八条 租赁发生变更且同时符合下列条件的，承租人应当将该租赁变更作为一项单独租赁进行会计处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[81]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十九条 租赁变更未作为一项单独租赁进行会计处理的，在租赁变更生效日，承租人应当按照本准则第九条至第十二条的规定分摊变更后合同的对价，按照本准则第十五条的规定重新确定租赁期，并按照变更后租赁付款额和修订后的折现率计算的现值重新计量租赁负债。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[85]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 短期租赁和低价值资产租赁",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[88]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十条 短期租赁，是指在租赁期开始日，租赁期不超过12个月的租赁。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[89]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十一条 低价值资产租赁，是指单项租赁资产为全新资产时价值较低的租赁。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[91]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十二条 对于短期租赁和低价值资产租赁，承租人可以选择不确认使用权资产和租赁负债。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[94]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十三条 对于短期租赁，承租人应当按照租赁资产的类别作出本准则第三十二条所述的会计处理选择。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[96]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十四条 按照本准则第三十二条进行简化处理的短期租赁发生租赁变更或者因租赁变更之外的原因导致租赁期发生变化的，承租人应当将其视为一项新租赁进行会计处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[98]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 出租人的会计处理",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[99]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 出租人的租赁分类",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[100]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十五条 出租人应当在租赁开始日将租赁分为融资租赁和经营租赁。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[101]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十六条 一项租赁属于融资租赁还是经营租赁取决于交易的实质，而不是合同的形式。如果一项租赁实质上转移了与租赁资产所有权有关的几乎全部风险和报酬，出租人应当将该项租赁分类为融资租赁。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[106]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十七条 转租出租人应当基于原租赁产生的使用权资产，而不是原租赁的标的资产，对转租赁进行分类。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[117]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 出租人对融资租赁的会计处理",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[119]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十八条 在租赁期开始日，出租人应当对融资租赁确认应收融资租赁款，并终止确认融资租赁资产。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[120]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十九条 出租人应当按照固定的周期性利率计算并确认租赁期内各个期间的利息收入。该周期性利率，是按照本准则第三十八条规定所采用的折现率，或者按照本准则第四十四条规定所采用的修订后的折现率。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[130]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十条 出租人应当按照《企业会计准则第22号——金融工具确认和计量》和《企业会计准则第23号——金融资产转移》的规定，对应收融资租赁款的终止确认和减值进行会计处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[131]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十一条 出租人取得的未纳入租赁投资净额计量的可变租赁付款额应当在实际发生时计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[133]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十二条 生产商或经销商作为出租人的融资租赁，在租赁期开始日，该出租人应当按照租赁资产公允价值与租赁收款额按市场利率折现的现值两者孰低确认收入，并按照租赁资产账面价值扣除未担保余值的现值后的余额结转销售成本。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[134]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十三条 融资租赁发生变更且同时符合下列条件的，出租人应当将该变更作为一项单独租赁进行会计处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[136]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十四条 融资租赁的变更未作为一项单独租赁进行会计处理的，出租人应当分别下列情形对变更后的租赁进行处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[139]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 出租人对经营租赁的会计处理",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[142]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十五条 在租赁期内各个期间，出租人应当采用直线法或其他系统合理的方法，将经营租赁的租赁收款额确认为租金收入。其他系统合理的方法能够更好地反映因使用租赁资产所产生经济利益的消耗模式的，出租人应当采用该方法。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[143]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十六条 出租人发生的与经营租赁有关的初始直接费用应当资本化，在租赁期内按照与租金收入确认相同的基础进行分摊，分期计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[144]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十七条 对于经营租赁资产中的固定资产，出租人应当采用类似资产的折旧政策计提折旧；对于其他经营租赁资产，应当根据该资产适用的企业会计准则，采用系统合理的方法进行摊销。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[145]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十八条 出租人取得的与经营租赁有关的未计入租赁收款额的可变租赁付款额，应当在实际发生时计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[147]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十九条 经营租赁发生变更的，出租人应当自变更生效日起将其作为一项新租赁进行会计处理，与变更前租赁有关的预收或应收租赁收款额应当视为新租赁的收款额。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[148]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 售后租回交易",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[149]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五十条 承租人和出租人应当按照《企业会计准则第14号——收入》的规定，评估确定售后租回交易中的资产转让是否属于销售。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[150]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十一条 售后租回交易中的资产转让属于销售的，承租人应当按原资产账面价值中与租回获得的使用权有关的部分，计量售后租回所形成的使用权资产，并仅就转让至出租人的权利确认相关利得或损失；出租人应当根据其他适用的企业会计准则对资产购买进行会计处理，并根据本准则对资产出租进行会计处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[151]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十二条 售后租回交易中的资产转让不属于销售的，承租人应当继续确认被转让资产，同时确认一项与转让收入等额的金融负债，并按照《企业会计准则第22号——金融工具确认和计量》对该金融负债进行会计处理；出租人不确认被转让资产，但应当确认一项与转让收入等额的金融资产，并按照《企业会计准则第22号——金融工具确认和计量》对该金融资产进行会计处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[154]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 列报",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[155]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 承租人的列报",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[156]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十三条 承租人应当在资产负债表中单独列示使用权资产和租赁负债。其中，租赁负债通常分别非流动负债和一年内到期的非流动负债列示。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[157]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十四条 承租人应当在附注中披露与租赁有关的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[160]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十五条 承租人应当根据理解财务报表的需要，披露有关租赁活动的其他定性和定量信息。此类信息包括：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[170]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 出租人的列报",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[176]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十六条 出租人应当根据资产的性质，在资产负债表中列示经营租赁资产。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[177]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十七条 出租人应当在附注中披露与融资租赁有关的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[178]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十八条 出租人应当在附注中披露与经营租赁有关的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[182]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十九条 出租人应当根据理解财务报表的需要，披露有关租赁活动的其他定性和定量信息。此类信息包括：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[186]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七章 衔接规定",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[190]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六十条 对于首次执行日前已存在的合同，企业在首次执行日可以选择不重新评估其是否为租赁或者包含租赁。选择不重新评估的，企业应当在财务报表附注中披露这一事实，并一致应用于前述所有合同。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[191]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十一条 承租人应当选择下列方法之一对租赁进行衔接会计处理，并一致应用于其作为承租人的所有租赁：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[192]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十二条 首次执行日前的经营租赁中，租赁资产属于低价值资产且根据本准则第三十二条的规定选择不确认使用权资产和租赁负债的，承租人无需对该经营租赁按照衔接规定进行调整，应当自首次执行日起按照本准则进行会计处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[200]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十三条 承租人采用本准则第六十一条第（二）项进行衔接会计处理时，对于首次执行日前的经营租赁，可根据每项租赁采用下列一项或多项简化处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[201]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十四条 承租人采用本准则第六十三条规定的简化处理方法的，应当在财务报表附注中披露所采用的简化处理方法以及在合理可能的范围内对采用每项简化处理方法的估计影响所作的定性分析。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[207]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十五条 对于首次执行日前划分为经营租赁且在首次执行日后仍存续的转租赁，转租出租人在首次执行日应当基于原租赁和转租赁的剩余合同期限和条款进行重新评估，并按照本准则的规定进行分类。按照本准则重分类为融资租赁的，应当将其作为一项新的融资租赁进行会计处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[208]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十六条 对于首次执行日前已存在的售后租回交易，企业在首次执行日不重新评估资产转让是否符合《企业会计准则第14号——收入》作为销售进行会计处理的规定。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[210]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十七条 承租人选择按照本准则第六十一条第（二）项规定对租赁进行衔接会计处理的，还应当在首次执行日披露以下信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[213]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第八章 附则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[216]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六十八条 本准则自2019年1月1日起施行。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[217]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

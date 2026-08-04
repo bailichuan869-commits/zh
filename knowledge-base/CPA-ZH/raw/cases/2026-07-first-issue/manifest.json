@@ -9,7 +9,11 @@
     "bytes": 32473,
     "sha256": "17e9cab8f18b6a777b82193c678f47586d994e8e8cb340ff764b5486c60121cb",
     "document_type": "docx",
-    "status": "raw-imported"
+    "status": "raw-imported",
+    "derived_markdown": "raw/cases/2026-07-first-issue/11部研讨会议题【暂估转固税会差异问题】（7月-第1期）.docx.md",
+    "derived_sha256": "415144d80d4917d0d33f76f592456e154fadd0f59acf6d08f1be66d815e7add0",
+    "text_extraction_status": "ok",
+    "archive_policy": "dual-track"
   },
   {
     "filename": "29部研讨会议题【政府补助确认】（7月-第一期）.docx",
@@ -21,7 +25,11 @@
     "bytes": 18120,
     "sha256": "36831eaee3a791dcadc60a13b7bf4754e24ee060fc7042b9973cf573a7b05c2a",
     "document_type": "docx",
-    "status": "raw-imported"
+    "status": "raw-imported",
+    "derived_markdown": "raw/cases/2026-07-first-issue/29部研讨会议题【政府补助确认】（7月-第一期）.docx.md",
+    "derived_sha256": "e5dd02785bf6a8b2485e8425a5331d8467e07a0d1c4159cb5128e2a5fd65139d",
+    "text_extraction_status": "ok",
+    "archive_policy": "dual-track"
   },
   {
     "filename": "2部研讨会议题【收入确认】（7月-第一期）.docx",
@@ -33,7 +41,11 @@
     "bytes": 21009,
     "sha256": "f93b73de3577638d512df12e8aecc88d385fe5f7d9603af91711ea97a236eb5f",
     "document_type": "docx",
-    "status": "raw-imported"
+    "status": "raw-imported",
+    "derived_markdown": "raw/cases/2026-07-first-issue/2部研讨会议题【收入确认】（7月-第一期）.docx.md",
+    "derived_sha256": "d90e8bcd90e830d7c9dc153911cdbabbfadeed1c3f7481e5c11f9ca6e8c4d3b7",
+    "text_extraction_status": "ok",
+    "archive_policy": "dual-track"
   },
   {
     "filename": "32部研讨会议题【长期股权投资的确认】（7月-第一期）.docx",
@@ -45,7 +57,11 @@
     "bytes": 104188,
     "sha256": "0d75aae3d3da1627b721192b7c4661bd483b688738ee44450dd2a5f66fa7170b",
     "document_type": "docx",
-    "status": "raw-imported"
+    "status": "raw-imported",
+    "derived_markdown": "raw/cases/2026-07-first-issue/32部研讨会议题【长期股权投资的确认】（7月-第一期）.docx.md",
+    "derived_sha256": "ccdff0746bbc6a8b859d6285c6640f5bc8e0eded19b72835e9fa0e169d361e14",
+    "text_extraction_status": "ok",
+    "archive_policy": "dual-track"
   },
   {
     "filename": "天津分所审计6部研讨会议题【收入确认】（7月-第一期）.docx",
@@ -57,6 +73,10 @@
     "bytes": 21822,
     "sha256": "cbebabd5fbe82ab11cc32a08b526b19bc271c7a4fe22a7171905406e5b24b9ea",
     "document_type": "docx",
-    "status": "raw-imported"
+    "status": "raw-imported",
+    "derived_markdown": "raw/cases/2026-07-first-issue/天津分所审计6部研讨会议题【收入确认】（7月-第一期）.docx.md",
+    "derived_sha256": "f33460784673c82cbebf41aa6e0577145c9a2ae299b02ba786ac6474be4f6a2d",
+    "text_extraction_status": "ok",
+    "archive_policy": "dual-track"
   }
 ]

@@ -1,0 +1,230 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:51:31+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第10号-企业年金基金.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第10号-企业年金基金.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 24,
+  "table_count": 2,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第10号-企业年金基金",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范企业年金基金的确认、计量和财务报表列报，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 企业年金基金，是指根据依法制定的企业年金计划筹集的资金及其投资运营收益形成的企业补充养老保险基金。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 企业年金基金应当作为独立的会计主体进行确认、计量和列报。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[5]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 确认和计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[7]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 企业年金基金应当分别资产、负债、收入、费用和净资产进行确认和计量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[8]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 企业年金基金缴费及其运营形成的各项资产包括：货币资金、应收证券清算款、应收利息、买入返售证券、其他应收款、债券投资、基金投资、股票投资、其他投资等。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[9]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 企业年金基金在运营中根据国家规定的投资范围取得的国债、信用等级在投资级以上的金融债和企业债、可转换债、投资性保险产品、证券投资基金、股票等具有良好流动性的金融产品，其初始取得和后续估值应当以公允价值计量：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[10]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 企业年金基金运营形成的各项负债包括：应付证券清算款、应付受益人待遇、应付受托人管理费、应付托管人管理费、应付投资管理人管理费、应交税金、卖出回购证券款、应付利息、应付佣金和其他应付款等。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[14]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 企业年金基金运营形成的各项收入包括：存款利息收入、买入返售证券收入、公允价值变动收益、投资处置收益和其他收入。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[15]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 收入应当按照下列规定确认和计量：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[16]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 企业年金基金运营发生的各项费用包括：交易费用、受托人管理费、托管人管理费、投资管理人管理费、卖出回购证券支出和其他费用。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[22]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 费用应当按照下列规定确认和计量：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[23]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 企业年金基金的净资产，是指企业年金基金的资产减去负债后的余额。资产负债表日，应当将当期各项收入和费用结转至净资产。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[28]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 净资产应当按照下列规定确认和计量：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[30]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 列报",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[35]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 企业年金基金的财务报表包括资产负债表、净资产变动表和附注。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[36]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 资产负债表反映企业年金基金在某一特定日期的财务状况，应当按照资产、负债和净资产分类列示。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[37]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十六条 资产类项目至少应当列示下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[38]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十七条 负债类项目至少应当列示下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[49]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十八条 净资产类项目列示企业年金基金净值。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[60]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十九条 净资产变动表反映企业年金基金在一定会计期间的净资产增减变动情况，应当列示下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[61]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十条 附注应当披露下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[66]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [
+    {
+      "index": 1,
+      "page": null,
+      "rows": 17,
+      "columns": 8,
+      "representation": "markdown",
+      "locator": ".TRS_Editor table[1]",
+      "needs_review": false
+    },
+    {
+      "index": 2,
+      "page": null,
+      "rows": 23,
+      "columns": 4,
+      "representation": "markdown",
+      "locator": ".TRS_Editor table[2]",
+      "needs_review": false
+    }
+  ],
+  "warnings": [],
+  "review_pages": []
+}

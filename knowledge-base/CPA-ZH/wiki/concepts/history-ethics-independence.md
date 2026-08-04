@@ -7,6 +7,8 @@ updated: 2026-06-29
 sources: [2026-06-26-initial-structure, third-section-official-archive-2026-06-29]
 tags: [cpa, ethics, independence, history, p1-core]
 related: [[concepts/industry-history]], [[concepts/ethics-code]], [[concepts/independence-standard-1]], [[concepts/policy-integrity]], [[concepts/policy-execution-checklist]]
+domain: ethics
+topic: history
 ---
 
 # 行业史、职业道德与独立性
@@ -15,7 +17,7 @@ related: [[concepts/industry-history]], [[concepts/ethics-code]], [[concepts/ind
 
 ## 官方来源入口
 
-- 中注协职业道德规范专题页：[官方链接](https://cicpa.org.cn/ztzl1/Professional_standards/Professional_ethics/)，本地归档 `raw/ethics/third-section/professional-ethics-index/official.html`。
+- 中注协职业道德规范专题页：[官方链接](https://cicpa.org.cn/ztzl1/Professional_standards/Professional_ethics/)，本地归档 `raw/ethics/third-section/professional-ethics-index/official.html.md`。
 - 职业道德守则（2020）通知及 8 个附件：见 [[sources/third-section-official-archive-2026-06-29]]。
 - 独立性准则第1号正式文本：财会〔2024〕29号，见 [[concepts/independence-standard-1]]。
 - 独立性准则第1号应用指南：中注协 2026-02-13 发布，见 [[concepts/independence-standard-1]]。

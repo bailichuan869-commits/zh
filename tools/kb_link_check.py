@@ -5,12 +5,21 @@ import json
 import re
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 from typing import Any
 
 
 URL_RE = re.compile(r"https?://[A-Za-z0-9._~:/?#\[\]@!$&'()*+,;=%-]+")
+
+
+def clean_url(url: str) -> str:
+    cleaned = str(url).strip().strip("<>")
+    cleaned = cleaned.rstrip("`。；，,.;")
+    while cleaned.endswith(")") and cleaned.count("(") < cleaned.count(")"):
+        cleaned = cleaned[:-1]
+    return cleaned
 
 
 def load_json(path: Path) -> Any:
@@ -21,7 +30,9 @@ def collect_urls(root: Path, include_wiki: bool) -> dict[str, set[str]]:
     found: dict[str, set[str]] = {}
 
     def add(url: str, source: Path) -> None:
-        cleaned = url.rstrip("`。；，,.;")
+        cleaned = clean_url(url)
+        if urllib.parse.urlparse(cleaned).scheme not in {"http", "https"}:
+            return
         found.setdefault(cleaned, set()).add(source.relative_to(root).as_posix())
 
     registry = root / "source-registry.yml"

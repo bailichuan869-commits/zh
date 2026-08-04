@@ -7,6 +7,8 @@ import sys
 from datetime import date
 from pathlib import Path
 
+from kb_common import parse_frontmatter
+
 
 def search_counts(root: Path) -> tuple[dict[str, int], int]:
     db_path = root / "search" / "kb_search.sqlite"
@@ -49,10 +51,18 @@ def main() -> int:
     readme = root / "README.md"
     text = readme.read_text(encoding="utf-8")
 
-    wiki_pages = sum(1 for _ in (root / "wiki").rglob("*.md"))
+    wiki_pages = sum(
+        1
+        for page in (root / "wiki").rglob("*.md")
+        if "_trash" not in page.relative_to(root / "wiki").parts
+    )
     raw_files = sum(1 for p in (root / "raw").rglob("*") if p.is_file())
     manifests = manifest_rows(root)
-    case_cards = sum(1 for _ in (root / "wiki" / "cases").rglob("*.md")) if (root / "wiki" / "cases").exists() else 0
+    case_cards = 0
+    if (root / "wiki" / "cases").exists():
+        for path in (root / "wiki" / "cases").rglob("*.md"):
+            metadata, _body = parse_frontmatter(path.read_text(encoding="utf-8"))
+            case_cards += metadata.get("page_role") == "case"
     by_kind, total = search_counts(root)
 
     text = re.sub(

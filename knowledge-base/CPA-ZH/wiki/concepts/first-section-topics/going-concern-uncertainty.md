@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [first-section-master-index-2026-06-26]
 tags: [going-concern, audit-report, disclosure, p1-core]
 related: [[concepts/first-section-topic-matrix]], [[concepts/audit-standards/csa-1324]], [[concepts/audit-standards/csa-1503]], [[concepts/accounting-standards/cas-30]]
+domain: practice
+topic: first-section
 ---
 
 # 持续经营与重大不确定性专题

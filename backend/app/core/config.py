@@ -14,3 +14,6 @@ ALLOWED_ORIGINS = tuple(
     for origin in os.environ.get("CPA_ZH_WEB_ORIGINS", "http://127.0.0.1:5173,http://localhost:5173").split(",")
     if origin.strip()
 )
+OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
+OPENAI_ANSWER_MODEL = os.environ.get("CPA_ZH_ANSWER_MODEL", "gpt-4.1-mini")
+DEMO_MODE = os.environ.get("CPA_ZH_DEMO_MODE", "0") == "1"

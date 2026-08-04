@@ -1,0 +1,1147 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:42:55+00:00",
+  "source_file": "raw/ethics/third-section/ethics-code-2020-no5-other-assurance-independence/official.pdf",
+  "derived_file": "raw/ethics/third-section/ethics-code-2020-no5-other-assurance-independence/official.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 34,
+  "heading_count": 141,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "中国注册会计师职业道德守则第5号——其他鉴证业务对独立性的要求",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "中国注册会计师职业道德守则第5 号",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "——其他鉴证业务对独立性的要求",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范注册会计师职业活动，指导注册会计师运用职",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二条 鉴证业务的例子包括：",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三条 《会计师事务所质量管理准则第5101 号——业务质量",
+      "page": 1,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[1]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四条 如果会计师事务所向鉴证客户提供鉴证服务的同时，也",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 基本要求",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五条 注册会计师在执行鉴证业务时应当保持独立性。",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六条 独立性包括实质上的独立性和形式上的独立性：",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七条 在执行鉴证业务时，注册会计师应当遵循职业道德基本",
+      "page": 2,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[2]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 鉴证业务",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八条 在鉴证业务中，会计师事务所发表鉴证结论，以增强除",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九条 鉴证业务可以分为基于责任方认定的业务和直接报告",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十条 在基于责任方认定的业务中，责任方对鉴证对象进行评",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十一条 在直接报告业务中，会计师事务所直接对鉴证对象进",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 基于责任方认定的业务",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十二条 在执行基于责任方认定的鉴证业务时：",
+      "page": 3,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[3]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十三条 在基于责任方认定的业务中，如果责任方对鉴证对象",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十四条 在大多数基于责任方认定的业务中，责任方需要同时",
+      "page": 4,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[4]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 直接报告业务",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十五条 在执行直接报告业务时：",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 多个责任方",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十六条 某些鉴证业务，包括基于责任方认定的业务和直接报",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六节 网络事务所",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十七条 如果会计师事务所有理由相信网络事务所的利益和",
+      "page": 5,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[5]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七节 关联实体",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十八条 如果鉴证业务项目团队知悉或有理由相信，涉及鉴证",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八节 保持独立性的期间",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十九条 注册会计师应当在业务期间和鉴证对象信息涵盖的",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十条 如果一个实体委托会计师事务所对其鉴证对象信息",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十一条 如果在鉴证对象信息涵盖的期间或之后，在鉴证业",
+      "page": 6,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[6]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十二条 如果会计师事务所尚未完成非鉴证服务，并且在鉴",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九节 工作记录",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十三条 会计师事务所应当记录遵守独立性要求的情况，包",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十四条 如果需要采取防范措施应对某种不利影响，会计师",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十五条 如果通过对某种不利影响进行重要性分析，注册会",
+      "page": 7,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[7]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十六条 工作记录可以提供证据证明会计师事务所在遵守",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十节 违反本守则的规定",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十七条 如果会计师事务所认为已发生违反本守则规定（以",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十八条 如果会计师事务所确定无法采取适当行动以妥善",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十九条 如果会计师事务所确定能够采取适当行动妥善处",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十条 如果业务委托方或治理层认为会计师事务所采取的",
+      "page": 8,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[8]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十一条 会计师事务所应当记录下列事项：",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 收 费",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 收费结构",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十二条 如果会计师事务所从某一鉴证客户收取的全部费",
+      "page": 9,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[9]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十三条 如果从某一鉴证客户收取的全部费用占某一合伙",
+      "page": 10,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[10]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 逾期收费",
+      "page": 10,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[10]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十四条 如果鉴证客户长期未支付应付的费用，尤其是相当",
+      "page": 10,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[10]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 或有收费",
+      "page": 11,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[11]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十五条 或有收费是指收费与否或收费多少取决于交易的",
+      "page": 11,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[11]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十六条 会计师事务所在提供鉴证服务时，以直接或间接形",
+      "page": 11,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[11]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十七条 会计师事务所在向鉴证客户提供非鉴证服务时，如",
+      "page": 11,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[11]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十八条 在向鉴证客户提供非鉴证服务时，如果会计师事务",
+      "page": 11,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[11]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 礼品和款待",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十九条 会计师事务所或鉴证业务项目团队成员接受鉴证",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十条 如果会计师事务所或鉴证业务项目团队成员接受鉴",
+      "page": 12,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[12]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十一条 会计师事务所或鉴证业务项目团队成员应当评价",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十二条 如果会计师事务所或鉴证业务项目团队成员向鉴",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 诉讼或诉讼威胁",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四十三条 如果会计师事务所或鉴证业务项目团队成员与鉴",
+      "page": 13,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[13]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 经济利益",
+      "page": 14,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[14]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": 14,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[14]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十四条 在鉴证客户中拥有经济利益，可能因自身利益产生",
+      "page": 14,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[14]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十五条 受益人可能通过集合投资工具、信托等投资工具拥",
+      "page": 14,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[14]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十六条 在确定经济利益对于某个人来说的重要程度时，可",
+      "page": 14,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[14]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 在鉴证客户中拥有经济利益",
+      "page": 14,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[14]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十七条 下列各方不得在鉴证客户中拥有直接经济利益或",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 在控制鉴证客户的实体中拥有经济利益",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十八条 当一个实体在鉴证客户中拥有控制性的权益，并且",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 作为受托管理人拥有经济利益",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十九条 除非同时满足下列条件，本守则第四十七条的规定",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 无意中获取的经济利益",
+      "page": 15,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[15]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十条 如果会计师事务所、鉴证业务项目团队成员或其主要",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六节 其他情况下的经济利益",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十一条 如果鉴证业务项目团队成员知悉其其他近亲属在",
+      "page": 16,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[16]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十二条 如果鉴证业务项目团队成员知悉下列其他人员在",
+      "page": 17,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[17]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七章 贷款和担保",
+      "page": 17,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[17]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五十三条 涉及鉴证客户的贷款或担保可能因自身利益对独",
+      "page": 17,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[17]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十四条 会计师事务所、鉴证业务项目团队成员或其主要近",
+      "page": 18,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[18]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十五条 会计师事务所、鉴证业务项目团队成员或其主要近",
+      "page": 18,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[18]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十六条 即使会计师事务所从银行或类似金融机构等鉴证",
+      "page": 18,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[18]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十七条 会计师事务所、鉴证业务项目团队成员或其主要近",
+      "page": 18,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[18]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十八条 会计师事务所、鉴证业务项目团队成员或其主要近",
+      "page": 19,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[19]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第八章 商业关系",
+      "page": 19,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[19]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五十九条 会计师事务所、鉴证业务项目团队成员或其主要近",
+      "page": 19,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[19]/block[8]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十条 会计师事务所、鉴证业务项目团队成员不得与鉴证客",
+      "page": 19,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[19]/block[19]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十一条 如果鉴证业务项目团队成员的主要近亲属与鉴证",
+      "page": 20,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[20]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十二条 会计师事务所、鉴证业务项目团队成员或其主要近",
+      "page": 20,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[20]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第九章 家庭和私人关系",
+      "page": 20,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[20]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 一般规定",
+      "page": 20,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[20]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十三条 如果鉴证业务项目团队成员与鉴证客户的董事、高",
+      "page": 20,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[20]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 鉴证业务项目团队成员的主要近亲属",
+      "page": 21,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[21]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十四条 如果鉴证业务项目团队成员的主要近亲属担任的",
+      "page": 21,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[21]/block[3]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十五条 如果鉴证业务项目团队成员的主要近亲属是鉴证",
+      "page": 21,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[21]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 鉴证业务项目团队成员的其他近亲属",
+      "page": 22,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[22]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十六条 如果鉴证业务项目团队成员的其他近亲属是鉴证",
+      "page": 22,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[22]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 鉴证业务项目团队成员的其他密切关系",
+      "page": 22,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[22]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十七条 如果鉴证业务项目团队成员与鉴证客户的董事、高",
+      "page": 22,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[22]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 鉴证业务项目团队以外人员的家庭和私人关系",
+      "page": 23,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[23]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六十八条 会计师事务所中鉴证业务项目团队以外的合伙人",
+      "page": 23,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[23]/block[11]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十章 鉴证业务项目团队成员最近曾担任鉴证客户的董",
+      "page": 24,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[24]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "事、高级管理人员或特定员工",
+      "page": 24,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[24]/block[8]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 3,
+      "text": "第六十九条 如果鉴证业务项目团队成员最近曾担任鉴证客户",
+      "page": 24,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[24]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十条 如果在鉴证报告涵盖的期间，鉴证业务项目团队成员",
+      "page": 24,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[24]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十一条 如果在鉴证报告涵盖期间之前，鉴证业务项目团队",
+      "page": 24,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[24]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十一章 兼任鉴证客户的董事或高级管理人员",
+      "page": 25,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[25]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七十二条 如果会计师事务所的合伙人或员工兼任鉴证客户",
+      "page": 25,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[25]/block[10]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十二章 与鉴证客户发生雇佣关系",
+      "page": 25,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[25]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七十三条 如果鉴证客户的董事、高级管理人员或特定员工，",
+      "page": 25,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[25]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十四条 如果会计师事务所前任合伙人或鉴证业务项目团",
+      "page": 25,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[25]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十五条 如果会计师事务所的前任合伙人加入某一实体，并",
+      "page": 26,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[26]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十六条 如果鉴证业务项目团队某一成员参与鉴证业务，当",
+      "page": 27,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[27]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十三章 与鉴证客户长期存在业务关系",
+      "page": 27,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[27]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七十七条 会计师事务所与某一鉴证客户长期存在业务关系，",
+      "page": 27,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[27]/block[13]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十八条 如果鉴证业务项目团队成员与下列人员或事项之",
+      "page": 27,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[27]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第七十九条 本守则第七十八条第三款第（一）项至第（八）项",
+      "page": 28,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[28]/block[18]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十条 如果确定所产生的不利影响仅能通过将该人员轮换",
+      "page": 29,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[29]/block[12]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十四章 为鉴证客户提供非鉴证服务",
+      "page": 29,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[29]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八十一条 会计师事务所可能向其鉴证客户提供与其技能和",
+      "page": 29,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[29]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十二条 在接受委托向鉴证客户提供非鉴证服务之前，会计",
+      "page": 30,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[30]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十三条 在评价不利影响存在与否及其严重程度时，注册会",
+      "page": 30,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[30]/block[7]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十四条 本章的相关规定涉及对重要性的考虑，注册会计师",
+      "page": 30,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[30]/block[16]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十五条 会计师事务所可能向同一鉴证客户提供多种非鉴",
+      "page": 30,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[30]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十六条 会计师事务所不得承担涉及鉴证对象或鉴证对象",
+      "page": 31,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[31]/block[2]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十七条 鉴证客户的管理层职责涉及控制和领导该客户的",
+      "page": 31,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[31]/block[6]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十八条 在向鉴证客户提供非鉴证服务时，如果会计师事务",
+      "page": 31,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[31]/block[9]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八十九条 会计师事务所应当根据具体情况并运用职业判断",
+      "page": 31,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[31]/block[14]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十条 为避免在向鉴证客户提供非鉴证服务时承担管理层",
+      "page": 32,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[32]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十一条 如果会计师事务所参与编制鉴证对象信息，随后又",
+      "page": 32,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[32]/block[15]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十五章 含有使用和分发限制条款的鉴证报告",
+      "page": 32,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[32]/block[21]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九十二条 本章规定了当鉴证业务报告含有使用和分发限制",
+      "page": 32,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[32]/block[22]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十三条 对于会计师事务所针对鉴证业务出具含有使用和",
+      "page": 33,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[33]/block[4]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十四条 如果预期使用者为某一类使用者，且在确定业务约",
+      "page": 33,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[33]/block[17]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十五条 当会计师事务所执行符合条件的鉴证业务时，除本",
+      "page": 33,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[33]/block[20]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十六条 如果对同一鉴证客户既出具含有使用和分发限制",
+      "page": 34,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[34]/block[1]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十七条 当执行符合条件的鉴证业务时，如果出现本守则第",
+      "page": 34,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[34]/block[5]/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九十八条 当执行符合条件的鉴证业务时，会计师事务所不得",
+      "page": 34,
+      "source": "explicit-legal-numbering",
+      "locator": "pdf/page[34]/block[19]/line[1]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

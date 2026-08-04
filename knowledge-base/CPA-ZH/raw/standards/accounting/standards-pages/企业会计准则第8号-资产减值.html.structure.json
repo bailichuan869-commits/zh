@@ -1,0 +1,331 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:51:37+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第8号-资产减值.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第8号-资产减值.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 39,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第8号-资产减值",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范资产减值的确认、计量和相关信息的披露，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 资产减值，是指资产的可收回金额低于其账面价值。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 下列各项适用其他相关会计准则：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[7]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 可能发生减值资产的认定",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[17]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 企业应当在 资产负债表日 判断资产是否存在可能发生减值的迹象。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[18]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 存在下列迹象的，表明资产可能发生了减值：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[20]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 资产可收回金额的计量",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[29]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 资产存在减值迹象的，应当估计其可收回金额。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[30]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 资产的公允价值减去处置费用后的净额与资产预计未来现金流量的现值，只要有一项超过了资产的账面价值，就表明资产没有发生减值，不需再估计另一项金额。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[33]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 资产的公允价值减去处置费用后的净额，应当根据公平交易中销售协议价格减去 可 直接归属于该资产处置费用的金额确定 。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[34]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 资产 预计 未来现金流量的现值，应当按照资产在持续使用过程中和最终处置时所产生的预计未来现金流量，选择恰当的折现率对其进行折现后的金额加以确定。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[38]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 预计的资产 未来现金流量应当包括 下列各项 ：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[40]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 预计资产未来现金流量时， 企业管理层应当在合理和有依据的基础上对资产剩余使用寿命内整个经济状况进行最佳估计。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[44]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 预计资产的未来现金流量，应当以资产的当前状况为基础，不应当包括与将来可能会发生的、尚未作出承诺的重组事项或者与资产改良有关的预计未来现金流量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[48]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 折现率是反映当前市场货币时间价值和资产特定风险的税前利率。 该 折现率是企业在购置或者投资资产时所要求的必要报酬率。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[51]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 预计资产的未来现金流量涉及外币的，应当以该资产所产生的未来现金流量的结算货币为基础，按照该货币适用的折现率计算资产的现值；然后将该外币现值 按照 计算资产未来现金流量现值当日的即期汇率进行折算。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[53]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 资产减值损失的确定",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[55]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 可收回金额的计量结果表明，资产的可收回金额低于其账面价值的，应当将资产的账面价值减记至可收回金额，减记的金额确认为资产减值损失，计入当期损益，同时计提相应的资产减值准备。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[56]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十六条 资产减值损失确认后，减值资产的折旧或者摊销费用应当在未来期间作相应调整，以使该资产在剩余使用寿命内，系统地分摊调整后的资产账面价值（扣除预计净残值）。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[57]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十七条 资产减值损失一经确认，在以后会计期间不得转回。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[58]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 资产组的认定及减值处理",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[60]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十八条 有迹象表明一项资产可能发生减值的，企业应当以单项资产为基础估计其可收回金额。企业难以对单项资产的可收回金额进行估计的，应当 以 该资产所属的资产组为基础确定资产组的可收回金额。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[61]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十九条 资产组账面价值的确定基础应当与其可收回金额的确定方式相一致。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[65]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十条 企业总部资产包括企业集团或 其事 业部的办公楼、电子数据处理设备等资产。总部资产的显著特征是难以脱离其他资产或者资产组产生独立的现金流入，而且其账面价值难以完全归属于某一资产组。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[69]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十一条 企业 对某一 资产组 进行 减值测试，应当 先 认定所有与该资产组相关的总部资产 ，再 根据相关总部资产能否按照合理和一致的基础分摊至该资产组分别 下列情况 处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[72]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十二条 资产组或者资产组组合的可收回金额低于其账面价值的（总部资产和商誉分摊至某资产组或者资产组组合的，该资产组或者资产组组合的账面价值应当包括相关总部资产和商誉的分摊额），应当确认相应的减值损失 。减值 损失金额 应当 先抵减分摊至资产组或者资产组组合中商誉的账面价值 ，再 根据资产组或者资产组组合中除商誉之外的其他各项资产的账面价值所占比重，按比例抵减其他各项资产的账面价值。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[78]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 商誉减值的处理",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[81]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十三条 企业合并所形成的商誉，至少应当在每年年度终了进行减值测试。商誉应当结合与其相关的资产组或者资产组组合进行减值测试。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[82]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十四条 企业进行资产 减值测试 ，对于 因企业合并形成的商誉的账面价值 ，应当自购买日起 按照合理的方法分摊至相关的资产组；难以分摊至相关的资产组的，应当将其分摊至相关的资产组组合。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[84]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十五条 在对包含商誉的相关资产组或者资产组组合进行减值测试时，如与商誉相关的资产组或者资产组组合存在减值迹象的，应当 先 对不包含商誉的资产组或者资产组组合进行减值测试，计算可收回金额，并与相关账面价值相比较，确认相应的减值损失。再对包含商誉的资产组或者资产组组合进行减值测试，比较这些相关资产组或者资产组组合的账面价值（包括所分摊的商誉的账面价值部分）与其可收回金额，如相关资产组或者资产组组合的可收回金额低于其账面价值的，应当确认 商誉的 减值损失 ， 按照本准则第二十二条的规定处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[87]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七章 披露",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[89]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十六条 企业应当在附注中披露与资产减值有关的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[90]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十七条 发生重大资产减值损失的，应当在附注中 披露 导致每项重大资产减值损失的原因 和 当期确认的重大资产减值损失的金额。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[94]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十八条 对于重大资产减值，应当在附注中 披露 资产（或者资产组，下同）可收回金额的确定方法。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[100]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十九条 第二十六条（一）、（二）和第二十七条（二） 第 2项信息应当按照资产类别予以披露。资产类别 应当以资产在 企业生产经营活动中 的 性质或者功能 是否相同或者 相似 为基础确定 。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[103]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十条 分摊到某资产组的商誉（或者使用寿命不确定的无形资产，下同）的账面价值占商誉账面价值总额的比例重大的，应当在附注中披露下 列 信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[104]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三十一条 商誉的全部或者部分账面价值分摊到多个资产组、且分摊到每个资产组的商誉的账面价值占商誉账面价值总额的比例不重大的，企业应当在附注中说明这一情况以及分摊到上述资产组的商誉合计金额。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[114]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

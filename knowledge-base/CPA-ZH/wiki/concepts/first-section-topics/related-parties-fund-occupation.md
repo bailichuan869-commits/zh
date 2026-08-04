@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [first-section-master-index-2026-06-26]
 tags: [related-parties, fund-occupation, audit-risk, p1-core]
 related: [[concepts/first-section-topic-matrix]], [[concepts/accounting-standards/cas-36]], [[concepts/audit-standards/csa-1323]], [[concepts/law-company]], [[concepts/law-securities]]
+domain: practice
+topic: first-section
 ---
 
 # 关联方及资金占用专题

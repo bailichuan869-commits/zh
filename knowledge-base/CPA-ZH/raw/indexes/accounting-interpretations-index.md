@@ -1,3 +1,8 @@
+---
+source_type: "generated-index"
+source_role: "index-page"
+---
+
 # 企业会计准则解释编号索引
 
 生成日期：2026-06-26

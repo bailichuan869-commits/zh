@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [2026-06-26-initial-structure]
 tags: [audit, process, workpaper, sampling, p1-core, draft]
 related: [[concepts/audit-practice-operations]], [[concepts/audit-standards-system]]
+domain: practice
+topic: audit-practice
 ---
 
 # 审计流程

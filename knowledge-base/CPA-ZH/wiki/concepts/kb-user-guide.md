@@ -6,7 +6,9 @@ created: 2026-07-09
 updated: 2026-07-09
 sources: [kb-retrieval-upgrade-2026-06-29]
 tags: [cpa, user-guide, workflow, search, maintenance]
-related: [[overview]], [[concepts/kb-maintenance-workflow]], [[concepts/source-status-dashboard]], [[concepts/case-analysis]], [[concepts/case-topic-index]]
+related: [[overview]], [[concepts/kb-maintenance-workflow]], [[concepts/source-status-dashboard]], [[concepts/kb-section-upgrade-dashboard]], [[concepts/case-analysis]], [[concepts/case-topic-index]]
+domain: tools
+topic: kb-ops
 ---
 
 # CPA-ZH 使用手册
@@ -21,11 +23,13 @@ related: [[overview]], [[concepts/kb-maintenance-workflow]], [[concepts/source-s
 |---|---|
 | 看知识库整体有什么 | [[index]] |
 | 查法规、准则、政策和案例 | 本页“怎么检索” |
-| 看四大板块入口 | [[index]] 的“一级板块” |
+| 看五大板块入口 | [[index]] 的“一级板块” |
 | 看案例 | [[concepts/case-analysis]] 和 [[concepts/case-topic-index]] |
 | 新增资料或更新资料 | 本页“新增资料怎么放”和 [[concepts/kb-maintenance-workflow]] |
 | 检查知识库有没有坏 | 本页“维护命令” |
 | 查看哪些来源待 OCR 或补链接 | [[concepts/source-status-dashboard]] |
+| 看五大板块分别该怎么升级 | [[concepts/kb-section-upgrade-dashboard]] |
+| 找审计自动化工具模板和风险边界 | [[concepts/ai-coding-tool-template-library]] 和 [[concepts/ai-coding-risk-control-checklist]] |
 
 ## 三层结构
 
@@ -37,7 +41,7 @@ related: [[overview]], [[concepts/kb-maintenance-workflow]], [[concepts/source-s
 
 不要把判断结论直接写进 `raw/`。`raw/` 是证据箱，`wiki/` 才是工作台。
 
-## 四大板块入口
+## 五大板块入口
 
 | 板块 | 入口 | 适合解决的问题 |
 |---|---|---|
@@ -45,6 +49,7 @@ related: [[overview]], [[concepts/kb-maintenance-workflow]], [[concepts/source-s
 | 行业重要政策性文件 | [[concepts/policy-documents]] | 查财会监督、审计秩序、注册、执业许可、诚信和监督检查政策 |
 | 行业史与职业道德 | [[concepts/history-ethics-independence]] | 查行业史、职业道德守则、独立性准则和应用指南 |
 | 实务技能与案例分析 | [[concepts/practice-skills-cases]] | 查审计流程、智能化工具、综合能力和实务案例 |
+| AI 编程与自动化 | [[concepts/ai-coding-lectures]] | 查 Agent、Python、VBA 插件、工具模板、审计自动化场景和风险控制清单 |
 
 ## 怎么检索
 
@@ -62,6 +67,8 @@ related: [[overview]], [[concepts/kb-maintenance-workflow]], [[concepts/source-s
 .\.venv\Scripts\python.exe tools\kb_search.py query "政府补助 免费使用设备"
 .\.venv\Scripts\python.exe tools\kb_search.py query "长期股权投资 内部重组"
 .\.venv\Scripts\python.exe tools\kb_search.py query "中办发 2023 4号 财会监督"
+.\.venv\Scripts\python.exe tools\kb_search.py query "Excel Agent 工具设计"
+.\.venv\Scripts\python.exe tools\kb_search.py query "VBA 加载项 断链 删表"
 ```
 
 检索技巧：
@@ -99,6 +106,7 @@ related: [[overview]], [[concepts/kb-maintenance-workflow]], [[concepts/source-s
 | 政策文件 | `raw/policies/` | `wiki/concepts/policy-*.md` |
 | 职业道德、独立性准则 | `raw/ethics/` | `wiki/concepts/ethics-*.md` 或 `wiki/concepts/independence-*.md` |
 | 实务案例 | `raw/cases/批次名/` | `wiki/sources/批次说明.md` 和 `wiki/cases/案例卡片.md` |
+| 讲义和工具课程 | `raw/lectures/批次名/` | `wiki/sources/批次说明.md` 和 `wiki/concepts/*-lectures.md` |
 
 新增一批资料时，建议同时做四件事：
 
@@ -135,6 +143,7 @@ related: [[overview]], [[concepts/kb-maintenance-workflow]], [[concepts/source-s
 ```powershell
 .\.venv\Scripts\python.exe tools\kb_text_cache.py build
 .\.venv\Scripts\python.exe tools\kb_search.py index
+.\.venv\Scripts\python.exe tools\kb.py schema --write-report
 .\.venv\Scripts\python.exe tools\kb_update_readme_stats.py
 .\.venv\Scripts\python.exe tools\kb_health_check.py
 ```
@@ -145,6 +154,7 @@ related: [[overview]], [[concepts/kb-maintenance-workflow]], [[concepts/source-s
 |---|---|
 | `kb_text_cache.py build` | 抽取 raw 文件正文，形成可复用文本缓存 |
 | `kb_search.py index` | 重建本地搜索索引 |
+| `tools\kb.py schema --write-report` | 生成分板块技术升级仪表盘，追踪五大板块元数据、来源字段和升级重点 |
 | `kb_update_readme_stats.py` | 刷新 README 的统计数字 |
 | `kb_health_check.py` | 检查 manifest、内链、案例回挂、搜索索引和缓存状态 |
 | `kb_source_status.py write-report` | 生成来源状态仪表盘，追踪 OCR、官方链接和文本缓存待办 |

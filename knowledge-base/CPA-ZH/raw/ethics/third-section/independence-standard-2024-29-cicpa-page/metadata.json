@@ -9,5 +9,10 @@
   "archived_on": "2026-06-29",
   "content_type": "text/html",
   "bytes": 9291,
-  "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/independence-standard-2024-29-cicpa-page/official.html"
+  "local_file": "raw/ethics/third-section/independence-standard-2024-29-cicpa-page/official.html",
+  "derived_markdown": "raw/ethics/third-section/independence-standard-2024-29-cicpa-page/official.html.md",
+  "derived_sha256": "f26b11a2a4a3beaf4c1feafcae214274687005ec682897134d65beda25f47502",
+  "text_extraction_status": "ok",
+  "sha256": "e0a3cafdeae0f86b045c75ad0df3f2c90fe9adc0c1335bbda803ec3272724fd4",
+  "archive_policy": "dual-track"
 }

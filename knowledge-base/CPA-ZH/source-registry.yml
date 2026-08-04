@@ -1,6 +1,6 @@
 ---
 title: CPA-ZH official source registry
-updated: 2026-07-09
+updated: 2026-08-04
 purpose: >
   Maintain the preferred official source entrances for CPA-ZH retrieval,
   archiving, link checking, and version tracking.
@@ -112,3 +112,18 @@ document_status:
   historical: 历史参考，不作为当前直接适用依据
   draft: 征求意见稿或草案，不作为正式依据
   unknown: 尚未完成效力核验
+
+verified_documents:
+  - id: cpa-law-amendment-2026
+    authority: npc
+    official_url: http://www.npc.gov.cn/npc/c2/c30834/202606/t20260626_455830.html
+    local_raw_path: raw/laws/注册会计师法-修改决定-2026.md
+    status: enacted-not-effective
+    effective_on: 2027-01-01
+    verified_on: 2026-08-04
+  - id: accounting-interpretation-20
+    authority: mof
+    official_url: https://kjs.mof.gov.cn/zhengcefabu/202606/t20260615_3991686.htm
+    local_raw_path: raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第20号-的通知.html.md
+    status: valid
+    verified_on: 2026-08-04

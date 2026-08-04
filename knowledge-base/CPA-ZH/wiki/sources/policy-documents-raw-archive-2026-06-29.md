@@ -4,8 +4,11 @@ type: source
 source_type: raw-archive
 created: 2026-06-29
 updated: 2026-06-29
+raw_path: raw/policies/second-section/
 tags: [policy, raw-archive, second-section, cpa]
 related: [[concepts/policy-documents]], [[concepts/policy-version-validity-tracker]], [[concepts/policy-execution-checklist]]
+domain: sources
+topic: batches
 ---
 
 # 第二板块政策文件原文归档批次
@@ -16,13 +19,13 @@ related: [[concepts/policy-documents]], [[concepts/policy-version-validity-track
 
 | 文件 | 文号 | 官方来源 | 本地归档 |
 |---|---|---|---|
-| 关于进一步加强财会监督工作的意见 | 中办发〔2023〕4号 | 中国政府网 | `raw/policies/second-section/caihui-supervision-2023-4/official.html` |
-| 关于进一步规范财务审计秩序促进注册会计师行业健康发展的意见 | 国办发〔2021〕30号 | 中国政府网 | `raw/policies/second-section/audit-order-2021-30/official.html` |
-| 注册会计师全国统一考试办法 | 财政部令第115号 | 中国政府网国务院公报 | `raw/policies/second-section/cpa-exam-2024-115/official.html` |
-| 注册会计师注册办法 | 财政部令第99号 | 财政部 | `raw/policies/second-section/cpa-registration-2019-99/official.html` |
-| 会计师事务所执业许可和监督管理办法 | 财政部令第97号 | 中国政府网国务院公报 | `raw/policies/second-section/firm-license-supervision-2019-97/official.html` |
-| 注册会计师行业诚信建设纲要 | 财会〔2023〕5号 | 中国政府网 | `raw/policies/second-section/integrity-2023-5/official.html` |
-| 会计师事务所监督检查办法 | 财办〔2022〕23号 | 中国政府网 | `raw/policies/second-section/firm-inspection-2022-23/official.html` |
+| 关于进一步加强财会监督工作的意见 | 中办发〔2023〕4号 | 中国政府网 | `raw/policies/second-section/caihui-supervision-2023-4/official.html.md` |
+| 关于进一步规范财务审计秩序促进注册会计师行业健康发展的意见 | 国办发〔2021〕30号 | 中国政府网 | `raw/policies/second-section/audit-order-2021-30/official.html.md` |
+| 注册会计师全国统一考试办法 | 财政部令第115号 | 中国政府网国务院公报 | `raw/policies/second-section/cpa-exam-2024-115/official.html.md` |
+| 注册会计师注册办法 | 财政部令第99号 | 财政部 | `raw/policies/second-section/cpa-registration-2019-99/official.html.md` |
+| 会计师事务所执业许可和监督管理办法 | 财政部令第97号 | 中国政府网国务院公报 | `raw/policies/second-section/firm-license-supervision-2019-97/official.html.md` |
+| 注册会计师行业诚信建设纲要 | 财会〔2023〕5号 | 中国政府网 | `raw/policies/second-section/integrity-2023-5/official.html.md` |
+| 会计师事务所监督检查办法 | 财办〔2022〕23号 | 中国政府网 | `raw/policies/second-section/firm-inspection-2022-23/official.html.md` |
 
 ## 维护说明
 

@@ -1,0 +1,233 @@
+---
+source_type: "local-lecture"
+source_role: "content"
+representation: "semantic-transcript"
+extraction_profile: "readable"
+structure_status: "verified-auto"
+source_pages: 0
+heading_count: 11
+table_count: 4
+extraction_engine: "markdown-pass-through"
+extraction_status: "ok"
+structure_updated_at: "2026-07-28"
+---
+
+# Python 第 10 课：Excel 处理的两种模式：COM 和 XML
+
+## 今天先不做数据清洗
+
+前面我们用 PDF 工具箱练过了项目、命令行、依赖、GUI、Git、JSON、模块化和打包。
+
+今天开始进入 Excel。
+
+但第一节 Excel 课先不急着处理数据。
+
+我们先解决一个更重要的问题：
+
+> Python 到底是怎么处理 Excel 的？
+
+以后你问 AI 做 Excel 自动化，它可能会给你不同建议：
+
+- 用 `pandas`。
+- 用 `openpyxl`。
+- 用 `win32com`。
+- 直接改 `.xlsx` 里的 XML。
+
+这些不是随便选的，而是不同的工作模式。
+
+后面的 Excel 篇会收束到两个核心能力：
+
+```text
+数据处理：清洗、标准化、检查。
+数据汇总：合并、提取、分组输出。
+```
+
+很多看起来不同的财务和审计工具，其实都是这两类能力的组合。
+
+## 今天要解决的问题
+
+同样是 Excel 自动化，其实有两种很不一样的思路：
+
+```text
+一种是不打开 Excel，直接处理文件。
+一种是打开 Excel，让 Excel 软件自己干活。
+```
+
+第一种背后更接近文件/XML路线。
+
+第二种就是 COM 自动化路线。
+
+这节课我们先用两个小案例把它们看明白。
+
+## 你会学到
+
+- `.xlsx` 文件为什么不是一个普通表格文件。
+- XML 和 `.xlsx` 文件是什么关系。
+- `openpyxl` 这类库大概在帮我们做什么。
+- COM 是什么。
+- 为什么 COM 能控制真正的 Excel 软件。
+- 什么时候适合文件/XML路线。
+- 什么时候适合 COM 路线。
+
+## 小案例一：把 xlsx 看成一个文件
+
+先准备一个很简单的 Excel 文件：
+
+```text
+data\demo.xlsx
+```
+
+里面只放几行数据：
+
+| 姓名  |  金额 |
+| --- | --: |
+| 张三  | 100 |
+| 李四  | 200 |
+
+然后复制一份，改名为：
+
+```text
+demo.zip
+```
+
+再解压它。
+
+你会看到里面不是一个神秘的 Excel 黑盒，而是一堆文件夹和 XML：
+
+```text
+xl/
+  worksheets/
+    sheet1.xml
+  workbook.xml
+  styles.xml
+```
+
+这说明：
+
+> `.xlsx` 本质上是一个压缩包，里面保存了很多 XML 文件。
+
+我们平时用 `openpyxl` 读写 `.xlsx`，并不是在控制 Excel 软件。
+
+它更像是在帮我们安全地读写这些文件结构。
+
+## 小案例二：让 Python 控制真正的 Excel
+
+另一种路线是 COM。
+
+COM 可以理解为：
+
+> Python 向 Windows 发指令，让真正的 Excel 软件打开文件、执行操作、保存结果。
+
+这条路线通常会用到：
+
+```text
+win32com
+```
+
+比如：
+
+- 打开一个 Excel 文件。
+- 刷新公式。
+- 自动调整列宽。
+- 导出 PDF。
+- 运行已有 VBA 宏。
+
+这类动作依赖 Excel 软件自己的能力。
+
+所以 COM 不是在直接改文件，而是在控制 Excel 这个程序。
+
+## 两种模式的区别
+
+| 问题 | 文件/XML路线 | COM 路线 |
+|---|---|---|
+| 是否打开 Excel 软件 | 不打开 | 会打开或后台启动 Excel |
+| 常用工具 | `pandas`、`openpyxl` | `win32com` |
+| 适合做什么 | 读取、清洗、汇总、生成普通表格 | 刷新公式、运行宏、导出 PDF |
+| 速度 | 通常更适合批量处理 | 大量文件时可能较慢 |
+| 环境要求 | 不一定需要安装 Excel | 通常需要 Windows 和 Office |
+| 稳定性 | 更适合自动化和服务器 | 容易受弹窗、权限、Office 状态影响 |
+| 学习风险 | 比较适合从数据处理入门 | 要注意关闭文件、释放进程 |
+
+## 为什么先讲这个
+
+后面我们会做很多 Excel 工具：
+
+- 数据清洗。
+- 字段标准化。
+- 关键字段检查。
+- 多文件合并。
+- 多 Sheet 汇总。
+- 分组输出。
+
+它们可以分成两组：
+
+```text
+数据处理：把表整理成稳定、可用、可验证的数据。
+数据汇总：把分散的数据合并、提取、统计成结果。
+```
+
+所以后面我们会优先用 `pandas` 和 `openpyxl`。
+
+但你也要知道，有些需求不适合它们。
+
+比如：
+
+- Excel 里有复杂公式，需要先刷新。
+- 要调用现成 VBA 宏。
+- 要按 Excel 的打印效果导出 PDF。
+- 要依赖 Excel 软件里的特殊功能。
+
+这些时候就可能要考虑 COM。
+
+## 今天要记住
+
+Python 处理 Excel，不是只有一种办法。
+
+先问清楚：
+
+```text
+我是要处理文件里的数据？
+还是要控制 Excel 软件本身？
+```
+
+如果是读取、清洗、汇总，优先考虑文件/XML路线。
+
+如果必须依赖 Excel 软件的能力，再考虑 COM。
+
+XML 是底层结构，初学阶段先知道它存在，不要轻易手改。
+
+## 做完以后你应该能
+
+- 说清 `.xlsx` 和 XML 的关系。
+- 解释 `openpyxl` 为什么不需要打开 Excel。
+- 解释 COM 为什么需要真正的 Excel 软件。
+- 判断简单场景该走文件/XML路线还是 COM 路线。
+- 听到 AI 建议 `win32com` 或 XML 时，知道它意味着什么。
+
+## 本节课提示词
+
+把下面这段发给 AI：
+
+```text
+我想给零基础学员讲 Python 处理 Excel 的两种模式：文件/XML路线和 COM 路线。
+
+这一节课先不做数据清洗，只通过小案例讲清楚概念。
+
+请帮我设计一节课堂内容，要求：
+- 用一个简单 xlsx 文件说明：xlsx 本质上是压缩包，里面有 XML
+- 解释 openpyxl / pandas 为什么可以不打开 Excel 就读写文件
+- 用一个简单场景说明 COM：Python 控制真正的 Excel 软件
+- 解释 win32com 适合做什么
+- 说明为什么 COM 通常依赖 Windows 和 Office
+- 说明为什么初学者不要轻易手改 XML
+- 最后给出场景选择表
+
+请输出：
+1. 课堂开场解释
+2. 小案例一：把 xlsx 改成 zip 看内部 XML
+3. 小案例二：COM 控制 Excel 的典型场景
+4. 文件/XML路线和 COM 路线对比表
+5. 什么时候用 pandas/openpyxl
+6. 什么时候用 COM
+7. 一段课堂总结
+```

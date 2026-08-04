@@ -7,13 +7,15 @@ updated: 2026-06-26
 raw_path: raw/indexes/accounting-interpretations-index.csv
 tags: [accounting, standards, interpretations, generated-index, p1-core]
 related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounting-standards-interpretations-download-2026-06-26]]
+domain: sources
+topic: batches
 ---
 
 # 企业会计准则解释编号索引
 
 ## 文件位置
 
-- 编号汇总 CSV：`raw/indexes/accounting-interpretations-index.csv`
+- 编号汇总 CSV：`raw/indexes/accounting-interpretations-index.csv.md`
 - Markdown 总览：`raw/indexes/accounting-interpretations-index.md`
 - 解释页目录：`wiki/concepts/accounting-standards/interpretations/`
 - 生成脚本：`tools/generate_accounting_interpretation_pages.py`

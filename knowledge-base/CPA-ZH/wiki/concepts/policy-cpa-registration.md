@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [2026-06-26-initial-structure, archived-cpa-competition-policy-pages]
 tags: [policy, registration, cpa, p2-important]
 related: [[concepts/policy-documents]], [[concepts/law-cpa]], [[concepts/policy-cpa-exam]], [[concepts/policy-integrity]]
+domain: policies
+topic: registration
 ---
 
 # 注册会计师注册办法
@@ -16,7 +18,7 @@ related: [[concepts/policy-documents]], [[concepts/law-cpa]], [[concepts/policy-
 - 文号：财政部令第99号
 - 定位：注册会计师执业注册管理制度。
 - 官方来源：[财政部：财政部令第99号关于修改《注册会计师注册办法》的决定](https://www.mof.gov.cn/gkml/caizhengwengao/wg201901/wg201912/202005/t20200522_3518260.htm)（已核验，2026-06-29）。
-- 本地归档：`raw/policies/second-section/cpa-registration-2019-99/official.html`。
+- 本地归档：`raw/policies/second-section/cpa-registration-2019-99/official.html.md`。
 
 ## 政策定位
 

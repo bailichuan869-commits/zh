@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [2026-06-26-initial-structure, archived-cpa-competition-policy-pages]
 tags: [policy, exam, cpa, p2-important]
 related: [[concepts/policy-documents]], [[concepts/policy-cpa-registration]], [[concepts/law-cpa]]
+domain: policies
+topic: registration
 ---
 
 # 注册会计师全国统一考试办法
@@ -16,7 +18,7 @@ related: [[concepts/policy-documents]], [[concepts/policy-cpa-registration]], [[
 - 文号：财政部令第115号
 - 定位：注册会计师考试准入制度。
 - 官方来源：[中国政府网国务院公报：财政部令第115号及《注册会计师全国统一考试办法》](https://www.gov.cn/gongbao/2024/issue_11286/202404/content_6945588.html)（已核验，2026-06-29）。
-- 本地归档：`raw/policies/second-section/cpa-exam-2024-115/official.html`。
+- 本地归档：`raw/policies/second-section/cpa-exam-2024-115/official.html.md`。
 
 ## 政策定位
 

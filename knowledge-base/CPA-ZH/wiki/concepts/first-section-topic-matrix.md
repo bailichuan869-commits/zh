@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [first-section-master-index-2026-06-26, core-laws-article-index-2026-06-26, enterprise-accounting-standards-number-index-2026-06-26, cicpa-professional-standards-number-index-2026-06-26]
 tags: [cpa, law, standards, topic-matrix, p1-core]
 related: [[concepts/regulations-and-standards]], [[concepts/first-section-completion-map]], [[concepts/accounting-standards-system]], [[concepts/audit-standards-system]]
+domain: practice
+topic: topic-index
 ---
 
 # 第一板块专题矩阵

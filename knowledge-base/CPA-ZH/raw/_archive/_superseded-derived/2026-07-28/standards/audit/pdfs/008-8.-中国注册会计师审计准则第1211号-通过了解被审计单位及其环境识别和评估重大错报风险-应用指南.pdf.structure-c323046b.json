@@ -1,0 +1,67 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:47:58+00:00",
+  "source_file": "raw/_archive/standards/audit/pdfs/008-8.-中国注册会计师审计准则第1211号-通过了解被审计单位及其环境识别和评估重大错报风险-应用指南.pdf",
+  "derived_file": "raw/standards/audit/pdfs/008-8.-中国注册会计师审计准则第1211号-通过了解被审计单位及其环境识别和评估重大错报风险-应用指南.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 55,
+  "heading_count": 6,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "8.-中国注册会计师审计准则第1211号-通过了解被审计单位及其环境识别和评估重大错报风险-应用指南",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "《中国注册会计师审计准则第1211 号",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[1]/line[2]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "——通过了解被审计单位及其环境识别",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[1]/line[3]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "和评估重大错报风险》应用指南",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[2]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "内部控制要素",
+      "page": 47,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[47]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "可能表明存在重大错报风险的情况和事项",
+      "page": 54,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[54]/block[3]/line[1]",
+      "confidence": 0.85
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

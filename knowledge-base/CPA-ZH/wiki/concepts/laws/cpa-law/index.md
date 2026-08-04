@@ -3,19 +3,29 @@ title: 中华人民共和国注册会计师法条款目录
 type: concept
 concept_type: law-article-index
 created: 2026-06-26
-updated: 2026-06-26
-sources: [local-core-laws-2026-06-26]
-tags: [cpa, law, article, p1-core, article-index]
-related: [[concepts/law-cpa]], [[sources/core-laws-article-index-2026-06-26]]
+updated: 2026-07-23
+sources: [local-core-laws-2026-06-26, challenge-knowledge-source-summary-2026-07-13, cpa-law-amendment-2026, 注册会计师法-修改决定-2026]
+tags: [cpa, law, article, p1-core, article-index, superseded-version, 2026-draft]
+related: [[concepts/law-cpa]], [[sources/core-laws-article-index-2026-06-26]], [[sources/cpa-law-amendment-2026]], [[concepts/laws/cpa-law/2026-amendment-highlights]], [[concepts/laws/cpa-law-2026-draft]]
+domain: laws
+topic: cpa-law
 ---
 
 # 中华人民共和国注册会计师法条款目录
 
+## 版本提示
+
+本目录基于本地 2014 修正版文本生成（46 条）。《注册会计师法》2026 修订（主席令第七十八号）已于 2026-06-26 通过、2027-01-01 施行，修改决定全文已归档于 `raw/laws/注册会计师法-修改决定-2026.md`（要点对照见 [[concepts/laws/cpa-law/2026-amendment-highlights]]）。
+
+> 📄 **2026 修订草案（手工套用）已生成**：[[concepts/laws/cpa-law-2026-draft]] 提供依修改决定手工套用 2014 版生成的 **8 章 60 条完整草案**（草案·待官方核对），raw 全文见 `raw/laws/中华人民共和国注册会计师法-2026-草案.md`。该草案非官方文本，仅供过渡研读。
+
+在新版官方重排版文本归档并重建条款页前，本目录仅作修订前历史条款索引和差异复核参考，不宜作为 2027-01-01 起有效条文直接引用。
+
 ## 汇总
 
-- 条款记录数：46
-- 条款页：本目录下按条号生成。
-- 说明：如原文存在重复条号，第二个及以后条款页文件名会追加序号后缀。
+- 条款记录数：46（修订前 2014 修正版）；2026 草案推演为 60 条（见 [[concepts/laws/cpa-law-2026-draft]]）。
+- 条款页：本目录下按条号生成，均为修订前版本条款页。
+- 说明：如原文存在重复条号，第二个及以后条款页文件名会追加序号后缀。2026 修订后 60 条正式条款页待官方重排版归档后重建；当前草案全文已以单页形式提供（[[concepts/laws/cpa-law-2026-draft]]）。
 
 ## 条款
 

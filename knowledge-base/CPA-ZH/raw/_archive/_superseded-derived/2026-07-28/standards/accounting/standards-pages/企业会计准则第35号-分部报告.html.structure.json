@@ -1,0 +1,219 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:34:45+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第35号-分部报告.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第35号-分部报告.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 25,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第35号-分部报告",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范分部报告的编制和相关信息的披露，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 企业存在多种经营或跨地区经营的，应当按照本准则规定披露分部信息。但是，法律、行政法规另有规定的除外。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 企业应当以对外提供的财务报表为基础披露分部信息。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[5]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 报告分部的确定",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[8]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 企业披露分部信息，应当区分业务分部和地区分部。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[9]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 业务分部，是指企业内可区分的、能够提供单项或一组相关产品或劳务的组成部分。该组成部分承担了不同于其他组成部分的风险和报酬。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[10]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 地区分部，是指企业内可区分的、能够在一个特定的经济环境内提供产品或劳务的组成部分。该组成部分承担了不同于在其他经济环境内提供产品或劳务的组成部分的风险和报酬。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[17]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 两个或两个以上的业务分部或地区分部同时满足下列条件的，可以予以合并：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[25]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 企业应当以业务分部或地区分部为基础确定报告分部。业务分部或地区分部的大部分收入是对外交易收入，且满足下列条件之一的，应当将其确定为报告分部：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[28]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 业务分部或地区分部未满足本准则第八条规定条件的，可以按照下列规定处理：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[32]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 报告分部的对外交易收入合计额占合并总收入或企业总收入的比重未达到 75% 的，应当将其他的分部确定为报告分部（即使它们未满足本准则第八条规定的条件），直到该比重达到 75% 。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[36]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 企业的内部管理按照垂直一体化经营的不同层次来划分的，即使其大部分收入不通过对外交易取得，仍可将垂直一体化经营的不同层次确定为独立的报告业务分部。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[37]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 对于上期确定为报告分部的，企业本期认为其依然重要，即使本期未满足本准则第八条规定条件的，仍应将其确定为本期的报告分部。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[38]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 分部信息的披露",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[40]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 企业应当区分主要报告形式和次要报告形式披露分部信息。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[41]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 对于主要报告形式，企业应当在附注中披露分部收入、分部费用、分部利润（亏损）、分部资产总额和分部负债总额等。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[45]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 分部的日常活动是金融性质的,利息收入和利息费用应当作为分部收入和分部费用进行披露。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[53]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十六条 企业披露的分部信息，应当与合并财务报表或企业财务报表中的总额信息相衔接。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[54]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十七条 分部信息的主要报告形式是业务分部的，应当就次要报告形式披露下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[56]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十八条 分部信息的主要报告形式是地区分部的，应当就次要报告形式披露下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[59]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十九条 分部间转移交易应当以实际交易价格为基础计量。转移价格的确定基础及其变更情况，应当予以披露。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[62]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十条 企业应当披露分部会计政策 ，但 分部会计政策与合并财务报表或企业财务报表一致的 除外 。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[63]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十一条 企业在披露分部信息时，应当提供前期比较数据。但是，提供比较数据不切实可行的除外。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[67]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

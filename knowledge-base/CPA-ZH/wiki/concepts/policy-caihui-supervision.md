@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [2026-06-26-initial-structure, archived-cpa-competition-policy-pages]
 tags: [policy, supervision, caihui-supervision, p2-important]
 related: [[concepts/policy-documents]], [[concepts/policy-audit-order]], [[concepts/law-accounting]], [[concepts/first-section-responsibility-risk-map]]
+domain: policies
+topic: supervision
 ---
 
 # 关于进一步加强财会监督工作的意见
@@ -16,7 +18,7 @@ related: [[concepts/policy-documents]], [[concepts/policy-audit-order]], [[conce
 - 文号：中办发〔2023〕4号
 - 定位：财会监督顶层设计文件。
 - 官方来源：[中国政府网：中共中央办公厅 国务院办公厅印发《关于进一步加强财会监督工作的意见》](https://www.gov.cn/zhengce/2023-02/15/content_5741628.htm)（已核验，2026-06-29）。
-- 本地归档：`raw/policies/second-section/caihui-supervision-2023-4/official.html`。
+- 本地归档：`raw/policies/second-section/caihui-supervision-2023-4/official.html.md`。
 
 ## 政策定位
 

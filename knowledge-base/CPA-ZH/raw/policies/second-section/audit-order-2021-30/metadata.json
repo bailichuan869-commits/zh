@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "text/html",
   "bytes": 44760,
-  "local_file": "knowledge-base/CPA-ZH/raw/policies/second-section/audit-order-2021-30/official.html"
+  "local_file": "raw/policies/second-section/audit-order-2021-30/official.html",
+  "derived_markdown": "raw/policies/second-section/audit-order-2021-30/official.html.md",
+  "derived_sha256": "06be1fdbc25f33bb1787c79f51e5cab5fcd53d40175784247516bc74ca21a712",
+  "text_extraction_status": "ok",
+  "sha256": "b768042a099d99bb48daefa386f78b11dbf4e424447f8e18dcfd5770742abbd5",
+  "archive_policy": "dual-track"
 }

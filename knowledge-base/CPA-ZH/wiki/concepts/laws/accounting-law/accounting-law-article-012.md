@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [local-core-laws-2026-06-26]
 tags: [accounting, law, article, p1-core]
 related: [[concepts/law-accounting]], [[sources/core-laws-article-index-2026-06-26]]
+domain: laws
+topic: accounting-law
 ---
 
 # 中华人民共和国会计法第十二条

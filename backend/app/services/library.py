@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import re
 import sqlite3
+from html.parser import HTMLParser
 from pathlib import Path
 
 from app.core.config import KB_ROOT
@@ -9,6 +10,22 @@ from app.core.files import read_text
 from app.repositories.search import get_connection
 
 WIKILINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]")
+
+
+class _SnippetTextExtractor(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.parts: list[str] = []
+
+    def handle_data(self, data: str) -> None:
+        self.parts.append(data)
+
+
+def plain_snippet(value: str) -> str:
+    parser = _SnippetTextExtractor()
+    parser.feed(value)
+    parser.close()
+    return "".join(parser.parts)
 
 
 def parse_frontmatter(text: str) -> tuple[dict[str, str], str]:
@@ -81,7 +98,7 @@ class LibraryService:
                 try:
                     rows = connection.execute(f"""
                         SELECT d.kind, d.title, d.path, d.source_url, d.domain, d.topic,
-                               snippet(documents_fts, 1, '<mark>', '</mark>', '...', 40),
+                               snippet(documents_fts, 1, '', '', '...', 40),
                                d.page_role, d.maturity, d.answer_ready
                         FROM documents_fts JOIN documents d ON d.id = documents_fts.rowid
                         WHERE documents_fts MATCH ?{extra}
@@ -104,7 +121,7 @@ class LibraryService:
                 facets[row[4]] = facets.get(row[4], 0) + 1
                 kinds["wiki" if row[0] == "wiki" else "raw"] += 1
             return {
-                "results": [{"kind": row[0], "title": row[1], "path": row[2], "source_url": row[3] or "", "domain": row[4] or "", "topic": row[5] or "", "snippet": row[6] or "", "page_role": row[7] or "", "maturity": row[8] or "", "answer_ready": bool(row[9])} for row in rows[offset:offset + limit]],
+                "results": [{"kind": row[0], "title": row[1], "path": row[2], "source_url": row[3] or "", "domain": row[4] or "", "topic": row[5] or "", "snippet": plain_snippet(row[6] or ""), "page_role": row[7] or "", "maturity": row[8] or "", "answer_ready": bool(row[9])} for row in rows[offset:offset + limit]],
                 "total": len(rows), "facets": sorted(facets.items(), key=lambda item: -item[1]), "kinds": kinds,
                 "engine": "fts5-trigram" if fts and rows else "like",
             }

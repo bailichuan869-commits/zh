@@ -11,11 +11,10 @@ def safe_resolve(relative_path: str, *, allowed_prefix: str | None = None) -> Pa
     if not relative_path or relative_path.startswith(("/", "\\")) or ":" in relative_path:
         raise HTTPException(400, "非法路径")
     normalized = relative_path.replace("\\", "/")
-    if allowed_prefix and not normalized.startswith(allowed_prefix):
-        raise HTTPException(400, f"路径必须位于 {allowed_prefix} 下")
     target = (KB_ROOT / normalized).resolve()
+    allowed_root = (KB_ROOT / allowed_prefix).resolve() if allowed_prefix else KB_ROOT.resolve()
     try:
-        target.relative_to(KB_ROOT)
+        target.relative_to(allowed_root)
     except ValueError:
         raise HTTPException(400, "非法路径") from None
     return target

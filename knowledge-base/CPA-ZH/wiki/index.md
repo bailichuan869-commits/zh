@@ -2,8 +2,10 @@
 title: CPA-ZH 知识库索引
 type: index
 created: 2026-06-26
-updated: 2026-07-09
+updated: 2026-07-13
 tags: [cpa, structured]
+domain: meta
+topic: root
 ---
 
 # CPA-ZH 知识库索引
@@ -14,6 +16,10 @@ tags: [cpa, structured]
 - [[overview]] - CPA-ZH 的知识体系、维护原则与扩展路线。
 - [[concepts/kb-maintenance-workflow]] - 知识库检索、来源归档、版本复核和更新维护工作流。
 - [[concepts/source-status-dashboard]] - 来源状态仪表盘：追踪官方链接、文本抽取和 OCR 待办。
+- [[concepts/kb-section-upgrade-dashboard]] - 分板块技术升级仪表盘：按五大板块追踪元数据、来源结构和后续升级重点。
+- [[concepts/first-batch-answer-readiness]] - 首批答疑主题的已复核资产、待复核队列与准入条件。
+- [[concepts/cpa-zh-qa-capture-helper]] - 本地问答日志回写助手：把有价值问答沉淀到 `wiki/questions/`。
+- [[questions/practice-question-bank-paper-1-answer-key]] - 练习题库（试卷一）标准答案、错题校准和题库归档记录。
 
 ## 一级板块
 
@@ -21,6 +27,7 @@ tags: [cpa, structured]
 - [[concepts/policy-documents]] - 行业重要政策性文件。
 - [[concepts/history-ethics-independence]] - 行业史、职业道德与独立性。
 - [[concepts/practice-skills-cases]] - 审计实务、智能化工具与案例分析。
+- [[concepts/ai-coding-lectures]] - AI 编程与自动化。
 
 ## 行业重要法规与准则
 
@@ -101,11 +108,30 @@ tags: [cpa, structured]
 - [[concepts/comprehensive-competency]] - 跨学科知识整合与复杂场景应对能力。
 - [[concepts/case-analysis]] - 案例分析沉淀框架。
 - [[concepts/case-topic-index]] - 实务案例主题索引，按会计主题、审计风险、准则入口和底稿用途组织案例卡片。
+- [[concepts/case-index-suggestion-report]] - 案例主题索引自动回挂建议报告，检查新增案例是否已进入主题索引。
 - [[cases/2026-07-first-issue-long-term-equity-investment-confirmation]] - 长期股权投资确认案例：同一控制下内部重组中的账面价值结转判断。
 - [[cases/2026-07-first-issue-temporary-fixed-asset-tax-difference]] - 暂估转固超过12个月的税会差异处理。
 - [[cases/2026-07-first-issue-government-grant-free-use-equipment]] - 免费使用设备是否属于政府补助。
 - [[cases/2026-07-first-issue-equipment-sales-revenue-recognition]] - 骨科手术导航设备销售的收入确认。
 - [[cases/2026-07-first-issue-overseas-sales-revenue-recognition]] - 海外销售定制化产品的收入确认。
+
+## AI 编程与自动化
+
+- [[concepts/ai-coding-lectures]] - AI 编程与自动化总入口。
+- [[concepts/ai-coding-agent-lectures]] - Agent 篇：Agent、Skill、Excel Agent、浏览器接管和 LLM-WIKI。
+- [[concepts/ai-coding-python-lectures]] - Python 篇：PDF、Excel、Word、API、GUI、Web 和 Agent 工具设计。
+- [[concepts/ai-coding-vba-addin-lectures]] - VBA 插件篇：Excel 加载项、功能区、窗体和底稿工具实战。
+- [[concepts/ai-coding-tool-template-library]] - 工具模板库：PDF、Excel、Word、知识库维护、案例加工、Agent 和 VBA 模板。
+- [[concepts/ai-coding-audit-automation-scenario-matrix]] - 审计自动化场景矩阵：把工具能力映射到审计流程和知识库维护场景。
+- [[concepts/ai-coding-risk-control-checklist]] - 风险控制清单：自动化工具的输入、处理、输出、日志、复核和 Agent 边界。
+- [[concepts/ai-coding-project-roadmap]] - 项目落地路线：从临时脚本到稳定工具、工作流集成和团队分发。
+- [[concepts/ai-coding-tool-registry]] - 工具注册表：已落地工具、统一命令、写入风险等级和验证命令。
+- [[concepts/cpa-zh-local-ingest-helper]] - CPA-ZH 本地入库助手：本地文件入 raw、manifest、metadata 和 source-url 的保守首版工具。
+- [[concepts/cpa-zh-case-card-helper]] - CPA-ZH 案例卡片生成助手：从本地原文生成待人工复核的案例卡片草稿。
+- [[concepts/cpa-zh-case-index-helper]] - CPA-ZH 案例主题索引回挂助手：扫描案例卡片并生成主题索引维护建议。
+- [[concepts/cpa-zh-qa-capture-helper]] - CPA-ZH 本地问答日志回写助手：保存本地问答草稿并建议 related 链接。
+- [[concepts/cpa-zh-archive-doc-helper]] - CPA-ZH 原文归档助手：单个 PDF/HTML/DOCX 原文归档为 official 文件并生成 manifest。
+- [[_maintenance/cpa-zh-pdf-to-markdown-helper]] - CPA-ZH PDF 转 Markdown 助手：可抽取文字 PDF 转 Markdown，并列出待 OCR PDF。
 
 ## 来源
 
@@ -130,8 +156,11 @@ tags: [cpa, structured]
 - [[sources/policy-documents-raw-archive-2026-06-29]] (2026-06-29) - 第二板块 7 份政策文件官方原文归档批次。
 - [[sources/third-section-official-archive-2026-06-29]] (2026-06-29) - 第三板块行业史、职业道德和独立性官方来源归档批次。
 - [[sources/kb-retrieval-upgrade-2026-06-29]] (2026-06-29) - CPA-ZH 本地检索、官方来源注册表、manifest 审计和链接检查工具升级批次。
+- [[sources/challenge-knowledge-source-summary-verification-2026-07-13]] (2026-07-13) - 首届全国注册会计师行业胜任能力青年挑战赛考察知识清单来源汇总核实报告。
+- [[sources/practice-question-bank-paper-1-answer-explanations-2026-07-13]] (2026-07-13) - 练习题库（试卷一）答案解析 PDF 本地归档，已抽取 Markdown 并沉淀标准答案校准页。
 - [[sources/case-batch-2026-07-first-issue]] (2026-06-29) - 2026年7月第一期实务案例本地导入批次。
 - [[sources/issuance-guidance-rd-staff-investment-archive-2026-07-09]] (2026-07-09) - 发行监管规则适用指引第9号本地 PDF 原文归档批次。
+- [[sources/ai-coding-lectures-archive-2026-07-09]] (2026-07-09) - AI 编程与自动化本地归档批次。
 
 ## 建议下一步
 

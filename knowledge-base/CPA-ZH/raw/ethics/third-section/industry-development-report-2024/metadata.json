@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "text/html; charset=UTF-8",
   "bytes": 8772,
-  "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/industry-development-report-2024/official.html"
+  "local_file": "raw/ethics/third-section/industry-development-report-2024/official.html",
+  "derived_markdown": "raw/ethics/third-section/industry-development-report-2024/official.html.md",
+  "derived_sha256": "bf388fefbdaa298f8eec0f30f27e55c703518210e6772768bebf602b15c00877",
+  "text_extraction_status": "ok",
+  "sha256": "8f598690c668af133028fa6fbe8e9e8c0e425b3148761c867be8709fd711e77a",
+  "archive_policy": "dual-track"
 }

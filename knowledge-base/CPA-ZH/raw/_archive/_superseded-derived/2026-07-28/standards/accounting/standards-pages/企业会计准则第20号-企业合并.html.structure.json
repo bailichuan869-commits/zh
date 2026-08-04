@@ -1,0 +1,211 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:34:43+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第20号-企业合并.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第20号-企业合并.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 24,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第20号-企业合并",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范企业合并的确认、计量和相关信息的披露，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二条 企业合并，是指将两个或者两个以上单独的企业合并形成一个报告主体的交易或事项。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三条 涉及 业务 的 合并比照本准则规定处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[6]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四条 本准则不涉及下列企业合并：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[7]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 同一控制下的企业合并",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[11]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五条 参与合并的企业在合并前后均受同一方或相同的多方最终控制且该控制并非暂时性的，为同一控制下的企业合并。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[12]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第六条 合并方在企业合并中取得的资产和负债，应当按照合并日 在 被合并方的账面价值计量。合并方取得的净资产账面价值与支付的合并对价账面价值（或发行股份面值总额）的差额，应当调整资本公积；资本公积不足冲减的，调整留存收益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[15]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 同一控制下的企业合并中，被合并方采用的会计政策与合并方不一致的，合并方在合并日应当按照本企业会计政策对被合并方的 财务 报表相关项目进行调整，在此基础上按照本准则规定确认。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[16]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第八条 合并方为进行企业合并发生的各项直接相关费用，包括为进行企业合并而支付的审计费用、评估费用、法律服务费用等，应当于发生时计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[17]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第九条 企业 合并形成母子公司关系的，母公司应当编制合并日的合并资产负债表、合并利润表 和 合并现金流量表。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[19]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 非同一控制下的企业合并",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[25]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十条 参与合并的各方在合并前后不 受 同一方或相同的多方最终控制的，为非同一控制下的企业合并。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[26]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十一条 购买方应当区别下列情况 确定 合并成本：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[29]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十二条 购买方在购买日对作为企业合并对价付出的资产、发生或承担的负债应当按照公允价值计量，公允价值与其账面价值的差额，计入当期损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[34]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十三条 购买方在购买日应当对合并成本进行分配，按照本准则第十四条的规定确认所取得的被购买方各项可辨认资产、负债及或有负债。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[35]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十四条 被购买方可辨认净资产公允价值，是指合并中取得的被购买方可辨认资产的公允价值减去负债及或有负债公允价值后的余额。被购买方各项可辨认资产、负债及或有负债，符合下列条件的，应当单独予以确认：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[41]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十五条 企业合并形成母子公司关系的，母公司应当设置备查簿，记录企业合并中取得的子公司各项可辨认资产、负债及或有负债等在购买日的公允价值。编制合并财务报表时，应当 以 购买日确定的各项可辨认资产、负债及或有负债的公允价值为基础对子公司的财务报表进行调整。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[48]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十六条 企业合并发生当期 的 期末，因合并中取得的各项可辨认资产、负债及或有负债的公允价值或企业合并成本只能暂时确定的，购买方应当以所确定的暂时价值为基础对企业合并 进行 确认和计量。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[49]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十七条 企业合并形成母子 公司 关系的，母公司应当编制购买日的合并资产负债表，因企业合并取得的被购买方各项可辨认资产、负债及或有负债应当以公允价值列示。母公司的合并成本与取得的子公司可辨认净资产公允价值份额的差额，以按照本准则规定处理的结果列示。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[51]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 披露",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[53]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十八条 企业合并发生当期的期末， 合并方应当在附注中披露与同一控制下企业合并有关的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[54]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第十九条 企业合并发生当期的期末， 购买方应当在附注中披露与非同一控制下企业合并有关的下列信息：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[63]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

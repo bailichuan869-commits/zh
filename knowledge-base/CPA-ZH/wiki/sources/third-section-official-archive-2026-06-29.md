@@ -3,9 +3,13 @@ title: 第三板块官方来源归档批次
 type: source
 source_type: raw-archive
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-07-13
+raw_path: raw/ethics/third-section/
 tags: [ethics, independence, history, raw-archive, third-section]
+sources: [third-section-official-archive-2026-06-29, challenge-knowledge-source-summary-2026-07-13]
 related: [[concepts/history-ethics-independence]], [[concepts/industry-history]], [[concepts/ethics-code]], [[concepts/independence-standard-1]]
+domain: sources
+topic: batches
 ---
 
 # 第三板块官方来源归档批次
@@ -29,16 +33,26 @@ related: [[concepts/history-ethics-independence]], [[concepts/industry-history]]
 
 | 文件 | 官方链接 | 本地归档 |
 |---|---|---|
-| 中注协职业道德规范专题页 | [中注协专题页](https://cicpa.org.cn/ztzl1/Professional_standards/Professional_ethics/) | `raw/ethics/third-section/professional-ethics-index/official.html` |
-| 职业道德守则（2020）通知 | [中注协通知](https://cicpa.org.cn/ztzl1/Professional_standards/Professional_ethics/202012/t20201218_60661.html) | `raw/ethics/third-section/ethics-code-2020-notice/official.html` |
-| 职业道德守则历史发布材料 | [财政部新闻](http://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/200911/t20091119_233779.htm) | `raw/ethics/third-section/ethics-code-release-2009/official.html` |
-| 独立性准则第1号通知 | [财政部页面](http://kjs.mof.gov.cn/zhengcefabu/202501/t20250120_3952051.htm) / [中注协页面](https://cicpa.org.cn/xxfb/news/202501/t20250120_65225.html) | `raw/ethics/third-section/independence-standard-2024-29-mof-page/official.html` |
-| 独立性准则第1号 PDF | [中注协 PDF](https://cicpa.org.cn/xxfb/news/202501/W020250120543364207300.pdf) | `raw/ethics/third-section/independence-standard-2024-29-pdf/official.pdf` |
-| 独立性准则第1号应用指南通知 | [中注协通知](https://cicpa.org.cn/xxfb/tzgg/202602/t20260213_65821.html) | `raw/ethics/third-section/independence-application-guide-2026-page/official.html` |
-| 独立性准则第1号应用指南 PDF | [中注协 PDF](https://cicpa.org.cn/xxfb/tzgg/202602/W020260213545051441275.pdf) | `raw/ethics/third-section/independence-application-guide-2026-pdf/official.pdf` |
+| 中注协职业道德规范专题页 | [中注协专题页](https://cicpa.org.cn/ztzl1/Professional_standards/Professional_ethics/) | `raw/ethics/third-section/professional-ethics-index/official.html.md` |
+| 职业道德守则（2020）通知 | [中注协通知](https://cicpa.org.cn/ztzl1/Professional_standards/Professional_ethics/202012/t20201218_60661.html) | `raw/ethics/third-section/ethics-code-2020-notice/official.html.md` |
+| 职业道德守则历史发布材料 | [财政部新闻](http://www.mof.gov.cn/zhengwuxinxi/caizhengxinwen/200911/t20091119_233779.htm) | `raw/ethics/third-section/ethics-code-release-2009/official.html.md` |
+| 独立性准则第1号通知 | [财政部页面](http://kjs.mof.gov.cn/zhengcefabu/202501/t20250120_3952051.htm) / [中注协页面](https://cicpa.org.cn/xxfb/news/202501/t20250120_65225.html) | `raw/ethics/third-section/independence-standard-2024-29-mof-page/official.html.md` |
+| 独立性准则第1号 PDF | [中注协 PDF](https://cicpa.org.cn/xxfb/news/202501/W020250120543364207300.pdf) | `raw/ethics/third-section/independence-standard-2024-29-pdf/official.pdf.md` |
+| 独立性准则第1号应用指南通知 | [中注协通知](https://cicpa.org.cn/xxfb/tzgg/202602/t20260213_65821.html) | `raw/ethics/third-section/independence-application-guide-2026-page/official.html.md` |
+| 独立性准则第1号应用指南 PDF | [中注协 PDF](https://cicpa.org.cn/xxfb/tzgg/202602/W020260213545051441275.pdf) | `raw/ethics/third-section/independence-application-guide-2026-pdf/official.pdf.md` |
 
 ## 版本提示
 
 - 《中国注册会计师职业道德守则（2020）》自 2021-07-01 起施行。
 - 2026 年独立性准则应用指南发布后，职业道德守则（2020）第4号“审计和审阅业务对独立性的要求”同时废止。
 - 财务报表审计和审阅业务独立性判断应以财会〔2024〕29号独立性准则第1号及 2026 应用指南为主。
+
+## 2026-07-13 来源汇总补充链接
+
+用户提供的 [[sources/challenge-knowledge-source-summary-verification-2026-07-13]] 与本页归档结果基本一致，并额外列示以下核验入口：
+
+| 项目 | 补充链接 | 用途 |
+|---|---|---|
+| 行业发展基础知识 | `https://www.cicpa.org.cn/ztzl1/hfzd40zn/202010/t20201028_31459.html`；`https://www.cicpa.org.cn/ztzl1/hyfzyjzl/index.html` | 中注协行业史与行业发展资料入口；非官方百科/媒体页面仅作背景阅读，不作为权威来源。 |
+| 职业道德守则（2020） | `https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_ethics/202012/t20201218_60661.html`；`https://www.cicpa.org.cn/ztzl1/Professional_standards/Professional_ethics/202012/t20201218_60662.html` | 与本页归档入口一致。 |
+| 独立性准则第1号 | `https://www.gov.cn/zhengce/zhengceku/202501/content_7004865.htm`；`https://kjs.mof.gov.cn/zhengcefabu/202501/P020250120381094517836.pdf`；`https://www.gov.cn/zhengce/202501/content_7004862.htm` | 中国政府网通知、财政部 PDF 和准则解读备选入口；可与已归档的财政部页面、中注协页面和 PDF 互校。 |

@@ -7,6 +7,8 @@ updated: 2026-06-26
 raw_path: raw/standards/accounting/official-links-2026-06-26.md
 tags: [accounting, standards, official-links, p1-core]
 related: [[concepts/accounting-standards-system]]
+domain: sources
+topic: batches
 ---
 
 # 企业会计准则、应用指南及解释官方链接

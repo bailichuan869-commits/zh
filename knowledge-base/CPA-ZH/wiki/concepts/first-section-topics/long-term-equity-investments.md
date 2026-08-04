@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [first-section-master-index-2026-06-26]
 tags: [long-term-equity-investments, consolidation, equity-method, p1-core]
 related: [[concepts/first-section-topic-matrix]], [[concepts/accounting-standards/cas-02]], [[concepts/accounting-standards/cas-33]], [[concepts/audit-standards/csa-1401]]
+domain: practice
+topic: first-section
 ---
 
 # 长期股权投资专题

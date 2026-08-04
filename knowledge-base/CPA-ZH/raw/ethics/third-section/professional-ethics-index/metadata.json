@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "text/html",
   "bytes": 16254,
-  "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/professional-ethics-index/official.html"
+  "local_file": "raw/ethics/third-section/professional-ethics-index/official.html",
+  "derived_markdown": "raw/ethics/third-section/professional-ethics-index/official.html.md",
+  "derived_sha256": "f59423bf3e36ce4c70d9246b3b5aefb223a848b92f26f2a25e4e54c89eef73b0",
+  "text_extraction_status": "ok",
+  "sha256": "7492783c051542ca54bd0c71b2dd6c77629c7ac34bf21f02805f341b93b0ed7b",
+  "archive_policy": "dual-track"
 }

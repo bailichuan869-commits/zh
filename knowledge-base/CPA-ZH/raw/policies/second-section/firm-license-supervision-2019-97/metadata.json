@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "text/html",
   "bytes": 151281,
-  "local_file": "knowledge-base/CPA-ZH/raw/policies/second-section/firm-license-supervision-2019-97/official.html"
+  "local_file": "raw/policies/second-section/firm-license-supervision-2019-97/official.html",
+  "derived_markdown": "raw/policies/second-section/firm-license-supervision-2019-97/official.html.md",
+  "derived_sha256": "80f98a92094b556dbafd2eec787b2443bb7bfff99c57729a26826430c9ad3336",
+  "text_extraction_status": "ok",
+  "sha256": "eb278470d087399aa3dcd50bb5cccee119b9d73d3c0626cf3a6f05dce66353f8",
+  "archive_policy": "dual-track"
 }

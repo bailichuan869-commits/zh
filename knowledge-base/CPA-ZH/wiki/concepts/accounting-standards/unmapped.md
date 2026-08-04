@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [enterprise-accounting-standards-number-index-2026-06-26]
 tags: [accounting, standards, unmapped, p1-core]
 related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounting-standards-number-index-2026-06-26]]
+domain: accounting-standards
+topic: overview
 ---
 
 # 企业会计准则未映射资料
@@ -19,6 +21,11 @@ related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounti
 | 准则解释 | 关于印发《企业会计准则解释第1号》的通知 | https://kjs.mof.gov.cn/zhengcefabu/200805/t20080522_33804.htm | `raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第1号-的通知.html` |
 | 准则解释 | 关于印发企业会计准则解释第2号的通知 | https://kjs.mof.gov.cn/zhengcefabu/200809/t20080912_74645.htm | `raw/standards/accounting/interpretations-pages/关于印发企业会计准则解释第2号的通知.html` |
 | 准则解释 | 关于印发企业会计准则解释第3号的通知 | https://kjs.mof.gov.cn/zhengcefabu/200906/t20090625_172281.htm | `raw/standards/accounting/interpretations-pages/关于印发企业会计准则解释第3号的通知.html` |
+| 准则解释 | 关于印发企业会计准则解释第4号的通知 | https://kjs.mof.gov.cn/zhengcefabu/201008/t20100809_332092.htm | `raw/standards/accounting/interpretations-pages/关于印发企业会计准则解释第4号的通知.html` |
+| 准则解释 | 关于印发企业会计准则解释第5号的通知 | https://kjs.mof.gov.cn/zhengcefabu/201211/t20121122_701308.htm | `raw/standards/accounting/interpretations-pages/关于印发企业会计准则解释第5号的通知.html` |
+| 准则解释 | 关于印发《企业会计准则解释第6号》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201401/t20140123_1038629.htm | `raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第6号-的通知.html` |
+| 准则解释 | 关于印发《企业会计准则解释第7号》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201511/t20151113_1559056.htm | `raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第7号-的通知.html` |
+| 准则解释 | 关于印发《企业会计准则解释第8号》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201601/t20160104_1643346.htm | `raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第8号-的通知.html` |
 | 准则解释 | 关于印发《企业会计准则解释第9号——关于权益法下投资净损失的会计处理》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201706/t20170621_2628433.htm | `raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第9号-关于权益法下投资净损失的会计处理-的通知.html` |
 | 准则解释 | 关于印发《企业会计准则解释第12号——关于关键管理人员服务的提供方与接受方是否为关联方》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201706/t20170621_2628439.htm | `raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第12号-关于关键管理人员服务的提供方与接受方是否为关联方-的通知.html` |
 | 准则解释 | 关于印发《企业会计准则解释第13号》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201912/t20191213_3441493.htm | `raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第13号-的通知.html` |
@@ -26,57 +33,26 @@ related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounti
 | 准则解释 | 关于印发《企业会计准则解释第15号》的通知 | https://kjs.mof.gov.cn/zhengcefabu/202112/t20211231_3779983.htm | `raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第15号-的通知.html` |
 | 准则解释 | 关于印发《企业会计准则解释第17号》的通知 | https://kjs.mof.gov.cn/zhengcefabu/202311/t20231109_3915491.htm | `raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第17号-的通知.html` |
 | 准则解释 | 关于印发《企业会计准则解释第18号》的通知 | https://kjs.mof.gov.cn/zhengcefabu/202412/t20241223_3950344.htm | `raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第18号-的通知.html` |
-| 应用案例 | PPP项目合同社会资本方会计处理应用案例——金融资产模式 | https://kjs.mof.gov.cn/zt/kjzzss/srzzzq/202108/t20210810_3744014.htm | `raw/standards/accounting/application-cases-pages/021-PPP项目合同社会资本方会计处理应用案例-金融资产模式.html` |
-| 应用案例 | PPP项目合同社会资本方会计处理应用案例——混合模式 | https://kjs.mof.gov.cn/zt/kjzzss/srzzzq/202108/t20210810_3744016.htm | `raw/standards/accounting/application-cases-pages/022-PPP项目合同社会资本方会计处理应用案例-混合模式.html` |
-| 应用案例 | 资金集中管理会计处理应用案例 | https://kjs.mof.gov.cn/zt/kjzzss/srzzzq/202201/t20220124_3784577.htm | `raw/standards/accounting/application-cases-pages/023-资金集中管理会计处理应用案例.html` |
-| 实施问答 | 问：企业对于当期直接减免的增值税，应当如何进行会计处理？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202012/t20201211_3634038.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-006.html` |
-| 实施问答 | 问：小微企业达到增值税制度规定的免征增值税条件时，应当如何进行会计处理？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202012/t20201211_3634040.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-007.html` |
-| 实施问答 | 问：企业缴纳残疾人就业保障金应当计入哪个会计科目？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202012/t20201211_3634041.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-008.html` |
-| 实施问答 | 问：外币预收账款和预付账款是货币性项目还是非货币性项目，上述项目在资产负债表日是否... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202103/t20210302_3664191.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-013.html` |
-| 实施问答 | 问：承租人于新冠肺炎疫情期间欠付租金，出租人应当如何进行会计处理？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202103/t20210302_3664201.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-017.html` |
-| 实施问答 | 问：封闭式基金、理财产品、信托计划等寿命固定或可确定的结构化主体，是否符合持续经营... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202103/t20210302_3664205.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-019.html` |
-| 实施问答 | 问：如果企业判断以“贷款基准利率”为基础确定利息的金融资产符合本金加利息的合同现金... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202103/t20210302_3664208.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-020.html` |
-| 实施问答 | 问：某企业于资产负债表日对金融资产计提损失准备，资产负债表日至财务报告批准报出日之... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202103/t20210302_3664210.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-021.html` |
-| 实施问答 | 问：企业支付永续债利息的会计处理是否与税务处理一致？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202103/t20210302_3664213.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-023.html` |
-| 实施问答 | 问：在金融工具确认计量准则施行日，将原分类为可供出售金融资产的权益工具投资按照准则... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202103/t20210302_3664215.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-024.html` |
-| 实施问答 | 问：企业按照管理金融资产的业务模式对相关金融资产进行分类，在评估确定管理金融资产的... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202103/t20210302_3664220.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-027.html` |
-| 实施问答 | 问：企业应当如何对持有的结构性存款进行会计处理，假设该结构性存款符合《中国银保监会... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202104/t20210425_3691867.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-034.html` |
-| 实施问答 | 问：企业对向其他企业提供的委托贷款、财务担保或向集团关联企业提供的资金借贷等进行减... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202104/t20210425_3691868.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-035.html` |
-| 实施问答 | 问：银行收回已核销的贷款，应当如何进行会计处理？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202104/t20210425_3691870.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-037.html` |
-| 实施问答 | 问：如果企业持有的金融资产以收取合同现金流量为目标，企业是否完全不能或者只能在一定... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202104/t20210425_3691872.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-039.html` |
-| 实施问答 | 问：某企业执行2017年修订发布的企业会计准则第22、23、24和37号。该企业的联营（或合营... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202104/t20210425_3691992.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-040.html` |
-| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，应当如何应用“双特征”？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744017.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-042.html` |
-| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，应当如何应用“双控制”条件（1）“政... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744018.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-043.html` |
-| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，应当如何应用“双控制”条件（2）“PP... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744019.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-044.html` |
-| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，当PPP项目资产部分受到政府方控制时，... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744020.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-045.html` |
-| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，社会资本方在PPP项目建造期间形成的合... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744021.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-046.html` |
-| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，社会资本方在PPP项目建造期间发生的借... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744022.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-047.html` |
-| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，社会资本方在PPP项目建造期间发生的建... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744024.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-048.html` |
-| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，集团合并范围内甲公司（发包方）承接P... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744025.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-049.html` |
-| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，如何确定履约义务的单独售价？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744028.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-050.html` |
-| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，社会资本方应当如何对PPP项目合同进行... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744029.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-051.html` |
-| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，如何对2020年12月31日前开始实施且至... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202108/t20210810_3744030.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-052.html` |
-| 实施问答 | 问：某集团公司新设一家子公司，将现有其他子公司或业务注入该新设公司，假定在新设公司... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202111/t20211102_3762826.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-053.html` |
-| 实施问答 | 《新冠肺炎疫情相关租金减让会计处理规定》简化处理方法适用问答 | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202205/t20220527_3813704.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-059.html` |
-| 实施问答 | 问：甲公司在202×年报告期内处置了唯一的子公司，并且于202×年12月31日已经没有子公司... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202206/t20220621_3819698.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-061.html` |
-| 实施问答 | 问：执行企业会计准则的企业应当如何对增值税期末留抵退税业务相关现金流量进行列示？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202206/t20220621_3819699.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-062.html` |
-| 实施问答 | 问：执行《小企业会计准则》的企业应当如何对增值税期末留抵退税业务相关现金流量进行列示？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202206/t20220621_3819702.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-063.html` |
-| 实施问答 | 问：投资方与其联营企业或合营企业之间发生投出或出售资产交易（构成业务的除外）而产生... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202301/t20230103_3861811.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-064.html` |
-| 实施问答 | 问：上市公司乙公司是甲公司的联营企业。乙公司向员工以非公开发行的方式授予限售期为3年... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202301/t20230103_3861812.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-065.html` |
-| 实施问答 | 问：汽车销售企业在日常活动中购进并用于销售的二手车，应当如何进行会计处理？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202301/t20230103_3861813.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-066.html` |
-| 实施问答 | 问：商业银行应当如何确定一项主营业务活动中发生的支出属于金融工具的交易费用、“手续... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202306/t20230625_3892061.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-072.html` |
-| 实施问答 | 问：企业通过签订衍生金融工具对日常销售或采购非金融项目的合同或合同组合（能够以现金... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202306/t20230625_3892063.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-073.html` |
-| 实施问答 | 问：甲公司持有某结构化主体的份额（甲公司对该结构化主体不具有控制、共同控制或重大影... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202307/t20230717_3896759.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-078.html` |
-| 实施问答 | 问：某企业对职工实行股权激励计划，并约定了服务期和业绩条件。在等待期内，某已参加该... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202307/t20230717_3896761.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-079.html` |
-| 实施问答 | 问：企业对于期限在一年或一个营业周期以上的保证类质量保证形成的预计负债，如何区分流... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202504/t20250417_3962195.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-086.html` |
-| 实施问答 | 问：企业在期货交易场所频繁买卖标准仓单（即由交割库开具并经期货交易场所登记的标准化... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202507/t20250703_3967195.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-087.html` |
-| 实施问答 | 问：对于包含导致合同现金流量时间分布或金额变动的或有特征条款的金融资产，企业应当如... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202604/t20260430_3988923.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-088.html` |
-| 实施问答 | 问：甲银行委托信托公司设立资产证券化信托计划，将不良贷款转让给该信托计划，作为发行... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202604/t20260430_3988924.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-089.html` |
-| 实施问答 | 问：根据《关于加强万能型人身保险监管有关事项的通知》（金规〔2025〕14号）计提特别储... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202604/t20260430_3988925.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-090.html` |
-| 实施问答 | 问：乙公司为中国境内非上市保险企业。甲公司持有乙公司30%股权，对乙公司采用权益法核算... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202606/t20260618_3991862.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-093.html` |
-| 实施问答 | 问：甲公司主要从事某材料的生产，于2×25年9月1日在乙经济开发区投资建设某项目，并与乙... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202606/t20260618_3991864.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-095.html` |
-| 实施问答 | 问：甲公司委托乙设备生产商建造大型定制专用设备，定制周期超过1年，设备到场后在甲公司... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202606/t20260618_3991866.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-097.html` |
-| 实施问答 | 问：《中华人民共和国增值税法》（以下简称增值税法）2026年1月1日起施行后，一般用电企... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/202606/t20260618_3991869.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-100.html` |
+| 准则解释 | 关于印发《企业会计准则解释第19号》的通知 | https://kjs.mof.gov.cn/zhengcefabu/202512/t20251218_3979556.htm | `raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第19号-的通知.html` |
+| 准则解释 | 关于印发《企业会计准则解释第20号》的通知 | https://kjs.mof.gov.cn/zhengcefabu/202606/t20260615_3991686.htm | `raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第20号-的通知.html` |
+| 应用案例 | PPP项目合同社会资本方会计处理应用案例——金融资产模式 | https://kjs.mof.gov.cn/zt/kjzzss/srzzzq/pppkjclyyal/202108/t20210810_3744014.htm | `raw/standards/accounting/application-cases-pages/021-PPP项目合同社会资本方会计处理应用案例-金融资产模式.html.md` |
+| 应用案例 | PPP项目合同社会资本方会计处理应用案例——混合模式 | https://kjs.mof.gov.cn/zt/kjzzss/srzzzq/pppkjclyyal/202108/t20210810_3744016.htm | `raw/standards/accounting/application-cases-pages/022-PPP项目合同社会资本方会计处理应用案例-混合模式.html.md` |
+| 实施问答 | 问：企业对于当期直接减免的增值税，应当如何进行会计处理？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/qtwd/202012/t20201211_3634038.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-006.html.md` |
+| 实施问答 | 问：小微企业达到增值税制度规定的免征增值税条件时，应当如何进行会计处理？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/qtwd/202012/t20201211_3634040.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-007.html.md` |
+| 实施问答 | 问：企业缴纳残疾人就业保障金应当计入哪个会计科目？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/qtwd/202012/t20201211_3634041.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-008.html.md` |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，应当如何应用“双特征”？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/pppkjclsswd/202108/t20210810_3744017.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-042.html.md` |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，应当如何应用“双控制”条件（1）“政... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/pppkjclsswd/202108/t20210810_3744018.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-043.html.md` |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，应当如何应用“双控制”条件（2）“PP... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/pppkjclsswd/202108/t20210810_3744019.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-044.html.md` |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，当PPP项目资产部分受到政府方控制时，... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/pppkjclsswd/202108/t20210810_3744020.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-045.html.md` |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，社会资本方在PPP项目建造期间形成的合... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/pppkjclsswd/202108/t20210810_3744021.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-046.html.md` |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，社会资本方在PPP项目建造期间发生的借... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/pppkjclsswd/202108/t20210810_3744022.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-047.html.md` |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，社会资本方在PPP项目建造期间发生的建... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/pppkjclsswd/202108/t20210810_3744024.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-048.html.md` |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，集团合并范围内甲公司（发包方）承接P... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/pppkjclsswd/202108/t20210810_3744025.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-049.html.md` |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，如何确定履约义务的单独售价？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/pppkjclsswd/202108/t20210810_3744028.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-050.html.md` |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，社会资本方应当如何对PPP项目合同进行... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/pppkjclsswd/202108/t20210810_3744029.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-051.html.md` |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，如何对2020年12月31日前开始实施且至... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/pppkjclsswd/202108/t20210810_3744030.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-052.html.md` |
+| 实施问答 | 问：执行《小企业会计准则》的企业应当如何对增值税期末留抵退税业务相关现金流量进行列示？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/xqykjzzsswd/202206/t20220621_3819702.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-063.html.md` |
+| 实施问答 | 问：《中华人民共和国增值税法》（以下简称增值税法）2026年1月1日起施行后，一般用电企... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/qtwd/202606/t20260618_3991869.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-100.html.md` |
 | 其他规定 | 关于修订印发2018年度金融企业财务报表格式的通知 | https://kjs.mof.gov.cn/gongzuotongzhi/201812/t20181227_3109872.htm | `raw/standards/accounting/other-rules-pages/001-关于修订印发2018年度金融企业财务报表格式的通知.html` |
 | 其他规定 | 关于印发《企业产品成本核算制度（试行）》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201309/t20130906_986492.htm | `raw/standards/accounting/other-rules-pages/002-关于印发-企业产品成本核算制度-试行-的通知.html` |
 | 其他规定 | 关于印发《农业保险大灾风险准备金会计处理规定》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201403/t20140307_1052943.htm | `raw/standards/accounting/other-rules-pages/003-关于印发-农业保险大灾风险准备金会计处理规定-的通知.html` |

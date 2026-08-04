@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "application/pdf",
   "bytes": 256869,
-  "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-2020-glossary/official.pdf"
+  "local_file": "raw/ethics/third-section/ethics-code-2020-glossary/official.pdf",
+  "derived_markdown": "raw/ethics/third-section/ethics-code-2020-glossary/official.pdf.md",
+  "derived_sha256": "10d8bf332c50d992fb6f3611ff9041cfdee6a2c18be576708e3a97e2d1ff33b7",
+  "text_extraction_status": "ok",
+  "sha256": "fbb824ff5d323fb57e63cb36ef62ce70f63d6d1fbc97ec81fa6ddd30b9060807",
+  "archive_policy": "dual-track"
 }

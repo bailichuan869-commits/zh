@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [first-section-master-index-2026-06-26]
 tags: [employee-benefits, payroll, provisions, p1-core]
 related: [[concepts/first-section-topic-matrix]], [[concepts/accounting-standards/cas-09]], [[concepts/audit-standards/csa-1301]]
+domain: practice
+topic: first-section
 ---
 
 # 职工薪酬专题

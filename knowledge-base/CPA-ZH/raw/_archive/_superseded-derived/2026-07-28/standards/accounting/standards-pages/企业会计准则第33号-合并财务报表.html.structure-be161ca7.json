@@ -1,0 +1,539 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:47:44+00:00",
+  "source_file": "raw/_archive/standards/accounting/standards-pages/企业会计准则第33号-合并财务报表.html",
+  "derived_file": "raw/standards/accounting/standards-pages/企业会计准则第33号-合并财务报表.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 65,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "企业会计准则第33号-合并财务报表",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[2]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一条 为了规范合并财务报表的编制和列报，根据《企业会计准则——基本准则》，制定本准则。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[3]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二条 合并财务报表，是指反映母公司和其全部子公司形成的企业集团整体财务状况、经营成果和现金流量的财务报表。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[4]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三条 合并财务报表至少应当包括下列组成部分：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[7]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四条 母公司应当编制合并财务报表。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[14]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五条 外币财务报表折算，适用《企业会计准则第19号——外币折算》和《企业会计准则第31号——现金流量表》。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[16]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第六条 关于在子公司权益的披露，适用《企业会计准则第41号——在其他主体中权益的披露》。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[17]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 合并范围",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[18]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第七条 合并财务报表的合并范围应当以控制为基础予以确定。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[19]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第八条 投资方应当在综合考虑所有相关事实和情况的基础上对是否控制被投资方进行判断。一旦相关事实和情况的变化导致对控制定义所涉及的相关要素发生变化的，投资方应当进行重新评估。相关事实和情况主要包括：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[22]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第九条 投资方享有现时权利使其目前有能力主导被投资方的相关活动，而不论其是否实际行使该权利，视为投资方拥有对被投资方的权力。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[29]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十条 两个或两个以上投资方分别享有能够单方面主导被投资方不同相关活动的现时权利的，能够主导对被投资方回报产生最重大影响的活动的一方拥有对被投资方的权力。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[30]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十一条 投资方在判断是否拥有对被投资方的权力时，应当仅考虑与被投资方相关的实质性权利，包括自身所享有的实质性权利以及其他方所享有的实质性权利。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[31]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十二条 仅享有保护性权利的投资方不拥有对被投资方的权力。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[34]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十三条 除非有确凿证据表明其不能主导被投资方相关活动，下列情况，表明投资方对被投资方拥有权力:",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[36]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十四条 投资方持有被投资方半数或以下的表决权，但综合考虑下列事实和情况后，判断投资方持有的表决权足以使其目前有能力主导被投资方相关活动的，视为投资方对被投资方拥有权力：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[39]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十五条 当表决权不能对被投资方的回报产生重大影响时，如仅与被投资方的日常行政管理活动有关，并且被投资方的相关活动由合同安排所决定，投资方需要评估这些合同安排，以评价其享有的权利是否足够使其拥有对被投资方的权力。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[44]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十六条 某些情况下，投资方可能难以判断其享有的权利是否足以使其拥有对被投资方的权力。在这种情况下，投资方应当考虑其具有实际能力以单方面主导被投资方相关活动的证据，从而判断其是否拥有对被投资方的权力。投资方应考虑的因素包括但不限于下列事项：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[45]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十七条 投资方自被投资方取得的回报可能会随着被投资方业绩而变动的，视为享有可变回报。投资方应当基于合同安排的实质而非回报的法律形式对回报的可变性进行评价。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[51]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十八条 投资方在判断是否控制被投资方时，应当确定其自身是以主要责任人还是代理人的身份行使决策权，在其他方拥有决策权的情况下，还需要确定其他方是否以其代理人的身份代为行使决策权。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[52]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第十九条 在确定决策者是否为代理人时，应当综合考虑该决策者与被投资方以及其他投资方之间的关系。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[54]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十条 投资方通常应当对是否控制被投资方整体进行判断。但极个别情况下，有确凿证据表明同时满足下列条件并且符合相关法律法规规定的，投资方应当将被投资方的一部分（以下简称“该部分”）视为被投资方可分割的部分（单独主体），进而判断是否控制该部分（单独主体）。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[57]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十一条 母公司应当将其全部子公司（包括母公司所控制的单独主体）纳入合并财务报表的合并范围。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[60]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十二条 当母公司同时满足下列条件时，该母公司属于投资性主体：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[62]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十三条 母公司属于投资性主体的，通常情况下应当符合下列所有特征：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[66]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十四条 投资性主体的母公司本身不是投资性主体，则应当将其控制的全部主体，包括那些通过投资性主体所间接控制的主体，纳入合并财务报表范围。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[71]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十五条 当母公司由非投资性主体转变为投资性主体时，除仅将为其投资活动提供相关服务的子公司纳入合并财务报表范围编制合并财务报表外，企业自转变日起对其他子公司不再予以合并，并参照本准则第四十九条的规定，按照视同在转变日处置子公司但保留剩余股权的原则进行会计处理。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[72]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 合并程序",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[74]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二十六条 母公司应当以自身和其子公司的财务报表为基础，根据其他有关资料，编制合并财务报表。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[75]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十七条 母公司应当统一子公司所采用的会计政策，使子公司采用的会计政策与母公司保持一致。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[81]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十八条 母公司应当统一子公司的会计期间，使子公司的会计期间与母公司保持一致。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[83]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第二十九条 在编制合并财务报表时，子公司除了应当向母公司提供财务报表外，还应当向母公司提供下列有关资料：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[85]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 合并资产负债表",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[91]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十条 合并资产负债表应当以母公司和子公司的资产负债表为基础，在抵销母公司与子公司、子公司相互之间发生的内部交易对合并资产负债表的影响后，由母公司合并编制。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[92]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十一条 子公司所有者权益中不属于母公司的份额，应当作为少数股东权益，在合并资产负债表中所有者权益项目下以“少数股东权益”项目列示。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[101]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十二条 母公司在报告期内因同一控制下企业合并增加的子公司以及业务，编制合并资产负债表时，应当调整合并资产负债表的期初数，同时应当对比较报表的相关项目进行调整，视同合并后的报告主体自最终控制方开始控制时点起一直存在。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[102]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十三条 母公司在报告期内处置子公司以及业务，编制合并资产负债表时，不应当调整合并资产负债表的期初数。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[104]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 合并利润表",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[105]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十四条 合并利润表应当以母公司和子公司的利润表为基础，在抵销母公司与子公司、子公司相互之间发生的内部交易对合并利润表的影响后，由母公司合并编制。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[106]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十五条 子公司当期净损益中属于少数股东权益的份额，应当在合并利润表中净利润项目下以“少数股东损益”项目列示。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[114]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十六条 母公司向子公司出售资产所发生的未实现内部交易损益，应当全额抵销“归属于母公司所有者的净利润”。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[116]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十七条 子公司少数股东分担的当期亏损超过了少数股东在该子公司期初所有者权益中所享有的份额的，其余额仍应当冲减少数股东权益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[119]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十八条 母公司在报告期内因同一控制下企业合并增加的子公司以及业务，应当将该子公司以及业务合并当期期初至报告期末的收入、费用、利润纳入合并利润表，同时应当对比较报表的相关项目进行调整，视同合并后的报告主体自最终控制方开始控制时点起一直存在。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[120]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第三十九条 母公司在报告期内处置子公司以及业务，应当将该子公司以及业务期初至处置日的收入、费用、利润纳入合并利润表。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[122]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 合并现金流量表",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[123]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十条 合并现金流量表应当以母公司和子公司的现金流量表为基础，在抵销母公司与子公司、子公司相互之间发生的内部交易对合并现金流量表的影响后，由母公司合并编制。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[124]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十一条 编制合并现金流量表应当符合下列要求：",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[126]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十二条 合并现金流量表及其补充资料也可以根据合并资产负债表和合并利润表进行编制。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[133]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十三条 母公司在报告期内因同一控制下企业合并增加的子公司以及业务，应当将该子公司以及业务合并当期期",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[134]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十四条 母公司在报告期内处置子公司以及业务，应当将该子公司以及业务期初至处置日的现金流量纳入合并现金流量表。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[137]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 合并所有者权益变动表",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[138]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十五条 合并所有者权益变动表应当以母公司和子公司的所有者权益变动表为基础，在抵销母公司与子公司、子公司相互之间发生的内部交易对合并所有者权益变动表的影响后，由母公司合并编制。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[139]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十六条 有少数股东的，应当在合并所有者权益变动表中增加“少数股东权益”栏目，反映少数股东权益变动的情况。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[145]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 特殊交易的会计处理",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[146]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四十七条 母公司购买子公司少数股东拥有的子公司股权，在合并财务报表中，因购买少数股权新取得的长期股权投资与按照新增持股比例计算应享有子公司自购买日或合并日开始持续计算的净资产份额之间的差额，应当调整资本公积（资本溢价或股本溢价），资本公积不足冲减的，调整留存收益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[147]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十八条 企业因追加投资等原因能够对非同一控制下的被投资方实施控制的，在合并财务报表中，对于购买日之前持有的被购买方的股权，应当按照该股权在购买日的公允价值进行重新计量，公允价值与其账面价值的差额计入当期投资收益；购买日之前持有的被购买方的股权涉及权益法核算下的其他综合收益等的，与其相关的其他综合收益等应当转为购买日所属当期收益。购买方应当在附注中披露其在购买日之前持有的被购买方的股权在购买日的公允价值、按照公允价值重新计量产生的相关利得或损失的金额。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[148]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第四十九条 母公司在不丧失控制权的情况下部分处置对子公司的长期股权投资，在合并财务报表中，处置价款与处置长期股权投资相对应享有子公司自购买日或合并日开始持续计算的净资产份额之间的差额，应当调整资本公积（资本溢价或股本溢价），资本公积不足冲减的，调整留存收益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[149]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十条 企业因处置部分股权投资等原因丧失了对被投资方的控制权的，在编制合并财务报表时，对于剩余股权，应当按照其在丧失控制权日的公允价值进行重新计量。处置股权取得的对价与剩余股权公允价值之和，减去按原持股比例计算应享有原有子公司自购买日或合并日开始持续计算的净资产的份额之间的差额，计入丧失控制权当期的投资收益，同时冲减商誉。与原有子公司股权投资相关的其他综合收益等，应当在丧失控制权时转为当期投资收益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[150]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十一条 企业通过多次交易分步处置对子公司股权投资直至丧失控制权的，如果处置对子公司股权投资直至丧失控制权的各项交易属于一揽子交易的，应当将各项交易作为一项处置子公司并丧失控制权的交易进行会计处理；但是，在丧失控制权之前每一次处置价款与处置投资对应的享有该子公司净资产份额的差额，在合并财务报表中应当确认为其他综合收益，在丧失控制权时一并转入丧失控制权当期的损益。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[151]",
+      "confidence": 1.0
+    },
+    {
+      "level": 4,
+      "text": "第五十二条 对于本章未列举的交易或者事项，如果站在企业集团合并财务报表角度的确认和计量结果与其所属的母公司或子公司的个别财务报表层面的确认和计量结果不一致的，则在编制合并财务报表时，也应当按照本准则第二十六条第二款第（四）项的规定，对其确认和计量结果予以相应调整。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[157]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 衔接规定",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[158]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五十三条 首次采用本准则的企业应当根据本准则的规定对被投资方进行重新评估，确定其是否应纳入合并财务报表范围。因首次采用本准则导致合并范围发生变化的，应当进行追溯调整，追溯调整不切实可行的除外。比较期间已丧失控制权的原子公司，不再追溯调整。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[159]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 附 则",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[160]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五十四条 本准则自2014年7月1日起施行。",
+      "page": null,
+      "source": "explicit-legal-numbering",
+      "locator": ".TRS_Editor p[161]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

@@ -1,0 +1,3 @@
+# Build-time dependency for the Windows 10/11 x64 portable distribution.
+-r requirements.txt
+pyinstaller

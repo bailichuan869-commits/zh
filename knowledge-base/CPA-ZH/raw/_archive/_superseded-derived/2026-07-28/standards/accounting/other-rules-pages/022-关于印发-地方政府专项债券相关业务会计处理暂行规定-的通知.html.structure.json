@@ -1,0 +1,58 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:34:32+00:00",
+  "source_file": "raw/_archive/standards/accounting/other-rules-pages/022-关于印发-地方政府专项债券相关业务会计处理暂行规定-的通知.html",
+  "derived_file": "raw/standards/accounting/other-rules-pages/022-关于印发-地方政府专项债券相关业务会计处理暂行规定-的通知.html.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "needs-review",
+  "extraction_engine": "beautifulsoup-lxml:.TRS_Editor",
+  "source_pages": 1,
+  "heading_count": 1,
+  "table_count": 3,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "关于印发-地方政府专项债券相关业务会计处理暂行规定-的通知",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [
+    {
+      "index": 1,
+      "page": null,
+      "rows": 3,
+      "columns": 3,
+      "representation": "markdown",
+      "locator": ".TRS_Editor table[1]",
+      "needs_review": false
+    },
+    {
+      "index": 2,
+      "page": null,
+      "rows": 11,
+      "columns": 18,
+      "representation": "html",
+      "locator": ".TRS_Editor table[2]",
+      "needs_review": true
+    },
+    {
+      "index": 3,
+      "page": null,
+      "rows": 8,
+      "columns": 9,
+      "representation": "html",
+      "locator": ".TRS_Editor table[3]",
+      "needs_review": true
+    }
+  ],
+  "warnings": [
+    "complex-html-table:2",
+    "complex-html-table:3"
+  ],
+  "review_pages": []
+}

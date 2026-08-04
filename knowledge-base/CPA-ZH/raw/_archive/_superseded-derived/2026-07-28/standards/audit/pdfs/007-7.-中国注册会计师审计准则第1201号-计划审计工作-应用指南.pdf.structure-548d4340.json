@@ -1,0 +1,51 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:43:36+00:00",
+  "source_file": "raw/_archive/standards/audit/pdfs/007-7.-中国注册会计师审计准则第1201号-计划审计工作-应用指南.pdf",
+  "derived_file": "raw/standards/audit/pdfs/007-7.-中国注册会计师审计准则第1201号-计划审计工作-应用指南.pdf.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "pymupdf-dict+bbox",
+  "source_pages": 12,
+  "heading_count": 4,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "7.-中国注册会计师审计准则第1201号-计划审计工作-应用指南",
+      "page": null,
+      "source": "frontmatter-title",
+      "locator": "frontmatter.title",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "《中国注册会计师审计准则第1201 号",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[3]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "——计划审计工作》应用指南",
+      "page": 1,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[1]/block[4]/line[1]",
+      "confidence": 0.85
+    },
+    {
+      "level": 2,
+      "text": "制定总体审计策略时需要考虑的事项的示例",
+      "page": 9,
+      "source": "pdf-font-bbox",
+      "locator": "pdf/page[9]/block[4]/line[1]",
+      "confidence": 0.85
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

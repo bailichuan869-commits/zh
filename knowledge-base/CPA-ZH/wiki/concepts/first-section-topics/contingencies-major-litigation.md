@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [first-section-master-index-2026-06-26]
 tags: [contingencies, litigation, provisions, p1-core]
 related: [[concepts/first-section-topic-matrix]], [[concepts/accounting-standards/cas-13]], [[concepts/audit-standards/csa-1321]]
+domain: practice
+topic: first-section
 ---
 
 # 或有事项和重大诉讼专题

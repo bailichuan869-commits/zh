@@ -1,3 +1,8 @@
+---
+source_type: "local-source"
+source_role: "content"
+---
+
 # CPA-ZH 初始结构
 
 ## 一、行业重要法规与准则

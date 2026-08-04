@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [first-section-master-index-2026-06-26]
 tags: [revenue, audit-risk, accounting-standards, p1-core]
 related: [[concepts/first-section-topic-matrix]], [[concepts/accounting-standards/cas-14]], [[concepts/audit-standards/csa-1141]], [[concepts/law-accounting]]
+domain: practice
+topic: first-section
 ---
 
 # 收入确认错报风险专题

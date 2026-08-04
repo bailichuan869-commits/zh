@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [enterprise-accounting-standards-number-index-2026-06-26]
 tags: [accounting, standards, cas, p1-core]
 related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounting-standards-number-index-2026-06-26]]
+domain: accounting-standards
+topic: cas
 ---
 
 # 企业会计准则第31号——现金流量表
@@ -35,4 +37,4 @@ related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounti
 | 类型 | 标题 | 官方链接 | 本地文件 | 映射 |
 |---|---|---|---|---|
 | 准则原文 | 企业会计准则第31号——现金流量表 | https://kjs.mof.gov.cn/zt/kjzzss/kuaijizhunzeshishi/200806/t20080618_46250.htm | `raw/standards/accounting/standards-pages/企业会计准则第31号-现金流量表.html` | title-standard-number/high |
-| 实施问答 | 问：执行企业会计准则的企业应当如何对增值税期末留抵退税业务相关现金流量进行列示？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/xjllbzzsswd/202206/t20220621_3819699.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-148.html` | url-category-slug/high |
+| 实施问答 | 问：执行企业会计准则的企业应当如何对增值税期末留抵退税业务相关现金流量进行列示？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/xjllbzzsswd/202206/t20220621_3819699.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-062.html.md` | url-category-slug/high |

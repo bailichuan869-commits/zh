@@ -1,0 +1,411 @@
+{
+  "schema": "cpa-zh-semantic-structure-v1",
+  "generated_at": "2026-07-28T06:40:20+00:00",
+  "source_file": "raw/laws/中华人民共和国公司法.md",
+  "derived_file": "raw/laws/中华人民共和国公司法.md",
+  "representation": "semantic-transcript",
+  "extraction_profile": "faithful",
+  "structure_status": "verified-auto",
+  "extraction_engine": "markdown-pass-through",
+  "source_pages": 0,
+  "heading_count": 49,
+  "table_count": 0,
+  "text_coverage": 1.0,
+  "headings": [
+    {
+      "level": 1,
+      "text": "中华人民共和国公司法",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[1]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[7]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 公司登记",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[9]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 有限责任公司的设立和组织机构",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[11]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 设 立",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[13]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 组织机构",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[15]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 有限责任公司的股权转让",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[17]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 股份有限公司的设立和组织机构",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[19]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 设 立",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[21]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 股东会",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[23]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 董事会、经理",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[25]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 监事会",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[27]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 上市公司组织机构的特别规定",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[29]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 股份有限公司的股份发行和转让",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[31]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 股份发行",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[33]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 股份转让",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[35]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七章 国家出资公司组织机构的特别规定",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[37]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第八章 公司董事、监事、高级管理人员的资格和义务",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[39]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第九章 公司债券",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[41]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十章 公司财务、会计",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[43]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十一章 公司合并、分立、增资、减资",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[45]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十二章 公司解散和清算",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[47]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十三章 外国公司的分支机构",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[49]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十四章 法律责任",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[51]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十五章 附 则",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[53]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第一章 总 则",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[55]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第二章 公司登记",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[169]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第三章 有限责任公司的设立和组织机构",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[237]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 设 立",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[239]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 组织机构",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[343]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第四章 有限责任公司的股权转让",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[503]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第五章 股份有限公司的设立和组织机构",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[539]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 设 立",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[541]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 股东会",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[653]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第三节 董事会、经理",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[703]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第四节 监事会",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[751]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第五节 上市公司组织机构的特别规定",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[779]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第六章 股份有限公司的股份发行和转让",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[811]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第一节 股份发行",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[813]",
+      "confidence": 1.0
+    },
+    {
+      "level": 3,
+      "text": "第二节 股份转让",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[923]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第七章 国家出资公司组织机构的特别规定",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[987]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第八章 公司董事、监事、高级管理人员的资格和义务",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[1021]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第九章 公司债券",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[1099]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十章 公司财务、会计",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[1173]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十一章 公司合并、分立、增资、减资",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[1217]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十二章 公司解散和清算",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[1261]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十三章 外国公司的分支机构",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[1343]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十四章 法律责任",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[1367]",
+      "confidence": 1.0
+    },
+    {
+      "level": 2,
+      "text": "第十五章 附 则",
+      "page": null,
+      "source": "markdown-heading",
+      "locator": "markdown/line[1407]",
+      "confidence": 1.0
+    }
+  ],
+  "tables": [],
+  "warnings": [],
+  "review_pages": []
+}

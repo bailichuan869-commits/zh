@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "application/pdf",
   "bytes": 995080,
-  "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-2020-no4-audit-review-independence-superseded/official.pdf"
+  "local_file": "raw/ethics/third-section/ethics-code-2020-no4-audit-review-independence-superseded/official.pdf",
+  "derived_markdown": "raw/ethics/third-section/ethics-code-2020-no4-audit-review-independence-superseded/official.pdf.md",
+  "derived_sha256": "089280d6a0c3946e3ad3792cecc3c8d19a26a799785eabba419bb09e29985782",
+  "text_extraction_status": "ok",
+  "sha256": "f86c4ae459c85fb07fd08a360510ec409927ac3ac34362bfeb90bfdaf5d6c6e4",
+  "archive_policy": "dual-track"
 }

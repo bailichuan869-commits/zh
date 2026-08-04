@@ -7,6 +7,8 @@ updated: 2026-06-26
 raw_path: raw/standards/audit/
 tags: [audit, standards, cicpa, official-download, p1-core]
 related: [[concepts/audit-standards-system]], [[sources/audit-standards-official-links]]
+domain: sources
+topic: batches
 ---
 
 # 中国注册会计师执业准则下载批次
@@ -15,17 +17,17 @@ related: [[concepts/audit-standards-system]], [[sources/audit-standards-official
 
 本批次从中国注册会计师协会“注册会计师执业准则”专题及已核验通知页面下载：
 
-- 专题入口页：`raw/standards/audit/cicpa-professional-standards.html`
-- 专题分页：`raw/standards/audit/cicpa-professional-standards-index_1.html` 至 `index_3.html`
-- 专题条目清单：`raw/standards/audit/cicpa-professional-standards-topic-items.csv`
-- 2023年34项审计准则应用指南通知页：`raw/standards/audit/cicpa-guidelines-34-20230410.html`
-- 2023年重大错报风险识别和评估等准则通知页：`raw/standards/audit/cicpa-standards-20230103.html`
-- 2022年鉴证业务基本准则等11项准则通知页：`raw/standards/audit/cicpa-standards-20220120.html`
-- 2022年鉴证业务基本准则等15项应用指南通知页：`raw/standards/audit/cicpa-guidelines-15-20220120.html`
+- 专题入口页：`raw/standards/audit/cicpa-professional-standards.html.md`
+- 专题分页：`raw/standards/audit/cicpa-professional-standards-index_1.html.md` 至 `index_3.html`
+- 专题条目清单：`raw/standards/audit/cicpa-professional-standards-topic-items.csv.md`
+- 2023年34项审计准则应用指南通知页：`raw/standards/audit/cicpa-guidelines-34-20230410.html.md`
+- 2023年重大错报风险识别和评估等准则通知页：`raw/standards/audit/cicpa-standards-20230103.html.md`
+- 2022年鉴证业务基本准则等11项准则通知页：`raw/standards/audit/cicpa-standards-20220120.html.md`
+- 2022年鉴证业务基本准则等15项应用指南通知页：`raw/standards/audit/cicpa-guidelines-15-20220120.html.md`
 - PDF 附件：`raw/standards/audit/pdfs/`
 - 23项审计准则 ZIP 附件：`raw/standards/audit/archives/2023-23-audit-standards.zip`
 - ZIP 解压文件：`raw/standards/audit/archives/2023-23-audit-standards/`
-- PDF 下载清单：`raw/standards/audit/downloaded-cicpa-professional-standards-pdfs.csv`
+- PDF 下载清单：`raw/standards/audit/downloaded-cicpa-professional-standards-pdfs.csv.md`
 
 ## 下载结果
 

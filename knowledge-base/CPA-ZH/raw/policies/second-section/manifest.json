@@ -9,7 +9,12 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html",
     "bytes": 41750,
-    "local_file": "knowledge-base/CPA-ZH/raw/policies/second-section/caihui-supervision-2023-4/official.html"
+    "local_file": "raw/policies/second-section/caihui-supervision-2023-4/official.html",
+    "derived_markdown": "raw/policies/second-section/caihui-supervision-2023-4/official.html.md",
+    "derived_sha256": "d5ec9277c3608a7dd24453fc53f799d820a357818991179eb4f4cc0cee2b696b",
+    "text_extraction_status": "ok",
+    "sha256": "3b612d5eb0cad5c550ae097896f7dd5357c1be5be6ae2030227a2fa96a361325",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "audit-order-2021-30",
@@ -21,7 +26,12 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html",
     "bytes": 44760,
-    "local_file": "knowledge-base/CPA-ZH/raw/policies/second-section/audit-order-2021-30/official.html"
+    "local_file": "raw/policies/second-section/audit-order-2021-30/official.html",
+    "derived_markdown": "raw/policies/second-section/audit-order-2021-30/official.html.md",
+    "derived_sha256": "06be1fdbc25f33bb1787c79f51e5cab5fcd53d40175784247516bc74ca21a712",
+    "text_extraction_status": "ok",
+    "sha256": "b768042a099d99bb48daefa386f78b11dbf4e424447f8e18dcfd5770742abbd5",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "cpa-exam-2024-115",
@@ -33,7 +43,12 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html",
     "bytes": 35149,
-    "local_file": "knowledge-base/CPA-ZH/raw/policies/second-section/cpa-exam-2024-115/official.html"
+    "local_file": "raw/policies/second-section/cpa-exam-2024-115/official.html",
+    "derived_markdown": "raw/policies/second-section/cpa-exam-2024-115/official.html.md",
+    "derived_sha256": "96bf4afff56aa50d9fb66231800b67a3b5a92e5e619f724bbb1e85a9f2ede1fe",
+    "text_extraction_status": "ok",
+    "sha256": "20c8d26d724e63dfa7f8b3faaa85d27e3956c45ab884965bc466765f2f193f6e",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "cpa-registration-2019-99",
@@ -45,7 +60,12 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html",
     "bytes": 33688,
-    "local_file": "knowledge-base/CPA-ZH/raw/policies/second-section/cpa-registration-2019-99/official.html"
+    "local_file": "raw/policies/second-section/cpa-registration-2019-99/official.html",
+    "derived_markdown": "raw/policies/second-section/cpa-registration-2019-99/official.html.md",
+    "derived_sha256": "ed0647dd85756019786b52563a7e122d3edae0944ddc4f2e2e0a4b23944c8256",
+    "text_extraction_status": "ok",
+    "sha256": "fcb2b961b463df5ed2dff9b136e18079b87c71bf29fd1a2570a0e3ff7f4f4f2a",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "firm-license-supervision-2019-97",
@@ -57,7 +77,12 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html",
     "bytes": 151281,
-    "local_file": "knowledge-base/CPA-ZH/raw/policies/second-section/firm-license-supervision-2019-97/official.html"
+    "local_file": "raw/policies/second-section/firm-license-supervision-2019-97/official.html",
+    "derived_markdown": "raw/policies/second-section/firm-license-supervision-2019-97/official.html.md",
+    "derived_sha256": "80f98a92094b556dbafd2eec787b2443bb7bfff99c57729a26826430c9ad3336",
+    "text_extraction_status": "ok",
+    "sha256": "eb278470d087399aa3dcd50bb5cccee119b9d73d3c0626cf3a6f05dce66353f8",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "integrity-2023-5",
@@ -69,7 +94,12 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html",
     "bytes": 28078,
-    "local_file": "knowledge-base/CPA-ZH/raw/policies/second-section/integrity-2023-5/official.html"
+    "local_file": "raw/policies/second-section/integrity-2023-5/official.html",
+    "derived_markdown": "raw/policies/second-section/integrity-2023-5/official.html.md",
+    "derived_sha256": "124b1f5a10972be5ba41060f2c368d67cb6ff581aa4d214f31124731d76318fb",
+    "text_extraction_status": "ok",
+    "sha256": "70ed1f61301352bdd56b77cf22e40bf6bd052f77dcd0059a46aded819ac567a9",
+    "archive_policy": "dual-track"
   },
   {
     "slug": "firm-inspection-2022-23",
@@ -81,6 +111,11 @@
     "archived_on": "2026-06-29",
     "content_type": "text/html",
     "bytes": 27710,
-    "local_file": "knowledge-base/CPA-ZH/raw/policies/second-section/firm-inspection-2022-23/official.html"
+    "local_file": "raw/policies/second-section/firm-inspection-2022-23/official.html",
+    "derived_markdown": "raw/policies/second-section/firm-inspection-2022-23/official.html.md",
+    "derived_sha256": "e1432f9ce770c104f0c85e9ab6471dadbdd459df0f8d286300b17f331fd97ad2",
+    "text_extraction_status": "ok",
+    "sha256": "5b4ffdc8de2f469ea7523de997dc5bc30aad92178dcbe3aecc160294bdb29313",
+    "archive_policy": "dual-track"
   }
 ]

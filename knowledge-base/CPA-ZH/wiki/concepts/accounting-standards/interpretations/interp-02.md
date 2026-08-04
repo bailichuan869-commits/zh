@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [enterprise-accounting-standards-interpretations-download-2026-06-26]
 tags: [accounting, standards, interpretation, p1-core]
 related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounting-standards-interpretations-download-2026-06-26]]
+domain: accounting-standards
+topic: interpretations
 ---
 
 # 企业会计准则解释第2号
@@ -15,13 +17,13 @@ related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounti
 
 - 解释编号：2
 - 标题：企业会计准则解释第2号
-- 本地文件：`raw/standards/accounting/interpretations-pages/关于印发企业会计准则解释第2号的通知.html`
+- 本地文件：`raw/standards/accounting/interpretations-pages/关于印发企业会计准则解释第2号的通知.html.md`
 - 官方链接：https://kjs.mof.gov.cn/zhengcefabu/200809/t20080912_74645.htm
 
 ## 原文入口
 
 - 通知/原文页面：https://kjs.mof.gov.cn/zhengcefabu/200809/t20080912_74645.htm
-- 本地 HTML：`raw/standards/accounting/interpretations-pages/关于印发企业会计准则解释第2号的通知.html`
+- 本地 HTML：`raw/standards/accounting/interpretations-pages/关于印发企业会计准则解释第2号的通知.html.md`
 
 ## 备注
 
@@ -36,6 +38,6 @@ related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounti
 
 | 类型 | 标题 | 置信度 | 理由 | 官方链接 | 本地文件 |
 |---|---|---|---|---|---|
-| 准则解释 | 关于印发企业会计准则解释第2号的通知 | high | 标题中明确给出解释编号 | https://kjs.mof.gov.cn/zhengcefabu/200809/t20080912_74645.htm | `raw/standards/accounting/interpretations-pages/关于印发企业会计准则解释第2号的通知.html` |
+| 准则解释 | 关于印发企业会计准则解释第2号的通知 | high | 标题中明确给出解释编号 | https://kjs.mof.gov.cn/zhengcefabu/200809/t20080912_74645.htm | `raw/standards/accounting/interpretations-pages/关于印发企业会计准则解释第2号的通知.html.md` |
 
 <!-- calibration-supplement:end -->

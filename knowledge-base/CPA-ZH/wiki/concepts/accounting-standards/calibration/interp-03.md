@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [enterprise-accounting-standards-number-index-2026-06-26]
 tags: [accounting, standards, calibration, p1-core]
 related: [[concepts/accounting-standards/unmapped-review]], [[sources/enterprise-accounting-standards-number-index-2026-06-26]], [[concepts/accounting-standards/interpretations/interp-03]]
+domain: accounting-standards
+topic: calibration
 ---
 
 # 企业会计准则解释第3号未映射资料
@@ -21,4 +23,4 @@ related: [[concepts/accounting-standards/unmapped-review]], [[sources/enterprise
 
 | 类型 | 标题 | 置信度 | 理由 | 官方链接 | 本地文件 |
 |---|---|---|---|---|---|
-| 准则解释 | 关于印发企业会计准则解释第3号的通知 | high | 标题中明确给出解释编号 | https://kjs.mof.gov.cn/zhengcefabu/200906/t20090625_172281.htm | `raw/standards/accounting/interpretations-pages/关于印发企业会计准则解释第3号的通知.html` |
+| 准则解释 | 关于印发企业会计准则解释第3号的通知 | high | 标题中明确给出解释编号 | https://kjs.mof.gov.cn/zhengcefabu/200906/t20090625_172281.htm | `raw/standards/accounting/interpretations-pages/关于印发企业会计准则解释第3号的通知.html.md` |

@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "application/pdf",
   "bytes": 732313,
-  "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-2020-no3-professional-services/official.pdf"
+  "local_file": "raw/ethics/third-section/ethics-code-2020-no3-professional-services/official.pdf",
+  "derived_markdown": "raw/ethics/third-section/ethics-code-2020-no3-professional-services/official.pdf.md",
+  "derived_sha256": "f9bf39a0435586e53c1d3983773fb8c4eae7e3661ba66f9cddae02a76251f0dc",
+  "text_extraction_status": "ok",
+  "sha256": "e6f9f0ee61dda0ef6e1b1eeb9abf4e45bd109d2892e4aae3c56cd8829ed1bfb5",
+  "archive_policy": "dual-track"
 }

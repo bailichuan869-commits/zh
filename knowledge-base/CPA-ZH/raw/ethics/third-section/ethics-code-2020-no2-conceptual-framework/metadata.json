@@ -8,5 +8,10 @@
   "archived_on": "2026-06-29",
   "content_type": "application/pdf",
   "bytes": 407951,
-  "local_file": "knowledge-base/CPA-ZH/raw/ethics/third-section/ethics-code-2020-no2-conceptual-framework/official.pdf"
+  "local_file": "raw/ethics/third-section/ethics-code-2020-no2-conceptual-framework/official.pdf",
+  "derived_markdown": "raw/ethics/third-section/ethics-code-2020-no2-conceptual-framework/official.pdf.md",
+  "derived_sha256": "c1aeb3e7b10ae703bad1c1ef17eab56786e0738bffe45c040c87f984555ae80a",
+  "text_extraction_status": "ok",
+  "sha256": "806a2a9fd865758d2e7f3787506896363c4150df990800ab4c6b1f60f4d98c4d",
+  "archive_policy": "dual-track"
 }

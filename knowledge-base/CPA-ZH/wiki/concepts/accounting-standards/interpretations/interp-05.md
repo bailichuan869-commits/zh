@@ -7,6 +7,8 @@ updated: 2026-06-26
 sources: [enterprise-accounting-standards-interpretations-download-2026-06-26]
 tags: [accounting, standards, interpretation, p1-core]
 related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounting-standards-interpretations-download-2026-06-26]]
+domain: accounting-standards
+topic: interpretations
 ---
 
 # 企业会计准则解释第5号
@@ -15,13 +17,13 @@ related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounti
 
 - 解释编号：5
 - 标题：企业会计准则解释第5号
-- 本地文件：`raw/standards/accounting/interpretations-pages/关于印发企业会计准则解释第5号的通知.html`
+- 本地文件：`raw/standards/accounting/interpretations-pages/关于印发企业会计准则解释第5号的通知.html.md`
 - 官方链接：https://kjs.mof.gov.cn/zhengcefabu/201211/t20121122_701308.htm
 
 ## 原文入口
 
 - 通知/原文页面：https://kjs.mof.gov.cn/zhengcefabu/201211/t20121122_701308.htm
-- 本地 HTML：`raw/standards/accounting/interpretations-pages/关于印发企业会计准则解释第5号的通知.html`
+- 本地 HTML：`raw/standards/accounting/interpretations-pages/关于印发企业会计准则解释第5号的通知.html.md`
 
 ## 备注
 

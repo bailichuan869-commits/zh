@@ -1,10 +1,8 @@
 import zipfile
+import argparse
 from pathlib import Path
 import xml.etree.ElementTree as ET
 
-
-SRC = Path(r"C:\Users\zhaozhonghua\桌面\审计工作业绩说明.docx")
-OUT = Path(r"D:\ai-audit\审计工作业绩说明_润色版.docx")
 
 NS = {"w": "http://schemas.openxmlformats.org/wordprocessingml/2006/main"}
 ET.register_namespace("w", NS["w"])
@@ -35,7 +33,11 @@ def non_empty_paragraphs(root):
 
 
 def main():
-    with zipfile.ZipFile(SRC, "r") as zin:
+    parser = argparse.ArgumentParser(description="Polish a local audit work-performance DOCX.")
+    parser.add_argument("source", type=Path, help="Source DOCX path.")
+    parser.add_argument("output", type=Path, help="Output DOCX path.")
+    args = parser.parse_args()
+    with zipfile.ZipFile(args.source, "r") as zin:
         root = ET.fromstring(zin.read("word/document.xml"))
         paragraphs = list(non_empty_paragraphs(root))
 
@@ -51,12 +53,12 @@ def main():
 
         document_xml = ET.tostring(root, encoding="utf-8", xml_declaration=True)
 
-        with zipfile.ZipFile(OUT, "w", zipfile.ZIP_DEFLATED) as zout:
+        with zipfile.ZipFile(args.output, "w", zipfile.ZIP_DEFLATED) as zout:
             for item in zin.infolist():
                 data = document_xml if item.filename == "word/document.xml" else zin.read(item.filename)
                 zout.writestr(item, data)
 
-    print(OUT)
+    print(args.output)
 
 
 if __name__ == "__main__":

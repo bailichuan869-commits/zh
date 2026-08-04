@@ -7,6 +7,8 @@ updated: 2026-06-26
 raw_path: raw/outlines/2026-06-26-initial-structure.md
 tags: [cpa, outline, p1-core]
 related: [[overview]], [[concepts/regulations-and-standards]], [[concepts/policy-documents]], [[concepts/history-ethics-independence]], [[concepts/practice-skills-cases]]
+domain: sources
+topic: batches
 ---
 
 # CPA-ZH 初始结构

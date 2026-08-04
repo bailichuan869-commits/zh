@@ -1,3 +1,8 @@
+---
+source_type: "generated-index"
+source_role: "index-page"
+---
+
 # 中国注册会计师执业准则编号级索引
 
 生成日期：2026-06-26

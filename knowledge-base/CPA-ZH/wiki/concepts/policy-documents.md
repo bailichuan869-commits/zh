@@ -7,6 +7,8 @@ updated: 2026-07-09
 sources: [2026-06-26-initial-structure, archived-cpa-competition-policy-pages, policy-documents-official-links-2026-06-29, policy-documents-raw-archive-2026-06-29, issuance-guidance-rd-staff-investment-archive-2026-07-09]
 tags: [cpa, policy, supervision, p2-important]
 related: [[concepts/policy-caihui-supervision]], [[concepts/policy-audit-order]], [[concepts/policy-cpa-exam]], [[concepts/policy-cpa-registration]], [[concepts/policy-firm-license-supervision]], [[concepts/policy-integrity]], [[concepts/policy-firm-inspection]], [[concepts/securities-issuance-rd-staff-investment]], [[concepts/policy-document-comparison]], [[concepts/policy-implementation-map]], [[concepts/policy-official-link-checklist]], [[concepts/policy-version-validity-tracker]], [[concepts/policy-execution-checklist]]
+domain: policies
+topic: trackers
 ---
 
 # 行业重要政策性文件
