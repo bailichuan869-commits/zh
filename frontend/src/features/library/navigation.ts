@@ -58,7 +58,10 @@ export function getDomainMeta(key: string): DomainMeta {
 }
 
 export function isBrowsablePath(path: string): boolean {
-  return path.startsWith('wiki/') || path.startsWith('raw/')
+  if (path.startsWith('wiki/')) return true
+  if (!path.startsWith('raw/')) return false
+  if (/\.structure(?:-[^.\/]+)?\.json$/i.test(path)) return false
+  return true
 }
 
 export function sanitizeNavigationTree(tree: NavigationTree): NavigationTree {

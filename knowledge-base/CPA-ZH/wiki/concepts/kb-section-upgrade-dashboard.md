@@ -2,8 +2,8 @@
 title: CPA-ZH 分板块技术升级仪表盘
 type: concept
 concept_type: maintenance-dashboard
-created: 2026-08-04
-updated: 2026-08-04
+created: 2026-08-05
+updated: 2026-08-05
 sources: [kb-schema-check]
 tags: [maintenance, schema, section-upgrade, quality-control, cpa]
 related: [[concepts/kb-maintenance-workflow]], [[concepts/kb-user-guide]], [[concepts/source-status-dashboard]]

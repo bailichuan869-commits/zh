@@ -11,11 +11,14 @@ const rendered = computed(() => DOMPurify.sanitize(parser.render(props.source)))
 
 function navigate(event: MouseEvent) {
   const anchor = (event.target as HTMLElement).closest('a')
-  if (!anchor?.href) return
-  const match = anchor.getAttribute('href')?.match(/^wiki\/(.+\.md)$/)
-  if (match) {
+  const href = anchor?.getAttribute('href') ?? ''
+  if (!href) return
+  if (/^(wiki|raw)\//i.test(href)) {
     event.preventDefault()
-    router.push({ path: '/document', query: { path: `wiki/${match[1]}` } })
+    router.push({
+      path: href.startsWith('wiki/') ? '/document' : '/raw',
+      query: { path: href },
+    })
   }
 }
 </script>

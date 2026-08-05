@@ -7,6 +7,8 @@ describe('knowledge navigation helpers', () => {
   it('keeps only paths that the read-only frontend can open', () => {
     expect(isBrowsablePath('wiki/concepts/example.md')).toBe(true)
     expect(isBrowsablePath('raw/standards/example.pdf.md')).toBe(true)
+    expect(isBrowsablePath('raw/standards/example.html.structure.json')).toBe(false)
+    expect(isBrowsablePath('raw/standards/example.html.structure-4fdd85ec.json')).toBe(false)
     expect(isBrowsablePath('cache/pdf-markdown/files/example.md')).toBe(false)
   })
 

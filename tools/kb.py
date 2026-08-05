@@ -59,6 +59,14 @@ def main() -> int:
         "--scope", choices=["accounting", "policies", "ethics", "all"], default="all"
     )
     raw_repair_parser.add_argument("--apply", action="store_true", help="Write repairs; default is dry-run.")
+    raw_landing_repair_parser = subparsers.add_parser(
+        "raw-landing-repair", help="Repair attachment-only application case landing pages."
+    )
+    raw_landing_repair_parser.add_argument("--apply", action="store_true", help="Write repairs; default is dry-run.")
+    raw_index_repair_parser = subparsers.add_parser(
+        "raw-index-repair", help="Repair application case column index Markdown pages."
+    )
+    raw_index_repair_parser.add_argument("--apply", action="store_true", help="Write repairs; default is dry-run.")
     raw_structure_parser = subparsers.add_parser(
         "raw-structure-audit", help="Audit structural fidelity of raw Markdown derivatives."
     )
@@ -235,6 +243,16 @@ def main() -> int:
         if args.apply:
             repair_args.append("--apply")
         return run_script("kb_raw_repair.py", args.root, repair_args)
+    if args.command == "raw-landing-repair":
+        repair_args = []
+        if args.apply:
+            repair_args.append("--apply")
+        return run_script("repair_application_case_landing_pages.py", args.root, repair_args)
+    if args.command == "raw-index-repair":
+        repair_args = []
+        if args.apply:
+            repair_args.append("--apply")
+        return run_script("repair_application_case_index_pages.py", args.root, repair_args)
     if args.command == "raw-structure-audit":
         structure_args = ["audit", "--scope", args.scope, "--output", args.output]
         if args.write_maintenance_report:

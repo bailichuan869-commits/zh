@@ -8,9 +8,9 @@
 
 ### 分离式浏览器运行
 
-`start_kb_api.py` 启动根目录 `backend/` 的只读 FastAPI 服务，默认监听 `127.0.0.1:8765`；Vue 前端在根目录 `frontend/` 通过 `npm run dev` 单独启动。
+`start_kb_api.py` 启动根目录 `backend/` 的只读 FastAPI 服务，默认监听 `127.0.0.1:8765`；`start_kb_web.py` 会同时启动 `backend/` 与 `frontend/`。
 
-根目录的 `start-kb.bat` 和 `stop-kb.bat` 是面向本机用户的双击入口；对应实现为 `tools/start_kb_api.py` 和 `tools/stop_kb.py`，两者均按其自身位置推导项目根目录。
+根目录的 `start-kb.bat` 和 `stop-kb.bat` 是面向本机用户的双击入口；对应实现为 `tools/start_kb_web.py` 和 `tools/stop_kb.py`，两者均按其自身位置推导项目根目录。
 
 ```powershell
 .\.venv\Scripts\python.exe tools\kb.py health
@@ -18,6 +18,7 @@
 .\.venv\Scripts\python.exe tools\kb.py search "收入确认"
 .\.venv\Scripts\python.exe tools\kb.py cache build
 .\.venv\Scripts\python.exe tools\kb.py index
+.\.venv\Scripts\python.exe tools\kb.py raw-index-repair
 .\.venv\Scripts\python.exe tools\kb.py readme
 .\.venv\Scripts\python.exe tools\kb.py ingest-local --source "D:\path\to\files" --raw-subdir "cases/new-batch" --batch-slug "new-batch"
 .\.venv\Scripts\python.exe tools\kb.py case-card --source "knowledge-base/CPA-ZH/raw/cases/batch/case.docx" --slug "draft-case"
@@ -36,7 +37,7 @@
 |---|---|---|
 | 只读 | `health`、`verify`、`manifest`、`search`、`stats`、`sources summary`、`case-index` | 查询、检查当前状态或打印建议 |
 | 重建报告 | `index`、`cache build`、`schema --write-report`、`sources write-report`、`case-index --write-report`、`readme` | 可重复生成索引、缓存、建议报告或仪表盘 |
-| 显式写入 | `ingest-local --commit`、`case-card --commit`、`qa-capture --commit`、`archive-doc --commit`、`pdf-md --commit` | 新增 raw、wiki 或转换缓存文件，执行前先 dry-run |
+| 显式写入 | `ingest-local --commit`、`case-card --commit`、`qa-capture --commit`、`archive-doc --commit`、`pdf-md --commit`、`raw-index-repair --apply` | 新增或修复 raw、wiki 或转换缓存文件，执行前先 dry-run |
 
 ## CPA-ZH 维护脚本
 
@@ -47,6 +48,8 @@
 | `cpa_zh_agent_service.py` | Agent-first 共享服务层：统一检索、阅读、健康检查、完整预览和令牌提交。 |
 | `cpa_zh_agent.py` | 共享服务的 JSON CLI，所有成功与失败都返回稳定 envelope。 |
 | `cpa_zh_mcp.py` | 共享服务的本机 stdio MCP 入口，注册 `cpa_*` 工具且不监听端口。 |
+| `start_kb_web.py` | 一键启动根目录 `backend/` 与 `frontend/`。 |
+| `repair_application_case_index_pages.py` | 整理应用案例栏目索引 Markdown；默认 dry-run，校验正文与附件映射后仅以 `--apply` 写入 active index-page。 |
 | `kb_health_check.py` | 一键体检：manifest、wiki 内链、检索索引、文本缓存、README 统计。 |
 | `verify_cpa_zh_delivery.py` | 完整交付门禁：导航树新鲜度、Python/API 契约测试、知识库体检、前端测试和生产构建；`kb.py verify --skip-frontend` 可用于不含前端的快速检查。 |
 | `kb_search.py` | 构建和查询本地 SQLite 检索索引。 |

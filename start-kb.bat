@@ -9,5 +9,5 @@ if not exist "%PY%" (
   pause
   exit /b 1
 )
-"%PY%" "%ROOT%tools\start_kb_api.py"
+"%PY%" "%ROOT%tools\start_kb_web.py"
 if errorlevel 1 pause

@@ -8,7 +8,7 @@
 |---|---|
 | `knowledge-base/CPA-ZH/README.md` | 主知识库说明、检索命令、维护流程 |
 | `knowledge-base/CPA-ZH/wiki/index.md` | CPA-ZH wiki 总索引 |
-| `start-kb.bat` | 双击启动 CPA-ZH 知识库 Web 界面 |
+| `start-kb.bat` | 双击启动 CPA-ZH 前后端联动 Web 界面 |
 | `stop-kb.bat` | 停止本机 CPA-ZH 知识库 Web 服务 |
 | `tools/kb.py` | CPA-ZH 统一维护入口 |
 | `course/` | 课程 Markdown、HTML 和网页 PPT |
@@ -28,7 +28,7 @@ ai-audit/
 │   └── CPA-ZH/              # CPA 行业知识库主线
 ├── tools/                   # 自动化脚本和维护入口
 ├── requirements.txt         # Python 运行依赖
-├── start-kb.bat             # 知识库 API 启动入口
+├── start-kb.bat             # 知识库前后端联动启动入口
 ├── stop-kb.bat              # 知识库 UI 停止入口
 ├── course/                  # 课程资料与生成结果
 ├── workspace/               # 过程资料、临时输出和说明文档
@@ -53,15 +53,13 @@ ai-audit/
 
 ## CPA-ZH 前后端运行
 
-知识库浏览器已拆分为独立的 Vue 前端和 FastAPI 后端。`start-kb.bat` 只启动本机 API（`http://127.0.0.1:8765/api/docs`）；另开终端运行前端：
+知识库浏览器已拆分为独立的 Vue 前端和 FastAPI 后端。`start-kb.bat` 会同时启动本机 API（`http://127.0.0.1:8765/api/docs`）和前端（`http://127.0.0.1:5173`）：
 
 ```powershell
-cd frontend
-npm install
-npm run dev
+.\start-kb.bat
 ```
 
-前端开发服务地址为 `http://127.0.0.1:5173`，通过 Vite 代理调用后端。生产部署时先执行 `npm run build`，再由独立静态 Web 服务托管 `frontend/dist/`。
+如需手动分别启动，前端开发服务地址为 `http://127.0.0.1:5173`，通过 Vite 代理调用后端。生产部署时先执行 `npm run build`，再由独立静态 Web 服务托管 `frontend/dist/`。
 
 CPA-ZH 维护建议优先使用统一入口：
 

@@ -6,6 +6,8 @@
 .\.venv\Scripts\python.exe -m uvicorn app.main:app --app-dir backend --host 127.0.0.1 --port 8765
 ```
 
+也可以直接双击仓库根目录的 `start-kb.bat`，它会同时拉起后端和前端。
+
 接口文档：`http://127.0.0.1:8765/api/docs`。
 
 ## 知识答疑
