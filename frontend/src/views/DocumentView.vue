@@ -4,11 +4,300 @@ import { ArrowLeftOutlined, LinkOutlined } from '@ant-design/icons-vue'
 import { useRoute, useRouter } from 'vue-router'
 import MarkdownArticle from '@/components/MarkdownArticle.vue'
 import { api, type Document } from '@/services/api'
-const route=useRoute(); const router=useRouter(); const document=ref<Document|null>(null); const loading=ref(false); const error=ref(''); const path=computed(()=>String(route.query.path??''))
-async function load(){if(!path.value)return;loading.value=true;error.value='';try{document.value=await api.document(path.value)}catch(reason){error.value=reason instanceof Error?reason.message:'无法读取知识页面'}finally{loading.value=false}}
-watch(path,load,{immediate:true}); function openBacklink(target:string){router.push({path:'/document',query:{path:`wiki/${target}.md`}})}
+
+const route = useRoute()
+const router = useRouter()
+const document = ref<Document | null>(null)
+const loading = ref(false)
+const error = ref('')
+const path = computed(() => String(route.query.path ?? ''))
+const displayTitle = computed(() => document.value?.frontmatter.title || document.value?.path || '')
+
+async function load() {
+  if (!path.value) return
+  loading.value = true
+  error.value = ''
+  try {
+    document.value = await api.document(path.value)
+  } catch (reason) {
+    error.value = reason instanceof Error ? reason.message : '无法读取知识页面'
+  } finally {
+    loading.value = false
+  }
+}
+
+function openBacklink(target: string) {
+  router.push({ path: '/document', query: { path: `wiki/${target}.md` } })
+}
+
+watch(path, load, { immediate: true })
 </script>
-<template><a-spin :spinning="loading"><a-alert v-if="error" type="error" :message="error" show-icon/><template v-else-if="document"><section class="reading-layout"><main class="article-main"><a-button type="text" class="back" @click="router.back()"><ArrowLeftOutlined/>返回知识库中心</a-button><header class="article-header"><p class="article-kicker">{{ document.path }}</p><h1>{{ document.frontmatter.title || document.path }}</h1><a-space class="article-meta"><a-tag v-if="document.frontmatter.type">{{ document.frontmatter.type }}</a-tag><a-tag v-if="document.frontmatter.maturity">{{ document.frontmatter.maturity }}</a-tag></a-space></header><div class="article-rule"/><a-card class="article-card" :bordered="false"><MarkdownArticle :source="document.markdown" /></a-card></main><aside class="article-aside"><div class="aside-inner"><div class="toc-title">页面信息</div><a-card class="info-card" :bordered="false"><div class="info-line"><span>文档类型</span><strong>{{ document.frontmatter.type || '知识页面' }}</strong></div><div class="info-line"><span>成熟度</span><strong>{{ document.frontmatter.maturity || '已整理' }}</strong></div></a-card><a-card class="backlink-card" :bordered="false"><template #title><span><LinkOutlined/>关联页面</span></template><a-empty v-if="!document.backlinks.length" :image="null" description="暂无关联页面"/><a-list v-else size="small" :data-source="document.backlinks"><template #renderItem="{item}"><a-list-item><a @click="openBacklink(item.path)">{{ item.title }}</a></a-list-item></template></a-list></a-card></div></aside></section></template><a-empty v-else-if="!loading" description="请选择要阅读的知识页面"/></a-spin></template>
+
+<template>
+  <a-spin :spinning="loading">
+    <section v-if="error" class="document-state">
+      <a-alert type="error" :message="error" show-icon>
+        <template #action><a-button size="small" @click="load">重试</a-button></template>
+      </a-alert>
+    </section>
+
+    <section v-else-if="document" class="reading-layout">
+      <main class="article-main">
+        <div class="article-toolbar">
+          <a-button type="text" class="back-button" aria-label="返回上一页" @click="router.back()">
+            <ArrowLeftOutlined />返回
+          </a-button>
+          <span class="article-path">{{ document.path }}</span>
+        </div>
+
+        <article class="article-content">
+          <header class="article-header">
+            <p class="page-kicker">{{ document.frontmatter.type || '知识页面' }}</p>
+            <h1>{{ displayTitle }}</h1>
+            <div class="article-meta">
+              <a-tag v-if="document.frontmatter.maturity" color="green">{{ document.frontmatter.maturity }}</a-tag>
+              <a-tag v-if="document.frontmatter.page_role">{{ document.frontmatter.page_role }}</a-tag>
+              <span>{{ document.backlinks.length }} 条关联知识</span>
+            </div>
+          </header>
+
+          <div class="article-rule" />
+          <MarkdownArticle :source="document.markdown" />
+        </article>
+      </main>
+
+      <aside class="article-aside" aria-label="文档上下文">
+        <section>
+          <h2>页面信息</h2>
+          <div class="info-line"><span>文档类型</span><strong>{{ document.frontmatter.type || '知识页面' }}</strong></div>
+          <div class="info-line"><span>成熟度</span><strong>{{ document.frontmatter.maturity || '已整理' }}</strong></div>
+          <div class="info-line"><span>来源路径</span><strong class="path-value">{{ document.path }}</strong></div>
+        </section>
+
+        <section class="backlink-section">
+          <h2><LinkOutlined />关联页面</h2>
+          <a-empty v-if="!document.backlinks.length" :image="null" description="暂无关联页面" />
+          <div v-else class="backlink-list">
+            <button v-for="item in document.backlinks" :key="item.path" type="button" @click="openBacklink(item.path)">
+              <span>{{ item.title }}</span><span aria-hidden="true">›</span>
+            </button>
+          </div>
+        </section>
+      </aside>
+    </section>
+
+    <section v-else-if="!loading" class="document-state">
+      <a-empty description="请选择要阅读的知识页面" />
+    </section>
+  </a-spin>
+</template>
+
 <style scoped>
-.reading-layout { display:grid; grid-template-columns:minmax(0,820px) 276px; justify-content:center; min-height:calc(100vh - 66px); background:var(--reader-bg); }.article-main { min-width:0; padding:38px 58px 100px 48px; }.article-header { padding:26px 0 12px; }.article-main h1 { max-width:760px; margin:14px 0 16px; color:var(--app-text); font-size:38px; line-height:1.22; font-weight:720; }.back { margin-left:-10px; padding-left:10px; color:var(--app-accent); }.article-kicker { margin:0; overflow:hidden; color:var(--app-subtle); font-family:ui-monospace,SFMono-Regular,Consolas,monospace; font-size:11px; text-overflow:ellipsis; white-space:nowrap; }.article-meta { margin-bottom:8px; }.article-rule { width:68px; height:2px; margin:16px 0 30px; background:var(--app-accent); border-radius:2px; }.article-card { background:transparent; border:0; border-radius:0; box-shadow:none; }.article-card :deep(.ant-card-body) { padding:0; }.article-card :deep(.markdown-article) { color:var(--app-text); font-size:16px; line-height:1.95; }.article-card :deep(h2) { margin-top:46px; padding-top:4px; font-size:24px; }.article-card :deep(h3) { margin-top:34px; }.article-card :deep(blockquote) { margin:30px 0; padding:20px 24px; background:var(--reader-quote); border-left:3px solid var(--app-accent); border-radius:0 10px 10px 0; }.article-card :deep(pre) { padding:20px; background:var(--reader-code); border:1px solid var(--reader-rule); border-radius:10px; }.article-aside { background:var(--reader-aside); border-left:1px solid var(--reader-rule); }.aside-inner { position:sticky; top:92px; padding:34px 22px; }.toc-title { margin:0 0 12px 2px; color:var(--app-text); font-size:14px; font-weight:700; }.article-aside :deep(.ant-card) { margin-bottom:16px; background:color-mix(in srgb,var(--app-surface) 78%,transparent); border:1px solid var(--reader-rule); box-shadow:none; backdrop-filter:blur(12px); }.info-line { display:flex; justify-content:space-between; padding:10px 0; color:var(--app-muted); font-size:12px; border-bottom:1px solid var(--reader-rule); }.info-line:last-child { border:0; }.info-line strong { color:var(--app-text); font-weight:550; }.backlink-card :deep(.ant-card-head) { min-height:48px; padding:0 16px; }.backlink-card :deep(.ant-card-head-title) { padding:14px 0; }.backlink-card :deep(.ant-card-head .anticon) { margin-right:7px; color:var(--app-accent); }@media(max-width:1050px){.reading-layout{grid-template-columns:minmax(0,820px);}.article-aside{border-top:1px solid var(--reader-rule);border-left:0;}.aside-inner{position:static;display:grid;grid-template-columns:1fr 1.4fr;gap:16px;padding:24px 40px;}.article-aside .toc-title{display:none;}}@media(max-width:650px){.article-main{padding:28px 22px 60px;}.article-main h1{font-size:29px;}.aside-inner{grid-template-columns:1fr;padding:20px;}.article-card :deep(.markdown-article){font-size:15px;line-height:1.85;}}
+.reading-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 240px;
+  min-height: calc(100vh - var(--app-header-height));
+  background: var(--reader-bg);
+}
+
+.article-main {
+  min-width: 0;
+  padding: 18px clamp(28px, 5vw, 62px) 90px;
+}
+
+.article-toolbar {
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--app-muted);
+}
+
+.back-button {
+  height: 32px;
+  padding-inline: 8px;
+  color: var(--app-muted);
+}
+
+.back-button :deep(.anticon),
+.article-aside :deep(.anticon) {
+  font-size: var(--app-icon-size);
+}
+
+.article-path {
+  min-width: 0;
+  overflow: hidden;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.article-content {
+  width: min(760px, 100%);
+  margin: 34px auto 0;
+}
+
+.article-header h1 {
+  margin: 6px 0 13px;
+  color: var(--app-text);
+  font-size: 34px;
+  line-height: 1.28;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  color: var(--app-muted);
+  font-size: 12px;
+}
+
+.article-rule {
+  height: 1px;
+  margin: 23px 0 30px;
+  background: var(--app-border);
+}
+
+.article-content :deep(.markdown-article > h1:first-child) {
+  display: none;
+}
+
+.article-aside {
+  padding: 28px 16px;
+  background: var(--reader-aside);
+  border-left: 1px solid var(--reader-rule);
+}
+
+.article-aside section {
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid var(--app-border);
+}
+
+.article-aside h2 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0 0 12px;
+  color: var(--app-text);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.info-line {
+  min-height: 38px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 0;
+  color: var(--app-muted);
+  border-bottom: 1px solid var(--app-border);
+  font-size: 12px;
+}
+
+.info-line:last-child {
+  border-bottom: 0;
+}
+
+.info-line strong {
+  min-width: 0;
+  color: var(--app-text);
+  font-weight: 500;
+  text-align: right;
+}
+
+.path-value {
+  overflow-wrap: anywhere;
+}
+
+.backlink-section :deep(.ant-empty) {
+  margin-block: 18px;
+}
+
+.backlink-section :deep(.ant-empty-description) {
+  color: var(--app-muted);
+  font-size: 12px;
+}
+
+.backlink-list {
+  border-top: 1px solid var(--app-border);
+}
+
+.backlink-list button {
+  width: 100%;
+  min-height: 40px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 14px;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 6px;
+  color: var(--app-muted);
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--app-border);
+  text-align: left;
+  cursor: pointer;
+}
+
+.backlink-list button:hover {
+  color: var(--app-text);
+  background: var(--app-surface-hover);
+}
+
+.backlink-list button span:first-child {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.document-state {
+  width: min(840px, calc(100% - 40px));
+  min-height: 320px;
+  padding-top: 40px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1020px) {
+  .reading-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .article-aside {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    padding: 24px clamp(28px, 5vw, 62px);
+    border-top: 1px solid var(--reader-rule);
+    border-left: 0;
+  }
+
+  .article-aside section {
+    margin: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .article-main {
+    padding: 14px 16px 54px;
+  }
+
+  .article-content {
+    margin-top: 24px;
+  }
+
+  .article-header h1 {
+    font-size: 28px;
+  }
+
+  .article-aside {
+    grid-template-columns: 1fr;
+    padding: 24px 16px;
+  }
+}
 </style>

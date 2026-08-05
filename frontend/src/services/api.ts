@@ -1,6 +1,11 @@
 export interface SearchResult { kind: string; title: string; path: string; source_url: string; domain: string; topic: string; snippet: string; page_role: string; maturity: string; answer_ready: boolean }
 export interface Summary { kinds: Record<string, number>; roles: Record<string, number>; maturity: Record<string, number>; answer_ready: number; total: number; wiki_pages: number; backlink_targets: number }
+export interface Health { status: string; index_ready: boolean; wiki_pages: number; backlink_targets: number }
 export interface Document { path: string; frontmatter: Record<string, string>; markdown: string; backlinks: Array<{ path: string; title: string }> }
+export interface NavigationPage { path: string; title: string; short: string; kind: string; type: string; updated: string; page_role: string; maturity: string; answer_ready: boolean }
+export interface NavigationTopic { key: string; label: string; count: number; pages: NavigationPage[] }
+export interface NavigationDomain { key: string; label: string; icon: string; count: number; topics: NavigationTopic[] }
+export interface NavigationTree { generated: string; domains: NavigationDomain[] }
 export interface AnswerCitation { path: string; title: string; excerpt: string; source_url: string; maturity: string; authority: string; answer_ready: boolean }
 export interface AnswerResult { answer: string; citations: AnswerCitation[]; confidence: string; insufficient_evidence: boolean }
 export interface MaintenancePreview { preview_token: string; kind: string; output: string; expires_in: number; review?: { path: string; title: string; raw_path: string; body: string; changes: Record<string, string | boolean>; content_sha256: string } }
@@ -16,6 +21,11 @@ async function request<T>(url: string): Promise<T> {
   const response = await fetch(`${base}${url}`)
   if (!response.ok) throw new Error((await response.text()) || `请求失败 (${response.status})`)
   return response.json() as Promise<T>
+}
+async function requestText(url: string): Promise<string> {
+  const response = await fetch(`${base}${url}`)
+  if (!response.ok) throw new Error((await response.text()) || `请求失败 (${response.status})`)
+  return response.text()
 }
 async function write<T>(url: string, body: unknown, token: string): Promise<T> {
   const response = await fetch(`${base}${url}`, { method: 'POST', headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${token}` }, body: JSON.stringify(body) })
@@ -40,10 +50,12 @@ async function upload<T>(url: string, files: File[], token: string): Promise<T> 
   return response.json() as Promise<T>
 }
 export const api = {
+  health: () => request<Health>('/api/v1/health'),
   summary: () => request<Summary>('/api/v1/library/summary'),
-  tree: () => request<unknown>('/api/v1/navigation/tree'),
+  tree: () => request<NavigationTree>('/api/v1/navigation/tree'),
   search: (q: string, domain = '', kind = '', offset = 0) => request<{ results: SearchResult[]; total: number; facets: [string, number][]; kinds: Record<string, number>; engine: string }>(`/api/v1/search?${new URLSearchParams({ q, domain, kind, limit: '30', offset: String(offset) })}`),
   document: (path: string) => request<Document>(`/api/v1/documents?${new URLSearchParams({ path })}`),
+  rawText: (path: string) => requestText(`/api/v1/files?${new URLSearchParams({ path })}`),
   rawUrl: (path: string) => `${base}/api/v1/files?${new URLSearchParams({ path })}`,
   answer: (question: string, topic = '') => post<AnswerResult>('/api/v1/answers', { question, topic }),
   previewQa: (body: Record<string, string>, token: string) => write<MaintenancePreview>('/maintenance/v1/qa/preview', body, token),

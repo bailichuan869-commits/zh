@@ -1,37 +1,459 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
-import { ApiOutlined, BookOutlined, FileSearchOutlined, FileTextOutlined, QuestionCircleOutlined, SearchOutlined, SettingOutlined, ToolOutlined } from '@ant-design/icons-vue'
+import {
+  AppstoreOutlined,
+  ArrowRightOutlined,
+  BookOutlined,
+  DashboardOutlined,
+  FileSearchOutlined,
+  FileTextOutlined,
+  SafetyCertificateOutlined,
+} from '@ant-design/icons-vue'
 import { useRouter } from 'vue-router'
-import { api, type Summary } from '@/services/api'
-const router = useRouter(); const summary = ref<Summary|null>(null); const loading = ref(true); const error = ref('')
-const knowledgeCount = computed(() => summary.value?.wiki_pages ?? '-')
-const sourceCount = computed(() => summary.value?.total ?? '-')
-async function load(){ loading.value=true; error.value=''; try{summary.value=await api.summary()}catch(reason){error.value=reason instanceof Error?reason.message:'无法读取知识库统计'}finally{loading.value=false}}
-onMounted(load)
-const features=[
-  { title:'全文检索', desc:'跨知识页面和原始资料定位专业依据', icon:FileSearchOutlined, path:'/search', tone:'blue' },
-  { title:'知识问答', desc:'基于本地资料生成附来源的回答', icon:QuestionCircleOutlined, path:'/answers', tone:'cyan' },
-  { title:'维护更新', desc:'入库、问答采集与复核工作区', icon:ToolOutlined, path:'/maintenance', tone:'amber' },
-  { title:'AI 配置', desc:'管理当前问答模型连接设置', icon:SettingOutlined, path:'/ai-config', tone:'violet' },
+import { getDomainMeta, orderDomains, sanitizeNavigationTree } from '@/features/library/navigation'
+import { api, type NavigationTree, type Summary } from '@/services/api'
+
+const router = useRouter()
+const summary = ref<Summary | null>(null)
+const tree = ref<NavigationTree | null>(null)
+const loading = ref(true)
+const error = ref('')
+
+const domains = computed(() => orderDomains(tree.value?.domains ?? []))
+const featuredDomains = computed(() => domains.value.slice(0, 8))
+const generatedAt = computed(() => {
+  if (!tree.value?.generated) return '-'
+  const value = new Date(tree.value.generated)
+  return Number.isNaN(value.getTime()) ? tree.value.generated : value.toLocaleString('zh-CN', { hour12: false })
+})
+
+const tools = [
+  { title: '分类浏览', desc: '按分类、主题和资料顺序查看', path: '/browse', icon: AppstoreOutlined },
+  { title: '全文检索', desc: '跨知识页面与原始资料定位关键词', path: '/search', icon: FileSearchOutlined },
+  { title: '知识库状态', desc: '检查索引、页面和关联关系', path: '/health', icon: DashboardOutlined },
 ]
+
+async function load() {
+  loading.value = true
+  error.value = ''
+  try {
+    const [summaryData, treeData] = await Promise.all([api.summary(), api.tree()])
+    summary.value = summaryData
+    tree.value = sanitizeNavigationTree(treeData)
+  } catch (reason) {
+    error.value = reason instanceof Error ? reason.message : '无法读取知识库总览'
+  } finally {
+    loading.value = false
+  }
+}
+
+function openDomain(key: string) {
+  router.push({ path: '/browse', query: { domain: key } })
+}
+
+onMounted(load)
 </script>
+
 <template>
-  <div class="home-grid">
-    <main class="home-main">
-      <a-breadcrumb class="breadcrumb"><a-breadcrumb-item>首页</a-breadcrumb-item><a-breadcrumb-item>知识库中心</a-breadcrumb-item></a-breadcrumb>
-      <header class="page-intro"><div><h1>知识库中心</h1><p>集中检索法规、准则、案例与专业实务资料</p></div><router-link to="/search"><a-button type="link">浏览全部</a-button></router-link></header>
-      <a-alert v-if="error" type="error" :message="error" show-icon class="error-alert"><template #action><a-button size="small" @click="load">重试</a-button></template></a-alert>
-      <section><h2>快速开始</h2><div class="feature-grid"><button v-for="item in features" :key="item.path" class="feature-card" @click="router.push(item.path)"><span class="feature-icon" :class="item.tone"><component :is="item.icon" /></span><strong>{{ item.title }}</strong><span>{{ item.desc }}</span></button></div></section>
-      <section><h2>知识资产</h2><a-spin :spinning="loading"><div class="asset-grid"><div class="asset-card"><span class="asset-icon blue"><BookOutlined /></span><div><strong>结构化知识页面</strong><span>{{ knowledgeCount }} 个页面</span></div></div><div class="asset-card"><span class="asset-icon cyan"><FileTextOutlined /></span><div><strong>全库索引资料</strong><span>{{ sourceCount }} 项资料</span></div></div><div class="asset-card"><span class="asset-icon amber"><ApiOutlined /></span><div><strong>已复核问答</strong><span>{{ summary?.answer_ready ?? '-' }} 个答案</span></div></div></div></a-spin></section>
-      <section><h2>常用入口</h2><div class="entry-list"><button @click="router.push('/search')"><SearchOutlined /><span><strong>搜索法规与准则</strong><small>使用关键词、领域与资料类型组合筛选</small></span><b>›</b></button><button @click="router.push('/answers')"><QuestionCircleOutlined /><span><strong>发起专业问题</strong><small>获取带来源引用的知识库回答</small></span><b>›</b></button><button @click="router.push('/maintenance')"><ToolOutlined /><span><strong>维护知识资产</strong><small>执行资料入库、复核与问答采集</small></span><b>›</b></button></div></section>
-    </main>
-    <aside class="home-aside">
-      <div class="assistant-card"><ApiOutlined /><h3>AI 知识助手</h3><p>基于本地知识库回答专业问题，并保留引用出处。</p><a-button type="primary" @click="router.push('/answers')">开始问答</a-button></div>
-      <section class="side-section"><h3>知识库状态</h3><div class="status-row"><span><i />索引服务</span><strong>已连接</strong></div><div class="status-row"><span>知识页面</span><strong>{{ knowledgeCount }}</strong></div><div class="status-row"><span>已索引资料</span><strong>{{ sourceCount }}</strong></div></section>
-      <section class="side-section"><h3>快捷入口</h3><button @click="router.push('/search')"><FileSearchOutlined />全文检索<span>›</span></button><button @click="router.push('/maintenance')"><ToolOutlined />维护更新<span>›</span></button><button @click="router.push('/ai-config')"><SettingOutlined />AI 配置<span>›</span></button></section>
-    </aside>
-  </div>
+  <main class="dashboard-page">
+    <header class="dashboard-header">
+      <div>
+        <p class="page-kicker">中国 CPA 专业知识库</p>
+        <h1 class="page-heading">知识库总览</h1>
+        <p class="page-subheading">从专业分类进入知识体系，或使用工作功能定位具体资料。</p>
+      </div>
+      <router-link to="/health" class="dashboard-status">
+        <span class="app-status-dot" />只读索引已连接
+      </router-link>
+    </header>
+
+    <a-alert v-if="error" type="error" :message="error" show-icon class="dashboard-alert">
+      <template #action><a-button size="small" @click="load">重试</a-button></template>
+    </a-alert>
+
+    <a-spin :spinning="loading">
+      <section class="metric-strip" aria-label="知识库数据概览">
+        <div class="metric-item">
+          <BookOutlined />
+          <span>结构化知识页面</span>
+          <strong>{{ summary?.wiki_pages ?? '-' }}</strong>
+        </div>
+        <div class="metric-item">
+          <FileTextOutlined />
+          <span>全库索引资料</span>
+          <strong>{{ summary?.total ?? '-' }}</strong>
+        </div>
+        <div class="metric-item">
+          <SafetyCertificateOutlined />
+          <span>已复核内容</span>
+          <strong>{{ summary?.answer_ready ?? '-' }}</strong>
+        </div>
+        <div class="metric-item">
+          <AppstoreOutlined />
+          <span>可浏览分类</span>
+          <strong>{{ domains.length || '-' }}</strong>
+        </div>
+      </section>
+
+      <div class="dashboard-grid">
+        <section class="domain-panel" aria-labelledby="domain-panel-title">
+          <header class="section-heading">
+            <div>
+              <p>知识体系</p>
+              <h2 id="domain-panel-title">分类入口</h2>
+            </div>
+            <a-button type="text" @click="router.push('/browse')">查看全部<ArrowRightOutlined /></a-button>
+          </header>
+
+          <div class="domain-grid">
+            <button v-for="domain in featuredDomains" :key="domain.key" type="button" @click="openDomain(domain.key)">
+              <span class="domain-icon"><component :is="getDomainMeta(domain.key).icon" /></span>
+              <span class="domain-copy">
+                <strong>{{ domain.label }}</strong>
+                <small>{{ getDomainMeta(domain.key).description }}</small>
+              </span>
+              <span class="domain-count">{{ domain.count }}</span>
+              <ArrowRightOutlined />
+            </button>
+          </div>
+        </section>
+
+        <aside class="dashboard-side">
+          <section class="tool-panel" aria-labelledby="tool-panel-title">
+            <header class="section-heading">
+              <div>
+                <p>操作入口</p>
+                <h2 id="tool-panel-title">工作功能</h2>
+              </div>
+            </header>
+            <div class="tool-list">
+              <button v-for="tool in tools" :key="tool.path" type="button" @click="router.push(tool.path)">
+                <component :is="tool.icon" />
+                <span><strong>{{ tool.title }}</strong><small>{{ tool.desc }}</small></span>
+                <ArrowRightOutlined />
+              </button>
+            </div>
+          </section>
+
+          <section class="state-panel" aria-labelledby="state-panel-title">
+            <header class="section-heading">
+              <div>
+                <p>当前服务</p>
+                <h2 id="state-panel-title">运行状态</h2>
+              </div>
+            </header>
+            <div class="state-row"><span>检索索引</span><strong>已连接</strong></div>
+            <div class="state-row"><span>Web 界面</span><strong>只读</strong></div>
+            <div class="state-row"><span>分类树更新</span><strong>{{ generatedAt }}</strong></div>
+          </section>
+        </aside>
+      </div>
+    </a-spin>
+  </main>
 </template>
+
 <style scoped>
-.home-grid { display:grid; grid-template-columns:minmax(0,1fr) 286px; min-height:calc(100vh - 66px); }.home-main { padding:34px 40px 60px; }.breadcrumb { margin-bottom:30px; color:var(--app-muted); }.page-intro { display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:28px; }.page-intro h1 { margin:0; font-size:30px; letter-spacing:0; }.page-intro p { margin:8px 0 0; color:var(--app-muted); }.error-alert { margin-bottom:20px; }.home-main section { margin-top:30px; }.home-main h2 { margin:0 0 15px; font-size:16px; }.feature-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }.feature-card { display:grid; grid-template-columns:44px 1fr; gap:4px 14px; min-height:118px; padding:20px; color:var(--app-text); background:var(--app-surface); border:1px solid var(--app-border); border-radius:13px; box-shadow:var(--app-shadow-soft); text-align:left; cursor:pointer; transition:transform .2s,border-color .2s,box-shadow .2s; }.feature-card:hover { transform:translateY(-2px); border-color:color-mix(in srgb,var(--app-accent) 48%,var(--app-border)); box-shadow:var(--app-shadow); }.feature-icon { grid-row:span 2; display:grid; place-items:center; width:42px; height:42px; color:#1165d8; background:#eaf3ff; border-radius:11px; font-size:19px; }.feature-icon.cyan { color:#087f8f; background:#e8f8fa; }.feature-icon.amber { color:#bd7600; background:#fff4df; }.feature-icon.violet { color:#7452ba; background:#f1edff; }.feature-card strong { align-self:end; font-size:15px; }.feature-card>span:last-child { color:var(--app-muted); font-size:12px; line-height:1.55; }.asset-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }.asset-card { display:flex; align-items:center; gap:13px; padding:18px; background:var(--app-surface); border:1px solid var(--app-border); border-radius:12px; }.asset-icon { display:grid; place-items:center; width:38px; height:38px; color:var(--app-accent); background:var(--app-accent-soft); border-radius:10px; }.asset-card strong,.asset-card span { display:block; }.asset-card strong { font-size:13px; }.asset-card div span { margin-top:5px; color:var(--app-muted); font-size:12px; }.entry-list { overflow:hidden; border:1px solid var(--app-border); border-radius:12px; }.entry-list button { display:flex; align-items:center; gap:14px; width:100%; padding:15px 18px; color:var(--app-text); background:var(--app-surface); border:0; border-bottom:1px solid var(--app-border); text-align:left; cursor:pointer; }.entry-list button:last-child { border:0; }.entry-list button:hover { background:var(--app-accent-soft); }.entry-list :deep(.anticon) { color:var(--app-accent); }.entry-list strong,.entry-list small { display:block; }.entry-list small { margin-top:4px; color:var(--app-muted); }.entry-list b { margin-left:auto; color:var(--app-subtle); font-size:20px; }.home-aside { padding:24px 22px; background:var(--app-sidebar); border-left:1px solid var(--app-border); }.assistant-card { padding:22px; color:#fff; background:linear-gradient(145deg,#0758cf,#031f53); border-radius:16px; box-shadow:0 16px 34px rgba(0,47,119,.2); }.assistant-card :deep(.anticon) { font-size:24px; }.assistant-card h3 { margin:18px 0 8px; }.assistant-card p { margin:0 0 18px; color:#c9ddff; font-size:12px; line-height:1.7; }.assistant-card :deep(.ant-btn) { color:#0758cf; background:#fff; border:0; box-shadow:none; }.side-section { margin-top:28px; }.side-section h3 { margin:0 0 14px; font-size:15px; }.status-row { display:flex; align-items:center; justify-content:space-between; padding:10px 0; color:var(--app-muted); font-size:12px; border-bottom:1px solid var(--app-border); }.status-row strong { color:var(--app-text); font-weight:600; }.status-row i { display:inline-block; width:7px; height:7px; margin-right:7px; background:#26b99a; border-radius:50%; }.side-section button { display:flex; align-items:center; gap:9px; width:100%; padding:11px 8px; color:var(--app-muted); background:transparent; border:0; border-radius:8px; cursor:pointer; }.side-section button:hover { color:var(--app-text); background:var(--app-accent-soft); }.side-section button span { margin-left:auto; }@media(max-width:1100px) { .home-grid { grid-template-columns:1fr; }.home-aside { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; border-top:1px solid var(--app-border); border-left:0; }.side-section { margin-top:0; } }@media(max-width:740px) { .home-main { padding:26px 20px 40px; }.feature-grid,.asset-grid { grid-template-columns:1fr; }.home-aside { grid-template-columns:1fr; }.page-intro { align-items:flex-start; flex-direction:column; gap:10px; } }
+.dashboard-page {
+  min-height: calc(100vh - var(--app-header-height));
+  padding: 38px 42px 64px;
+}
+
+.dashboard-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.dashboard-status {
+  min-height: 34px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--app-muted);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.dashboard-alert {
+  margin-top: 20px;
+}
+
+.metric-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-top: 28px;
+  border-top: 1px solid var(--app-border);
+  border-bottom: 1px solid var(--app-border);
+}
+
+.metric-item {
+  min-width: 0;
+  min-height: 86px;
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  align-content: center;
+  gap: 4px 8px;
+  padding: 14px 18px;
+  border-right: 1px solid var(--app-border);
+}
+
+.metric-item:last-child {
+  border-right: 0;
+}
+
+.metric-item > :deep(.anticon) {
+  grid-row: 1 / 3;
+  align-self: center;
+  color: var(--app-muted);
+  font-size: var(--app-icon-size);
+}
+
+.metric-item span {
+  overflow: hidden;
+  color: var(--app-muted);
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.metric-item strong {
+  color: var(--app-text);
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(280px, 0.75fr);
+  gap: 40px;
+  margin-top: 34px;
+}
+
+.section-heading {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.section-heading p {
+  margin: 0 0 3px;
+  color: var(--app-muted);
+  font-size: 11px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: var(--app-text);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.section-heading :deep(.ant-btn) {
+  color: var(--app-muted);
+}
+
+.section-heading :deep(.anticon),
+.domain-grid :deep(.anticon),
+.tool-list :deep(.anticon) {
+  font-size: var(--app-icon-size);
+}
+
+.domain-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--app-border);
+}
+
+.domain-grid button {
+  min-width: 0;
+  min-height: 82px;
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr) auto 18px;
+  align-items: center;
+  gap: 11px;
+  padding: 12px 10px;
+  color: var(--app-text);
+  background: transparent;
+  border: 0;
+  border-right: 1px solid var(--app-border);
+  border-bottom: 1px solid var(--app-border);
+  text-align: left;
+  cursor: pointer;
+}
+
+.domain-grid button:nth-child(even) {
+  border-right: 0;
+}
+
+.domain-grid button:hover,
+.tool-list button:hover {
+  background: var(--app-surface-hover);
+}
+
+.domain-icon {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  color: var(--app-accent-text);
+  background: var(--app-accent-soft);
+  border-radius: 6px;
+}
+
+.domain-copy,
+.domain-copy strong,
+.domain-copy small {
+  min-width: 0;
+  display: block;
+}
+
+.domain-copy strong {
+  font-weight: 500;
+}
+
+.domain-copy small {
+  margin-top: 4px;
+  overflow: hidden;
+  color: var(--app-muted);
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.domain-count {
+  color: var(--app-muted);
+  font-size: 12px;
+}
+
+.domain-grid button > :deep(.anticon),
+.tool-list button > :deep(.anticon:last-child) {
+  color: var(--app-subtle);
+}
+
+.dashboard-side {
+  min-width: 0;
+  display: grid;
+  align-content: start;
+  gap: 30px;
+}
+
+.tool-list {
+  border-top: 1px solid var(--app-border);
+}
+
+.tool-list button {
+  width: 100%;
+  min-height: 64px;
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr) 18px;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 7px;
+  color: var(--app-text);
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--app-border);
+  text-align: left;
+  cursor: pointer;
+}
+
+.tool-list button > :deep(.anticon:first-child) {
+  color: var(--app-muted);
+}
+
+.tool-list button span,
+.tool-list strong,
+.tool-list small {
+  min-width: 0;
+  display: block;
+}
+
+.tool-list strong {
+  font-weight: 500;
+}
+
+.tool-list small {
+  margin-top: 3px;
+  color: var(--app-muted);
+  font-size: 11px;
+}
+
+.state-panel {
+  border-top: 1px solid var(--app-border);
+}
+
+.state-row {
+  min-height: 40px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: 14px;
+  padding: 10px 0;
+  color: var(--app-muted);
+  border-bottom: 1px solid var(--app-border);
+  font-size: 12px;
+}
+
+.state-row strong {
+  min-width: 0;
+  color: var(--app-text);
+  font-weight: 500;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 1080px) {
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-side {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 780px) {
+  .metric-strip,
+  .domain-grid,
+  .dashboard-side {
+    grid-template-columns: 1fr;
+  }
+
+  .metric-item,
+  .domain-grid button {
+    border-right: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .dashboard-page {
+    padding: 28px 16px 48px;
+  }
+
+  .dashboard-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .metric-strip {
+    margin-top: 22px;
+  }
+
+  .dashboard-grid {
+    gap: 28px;
+    margin-top: 28px;
+  }
+
+  .domain-grid button {
+    grid-template-columns: 34px minmax(0, 1fr) auto 16px;
+    gap: 9px;
+    padding-inline: 4px;
+  }
+}
 </style>

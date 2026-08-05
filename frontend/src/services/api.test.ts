@@ -27,6 +27,23 @@ describe('knowledge API client', () => {
     expect(api.rawUrl('raw/laws/example.md')).toBe('/api/v1/files?path=raw%2Flaws%2Fexample.md')
   })
 
+  it('reads raw markdown text through the restricted file endpoint', async () => {
+    const fetchMock = vi.fn().mockResolvedValue(new Response('# 原始资料', { status: 200 }))
+    vi.stubGlobal('fetch', fetchMock)
+
+    await expect(api.rawText('raw/laws/example.md')).resolves.toBe('# 原始资料')
+    expect(fetchMock).toHaveBeenCalledWith('/api/v1/files?path=raw%2Flaws%2Fexample.md')
+  })
+
+  it('reads the versioned knowledge-base health endpoint', async () => {
+    const fetchMock = vi.fn().mockResolvedValue(new Response(JSON.stringify({ status: 'ok', index_ready: true, wiki_pages: 886, backlink_targets: 120 }), { status: 200 }))
+    vi.stubGlobal('fetch', fetchMock)
+
+    await api.health()
+
+    expect(fetchMock).toHaveBeenCalledWith('/api/v1/health')
+  })
+
   it('posts questions to the answer endpoint', async () => {
     const fetchMock = vi.fn().mockResolvedValue(new Response(JSON.stringify({ answer: '', citations: [], confidence: 'insufficient', insufficient_evidence: true }), { status: 200 }))
     vi.stubGlobal('fetch', fetchMock)
@@ -57,4 +74,5 @@ describe('knowledge API client', () => {
     expect(options.body).toBeInstanceOf(FormData)
     expect(options.body.getAll('files')).toHaveLength(1)
   })
+
 })

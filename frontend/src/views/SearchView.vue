@@ -1,17 +1,443 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
 import { FilterOutlined, SearchOutlined } from '@ant-design/icons-vue'
+import { useRoute, useRouter } from 'vue-router'
+import { isBrowsablePath } from '@/features/library/navigation'
+import { cleanDisplayTitle, extractReadableTitle, isWeakTitle } from '@/features/library/titles'
 import { api, type SearchResult } from '@/services/api'
-const route = useRoute(); const router = useRouter()
-const query = ref(String(route.query.q ?? '')); const domain = ref(String(route.query.domain ?? '')); const kind = ref(String(route.query.kind ?? ''))
-const results = ref<SearchResult[]>([]); const total = ref(0); const facets = ref<[string, number][]>([]); const loading = ref(false); const error = ref('')
+
+interface DisplaySearchResult extends SearchResult {
+  displayTitle: string
+}
+
+const route = useRoute()
+const router = useRouter()
+const query = ref(String(route.query.q ?? ''))
+const domain = ref(String(route.query.domain ?? ''))
+const kind = ref(String(route.query.kind ?? ''))
+const results = ref<DisplaySearchResult[]>([])
+const total = ref(0)
+const facets = ref<[string, number][]>([])
+const loading = ref(false)
+const error = ref('')
 const lastSearchKey = ref('')
-function makeSearchKey() { return [query.value.trim(), domain.value, kind.value].join('\u0000') }
-async function run() { if (!query.value.trim()) { lastSearchKey.value = ''; results.value = []; total.value = 0; return }; lastSearchKey.value = makeSearchKey(); loading.value = true; error.value = ''; try { const data = await api.search(query.value.trim(), domain.value, kind.value); results.value = data.results; total.value = data.total; facets.value = data.facets; router.replace({ query: { q: query.value.trim(), ...(domain.value ? { domain: domain.value } : {}), ...(kind.value ? { kind: kind.value } : {}) } }) } catch (reason) { error.value = reason instanceof Error ? reason.message : '检索失败' } finally { loading.value = false } }
-watch(() => [route.query.q, route.query.domain, route.query.kind], value => { query.value = String(value[0] ?? ''); domain.value = String(value[1] ?? ''); kind.value = String(value[2] ?? ''); if (query.value.trim() && makeSearchKey() !== lastSearchKey.value) run(); if (!query.value.trim()) { results.value = []; total.value = 0 } }, { immediate: true })
-const title = computed(() => query.value ? `找到 ${total.value} 条相关资料` : '输入关键词开始检索')
-function open(item: SearchResult) { router.push({ path: item.path.startsWith('wiki/') ? '/document' : '/raw', query: { path: item.path } }) }
+const title = computed(() => query.value.trim() ? `找到 ${total.value} 条相关资料` : '输入关键词开始检索')
+
+function makeSearchKey() {
+  return [query.value.trim(), domain.value, kind.value].join('\u0000')
+}
+
+async function run() {
+  if (!query.value.trim()) {
+    lastSearchKey.value = ''
+    results.value = []
+    total.value = 0
+    return
+  }
+
+  lastSearchKey.value = makeSearchKey()
+  loading.value = true
+  error.value = ''
+  try {
+    const data = await api.search(query.value.trim(), domain.value, kind.value)
+    const browsable = [...new Map(
+      data.results.filter(item => isBrowsablePath(item.path)).map(item => [item.path, item]),
+    ).values()]
+    results.value = await Promise.all(browsable.map(async item => ({
+      ...item,
+      displayTitle: await resolveTitle(item),
+    })))
+    total.value = results.value.length
+    facets.value = Object.entries(
+      results.value.reduce<Record<string, number>>((counts, item) => {
+        if (item.domain) counts[item.domain] = (counts[item.domain] ?? 0) + 1
+        return counts
+      }, {}),
+    )
+    router.replace({
+      query: {
+        q: query.value.trim(),
+        ...(domain.value ? { domain: domain.value } : {}),
+        ...(kind.value ? { kind: kind.value } : {}),
+      },
+    })
+  } catch (reason) {
+    error.value = reason instanceof Error ? reason.message : '检索失败'
+  } finally {
+    loading.value = false
+  }
+}
+
+async function resolveTitle(item: SearchResult): Promise<string> {
+  const cleaned = cleanDisplayTitle(item.title, item.path)
+  if (!isWeakTitle(cleaned) || !item.path.startsWith('raw/')) return cleaned || '未命名资料'
+
+  try {
+    const extracted = extractReadableTitle(await api.rawText(item.path))
+    return extracted || cleaned || '未命名原始资料'
+  } catch {
+    return cleaned || '未命名原始资料'
+  }
+}
+
+function open(item: SearchResult) {
+  if (!isBrowsablePath(item.path)) return
+  router.push({
+    path: item.path.startsWith('wiki/') ? '/document' : '/raw',
+    query: { path: item.path },
+  })
+}
+
+watch(
+  () => [route.query.q, route.query.domain, route.query.kind],
+  value => {
+    query.value = String(value[0] ?? '')
+    domain.value = String(value[1] ?? '')
+    kind.value = String(value[2] ?? '')
+    if (query.value.trim() && makeSearchKey() !== lastSearchKey.value) run()
+    if (!query.value.trim()) {
+      results.value = []
+      total.value = 0
+    }
+  },
+  { immediate: true },
+)
 </script>
-<template><section class="search-page"><div class="search-head"><div><h1 class="page-heading">全文检索</h1><p class="page-subheading">跨知识页面与原始资料检索，结果保留来源路径。</p></div></div><a-card class="search-box" :bordered="false"><a-input-search v-model:value="query" size="large" placeholder="输入关键词，例如：收入确认、函证、独立性" :loading="loading" @search="run"><template #enterButton><SearchOutlined />检索</template></a-input-search><div class="filters"><span><FilterOutlined /> 筛选范围</span><a-select v-model:value="kind" @change="run"><a-select-option value="">全部类型</a-select-option><a-select-option value="wiki">知识页面</a-select-option><a-select-option value="raw">原始资料</a-select-option></a-select><a-select v-model:value="domain" @change="run"><a-select-option value="">全部领域</a-select-option><a-select-option v-for="facet in facets" :key="facet[0]" :value="facet[0]">{{ facet[0] }} ({{ facet[1] }})</a-select-option></a-select></div></a-card><a-alert v-if="error" type="error" :message="error" show-icon class="result-alert" /><section class="result-section"><header><h2>{{ title }}</h2><span v-if="results.length">按相关性排序</span></header><a-spin :spinning="loading"><a-empty v-if="!loading && query && !results.length" description="未找到匹配资料，请更换关键词或筛选条件" /><a-list v-else class="result-list" :data-source="results" item-layout="vertical"><template #renderItem="{ item }"><a-list-item class="result-item" @click="open(item)"><div class="result-top"><a class="result-title">{{ item.title }}</a><a-tag>{{ item.kind === 'wiki' ? '知识页面' : '原始资料' }}</a-tag></div><p class="result-path">{{ item.path }}</p><p class="result-snippet">{{ item.snippet }}</p><a-space size="small"><a-tag v-if="item.answer_ready" color="green">可用于答疑</a-tag><a-tag v-if="item.domain">{{ item.domain }}</a-tag><a-tag v-if="item.maturity">{{ item.maturity }}</a-tag></a-space></a-list-item></template></a-list></a-spin></section></section></template>
-<style scoped>.search-head { margin: 14px 0 20px; }.search-box { box-shadow: var(--app-shadow); }.search-box :deep(.ant-card-body) { padding: 20px; }.filters { display: flex; align-items: center; gap: 10px; margin-top: 15px; }.filters > span { color: var(--app-muted); font-size: 13px; }.filters :deep(.ant-select) { width: 160px; }.result-alert { margin-top: 18px; }.result-section { margin-top: 24px; }.result-section header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }.result-section h2 { margin: 0; font-size: 16px; }.result-section header span { color: var(--app-muted); font-size: 12px; }.result-list { background: var(--app-surface); border: 1px solid var(--app-border); border-radius: 8px; box-shadow: var(--app-shadow); overflow: hidden; }.result-item { padding: 20px 22px !important; cursor: pointer; transition: background .18s; }.result-item:hover { background: var(--app-accent-soft); }.result-top { display: flex; align-items: center; gap: 10px; }.result-title { color: var(--app-text); font-size: 16px; font-weight: 700; }.result-path { margin: 6px 0; overflow: hidden; color: var(--app-muted); font-family: Consolas, monospace; font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }.result-snippet { margin: 8px 0 12px; color: var(--app-muted); line-height: 1.75; }.result-snippet :deep(mark) { color: #1a57bf; background: #dceaff; }.result-top :deep(.ant-tag) { margin-left: auto; } @media(max-width:640px) { .filters { align-items: stretch; flex-wrap: wrap; }.filters > span { width: 100%; }.filters :deep(.ant-select) { flex: 1; min-width: 130px; }.result-item { padding: 16px !important; } }</style>
+
+<template>
+  <section class="search-page">
+    <header class="search-header">
+      <p class="page-kicker">全库索引</p>
+      <h1 class="page-heading">全文检索</h1>
+      <p class="page-subheading">跨知识页面与原始资料检索，结果保留来源路径。</p>
+      <a-input-search
+        v-model:value="query"
+        class="query-input"
+        size="large"
+        placeholder="输入关键词，例如：收入确认、函证、独立性"
+        :loading="loading"
+        allow-clear
+        @search="run"
+      >
+        <template #prefix><SearchOutlined /></template>
+        <template #enterButton><SearchOutlined />检索</template>
+      </a-input-search>
+    </header>
+
+    <a-alert v-if="error" type="error" :message="error" show-icon class="result-alert">
+      <template #action><a-button size="small" @click="run">重试</a-button></template>
+    </a-alert>
+
+    <div class="result-layout">
+      <main class="result-section">
+        <header class="result-heading">
+          <h2>{{ title }}</h2>
+          <span v-if="results.length">按相关性排序</span>
+        </header>
+
+        <a-spin :spinning="loading">
+          <a-empty
+            v-if="!loading && !results.length"
+            :description="query.trim() ? '未找到匹配资料，请更换关键词或筛选条件' : '输入关键词开始检索'"
+          />
+          <a-list v-else class="result-list" :data-source="results" item-layout="vertical">
+            <template #renderItem="{ item }">
+              <a-list-item class="result-item">
+                <button type="button" class="result-button" @click="open(item)">
+                  <span class="result-copy">
+                    <span class="result-top">
+                      <strong>{{ item.displayTitle }}</strong>
+                      <a-tag>{{ item.kind === 'wiki' ? '知识页面' : '原始资料' }}</a-tag>
+                    </span>
+                    <code class="result-path">{{ item.path }}</code>
+                    <span class="result-snippet">{{ item.snippet }}</span>
+                    <span class="result-tags">
+                      <a-tag v-if="item.answer_ready" color="green">可用于答疑</a-tag>
+                      <a-tag v-if="item.domain">{{ item.domain }}</a-tag>
+                      <a-tag v-if="item.maturity">{{ item.maturity }}</a-tag>
+                    </span>
+                  </span>
+                  <span class="result-arrow" aria-hidden="true">›</span>
+                </button>
+              </a-list-item>
+            </template>
+          </a-list>
+        </a-spin>
+      </main>
+
+      <aside class="filter-panel" aria-label="检索筛选">
+        <div class="filter-title"><FilterOutlined />筛选范围</div>
+        <label>
+          <span>资料类型</span>
+          <a-select v-model:value="kind" aria-label="资料类型" @change="run">
+            <a-select-option value="">全部类型</a-select-option>
+            <a-select-option value="wiki">知识页面</a-select-option>
+            <a-select-option value="raw">原始资料</a-select-option>
+          </a-select>
+        </label>
+        <label>
+          <span>知识领域</span>
+          <a-select v-model:value="domain" aria-label="知识领域" @change="run">
+            <a-select-option value="">全部领域</a-select-option>
+            <a-select-option v-for="facet in facets" :key="facet[0]" :value="facet[0]">
+              {{ facet[0] }} ({{ facet[1] }})
+            </a-select-option>
+          </a-select>
+        </label>
+        <div class="filter-summary">
+          <span>结果数量</span>
+          <strong>{{ total }}</strong>
+        </div>
+      </aside>
+    </div>
+  </section>
+</template>
+
+<style scoped>
+.search-page {
+  min-height: calc(100vh - var(--app-header-height));
+  padding: 38px 42px 70px;
+}
+
+.search-header {
+  width: min(860px, 100%);
+}
+
+.query-input {
+  margin-top: 22px;
+}
+
+.query-input :deep(.ant-input-affix-wrapper) {
+  min-height: 42px;
+  padding-inline: 12px;
+  background: var(--app-surface) !important;
+}
+
+.query-input :deep(.ant-input-search-button) {
+  height: 42px;
+  border-radius: 0 6px 6px 0 !important;
+}
+
+.query-input :deep(.anticon),
+.filter-title :deep(.anticon) {
+  font-size: var(--app-icon-size);
+}
+
+.result-alert {
+  width: min(1100px, 100%);
+  margin-top: 18px;
+}
+
+.result-layout {
+  width: min(1100px, 100%);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 34px;
+  align-items: start;
+  margin-top: 30px;
+}
+
+.result-section {
+  min-width: 0;
+}
+
+.result-heading {
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 7px;
+}
+
+.result-heading h2 {
+  margin: 0;
+  color: var(--app-text);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.result-heading span {
+  color: var(--app-muted);
+  font-size: 12px;
+}
+
+.result-list {
+  background: transparent;
+  border-top: 1px solid var(--app-border);
+}
+
+.result-item {
+  padding: 0 !important;
+  border-block-end: 1px solid var(--app-border) !important;
+}
+
+.result-button {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 24px;
+  gap: 12px;
+  padding: 18px 10px;
+  color: var(--app-text);
+  background: transparent;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.result-button:hover {
+  background: var(--app-surface-hover);
+}
+
+.result-copy,
+.result-top,
+.result-snippet,
+.result-tags {
+  min-width: 0;
+  display: flex;
+}
+
+.result-copy {
+  flex-direction: column;
+}
+
+.result-top {
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.result-top strong {
+  min-width: 0;
+  flex: 1;
+  color: var(--app-text);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.result-path {
+  display: block;
+  margin-top: 6px;
+  overflow: hidden;
+  color: var(--app-subtle);
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.result-snippet {
+  margin-top: 9px;
+  color: var(--app-muted);
+  line-height: 1.72;
+}
+
+.result-tags {
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 11px;
+}
+
+.result-arrow {
+  align-self: center;
+  justify-self: center;
+  color: var(--app-subtle);
+  font-size: 20px;
+}
+
+.filter-panel {
+  padding-left: 18px;
+  border-left: 1px solid var(--app-border);
+}
+
+.filter-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  color: var(--app-text);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.filter-panel label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.filter-panel label > span {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--app-muted);
+  font-size: 12px;
+}
+
+.filter-panel :deep(.ant-select) {
+  width: 100%;
+}
+
+.filter-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 16px;
+  color: var(--app-muted);
+  border-top: 1px solid var(--app-border);
+  font-size: 12px;
+}
+
+.filter-summary strong {
+  color: var(--app-text);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .result-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .filter-panel {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    padding: 0 0 18px;
+    border-bottom: 1px solid var(--app-border);
+    border-left: 0;
+  }
+
+  .filter-title,
+  .filter-summary {
+    grid-column: 1 / -1;
+  }
+
+  .filter-panel label {
+    margin: 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .search-page {
+    padding: 28px 16px 48px;
+  }
+
+  .query-input :deep(.ant-input-search-button) {
+    width: 42px;
+    padding: 0;
+    font-size: 0;
+  }
+
+  .filter-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .result-button {
+    padding: 16px 4px;
+  }
+
+  .result-top {
+    flex-wrap: wrap;
+  }
+}
+</style>

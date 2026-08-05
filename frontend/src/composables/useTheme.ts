@@ -1,15 +1,28 @@
 import { computed, ref } from 'vue'
 
 const saved = localStorage.getItem('cpa-zh-theme')
-const dark = ref(saved === 'dark')
-document.documentElement.dataset.theme = dark.value ? 'dark' : ''
+const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches ?? false
+const dark = ref(saved ? saved === 'dark' : prefersDark)
+
+function applyTheme() {
+  document.documentElement.dataset.theme = dark.value ? 'dark' : 'light'
+  document.documentElement.style.colorScheme = dark.value ? 'dark' : 'light'
+}
+
+applyTheme()
 
 export function useTheme() {
   const label = computed(() => (dark.value ? '浅色模式' : '深色模式'))
-  function toggle() {
-    dark.value = !dark.value
-    document.documentElement.dataset.theme = dark.value ? 'dark' : ''
+
+  function setTheme(nextDark: boolean) {
+    dark.value = nextDark
+    applyTheme()
     localStorage.setItem('cpa-zh-theme', dark.value ? 'dark' : 'light')
   }
-  return { dark, label, toggle }
+
+  function toggle() {
+    setTheme(!dark.value)
+  }
+
+  return { dark, label, setTheme, toggle }
 }
