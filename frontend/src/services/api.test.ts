@@ -75,4 +75,24 @@ describe('knowledge API client', () => {
     expect(options.body.getAll('files')).toHaveLength(1)
   })
 
+  it('loads the full protected review page detail', async () => {
+    const fetchMock = vi.fn().mockResolvedValue(new Response(JSON.stringify({
+      path: 'wiki/cases/review.md',
+      title: '待复核案例',
+      page_role: 'case',
+      maturity: 'draft',
+      raw_path: 'raw/source.md',
+      body: '# 正文',
+      content_sha256: 'abc',
+    }), { status: 200 }))
+    vi.stubGlobal('fetch', fetchMock)
+
+    await api.reviewDetail('wiki/cases/review.md', 'maintenance-token')
+
+    expect(fetchMock).toHaveBeenCalledWith(
+      '/maintenance/v1/review/detail?path=wiki%2Fcases%2Freview.md',
+      { headers: { Authorization: 'Bearer maintenance-token' } },
+    )
+  })
+
 })

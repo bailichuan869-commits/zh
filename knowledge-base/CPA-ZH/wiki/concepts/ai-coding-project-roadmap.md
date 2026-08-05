@@ -3,7 +3,7 @@ title: AI 编程与自动化项目落地路线
 type: concept
 concept_type: implementation-roadmap
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-08-04
 sources: [ai-coding-lectures-archive-2026-07-09]
 tags: [ai-coding, automation, roadmap, project, audit-tools]
 related: [[concepts/ai-coding-lectures]], [[concepts/ai-coding-tool-template-library]], [[concepts/ai-coding-audit-automation-scenario-matrix]], [[concepts/ai-coding-risk-control-checklist]], [[concepts/ai-coding-tool-registry]], [[concepts/cpa-zh-local-ingest-helper]], [[concepts/cpa-zh-case-card-helper]], [[concepts/cpa-zh-archive-doc-helper]]
@@ -32,6 +32,7 @@ topic: ai-coding
 
 | 项目 | 优先级 | 目标用户 | 技术路线 | 对应模板 |
 |---|---|---|---|---|
+| CPA-ZH Agent 工具 | P1 | Agent 与知识库维护者 | Python 服务 + JSON CLI + stdio MCP | [[concepts/cpa-zh-agent-tools]] |
 | CPA-ZH 入库助手 | P1 | 知识库维护者 | Python + Agent | [[concepts/ai-coding-tool-template-library]] |
 | 案例卡片生成助手 | P1 | 审计复盘和培训 | Agent + Markdown 模板 | [[concepts/cpa-zh-case-card-helper]], [[concepts/case-analysis]] |
 | 案例主题索引回挂助手 | P2 | 案例库维护者 | Python + 规则建议 | [[concepts/cpa-zh-case-index-helper]], [[concepts/case-topic-index]] |

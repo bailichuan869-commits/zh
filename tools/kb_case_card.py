@@ -6,7 +6,10 @@ import sys
 from datetime import date
 from pathlib import Path
 
-import kb_search
+try:
+    import kb_search
+except ModuleNotFoundError:
+    from tools import kb_search
 
 
 DEFAULT_TAGS = ["case", "draft", "audit-practice"]

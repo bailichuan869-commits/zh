@@ -15,6 +15,7 @@
 | `archived/regulations/` | 已归档法规原文与整理稿，后续默认不维护 |
 | `workspace/docs/` | 工作区说明、检查记录和架构说明 |
 | `workspace/docs/generated-artifacts.md` | 源资产、可重建产物和发布产物边界 |
+| `workspace/docs/cpa-zh-agent.md` | Agent CLI、stdio MCP 与两阶段写入说明 |
 | `requirements.txt` | Python 运行依赖清单 |
 
 ## 目录分层
@@ -72,6 +73,16 @@ CPA-ZH 维护建议优先使用统一入口：
 .\.venv\Scripts\python.exe tools\kb.py readme
 .\.venv\Scripts\python.exe tools\kb.py verify
 ```
+
+Agent 是知识库维护的主要交互入口。浏览器保持只读；Agent 通过共享服务先生成完整预览，在用户明确确认后再使用短期令牌提交：
+
+```powershell
+.\.venv\Scripts\python.exe tools\cpa_zh_agent.py search --query "收入确认"
+.\.venv\Scripts\python.exe tools\cpa_zh_agent.py pending-reviews
+.\.venv\Scripts\python.exe tools\cpa_zh_mcp.py
+```
+
+完整配置和两阶段确认流程见 `workspace/docs/cpa-zh-agent.md`。
 
 旧脚本入口仍然保留，例如 `tools/kb_search.py`、`tools/kb_health_check.py`、`tools/kb_text_cache.py`。
 

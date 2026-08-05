@@ -3,10 +3,10 @@ title: AI 编程与自动化工具注册表
 type: concept
 concept_type: tool-registry
 created: 2026-07-09
-updated: 2026-07-09
+updated: 2026-08-04
 sources: [ai-coding-lectures-archive-2026-07-09]
 tags: [ai-coding, automation, tool-registry, commands, maintenance]
-related: [[concepts/ai-coding-lectures]], [[concepts/ai-coding-project-roadmap]], [[concepts/ai-coding-tool-template-library]], [[concepts/ai-coding-risk-control-checklist]], [[concepts/cpa-zh-local-ingest-helper]], [[concepts/cpa-zh-case-card-helper]], [[concepts/cpa-zh-archive-doc-helper]], [[_maintenance/cpa-zh-pdf-to-markdown-helper]], [[concepts/cpa-zh-case-index-helper]], [[concepts/cpa-zh-qa-capture-helper]]
+related: [[concepts/ai-coding-lectures]], [[concepts/ai-coding-project-roadmap]], [[concepts/ai-coding-tool-template-library]], [[concepts/ai-coding-risk-control-checklist]], [[concepts/cpa-zh-agent-tools]], [[concepts/cpa-zh-local-ingest-helper]], [[concepts/cpa-zh-case-card-helper]], [[concepts/cpa-zh-archive-doc-helper]], [[_maintenance/cpa-zh-pdf-to-markdown-helper]], [[concepts/cpa-zh-case-index-helper]], [[concepts/cpa-zh-qa-capture-helper]]
 domain: tools
 topic: ai-coding
 ---
@@ -25,6 +25,7 @@ topic: ai-coding
 
 | 工具 | 命令入口 | 主要用途 | 默认写入行为 | 工具页 |
 |---|---|---|---|---|
+| CPA-ZH Agent 工具 | `tools\cpa_zh_agent.py` / `tools\cpa_zh_mcp.py` | Agent 检索、阅读、完整预览和受控提交 | 所有知识写入必须 preview 后再凭令牌 commit | [[concepts/cpa-zh-agent-tools]] |
 | 本地入库助手 | `tools\kb.py ingest-local` | 将本地文件或目录归档到 `raw/`，生成 manifest、metadata、source-url | dry-run，不写入；加 `--commit` 后写入 | [[concepts/cpa-zh-local-ingest-helper]] |
 | 案例卡片生成助手 | `tools\kb.py case-card` | 从本地案例原文生成 `wiki/cases/` 案例卡片草稿 | dry-run，不写入；加 `--commit` 后写入 | [[concepts/cpa-zh-case-card-helper]] |
 | 案例主题索引回挂助手 | `tools\kb.py case-index` | 扫描案例卡片并生成主题索引回挂建议报告 | dry-run 打印报告；加 `--write-report` 后写入报告 | [[concepts/cpa-zh-case-index-helper]] |
@@ -40,6 +41,16 @@ topic: ai-coding
 | 本地检索 | `tools\kb.py search` | 查询 wiki、raw 文本缓存和 manifest 信息 | 只读 | [[concepts/kb-user-guide]] |
 
 ## 命令速查
+
+### Agent CLI 与 MCP
+
+```powershell
+.\.venv\Scripts\python.exe tools\cpa_zh_agent.py search --query "收入确认"
+.\.venv\Scripts\python.exe tools\cpa_zh_agent.py pending-reviews
+.\.venv\Scripts\python.exe tools\cpa_zh_mcp.py
+```
+
+Agent 写入必须按 [[concepts/cpa-zh-agent-tools]] 的 preview、人工确认、commit 三步执行。
 
 ### 日常查询
 
@@ -154,6 +165,7 @@ topic: ai-coding
 | commit | 真正复制文件、写 manifest、写 wiki 草稿、问答页或转换结果 | `ingest-local --commit`、`case-card --commit`、`qa-capture --commit`、`archive-doc --commit`、`pdf-md --commit` |
 | report write | 重写治理仪表盘或状态报告 | `schema --write-report`、`sources write-report`、`case-index --write-report`、`readme`、`index` |
 | read-only | 只读取并检查当前状态 | `health`、`manifest`、`search`、`sources summary`、`stats` |
+| Agent preview/commit | preview 只生成短期令牌；commit 需 `confirmed=true` | `cpa_zh_agent.py` 和 `cpa_zh_mcp.py` 的写入操作 |
 
 ## 写入风险等级
 
@@ -162,6 +174,7 @@ topic: ai-coding
 | 低 | `search`、`stats`、`manifest`、`health`、`sources summary` | 只读检查或查询，不改文件 |
 | 中 | `index`、`cache build`、`schema --write-report`、`sources write-report`、`case-index --write-report`、`readme`、`pdf-md --commit` | 重建缓存、索引、仪表盘、建议报告或 PDF 转换结果，可重复生成 |
 | 高 | `ingest-local --commit`、`case-card --commit`、`qa-capture --commit`、`archive-doc --commit` | 新增 raw 或 wiki 文件，应先 dry-run 并核对路径 |
+| 高（受控） | Agent `commit` | 仅接受未过期 preview 令牌和明确确认，并重新校验内容哈希 |
 
 ## 每次写入后的验证命令
 
@@ -191,6 +204,7 @@ topic: ai-coding
 | 新增讲义或课程材料 | `ingest-local` | 建学习线、模板页和场景矩阵 |
 | 检查知识库是否健康 | `schema --write-report`、`sources write-report`、`health` | 修复 flagged 页面、失效来源或文本抽取问题 |
 | 回答实务问题前检索依据 | `search` | 读取相关规则页、案例页和来源页后再形成判断 |
+| Agent 维护知识库 | `cpa_zh_agent.py` 或 `cpa_zh_mcp.py` | 展示完整预览，取得人工确认后提交并检查 health |
 
 ## 新工具登记规则
 
@@ -212,4 +226,4 @@ topic: ai-coding
 | 本地问答日志回写工具 | P2 | 已落地首版 | 将本地问答沉淀为 `wiki/questions/` 草稿页，保留 related、status 和后续动作 |
 | Excel 底稿清洗工具 | P2 | 待结合真实底稿字段 | 先从研发费用、收入、函证等高频底稿切入 |
 | 链接有效性复核批处理 | P2 | 已有 `links --check` 基础 | 网络稳定后可扩展为定期复核报告 |
-| Web/桌面维护界面 | P3 | 待评估 | 等 CLI 流程稳定后再封装给非技术人员使用 |
+| Agent-first 维护入口 | P1 | 已落地首版 | JSON CLI 与 stdio MCP 共用服务层，前端保持只读 |

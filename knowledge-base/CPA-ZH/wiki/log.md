@@ -3,7 +3,7 @@ title: CPA-ZH 知识库日志
 type: source
 source_type: activity-log
 created: 2026-06-26
-updated: 2026-07-25
+updated: 2026-08-04
 sources: [kb-activity-log]
 tags: [cpa, log, structured]
 domain: meta
@@ -11,6 +11,13 @@ topic: root
 ---
 
 # CPA-ZH 知识库日志
+
+## 2026-08-04 | agent-first
+
+- 新增 [[concepts/cpa-zh-agent-tools]]：共享 Python 服务、JSON CLI 和本机 stdio MCP。
+- Agent 写入统一采用完整预览、人工确认、短期令牌提交和内容哈希复核。
+- 前端收缩为只读搜索、正文阅读、原文追溯和健康状态；旧维护接口暂时保留兼容。
+- 更新 [[concepts/ai-coding-tool-registry]] 与 [[concepts/ai-coding-project-roadmap]]。
 
 ## 2026-06-26 | bootstrap
 

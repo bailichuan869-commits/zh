@@ -44,6 +44,9 @@
 |---|---|
 | `kb.py` | 统一维护入口，路由到下列脚本。 |
 | `kb_cli_support.py` | 统一入口共享辅助：脚本转发、可选参数和 flag 组装。 |
+| `cpa_zh_agent_service.py` | Agent-first 共享服务层：统一检索、阅读、健康检查、完整预览和令牌提交。 |
+| `cpa_zh_agent.py` | 共享服务的 JSON CLI，所有成功与失败都返回稳定 envelope。 |
+| `cpa_zh_mcp.py` | 共享服务的本机 stdio MCP 入口，注册 `cpa_*` 工具且不监听端口。 |
 | `kb_health_check.py` | 一键体检：manifest、wiki 内链、检索索引、文本缓存、README 统计。 |
 | `verify_cpa_zh_delivery.py` | 完整交付门禁：导航树新鲜度、Python/API 契约测试、知识库体检、前端测试和生产构建；`kb.py verify --skip-frontend` 可用于不含前端的快速检查。 |
 | `kb_search.py` | 构建和查询本地 SQLite 检索索引。 |
@@ -60,6 +63,19 @@
 | `kb_pdf_to_markdown.py` | PDF 转 Markdown助手：用 PyMuPDF、pdfplumber、pdfminer、pypdf 多引擎抽取 PDF，转成 Markdown 并标记文本质量。 |
 | `kb_schema_check.py` | 检查 wiki 概念页 frontmatter schema 一致性，生成升级仪表盘 `wiki/concepts/kb-section-upgrade-dashboard.md`。 |
 | `import_local_case_batch.py` | 导入本地案例批次。 |
+
+## Agent-first 入口
+
+Agent 维护不直接调用底层 `kb.py ... --commit`。先调用预览操作、展示完整 `data`，用户明确确认后，再以同一短期令牌调用 commit：
+
+```powershell
+.\.venv\Scripts\python.exe tools\cpa_zh_agent.py search --query "收入确认"
+.\.venv\Scripts\python.exe tools\cpa_zh_agent.py pending-reviews
+.\.venv\Scripts\python.exe tools\cpa_zh_agent.py review-detail "wiki/cases/example.md"
+.\.venv\Scripts\python.exe tools\cpa_zh_mcp.py
+```
+
+完整 CLI、MCP、Codex 配置和错误契约见 `workspace/docs/cpa-zh-agent.md`。
 
 ## 知识页生成脚本
 

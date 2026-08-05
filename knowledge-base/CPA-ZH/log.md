@@ -1,5 +1,12 @@
 # CPA-ZH 活动日志
 
+## [2026-08-04] agent-first | Agent 工具与只读前端
+
+- 新增共享服务、JSON CLI 和本机 stdio MCP，统一搜索、阅读、健康检查、资料摄入、问答、案例和复核操作。
+- 所有 Agent 写入改为“完整预览 → 人工明确确认 → 短期令牌提交”，提交前校验输入与目标内容哈希。
+- Vue 前端收缩为首页、搜索、wiki 正文、raw 原文和健康状态；旧维护 API 与 answers API 暂时保留兼容。
+- 新增 [[wiki/concepts/cpa-zh-agent-tools]]，并更新 [[wiki/concepts/ai-coding-tool-registry]] 和 [[wiki/concepts/ai-coding-project-roadmap]]。
+
 ## [2026-06-26 00:00] init | 创建 CPA-ZH 初始知识库
 
 - 新建知识库配置：[[WIKI]]

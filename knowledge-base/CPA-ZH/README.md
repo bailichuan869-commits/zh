@@ -12,16 +12,17 @@ CPA-ZH 是围绕中国注册会计师行业建立的本地知识库，用于沉�
 - `wiki/concepts/source-status-dashboard.md` - 来源状态仪表盘，查看待 OCR、官方链接和文本缓存状态。
 - `wiki/concepts/kb-section-upgrade-dashboard.md` - 分板块技术升级仪表盘，查看五大板块的元数据、来源结构和后续升级重点。
 - `../../tools/kb.py` - 统一维护入口，封装检索、缓存、索引、分板块治理检查、体检和 README 统计刷新。
+- `../../workspace/docs/cpa-zh-agent.md` - Agent CLI、stdio MCP、完整预览和两阶段确认说明。
 
 ## 当前状态
 
 
 | 项目 | 数量或状态 |
 |---|---:|
-| wiki 页面 | 886 |
+| wiki 页面 | 887 |
 | raw 原始文件 | 4562 |
 | manifest 批次 | 8 |
-| 本地检索索引记录 | 1538 |
+| 本地检索索引记录 | 1539 |
 | 实务案例卡片 | 24 |
 | wiki 内链状态 | 最近检查为 0 缺失 |
 | Python 运行方式 | 统一使用工作区虚拟环境 `.venv` |
@@ -142,6 +143,16 @@ knowledge-base/CPA-ZH/
 
 ## 本地检索
 
+## Agent-first 维护
+
+Agent 是资料摄入、问答沉淀、案例草稿和页面复核的主要入口。CLI 与本机 stdio MCP 共用 `tools/cpa_zh_agent_service.py`，所有知识库写入必须先 preview，再由用户明确确认后以短期令牌 commit。完整说明见 `../../workspace/docs/cpa-zh-agent.md`，工具登记见 [[concepts/cpa-zh-agent-tools]]。
+
+```powershell
+.\.venv\Scripts\python.exe tools\cpa_zh_agent.py search --query "收入确认"
+.\.venv\Scripts\python.exe tools\cpa_zh_agent.py pending-reviews
+.\.venv\Scripts\python.exe tools\cpa_zh_mcp.py
+```
+
 ## 前后端浏览器
 
 浏览器采用独立前后端结构：仓库根目录的 `backend/` 是只读 FastAPI API，`frontend/` 是 Vue 3 + Vite + Ant Design Vue 应用。后端默认绑定 `127.0.0.1:8765`，前端开发服务默认绑定 `127.0.0.1:5173`。
@@ -156,7 +167,7 @@ npm install
 npm run dev
 ```
 
-新版 API 统一位于 `/api/v1`，覆盖健康检查、统计、分类树、检索、知识页、反向链接和 raw 原文读取。所有写入、缓存、索引和质量检查继续经 `tools/kb.py` 执行。
+新版 API 统一位于 `/api/v1`，覆盖健康检查、统计、分类树、检索、知识页、反向链接和 raw 原文读取。前端只保留首页、检索、wiki 阅读、raw 追溯和健康状态；旧维护 API 暂时保留兼容，但不再出现在前端导航。
 
 旧的静态单页 UI、索引构建脚本和静态服务已删除；活跃浏览器仅使用根目录的前后端应用。
 
@@ -240,8 +251,8 @@ PDF 转 Markdown 预览：
 | pdf-markdown | 97 |
 | raw-file | 503 |
 | raw-manifest | 101 |
-| wiki | 837 |
-| total | 1538 |
+| wiki | 838 |
+| total | 1539 |
 
 > 说明：wiki 有效页面 793（不含暂存区 `_trash` 与维护区 `_maintenance`）。其中 47 个旧《注册会计师法》页面与 1 个旧法 raw 全文早已排除出检索索引（见 `SUPERSEDED_SEARCH_EXCLUDES`）；历史专题拆分页及维护控制页已不再进入索引。raw-file 仍为 651。
 

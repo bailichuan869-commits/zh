@@ -2,6 +2,7 @@
 import { computed, reactive, ref } from 'vue'
 import type { UploadProps } from 'ant-design-vue'
 import {
+  ArrowLeftOutlined,
   CheckOutlined,
   DeleteOutlined,
   EyeOutlined,
@@ -16,6 +17,7 @@ import {
   type MaintenancePreview,
   type MaintenanceResult,
   type PendingReview,
+  type PendingReviewDetail,
 } from '@/services/api'
 
 type Mode = 'ingest' | 'qa' | 'review'
@@ -30,6 +32,10 @@ const uploadLoading = ref(false)
 const commitLoading = ref(false)
 const pendingReviews = ref<PendingReview[]>([])
 const selectedReview = ref('')
+const reviewStep = ref<1 | 2>(1)
+const selectedReviewDetail = ref<PendingReviewDetail | null>(null)
+const reviewDetailComplete = ref(false)
+const reviewDetailLoading = ref(false)
 const reviewConfirmed = ref(false)
 const uploadSession = ref('')
 const ingestItems = ref<IngestUploadItem[]>([])
@@ -144,6 +150,64 @@ async function createPreview() {
   }
 }
 
+async function selectReview(item: PendingReview) {
+  selectedReview.value = item.path
+  reviewStep.value = 2
+  reviewConfirmed.value = false
+  preview.value = null
+  result.value = null
+  error.value = ''
+  selectedReviewDetail.value = {
+    path: item.path,
+    title: item.title,
+    page_role: item.page_role,
+    maturity: item.maturity,
+    raw_path: item.raw_path,
+    body: item.body_preview,
+    content_sha256: item.content_sha256,
+  }
+  reviewDetailComplete.value = false
+  reviewDetailLoading.value = true
+  try {
+    selectedReviewDetail.value = await api.reviewDetail(item.path, token.value.trim())
+    reviewDetailComplete.value = true
+  } catch (reason) {
+    // Older maintenance processes do not expose the detail route yet; use the existing read API as a compatibility fallback.
+    try {
+      const document = await api.document(item.path)
+      selectedReviewDetail.value = {
+        path: item.path,
+        title: document.frontmatter.title || item.title,
+        page_role: item.page_role,
+        maturity: item.maturity,
+        raw_path: item.raw_path,
+        body: document.markdown,
+        content_sha256: item.content_sha256,
+      }
+      reviewDetailComplete.value = true
+    } catch {
+      error.value = reason instanceof Error ? reason.message : '无法读取页面详情'
+    }
+  } finally {
+    reviewDetailLoading.value = false
+  }
+}
+
+function handleReviewChange() {
+  reviewStep.value = 1
+  reviewConfirmed.value = false
+  selectedReviewDetail.value = null
+  reviewDetailComplete.value = false
+  preview.value = null
+}
+
+function completeReview() {
+  if (!selectedReview.value || !reviewDetailComplete.value) return
+  reviewConfirmed.value = true
+  reviewStep.value = 1
+  error.value = ''
+}
+
 async function commitPreview() {
   if (!preview.value) return
   actionLoading.value = true
@@ -167,7 +231,12 @@ async function loadPendingReviews() {
   error.value = ''
   try {
     pendingReviews.value = (await api.pendingReviews(token.value.trim())).items
-    if (!pendingReviews.value.some(item => item.path === selectedReview.value)) selectedReview.value = ''
+    if (!pendingReviews.value.some(item => item.path === selectedReview.value)) {
+      selectedReview.value = ''
+    }
+    reviewStep.value = 1
+    selectedReviewDetail.value = null
+    reviewDetailComplete.value = false
     reviewConfirmed.value = false
   } catch (reason) {
     error.value = reason instanceof Error ? reason.message : '无法读取待复核队列'
@@ -326,26 +395,54 @@ function ingestRowKey(item: IngestUploadItem) {
 
       <a-tab-pane key="review" tab="页面复核">
         <div class="secondary-form">
-          <a-alert type="warning" show-icon message="确认后页面会进入答疑主检索集" />
-          <a-button class="load-button" :loading="actionLoading" @click="loadPendingReviews">加载待复核页面</a-button>
-          <a-empty v-if="!pendingReviews.length" description="尚未加载或没有待复核页面" />
-          <a-radio-group v-else v-model:value="selectedReview" class="review-list" @change="reviewConfirmed = false; preview = null">
-            <a-radio v-for="item in pendingReviews" :key="item.path" :value="item.path">
-              <strong>{{ item.title }}</strong><span>{{ item.page_role }} · {{ item.maturity }} · {{ item.raw_path }}</span>
-            </a-radio>
-          </a-radio-group>
-          <div v-if="selectedReview" class="review-detail">
-            <template v-for="item in pendingReviews.filter(candidate => candidate.path === selectedReview)" :key="item.path">
-              <h2>{{ item.title }}</h2>
-              <p class="review-source">来源：{{ item.raw_path || '未登记本地来源' }} · {{ item.path }}</p>
-              <pre class="review-body">{{ item.body_preview }}</pre>
-            </template>
-            <a-checkbox v-model:checked="reviewConfirmed">我已阅读正文、来源和拟变更，并完成专业复核</a-checkbox>
-          </div>
-          <a-space v-if="selectedReview">
-            <a-button type="primary" :disabled="!reviewConfirmed" :loading="actionLoading" @click="createPreview"><EyeOutlined />生成预览</a-button>
-            <a-button v-if="preview" type="primary" danger :loading="actionLoading" @click="commitPreview"><CheckOutlined />确认复核</a-button>
-          </a-space>
+          <a-steps class="review-steps" size="small" :current="reviewStep - 1">
+            <a-step title="选择待复核页面" description="先确定要阅读的知识页" />
+            <a-step title="阅读并完成复核" description="查看正文和来源后确认" />
+          </a-steps>
+
+          <template v-if="reviewStep === 1">
+            <a-alert type="warning" show-icon message="确认后页面会进入答疑主检索集" />
+            <a-button class="load-button" :loading="actionLoading" @click="loadPendingReviews">加载待复核页面</a-button>
+            <a-empty v-if="!pendingReviews.length" description="尚未加载或没有待复核页面" />
+            <a-radio-group v-else v-model:value="selectedReview" class="review-list" @change="handleReviewChange">
+              <a-radio v-for="item in pendingReviews" :key="item.path" :value="item.path">
+                <span class="review-row">
+                  <span class="review-row-copy"><strong>{{ item.title }}</strong><small>{{ item.page_role }} · {{ item.maturity }} · {{ item.raw_path || '未登记本地来源' }}</small></span>
+                  <a-button type="link" size="small" @click.stop="selectReview(item)"><EyeOutlined />查看详情</a-button>
+                </span>
+              </a-radio>
+            </a-radio-group>
+            <div v-if="selectedReview" class="review-selection-bar">
+              <span v-if="reviewConfirmed" class="review-complete-state"><CheckOutlined /> 已完成正文复核，可以生成写入预览。</span>
+              <span v-else>请点击条目右侧“查看详情”，阅读完成后再继续。</span>
+              <a-space>
+                <a-button type="primary" :disabled="!reviewConfirmed" :loading="actionLoading" @click="createPreview"><EyeOutlined />生成预览</a-button>
+                <a-button v-if="preview" type="primary" danger :loading="actionLoading" @click="commitPreview"><CheckOutlined />确认复核</a-button>
+              </a-space>
+            </div>
+          </template>
+
+          <section v-else class="review-reader-panel" aria-labelledby="review-reader-title">
+            <div class="review-reader-topbar">
+              <a-button type="text" @click="reviewStep = 1"><ArrowLeftOutlined />返回页面列表</a-button>
+              <a-tag v-if="reviewDetailComplete" color="blue">正文已加载</a-tag>
+            </div>
+            <a-spin :spinning="reviewDetailLoading" tip="正在读取页面正文">
+              <template v-if="selectedReviewDetail">
+                <header class="review-reader-header">
+                  <h2 id="review-reader-title">{{ selectedReviewDetail.title }}</h2>
+                  <p class="review-source">来源：{{ selectedReviewDetail.raw_path || '未登记本地来源' }} · {{ selectedReviewDetail.path }}</p>
+                </header>
+                <pre class="review-reader-body">{{ selectedReviewDetail.body }}</pre>
+              </template>
+              <a-empty v-else description="正在准备页面预览" />
+            </a-spin>
+            <a-alert v-if="!reviewDetailLoading && !reviewDetailComplete" class="review-reader-error" type="error" show-icon message="正文未完整加载，暂不能完成复核" />
+            <div class="review-reader-footer">
+              <span>请完整阅读正文、来源及页面内容，确认无误后完成复核。</span>
+              <a-button type="primary" size="large" :disabled="!reviewDetailComplete || reviewDetailLoading" @click="completeReview"><CheckOutlined />完成复核</a-button>
+            </div>
+          </section>
         </div>
       </a-tab-pane>
     </a-tabs>
@@ -408,14 +505,27 @@ function ingestRowKey(item: IngestUploadItem) {
 .empty-state :deep(.ant-empty-image) { height: auto; color: var(--app-subtle); font-size: 30px; }
 .secondary-form { padding: 24px; }
 .space { margin-top: 20px; }
+.review-steps { margin-bottom: 24px; }
 .load-button { margin: 14px 0; }
 .review-list { display: grid; gap: 12px; margin: 8px 0 18px; }
 .review-list :deep(.ant-radio-wrapper) { display: grid; grid-template-columns: 20px 1fr; align-items: start; }
-.review-list span { display: block; margin-top: 4px; color: var(--app-muted); font-size: 12px; overflow-wrap: anywhere; }
-.review-detail { margin: 0 0 18px; padding: 16px; border: 1px solid var(--app-border); border-radius: 6px; background: var(--app-bg); }
-.review-detail h2 { margin: 0 0 4px; font-size: 16px; }
+.review-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; min-width: 0; }
+.review-row-copy { display: block; min-width: 0; }
+.review-row-copy strong, .review-row-copy small { display: block; overflow-wrap: anywhere; }
+.review-row-copy small { margin-top: 4px; color: var(--app-muted); font-size: 12px; }
+.review-row :deep(.ant-btn) { flex: none; margin-top: -6px; padding-inline: 4px; }
+.review-selection-bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--app-border); }
+.review-selection-bar > span { color: var(--app-muted); font-size: 12px; }
+.review-complete-state { color: var(--app-success, #237b4b) !important; }
 .review-source { color: var(--app-muted); font-size: 12px; overflow-wrap: anywhere; }
-.review-body { max-height: 360px; }
+.review-reader-panel { margin-top: 4px; padding: 16px; border: 1px solid var(--app-border); border-radius: 8px; background: var(--app-surface); box-shadow: var(--app-shadow); }
+.review-reader-topbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+.review-reader-header { padding: 6px 4px 14px; border-bottom: 1px solid var(--app-border); }
+.review-reader-header h2 { margin: 0 0 7px; font-size: 22px; }
+.review-reader-body { max-height: min(62vh, 660px); min-height: 360px; margin: 0; overflow: auto; padding: 22px; background: var(--app-bg); border: 0; border-radius: 6px; color: var(--app-text); font-family: Consolas, 'Microsoft YaHei', monospace; font-size: 14px; line-height: 1.8; white-space: pre-wrap; word-break: break-word; }
+.review-reader-error { margin-top: 14px; }
+.review-reader-footer { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding-top: 16px; }
+.review-reader-footer > span { color: var(--app-muted); font-size: 12px; }
 .output-card, .result-panel { box-shadow: var(--app-shadow); }
 pre { max-height: 320px; overflow: auto; padding: 14px; background: var(--app-bg); border: 1px solid var(--app-border); border-radius: 6px; white-space: pre-wrap; word-break: break-word; }
 .modal-title { margin-bottom: 10px; color: var(--app-muted); font-size: 12px; }
@@ -437,5 +547,10 @@ pre { max-height: 320px; overflow: auto; padding: 14px; background: var(--app-bg
   .mobile-batch-label > span { display: block; margin-bottom: 6px; color: var(--app-muted); font-size: 12px; }
   .confirm-bar { align-items: stretch; flex-direction: column; }
   .confirm-bar .ant-btn { width: 100%; }
+  .review-selection-bar, .review-reader-footer { align-items: stretch; flex-direction: column; }
+  .review-selection-bar .ant-space, .review-reader-footer .ant-btn { width: 100%; }
+  .review-selection-bar .ant-space .ant-btn { flex: 1; }
+  .review-reader-panel { padding: 12px; }
+  .review-reader-body { min-height: 52vh; max-height: 58vh; padding: 16px; font-size: 13px; }
 }
 </style>

@@ -460,6 +460,23 @@ def pending_review(authorization: str | None = Header(default=None)) -> dict:
     return {"items": items}
 
 
+@app.get("/maintenance/v1/review/detail")
+def review_detail(path: str, authorization: str | None = Header(default=None)) -> dict:
+    """Return the current full page body for the review screen."""
+    _auth(authorization)
+    target = _review_target(path)
+    metadata, body = _review_metadata(target)
+    return {
+        "path": target.relative_to(KB).as_posix(),
+        "title": str(metadata.get("title") or target.stem),
+        "page_role": str(metadata.get("page_role") or ""),
+        "maturity": str(metadata.get("maturity") or "draft"),
+        "raw_path": str(metadata.get("raw_path") or ""),
+        "body": body,
+        "content_sha256": _file_sha256(target),
+    }
+
+
 @app.post("/maintenance/v1/review/preview")
 def review_preview(payload: ReviewPreview, authorization: str | None = Header(default=None)) -> dict:
     _auth(authorization)

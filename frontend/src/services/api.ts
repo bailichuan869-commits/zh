@@ -13,6 +13,7 @@ export interface MaintenanceResult { status: string; output: string; health: str
 export interface IngestUploadItem { id: string; filename: string; size: number; markdown_preview: string; markdown_length: number; preview_truncated: boolean; batch_name: string; extraction_method: string }
 export interface IngestUploadPreview { session_token: string; items: IngestUploadItem[]; expires_in: number }
 export interface PendingReview { path: string; title: string; page_role: string; maturity: string; raw_path: string; body_preview: string; content_sha256: string }
+export interface PendingReviewDetail { path: string; title: string; page_role: string; maturity: string; raw_path: string; body: string; content_sha256: string }
 export interface AIConfiguration { provider: string; base_url: string; model: string; enabled: boolean; key_configured: boolean; simulated?: boolean }
 export interface AIConnectionResult { status: string; message: string }
 
@@ -66,6 +67,7 @@ export const api = {
   uploadedMarkdown: (sessionToken: string, itemId: string, token: string) => maintenanceRead<{ markdown: string }>(`/maintenance/v1/ingest/${encodeURIComponent(sessionToken)}/items/${encodeURIComponent(itemId)}/markdown`, token),
   commitUploadedIngest: (sessionToken: string, items: Array<{ id: string; batch_name: string }>, token: string) => write<MaintenanceResult & { imported_count: number }>('/maintenance/v1/ingest/batch-commit', { session_token: sessionToken, items }, token),
   pendingReviews: (token: string) => maintenanceRead<{ items: PendingReview[] }>('/maintenance/v1/review/pending', token),
+  reviewDetail: (path: string, token: string) => maintenanceRead<PendingReviewDetail>(`/maintenance/v1/review/detail?${new URLSearchParams({ path })}`, token),
   previewReview: (path: string, contentSha256: string, confirmed: boolean, token: string) => write<MaintenancePreview>('/maintenance/v1/review/preview', { path, content_sha256: contentSha256, confirmed }, token),
   commitReview: (path: string, contentSha256: string, confirmed: boolean, previewToken: string, token: string) => write<MaintenanceResult>(`/maintenance/v1/review/commit?${new URLSearchParams({ preview_token: previewToken })}`, { path, content_sha256: contentSha256, confirmed }, token),
   aiConfig: (token: string) => maintenanceRead<AIConfiguration>('/maintenance/v1/ai-config', token),
