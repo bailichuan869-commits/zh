@@ -2,42 +2,61 @@
 title: 企业会计准则解释第15号
 type: concept
 concept_type: accounting-interpretation
+page_role: index
+maturity: reviewed
+answer_ready: false
+review_status: agent-reviewed
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-08-06
 sources: [enterprise-accounting-standards-interpretations-download-2026-06-26]
+version: interpretation-15
+lifecycle_status: unknown
+authority_level: official
+raw_path: raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第15号-的通知.html.md
+source_url: https://kjs.mof.gov.cn/zhengcefabu/202112/t20211231_3779983.htm
 tags: [accounting, standards, interpretation, p1-core]
 related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounting-standards-interpretations-download-2026-06-26]]
 domain: accounting-standards
 topic: interpretations
 ---
-
 # 企业会计准则解释第15号
 
 ## 定位
 
 - 解释编号：15
 - 标题：企业会计准则解释第15号
-- 本地文件：`raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第15号-的通知.html.md`
+- 本地文件：`raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第15号-的通知.html`
 - 官方链接：https://kjs.mof.gov.cn/zhengcefabu/202112/t20211231_3779983.htm
 
 ## 原文入口
 
 - 通知/原文页面：https://kjs.mof.gov.cn/zhengcefabu/202112/t20211231_3779983.htm
-- 本地 HTML：`raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第15号-的通知.html.md`
+- 本地 HTML：`raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第15号-的通知.html`
 
-## 备注
+## 说明
 
-该页先作为解释编号级索引入口，后续可继续补充逐条适用事项、关键会计处理和相关准则连接。
+本页是解释编号级事项索引，不重复存放财政部完整正文。检索和引用应回到下列事项及原文门面。
+
+## 事项索引
+
+- 关于企业将固定资产达到预定可使用状态前或者研发过程中产出的产品或副产品对外销售的会计处理
+- 关于资金集中管理相关列报
+- 关于亏损合同的判断
+
+## 使用边界
+
+本页仅提供原文定位和事项导航，`agent-reviewed` 不等于人工批准。涉及具体交易时，应回到完整原文、报告期适用版本和交易事实。当前生命周期按 `unknown` 记录，不据此宣称现行有效。
 
 <!-- calibration-supplement:start -->
 
 ## 校准补充资料
 
-以下资料来自 [[concepts/accounting-standards/unmapped-review]] 的人工校准建议，建议桶为“解释第15号”。
-这些条目保留原始官方链接和本地 HTML 路径，后续应结合原文继续核验后再纳入正式映射。
+以下资料来自 [[concepts/accounting-standards/unmapped-review]] 的 Agent 复核候选。条目保留原始官方链接和本地 HTML 路径；正式引用前仍应结合原文核验适用范围和有效状态。
 
-| 类型 | 标题 | 置信度 | 理由 | 官方链接 | 本地文件 |
+### Agent 候选桶：解释第15号
+
+| 类型 | 标题 | 置信度 | 证据依据 | 官方链接 | 本地文件 |
 |---|---|---|---|---|---|
-| 准则解释 | 关于印发《企业会计准则解释第15号》的通知 | high | 标题中明确给出解释编号 | https://kjs.mof.gov.cn/zhengcefabu/202112/t20211231_3779983.htm | `raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第15号-的通知.html.md` |
+| 准则解释 | 关于印发《企业会计准则解释第15号》的通知 | high | 标题中明确给出解释编号 | https://kjs.mof.gov.cn/zhengcefabu/202112/t20211231_3779983.htm | `raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第15号-的通知.html` |
 
 <!-- calibration-supplement:end -->

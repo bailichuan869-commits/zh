@@ -1,291 +1,2144 @@
 ---
-title: 中华人民共和国公司法条款目录
+title: 中华人民共和国公司法条款全文与索引
 type: concept
 concept_type: law-article-index
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-08-05
 sources: [local-core-laws-2026-06-26]
-tags: [company-law, law, article, p1-core, article-index]
+tags: [company-law, law, p1-core, article-index]
 related: [[concepts/law-company]], [[sources/core-laws-article-index-2026-06-26]]
 domain: laws
 topic: company-law
 ---
 
-# 中华人民共和国公司法条款目录
+# 中华人民共和国公司法条款全文与索引
 
-## 汇总
+## 使用说明
 
-- 条款记录数：266
-- 条款页：本目录下按条号生成。
-- 说明：如原文存在重复条号，第二个及以后条款页文件名会追加序号后缀。
+- 本页按本地原文 `raw/laws/中华人民共和国公司法.md` 编排，保留全部 266 条条文。
+- 条文标题带有稳定锚点，可从专题页和搜索结果直接定位；专业解释、实务判断或版本差异应沉淀到主题页，不再按条文生成独立知识页。
 
-## 条款
+## 条款索引
 
 | 条号 | 章节 | 摘要 | 页面 |
 |---:|---|---|---|
-| 1 | 第一章　总　　则 | 为了规范公司的组织和行为，保护公司、股东、职工和债权人的合法权益，完善中国特色现代企业制度，弘扬企业家精神，维护社会经济秩序，促进社会主义市场经济的发展，根据宪法，制定本法。 | [[concepts/laws/company-law/company-law-article-001]] |
-| 2 | 第一章　总　　则 | 本法所称公司，是指依照本法在中华人民共和国境内设立的有限责任公司和股份有限公司。 | [[concepts/laws/company-law/company-law-article-002]] |
-| 3 | 第一章　总　　则 | 公司是企业法人，有独立的法人财产，享有法人财产权。 | [[concepts/laws/company-law/company-law-article-003]] |
-| 4 | 第一章　总　　则 | 有限责任公司的股东以其认缴的出资额为限对公司承担责任；股份有限公司的股东以其认购的股份为限对公司承担责任。 | [[concepts/laws/company-law/company-law-article-004]] |
-| 5 | 第一章　总　　则 | 设立公司应当依法制定公司章程。 | [[concepts/laws/company-law/company-law-article-005]] |
-| 6 | 第一章　总　　则 | 公司应当有自己的名称。 | [[concepts/laws/company-law/company-law-article-006]] |
-| 7 | 第一章　总　　则 | 依照本法设立的有限责任公司，应当在公司名称中标明有限责任公司或者有限公司字样。 | [[concepts/laws/company-law/company-law-article-007]] |
-| 8 | 第一章　总　　则 | 公司以其主要办事机构所在地为住所。 | [[concepts/laws/company-law/company-law-article-008]] |
-| 9 | 第一章　总　　则 | 公司的经营范围由公司章程规定。 | [[concepts/laws/company-law/company-law-article-009]] |
-| 10 | 第一章　总　　则 | 公司的法定代表人按照公司章程的规定，由代表公司执行公司事务的董事或者经理担任。 | [[concepts/laws/company-law/company-law-article-010]] |
-| 11 | 第一章　总　　则 | 法定代表人以公司名义从事的民事活动，其法律后果由公司承受。 | [[concepts/laws/company-law/company-law-article-011]] |
-| 12 | 第一章　总　　则 | 有限责任公司变更为股份有限公司，应当符合本法规定的股份有限公司的条件。 | [[concepts/laws/company-law/company-law-article-012]] |
-| 13 | 第一章　总　　则 | 公司可以设立子公司。 | [[concepts/laws/company-law/company-law-article-013]] |
-| 14 | 第一章　总　　则 | 公司可以向其他企业投资。 | [[concepts/laws/company-law/company-law-article-014]] |
-| 15 | 第一章　总　　则 | 公司向其他企业投资或者为他人提供担保，按照公司章程的规定，由董事会或者股东会决议；公司章程对投资或者担保的总额及单项投资或者担保的数额有限额规定的，不得超过规定的限额。 | [[concepts/laws/company-law/company-law-article-015]] |
-| 16 | 第一章　总　　则 | 公司应当保护职工的合法权益，依法与职工签订劳动合同，参加社会保险，加强劳动保护，实现安全生产。 | [[concepts/laws/company-law/company-law-article-016]] |
-| 17 | 第一章　总　　则 | 公司职工依照《中华人民共和国工会法》组织工会，开展工会活动，维护职工合法权益。 | [[concepts/laws/company-law/company-law-article-017]] |
-| 18 | 第一章　总　　则 | 在公司中，根据中国共产党章程的规定，设立中国共产党的组织，开展党的活动。 | [[concepts/laws/company-law/company-law-article-018]] |
-| 19 | 第一章　总　　则 | 公司从事经营活动，应当遵守法律法规，遵守社会公德、商业道德，诚实守信，接受政府和社会公众的监督。 | [[concepts/laws/company-law/company-law-article-019]] |
-| 20 | 第一章　总　　则 | 公司从事经营活动，应当充分考虑公司职工、消费者等利益相关者的利益以及生态环境保护等社会公共利益，承担社会责任。 | [[concepts/laws/company-law/company-law-article-020]] |
-| 21 | 第一章　总　　则 | 公司股东应当遵守法律、行政法规和公司章程，依法行使股东权利，不得滥用股东权利损害公司或者其他股东的利益。 | [[concepts/laws/company-law/company-law-article-021]] |
-| 22 | 第一章　总　　则 | 公司的控股股东、实际控制人、董事、监事、高级管理人员不得利用关联关系损害公司利益。 | [[concepts/laws/company-law/company-law-article-022]] |
-| 23 | 第一章　总　　则 | 公司股东滥用公司法人独立地位和股东有限责任，逃避债务，严重损害公司债权人利益的，应当对公司债务承担连带责任。 | [[concepts/laws/company-law/company-law-article-023]] |
-| 24 | 第一章　总　　则 | 公司股东会、董事会、监事会召开会议和表决可以采用电子通信方式，公司章程另有规定的除外。 | [[concepts/laws/company-law/company-law-article-024]] |
-| 25 | 第一章　总　　则 | 公司股东会、董事会的决议内容违反法律、行政法规的无效。 | [[concepts/laws/company-law/company-law-article-025]] |
-| 26 | 第一章　总　　则 | 公司股东会、董事会的会议召集程序、表决方式违反法律、行政法规或者公司章程，或者决议内容违反公司章程的，股东自决议作出之日起六十日内，可以请求人民法院撤销。 | [[concepts/laws/company-law/company-law-article-026]] |
-| 27 | 第一章　总　　则 | 有下列情形之一的，公司股东会、董事会的决议不成立：（一）未召开股东会、董事会会议作出决议； | [[concepts/laws/company-law/company-law-article-027]] |
-| 28 | 第一章　总　　则 | 公司股东会、董事会决议被人民法院宣告无效、撤销或者确认不成立的，公司应当向公司登记机关申请撤销根据该决议已办理的登记。 | [[concepts/laws/company-law/company-law-article-028]] |
-| 29 | 第二章　公司登记 | 设立公司，应当依法向公司登记机关申请设立登记。 | [[concepts/laws/company-law/company-law-article-029]] |
-| 30 | 第二章　公司登记 | 申请设立公司，应当提交设立登记申请书、公司章程等文件，提交的相关材料应当真实、合法和有效。 | [[concepts/laws/company-law/company-law-article-030]] |
-| 31 | 第二章　公司登记 | 申请设立公司，符合本法规定的设立条件的，由公司登记机关分别登记为有限责任公司或者股份有限公司；不符合本法规定的设立条件的，不得登记为有限责任公司或者股份有限公司。 | [[concepts/laws/company-law/company-law-article-031]] |
-| 32 | 第二章　公司登记 | 公司登记事项包括：（一）名称；（二）住所；（三）注册资本；（四）经营范围；（五）法定代表人的姓名；（六）有限责任公司股东、股份有限公司发起人的姓名或者名称。 | [[concepts/laws/company-law/company-law-article-032]] |
-| 33 | 第二章　公司登记 | 依法设立的公司，由公司登记机关发给公司营业执照。 | [[concepts/laws/company-law/company-law-article-033]] |
-| 34 | 第二章　公司登记 | 公司登记事项发生变更的，应当依法办理变更登记。 | [[concepts/laws/company-law/company-law-article-034]] |
-| 35 | 第二章　公司登记 | 公司申请变更登记，应当向公司登记机关提交公司法定代表人签署的变更登记申请书、依法作出的变更决议或者决定等文件。 | [[concepts/laws/company-law/company-law-article-035]] |
-| 36 | 第二章　公司登记 | 公司营业执照记载的事项发生变更的，公司办理变更登记后，由公司登记机关换发营业执照。 | [[concepts/laws/company-law/company-law-article-036]] |
-| 37 | 第二章　公司登记 | 公司因解散、被宣告破产或者其他法定事由需要终止的，应当依法向公司登记机关申请注销登记，由公司登记机关公告公司终止。 | [[concepts/laws/company-law/company-law-article-037]] |
-| 38 | 第二章　公司登记 | 公司设立分公司，应当向公司登记机关申请登记，领取营业执照。 | [[concepts/laws/company-law/company-law-article-038]] |
-| 39 | 第二章　公司登记 | 虚报注册资本、提交虚假材料或者采取其他欺诈手段隐瞒重要事实取得公司设立登记的，公司登记机关应当依照法律、行政法规的规定予以撤销。 | [[concepts/laws/company-law/company-law-article-039]] |
-| 40 | 第二章　公司登记 | 公司应当按照规定通过国家企业信用信息公示系统公示下列事项：（一）有限责任公司股东认缴和实缴的出资额、出资方式和出资日期，股份有限公司发起人认购的股份数； | [[concepts/laws/company-law/company-law-article-040]] |
-| 41 | 第二章　公司登记 | 公司登记机关应当优化公司登记办理流程，提高公司登记效率，加强信息化建设，推行网上办理等便捷方式，提升公司登记便利化水平。 | [[concepts/laws/company-law/company-law-article-041]] |
-| 42 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司由一个以上五十个以下股东出资设立。 | [[concepts/laws/company-law/company-law-article-042]] |
-| 43 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司设立时的股东可以签订设立协议，明确各自在公司设立过程中的权利和义务。 | [[concepts/laws/company-law/company-law-article-043]] |
-| 44 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司设立时的股东为设立公司从事的民事活动，其法律后果由公司承受。 | [[concepts/laws/company-law/company-law-article-044]] |
-| 45 | 第三章　有限责任公司的设立和组织机构 | 设立有限责任公司，应当由股东共同制定公司章程。 | [[concepts/laws/company-law/company-law-article-045]] |
-| 46 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司章程应当载明下列事项：（一）公司名称和住所； | [[concepts/laws/company-law/company-law-article-046]] |
-| 47 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司的注册资本为在公司登记机关登记的全体股东认缴的出资额。 | [[concepts/laws/company-law/company-law-article-047]] |
-| 48 | 第三章　有限责任公司的设立和组织机构 | 股东可以用货币出资，也可以用实物、知识产权、土地使用权、股权、债权等可以用货币估价并可以依法转让的非货币财产作价出资；但是，法律、行政法规规定不得作为出资的财产除外。 | [[concepts/laws/company-law/company-law-article-048]] |
-| 49 | 第三章　有限责任公司的设立和组织机构 | 股东应当按期足额缴纳公司章程规定的各自所认缴的出资额。 | [[concepts/laws/company-law/company-law-article-049]] |
-| 50 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司设立时，股东未按照公司章程规定实际缴纳出资，或者实际出资的非货币财产的实际价额显著低于所认缴的出资额的，设立时的其他股东与该股东在出资不足的范围内承担连带责任。 | [[concepts/laws/company-law/company-law-article-050]] |
-| 51 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司成立后，董事会应当对股东的出资情况进行核查，发现股东未按期足额缴纳公司章程规定的出资的，应当由公司向该股东发出书面催缴书，催缴出资。 | [[concepts/laws/company-law/company-law-article-051]] |
-| 52 | 第三章　有限责任公司的设立和组织机构 | 股东未按照公司章程规定的出资日期缴纳出资，公司依照前条第一款规定发出书面催缴书催缴出资的，可以载明缴纳出资的宽限期；宽限期自公司发出催缴书之日起，不得少于六十日。 | [[concepts/laws/company-law/company-law-article-052]] |
-| 53 | 第三章　有限责任公司的设立和组织机构 | 公司成立后，股东不得抽逃出资。 | [[concepts/laws/company-law/company-law-article-053]] |
-| 54 | 第三章　有限责任公司的设立和组织机构 | 公司不能清偿到期债务的，公司或者已到期债权的债权人有权要求已认缴出资但未届出资期限的股东提前缴纳出资。 | [[concepts/laws/company-law/company-law-article-054]] |
-| 55 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司成立后，应当向股东签发出资证明书，记载下列事项：（一）公司名称；（二）公司成立日期；（三）公司注册资本；（四）股东的姓名或者名称、认缴和实缴的出资额、出资方式和出资日期；（五）出资证明书的编号和核发日期。 | [[concepts/laws/company-law/company-law-article-055]] |
-| 56 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司应当置备股东名册，记载下列事项：（一）股东的姓名或者名称及住所；（二）股东认缴和实缴的出资额、出资方式和出资日期；（三）出资证明书编号；（四）取得和丧失股东资格的日期。 | [[concepts/laws/company-law/company-law-article-056]] |
-| 57 | 第三章　有限责任公司的设立和组织机构 | 股东有权查阅、复制公司章程、股东名册、股东会会议记录、董事会会议决议、监事会会议决议和财务会计报告。 | [[concepts/laws/company-law/company-law-article-057]] |
-| 58 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司股东会由全体股东组成。 | [[concepts/laws/company-law/company-law-article-058]] |
-| 59 | 第三章　有限责任公司的设立和组织机构 | 股东会行使下列职权：（一）选举和更换董事、监事，决定有关董事、监事的报酬事项； | [[concepts/laws/company-law/company-law-article-059]] |
-| 60 | 第三章　有限责任公司的设立和组织机构 | 只有一个股东的有限责任公司不设股东会。 | [[concepts/laws/company-law/company-law-article-060]] |
-| 61 | 第三章　有限责任公司的设立和组织机构 | 首次股东会会议由出资最多的股东召集和主持，依照本法规定行使职权。 | [[concepts/laws/company-law/company-law-article-061]] |
-| 62 | 第三章　有限责任公司的设立和组织机构 | 股东会会议分为定期会议和临时会议。 | [[concepts/laws/company-law/company-law-article-062]] |
-| 63 | 第三章　有限责任公司的设立和组织机构 | 股东会会议由董事会召集，董事长主持；董事长不能履行职务或者不履行职务的，由副董事长主持；副董事长不能履行职务或者不履行职务的，由过半数的董事共同推举一名董事主持。 | [[concepts/laws/company-law/company-law-article-063]] |
-| 64 | 第三章　有限责任公司的设立和组织机构 | 召开股东会会议，应当于会议召开十五日前通知全体股东；但是，公司章程另有规定或者全体股东另有约定的除外。 | [[concepts/laws/company-law/company-law-article-064]] |
-| 65 | 第三章　有限责任公司的设立和组织机构 | 股东会会议由股东按照出资比例行使表决权；但是，公司章程另有规定的除外。 | [[concepts/laws/company-law/company-law-article-065]] |
-| 66 | 第三章　有限责任公司的设立和组织机构 | 股东会的议事方式和表决程序，除本法有规定的外，由公司章程规定。 | [[concepts/laws/company-law/company-law-article-066]] |
-| 67 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司设董事会，本法第七十五条另有规定的除外。 | [[concepts/laws/company-law/company-law-article-067]] |
-| 68 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司董事会成员为三人以上，其成员中可以有公司职工代表。 | [[concepts/laws/company-law/company-law-article-068]] |
-| 69 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司可以按照公司章程的规定在董事会中设置由董事组成的审计委员会，行使本法规定的监事会的职权，不设监事会或者监事。 | [[concepts/laws/company-law/company-law-article-069]] |
-| 70 | 第三章　有限责任公司的设立和组织机构 | 董事任期由公司章程规定，但每届任期不得超过三年。 | [[concepts/laws/company-law/company-law-article-070]] |
-| 71 | 第三章　有限责任公司的设立和组织机构 | 股东会可以决议解任董事，决议作出之日解任生效。 | [[concepts/laws/company-law/company-law-article-071]] |
-| 72 | 第三章　有限责任公司的设立和组织机构 | 董事会会议由董事长召集和主持；董事长不能履行职务或者不履行职务的，由副董事长召集和主持；副董事长不能履行职务或者不履行职务的，由过半数的董事共同推举一名董事召集和主持。 | [[concepts/laws/company-law/company-law-article-072]] |
-| 73 | 第三章　有限责任公司的设立和组织机构 | 董事会的议事方式和表决程序，除本法有规定的外，由公司章程规定。 | [[concepts/laws/company-law/company-law-article-073]] |
-| 74 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司可以设经理，由董事会决定聘任或者解聘。 | [[concepts/laws/company-law/company-law-article-074]] |
-| 75 | 第三章　有限责任公司的设立和组织机构 | 规模较小或者股东人数较少的有限责任公司，可以不设董事会，设一名董事，行使本法规定的董事会的职权。 | [[concepts/laws/company-law/company-law-article-075]] |
-| 76 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司设监事会，本法第六十九条、第八十三条另有规定的除外。 | [[concepts/laws/company-law/company-law-article-076]] |
-| 77 | 第三章　有限责任公司的设立和组织机构 | 监事的任期每届为三年。 | [[concepts/laws/company-law/company-law-article-077]] |
-| 78 | 第三章　有限责任公司的设立和组织机构 | 监事会行使下列职权：（一）检查公司财务； | [[concepts/laws/company-law/company-law-article-078]] |
-| 79 | 第三章　有限责任公司的设立和组织机构 | 监事可以列席董事会会议，并对董事会决议事项提出质询或者建议。 | [[concepts/laws/company-law/company-law-article-079]] |
-| 80 | 第三章　有限责任公司的设立和组织机构 | 监事会可以要求董事、高级管理人员提交执行职务的报告。 | [[concepts/laws/company-law/company-law-article-080]] |
-| 81 | 第三章　有限责任公司的设立和组织机构 | 监事会每年度至少召开一次会议，监事可以提议召开临时监事会会议。 | [[concepts/laws/company-law/company-law-article-081]] |
-| 82 | 第三章　有限责任公司的设立和组织机构 | 监事会行使职权所必需的费用，由公司承担。 | [[concepts/laws/company-law/company-law-article-082]] |
-| 83 | 第三章　有限责任公司的设立和组织机构 | 规模较小或者股东人数较少的有限责任公司，可以不设监事会，设一名监事，行使本法规定的监事会的职权；经全体股东一致同意，也可以不设监事。 | [[concepts/laws/company-law/company-law-article-083]] |
-| 84 | 第四章　有限责任公司的股权转让 | 有限责任公司的股东之间可以相互转让其全部或者部分股权。 | [[concepts/laws/company-law/company-law-article-084]] |
-| 85 | 第四章　有限责任公司的股权转让 | 人民法院依照法律规定的强制执行程序转让股东的股权时，应当通知公司及全体股东，其他股东在同等条件下有优先购买权。 | [[concepts/laws/company-law/company-law-article-085]] |
-| 86 | 第四章　有限责任公司的股权转让 | 股东转让股权的，应当书面通知公司，请求变更股东名册；需要办理变更登记的，并请求公司向公司登记机关办理变更登记。 | [[concepts/laws/company-law/company-law-article-086]] |
-| 87 | 第四章　有限责任公司的股权转让 | 依照本法转让股权后，公司应当及时注销原股东的出资证明书，向新股东签发出资证明书，并相应修改公司章程和股东名册中有关股东及其出资额的记载。 | [[concepts/laws/company-law/company-law-article-087]] |
-| 88 | 第四章　有限责任公司的股权转让 | 股东转让已认缴出资但未届出资期限的股权的，由受让人承担缴纳该出资的义务；受让人未按期足额缴纳出资的，转让人对受让人未按期缴纳的出资承担补充责任。 | [[concepts/laws/company-law/company-law-article-088]] |
-| 89 | 第四章　有限责任公司的股权转让 | 有下列情形之一的，对股东会该项决议投反对票的股东可以请求公司按照合理的价格收购其股权：（一）公司连续五年不向股东分配利润，而公司该五年连续盈利，并且符合本法规定的分配利润条件； | [[concepts/laws/company-law/company-law-article-089]] |
-| 90 | 第四章　有限责任公司的股权转让 | 自然人股东死亡后，其合法继承人可以继承股东资格；但是，公司章程另有规定的除外。 | [[concepts/laws/company-law/company-law-article-090]] |
-| 91 | 第五章　股份有限公司的设立和组织机构 | 设立股份有限公司，可以采取发起设立或者募集设立的方式。 | [[concepts/laws/company-law/company-law-article-091]] |
-| 92 | 第五章　股份有限公司的设立和组织机构 | 设立股份有限公司，应当有一人以上二百人以下为发起人，其中应当有半数以上的发起人在中华人民共和国境内有住所。 | [[concepts/laws/company-law/company-law-article-092]] |
-| 93 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司发起人承担公司筹办事务。 | [[concepts/laws/company-law/company-law-article-093]] |
-| 94 | 第五章　股份有限公司的设立和组织机构 | 设立股份有限公司，应当由发起人共同制订公司章程。 | [[concepts/laws/company-law/company-law-article-094]] |
-| 95 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司章程应当载明下列事项：（一）公司名称和住所； | [[concepts/laws/company-law/company-law-article-095]] |
-| 96 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司的注册资本为在公司登记机关登记的已发行股份的股本总额。 | [[concepts/laws/company-law/company-law-article-096]] |
-| 97 | 第五章　股份有限公司的设立和组织机构 | 以发起设立方式设立股份有限公司的，发起人应当认足公司章程规定的公司设立时应发行的股份。 | [[concepts/laws/company-law/company-law-article-097]] |
-| 98 | 第五章　股份有限公司的设立和组织机构 | 发起人应当在公司成立前按照其认购的股份全额缴纳股款。 | [[concepts/laws/company-law/company-law-article-098]] |
-| 99 | 第五章　股份有限公司的设立和组织机构 | 发起人不按照其认购的股份缴纳股款，或者作为出资的非货币财产的实际价额显著低于所认购的股份的，其他发起人与该发起人在出资不足的范围内承担连带责任。 | [[concepts/laws/company-law/company-law-article-099]] |
-| 100 | 第五章　股份有限公司的设立和组织机构 | 发起人向社会公开募集股份，应当公告招股说明书，并制作认股书。 | [[concepts/laws/company-law/company-law-article-100]] |
-| 101 | 第五章　股份有限公司的设立和组织机构 | 向社会公开募集股份的股款缴足后，应当经依法设立的验资机构验资并出具证明。 | [[concepts/laws/company-law/company-law-article-101]] |
-| 102 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司应当制作股东名册并置备于公司。 | [[concepts/laws/company-law/company-law-article-102]] |
-| 103 | 第五章　股份有限公司的设立和组织机构 | 募集设立股份有限公司的发起人应当自公司设立时应发行股份的股款缴足之日起三十日内召开公司成立大会。 | [[concepts/laws/company-law/company-law-article-103]] |
-| 104 | 第五章　股份有限公司的设立和组织机构 | 公司成立大会行使下列职权：（一）审议发起人关于公司筹办情况的报告； | [[concepts/laws/company-law/company-law-article-104]] |
-| 105 | 第五章　股份有限公司的设立和组织机构 | 公司设立时应发行的股份未募足，或者发行股份的股款缴足后，发起人在三十日内未召开成立大会的，认股人可以按照所缴股款并加算银行同期存款利息，要求发起人返还。 | [[concepts/laws/company-law/company-law-article-105]] |
-| 106 | 第五章　股份有限公司的设立和组织机构 | 董事会应当授权代表，于公司成立大会结束后三十日内向公司登记机关申请设立登记。 | [[concepts/laws/company-law/company-law-article-106]] |
-| 107 | 第五章　股份有限公司的设立和组织机构 | 本法第四十四条、第四十九条第三款、第五十一条、第五十二条、第五十三条的规定，适用于股份有限公司。 | [[concepts/laws/company-law/company-law-article-107]] |
-| 108 | 第五章　股份有限公司的设立和组织机构 | 有限责任公司变更为股份有限公司时，折合的实收股本总额不得高于公司净资产额。 | [[concepts/laws/company-law/company-law-article-108]] |
-| 109 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司应当将公司章程、股东名册、股东会会议记录、董事会会议记录、监事会会议记录、财务会计报告、债券持有人名册置备于本公司。 | [[concepts/laws/company-law/company-law-article-109]] |
-| 110 | 第五章　股份有限公司的设立和组织机构 | 股东有权查阅、复制公司章程、股东名册、股东会会议记录、董事会会议决议、监事会会议决议、财务会计报告，对公司的经营提出建议或者质询。 | [[concepts/laws/company-law/company-law-article-110]] |
-| 111 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司股东会由全体股东组成。 | [[concepts/laws/company-law/company-law-article-111]] |
-| 112 | 第五章　股份有限公司的设立和组织机构 | 本法第五十九条第一款、第二款关于有限责任公司股东会职权的规定，适用于股份有限公司股东会。 | [[concepts/laws/company-law/company-law-article-112]] |
-| 113 | 第五章　股份有限公司的设立和组织机构 | 股东会应当每年召开一次年会。 | [[concepts/laws/company-law/company-law-article-113]] |
-| 114 | 第五章　股份有限公司的设立和组织机构 | 股东会会议由董事会召集，董事长主持；董事长不能履行职务或者不履行职务的，由副董事长主持；副董事长不能履行职务或者不履行职务的，由过半数的董事共同推举一名董事主持。 | [[concepts/laws/company-law/company-law-article-114]] |
-| 115 | 第五章　股份有限公司的设立和组织机构 | 召开股东会会议，应当将会议召开的时间、地点和审议的事项于会议召开二十日前通知各股东；临时股东会会议应当于会议召开十五日前通知各股东。 | [[concepts/laws/company-law/company-law-article-115]] |
-| 116 | 第五章　股份有限公司的设立和组织机构 | 股东出席股东会会议，所持每一股份有一表决权，类别股股东除外。 | [[concepts/laws/company-law/company-law-article-116]] |
-| 117 | 第五章　股份有限公司的设立和组织机构 | 股东会选举董事、监事，可以按照公司章程的规定或者股东会的决议，实行累积投票制。 | [[concepts/laws/company-law/company-law-article-117]] |
-| 118 | 第五章　股份有限公司的设立和组织机构 | 股东委托代理人出席股东会会议的，应当明确代理人代理的事项、权限和期限；代理人应当向公司提交股东授权委托书，并在授权范围内行使表决权。 | [[concepts/laws/company-law/company-law-article-118]] |
-| 119 | 第五章　股份有限公司的设立和组织机构 | 股东会应当对所议事项的决定作成会议记录，主持人、出席会议的董事应当在会议记录上签名。 | [[concepts/laws/company-law/company-law-article-119]] |
-| 120 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司设董事会，本法第一百二十八条另有规定的除外。 | [[concepts/laws/company-law/company-law-article-120]] |
-| 121 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司可以按照公司章程的规定在董事会中设置由董事组成的审计委员会，行使本法规定的监事会的职权，不设监事会或者监事。 | [[concepts/laws/company-law/company-law-article-121]] |
-| 122 | 第五章　股份有限公司的设立和组织机构 | 董事会设董事长一人，可以设副董事长。 | [[concepts/laws/company-law/company-law-article-122]] |
-| 123 | 第五章　股份有限公司的设立和组织机构 | 董事会每年度至少召开两次会议，每次会议应当于会议召开十日前通知全体董事和监事。 | [[concepts/laws/company-law/company-law-article-123]] |
-| 124 | 第五章　股份有限公司的设立和组织机构 | 董事会会议应当有过半数的董事出席方可举行。 | [[concepts/laws/company-law/company-law-article-124]] |
-| 125 | 第五章　股份有限公司的设立和组织机构 | 董事会会议，应当由董事本人出席；董事因故不能出席，可以书面委托其他董事代为出席，委托书应当载明授权范围。 | [[concepts/laws/company-law/company-law-article-125]] |
-| 126 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司设经理，由董事会决定聘任或者解聘。 | [[concepts/laws/company-law/company-law-article-126]] |
-| 127 | 第五章　股份有限公司的设立和组织机构 | 公司董事会可以决定由董事会成员兼任经理。 | [[concepts/laws/company-law/company-law-article-127]] |
-| 128 | 第五章　股份有限公司的设立和组织机构 | 规模较小或者股东人数较少的股份有限公司，可以不设董事会，设一名董事，行使本法规定的董事会的职权。 | [[concepts/laws/company-law/company-law-article-128]] |
-| 129 | 第五章　股份有限公司的设立和组织机构 | 公司应当定期向股东披露董事、监事、高级管理人员从公司获得报酬的情况。 | [[concepts/laws/company-law/company-law-article-129]] |
-| 130 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司设监事会，本法第一百二十一条第一款、第一百三十三条另有规定的除外。 | [[concepts/laws/company-law/company-law-article-130]] |
-| 131 | 第五章　股份有限公司的设立和组织机构 | 本法第七十八条至第八十条的规定，适用于股份有限公司监事会。 | [[concepts/laws/company-law/company-law-article-131]] |
-| 132 | 第五章　股份有限公司的设立和组织机构 | 监事会每六个月至少召开一次会议。 | [[concepts/laws/company-law/company-law-article-132]] |
-| 133 | 第五章　股份有限公司的设立和组织机构 | 规模较小或者股东人数较少的股份有限公司，可以不设监事会，设一名监事，行使本法规定的监事会的职权。 | [[concepts/laws/company-law/company-law-article-133]] |
-| 134 | 第五章　股份有限公司的设立和组织机构 | 本法所称上市公司，是指其股票在证券交易所上市交易的股份有限公司。 | [[concepts/laws/company-law/company-law-article-134]] |
-| 135 | 第五章　股份有限公司的设立和组织机构 | 上市公司在一年内购买、出售重大资产或者向他人提供担保的金额超过公司资产总额百分之三十的，应当由股东会作出决议，并经出席会议的股东所持表决权的三分之二以上通过。 | [[concepts/laws/company-law/company-law-article-135]] |
-| 136 | 第五章　股份有限公司的设立和组织机构 | 上市公司设独立董事，具体管理办法由国务院证券监督管理机构规定。 | [[concepts/laws/company-law/company-law-article-136]] |
-| 137 | 第五章　股份有限公司的设立和组织机构 | 上市公司在董事会中设置审计委员会的，董事会对下列事项作出决议前应当经审计委员会全体成员过半数通过：（一）聘用、解聘承办公司审计业务的会计师事务所； | [[concepts/laws/company-law/company-law-article-137]] |
-| 138 | 第五章　股份有限公司的设立和组织机构 | 上市公司设董事会秘书，负责公司股东会和董事会会议的筹备、文件保管以及公司股东资料的管理，办理信息披露事务等事宜。 | [[concepts/laws/company-law/company-law-article-138]] |
-| 139 | 第五章　股份有限公司的设立和组织机构 | 上市公司董事与董事会会议决议事项所涉及的企业或者个人有关联关系的，该董事应当及时向董事会书面报告。 | [[concepts/laws/company-law/company-law-article-139]] |
-| 140 | 第五章　股份有限公司的设立和组织机构 | 上市公司应当依法披露股东、实际控制人的信息，相关信息应当真实、准确、完整。 | [[concepts/laws/company-law/company-law-article-140]] |
-| 141 | 第五章　股份有限公司的设立和组织机构 | 上市公司控股子公司不得取得该上市公司的股份。 | [[concepts/laws/company-law/company-law-article-141]] |
-| 142 | 第六章　股份有限公司的股份发行和转让 | 公司的资本划分为股份。 | [[concepts/laws/company-law/company-law-article-142]] |
-| 143 | 第六章　股份有限公司的股份发行和转让 | 股份的发行，实行公平、公正的原则，同类别的每一股份应当具有同等权利。 | [[concepts/laws/company-law/company-law-article-143]] |
-| 144 | 第六章　股份有限公司的股份发行和转让 | 公司可以按照公司章程的规定发行下列与普通股权利不同的类别股：（一）优先或者劣后分配利润或者剩余财产的股份；（二）每一股的表决权数多于或者少于普通股的股份；（三）转让须经公司同意等转让受限的股份；（四）国务院规定的其他类别股。 | [[concepts/laws/company-law/company-law-article-144]] |
-| 145 | 第六章　股份有限公司的股份发行和转让 | 发行类别股的公司，应当在公司章程中载明以下事项：（一）类别股分配利润或者剩余财产的顺序；（二）类别股的表决权数；（三）类别股的转让限制；（四）保护中小股东权益的措施；（五）股东会认为需要规定的其他事项。 | [[concepts/laws/company-law/company-law-article-145]] |
-| 146 | 第六章　股份有限公司的股份发行和转让 | 发行类别股的公司，有本法第一百一十六条第三款规定的事项等可能影响类别股股东权利的，除应当依照第一百一十六条第三款的规定经股东会决议外，还应当经出席类别股股东会议的股东所持表决权的三分之二以上通过。 | [[concepts/laws/company-law/company-law-article-146]] |
-| 147 | 第六章　股份有限公司的股份发行和转让 | 公司的股份采取股票的形式。 | [[concepts/laws/company-law/company-law-article-147]] |
-| 148 | 第六章　股份有限公司的股份发行和转让 | 面额股股票的发行价格可以按票面金额，也可以超过票面金额，但不得低于票面金额。 | [[concepts/laws/company-law/company-law-article-148]] |
-| 149 | 第六章　股份有限公司的股份发行和转让 | 股票采用纸面形式或者国务院证券监督管理机构规定的其他形式。 | [[concepts/laws/company-law/company-law-article-149]] |
-| 150 | 第六章　股份有限公司的股份发行和转让 | 股份有限公司成立后，即向股东正式交付股票。 | [[concepts/laws/company-law/company-law-article-150]] |
-| 151 | 第六章　股份有限公司的股份发行和转让 | 公司发行新股，股东会应当对下列事项作出决议：（一）新股种类及数额；（二）新股发行价格；（三）新股发行的起止日期；（四）向原有股东发行新股的种类及数额；（五）发行无面额股的，新股发行所得股款计入注册资本的金额。 | [[concepts/laws/company-law/company-law-article-151]] |
-| 152 | 第六章　股份有限公司的股份发行和转让 | 公司章程或者股东会可以授权董事会在三年内决定发行不超过已发行股份百分之五十的股份。 | [[concepts/laws/company-law/company-law-article-152]] |
-| 153 | 第六章　股份有限公司的股份发行和转让 | 公司章程或者股东会授权董事会决定发行新股的，董事会决议应当经全体董事三分之二以上通过。 | [[concepts/laws/company-law/company-law-article-153]] |
-| 154 | 第六章　股份有限公司的股份发行和转让 | 公司向社会公开募集股份，应当经国务院证券监督管理机构注册，公告招股说明书。 | [[concepts/laws/company-law/company-law-article-154]] |
-| 155 | 第六章　股份有限公司的股份发行和转让 | 公司向社会公开募集股份，应当由依法设立的证券公司承销，签订承销协议。 | [[concepts/laws/company-law/company-law-article-155]] |
-| 156 | 第六章　股份有限公司的股份发行和转让 | 公司向社会公开募集股份，应当同银行签订代收股款协议。 | [[concepts/laws/company-law/company-law-article-156]] |
-| 157 | 第六章　股份有限公司的股份发行和转让 | 股份有限公司的股东持有的股份可以向其他股东转让，也可以向股东以外的人转让；公司章程对股份转让有限制的，其转让按照公司章程的规定进行。 | [[concepts/laws/company-law/company-law-article-157]] |
-| 158 | 第六章　股份有限公司的股份发行和转让 | 股东转让其股份，应当在依法设立的证券交易场所进行或者按照国务院规定的其他方式进行。 | [[concepts/laws/company-law/company-law-article-158]] |
-| 159 | 第六章　股份有限公司的股份发行和转让 | 股票的转让，由股东以背书方式或者法律、行政法规规定的其他方式进行；转让后由公司将受让人的姓名或者名称及住所记载于股东名册。 | [[concepts/laws/company-law/company-law-article-159]] |
-| 160 | 第六章　股份有限公司的股份发行和转让 | 公司公开发行股份前已发行的股份，自公司股票在证券交易所上市交易之日起一年内不得转让。 | [[concepts/laws/company-law/company-law-article-160]] |
-| 161 | 第六章　股份有限公司的股份发行和转让 | 有下列情形之一的，对股东会该项决议投反对票的股东可以请求公司按照合理的价格收购其股份，公开发行股份的公司除外：（一）公司连续五年不向股东分配利润，而公司该五年连续盈利，并且符合本法规定的分配利润条件； | [[concepts/laws/company-law/company-law-article-161]] |
-| 162 | 第六章　股份有限公司的股份发行和转让 | 公司不得收购本公司股份。 | [[concepts/laws/company-law/company-law-article-162]] |
-| 163 | 第六章　股份有限公司的股份发行和转让 | 公司不得为他人取得本公司或者其母公司的股份提供赠与、借款、担保以及其他财务资助，公司实施员工持股计划的除外。 | [[concepts/laws/company-law/company-law-article-163]] |
-| 164 | 第六章　股份有限公司的股份发行和转让 | 股票被盗、遗失或者灭失，股东可以依照《中华人民共和国民事诉讼法》规定的公示催告程序，请求人民法院宣告该股票失效。 | [[concepts/laws/company-law/company-law-article-164]] |
-| 165 | 第六章　股份有限公司的股份发行和转让 | 上市公司的股票，依照有关法律、行政法规及证券交易所交易规则上市交易。 | [[concepts/laws/company-law/company-law-article-165]] |
-| 166 | 第六章　股份有限公司的股份发行和转让 | 上市公司应当依照法律、行政法规的规定披露相关信息。 | [[concepts/laws/company-law/company-law-article-166]] |
-| 167 | 第六章　股份有限公司的股份发行和转让 | 自然人股东死亡后，其合法继承人可以继承股东资格；但是，股份转让受限的股份有限公司的章程另有规定的除外。 | [[concepts/laws/company-law/company-law-article-167]] |
-| 168 | 第七章　国家出资公司组织机构的特别规定 | 国家出资公司的组织机构，适用本章规定；本章没有规定的，适用本法其他规定。 | [[concepts/laws/company-law/company-law-article-168]] |
-| 169 | 第七章　国家出资公司组织机构的特别规定 | 国家出资公司，由国务院或者地方人民政府分别代表国家依法履行出资人职责，享有出资人权益。 | [[concepts/laws/company-law/company-law-article-169]] |
-| 170 | 第七章　国家出资公司组织机构的特别规定 | 国家出资公司中中国共产党的组织，按照中国共产党章程的规定发挥领导作用，研究讨论公司重大经营管理事项，支持公司的组织机构依法行使职权。 | [[concepts/laws/company-law/company-law-article-170]] |
-| 171 | 第七章　国家出资公司组织机构的特别规定 | 国有独资公司章程由履行出资人职责的机构制定。 | [[concepts/laws/company-law/company-law-article-171]] |
-| 172 | 第七章　国家出资公司组织机构的特别规定 | 国有独资公司不设股东会，由履行出资人职责的机构行使股东会职权。 | [[concepts/laws/company-law/company-law-article-172]] |
-| 173 | 第七章　国家出资公司组织机构的特别规定 | 国有独资公司的董事会依照本法规定行使职权。 | [[concepts/laws/company-law/company-law-article-173]] |
-| 174 | 第七章　国家出资公司组织机构的特别规定 | 国有独资公司的经理由董事会聘任或者解聘。 | [[concepts/laws/company-law/company-law-article-174]] |
-| 175 | 第七章　国家出资公司组织机构的特别规定 | 国有独资公司的董事、高级管理人员，未经履行出资人职责的机构同意，不得在其他有限责任公司、股份有限公司或者其他经济组织兼职。 | [[concepts/laws/company-law/company-law-article-175]] |
-| 176 | 第七章　国家出资公司组织机构的特别规定 | 国有独资公司在董事会中设置由董事组成的审计委员会行使本法规定的监事会职权的，不设监事会或者监事。 | [[concepts/laws/company-law/company-law-article-176]] |
-| 177 | 第七章　国家出资公司组织机构的特别规定 | 国家出资公司应当依法建立健全内部监督管理和风险控制制度，加强内部合规管理。 | [[concepts/laws/company-law/company-law-article-177]] |
-| 178 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 有下列情形之一的，不得担任公司的董事、监事、高级管理人员：（一）无民事行为能力或者限制民事行为能力； | [[concepts/laws/company-law/company-law-article-178]] |
-| 179 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、监事、高级管理人员应当遵守法律、行政法规和公司章程。 | [[concepts/laws/company-law/company-law-article-179]] |
-| 180 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、监事、高级管理人员对公司负有忠实义务，应当采取措施避免自身利益与公司利益冲突，不得利用职权牟取不正当利益。 | [[concepts/laws/company-law/company-law-article-180]] |
-| 181 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、监事、高级管理人员不得有下列行为：（一）侵占公司财产、挪用公司资金； | [[concepts/laws/company-law/company-law-article-181]] |
-| 182 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、监事、高级管理人员，直接或者间接与本公司订立合同或者进行交易，应当就与订立合同或者进行交易有关的事项向董事会或者股东会报告，并按照公司章程的规定经董事会或者股东会决议通过。 | [[concepts/laws/company-law/company-law-article-182]] |
-| 183 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、监事、高级管理人员，不得利用职务便利为自己或者他人谋取属于公司的商业机会。 | [[concepts/laws/company-law/company-law-article-183]] |
-| 184 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、监事、高级管理人员未向董事会或者股东会报告，并按照公司章程的规定经董事会或者股东会决议通过，不得自营或者为他人经营与其任职公司同类的业务。 | [[concepts/laws/company-law/company-law-article-184]] |
-| 185 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事会对本法第一百八十二条至第一百八十四条规定的事项决议时，关联董事不得参与表决，其表决权不计入表决权总数。 | [[concepts/laws/company-law/company-law-article-185]] |
-| 186 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、监事、高级管理人员违反本法第一百八十一条至第一百八十四条规定所得的收入应当归公司所有。 | [[concepts/laws/company-law/company-law-article-186]] |
-| 187 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 股东会要求董事、监事、高级管理人员列席会议的，董事、监事、高级管理人员应当列席并接受股东的质询。 | [[concepts/laws/company-law/company-law-article-187]] |
-| 188 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、监事、高级管理人员执行职务违反法律、行政法规或者公司章程的规定，给公司造成损失的，应当承担赔偿责任。 | [[concepts/laws/company-law/company-law-article-188]] |
-| 189 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、高级管理人员有前条规定的情形的，有限责任公司的股东、股份有限公司连续一百八十日以上单独或者合计持有公司百分之一以上股份的股东，可以书面请求监事会向人民法院提起诉讼；监事有前条规定的情形的，前述股东可以书面请求董事会向人民法院提起诉讼。 | [[concepts/laws/company-law/company-law-article-189]] |
-| 190 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、高级管理人员违反法律、行政法规或者公司章程的规定，损害股东利益的，股东可以向人民法院提起诉讼。 | [[concepts/laws/company-law/company-law-article-190]] |
-| 191 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、高级管理人员执行职务，给他人造成损害的，公司应当承担赔偿责任；董事、高级管理人员存在故意或者重大过失的，也应当承担赔偿责任。 | [[concepts/laws/company-law/company-law-article-191]] |
-| 192 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 公司的控股股东、实际控制人指示董事、高级管理人员从事损害公司或者股东利益的行为的，与该董事、高级管理人员承担连带责任。 | [[concepts/laws/company-law/company-law-article-192]] |
-| 193 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 公司可以在董事任职期间为董事因执行公司职务承担的赔偿责任投保责任保险。 | [[concepts/laws/company-law/company-law-article-193]] |
-| 194 | 第九章　公司债券 | 本法所称公司债券，是指公司发行的约定按期还本付息的有价证券。 | [[concepts/laws/company-law/company-law-article-194]] |
-| 195 | 第九章　公司债券 | 公开发行公司债券，应当经国务院证券监督管理机构注册，公告公司债券募集办法。 | [[concepts/laws/company-law/company-law-article-195]] |
-| 196 | 第九章　公司债券 | 公司以纸面形式发行公司债券的，应当在债券上载明公司名称、债券票面金额、利率、偿还期限等事项，并由法定代表人签名，公司盖章。 | [[concepts/laws/company-law/company-law-article-196]] |
-| 197 | 第九章　公司债券 | 公司债券应当为记名债券。 | [[concepts/laws/company-law/company-law-article-197]] |
-| 198 | 第九章　公司债券 | 公司发行公司债券应当置备公司债券持有人名册。 | [[concepts/laws/company-law/company-law-article-198]] |
-| 199 | 第九章　公司债券 | 公司债券的登记结算机构应当建立债券登记、存管、付息、兑付等相关制度。 | [[concepts/laws/company-law/company-law-article-199]] |
-| 200 | 第九章　公司债券 | 公司债券可以转让，转让价格由转让人与受让人约定。 | [[concepts/laws/company-law/company-law-article-200]] |
-| 201 | 第九章　公司债券 | 公司债券由债券持有人以背书方式或者法律、行政法规规定的其他方式转让；转让后由公司将受让人的姓名或者名称及住所记载于公司债券持有人名册。 | [[concepts/laws/company-law/company-law-article-201]] |
-| 202 | 第九章　公司债券 | 股份有限公司经股东会决议，或者经公司章程、股东会授权由董事会决议，可以发行可转换为股票的公司债券，并规定具体的转换办法。 | [[concepts/laws/company-law/company-law-article-202]] |
-| 203 | 第九章　公司债券 | 发行可转换为股票的公司债券的，公司应当按照其转换办法向债券持有人换发股票，但债券持有人对转换股票或者不转换股票有选择权。 | [[concepts/laws/company-law/company-law-article-203]] |
-| 204 | 第九章　公司债券 | 公开发行公司债券的，应当为同期债券持有人设立债券持有人会议，并在债券募集办法中对债券持有人会议的召集程序、会议规则和其他重要事项作出规定。 | [[concepts/laws/company-law/company-law-article-204]] |
-| 205 | 第九章　公司债券 | 公开发行公司债券的，发行人应当为债券持有人聘请债券受托管理人，由其为债券持有人办理受领清偿、债权保全、与债券相关的诉讼以及参与债务人破产程序等事项。 | [[concepts/laws/company-law/company-law-article-205]] |
-| 206 | 第九章　公司债券 | 债券受托管理人应当勤勉尽责，公正履行受托管理职责，不得损害债券持有人利益。 | [[concepts/laws/company-law/company-law-article-206]] |
-| 207 | 第十章　公司财务、会计 | 公司应当依照法律、行政法规和国务院财政部门的规定建立本公司的财务、会计制度。 | [[concepts/laws/company-law/company-law-article-207]] |
-| 208 | 第十章　公司财务、会计 | 公司应当在每一会计年度终了时编制财务会计报告，并依法经会计师事务所审计。 | [[concepts/laws/company-law/company-law-article-208]] |
-| 209 | 第十章　公司财务、会计 | 有限责任公司应当按照公司章程规定的期限将财务会计报告送交各股东。 | [[concepts/laws/company-law/company-law-article-209]] |
-| 210 | 第十章　公司财务、会计 | 公司分配当年税后利润时，应当提取利润的百分之十列入公司法定公积金。 | [[concepts/laws/company-law/company-law-article-210]] |
-| 211 | 第十章　公司财务、会计 | 公司违反本法规定向股东分配利润的，股东应当将违反规定分配的利润退还公司；给公司造成损失的，股东及负有责任的董事、监事、高级管理人员应当承担赔偿责任。 | [[concepts/laws/company-law/company-law-article-211]] |
-| 212 | 第十章　公司财务、会计 | 股东会作出分配利润的决议的，董事会应当在股东会决议作出之日起六个月内进行分配。 | [[concepts/laws/company-law/company-law-article-212]] |
-| 213 | 第十章　公司财务、会计 | 公司以超过股票票面金额的发行价格发行股份所得的溢价款、发行无面额股所得股款未计入注册资本的金额以及国务院财政部门规定列入资本公积金的其他项目，应当列为公司资本公积金。 | [[concepts/laws/company-law/company-law-article-213]] |
-| 214 | 第十章　公司财务、会计 | 公司的公积金用于弥补公司的亏损、扩大公司生产经营或者转为增加公司注册资本。 | [[concepts/laws/company-law/company-law-article-214]] |
-| 215 | 第十章　公司财务、会计 | 公司聘用、解聘承办公司审计业务的会计师事务所，按照公司章程的规定，由股东会、董事会或者监事会决定。 | [[concepts/laws/company-law/company-law-article-215]] |
-| 216 | 第十章　公司财务、会计 | 公司应当向聘用的会计师事务所提供真实、完整的会计凭证、会计账簿、财务会计报告及其他会计资料，不得拒绝、隐匿、谎报。 | [[concepts/laws/company-law/company-law-article-216]] |
-| 217 | 第十章　公司财务、会计 | 公司除法定的会计账簿外，不得另立会计账簿。 | [[concepts/laws/company-law/company-law-article-217]] |
-| 218 | 第十一章　公司合并、分立、增资、减资 | 公司合并可以采取吸收合并或者新设合并。 | [[concepts/laws/company-law/company-law-article-218]] |
-| 219 | 第十一章　公司合并、分立、增资、减资 | 公司与其持股百分之九十以上的公司合并，被合并的公司不需经股东会决议，但应当通知其他股东，其他股东有权请求公司按照合理的价格收购其股权或者股份。 | [[concepts/laws/company-law/company-law-article-219]] |
-| 220 | 第十一章　公司合并、分立、增资、减资 | 公司合并，应当由合并各方签订合并协议，并编制资产负债表及财产清单。 | [[concepts/laws/company-law/company-law-article-220]] |
-| 221 | 第十一章　公司合并、分立、增资、减资 | 公司合并时，合并各方的债权、债务，应当由合并后存续的公司或者新设的公司承继。 | [[concepts/laws/company-law/company-law-article-221]] |
-| 222 | 第十一章　公司合并、分立、增资、减资 | 公司分立，其财产作相应的分割。 | [[concepts/laws/company-law/company-law-article-222]] |
-| 223 | 第十一章　公司合并、分立、增资、减资 | 公司分立前的债务由分立后的公司承担连带责任。 | [[concepts/laws/company-law/company-law-article-223]] |
-| 224 | 第十一章　公司合并、分立、增资、减资 | 公司减少注册资本，应当编制资产负债表及财产清单。 | [[concepts/laws/company-law/company-law-article-224]] |
-| 225 | 第十一章　公司合并、分立、增资、减资 | 公司依照本法第二百一十四条第二款的规定弥补亏损后，仍有亏损的，可以减少注册资本弥补亏损。 | [[concepts/laws/company-law/company-law-article-225]] |
-| 226 | 第十一章　公司合并、分立、增资、减资 | 违反本法规定减少注册资本的，股东应当退还其收到的资金，减免股东出资的应当恢复原状；给公司造成损失的，股东及负有责任的董事、监事、高级管理人员应当承担赔偿责任。 | [[concepts/laws/company-law/company-law-article-226]] |
-| 227 | 第十一章　公司合并、分立、增资、减资 | 有限责任公司增加注册资本时，股东在同等条件下有权优先按照实缴的出资比例认缴出资。 | [[concepts/laws/company-law/company-law-article-227]] |
-| 228 | 第十一章　公司合并、分立、增资、减资 | 有限责任公司增加注册资本时，股东认缴新增资本的出资，依照本法设立有限责任公司缴纳出资的有关规定执行。 | [[concepts/laws/company-law/company-law-article-228]] |
-| 229 | 第十二章　公司解散和清算 | 公司因下列原因解散：（一）公司章程规定的营业期限届满或者公司章程规定的其他解散事由出现； | [[concepts/laws/company-law/company-law-article-229]] |
-| 230 | 第十二章　公司解散和清算 | 公司有前条第一款第一项、第二项情形，且尚未向股东分配财产的，可以通过修改公司章程或者经股东会决议而存续。 | [[concepts/laws/company-law/company-law-article-230]] |
-| 231 | 第十二章　公司解散和清算 | 公司经营管理发生严重困难，继续存续会使股东利益受到重大损失，通过其他途径不能解决的，持有公司百分之十以上表决权的股东，可以请求人民法院解散公司。 | [[concepts/laws/company-law/company-law-article-231]] |
-| 232 | 第十二章　公司解散和清算 | 公司因本法第二百二十九条第一款第一项、第二项、第四项、第五项规定而解散的，应当清算。 | [[concepts/laws/company-law/company-law-article-232]] |
-| 233 | 第十二章　公司解散和清算 | 公司依照前条第一款的规定应当清算，逾期不成立清算组进行清算或者成立清算组后不清算的，利害关系人可以申请人民法院指定有关人员组成清算组进行清算。 | [[concepts/laws/company-law/company-law-article-233]] |
-| 234 | 第十二章　公司解散和清算 | 清算组在清算期间行使下列职权：（一）清理公司财产，分别编制资产负债表和财产清单； | [[concepts/laws/company-law/company-law-article-234]] |
-| 235 | 第十二章　公司解散和清算 | 清算组应当自成立之日起十日内通知债权人，并于六十日内在报纸上或者国家企业信用信息公示系统公告。 | [[concepts/laws/company-law/company-law-article-235]] |
-| 236 | 第十二章　公司解散和清算 | 清算组在清理公司财产、编制资产负债表和财产清单后，应当制订清算方案，并报股东会或者人民法院确认。 | [[concepts/laws/company-law/company-law-article-236]] |
-| 237 | 第十二章　公司解散和清算 | 清算组在清理公司财产、编制资产负债表和财产清单后，发现公司财产不足清偿债务的，应当依法向人民法院申请破产清算。 | [[concepts/laws/company-law/company-law-article-237]] |
-| 238 | 第十二章　公司解散和清算 | 清算组成员履行清算职责，负有忠实义务和勤勉义务。 | [[concepts/laws/company-law/company-law-article-238]] |
-| 239 | 第十二章　公司解散和清算 | 公司清算结束后，清算组应当制作清算报告，报股东会或者人民法院确认，并报送公司登记机关，申请注销公司登记。 | [[concepts/laws/company-law/company-law-article-239]] |
-| 240 | 第十二章　公司解散和清算 | 公司在存续期间未产生债务，或者已清偿全部债务的，经全体股东承诺，可以按照规定通过简易程序注销公司登记。 | [[concepts/laws/company-law/company-law-article-240]] |
-| 241 | 第十二章　公司解散和清算 | 公司被吊销营业执照、责令关闭或者被撤销，满三年未向公司登记机关申请注销公司登记的，公司登记机关可以通过国家企业信用信息公示系统予以公告，公告期限不少于六十日。 | [[concepts/laws/company-law/company-law-article-241]] |
-| 242 | 第十二章　公司解散和清算 | 公司被依法宣告破产的，依照有关企业破产的法律实施破产清算。 | [[concepts/laws/company-law/company-law-article-242]] |
-| 243 | 第十三章　外国公司的分支机构 | 本法所称外国公司，是指依照外国法律在中华人民共和国境外设立的公司。 | [[concepts/laws/company-law/company-law-article-243]] |
-| 244 | 第十三章　外国公司的分支机构 | 外国公司在中华人民共和国境内设立分支机构，应当向中国主管机关提出申请，并提交其公司章程、所属国的公司登记证书等有关文件，经批准后，向公司登记机关依法办理登记，领取营业执照。 | [[concepts/laws/company-law/company-law-article-244]] |
-| 245 | 第十三章　外国公司的分支机构 | 外国公司在中华人民共和国境内设立分支机构，应当在中华人民共和国境内指定负责该分支机构的代表人或者代理人，并向该分支机构拨付与其所从事的经营活动相适应的资金。 | [[concepts/laws/company-law/company-law-article-245]] |
-| 246 | 第十三章　外国公司的分支机构 | 外国公司的分支机构应当在其名称中标明该外国公司的国籍及责任形式。 | [[concepts/laws/company-law/company-law-article-246]] |
-| 247 | 第十三章　外国公司的分支机构 | 外国公司在中华人民共和国境内设立的分支机构不具有中国法人资格。 | [[concepts/laws/company-law/company-law-article-247]] |
-| 248 | 第十三章　外国公司的分支机构 | 经批准设立的外国公司分支机构，在中华人民共和国境内从事业务活动，应当遵守中国的法律，不得损害中国的社会公共利益，其合法权益受中国法律保护。 | [[concepts/laws/company-law/company-law-article-248]] |
-| 249 | 第十三章　外国公司的分支机构 | 外国公司撤销其在中华人民共和国境内的分支机构时，应当依法清偿债务，依照本法有关公司清算程序的规定进行清算。 | [[concepts/laws/company-law/company-law-article-249]] |
-| 250 | 第十四章　法律责任 | 违反本法规定，虚报注册资本、提交虚假材料或者采取其他欺诈手段隐瞒重要事实取得公司登记的，由公司登记机关责令改正，对虚报注册资本的公司，处以虚报注册资本金额百分之五以上百分之十五以下的罚款； | [[concepts/laws/company-law/company-law-article-250]] |
-| 251 | 第十四章　法律责任 | 公司未依照本法第四十条规定公示有关信息或者不如实公示有关信息的，由公司登记机关责令改正，可以处以一万元以上五万元以下的罚款。 | [[concepts/laws/company-law/company-law-article-251]] |
-| 252 | 第十四章　法律责任 | 公司的发起人、股东虚假出资，未交付或者未按期交付作为出资的货币或者非货币财产的，由公司登记机关责令改正，可以处以五万元以上二十万元以下的罚款； | [[concepts/laws/company-law/company-law-article-252]] |
-| 253 | 第十四章　法律责任 | 公司的发起人、股东在公司成立后，抽逃其出资的，由公司登记机关责令改正，处以所抽逃出资金额百分之五以上百分之十五以下的罚款；对直接负责的主管人员和其他直接责任人员处以三万元以上三十万元以下的罚款。 | [[concepts/laws/company-law/company-law-article-253]] |
-| 254 | 第十四章　法律责任 | 有下列行为之一的，由县级以上人民政府财政部门依照《中华人民共和国会计法》等法律、行政法规的规定处罚：（一）在法定的会计账簿以外另立会计账簿；（二）提供存在虚假记载或者隐瞒重要事实的财务会计报告。 | [[concepts/laws/company-law/company-law-article-254]] |
-| 255 | 第十四章　法律责任 | 公司在合并、分立、减少注册资本或者进行清算时，不依照本法规定通知或者公告债权人的，由公司登记机关责令改正，对公司处以一万元以上十万元以下的罚款。 | [[concepts/laws/company-law/company-law-article-255]] |
-| 256 | 第十四章　法律责任 | 公司在进行清算时，隐匿财产，对资产负债表或者财产清单作虚假记载，或者在未清偿债务前分配公司财产的，由公司登记机关责令改正，对公司处以隐匿财产或者未清偿债务前分配公司财产金额百分之五以上百分之十以下的罚款； | [[concepts/laws/company-law/company-law-article-256]] |
-| 257 | 第十四章　法律责任 | 承担资产评估、验资或者验证的机构提供虚假材料或者提供有重大遗漏的报告的，由有关部门依照《中华人民共和国资产评估法》、《中华人民共和国注册会计师法》等法律、行政法规的规定处罚。 | [[concepts/laws/company-law/company-law-article-257]] |
-| 258 | 第十四章　法律责任 | 公司登记机关违反法律、行政法规规定未履行职责或者履行职责不当的，对负有责任的领导人员和直接责任人员依法给予政务处分。 | [[concepts/laws/company-law/company-law-article-258]] |
-| 259 | 第十四章　法律责任 | 未依法登记为有限责任公司或者股份有限公司，而冒用有限责任公司或者股份有限公司名义的，或者未依法登记为有限责任公司或者股份有限公司的分公司，而冒用有限责任公司或者股份有限公司的分公司名义的，由公司登记机关责令改正或者予以取缔，可以并处十万元以... | [[concepts/laws/company-law/company-law-article-259]] |
-| 260 | 第十四章　法律责任 | 公司成立后无正当理由超过六个月未开业的，或者开业后自行停业连续六个月以上的，公司登记机关可以吊销营业执照，但公司依法办理歇业的除外。 | [[concepts/laws/company-law/company-law-article-260]] |
-| 261 | 第十四章　法律责任 | 外国公司违反本法规定，擅自在中华人民共和国境内设立分支机构的，由公司登记机关责令改正或者关闭，可以并处五万元以上二十万元以下的罚款。 | [[concepts/laws/company-law/company-law-article-261]] |
-| 262 | 第十四章　法律责任 | 利用公司名义从事危害国家安全、社会公共利益的严重违法行为的，吊销营业执照。 | [[concepts/laws/company-law/company-law-article-262]] |
-| 263 | 第十四章　法律责任 | 公司违反本法规定，应当承担民事赔偿责任和缴纳罚款、罚金的，其财产不足以支付时，先承担民事赔偿责任。 | [[concepts/laws/company-law/company-law-article-263]] |
-| 264 | 第十四章　法律责任 | 违反本法规定，构成犯罪的，依法追究刑事责任。 | [[concepts/laws/company-law/company-law-article-264]] |
-| 265 | 第十五章　附　　则 | 本法下列用语的含义：（一）高级管理人员，是指公司的经理、副经理、财务负责人，上市公司董事会秘书和公司章程规定的其他人员。 | [[concepts/laws/company-law/company-law-article-265]] |
-| 266 | 第十五章　附　　则 | 本法自2024年7月1日起施行。 | [[concepts/laws/company-law/company-law-article-266]] |
+| 1 | 第一章　总　　则 | 为了规范公司的组织和行为，保护公司、股东、职工和债权人的合法权益，完善中国特色现代企业制度，弘扬企业家精神，维护社会经济秩序，促进社会主义市场经济的发展，根据宪法，制定本法。 | [[concepts/laws/company-law/index#article-001|全文索引锚点]] |
+| 2 | 第一章　总　　则 | 本法所称公司，是指依照本法在中华人民共和国境内设立的有限责任公司和股份有限公司。 | [[concepts/laws/company-law/index#article-002|全文索引锚点]] |
+| 3 | 第一章　总　　则 | 公司是企业法人，有独立的法人财产，享有法人财产权。 | [[concepts/laws/company-law/index#article-003|全文索引锚点]] |
+| 4 | 第一章　总　　则 | 有限责任公司的股东以其认缴的出资额为限对公司承担责任；股份有限公司的股东以其认购的股份为限对公司承担责任。 | [[concepts/laws/company-law/index#article-004|全文索引锚点]] |
+| 5 | 第一章　总　　则 | 设立公司应当依法制定公司章程。 | [[concepts/laws/company-law/index#article-005|全文索引锚点]] |
+| 6 | 第一章　总　　则 | 公司应当有自己的名称。 | [[concepts/laws/company-law/index#article-006|全文索引锚点]] |
+| 7 | 第一章　总　　则 | 依照本法设立的有限责任公司，应当在公司名称中标明有限责任公司或者有限公司字样。 | [[concepts/laws/company-law/index#article-007|全文索引锚点]] |
+| 8 | 第一章　总　　则 | 公司以其主要办事机构所在地为住所。 | [[concepts/laws/company-law/index#article-008|全文索引锚点]] |
+| 9 | 第一章　总　　则 | 公司的经营范围由公司章程规定。 | [[concepts/laws/company-law/index#article-009|全文索引锚点]] |
+| 10 | 第一章　总　　则 | 公司的法定代表人按照公司章程的规定，由代表公司执行公司事务的董事或者经理担任。 | [[concepts/laws/company-law/index#article-010|全文索引锚点]] |
+| 11 | 第一章　总　　则 | 法定代表人以公司名义从事的民事活动，其法律后果由公司承受。 | [[concepts/laws/company-law/index#article-011|全文索引锚点]] |
+| 12 | 第一章　总　　则 | 有限责任公司变更为股份有限公司，应当符合本法规定的股份有限公司的条件。 | [[concepts/laws/company-law/index#article-012|全文索引锚点]] |
+| 13 | 第一章　总　　则 | 公司可以设立子公司。 | [[concepts/laws/company-law/index#article-013|全文索引锚点]] |
+| 14 | 第一章　总　　则 | 公司可以向其他企业投资。 | [[concepts/laws/company-law/index#article-014|全文索引锚点]] |
+| 15 | 第一章　总　　则 | 公司向其他企业投资或者为他人提供担保，按照公司章程的规定，由董事会或者股东会决议；公司章程对投资或者担保的总额及单项投资或者担保的数额有限额规定的，不得超过规定的限额。 | [[concepts/laws/company-law/index#article-015|全文索引锚点]] |
+| 16 | 第一章　总　　则 | 公司应当保护职工的合法权益，依法与职工签订劳动合同，参加社会保险，加强劳动保护，实现安全生产。 | [[concepts/laws/company-law/index#article-016|全文索引锚点]] |
+| 17 | 第一章　总　　则 | 公司职工依照《中华人民共和国工会法》组织工会，开展工会活动，维护职工合法权益。 | [[concepts/laws/company-law/index#article-017|全文索引锚点]] |
+| 18 | 第一章　总　　则 | 在公司中，根据中国共产党章程的规定，设立中国共产党的组织，开展党的活动。 | [[concepts/laws/company-law/index#article-018|全文索引锚点]] |
+| 19 | 第一章　总　　则 | 公司从事经营活动，应当遵守法律法规，遵守社会公德、商业道德，诚实守信，接受政府和社会公众的监督。 | [[concepts/laws/company-law/index#article-019|全文索引锚点]] |
+| 20 | 第一章　总　　则 | 公司从事经营活动，应当充分考虑公司职工、消费者等利益相关者的利益以及生态环境保护等社会公共利益，承担社会责任。 | [[concepts/laws/company-law/index#article-020|全文索引锚点]] |
+| 21 | 第一章　总　　则 | 公司股东应当遵守法律、行政法规和公司章程，依法行使股东权利，不得滥用股东权利损害公司或者其他股东的利益。 | [[concepts/laws/company-law/index#article-021|全文索引锚点]] |
+| 22 | 第一章　总　　则 | 公司的控股股东、实际控制人、董事、监事、高级管理人员不得利用关联关系损害公司利益。 | [[concepts/laws/company-law/index#article-022|全文索引锚点]] |
+| 23 | 第一章　总　　则 | 公司股东滥用公司法人独立地位和股东有限责任，逃避债务，严重损害公司债权人利益的，应当对公司债务承担连带责任。 | [[concepts/laws/company-law/index#article-023|全文索引锚点]] |
+| 24 | 第一章　总　　则 | 公司股东会、董事会、监事会召开会议和表决可以采用电子通信方式，公司章程另有规定的除外。 | [[concepts/laws/company-law/index#article-024|全文索引锚点]] |
+| 25 | 第一章　总　　则 | 公司股东会、董事会的决议内容违反法律、行政法规的无效。 | [[concepts/laws/company-law/index#article-025|全文索引锚点]] |
+| 26 | 第一章　总　　则 | 公司股东会、董事会的会议召集程序、表决方式违反法律、行政法规或者公司章程，或者决议内容违反公司章程的，股东自决议作出之日起六十日内，可以请求人民法院撤销。 | [[concepts/laws/company-law/index#article-026|全文索引锚点]] |
+| 27 | 第一章　总　　则 | 有下列情形之一的，公司股东会、董事会的决议不成立：（一）未召开股东会、董事会会议作出决议； | [[concepts/laws/company-law/index#article-027|全文索引锚点]] |
+| 28 | 第一章　总　　则 | 公司股东会、董事会决议被人民法院宣告无效、撤销或者确认不成立的，公司应当向公司登记机关申请撤销根据该决议已办理的登记。 | [[concepts/laws/company-law/index#article-028|全文索引锚点]] |
+| 29 | 第二章　公司登记 | 设立公司，应当依法向公司登记机关申请设立登记。 | [[concepts/laws/company-law/index#article-029|全文索引锚点]] |
+| 30 | 第二章　公司登记 | 申请设立公司，应当提交设立登记申请书、公司章程等文件，提交的相关材料应当真实、合法和有效。 | [[concepts/laws/company-law/index#article-030|全文索引锚点]] |
+| 31 | 第二章　公司登记 | 申请设立公司，符合本法规定的设立条件的，由公司登记机关分别登记为有限责任公司或者股份有限公司；不符合本法规定的设立条件的，不得登记为有限责任公司或者股份有限公司。 | [[concepts/laws/company-law/index#article-031|全文索引锚点]] |
+| 32 | 第二章　公司登记 | 公司登记事项包括：（一）名称；（二）住所；（三）注册资本；（四）经营范围；（五）法定代表人的姓名；（六）有限责任公司股东、股份有限公司发起人的姓名或者名称。 | [[concepts/laws/company-law/index#article-032|全文索引锚点]] |
+| 33 | 第二章　公司登记 | 依法设立的公司，由公司登记机关发给公司营业执照。 | [[concepts/laws/company-law/index#article-033|全文索引锚点]] |
+| 34 | 第二章　公司登记 | 公司登记事项发生变更的，应当依法办理变更登记。 | [[concepts/laws/company-law/index#article-034|全文索引锚点]] |
+| 35 | 第二章　公司登记 | 公司申请变更登记，应当向公司登记机关提交公司法定代表人签署的变更登记申请书、依法作出的变更决议或者决定等文件。 | [[concepts/laws/company-law/index#article-035|全文索引锚点]] |
+| 36 | 第二章　公司登记 | 公司营业执照记载的事项发生变更的，公司办理变更登记后，由公司登记机关换发营业执照。 | [[concepts/laws/company-law/index#article-036|全文索引锚点]] |
+| 37 | 第二章　公司登记 | 公司因解散、被宣告破产或者其他法定事由需要终止的，应当依法向公司登记机关申请注销登记，由公司登记机关公告公司终止。 | [[concepts/laws/company-law/index#article-037|全文索引锚点]] |
+| 38 | 第二章　公司登记 | 公司设立分公司，应当向公司登记机关申请登记，领取营业执照。 | [[concepts/laws/company-law/index#article-038|全文索引锚点]] |
+| 39 | 第二章　公司登记 | 虚报注册资本、提交虚假材料或者采取其他欺诈手段隐瞒重要事实取得公司设立登记的，公司登记机关应当依照法律、行政法规的规定予以撤销。 | [[concepts/laws/company-law/index#article-039|全文索引锚点]] |
+| 40 | 第二章　公司登记 | 公司应当按照规定通过国家企业信用信息公示系统公示下列事项：（一）有限责任公司股东认缴和实缴的出资额、出资方式和出资日期，股份有限公司发起人认购的股份数； | [[concepts/laws/company-law/index#article-040|全文索引锚点]] |
+| 41 | 第二章　公司登记 | 公司登记机关应当优化公司登记办理流程，提高公司登记效率，加强信息化建设，推行网上办理等便捷方式，提升公司登记便利化水平。 | [[concepts/laws/company-law/index#article-041|全文索引锚点]] |
+| 42 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司由一个以上五十个以下股东出资设立。 | [[concepts/laws/company-law/index#article-042|全文索引锚点]] |
+| 43 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司设立时的股东可以签订设立协议，明确各自在公司设立过程中的权利和义务。 | [[concepts/laws/company-law/index#article-043|全文索引锚点]] |
+| 44 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司设立时的股东为设立公司从事的民事活动，其法律后果由公司承受。 | [[concepts/laws/company-law/index#article-044|全文索引锚点]] |
+| 45 | 第三章　有限责任公司的设立和组织机构 | 设立有限责任公司，应当由股东共同制定公司章程。 | [[concepts/laws/company-law/index#article-045|全文索引锚点]] |
+| 46 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司章程应当载明下列事项：（一）公司名称和住所； | [[concepts/laws/company-law/index#article-046|全文索引锚点]] |
+| 47 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司的注册资本为在公司登记机关登记的全体股东认缴的出资额。 | [[concepts/laws/company-law/index#article-047|全文索引锚点]] |
+| 48 | 第三章　有限责任公司的设立和组织机构 | 股东可以用货币出资，也可以用实物、知识产权、土地使用权、股权、债权等可以用货币估价并可以依法转让的非货币财产作价出资；但是，法律、行政法规规定不得作为出资的财产除外。 | [[concepts/laws/company-law/index#article-048|全文索引锚点]] |
+| 49 | 第三章　有限责任公司的设立和组织机构 | 股东应当按期足额缴纳公司章程规定的各自所认缴的出资额。 | [[concepts/laws/company-law/index#article-049|全文索引锚点]] |
+| 50 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司设立时，股东未按照公司章程规定实际缴纳出资，或者实际出资的非货币财产的实际价额显著低于所认缴的出资额的，设立时的其他股东与该股东在出资不足的范围内承担连带责任。 | [[concepts/laws/company-law/index#article-050|全文索引锚点]] |
+| 51 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司成立后，董事会应当对股东的出资情况进行核查，发现股东未按期足额缴纳公司章程规定的出资的，应当由公司向该股东发出书面催缴书，催缴出资。 | [[concepts/laws/company-law/index#article-051|全文索引锚点]] |
+| 52 | 第三章　有限责任公司的设立和组织机构 | 股东未按照公司章程规定的出资日期缴纳出资，公司依照前条第一款规定发出书面催缴书催缴出资的，可以载明缴纳出资的宽限期；宽限期自公司发出催缴书之日起，不得少于六十日。 | [[concepts/laws/company-law/index#article-052|全文索引锚点]] |
+| 53 | 第三章　有限责任公司的设立和组织机构 | 公司成立后，股东不得抽逃出资。 | [[concepts/laws/company-law/index#article-053|全文索引锚点]] |
+| 54 | 第三章　有限责任公司的设立和组织机构 | 公司不能清偿到期债务的，公司或者已到期债权的债权人有权要求已认缴出资但未届出资期限的股东提前缴纳出资。 | [[concepts/laws/company-law/index#article-054|全文索引锚点]] |
+| 55 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司成立后，应当向股东签发出资证明书，记载下列事项：（一）公司名称；（二）公司成立日期；（三）公司注册资本；（四）股东的姓名或者名称、认缴和实缴的出资额、出资方式和出资日期；（五）出资证明书的编号和核发日期。 | [[concepts/laws/company-law/index#article-055|全文索引锚点]] |
+| 56 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司应当置备股东名册，记载下列事项：（一）股东的姓名或者名称及住所；（二）股东认缴和实缴的出资额、出资方式和出资日期；（三）出资证明书编号；（四）取得和丧失股东资格的日期。 | [[concepts/laws/company-law/index#article-056|全文索引锚点]] |
+| 57 | 第三章　有限责任公司的设立和组织机构 | 股东有权查阅、复制公司章程、股东名册、股东会会议记录、董事会会议决议、监事会会议决议和财务会计报告。 | [[concepts/laws/company-law/index#article-057|全文索引锚点]] |
+| 58 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司股东会由全体股东组成。 | [[concepts/laws/company-law/index#article-058|全文索引锚点]] |
+| 59 | 第三章　有限责任公司的设立和组织机构 | 股东会行使下列职权：（一）选举和更换董事、监事，决定有关董事、监事的报酬事项； | [[concepts/laws/company-law/index#article-059|全文索引锚点]] |
+| 60 | 第三章　有限责任公司的设立和组织机构 | 只有一个股东的有限责任公司不设股东会。 | [[concepts/laws/company-law/index#article-060|全文索引锚点]] |
+| 61 | 第三章　有限责任公司的设立和组织机构 | 首次股东会会议由出资最多的股东召集和主持，依照本法规定行使职权。 | [[concepts/laws/company-law/index#article-061|全文索引锚点]] |
+| 62 | 第三章　有限责任公司的设立和组织机构 | 股东会会议分为定期会议和临时会议。 | [[concepts/laws/company-law/index#article-062|全文索引锚点]] |
+| 63 | 第三章　有限责任公司的设立和组织机构 | 股东会会议由董事会召集，董事长主持；董事长不能履行职务或者不履行职务的，由副董事长主持；副董事长不能履行职务或者不履行职务的，由过半数的董事共同推举一名董事主持。 | [[concepts/laws/company-law/index#article-063|全文索引锚点]] |
+| 64 | 第三章　有限责任公司的设立和组织机构 | 召开股东会会议，应当于会议召开十五日前通知全体股东；但是，公司章程另有规定或者全体股东另有约定的除外。 | [[concepts/laws/company-law/index#article-064|全文索引锚点]] |
+| 65 | 第三章　有限责任公司的设立和组织机构 | 股东会会议由股东按照出资比例行使表决权；但是，公司章程另有规定的除外。 | [[concepts/laws/company-law/index#article-065|全文索引锚点]] |
+| 66 | 第三章　有限责任公司的设立和组织机构 | 股东会的议事方式和表决程序，除本法有规定的外，由公司章程规定。 | [[concepts/laws/company-law/index#article-066|全文索引锚点]] |
+| 67 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司设董事会，本法第七十五条另有规定的除外。 | [[concepts/laws/company-law/index#article-067|全文索引锚点]] |
+| 68 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司董事会成员为三人以上，其成员中可以有公司职工代表。 | [[concepts/laws/company-law/index#article-068|全文索引锚点]] |
+| 69 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司可以按照公司章程的规定在董事会中设置由董事组成的审计委员会，行使本法规定的监事会的职权，不设监事会或者监事。 | [[concepts/laws/company-law/index#article-069|全文索引锚点]] |
+| 70 | 第三章　有限责任公司的设立和组织机构 | 董事任期由公司章程规定，但每届任期不得超过三年。 | [[concepts/laws/company-law/index#article-070|全文索引锚点]] |
+| 71 | 第三章　有限责任公司的设立和组织机构 | 股东会可以决议解任董事，决议作出之日解任生效。 | [[concepts/laws/company-law/index#article-071|全文索引锚点]] |
+| 72 | 第三章　有限责任公司的设立和组织机构 | 董事会会议由董事长召集和主持；董事长不能履行职务或者不履行职务的，由副董事长召集和主持；副董事长不能履行职务或者不履行职务的，由过半数的董事共同推举一名董事召集和主持。 | [[concepts/laws/company-law/index#article-072|全文索引锚点]] |
+| 73 | 第三章　有限责任公司的设立和组织机构 | 董事会的议事方式和表决程序，除本法有规定的外，由公司章程规定。 | [[concepts/laws/company-law/index#article-073|全文索引锚点]] |
+| 74 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司可以设经理，由董事会决定聘任或者解聘。 | [[concepts/laws/company-law/index#article-074|全文索引锚点]] |
+| 75 | 第三章　有限责任公司的设立和组织机构 | 规模较小或者股东人数较少的有限责任公司，可以不设董事会，设一名董事，行使本法规定的董事会的职权。 | [[concepts/laws/company-law/index#article-075|全文索引锚点]] |
+| 76 | 第三章　有限责任公司的设立和组织机构 | 有限责任公司设监事会，本法第六十九条、第八十三条另有规定的除外。 | [[concepts/laws/company-law/index#article-076|全文索引锚点]] |
+| 77 | 第三章　有限责任公司的设立和组织机构 | 监事的任期每届为三年。 | [[concepts/laws/company-law/index#article-077|全文索引锚点]] |
+| 78 | 第三章　有限责任公司的设立和组织机构 | 监事会行使下列职权：（一）检查公司财务； | [[concepts/laws/company-law/index#article-078|全文索引锚点]] |
+| 79 | 第三章　有限责任公司的设立和组织机构 | 监事可以列席董事会会议，并对董事会决议事项提出质询或者建议。 | [[concepts/laws/company-law/index#article-079|全文索引锚点]] |
+| 80 | 第三章　有限责任公司的设立和组织机构 | 监事会可以要求董事、高级管理人员提交执行职务的报告。 | [[concepts/laws/company-law/index#article-080|全文索引锚点]] |
+| 81 | 第三章　有限责任公司的设立和组织机构 | 监事会每年度至少召开一次会议，监事可以提议召开临时监事会会议。 | [[concepts/laws/company-law/index#article-081|全文索引锚点]] |
+| 82 | 第三章　有限责任公司的设立和组织机构 | 监事会行使职权所必需的费用，由公司承担。 | [[concepts/laws/company-law/index#article-082|全文索引锚点]] |
+| 83 | 第三章　有限责任公司的设立和组织机构 | 规模较小或者股东人数较少的有限责任公司，可以不设监事会，设一名监事，行使本法规定的监事会的职权；经全体股东一致同意，也可以不设监事。 | [[concepts/laws/company-law/index#article-083|全文索引锚点]] |
+| 84 | 第四章　有限责任公司的股权转让 | 有限责任公司的股东之间可以相互转让其全部或者部分股权。 | [[concepts/laws/company-law/index#article-084|全文索引锚点]] |
+| 85 | 第四章　有限责任公司的股权转让 | 人民法院依照法律规定的强制执行程序转让股东的股权时，应当通知公司及全体股东，其他股东在同等条件下有优先购买权。 | [[concepts/laws/company-law/index#article-085|全文索引锚点]] |
+| 86 | 第四章　有限责任公司的股权转让 | 股东转让股权的，应当书面通知公司，请求变更股东名册；需要办理变更登记的，并请求公司向公司登记机关办理变更登记。 | [[concepts/laws/company-law/index#article-086|全文索引锚点]] |
+| 87 | 第四章　有限责任公司的股权转让 | 依照本法转让股权后，公司应当及时注销原股东的出资证明书，向新股东签发出资证明书，并相应修改公司章程和股东名册中有关股东及其出资额的记载。 | [[concepts/laws/company-law/index#article-087|全文索引锚点]] |
+| 88 | 第四章　有限责任公司的股权转让 | 股东转让已认缴出资但未届出资期限的股权的，由受让人承担缴纳该出资的义务；受让人未按期足额缴纳出资的，转让人对受让人未按期缴纳的出资承担补充责任。 | [[concepts/laws/company-law/index#article-088|全文索引锚点]] |
+| 89 | 第四章　有限责任公司的股权转让 | 有下列情形之一的，对股东会该项决议投反对票的股东可以请求公司按照合理的价格收购其股权：（一）公司连续五年不向股东分配利润，而公司该五年连续盈利，并且符合本法规定的分配利润条件； | [[concepts/laws/company-law/index#article-089|全文索引锚点]] |
+| 90 | 第四章　有限责任公司的股权转让 | 自然人股东死亡后，其合法继承人可以继承股东资格；但是，公司章程另有规定的除外。 | [[concepts/laws/company-law/index#article-090|全文索引锚点]] |
+| 91 | 第五章　股份有限公司的设立和组织机构 | 设立股份有限公司，可以采取发起设立或者募集设立的方式。 | [[concepts/laws/company-law/index#article-091|全文索引锚点]] |
+| 92 | 第五章　股份有限公司的设立和组织机构 | 设立股份有限公司，应当有一人以上二百人以下为发起人，其中应当有半数以上的发起人在中华人民共和国境内有住所。 | [[concepts/laws/company-law/index#article-092|全文索引锚点]] |
+| 93 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司发起人承担公司筹办事务。 | [[concepts/laws/company-law/index#article-093|全文索引锚点]] |
+| 94 | 第五章　股份有限公司的设立和组织机构 | 设立股份有限公司，应当由发起人共同制订公司章程。 | [[concepts/laws/company-law/index#article-094|全文索引锚点]] |
+| 95 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司章程应当载明下列事项：（一）公司名称和住所； | [[concepts/laws/company-law/index#article-095|全文索引锚点]] |
+| 96 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司的注册资本为在公司登记机关登记的已发行股份的股本总额。 | [[concepts/laws/company-law/index#article-096|全文索引锚点]] |
+| 97 | 第五章　股份有限公司的设立和组织机构 | 以发起设立方式设立股份有限公司的，发起人应当认足公司章程规定的公司设立时应发行的股份。 | [[concepts/laws/company-law/index#article-097|全文索引锚点]] |
+| 98 | 第五章　股份有限公司的设立和组织机构 | 发起人应当在公司成立前按照其认购的股份全额缴纳股款。 | [[concepts/laws/company-law/index#article-098|全文索引锚点]] |
+| 99 | 第五章　股份有限公司的设立和组织机构 | 发起人不按照其认购的股份缴纳股款，或者作为出资的非货币财产的实际价额显著低于所认购的股份的，其他发起人与该发起人在出资不足的范围内承担连带责任。 | [[concepts/laws/company-law/index#article-099|全文索引锚点]] |
+| 100 | 第五章　股份有限公司的设立和组织机构 | 发起人向社会公开募集股份，应当公告招股说明书，并制作认股书。 | [[concepts/laws/company-law/index#article-100|全文索引锚点]] |
+| 101 | 第五章　股份有限公司的设立和组织机构 | 向社会公开募集股份的股款缴足后，应当经依法设立的验资机构验资并出具证明。 | [[concepts/laws/company-law/index#article-101|全文索引锚点]] |
+| 102 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司应当制作股东名册并置备于公司。 | [[concepts/laws/company-law/index#article-102|全文索引锚点]] |
+| 103 | 第五章　股份有限公司的设立和组织机构 | 募集设立股份有限公司的发起人应当自公司设立时应发行股份的股款缴足之日起三十日内召开公司成立大会。 | [[concepts/laws/company-law/index#article-103|全文索引锚点]] |
+| 104 | 第五章　股份有限公司的设立和组织机构 | 公司成立大会行使下列职权：（一）审议发起人关于公司筹办情况的报告； | [[concepts/laws/company-law/index#article-104|全文索引锚点]] |
+| 105 | 第五章　股份有限公司的设立和组织机构 | 公司设立时应发行的股份未募足，或者发行股份的股款缴足后，发起人在三十日内未召开成立大会的，认股人可以按照所缴股款并加算银行同期存款利息，要求发起人返还。 | [[concepts/laws/company-law/index#article-105|全文索引锚点]] |
+| 106 | 第五章　股份有限公司的设立和组织机构 | 董事会应当授权代表，于公司成立大会结束后三十日内向公司登记机关申请设立登记。 | [[concepts/laws/company-law/index#article-106|全文索引锚点]] |
+| 107 | 第五章　股份有限公司的设立和组织机构 | 本法第四十四条、第四十九条第三款、第五十一条、第五十二条、第五十三条的规定，适用于股份有限公司。 | [[concepts/laws/company-law/index#article-107|全文索引锚点]] |
+| 108 | 第五章　股份有限公司的设立和组织机构 | 有限责任公司变更为股份有限公司时，折合的实收股本总额不得高于公司净资产额。 | [[concepts/laws/company-law/index#article-108|全文索引锚点]] |
+| 109 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司应当将公司章程、股东名册、股东会会议记录、董事会会议记录、监事会会议记录、财务会计报告、债券持有人名册置备于本公司。 | [[concepts/laws/company-law/index#article-109|全文索引锚点]] |
+| 110 | 第五章　股份有限公司的设立和组织机构 | 股东有权查阅、复制公司章程、股东名册、股东会会议记录、董事会会议决议、监事会会议决议、财务会计报告，对公司的经营提出建议或者质询。 | [[concepts/laws/company-law/index#article-110|全文索引锚点]] |
+| 111 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司股东会由全体股东组成。 | [[concepts/laws/company-law/index#article-111|全文索引锚点]] |
+| 112 | 第五章　股份有限公司的设立和组织机构 | 本法第五十九条第一款、第二款关于有限责任公司股东会职权的规定，适用于股份有限公司股东会。 | [[concepts/laws/company-law/index#article-112|全文索引锚点]] |
+| 113 | 第五章　股份有限公司的设立和组织机构 | 股东会应当每年召开一次年会。 | [[concepts/laws/company-law/index#article-113|全文索引锚点]] |
+| 114 | 第五章　股份有限公司的设立和组织机构 | 股东会会议由董事会召集，董事长主持；董事长不能履行职务或者不履行职务的，由副董事长主持；副董事长不能履行职务或者不履行职务的，由过半数的董事共同推举一名董事主持。 | [[concepts/laws/company-law/index#article-114|全文索引锚点]] |
+| 115 | 第五章　股份有限公司的设立和组织机构 | 召开股东会会议，应当将会议召开的时间、地点和审议的事项于会议召开二十日前通知各股东；临时股东会会议应当于会议召开十五日前通知各股东。 | [[concepts/laws/company-law/index#article-115|全文索引锚点]] |
+| 116 | 第五章　股份有限公司的设立和组织机构 | 股东出席股东会会议，所持每一股份有一表决权，类别股股东除外。 | [[concepts/laws/company-law/index#article-116|全文索引锚点]] |
+| 117 | 第五章　股份有限公司的设立和组织机构 | 股东会选举董事、监事，可以按照公司章程的规定或者股东会的决议，实行累积投票制。 | [[concepts/laws/company-law/index#article-117|全文索引锚点]] |
+| 118 | 第五章　股份有限公司的设立和组织机构 | 股东委托代理人出席股东会会议的，应当明确代理人代理的事项、权限和期限；代理人应当向公司提交股东授权委托书，并在授权范围内行使表决权。 | [[concepts/laws/company-law/index#article-118|全文索引锚点]] |
+| 119 | 第五章　股份有限公司的设立和组织机构 | 股东会应当对所议事项的决定作成会议记录，主持人、出席会议的董事应当在会议记录上签名。 | [[concepts/laws/company-law/index#article-119|全文索引锚点]] |
+| 120 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司设董事会，本法第一百二十八条另有规定的除外。 | [[concepts/laws/company-law/index#article-120|全文索引锚点]] |
+| 121 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司可以按照公司章程的规定在董事会中设置由董事组成的审计委员会，行使本法规定的监事会的职权，不设监事会或者监事。 | [[concepts/laws/company-law/index#article-121|全文索引锚点]] |
+| 122 | 第五章　股份有限公司的设立和组织机构 | 董事会设董事长一人，可以设副董事长。 | [[concepts/laws/company-law/index#article-122|全文索引锚点]] |
+| 123 | 第五章　股份有限公司的设立和组织机构 | 董事会每年度至少召开两次会议，每次会议应当于会议召开十日前通知全体董事和监事。 | [[concepts/laws/company-law/index#article-123|全文索引锚点]] |
+| 124 | 第五章　股份有限公司的设立和组织机构 | 董事会会议应当有过半数的董事出席方可举行。 | [[concepts/laws/company-law/index#article-124|全文索引锚点]] |
+| 125 | 第五章　股份有限公司的设立和组织机构 | 董事会会议，应当由董事本人出席；董事因故不能出席，可以书面委托其他董事代为出席，委托书应当载明授权范围。 | [[concepts/laws/company-law/index#article-125|全文索引锚点]] |
+| 126 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司设经理，由董事会决定聘任或者解聘。 | [[concepts/laws/company-law/index#article-126|全文索引锚点]] |
+| 127 | 第五章　股份有限公司的设立和组织机构 | 公司董事会可以决定由董事会成员兼任经理。 | [[concepts/laws/company-law/index#article-127|全文索引锚点]] |
+| 128 | 第五章　股份有限公司的设立和组织机构 | 规模较小或者股东人数较少的股份有限公司，可以不设董事会，设一名董事，行使本法规定的董事会的职权。 | [[concepts/laws/company-law/index#article-128|全文索引锚点]] |
+| 129 | 第五章　股份有限公司的设立和组织机构 | 公司应当定期向股东披露董事、监事、高级管理人员从公司获得报酬的情况。 | [[concepts/laws/company-law/index#article-129|全文索引锚点]] |
+| 130 | 第五章　股份有限公司的设立和组织机构 | 股份有限公司设监事会，本法第一百二十一条第一款、第一百三十三条另有规定的除外。 | [[concepts/laws/company-law/index#article-130|全文索引锚点]] |
+| 131 | 第五章　股份有限公司的设立和组织机构 | 本法第七十八条至第八十条的规定，适用于股份有限公司监事会。 | [[concepts/laws/company-law/index#article-131|全文索引锚点]] |
+| 132 | 第五章　股份有限公司的设立和组织机构 | 监事会每六个月至少召开一次会议。 | [[concepts/laws/company-law/index#article-132|全文索引锚点]] |
+| 133 | 第五章　股份有限公司的设立和组织机构 | 规模较小或者股东人数较少的股份有限公司，可以不设监事会，设一名监事，行使本法规定的监事会的职权。 | [[concepts/laws/company-law/index#article-133|全文索引锚点]] |
+| 134 | 第五章　股份有限公司的设立和组织机构 | 本法所称上市公司，是指其股票在证券交易所上市交易的股份有限公司。 | [[concepts/laws/company-law/index#article-134|全文索引锚点]] |
+| 135 | 第五章　股份有限公司的设立和组织机构 | 上市公司在一年内购买、出售重大资产或者向他人提供担保的金额超过公司资产总额百分之三十的，应当由股东会作出决议，并经出席会议的股东所持表决权的三分之二以上通过。 | [[concepts/laws/company-law/index#article-135|全文索引锚点]] |
+| 136 | 第五章　股份有限公司的设立和组织机构 | 上市公司设独立董事，具体管理办法由国务院证券监督管理机构规定。 | [[concepts/laws/company-law/index#article-136|全文索引锚点]] |
+| 137 | 第五章　股份有限公司的设立和组织机构 | 上市公司在董事会中设置审计委员会的，董事会对下列事项作出决议前应当经审计委员会全体成员过半数通过：（一）聘用、解聘承办公司审计业务的会计师事务所； | [[concepts/laws/company-law/index#article-137|全文索引锚点]] |
+| 138 | 第五章　股份有限公司的设立和组织机构 | 上市公司设董事会秘书，负责公司股东会和董事会会议的筹备、文件保管以及公司股东资料的管理，办理信息披露事务等事宜。 | [[concepts/laws/company-law/index#article-138|全文索引锚点]] |
+| 139 | 第五章　股份有限公司的设立和组织机构 | 上市公司董事与董事会会议决议事项所涉及的企业或者个人有关联关系的，该董事应当及时向董事会书面报告。 | [[concepts/laws/company-law/index#article-139|全文索引锚点]] |
+| 140 | 第五章　股份有限公司的设立和组织机构 | 上市公司应当依法披露股东、实际控制人的信息，相关信息应当真实、准确、完整。 | [[concepts/laws/company-law/index#article-140|全文索引锚点]] |
+| 141 | 第五章　股份有限公司的设立和组织机构 | 上市公司控股子公司不得取得该上市公司的股份。 | [[concepts/laws/company-law/index#article-141|全文索引锚点]] |
+| 142 | 第六章　股份有限公司的股份发行和转让 | 公司的资本划分为股份。 | [[concepts/laws/company-law/index#article-142|全文索引锚点]] |
+| 143 | 第六章　股份有限公司的股份发行和转让 | 股份的发行，实行公平、公正的原则，同类别的每一股份应当具有同等权利。 | [[concepts/laws/company-law/index#article-143|全文索引锚点]] |
+| 144 | 第六章　股份有限公司的股份发行和转让 | 公司可以按照公司章程的规定发行下列与普通股权利不同的类别股：（一）优先或者劣后分配利润或者剩余财产的股份；（二）每一股的表决权数多于或者少于普通股的股份；（三）转让须经公司同意等转让受限的股份；（四）国务院规定的其他类别股。 | [[concepts/laws/company-law/index#article-144|全文索引锚点]] |
+| 145 | 第六章　股份有限公司的股份发行和转让 | 发行类别股的公司，应当在公司章程中载明以下事项：（一）类别股分配利润或者剩余财产的顺序；（二）类别股的表决权数；（三）类别股的转让限制；（四）保护中小股东权益的措施；（五）股东会认为需要规定的其他事项。 | [[concepts/laws/company-law/index#article-145|全文索引锚点]] |
+| 146 | 第六章　股份有限公司的股份发行和转让 | 发行类别股的公司，有本法第一百一十六条第三款规定的事项等可能影响类别股股东权利的，除应当依照第一百一十六条第三款的规定经股东会决议外，还应当经出席类别股股东会议的股东所持表决权的三分之二以上通过。 | [[concepts/laws/company-law/index#article-146|全文索引锚点]] |
+| 147 | 第六章　股份有限公司的股份发行和转让 | 公司的股份采取股票的形式。 | [[concepts/laws/company-law/index#article-147|全文索引锚点]] |
+| 148 | 第六章　股份有限公司的股份发行和转让 | 面额股股票的发行价格可以按票面金额，也可以超过票面金额，但不得低于票面金额。 | [[concepts/laws/company-law/index#article-148|全文索引锚点]] |
+| 149 | 第六章　股份有限公司的股份发行和转让 | 股票采用纸面形式或者国务院证券监督管理机构规定的其他形式。 | [[concepts/laws/company-law/index#article-149|全文索引锚点]] |
+| 150 | 第六章　股份有限公司的股份发行和转让 | 股份有限公司成立后，即向股东正式交付股票。 | [[concepts/laws/company-law/index#article-150|全文索引锚点]] |
+| 151 | 第六章　股份有限公司的股份发行和转让 | 公司发行新股，股东会应当对下列事项作出决议：（一）新股种类及数额；（二）新股发行价格；（三）新股发行的起止日期；（四）向原有股东发行新股的种类及数额；（五）发行无面额股的，新股发行所得股款计入注册资本的金额。 | [[concepts/laws/company-law/index#article-151|全文索引锚点]] |
+| 152 | 第六章　股份有限公司的股份发行和转让 | 公司章程或者股东会可以授权董事会在三年内决定发行不超过已发行股份百分之五十的股份。 | [[concepts/laws/company-law/index#article-152|全文索引锚点]] |
+| 153 | 第六章　股份有限公司的股份发行和转让 | 公司章程或者股东会授权董事会决定发行新股的，董事会决议应当经全体董事三分之二以上通过。 | [[concepts/laws/company-law/index#article-153|全文索引锚点]] |
+| 154 | 第六章　股份有限公司的股份发行和转让 | 公司向社会公开募集股份，应当经国务院证券监督管理机构注册，公告招股说明书。 | [[concepts/laws/company-law/index#article-154|全文索引锚点]] |
+| 155 | 第六章　股份有限公司的股份发行和转让 | 公司向社会公开募集股份，应当由依法设立的证券公司承销，签订承销协议。 | [[concepts/laws/company-law/index#article-155|全文索引锚点]] |
+| 156 | 第六章　股份有限公司的股份发行和转让 | 公司向社会公开募集股份，应当同银行签订代收股款协议。 | [[concepts/laws/company-law/index#article-156|全文索引锚点]] |
+| 157 | 第六章　股份有限公司的股份发行和转让 | 股份有限公司的股东持有的股份可以向其他股东转让，也可以向股东以外的人转让；公司章程对股份转让有限制的，其转让按照公司章程的规定进行。 | [[concepts/laws/company-law/index#article-157|全文索引锚点]] |
+| 158 | 第六章　股份有限公司的股份发行和转让 | 股东转让其股份，应当在依法设立的证券交易场所进行或者按照国务院规定的其他方式进行。 | [[concepts/laws/company-law/index#article-158|全文索引锚点]] |
+| 159 | 第六章　股份有限公司的股份发行和转让 | 股票的转让，由股东以背书方式或者法律、行政法规规定的其他方式进行；转让后由公司将受让人的姓名或者名称及住所记载于股东名册。 | [[concepts/laws/company-law/index#article-159|全文索引锚点]] |
+| 160 | 第六章　股份有限公司的股份发行和转让 | 公司公开发行股份前已发行的股份，自公司股票在证券交易所上市交易之日起一年内不得转让。 | [[concepts/laws/company-law/index#article-160|全文索引锚点]] |
+| 161 | 第六章　股份有限公司的股份发行和转让 | 有下列情形之一的，对股东会该项决议投反对票的股东可以请求公司按照合理的价格收购其股份，公开发行股份的公司除外：（一）公司连续五年不向股东分配利润，而公司该五年连续盈利，并且符合本法规定的分配利润条件； | [[concepts/laws/company-law/index#article-161|全文索引锚点]] |
+| 162 | 第六章　股份有限公司的股份发行和转让 | 公司不得收购本公司股份。 | [[concepts/laws/company-law/index#article-162|全文索引锚点]] |
+| 163 | 第六章　股份有限公司的股份发行和转让 | 公司不得为他人取得本公司或者其母公司的股份提供赠与、借款、担保以及其他财务资助，公司实施员工持股计划的除外。 | [[concepts/laws/company-law/index#article-163|全文索引锚点]] |
+| 164 | 第六章　股份有限公司的股份发行和转让 | 股票被盗、遗失或者灭失，股东可以依照《中华人民共和国民事诉讼法》规定的公示催告程序，请求人民法院宣告该股票失效。 | [[concepts/laws/company-law/index#article-164|全文索引锚点]] |
+| 165 | 第六章　股份有限公司的股份发行和转让 | 上市公司的股票，依照有关法律、行政法规及证券交易所交易规则上市交易。 | [[concepts/laws/company-law/index#article-165|全文索引锚点]] |
+| 166 | 第六章　股份有限公司的股份发行和转让 | 上市公司应当依照法律、行政法规的规定披露相关信息。 | [[concepts/laws/company-law/index#article-166|全文索引锚点]] |
+| 167 | 第六章　股份有限公司的股份发行和转让 | 自然人股东死亡后，其合法继承人可以继承股东资格；但是，股份转让受限的股份有限公司的章程另有规定的除外。 | [[concepts/laws/company-law/index#article-167|全文索引锚点]] |
+| 168 | 第七章　国家出资公司组织机构的特别规定 | 国家出资公司的组织机构，适用本章规定；本章没有规定的，适用本法其他规定。 | [[concepts/laws/company-law/index#article-168|全文索引锚点]] |
+| 169 | 第七章　国家出资公司组织机构的特别规定 | 国家出资公司，由国务院或者地方人民政府分别代表国家依法履行出资人职责，享有出资人权益。 | [[concepts/laws/company-law/index#article-169|全文索引锚点]] |
+| 170 | 第七章　国家出资公司组织机构的特别规定 | 国家出资公司中中国共产党的组织，按照中国共产党章程的规定发挥领导作用，研究讨论公司重大经营管理事项，支持公司的组织机构依法行使职权。 | [[concepts/laws/company-law/index#article-170|全文索引锚点]] |
+| 171 | 第七章　国家出资公司组织机构的特别规定 | 国有独资公司章程由履行出资人职责的机构制定。 | [[concepts/laws/company-law/index#article-171|全文索引锚点]] |
+| 172 | 第七章　国家出资公司组织机构的特别规定 | 国有独资公司不设股东会，由履行出资人职责的机构行使股东会职权。 | [[concepts/laws/company-law/index#article-172|全文索引锚点]] |
+| 173 | 第七章　国家出资公司组织机构的特别规定 | 国有独资公司的董事会依照本法规定行使职权。 | [[concepts/laws/company-law/index#article-173|全文索引锚点]] |
+| 174 | 第七章　国家出资公司组织机构的特别规定 | 国有独资公司的经理由董事会聘任或者解聘。 | [[concepts/laws/company-law/index#article-174|全文索引锚点]] |
+| 175 | 第七章　国家出资公司组织机构的特别规定 | 国有独资公司的董事、高级管理人员，未经履行出资人职责的机构同意，不得在其他有限责任公司、股份有限公司或者其他经济组织兼职。 | [[concepts/laws/company-law/index#article-175|全文索引锚点]] |
+| 176 | 第七章　国家出资公司组织机构的特别规定 | 国有独资公司在董事会中设置由董事组成的审计委员会行使本法规定的监事会职权的，不设监事会或者监事。 | [[concepts/laws/company-law/index#article-176|全文索引锚点]] |
+| 177 | 第七章　国家出资公司组织机构的特别规定 | 国家出资公司应当依法建立健全内部监督管理和风险控制制度，加强内部合规管理。 | [[concepts/laws/company-law/index#article-177|全文索引锚点]] |
+| 178 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 有下列情形之一的，不得担任公司的董事、监事、高级管理人员：（一）无民事行为能力或者限制民事行为能力； | [[concepts/laws/company-law/index#article-178|全文索引锚点]] |
+| 179 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、监事、高级管理人员应当遵守法律、行政法规和公司章程。 | [[concepts/laws/company-law/index#article-179|全文索引锚点]] |
+| 180 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、监事、高级管理人员对公司负有忠实义务，应当采取措施避免自身利益与公司利益冲突，不得利用职权牟取不正当利益。 | [[concepts/laws/company-law/index#article-180|全文索引锚点]] |
+| 181 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、监事、高级管理人员不得有下列行为：（一）侵占公司财产、挪用公司资金； | [[concepts/laws/company-law/index#article-181|全文索引锚点]] |
+| 182 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、监事、高级管理人员，直接或者间接与本公司订立合同或者进行交易，应当就与订立合同或者进行交易有关的事项向董事会或者股东会报告，并按照公司章程的规定经董事会或者股东会决议通过。 | [[concepts/laws/company-law/index#article-182|全文索引锚点]] |
+| 183 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、监事、高级管理人员，不得利用职务便利为自己或者他人谋取属于公司的商业机会。 | [[concepts/laws/company-law/index#article-183|全文索引锚点]] |
+| 184 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、监事、高级管理人员未向董事会或者股东会报告，并按照公司章程的规定经董事会或者股东会决议通过，不得自营或者为他人经营与其任职公司同类的业务。 | [[concepts/laws/company-law/index#article-184|全文索引锚点]] |
+| 185 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事会对本法第一百八十二条至第一百八十四条规定的事项决议时，关联董事不得参与表决，其表决权不计入表决权总数。 | [[concepts/laws/company-law/index#article-185|全文索引锚点]] |
+| 186 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、监事、高级管理人员违反本法第一百八十一条至第一百八十四条规定所得的收入应当归公司所有。 | [[concepts/laws/company-law/index#article-186|全文索引锚点]] |
+| 187 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 股东会要求董事、监事、高级管理人员列席会议的，董事、监事、高级管理人员应当列席并接受股东的质询。 | [[concepts/laws/company-law/index#article-187|全文索引锚点]] |
+| 188 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、监事、高级管理人员执行职务违反法律、行政法规或者公司章程的规定，给公司造成损失的，应当承担赔偿责任。 | [[concepts/laws/company-law/index#article-188|全文索引锚点]] |
+| 189 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、高级管理人员有前条规定的情形的，有限责任公司的股东、股份有限公司连续一百八十日以上单独或者合计持有公司百分之一以上股份的股东，可以书面请求监事会向人民法院提起诉讼；监事有前条规定的情形的，前述股东可以书面请求董事会向人民法院提起诉讼。 | [[concepts/laws/company-law/index#article-189|全文索引锚点]] |
+| 190 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、高级管理人员违反法律、行政法规或者公司章程的规定，损害股东利益的，股东可以向人民法院提起诉讼。 | [[concepts/laws/company-law/index#article-190|全文索引锚点]] |
+| 191 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 董事、高级管理人员执行职务，给他人造成损害的，公司应当承担赔偿责任；董事、高级管理人员存在故意或者重大过失的，也应当承担赔偿责任。 | [[concepts/laws/company-law/index#article-191|全文索引锚点]] |
+| 192 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 公司的控股股东、实际控制人指示董事、高级管理人员从事损害公司或者股东利益的行为的，与该董事、高级管理人员承担连带责任。 | [[concepts/laws/company-law/index#article-192|全文索引锚点]] |
+| 193 | 第八章　公司董事、监事、高级管理人员的资格和义务 | 公司可以在董事任职期间为董事因执行公司职务承担的赔偿责任投保责任保险。 | [[concepts/laws/company-law/index#article-193|全文索引锚点]] |
+| 194 | 第九章　公司债券 | 本法所称公司债券，是指公司发行的约定按期还本付息的有价证券。 | [[concepts/laws/company-law/index#article-194|全文索引锚点]] |
+| 195 | 第九章　公司债券 | 公开发行公司债券，应当经国务院证券监督管理机构注册，公告公司债券募集办法。 | [[concepts/laws/company-law/index#article-195|全文索引锚点]] |
+| 196 | 第九章　公司债券 | 公司以纸面形式发行公司债券的，应当在债券上载明公司名称、债券票面金额、利率、偿还期限等事项，并由法定代表人签名，公司盖章。 | [[concepts/laws/company-law/index#article-196|全文索引锚点]] |
+| 197 | 第九章　公司债券 | 公司债券应当为记名债券。 | [[concepts/laws/company-law/index#article-197|全文索引锚点]] |
+| 198 | 第九章　公司债券 | 公司发行公司债券应当置备公司债券持有人名册。 | [[concepts/laws/company-law/index#article-198|全文索引锚点]] |
+| 199 | 第九章　公司债券 | 公司债券的登记结算机构应当建立债券登记、存管、付息、兑付等相关制度。 | [[concepts/laws/company-law/index#article-199|全文索引锚点]] |
+| 200 | 第九章　公司债券 | 公司债券可以转让，转让价格由转让人与受让人约定。 | [[concepts/laws/company-law/index#article-200|全文索引锚点]] |
+| 201 | 第九章　公司债券 | 公司债券由债券持有人以背书方式或者法律、行政法规规定的其他方式转让；转让后由公司将受让人的姓名或者名称及住所记载于公司债券持有人名册。 | [[concepts/laws/company-law/index#article-201|全文索引锚点]] |
+| 202 | 第九章　公司债券 | 股份有限公司经股东会决议，或者经公司章程、股东会授权由董事会决议，可以发行可转换为股票的公司债券，并规定具体的转换办法。 | [[concepts/laws/company-law/index#article-202|全文索引锚点]] |
+| 203 | 第九章　公司债券 | 发行可转换为股票的公司债券的，公司应当按照其转换办法向债券持有人换发股票，但债券持有人对转换股票或者不转换股票有选择权。 | [[concepts/laws/company-law/index#article-203|全文索引锚点]] |
+| 204 | 第九章　公司债券 | 公开发行公司债券的，应当为同期债券持有人设立债券持有人会议，并在债券募集办法中对债券持有人会议的召集程序、会议规则和其他重要事项作出规定。 | [[concepts/laws/company-law/index#article-204|全文索引锚点]] |
+| 205 | 第九章　公司债券 | 公开发行公司债券的，发行人应当为债券持有人聘请债券受托管理人，由其为债券持有人办理受领清偿、债权保全、与债券相关的诉讼以及参与债务人破产程序等事项。 | [[concepts/laws/company-law/index#article-205|全文索引锚点]] |
+| 206 | 第九章　公司债券 | 债券受托管理人应当勤勉尽责，公正履行受托管理职责，不得损害债券持有人利益。 | [[concepts/laws/company-law/index#article-206|全文索引锚点]] |
+| 207 | 第十章　公司财务、会计 | 公司应当依照法律、行政法规和国务院财政部门的规定建立本公司的财务、会计制度。 | [[concepts/laws/company-law/index#article-207|全文索引锚点]] |
+| 208 | 第十章　公司财务、会计 | 公司应当在每一会计年度终了时编制财务会计报告，并依法经会计师事务所审计。 | [[concepts/laws/company-law/index#article-208|全文索引锚点]] |
+| 209 | 第十章　公司财务、会计 | 有限责任公司应当按照公司章程规定的期限将财务会计报告送交各股东。 | [[concepts/laws/company-law/index#article-209|全文索引锚点]] |
+| 210 | 第十章　公司财务、会计 | 公司分配当年税后利润时，应当提取利润的百分之十列入公司法定公积金。 | [[concepts/laws/company-law/index#article-210|全文索引锚点]] |
+| 211 | 第十章　公司财务、会计 | 公司违反本法规定向股东分配利润的，股东应当将违反规定分配的利润退还公司；给公司造成损失的，股东及负有责任的董事、监事、高级管理人员应当承担赔偿责任。 | [[concepts/laws/company-law/index#article-211|全文索引锚点]] |
+| 212 | 第十章　公司财务、会计 | 股东会作出分配利润的决议的，董事会应当在股东会决议作出之日起六个月内进行分配。 | [[concepts/laws/company-law/index#article-212|全文索引锚点]] |
+| 213 | 第十章　公司财务、会计 | 公司以超过股票票面金额的发行价格发行股份所得的溢价款、发行无面额股所得股款未计入注册资本的金额以及国务院财政部门规定列入资本公积金的其他项目，应当列为公司资本公积金。 | [[concepts/laws/company-law/index#article-213|全文索引锚点]] |
+| 214 | 第十章　公司财务、会计 | 公司的公积金用于弥补公司的亏损、扩大公司生产经营或者转为增加公司注册资本。 | [[concepts/laws/company-law/index#article-214|全文索引锚点]] |
+| 215 | 第十章　公司财务、会计 | 公司聘用、解聘承办公司审计业务的会计师事务所，按照公司章程的规定，由股东会、董事会或者监事会决定。 | [[concepts/laws/company-law/index#article-215|全文索引锚点]] |
+| 216 | 第十章　公司财务、会计 | 公司应当向聘用的会计师事务所提供真实、完整的会计凭证、会计账簿、财务会计报告及其他会计资料，不得拒绝、隐匿、谎报。 | [[concepts/laws/company-law/index#article-216|全文索引锚点]] |
+| 217 | 第十章　公司财务、会计 | 公司除法定的会计账簿外，不得另立会计账簿。 | [[concepts/laws/company-law/index#article-217|全文索引锚点]] |
+| 218 | 第十一章　公司合并、分立、增资、减资 | 公司合并可以采取吸收合并或者新设合并。 | [[concepts/laws/company-law/index#article-218|全文索引锚点]] |
+| 219 | 第十一章　公司合并、分立、增资、减资 | 公司与其持股百分之九十以上的公司合并，被合并的公司不需经股东会决议，但应当通知其他股东，其他股东有权请求公司按照合理的价格收购其股权或者股份。 | [[concepts/laws/company-law/index#article-219|全文索引锚点]] |
+| 220 | 第十一章　公司合并、分立、增资、减资 | 公司合并，应当由合并各方签订合并协议，并编制资产负债表及财产清单。 | [[concepts/laws/company-law/index#article-220|全文索引锚点]] |
+| 221 | 第十一章　公司合并、分立、增资、减资 | 公司合并时，合并各方的债权、债务，应当由合并后存续的公司或者新设的公司承继。 | [[concepts/laws/company-law/index#article-221|全文索引锚点]] |
+| 222 | 第十一章　公司合并、分立、增资、减资 | 公司分立，其财产作相应的分割。 | [[concepts/laws/company-law/index#article-222|全文索引锚点]] |
+| 223 | 第十一章　公司合并、分立、增资、减资 | 公司分立前的债务由分立后的公司承担连带责任。 | [[concepts/laws/company-law/index#article-223|全文索引锚点]] |
+| 224 | 第十一章　公司合并、分立、增资、减资 | 公司减少注册资本，应当编制资产负债表及财产清单。 | [[concepts/laws/company-law/index#article-224|全文索引锚点]] |
+| 225 | 第十一章　公司合并、分立、增资、减资 | 公司依照本法第二百一十四条第二款的规定弥补亏损后，仍有亏损的，可以减少注册资本弥补亏损。 | [[concepts/laws/company-law/index#article-225|全文索引锚点]] |
+| 226 | 第十一章　公司合并、分立、增资、减资 | 违反本法规定减少注册资本的，股东应当退还其收到的资金，减免股东出资的应当恢复原状；给公司造成损失的，股东及负有责任的董事、监事、高级管理人员应当承担赔偿责任。 | [[concepts/laws/company-law/index#article-226|全文索引锚点]] |
+| 227 | 第十一章　公司合并、分立、增资、减资 | 有限责任公司增加注册资本时，股东在同等条件下有权优先按照实缴的出资比例认缴出资。 | [[concepts/laws/company-law/index#article-227|全文索引锚点]] |
+| 228 | 第十一章　公司合并、分立、增资、减资 | 有限责任公司增加注册资本时，股东认缴新增资本的出资，依照本法设立有限责任公司缴纳出资的有关规定执行。 | [[concepts/laws/company-law/index#article-228|全文索引锚点]] |
+| 229 | 第十二章　公司解散和清算 | 公司因下列原因解散：（一）公司章程规定的营业期限届满或者公司章程规定的其他解散事由出现； | [[concepts/laws/company-law/index#article-229|全文索引锚点]] |
+| 230 | 第十二章　公司解散和清算 | 公司有前条第一款第一项、第二项情形，且尚未向股东分配财产的，可以通过修改公司章程或者经股东会决议而存续。 | [[concepts/laws/company-law/index#article-230|全文索引锚点]] |
+| 231 | 第十二章　公司解散和清算 | 公司经营管理发生严重困难，继续存续会使股东利益受到重大损失，通过其他途径不能解决的，持有公司百分之十以上表决权的股东，可以请求人民法院解散公司。 | [[concepts/laws/company-law/index#article-231|全文索引锚点]] |
+| 232 | 第十二章　公司解散和清算 | 公司因本法第二百二十九条第一款第一项、第二项、第四项、第五项规定而解散的，应当清算。 | [[concepts/laws/company-law/index#article-232|全文索引锚点]] |
+| 233 | 第十二章　公司解散和清算 | 公司依照前条第一款的规定应当清算，逾期不成立清算组进行清算或者成立清算组后不清算的，利害关系人可以申请人民法院指定有关人员组成清算组进行清算。 | [[concepts/laws/company-law/index#article-233|全文索引锚点]] |
+| 234 | 第十二章　公司解散和清算 | 清算组在清算期间行使下列职权：（一）清理公司财产，分别编制资产负债表和财产清单； | [[concepts/laws/company-law/index#article-234|全文索引锚点]] |
+| 235 | 第十二章　公司解散和清算 | 清算组应当自成立之日起十日内通知债权人，并于六十日内在报纸上或者国家企业信用信息公示系统公告。 | [[concepts/laws/company-law/index#article-235|全文索引锚点]] |
+| 236 | 第十二章　公司解散和清算 | 清算组在清理公司财产、编制资产负债表和财产清单后，应当制订清算方案，并报股东会或者人民法院确认。 | [[concepts/laws/company-law/index#article-236|全文索引锚点]] |
+| 237 | 第十二章　公司解散和清算 | 清算组在清理公司财产、编制资产负债表和财产清单后，发现公司财产不足清偿债务的，应当依法向人民法院申请破产清算。 | [[concepts/laws/company-law/index#article-237|全文索引锚点]] |
+| 238 | 第十二章　公司解散和清算 | 清算组成员履行清算职责，负有忠实义务和勤勉义务。 | [[concepts/laws/company-law/index#article-238|全文索引锚点]] |
+| 239 | 第十二章　公司解散和清算 | 公司清算结束后，清算组应当制作清算报告，报股东会或者人民法院确认，并报送公司登记机关，申请注销公司登记。 | [[concepts/laws/company-law/index#article-239|全文索引锚点]] |
+| 240 | 第十二章　公司解散和清算 | 公司在存续期间未产生债务，或者已清偿全部债务的，经全体股东承诺，可以按照规定通过简易程序注销公司登记。 | [[concepts/laws/company-law/index#article-240|全文索引锚点]] |
+| 241 | 第十二章　公司解散和清算 | 公司被吊销营业执照、责令关闭或者被撤销，满三年未向公司登记机关申请注销公司登记的，公司登记机关可以通过国家企业信用信息公示系统予以公告，公告期限不少于六十日。 | [[concepts/laws/company-law/index#article-241|全文索引锚点]] |
+| 242 | 第十二章　公司解散和清算 | 公司被依法宣告破产的，依照有关企业破产的法律实施破产清算。 | [[concepts/laws/company-law/index#article-242|全文索引锚点]] |
+| 243 | 第十三章　外国公司的分支机构 | 本法所称外国公司，是指依照外国法律在中华人民共和国境外设立的公司。 | [[concepts/laws/company-law/index#article-243|全文索引锚点]] |
+| 244 | 第十三章　外国公司的分支机构 | 外国公司在中华人民共和国境内设立分支机构，应当向中国主管机关提出申请，并提交其公司章程、所属国的公司登记证书等有关文件，经批准后，向公司登记机关依法办理登记，领取营业执照。 | [[concepts/laws/company-law/index#article-244|全文索引锚点]] |
+| 245 | 第十三章　外国公司的分支机构 | 外国公司在中华人民共和国境内设立分支机构，应当在中华人民共和国境内指定负责该分支机构的代表人或者代理人，并向该分支机构拨付与其所从事的经营活动相适应的资金。 | [[concepts/laws/company-law/index#article-245|全文索引锚点]] |
+| 246 | 第十三章　外国公司的分支机构 | 外国公司的分支机构应当在其名称中标明该外国公司的国籍及责任形式。 | [[concepts/laws/company-law/index#article-246|全文索引锚点]] |
+| 247 | 第十三章　外国公司的分支机构 | 外国公司在中华人民共和国境内设立的分支机构不具有中国法人资格。 | [[concepts/laws/company-law/index#article-247|全文索引锚点]] |
+| 248 | 第十三章　外国公司的分支机构 | 经批准设立的外国公司分支机构，在中华人民共和国境内从事业务活动，应当遵守中国的法律，不得损害中国的社会公共利益，其合法权益受中国法律保护。 | [[concepts/laws/company-law/index#article-248|全文索引锚点]] |
+| 249 | 第十三章　外国公司的分支机构 | 外国公司撤销其在中华人民共和国境内的分支机构时，应当依法清偿债务，依照本法有关公司清算程序的规定进行清算。 | [[concepts/laws/company-law/index#article-249|全文索引锚点]] |
+| 250 | 第十四章　法律责任 | 违反本法规定，虚报注册资本、提交虚假材料或者采取其他欺诈手段隐瞒重要事实取得公司登记的，由公司登记机关责令改正，对虚报注册资本的公司，处以虚报注册资本金额百分之五以上百分之十五以下的罚款； | [[concepts/laws/company-law/index#article-250|全文索引锚点]] |
+| 251 | 第十四章　法律责任 | 公司未依照本法第四十条规定公示有关信息或者不如实公示有关信息的，由公司登记机关责令改正，可以处以一万元以上五万元以下的罚款。 | [[concepts/laws/company-law/index#article-251|全文索引锚点]] |
+| 252 | 第十四章　法律责任 | 公司的发起人、股东虚假出资，未交付或者未按期交付作为出资的货币或者非货币财产的，由公司登记机关责令改正，可以处以五万元以上二十万元以下的罚款； | [[concepts/laws/company-law/index#article-252|全文索引锚点]] |
+| 253 | 第十四章　法律责任 | 公司的发起人、股东在公司成立后，抽逃其出资的，由公司登记机关责令改正，处以所抽逃出资金额百分之五以上百分之十五以下的罚款；对直接负责的主管人员和其他直接责任人员处以三万元以上三十万元以下的罚款。 | [[concepts/laws/company-law/index#article-253|全文索引锚点]] |
+| 254 | 第十四章　法律责任 | 有下列行为之一的，由县级以上人民政府财政部门依照《中华人民共和国会计法》等法律、行政法规的规定处罚：（一）在法定的会计账簿以外另立会计账簿；（二）提供存在虚假记载或者隐瞒重要事实的财务会计报告。 | [[concepts/laws/company-law/index#article-254|全文索引锚点]] |
+| 255 | 第十四章　法律责任 | 公司在合并、分立、减少注册资本或者进行清算时，不依照本法规定通知或者公告债权人的，由公司登记机关责令改正，对公司处以一万元以上十万元以下的罚款。 | [[concepts/laws/company-law/index#article-255|全文索引锚点]] |
+| 256 | 第十四章　法律责任 | 公司在进行清算时，隐匿财产，对资产负债表或者财产清单作虚假记载，或者在未清偿债务前分配公司财产的，由公司登记机关责令改正，对公司处以隐匿财产或者未清偿债务前分配公司财产金额百分之五以上百分之十以下的罚款； | [[concepts/laws/company-law/index#article-256|全文索引锚点]] |
+| 257 | 第十四章　法律责任 | 承担资产评估、验资或者验证的机构提供虚假材料或者提供有重大遗漏的报告的，由有关部门依照《中华人民共和国资产评估法》、《中华人民共和国注册会计师法》等法律、行政法规的规定处罚。 | [[concepts/laws/company-law/index#article-257|全文索引锚点]] |
+| 258 | 第十四章　法律责任 | 公司登记机关违反法律、行政法规规定未履行职责或者履行职责不当的，对负有责任的领导人员和直接责任人员依法给予政务处分。 | [[concepts/laws/company-law/index#article-258|全文索引锚点]] |
+| 259 | 第十四章　法律责任 | 未依法登记为有限责任公司或者股份有限公司，而冒用有限责任公司或者股份有限公司名义的，或者未依法登记为有限责任公司或者股份有限公司的分公司，而冒用有限责任公司或者股份有限公司的分公司名义的，由公司登记机关责令改正或者予以取缔，可以并处十万元以... | [[concepts/laws/company-law/index#article-259|全文索引锚点]] |
+| 260 | 第十四章　法律责任 | 公司成立后无正当理由超过六个月未开业的，或者开业后自行停业连续六个月以上的，公司登记机关可以吊销营业执照，但公司依法办理歇业的除外。 | [[concepts/laws/company-law/index#article-260|全文索引锚点]] |
+| 261 | 第十四章　法律责任 | 外国公司违反本法规定，擅自在中华人民共和国境内设立分支机构的，由公司登记机关责令改正或者关闭，可以并处五万元以上二十万元以下的罚款。 | [[concepts/laws/company-law/index#article-261|全文索引锚点]] |
+| 262 | 第十四章　法律责任 | 利用公司名义从事危害国家安全、社会公共利益的严重违法行为的，吊销营业执照。 | [[concepts/laws/company-law/index#article-262|全文索引锚点]] |
+| 263 | 第十四章　法律责任 | 公司违反本法规定，应当承担民事赔偿责任和缴纳罚款、罚金的，其财产不足以支付时，先承担民事赔偿责任。 | [[concepts/laws/company-law/index#article-263|全文索引锚点]] |
+| 264 | 第十四章　法律责任 | 违反本法规定，构成犯罪的，依法追究刑事责任。 | [[concepts/laws/company-law/index#article-264|全文索引锚点]] |
+| 265 | 第十五章　附　　则 | 本法下列用语的含义：（一）高级管理人员，是指公司的经理、副经理、财务负责人，上市公司董事会秘书和公司章程规定的其他人员。 | [[concepts/laws/company-law/index#article-265|全文索引锚点]] |
+| 266 | 第十五章　附　　则 | 本法自2024年7月1日起施行。 | [[concepts/laws/company-law/index#article-266|全文索引锚点]] |
+
+## 条文全文
+
+### 第一条 {#article-001}
+
+第一条 为了规范公司的组织和行为，保护公司、股东、职工和债权人的合法权益，完善中国特色现代企业制度，弘扬企业家精神，维护社会经济秩序，促进社会主义市场经济的发展，根据宪法，制定本法。
+
+### 第二条 {#article-002}
+
+第二条 本法所称公司，是指依照本法在中华人民共和国境内设立的有限责任公司和股份有限公司。
+
+### 第三条 {#article-003}
+
+第三条 公司是企业法人，有独立的法人财产，享有法人财产权。公司以其全部财产对公司的债务承担责任。
+
+公司的合法权益受法律保护，不受侵犯。
+
+### 第四条 {#article-004}
+
+第四条 有限责任公司的股东以其认缴的出资额为限对公司承担责任；股份有限公司的股东以其认购的股份为限对公司承担责任。
+
+公司股东对公司依法享有资产收益、参与重大决策和选择管理者等权利。
+
+### 第五条 {#article-005}
+
+第五条 设立公司应当依法制定公司章程。公司章程对公司、股东、董事、监事、高级管理人员具有约束力。
+
+### 第六条 {#article-006}
+
+第六条 公司应当有自己的名称。公司名称应当符合国家有关规定。
+
+公司的名称权受法律保护。
+
+### 第七条 {#article-007}
+
+第七条 依照本法设立的有限责任公司，应当在公司名称中标明有限责任公司或者有限公司字样。
+
+依照本法设立的股份有限公司，应当在公司名称中标明股份有限公司或者股份公司字样。
+
+### 第八条 {#article-008}
+
+第八条 公司以其主要办事机构所在地为住所。
+
+### 第九条 {#article-009}
+
+第九条 公司的经营范围由公司章程规定。公司可以修改公司章程，变更经营范围。
+
+公司的经营范围中属于法律、行政法规规定须经批准的项目，应当依法经过批准。
+
+### 第十条 {#article-010}
+
+第十条 公司的法定代表人按照公司章程的规定，由代表公司执行公司事务的董事或者经理担任。
+
+担任法定代表人的董事或者经理辞任的，视为同时辞去法定代表人。
+
+法定代表人辞任的，公司应当在法定代表人辞任之日起三十日内确定新的法定代表人。
+
+### 第十一条 {#article-011}
+
+第十一条 法定代表人以公司名义从事的民事活动，其法律后果由公司承受。
+
+公司章程或者股东会对法定代表人职权的限制，不得对抗善意相对人。
+
+法定代表人因执行职务造成他人损害的，由公司承担民事责任。公司承担民事责任后，依照法律或者公司章程的规定，可以向有过错的法定代表人追偿。
+
+### 第十二条 {#article-012}
+
+第十二条 有限责任公司变更为股份有限公司，应当符合本法规定的股份有限公司的条件。股份有限公司变更为有限责任公司，应当符合本法规定的有限责任公司的条件。
+
+有限责任公司变更为股份有限公司的，或者股份有限公司变更为有限责任公司的，公司变更前的债权、债务由变更后的公司承继。
+
+### 第十三条 {#article-013}
+
+第十三条 公司可以设立子公司。子公司具有法人资格，依法独立承担民事责任。
+
+公司可以设立分公司。分公司不具有法人资格，其民事责任由公司承担。
+
+### 第十四条 {#article-014}
+
+第十四条 公司可以向其他企业投资。
+
+法律规定公司不得成为对所投资企业的债务承担连带责任的出资人的，从其规定。
+
+### 第十五条 {#article-015}
+
+第十五条 公司向其他企业投资或者为他人提供担保，按照公司章程的规定，由董事会或者股东会决议；公司章程对投资或者担保的总额及单项投资或者担保的数额有限额规定的，不得超过规定的限额。
+
+公司为公司股东或者实际控制人提供担保的，应当经股东会决议。
+
+前款规定的股东或者受前款规定的实际控制人支配的股东，不得参加前款规定事项的表决。该项表决由出席会议的其他股东所持表决权的过半数通过。
+
+### 第十六条 {#article-016}
+
+第十六条 公司应当保护职工的合法权益，依法与职工签订劳动合同，参加社会保险，加强劳动保护，实现安全生产。
+
+公司应当采用多种形式，加强公司职工的职业教育和岗位培训，提高职工素质。
+
+### 第十七条 {#article-017}
+
+第十七条 公司职工依照《中华人民共和国工会法》组织工会，开展工会活动，维护职工合法权益。公司应当为本公司工会提供必要的活动条件。公司工会代表职工就职工的劳动报酬、工作时间、休息休假、劳动安全卫生和保险福利等事项依法与公司签订集体合同。
+
+公司依照宪法和有关法律的规定，建立健全以职工代表大会为基本形式的民主管理制度，通过职工代表大会或者其他形式，实行民主管理。
+
+公司研究决定改制、解散、申请破产以及经营方面的重大问题、制定重要的规章制度时，应当听取公司工会的意见，并通过职工代表大会或者其他形式听取职工的意见和建议。
+
+### 第十八条 {#article-018}
+
+第十八条 在公司中，根据中国共产党章程的规定，设立中国共产党的组织，开展党的活动。公司应当为党组织的活动提供必要条件。
+
+### 第十九条 {#article-019}
+
+第十九条 公司从事经营活动，应当遵守法律法规，遵守社会公德、商业道德，诚实守信，接受政府和社会公众的监督。
+
+### 第二十条 {#article-020}
+
+第二十条 公司从事经营活动，应当充分考虑公司职工、消费者等利益相关者的利益以及生态环境保护等社会公共利益，承担社会责任。
+
+国家鼓励公司参与社会公益活动，公布社会责任报告。
+
+### 第二十一条 {#article-021}
+
+第二十一条 公司股东应当遵守法律、行政法规和公司章程，依法行使股东权利，不得滥用股东权利损害公司或者其他股东的利益。
+
+公司股东滥用股东权利给公司或者其他股东造成损失的，应当承担赔偿责任。
+
+### 第二十二条 {#article-022}
+
+第二十二条 公司的控股股东、实际控制人、董事、监事、高级管理人员不得利用关联关系损害公司利益。
+
+违反前款规定，给公司造成损失的，应当承担赔偿责任。
+
+### 第二十三条 {#article-023}
+
+第二十三条 公司股东滥用公司法人独立地位和股东有限责任，逃避债务，严重损害公司债权人利益的，应当对公司债务承担连带责任。
+
+股东利用其控制的两个以上公司实施前款规定行为的，各公司应当对任一公司的债务承担连带责任。
+
+只有一个股东的公司，股东不能证明公司财产独立于股东自己的财产的，应当对公司债务承担连带责任。
+
+### 第二十四条 {#article-024}
+
+第二十四条 公司股东会、董事会、监事会召开会议和表决可以采用电子通信方式，公司章程另有规定的除外。
+
+### 第二十五条 {#article-025}
+
+第二十五条 公司股东会、董事会的决议内容违反法律、行政法规的无效。
+
+### 第二十六条 {#article-026}
+
+第二十六条 公司股东会、董事会的会议召集程序、表决方式违反法律、行政法规或者公司章程，或者决议内容违反公司章程的，股东自决议作出之日起六十日内，可以请求人民法院撤销。但是，股东会、董事会的会议召集程序或者表决方式仅有轻微瑕疵，对决议未产生实质影响的除外。
+
+未被通知参加股东会会议的股东自知道或者应当知道股东会决议作出之日起六十日内，可以请求人民法院撤销；自决议作出之日起一年内没有行使撤销权的，撤销权消灭。
+
+### 第二十七条 {#article-027}
+
+第二十七条 有下列情形之一的，公司股东会、董事会的决议不成立：
+
+（一）未召开股东会、董事会会议作出决议；
+
+（二）股东会、董事会会议未对决议事项进行表决；
+
+（三）出席会议的人数或者所持表决权数未达到本法或者公司章程规定的人数或者所持表决权数；
+
+（四）同意决议事项的人数或者所持表决权数未达到本法或者公司章程规定的人数或者所持表决权数。
+
+### 第二十八条 {#article-028}
+
+第二十八条 公司股东会、董事会决议被人民法院宣告无效、撤销或者确认不成立的，公司应当向公司登记机关申请撤销根据该决议已办理的登记。
+
+股东会、董事会决议被人民法院宣告无效、撤销或者确认不成立的，公司根据该决议与善意相对人形成的民事法律关系不受影响。
+
+### 第二十九条 {#article-029}
+
+第二十九条 设立公司，应当依法向公司登记机关申请设立登记。
+
+法律、行政法规规定设立公司必须报经批准的，应当在公司登记前依法办理批准手续。
+
+### 第三十条 {#article-030}
+
+第三十条 申请设立公司，应当提交设立登记申请书、公司章程等文件，提交的相关材料应当真实、合法和有效。
+
+申请材料不齐全或者不符合法定形式的，公司登记机关应当一次性告知需要补正的材料。
+
+### 第三十一条 {#article-031}
+
+第三十一条 申请设立公司，符合本法规定的设立条件的，由公司登记机关分别登记为有限责任公司或者股份有限公司；不符合本法规定的设立条件的，不得登记为有限责任公司或者股份有限公司。
+
+### 第三十二条 {#article-032}
+
+第三十二条 公司登记事项包括：
+
+（一）名称；
+
+（二）住所；
+
+（三）注册资本；
+
+（四）经营范围；
+
+（五）法定代表人的姓名；
+
+（六）有限责任公司股东、股份有限公司发起人的姓名或者名称。
+
+公司登记机关应当将前款规定的公司登记事项通过国家企业信用信息公示系统向社会公示。
+
+### 第三十三条 {#article-033}
+
+第三十三条 依法设立的公司，由公司登记机关发给公司营业执照。公司营业执照签发日期为公司成立日期。
+
+公司营业执照应当载明公司的名称、住所、注册资本、经营范围、法定代表人姓名等事项。
+
+公司登记机关可以发给电子营业执照。电子营业执照与纸质营业执照具有同等法律效力。
+
+### 第三十四条 {#article-034}
+
+第三十四条 公司登记事项发生变更的，应当依法办理变更登记。
+
+公司登记事项未经登记或者未经变更登记，不得对抗善意相对人。
+
+### 第三十五条 {#article-035}
+
+第三十五条 公司申请变更登记，应当向公司登记机关提交公司法定代表人签署的变更登记申请书、依法作出的变更决议或者决定等文件。
+
+公司变更登记事项涉及修改公司章程的，应当提交修改后的公司章程。
+
+公司变更法定代表人的，变更登记申请书由变更后的法定代表人签署。
+
+### 第三十六条 {#article-036}
+
+第三十六条 公司营业执照记载的事项发生变更的，公司办理变更登记后，由公司登记机关换发营业执照。
+
+### 第三十七条 {#article-037}
+
+第三十七条 公司因解散、被宣告破产或者其他法定事由需要终止的，应当依法向公司登记机关申请注销登记，由公司登记机关公告公司终止。
+
+### 第三十八条 {#article-038}
+
+第三十八条 公司设立分公司，应当向公司登记机关申请登记，领取营业执照。
+
+### 第三十九条 {#article-039}
+
+第三十九条 虚报注册资本、提交虚假材料或者采取其他欺诈手段隐瞒重要事实取得公司设立登记的，公司登记机关应当依照法律、行政法规的规定予以撤销。
+
+### 第四十条 {#article-040}
+
+第四十条 公司应当按照规定通过国家企业信用信息公示系统公示下列事项：
+
+（一）有限责任公司股东认缴和实缴的出资额、出资方式和出资日期，股份有限公司发起人认购的股份数；
+
+（二）有限责任公司股东、股份有限公司发起人的股权、股份变更信息；
+
+（三）行政许可取得、变更、注销等信息；
+
+（四）法律、行政法规规定的其他信息。
+
+公司应当确保前款公示信息真实、准确、完整。
+
+### 第四十一条 {#article-041}
+
+第四十一条 公司登记机关应当优化公司登记办理流程，提高公司登记效率，加强信息化建设，推行网上办理等便捷方式，提升公司登记便利化水平。
+
+国务院市场监督管理部门根据本法和有关法律、行政法规的规定，制定公司登记注册的具体办法。
+
+### 第四十二条 {#article-042}
+
+第四十二条 有限责任公司由一个以上五十个以下股东出资设立。
+
+### 第四十三条 {#article-043}
+
+第四十三条 有限责任公司设立时的股东可以签订设立协议，明确各自在公司设立过程中的权利和义务。
+
+### 第四十四条 {#article-044}
+
+第四十四条 有限责任公司设立时的股东为设立公司从事的民事活动，其法律后果由公司承受。
+
+公司未成立的，其法律后果由公司设立时的股东承受；设立时的股东为二人以上的，享有连带债权，承担连带债务。
+
+设立时的股东为设立公司以自己的名义从事民事活动产生的民事责任，第三人有权选择请求公司或者公司设立时的股东承担。
+
+设立时的股东因履行公司设立职责造成他人损害的，公司或者无过错的股东承担赔偿责任后，可以向有过错的股东追偿。
+
+### 第四十五条 {#article-045}
+
+第四十五条 设立有限责任公司，应当由股东共同制定公司章程。
+
+### 第四十六条 {#article-046}
+
+第四十六条 有限责任公司章程应当载明下列事项：
+
+（一）公司名称和住所；
+
+（二）公司经营范围；
+
+（三）公司注册资本；
+
+（四）股东的姓名或者名称；
+
+（五）股东的出资额、出资方式和出资日期；
+
+（六）公司的机构及其产生办法、职权、议事规则；
+
+（七）公司法定代表人的产生、变更办法；
+
+（八）股东会认为需要规定的其他事项。
+
+股东应当在公司章程上签名或者盖章。
+
+### 第四十七条 {#article-047}
+
+第四十七条 有限责任公司的注册资本为在公司登记机关登记的全体股东认缴的出资额。全体股东认缴的出资额由股东按照公司章程的规定自公司成立之日起五年内缴足。
+
+法律、行政法规以及国务院决定对有限责任公司注册资本实缴、注册资本最低限额、股东出资期限另有规定的，从其规定。
+
+### 第四十八条 {#article-048}
+
+第四十八条 股东可以用货币出资，也可以用实物、知识产权、土地使用权、股权、债权等可以用货币估价并可以依法转让的非货币财产作价出资；但是，法律、行政法规规定不得作为出资的财产除外。
+
+对作为出资的非货币财产应当评估作价，核实财产，不得高估或者低估作价。法律、行政法规对评估作价有规定的，从其规定。
+
+### 第四十九条 {#article-049}
+
+第四十九条 股东应当按期足额缴纳公司章程规定的各自所认缴的出资额。
+
+股东以货币出资的，应当将货币出资足额存入有限责任公司在银行开设的账户；以非货币财产出资的，应当依法办理其财产权的转移手续。
+
+股东未按期足额缴纳出资的，除应当向公司足额缴纳外，还应当对给公司造成的损失承担赔偿责任。
+
+### 第五十条 {#article-050}
+
+第五十条 有限责任公司设立时，股东未按照公司章程规定实际缴纳出资，或者实际出资的非货币财产的实际价额显著低于所认缴的出资额的，设立时的其他股东与该股东在出资不足的范围内承担连带责任。
+
+### 第五十一条 {#article-051}
+
+第五十一条 有限责任公司成立后，董事会应当对股东的出资情况进行核查，发现股东未按期足额缴纳公司章程规定的出资的，应当由公司向该股东发出书面催缴书，催缴出资。
+
+未及时履行前款规定的义务，给公司造成损失的，负有责任的董事应当承担赔偿责任。
+
+### 第五十二条 {#article-052}
+
+第五十二条 股东未按照公司章程规定的出资日期缴纳出资，公司依照前条第一款规定发出书面催缴书催缴出资的，可以载明缴纳出资的宽限期；宽限期自公司发出催缴书之日起，不得少于六十日。宽限期届满，股东仍未履行出资义务的，公司经董事会决议可以向该股东发出失权通知，通知应当以书面形式发出。自通知发出之日起，该股东丧失其未缴纳出资的股权。
+
+依照前款规定丧失的股权应当依法转让，或者相应减少注册资本并注销该股权；六个月内未转让或者注销的，由公司其他股东按照其出资比例足额缴纳相应出资。
+
+股东对失权有异议的，应当自接到失权通知之日起三十日内，向人民法院提起诉讼。
+
+### 第五十三条 {#article-053}
+
+第五十三条 公司成立后，股东不得抽逃出资。
+
+违反前款规定的，股东应当返还抽逃的出资；给公司造成损失的，负有责任的董事、监事、高级管理人员应当与该股东承担连带赔偿责任。
+
+### 第五十四条 {#article-054}
+
+第五十四条 公司不能清偿到期债务的，公司或者已到期债权的债权人有权要求已认缴出资但未届出资期限的股东提前缴纳出资。
+
+### 第五十五条 {#article-055}
+
+第五十五条 有限责任公司成立后，应当向股东签发出资证明书，记载下列事项：
+
+（一）公司名称；
+
+（二）公司成立日期；
+
+（三）公司注册资本；
+
+（四）股东的姓名或者名称、认缴和实缴的出资额、出资方式和出资日期；
+
+（五）出资证明书的编号和核发日期。
+
+出资证明书由法定代表人签名，并由公司盖章。
+
+### 第五十六条 {#article-056}
+
+第五十六条 有限责任公司应当置备股东名册，记载下列事项：
+
+（一）股东的姓名或者名称及住所；
+
+（二）股东认缴和实缴的出资额、出资方式和出资日期；
+
+（三）出资证明书编号；
+
+（四）取得和丧失股东资格的日期。
+
+记载于股东名册的股东，可以依股东名册主张行使股东权利。
+
+### 第五十七条 {#article-057}
+
+第五十七条 股东有权查阅、复制公司章程、股东名册、股东会会议记录、董事会会议决议、监事会会议决议和财务会计报告。
+
+股东可以要求查阅公司会计账簿、会计凭证。股东要求查阅公司会计账簿、会计凭证的，应当向公司提出书面请求，说明目的。公司有合理根据认为股东查阅会计账簿、会计凭证有不正当目的，可能损害公司合法利益的，可以拒绝提供查阅，并应当自股东提出书面请求之日起十五日内书面答复股东并说明理由。公司拒绝提供查阅的，股东可以向人民法院提起诉讼。
+
+股东查阅前款规定的材料，可以委托会计师事务所、律师事务所等中介机构进行。
+
+股东及其委托的会计师事务所、律师事务所等中介机构查阅、复制有关材料，应当遵守有关保护国家秘密、商业秘密、个人隐私、个人信息等法律、行政法规的规定。
+
+股东要求查阅、复制公司全资子公司相关材料的，适用前四款的规定。
+
+### 第五十八条 {#article-058}
+
+第五十八条 有限责任公司股东会由全体股东组成。股东会是公司的权力机构，依照本法行使职权。
+
+### 第五十九条 {#article-059}
+
+第五十九条 股东会行使下列职权：
+
+（一）选举和更换董事、监事，决定有关董事、监事的报酬事项；
+
+（二）审议批准董事会的报告；
+
+（三）审议批准监事会的报告；
+
+（四）审议批准公司的利润分配方案和弥补亏损方案；
+
+（五）对公司增加或者减少注册资本作出决议；
+
+（六）对发行公司债券作出决议；
+
+（七）对公司合并、分立、解散、清算或者变更公司形式作出决议；
+
+（八）修改公司章程；
+
+（九）公司章程规定的其他职权。
+
+股东会可以授权董事会对发行公司债券作出决议。
+
+对本条第一款所列事项股东以书面形式一致表示同意的，可以不召开股东会会议，直接作出决定，并由全体股东在决定文件上签名或者盖章。
+
+### 第六十条 {#article-060}
+
+第六十条 只有一个股东的有限责任公司不设股东会。股东作出前条第一款所列事项的决定时，应当采用书面形式，并由股东签名或者盖章后置备于公司。
+
+### 第六十一条 {#article-061}
+
+第六十一条 首次股东会会议由出资最多的股东召集和主持，依照本法规定行使职权。
+
+### 第六十二条 {#article-062}
+
+第六十二条 股东会会议分为定期会议和临时会议。
+
+定期会议应当按照公司章程的规定按时召开。代表十分之一以上表决权的股东、三分之一以上的董事或者监事会提议召开临时会议的，应当召开临时会议。
+
+### 第六十三条 {#article-063}
+
+第六十三条 股东会会议由董事会召集，董事长主持；董事长不能履行职务或者不履行职务的，由副董事长主持；副董事长不能履行职务或者不履行职务的，由过半数的董事共同推举一名董事主持。
+
+董事会不能履行或者不履行召集股东会会议职责的，由监事会召集和主持；监事会不召集和主持的，代表十分之一以上表决权的股东可以自行召集和主持。
+
+### 第六十四条 {#article-064}
+
+第六十四条 召开股东会会议，应当于会议召开十五日前通知全体股东；但是，公司章程另有规定或者全体股东另有约定的除外。
+
+股东会应当对所议事项的决定作成会议记录，出席会议的股东应当在会议记录上签名或者盖章。
+
+### 第六十五条 {#article-065}
+
+第六十五条 股东会会议由股东按照出资比例行使表决权；但是，公司章程另有规定的除外。
+
+### 第六十六条 {#article-066}
+
+第六十六条 股东会的议事方式和表决程序，除本法有规定的外，由公司章程规定。
+
+股东会作出决议，应当经代表过半数表决权的股东通过。
+
+股东会作出修改公司章程、增加或者减少注册资本的决议，以及公司合并、分立、解散或者变更公司形式的决议，应当经代表三分之二以上表决权的股东通过。
+
+### 第六十七条 {#article-067}
+
+第六十七条 有限责任公司设董事会，本法第七十五条另有规定的除外。
+
+董事会行使下列职权：
+
+（一）召集股东会会议，并向股东会报告工作；
+
+（二）执行股东会的决议；
+
+（三）决定公司的经营计划和投资方案；
+
+（四）制订公司的利润分配方案和弥补亏损方案；
+
+（五）制订公司增加或者减少注册资本以及发行公司债券的方案；
+
+（六）制订公司合并、分立、解散或者变更公司形式的方案；
+
+（七）决定公司内部管理机构的设置；
+
+（八）决定聘任或者解聘公司经理及其报酬事项，并根据经理的提名决定聘任或者解聘公司副经理、财务负责人及其报酬事项；
+
+（九）制定公司的基本管理制度；
+
+（十）公司章程规定或者股东会授予的其他职权。
+
+公司章程对董事会职权的限制不得对抗善意相对人。
+
+### 第六十八条 {#article-068}
+
+第六十八条 有限责任公司董事会成员为三人以上，其成员中可以有公司职工代表。职工人数三百人以上的有限责任公司，除依法设监事会并有公司职工代表的外，其董事会成员中应当有公司职工代表。董事会中的职工代表由公司职工通过职工代表大会、职工大会或者其他形式民主选举产生。
+
+董事会设董事长一人，可以设副董事长。董事长、副董事长的产生办法由公司章程规定。
+
+### 第六十九条 {#article-069}
+
+第六十九条 有限责任公司可以按照公司章程的规定在董事会中设置由董事组成的审计委员会，行使本法规定的监事会的职权，不设监事会或者监事。公司董事会成员中的职工代表可以成为审计委员会成员。
+
+### 第七十条 {#article-070}
+
+第七十条 董事任期由公司章程规定，但每届任期不得超过三年。董事任期届满，连选可以连任。
+
+董事任期届满未及时改选，或者董事在任期内辞任导致董事会成员低于法定人数的，在改选出的董事就任前，原董事仍应当依照法律、行政法规和公司章程的规定，履行董事职务。
+
+董事辞任的，应当以书面形式通知公司，公司收到通知之日辞任生效，但存在前款规定情形的，董事应当继续履行职务。
+
+### 第七十一条 {#article-071}
+
+第七十一条 股东会可以决议解任董事，决议作出之日解任生效。
+
+无正当理由，在任期届满前解任董事的，该董事可以要求公司予以赔偿。
+
+### 第七十二条 {#article-072}
+
+第七十二条 董事会会议由董事长召集和主持；董事长不能履行职务或者不履行职务的，由副董事长召集和主持；副董事长不能履行职务或者不履行职务的，由过半数的董事共同推举一名董事召集和主持。
+
+### 第七十三条 {#article-073}
+
+第七十三条 董事会的议事方式和表决程序，除本法有规定的外，由公司章程规定。
+
+董事会会议应当有过半数的董事出席方可举行。董事会作出决议，应当经全体董事的过半数通过。
+
+董事会决议的表决，应当一人一票。
+
+董事会应当对所议事项的决定作成会议记录，出席会议的董事应当在会议记录上签名。
+
+### 第七十四条 {#article-074}
+
+第七十四条 有限责任公司可以设经理，由董事会决定聘任或者解聘。
+
+经理对董事会负责，根据公司章程的规定或者董事会的授权行使职权。经理列席董事会会议。
+
+### 第七十五条 {#article-075}
+
+第七十五条 规模较小或者股东人数较少的有限责任公司，可以不设董事会，设一名董事，行使本法规定的董事会的职权。该董事可以兼任公司经理。
+
+### 第七十六条 {#article-076}
+
+第七十六条 有限责任公司设监事会，本法第六十九条、第八十三条另有规定的除外。
+
+监事会成员为三人以上。监事会成员应当包括股东代表和适当比例的公司职工代表，其中职工代表的比例不得低于三分之一，具体比例由公司章程规定。监事会中的职工代表由公司职工通过职工代表大会、职工大会或者其他形式民主选举产生。
+
+监事会设主席一人，由全体监事过半数选举产生。监事会主席召集和主持监事会会议；监事会主席不能履行职务或者不履行职务的，由过半数的监事共同推举一名监事召集和主持监事会会议。
+
+董事、高级管理人员不得兼任监事。
+
+### 第七十七条 {#article-077}
+
+第七十七条 监事的任期每届为三年。监事任期届满，连选可以连任。
+
+监事任期届满未及时改选，或者监事在任期内辞任导致监事会成员低于法定人数的，在改选出的监事就任前，原监事仍应当依照法律、行政法规和公司章程的规定，履行监事职务。
+
+### 第七十八条 {#article-078}
+
+第七十八条 监事会行使下列职权：
+
+（一）检查公司财务；
+
+（二）对董事、高级管理人员执行职务的行为进行监督，对违反法律、行政法规、公司章程或者股东会决议的董事、高级管理人员提出解任的建议；
+
+（三）当董事、高级管理人员的行为损害公司的利益时，要求董事、高级管理人员予以纠正；
+
+（四）提议召开临时股东会会议，在董事会不履行本法规定的召集和主持股东会会议职责时召集和主持股东会会议；
+
+（五）向股东会会议提出提案；
+
+（六）依照本法第一百八十九条的规定，对董事、高级管理人员提起诉讼；
+
+（七）公司章程规定的其他职权。
+
+### 第七十九条 {#article-079}
+
+第七十九条 监事可以列席董事会会议，并对董事会决议事项提出质询或者建议。
+
+监事会发现公司经营情况异常，可以进行调查；必要时，可以聘请会计师事务所等协助其工作，费用由公司承担。
+
+### 第八十条 {#article-080}
+
+第八十条 监事会可以要求董事、高级管理人员提交执行职务的报告。
+
+董事、高级管理人员应当如实向监事会提供有关情况和资料，不得妨碍监事会或者监事行使职权。
+
+### 第八十一条 {#article-081}
+
+第八十一条 监事会每年度至少召开一次会议，监事可以提议召开临时监事会会议。
+
+监事会的议事方式和表决程序，除本法有规定的外，由公司章程规定。
+
+监事会决议应当经全体监事的过半数通过。
+
+监事会决议的表决，应当一人一票。
+
+监事会应当对所议事项的决定作成会议记录，出席会议的监事应当在会议记录上签名。
+
+### 第八十二条 {#article-082}
+
+第八十二条 监事会行使职权所必需的费用，由公司承担。
+
+### 第八十三条 {#article-083}
+
+第八十三条 规模较小或者股东人数较少的有限责任公司，可以不设监事会，设一名监事，行使本法规定的监事会的职权；经全体股东一致同意，也可以不设监事。
+
+### 第八十四条 {#article-084}
+
+第八十四条 有限责任公司的股东之间可以相互转让其全部或者部分股权。
+
+股东向股东以外的人转让股权的，应当将股权转让的数量、价格、支付方式和期限等事项书面通知其他股东，其他股东在同等条件下有优先购买权。股东自接到书面通知之日起三十日内未答复的，视为放弃优先购买权。两个以上股东行使优先购买权的，协商确定各自的购买比例；协商不成的，按照转让时各自的出资比例行使优先购买权。
+
+公司章程对股权转让另有规定的，从其规定。
+
+### 第八十五条 {#article-085}
+
+第八十五条 人民法院依照法律规定的强制执行程序转让股东的股权时，应当通知公司及全体股东，其他股东在同等条件下有优先购买权。其他股东自人民法院通知之日起满二十日不行使优先购买权的，视为放弃优先购买权。
+
+### 第八十六条 {#article-086}
+
+第八十六条 股东转让股权的，应当书面通知公司，请求变更股东名册；需要办理变更登记的，并请求公司向公司登记机关办理变更登记。公司拒绝或者在合理期限内不予答复的，转让人、受让人可以依法向人民法院提起诉讼。
+
+股权转让的，受让人自记载于股东名册时起可以向公司主张行使股东权利。
+
+### 第八十七条 {#article-087}
+
+第八十七条 依照本法转让股权后，公司应当及时注销原股东的出资证明书，向新股东签发出资证明书，并相应修改公司章程和股东名册中有关股东及其出资额的记载。对公司章程的该项修改不需再由股东会表决。
+
+### 第八十八条 {#article-088}
+
+第八十八条 股东转让已认缴出资但未届出资期限的股权的，由受让人承担缴纳该出资的义务；受让人未按期足额缴纳出资的，转让人对受让人未按期缴纳的出资承担补充责任。
+
+未按照公司章程规定的出资日期缴纳出资或者作为出资的非货币财产的实际价额显著低于所认缴的出资额的股东转让股权的，转让人与受让人在出资不足的范围内承担连带责任；受让人不知道且不应当知道存在上述情形的，由转让人承担责任。
+
+### 第八十九条 {#article-089}
+
+第八十九条 有下列情形之一的，对股东会该项决议投反对票的股东可以请求公司按照合理的价格收购其股权：
+
+（一）公司连续五年不向股东分配利润，而公司该五年连续盈利，并且符合本法规定的分配利润条件；
+
+（二）公司合并、分立、转让主要财产；
+
+（三）公司章程规定的营业期限届满或者章程规定的其他解散事由出现，股东会通过决议修改章程使公司存续。
+
+自股东会决议作出之日起六十日内，股东与公司不能达成股权收购协议的，股东可以自股东会决议作出之日起九十日内向人民法院提起诉讼。
+
+公司的控股股东滥用股东权利，严重损害公司或者其他股东利益的，其他股东有权请求公司按照合理的价格收购其股权。
+
+公司因本条第一款、第三款规定的情形收购的本公司股权，应当在六个月内依法转让或者注销。
+
+### 第九十条 {#article-090}
+
+第九十条 自然人股东死亡后，其合法继承人可以继承股东资格；但是，公司章程另有规定的除外。
+
+### 第九十一条 {#article-091}
+
+第九十一条 设立股份有限公司，可以采取发起设立或者募集设立的方式。
+
+发起设立，是指由发起人认购设立公司时应发行的全部股份而设立公司。
+
+募集设立，是指由发起人认购设立公司时应发行股份的一部分，其余股份向特定对象募集或者向社会公开募集而设立公司。
+
+### 第九十二条 {#article-092}
+
+第九十二条 设立股份有限公司，应当有一人以上二百人以下为发起人，其中应当有半数以上的发起人在中华人民共和国境内有住所。
+
+### 第九十三条 {#article-093}
+
+第九十三条 股份有限公司发起人承担公司筹办事务。
+
+发起人应当签订发起人协议，明确各自在公司设立过程中的权利和义务。
+
+### 第九十四条 {#article-094}
+
+第九十四条 设立股份有限公司，应当由发起人共同制订公司章程。
+
+### 第九十五条 {#article-095}
+
+第九十五条 股份有限公司章程应当载明下列事项：
+
+（一）公司名称和住所；
+
+（二）公司经营范围；
+
+（三）公司设立方式；
+
+（四）公司注册资本、已发行的股份数和设立时发行的股份数，面额股的每股金额；
+
+（五）发行类别股的，每一类别股的股份数及其权利和义务；
+
+（六）发起人的姓名或者名称、认购的股份数、出资方式；
+
+（七）董事会的组成、职权和议事规则；
+
+（八）公司法定代表人的产生、变更办法；
+
+（九）监事会的组成、职权和议事规则；
+
+（十）公司利润分配办法；
+
+（十一）公司的解散事由与清算办法；
+
+（十二）公司的通知和公告办法；
+
+（十三）股东会认为需要规定的其他事项。
+
+### 第九十六条 {#article-096}
+
+第九十六条 股份有限公司的注册资本为在公司登记机关登记的已发行股份的股本总额。在发起人认购的股份缴足前，不得向他人募集股份。
+
+法律、行政法规以及国务院决定对股份有限公司注册资本最低限额另有规定的，从其规定。
+
+### 第九十七条 {#article-097}
+
+第九十七条 以发起设立方式设立股份有限公司的，发起人应当认足公司章程规定的公司设立时应发行的股份。
+
+以募集设立方式设立股份有限公司的，发起人认购的股份不得少于公司章程规定的公司设立时应发行股份总数的百分之三十五；但是，法律、行政法规另有规定的，从其规定。
+
+### 第九十八条 {#article-098}
+
+第九十八条 发起人应当在公司成立前按照其认购的股份全额缴纳股款。
+
+发起人的出资，适用本法第四十八条、第四十九条第二款关于有限责任公司股东出资的规定。
+
+### 第九十九条 {#article-099}
+
+第九十九条 发起人不按照其认购的股份缴纳股款，或者作为出资的非货币财产的实际价额显著低于所认购的股份的，其他发起人与该发起人在出资不足的范围内承担连带责任。
+
+### 第一百条 {#article-100}
+
+第一百条 发起人向社会公开募集股份，应当公告招股说明书，并制作认股书。认股书应当载明本法第一百五十四条第二款、第三款所列事项，由认股人填写认购的股份数、金额、住所，并签名或者盖章。认股人应当按照所认购股份足额缴纳股款。
+
+### 第一百零一条 {#article-101}
+
+第一百零一条 向社会公开募集股份的股款缴足后，应当经依法设立的验资机构验资并出具证明。
+
+### 第一百零二条 {#article-102}
+
+第一百零二条 股份有限公司应当制作股东名册并置备于公司。股东名册应当记载下列事项：
+
+（一）股东的姓名或者名称及住所；
+
+（二）各股东所认购的股份种类及股份数；
+
+（三）发行纸面形式的股票的，股票的编号；
+
+（四）各股东取得股份的日期。
+
+### 第一百零三条 {#article-103}
+
+第一百零三条 募集设立股份有限公司的发起人应当自公司设立时应发行股份的股款缴足之日起三十日内召开公司成立大会。发起人应当在成立大会召开十五日前将会议日期通知各认股人或者予以公告。成立大会应当有持有表决权过半数的认股人出席，方可举行。
+
+以发起设立方式设立股份有限公司成立大会的召开和表决程序由公司章程或者发起人协议规定。
+
+### 第一百零四条 {#article-104}
+
+第一百零四条 公司成立大会行使下列职权：
+
+（一）审议发起人关于公司筹办情况的报告；
+
+（二）通过公司章程；
+
+（三）选举董事、监事；
+
+（四）对公司的设立费用进行审核；
+
+（五）对发起人非货币财产出资的作价进行审核；
+
+（六）发生不可抗力或者经营条件发生重大变化直接影响公司设立的，可以作出不设立公司的决议。
+
+成立大会对前款所列事项作出决议，应当经出席会议的认股人所持表决权过半数通过。
+
+### 第一百零五条 {#article-105}
+
+第一百零五条 公司设立时应发行的股份未募足，或者发行股份的股款缴足后，发起人在三十日内未召开成立大会的，认股人可以按照所缴股款并加算银行同期存款利息，要求发起人返还。
+
+发起人、认股人缴纳股款或者交付非货币财产出资后，除未按期募足股份、发起人未按期召开成立大会或者成立大会决议不设立公司的情形外，不得抽回其股本。
+
+### 第一百零六条 {#article-106}
+
+第一百零六条 董事会应当授权代表，于公司成立大会结束后三十日内向公司登记机关申请设立登记。
+
+### 第一百零七条 {#article-107}
+
+第一百零七条 本法第四十四条、第四十九条第三款、第五十一条、第五十二条、第五十三条的规定，适用于股份有限公司。
+
+### 第一百零八条 {#article-108}
+
+第一百零八条 有限责任公司变更为股份有限公司时，折合的实收股本总额不得高于公司净资产额。有限责任公司变更为股份有限公司，为增加注册资本公开发行股份时，应当依法办理。
+
+### 第一百零九条 {#article-109}
+
+第一百零九条 股份有限公司应当将公司章程、股东名册、股东会会议记录、董事会会议记录、监事会会议记录、财务会计报告、债券持有人名册置备于本公司。
+
+### 第一百一十条 {#article-110}
+
+第一百一十条 股东有权查阅、复制公司章程、股东名册、股东会会议记录、董事会会议决议、监事会会议决议、财务会计报告，对公司的经营提出建议或者质询。
+
+连续一百八十日以上单独或者合计持有公司百分之三以上股份的股东要求查阅公司的会计账簿、会计凭证的，适用本法第五十七条第二款、第三款、第四款的规定。公司章程对持股比例有较低规定的，从其规定。
+
+股东要求查阅、复制公司全资子公司相关材料的，适用前两款的规定。
+
+上市公司股东查阅、复制相关材料的，应当遵守《中华人民共和国证券法》等法律、行政法规的规定。
+
+### 第一百一十一条 {#article-111}
+
+第一百一十一条 股份有限公司股东会由全体股东组成。股东会是公司的权力机构，依照本法行使职权。
+
+### 第一百一十二条 {#article-112}
+
+第一百一十二条 本法第五十九条第一款、第二款关于有限责任公司股东会职权的规定，适用于股份有限公司股东会。
+
+本法第六十条关于只有一个股东的有限责任公司不设股东会的规定，适用于只有一个股东的股份有限公司。
+
+### 第一百一十三条 {#article-113}
+
+第一百一十三条 股东会应当每年召开一次年会。有下列情形之一的，应当在两个月内召开临时股东会会议：
+
+（一）董事人数不足本法规定人数或者公司章程所定人数的三分之二时；
+
+（二）公司未弥补的亏损达股本总额三分之一时；
+
+（三）单独或者合计持有公司百分之十以上股份的股东请求时；
+
+（四）董事会认为必要时；
+
+（五）监事会提议召开时；
+
+（六）公司章程规定的其他情形。
+
+### 第一百一十四条 {#article-114}
+
+第一百一十四条 股东会会议由董事会召集，董事长主持；董事长不能履行职务或者不履行职务的，由副董事长主持；副董事长不能履行职务或者不履行职务的，由过半数的董事共同推举一名董事主持。
+
+董事会不能履行或者不履行召集股东会会议职责的，监事会应当及时召集和主持；监事会不召集和主持的，连续九十日以上单独或者合计持有公司百分之十以上股份的股东可以自行召集和主持。
+
+单独或者合计持有公司百分之十以上股份的股东请求召开临时股东会会议的，董事会、监事会应当在收到请求之日起十日内作出是否召开临时股东会会议的决定，并书面答复股东。
+
+### 第一百一十五条 {#article-115}
+
+第一百一十五条 召开股东会会议，应当将会议召开的时间、地点和审议的事项于会议召开二十日前通知各股东；临时股东会会议应当于会议召开十五日前通知各股东。
+
+单独或者合计持有公司百分之一以上股份的股东，可以在股东会会议召开十日前提出临时提案并书面提交董事会。临时提案应当有明确议题和具体决议事项。董事会应当在收到提案后二日内通知其他股东，并将该临时提案提交股东会审议；但临时提案违反法律、行政法规或者公司章程的规定，或者不属于股东会职权范围的除外。公司不得提高提出临时提案股东的持股比例。
+
+公开发行股份的公司，应当以公告方式作出前两款规定的通知。
+
+股东会不得对通知中未列明的事项作出决议。
+
+### 第一百一十六条 {#article-116}
+
+第一百一十六条 股东出席股东会会议，所持每一股份有一表决权，类别股股东除外。公司持有的本公司股份没有表决权。
+
+股东会作出决议，应当经出席会议的股东所持表决权过半数通过。
+
+股东会作出修改公司章程、增加或者减少注册资本的决议，以及公司合并、分立、解散或者变更公司形式的决议，应当经出席会议的股东所持表决权的三分之二以上通过。
+
+### 第一百一十七条 {#article-117}
+
+第一百一十七条 股东会选举董事、监事，可以按照公司章程的规定或者股东会的决议，实行累积投票制。
+
+本法所称累积投票制，是指股东会选举董事或者监事时，每一股份拥有与应选董事或者监事人数相同的表决权，股东拥有的表决权可以集中使用。
+
+### 第一百一十八条 {#article-118}
+
+第一百一十八条 股东委托代理人出席股东会会议的，应当明确代理人代理的事项、权限和期限；代理人应当向公司提交股东授权委托书，并在授权范围内行使表决权。
+
+### 第一百一十九条 {#article-119}
+
+第一百一十九条 股东会应当对所议事项的决定作成会议记录，主持人、出席会议的董事应当在会议记录上签名。会议记录应当与出席股东的签名册及代理出席的委托书一并保存。
+
+### 第一百二十条 {#article-120}
+
+第一百二十条 股份有限公司设董事会，本法第一百二十八条另有规定的除外。
+
+本法第六十七条、第六十八条第一款、第七十条、第七十一条的规定，适用于股份有限公司。
+
+### 第一百二十一条 {#article-121}
+
+第一百二十一条 股份有限公司可以按照公司章程的规定在董事会中设置由董事组成的审计委员会，行使本法规定的监事会的职权，不设监事会或者监事。
+
+审计委员会成员为三名以上，过半数成员不得在公司担任除董事以外的其他职务，且不得与公司存在任何可能影响其独立客观判断的关系。公司董事会成员中的职工代表可以成为审计委员会成员。
+
+审计委员会作出决议，应当经审计委员会成员的过半数通过。
+
+审计委员会决议的表决，应当一人一票。
+
+审计委员会的议事方式和表决程序，除本法有规定的外，由公司章程规定。
+
+公司可以按照公司章程的规定在董事会中设置其他委员会。
+
+### 第一百二十二条 {#article-122}
+
+第一百二十二条 董事会设董事长一人，可以设副董事长。董事长和副董事长由董事会以全体董事的过半数选举产生。
+
+董事长召集和主持董事会会议，检查董事会决议的实施情况。副董事长协助董事长工作，董事长不能履行职务或者不履行职务的，由副董事长履行职务；副董事长不能履行职务或者不履行职务的，由过半数的董事共同推举一名董事履行职务。
+
+### 第一百二十三条 {#article-123}
+
+第一百二十三条 董事会每年度至少召开两次会议，每次会议应当于会议召开十日前通知全体董事和监事。
+
+代表十分之一以上表决权的股东、三分之一以上董事或者监事会，可以提议召开临时董事会会议。董事长应当自接到提议后十日内，召集和主持董事会会议。
+
+董事会召开临时会议，可以另定召集董事会的通知方式和通知时限。
+
+### 第一百二十四条 {#article-124}
+
+第一百二十四条 董事会会议应当有过半数的董事出席方可举行。董事会作出决议，应当经全体董事的过半数通过。
+
+董事会决议的表决，应当一人一票。
+
+董事会应当对所议事项的决定作成会议记录，出席会议的董事应当在会议记录上签名。
+
+### 第一百二十五条 {#article-125}
+
+第一百二十五条 董事会会议，应当由董事本人出席；董事因故不能出席，可以书面委托其他董事代为出席，委托书应当载明授权范围。
+
+董事应当对董事会的决议承担责任。董事会的决议违反法律、行政法规或者公司章程、股东会决议，给公司造成严重损失的，参与决议的董事对公司负赔偿责任；经证明在表决时曾表明异议并记载于会议记录的，该董事可以免除责任。
+
+### 第一百二十六条 {#article-126}
+
+第一百二十六条 股份有限公司设经理，由董事会决定聘任或者解聘。
+
+经理对董事会负责，根据公司章程的规定或者董事会的授权行使职权。经理列席董事会会议。
+
+### 第一百二十七条 {#article-127}
+
+第一百二十七条 公司董事会可以决定由董事会成员兼任经理。
+
+### 第一百二十八条 {#article-128}
+
+第一百二十八条 规模较小或者股东人数较少的股份有限公司，可以不设董事会，设一名董事，行使本法规定的董事会的职权。该董事可以兼任公司经理。
+
+### 第一百二十九条 {#article-129}
+
+第一百二十九条 公司应当定期向股东披露董事、监事、高级管理人员从公司获得报酬的情况。
+
+### 第一百三十条 {#article-130}
+
+第一百三十条 股份有限公司设监事会，本法第一百二十一条第一款、第一百三十三条另有规定的除外。
+
+监事会成员为三人以上。监事会成员应当包括股东代表和适当比例的公司职工代表，其中职工代表的比例不得低于三分之一，具体比例由公司章程规定。监事会中的职工代表由公司职工通过职工代表大会、职工大会或者其他形式民主选举产生。
+
+监事会设主席一人，可以设副主席。监事会主席和副主席由全体监事过半数选举产生。监事会主席召集和主持监事会会议；监事会主席不能履行职务或者不履行职务的，由监事会副主席召集和主持监事会会议；监事会副主席不能履行职务或者不履行职务的，由过半数的监事共同推举一名监事召集和主持监事会会议。
+
+董事、高级管理人员不得兼任监事。
+
+本法第七十七条关于有限责任公司监事任期的规定，适用于股份有限公司监事。
+
+### 第一百三十一条 {#article-131}
+
+第一百三十一条 本法第七十八条至第八十条的规定，适用于股份有限公司监事会。
+
+监事会行使职权所必需的费用，由公司承担。
+
+### 第一百三十二条 {#article-132}
+
+第一百三十二条 监事会每六个月至少召开一次会议。监事可以提议召开临时监事会会议。
+
+监事会的议事方式和表决程序，除本法有规定的外，由公司章程规定。
+
+监事会决议应当经全体监事的过半数通过。
+
+监事会决议的表决，应当一人一票。
+
+监事会应当对所议事项的决定作成会议记录，出席会议的监事应当在会议记录上签名。
+
+### 第一百三十三条 {#article-133}
+
+第一百三十三条 规模较小或者股东人数较少的股份有限公司，可以不设监事会，设一名监事，行使本法规定的监事会的职权。
+
+### 第一百三十四条 {#article-134}
+
+第一百三十四条 本法所称上市公司，是指其股票在证券交易所上市交易的股份有限公司。
+
+### 第一百三十五条 {#article-135}
+
+第一百三十五条 上市公司在一年内购买、出售重大资产或者向他人提供担保的金额超过公司资产总额百分之三十的，应当由股东会作出决议，并经出席会议的股东所持表决权的三分之二以上通过。
+
+### 第一百三十六条 {#article-136}
+
+第一百三十六条 上市公司设独立董事，具体管理办法由国务院证券监督管理机构规定。
+
+上市公司的公司章程除载明本法第九十五条规定的事项外，还应当依照法律、行政法规的规定载明董事会专门委员会的组成、职权以及董事、监事、高级管理人员薪酬考核机制等事项。
+
+### 第一百三十七条 {#article-137}
+
+第一百三十七条 上市公司在董事会中设置审计委员会的，董事会对下列事项作出决议前应当经审计委员会全体成员过半数通过：
+
+（一）聘用、解聘承办公司审计业务的会计师事务所；
+
+（二）聘任、解聘财务负责人；
+
+（三）披露财务会计报告；
+
+（四）国务院证券监督管理机构规定的其他事项。
+
+### 第一百三十八条 {#article-138}
+
+第一百三十八条 上市公司设董事会秘书，负责公司股东会和董事会会议的筹备、文件保管以及公司股东资料的管理，办理信息披露事务等事宜。
+
+### 第一百三十九条 {#article-139}
+
+第一百三十九条 上市公司董事与董事会会议决议事项所涉及的企业或者个人有关联关系的，该董事应当及时向董事会书面报告。有关联关系的董事不得对该项决议行使表决权，也不得代理其他董事行使表决权。该董事会会议由过半数的无关联关系董事出席即可举行，董事会会议所作决议须经无关联关系董事过半数通过。出席董事会会议的无关联关系董事人数不足三人的，应当将该事项提交上市公司股东会审议。
+
+### 第一百四十条 {#article-140}
+
+第一百四十条 上市公司应当依法披露股东、实际控制人的信息，相关信息应当真实、准确、完整。
+
+禁止违反法律、行政法规的规定代持上市公司股票。
+
+### 第一百四十一条 {#article-141}
+
+第一百四十一条 上市公司控股子公司不得取得该上市公司的股份。
+
+上市公司控股子公司因公司合并、质权行使等原因持有上市公司股份的，不得行使所持股份对应的表决权，并应当及时处分相关上市公司股份。
+
+### 第一百四十二条 {#article-142}
+
+第一百四十二条 公司的资本划分为股份。公司的全部股份，根据公司章程的规定择一采用面额股或者无面额股。采用面额股的，每一股的金额相等。
+
+公司可以根据公司章程的规定将已发行的面额股全部转换为无面额股或者将无面额股全部转换为面额股。
+
+采用无面额股的，应当将发行股份所得股款的二分之一以上计入注册资本。
+
+### 第一百四十三条 {#article-143}
+
+第一百四十三条 股份的发行，实行公平、公正的原则，同类别的每一股份应当具有同等权利。
+
+同次发行的同类别股份，每股的发行条件和价格应当相同；认购人所认购的股份，每股应当支付相同价额。
+
+### 第一百四十四条 {#article-144}
+
+第一百四十四条 公司可以按照公司章程的规定发行下列与普通股权利不同的类别股：
+
+（一）优先或者劣后分配利润或者剩余财产的股份；
+
+（二）每一股的表决权数多于或者少于普通股的股份；
+
+（三）转让须经公司同意等转让受限的股份；
+
+（四）国务院规定的其他类别股。
+
+公开发行股份的公司不得发行前款第二项、第三项规定的类别股；公开发行前已发行的除外。
+
+公司发行本条第一款第二项规定的类别股的，对于监事或者审计委员会成员的选举和更换，类别股与普通股每一股的表决权数相同。
+
+### 第一百四十五条 {#article-145}
+
+第一百四十五条 发行类别股的公司，应当在公司章程中载明以下事项：
+
+（一）类别股分配利润或者剩余财产的顺序；
+
+（二）类别股的表决权数；
+
+（三）类别股的转让限制；
+
+（四）保护中小股东权益的措施；
+
+（五）股东会认为需要规定的其他事项。
+
+### 第一百四十六条 {#article-146}
+
+第一百四十六条 发行类别股的公司，有本法第一百一十六条第三款规定的事项等可能影响类别股股东权利的，除应当依照第一百一十六条第三款的规定经股东会决议外，还应当经出席类别股股东会议的股东所持表决权的三分之二以上通过。
+
+公司章程可以对需经类别股股东会议决议的其他事项作出规定。
+
+### 第一百四十七条 {#article-147}
+
+第一百四十七条 公司的股份采取股票的形式。股票是公司签发的证明股东所持股份的凭证。
+
+公司发行的股票，应当为记名股票。
+
+### 第一百四十八条 {#article-148}
+
+第一百四十八条 面额股股票的发行价格可以按票面金额，也可以超过票面金额，但不得低于票面金额。
+
+### 第一百四十九条 {#article-149}
+
+第一百四十九条 股票采用纸面形式或者国务院证券监督管理机构规定的其他形式。
+
+股票采用纸面形式的，应当载明下列主要事项：
+
+（一）公司名称；
+
+（二）公司成立日期或者股票发行的时间；
+
+（三）股票种类、票面金额及代表的股份数，发行无面额股的，股票代表的股份数。
+
+股票采用纸面形式的，还应当载明股票的编号，由法定代表人签名，公司盖章。
+
+发起人股票采用纸面形式的，应当标明发起人股票字样。
+
+### 第一百五十条 {#article-150}
+
+第一百五十条 股份有限公司成立后，即向股东正式交付股票。公司成立前不得向股东交付股票。
+
+### 第一百五十一条 {#article-151}
+
+第一百五十一条 公司发行新股，股东会应当对下列事项作出决议：
+
+（一）新股种类及数额；
+
+（二）新股发行价格；
+
+（三）新股发行的起止日期；
+
+（四）向原有股东发行新股的种类及数额；
+
+（五）发行无面额股的，新股发行所得股款计入注册资本的金额。
+
+公司发行新股，可以根据公司经营情况和财务状况，确定其作价方案。
+
+### 第一百五十二条 {#article-152}
+
+第一百五十二条 公司章程或者股东会可以授权董事会在三年内决定发行不超过已发行股份百分之五十的股份。但以非货币财产作价出资的应当经股东会决议。
+
+董事会依照前款规定决定发行股份导致公司注册资本、已发行股份数发生变化的，对公司章程该项记载事项的修改不需再由股东会表决。
+
+### 第一百五十三条 {#article-153}
+
+第一百五十三条 公司章程或者股东会授权董事会决定发行新股的，董事会决议应当经全体董事三分之二以上通过。
+
+### 第一百五十四条 {#article-154}
+
+第一百五十四条 公司向社会公开募集股份，应当经国务院证券监督管理机构注册，公告招股说明书。
+
+招股说明书应当附有公司章程，并载明下列事项：
+
+（一）发行的股份总数；
+
+（二）面额股的票面金额和发行价格或者无面额股的发行价格；
+
+（三）募集资金的用途；
+
+（四）认股人的权利和义务；
+
+（五）股份种类及其权利和义务；
+
+（六）本次募股的起止日期及逾期未募足时认股人可以撤回所认股份的说明。
+
+公司设立时发行股份的，还应当载明发起人认购的股份数。
+
+### 第一百五十五条 {#article-155}
+
+第一百五十五条 公司向社会公开募集股份，应当由依法设立的证券公司承销，签订承销协议。
+
+### 第一百五十六条 {#article-156}
+
+第一百五十六条 公司向社会公开募集股份，应当同银行签订代收股款协议。
+
+代收股款的银行应当按照协议代收和保存股款，向缴纳股款的认股人出具收款单据，并负有向有关部门出具收款证明的义务。
+
+公司发行股份募足股款后，应予公告。
+
+### 第一百五十七条 {#article-157}
+
+第一百五十七条 股份有限公司的股东持有的股份可以向其他股东转让，也可以向股东以外的人转让；公司章程对股份转让有限制的，其转让按照公司章程的规定进行。
+
+### 第一百五十八条 {#article-158}
+
+第一百五十八条 股东转让其股份，应当在依法设立的证券交易场所进行或者按照国务院规定的其他方式进行。
+
+### 第一百五十九条 {#article-159}
+
+第一百五十九条 股票的转让，由股东以背书方式或者法律、行政法规规定的其他方式进行；转让后由公司将受让人的姓名或者名称及住所记载于股东名册。
+
+股东会会议召开前二十日内或者公司决定分配股利的基准日前五日内，不得变更股东名册。法律、行政法规或者国务院证券监督管理机构对上市公司股东名册变更另有规定的，从其规定。
+
+### 第一百六十条 {#article-160}
+
+第一百六十条 公司公开发行股份前已发行的股份，自公司股票在证券交易所上市交易之日起一年内不得转让。法律、行政法规或者国务院证券监督管理机构对上市公司的股东、实际控制人转让其所持有的本公司股份另有规定的，从其规定。
+
+公司董事、监事、高级管理人员应当向公司申报所持有的本公司的股份及其变动情况，在就任时确定的任职期间每年转让的股份不得超过其所持有本公司股份总数的百分之二十五；所持本公司股份自公司股票上市交易之日起一年内不得转让。上述人员离职后半年内，不得转让其所持有的本公司股份。公司章程可以对公司董事、监事、高级管理人员转让其所持有的本公司股份作出其他限制性规定。
+
+股份在法律、行政法规规定的限制转让期限内出质的，质权人不得在限制转让期限内行使质权。
+
+### 第一百六十一条 {#article-161}
+
+第一百六十一条 有下列情形之一的，对股东会该项决议投反对票的股东可以请求公司按照合理的价格收购其股份，公开发行股份的公司除外：
+
+（一）公司连续五年不向股东分配利润，而公司该五年连续盈利，并且符合本法规定的分配利润条件；
+
+（二）公司转让主要财产；
+
+（三）公司章程规定的营业期限届满或者章程规定的其他解散事由出现，股东会通过决议修改章程使公司存续。
+
+自股东会决议作出之日起六十日内，股东与公司不能达成股份收购协议的，股东可以自股东会决议作出之日起九十日内向人民法院提起诉讼。
+
+公司因本条第一款规定的情形收购的本公司股份，应当在六个月内依法转让或者注销。
+
+### 第一百六十二条 {#article-162}
+
+第一百六十二条 公司不得收购本公司股份。但是，有下列情形之一的除外：
+
+（一）减少公司注册资本；
+
+（二）与持有本公司股份的其他公司合并；
+
+（三）将股份用于员工持股计划或者股权激励；
+
+（四）股东因对股东会作出的公司合并、分立决议持异议，要求公司收购其股份；
+
+（五）将股份用于转换公司发行的可转换为股票的公司债券；
+
+（六）上市公司为维护公司价值及股东权益所必需。
+
+公司因前款第一项、第二项规定的情形收购本公司股份的，应当经股东会决议；公司因前款第三项、第五项、第六项规定的情形收购本公司股份的，可以按照公司章程或者股东会的授权，经三分之二以上董事出席的董事会会议决议。
+
+公司依照本条第一款规定收购本公司股份后，属于第一项情形的，应当自收购之日起十日内注销；属于第二项、第四项情形的，应当在六个月内转让或者注销；属于第三项、第五项、第六项情形的，公司合计持有的本公司股份数不得超过本公司已发行股份总数的百分之十，并应当在三年内转让或者注销。
+
+上市公司收购本公司股份的，应当依照《中华人民共和国证券法》的规定履行信息披露义务。上市公司因本条第一款第三项、第五项、第六项规定的情形收购本公司股份的，应当通过公开的集中交易方式进行。
+
+公司不得接受本公司的股份作为质权的标的。
+
+### 第一百六十三条 {#article-163}
+
+第一百六十三条 公司不得为他人取得本公司或者其母公司的股份提供赠与、借款、担保以及其他财务资助，公司实施员工持股计划的除外。
+
+为公司利益，经股东会决议，或者董事会按照公司章程或者股东会的授权作出决议，公司可以为他人取得本公司或者其母公司的股份提供财务资助，但财务资助的累计总额不得超过已发行股本总额的百分之十。董事会作出决议应当经全体董事的三分之二以上通过。
+
+违反前两款规定，给公司造成损失的，负有责任的董事、监事、高级管理人员应当承担赔偿责任。
+
+### 第一百六十四条 {#article-164}
+
+第一百六十四条 股票被盗、遗失或者灭失，股东可以依照《中华人民共和国民事诉讼法》规定的公示催告程序，请求人民法院宣告该股票失效。人民法院宣告该股票失效后，股东可以向公司申请补发股票。
+
+### 第一百六十五条 {#article-165}
+
+第一百六十五条 上市公司的股票，依照有关法律、行政法规及证券交易所交易规则上市交易。
+
+### 第一百六十六条 {#article-166}
+
+第一百六十六条 上市公司应当依照法律、行政法规的规定披露相关信息。
+
+### 第一百六十七条 {#article-167}
+
+第一百六十七条 自然人股东死亡后，其合法继承人可以继承股东资格；但是，股份转让受限的股份有限公司的章程另有规定的除外。
+
+### 第一百六十八条 {#article-168}
+
+第一百六十八条 国家出资公司的组织机构，适用本章规定；本章没有规定的，适用本法其他规定。
+
+本法所称国家出资公司，是指国家出资的国有独资公司、国有资本控股公司，包括国家出资的有限责任公司、股份有限公司。
+
+### 第一百六十九条 {#article-169}
+
+第一百六十九条 国家出资公司，由国务院或者地方人民政府分别代表国家依法履行出资人职责，享有出资人权益。国务院或者地方人民政府可以授权国有资产监督管理机构或者其他部门、机构代表本级人民政府对国家出资公司履行出资人职责。
+
+代表本级人民政府履行出资人职责的机构、部门，以下统称为履行出资人职责的机构。
+
+### 第一百七十条 {#article-170}
+
+第一百七十条 国家出资公司中中国共产党的组织，按照中国共产党章程的规定发挥领导作用，研究讨论公司重大经营管理事项，支持公司的组织机构依法行使职权。
+
+### 第一百七十一条 {#article-171}
+
+第一百七十一条 国有独资公司章程由履行出资人职责的机构制定。
+
+### 第一百七十二条 {#article-172}
+
+第一百七十二条 国有独资公司不设股东会，由履行出资人职责的机构行使股东会职权。履行出资人职责的机构可以授权公司董事会行使股东会的部分职权，但公司章程的制定和修改，公司的合并、分立、解散、申请破产，增加或者减少注册资本，分配利润，应当由履行出资人职责的机构决定。
+
+### 第一百七十三条 {#article-173}
+
+第一百七十三条 国有独资公司的董事会依照本法规定行使职权。
+
+国有独资公司的董事会成员中，应当过半数为外部董事，并应当有公司职工代表。
+
+董事会成员由履行出资人职责的机构委派；但是，董事会成员中的职工代表由公司职工代表大会选举产生。
+
+董事会设董事长一人，可以设副董事长。董事长、副董事长由履行出资人职责的机构从董事会成员中指定。
+
+### 第一百七十四条 {#article-174}
+
+第一百七十四条 国有独资公司的经理由董事会聘任或者解聘。
+
+经履行出资人职责的机构同意，董事会成员可以兼任经理。
+
+### 第一百七十五条 {#article-175}
+
+第一百七十五条 国有独资公司的董事、高级管理人员，未经履行出资人职责的机构同意，不得在其他有限责任公司、股份有限公司或者其他经济组织兼职。
+
+### 第一百七十六条 {#article-176}
+
+第一百七十六条 国有独资公司在董事会中设置由董事组成的审计委员会行使本法规定的监事会职权的，不设监事会或者监事。
+
+### 第一百七十七条 {#article-177}
+
+第一百七十七条 国家出资公司应当依法建立健全内部监督管理和风险控制制度，加强内部合规管理。
+
+### 第一百七十八条 {#article-178}
+
+第一百七十八条 有下列情形之一的，不得担任公司的董事、监事、高级管理人员：
+
+（一）无民事行为能力或者限制民事行为能力；
+
+（二）因贪污、贿赂、侵占财产、挪用财产或者破坏社会主义市场经济秩序，被判处刑罚，或者因犯罪被剥夺政治权利，执行期满未逾五年，被宣告缓刑的，自缓刑考验期满之日起未逾二年；
+
+（三）担任破产清算的公司、企业的董事或者厂长、经理，对该公司、企业的破产负有个人责任的，自该公司、企业破产清算完结之日起未逾三年；
+
+（四）担任因违法被吊销营业执照、责令关闭的公司、企业的法定代表人，并负有个人责任的，自该公司、企业被吊销营业执照、责令关闭之日起未逾三年；
+
+（五）个人因所负数额较大债务到期未清偿被人民法院列为失信被执行人。
+
+违反前款规定选举、委派董事、监事或者聘任高级管理人员的，该选举、委派或者聘任无效。
+
+董事、监事、高级管理人员在任职期间出现本条第一款所列情形的，公司应当解除其职务。
+
+### 第一百七十九条 {#article-179}
+
+第一百七十九条 董事、监事、高级管理人员应当遵守法律、行政法规和公司章程。
+
+### 第一百八十条 {#article-180}
+
+第一百八十条 董事、监事、高级管理人员对公司负有忠实义务，应当采取措施避免自身利益与公司利益冲突，不得利用职权牟取不正当利益。
+
+董事、监事、高级管理人员对公司负有勤勉义务，执行职务应当为公司的最大利益尽到管理者通常应有的合理注意。
+
+公司的控股股东、实际控制人不担任公司董事但实际执行公司事务的，适用前两款规定。
+
+### 第一百八十一条 {#article-181}
+
+第一百八十一条 董事、监事、高级管理人员不得有下列行为：
+
+（一）侵占公司财产、挪用公司资金；
+
+（二）将公司资金以其个人名义或者以其他个人名义开立账户存储；
+
+（三）利用职权贿赂或者收受其他非法收入；
+
+（四）接受他人与公司交易的佣金归为己有；
+
+（五）擅自披露公司秘密；
+
+（六）违反对公司忠实义务的其他行为。
+
+### 第一百八十二条 {#article-182}
+
+第一百八十二条 董事、监事、高级管理人员，直接或者间接与本公司订立合同或者进行交易，应当就与订立合同或者进行交易有关的事项向董事会或者股东会报告，并按照公司章程的规定经董事会或者股东会决议通过。
+
+董事、监事、高级管理人员的近亲属，董事、监事、高级管理人员或者其近亲属直接或者间接控制的企业，以及与董事、监事、高级管理人员有其他关联关系的关联人，与公司订立合同或者进行交易，适用前款规定。
+
+### 第一百八十三条 {#article-183}
+
+第一百八十三条 董事、监事、高级管理人员，不得利用职务便利为自己或者他人谋取属于公司的商业机会。但是，有下列情形之一的除外：
+
+（一）向董事会或者股东会报告，并按照公司章程的规定经董事会或者股东会决议通过；
+
+（二）根据法律、行政法规或者公司章程的规定，公司不能利用该商业机会。
+
+### 第一百八十四条 {#article-184}
+
+第一百八十四条 董事、监事、高级管理人员未向董事会或者股东会报告，并按照公司章程的规定经董事会或者股东会决议通过，不得自营或者为他人经营与其任职公司同类的业务。
+
+### 第一百八十五条 {#article-185}
+
+第一百八十五条 董事会对本法第一百八十二条至第一百八十四条规定的事项决议时，关联董事不得参与表决，其表决权不计入表决权总数。出席董事会会议的无关联关系董事人数不足三人的，应当将该事项提交股东会审议。
+
+### 第一百八十六条 {#article-186}
+
+第一百八十六条 董事、监事、高级管理人员违反本法第一百八十一条至第一百八十四条规定所得的收入应当归公司所有。
+
+### 第一百八十七条 {#article-187}
+
+第一百八十七条 股东会要求董事、监事、高级管理人员列席会议的，董事、监事、高级管理人员应当列席并接受股东的质询。
+
+### 第一百八十八条 {#article-188}
+
+第一百八十八条 董事、监事、高级管理人员执行职务违反法律、行政法规或者公司章程的规定，给公司造成损失的，应当承担赔偿责任。
+
+### 第一百八十九条 {#article-189}
+
+第一百八十九条 董事、高级管理人员有前条规定的情形的，有限责任公司的股东、股份有限公司连续一百八十日以上单独或者合计持有公司百分之一以上股份的股东，可以书面请求监事会向人民法院提起诉讼；监事有前条规定的情形的，前述股东可以书面请求董事会向人民法院提起诉讼。
+
+监事会或者董事会收到前款规定的股东书面请求后拒绝提起诉讼，或者自收到请求之日起三十日内未提起诉讼，或者情况紧急、不立即提起诉讼将会使公司利益受到难以弥补的损害的，前款规定的股东有权为公司利益以自己的名义直接向人民法院提起诉讼。
+
+他人侵犯公司合法权益，给公司造成损失的，本条第一款规定的股东可以依照前两款的规定向人民法院提起诉讼。
+
+公司全资子公司的董事、监事、高级管理人员有前条规定情形，或者他人侵犯公司全资子公司合法权益造成损失的，有限责任公司的股东、股份有限公司连续一百八十日以上单独或者合计持有公司百分之一以上股份的股东，可以依照前三款规定书面请求全资子公司的监事会、董事会向人民法院提起诉讼或者以自己的名义直接向人民法院提起诉讼。
+
+### 第一百九十条 {#article-190}
+
+第一百九十条 董事、高级管理人员违反法律、行政法规或者公司章程的规定，损害股东利益的，股东可以向人民法院提起诉讼。
+
+### 第一百九十一条 {#article-191}
+
+第一百九十一条 董事、高级管理人员执行职务，给他人造成损害的，公司应当承担赔偿责任；董事、高级管理人员存在故意或者重大过失的，也应当承担赔偿责任。
+
+### 第一百九十二条 {#article-192}
+
+第一百九十二条 公司的控股股东、实际控制人指示董事、高级管理人员从事损害公司或者股东利益的行为的，与该董事、高级管理人员承担连带责任。
+
+### 第一百九十三条 {#article-193}
+
+第一百九十三条 公司可以在董事任职期间为董事因执行公司职务承担的赔偿责任投保责任保险。
+
+公司为董事投保责任保险或者续保后，董事会应当向股东会报告责任保险的投保金额、承保范围及保险费率等内容。
+
+### 第一百九十四条 {#article-194}
+
+第一百九十四条 本法所称公司债券，是指公司发行的约定按期还本付息的有价证券。
+
+公司债券可以公开发行，也可以非公开发行。
+
+公司债券的发行和交易应当符合《中华人民共和国证券法》等法律、行政法规的规定。
+
+### 第一百九十五条 {#article-195}
+
+第一百九十五条 公开发行公司债券，应当经国务院证券监督管理机构注册，公告公司债券募集办法。
+
+公司债券募集办法应当载明下列主要事项：
+
+（一）公司名称；
+
+（二）债券募集资金的用途；
+
+（三）债券总额和债券的票面金额；
+
+（四）债券利率的确定方式；
+
+（五）还本付息的期限和方式；
+
+（六）债券担保情况；
+
+（七）债券的发行价格、发行的起止日期；
+
+（八）公司净资产额；
+
+（九）已发行的尚未到期的公司债券总额；
+
+（十）公司债券的承销机构。
+
+### 第一百九十六条 {#article-196}
+
+第一百九十六条 公司以纸面形式发行公司债券的，应当在债券上载明公司名称、债券票面金额、利率、偿还期限等事项，并由法定代表人签名，公司盖章。
+
+### 第一百九十七条 {#article-197}
+
+第一百九十七条 公司债券应当为记名债券。
+
+### 第一百九十八条 {#article-198}
+
+第一百九十八条 公司发行公司债券应当置备公司债券持有人名册。
+
+发行公司债券的，应当在公司债券持有人名册上载明下列事项：
+
+（一）债券持有人的姓名或者名称及住所；
+
+（二）债券持有人取得债券的日期及债券的编号；
+
+（三）债券总额，债券的票面金额、利率、还本付息的期限和方式；
+
+（四）债券的发行日期。
+
+### 第一百九十九条 {#article-199}
+
+第一百九十九条 公司债券的登记结算机构应当建立债券登记、存管、付息、兑付等相关制度。
+
+### 第二百条 {#article-200}
+
+第二百条 公司债券可以转让，转让价格由转让人与受让人约定。
+
+公司债券的转让应当符合法律、行政法规的规定。
+
+### 第二百零一条 {#article-201}
+
+第二百零一条 公司债券由债券持有人以背书方式或者法律、行政法规规定的其他方式转让；转让后由公司将受让人的姓名或者名称及住所记载于公司债券持有人名册。
+
+### 第二百零二条 {#article-202}
+
+第二百零二条 股份有限公司经股东会决议，或者经公司章程、股东会授权由董事会决议，可以发行可转换为股票的公司债券，并规定具体的转换办法。上市公司发行可转换为股票的公司债券，应当经国务院证券监督管理机构注册。
+
+发行可转换为股票的公司债券，应当在债券上标明可转换公司债券字样，并在公司债券持有人名册上载明可转换公司债券的数额。
+
+### 第二百零三条 {#article-203}
+
+第二百零三条 发行可转换为股票的公司债券的，公司应当按照其转换办法向债券持有人换发股票，但债券持有人对转换股票或者不转换股票有选择权。法律、行政法规另有规定的除外。
+
+### 第二百零四条 {#article-204}
+
+第二百零四条 公开发行公司债券的，应当为同期债券持有人设立债券持有人会议，并在债券募集办法中对债券持有人会议的召集程序、会议规则和其他重要事项作出规定。债券持有人会议可以对与债券持有人有利害关系的事项作出决议。
+
+除公司债券募集办法另有约定外，债券持有人会议决议对同期全体债券持有人发生效力。
+
+### 第二百零五条 {#article-205}
+
+第二百零五条 公开发行公司债券的，发行人应当为债券持有人聘请债券受托管理人，由其为债券持有人办理受领清偿、债权保全、与债券相关的诉讼以及参与债务人破产程序等事项。
+
+### 第二百零六条 {#article-206}
+
+第二百零六条 债券受托管理人应当勤勉尽责，公正履行受托管理职责，不得损害债券持有人利益。
+
+受托管理人与债券持有人存在利益冲突可能损害债券持有人利益的，债券持有人会议可以决议变更债券受托管理人。
+
+债券受托管理人违反法律、行政法规或者债券持有人会议决议，损害债券持有人利益的，应当承担赔偿责任。
+
+### 第二百零七条 {#article-207}
+
+第二百零七条 公司应当依照法律、行政法规和国务院财政部门的规定建立本公司的财务、会计制度。
+
+### 第二百零八条 {#article-208}
+
+第二百零八条 公司应当在每一会计年度终了时编制财务会计报告，并依法经会计师事务所审计。
+
+财务会计报告应当依照法律、行政法规和国务院财政部门的规定制作。
+
+### 第二百零九条 {#article-209}
+
+第二百零九条 有限责任公司应当按照公司章程规定的期限将财务会计报告送交各股东。
+
+股份有限公司的财务会计报告应当在召开股东会年会的二十日前置备于本公司，供股东查阅；公开发行股份的股份有限公司应当公告其财务会计报告。
+
+### 第二百一十条 {#article-210}
+
+第二百一十条 公司分配当年税后利润时，应当提取利润的百分之十列入公司法定公积金。公司法定公积金累计额为公司注册资本的百分之五十以上的，可以不再提取。
+
+公司的法定公积金不足以弥补以前年度亏损的，在依照前款规定提取法定公积金之前，应当先用当年利润弥补亏损。
+
+公司从税后利润中提取法定公积金后，经股东会决议，还可以从税后利润中提取任意公积金。
+
+公司弥补亏损和提取公积金后所余税后利润，有限责任公司按照股东实缴的出资比例分配利润，全体股东约定不按照出资比例分配利润的除外；股份有限公司按照股东所持有的股份比例分配利润，公司章程另有规定的除外。
+
+公司持有的本公司股份不得分配利润。
+
+### 第二百一十一条 {#article-211}
+
+第二百一十一条 公司违反本法规定向股东分配利润的，股东应当将违反规定分配的利润退还公司；给公司造成损失的，股东及负有责任的董事、监事、高级管理人员应当承担赔偿责任。
+
+### 第二百一十二条 {#article-212}
+
+第二百一十二条 股东会作出分配利润的决议的，董事会应当在股东会决议作出之日起六个月内进行分配。
+
+### 第二百一十三条 {#article-213}
+
+第二百一十三条 公司以超过股票票面金额的发行价格发行股份所得的溢价款、发行无面额股所得股款未计入注册资本的金额以及国务院财政部门规定列入资本公积金的其他项目，应当列为公司资本公积金。
+
+### 第二百一十四条 {#article-214}
+
+第二百一十四条 公司的公积金用于弥补公司的亏损、扩大公司生产经营或者转为增加公司注册资本。
+
+公积金弥补公司亏损，应当先使用任意公积金和法定公积金；仍不能弥补的，可以按照规定使用资本公积金。
+
+法定公积金转为增加注册资本时，所留存的该项公积金不得少于转增前公司注册资本的百分之二十五。
+
+### 第二百一十五条 {#article-215}
+
+第二百一十五条 公司聘用、解聘承办公司审计业务的会计师事务所，按照公司章程的规定，由股东会、董事会或者监事会决定。
+
+公司股东会、董事会或者监事会就解聘会计师事务所进行表决时，应当允许会计师事务所陈述意见。
+
+### 第二百一十六条 {#article-216}
+
+第二百一十六条 公司应当向聘用的会计师事务所提供真实、完整的会计凭证、会计账簿、财务会计报告及其他会计资料，不得拒绝、隐匿、谎报。
+
+### 第二百一十七条 {#article-217}
+
+第二百一十七条 公司除法定的会计账簿外，不得另立会计账簿。
+
+对公司资金，不得以任何个人名义开立账户存储。
+
+### 第二百一十八条 {#article-218}
+
+第二百一十八条 公司合并可以采取吸收合并或者新设合并。
+
+一个公司吸收其他公司为吸收合并，被吸收的公司解散。两个以上公司合并设立一个新的公司为新设合并，合并各方解散。
+
+### 第二百一十九条 {#article-219}
+
+第二百一十九条 公司与其持股百分之九十以上的公司合并，被合并的公司不需经股东会决议，但应当通知其他股东，其他股东有权请求公司按照合理的价格收购其股权或者股份。
+
+公司合并支付的价款不超过本公司净资产百分之十的，可以不经股东会决议；但是，公司章程另有规定的除外。
+
+公司依照前两款规定合并不经股东会决议的，应当经董事会决议。
+
+### 第二百二十条 {#article-220}
+
+第二百二十条 公司合并，应当由合并各方签订合并协议，并编制资产负债表及财产清单。公司应当自作出合并决议之日起十日内通知债权人，并于三十日内在报纸上或者国家企业信用信息公示系统公告。债权人自接到通知之日起三十日内，未接到通知的自公告之日起四十五日内，可以要求公司清偿债务或者提供相应的担保。
+
+### 第二百二十一条 {#article-221}
+
+第二百二十一条 公司合并时，合并各方的债权、债务，应当由合并后存续的公司或者新设的公司承继。
+
+### 第二百二十二条 {#article-222}
+
+第二百二十二条 公司分立，其财产作相应的分割。
+
+公司分立，应当编制资产负债表及财产清单。公司应当自作出分立决议之日起十日内通知债权人，并于三十日内在报纸上或者国家企业信用信息公示系统公告。
+
+### 第二百二十三条 {#article-223}
+
+第二百二十三条 公司分立前的债务由分立后的公司承担连带责任。但是，公司在分立前与债权人就债务清偿达成的书面协议另有约定的除外。
+
+### 第二百二十四条 {#article-224}
+
+第二百二十四条 公司减少注册资本，应当编制资产负债表及财产清单。
+
+公司应当自股东会作出减少注册资本决议之日起十日内通知债权人，并于三十日内在报纸上或者国家企业信用信息公示系统公告。债权人自接到通知之日起三十日内，未接到通知的自公告之日起四十五日内，有权要求公司清偿债务或者提供相应的担保。
+
+公司减少注册资本，应当按照股东出资或者持有股份的比例相应减少出资额或者股份，法律另有规定、有限责任公司全体股东另有约定或者股份有限公司章程另有规定的除外。
+
+### 第二百二十五条 {#article-225}
+
+第二百二十五条 公司依照本法第二百一十四条第二款的规定弥补亏损后，仍有亏损的，可以减少注册资本弥补亏损。减少注册资本弥补亏损的，公司不得向股东分配，也不得免除股东缴纳出资或者股款的义务。
+
+依照前款规定减少注册资本的，不适用前条第二款的规定，但应当自股东会作出减少注册资本决议之日起三十日内在报纸上或者国家企业信用信息公示系统公告。
+
+公司依照前两款的规定减少注册资本后，在法定公积金和任意公积金累计额达到公司注册资本百分之五十前，不得分配利润。
+
+### 第二百二十六条 {#article-226}
+
+第二百二十六条 违反本法规定减少注册资本的，股东应当退还其收到的资金，减免股东出资的应当恢复原状；给公司造成损失的，股东及负有责任的董事、监事、高级管理人员应当承担赔偿责任。
+
+### 第二百二十七条 {#article-227}
+
+第二百二十七条 有限责任公司增加注册资本时，股东在同等条件下有权优先按照实缴的出资比例认缴出资。但是，全体股东约定不按照出资比例优先认缴出资的除外。
+
+股份有限公司为增加注册资本发行新股时，股东不享有优先认购权，公司章程另有规定或者股东会决议决定股东享有优先认购权的除外。
+
+### 第二百二十八条 {#article-228}
+
+第二百二十八条 有限责任公司增加注册资本时，股东认缴新增资本的出资，依照本法设立有限责任公司缴纳出资的有关规定执行。
+
+股份有限公司为增加注册资本发行新股时，股东认购新股，依照本法设立股份有限公司缴纳股款的有关规定执行。
+
+### 第二百二十九条 {#article-229}
+
+第二百二十九条 公司因下列原因解散：
+
+（一）公司章程规定的营业期限届满或者公司章程规定的其他解散事由出现；
+
+（二）股东会决议解散；
+
+（三）因公司合并或者分立需要解散；
+
+（四）依法被吊销营业执照、责令关闭或者被撤销；
+
+（五）人民法院依照本法第二百三十一条的规定予以解散。
+
+公司出现前款规定的解散事由，应当在十日内将解散事由通过国家企业信用信息公示系统予以公示。
+
+### 第二百三十条 {#article-230}
+
+第二百三十条 公司有前条第一款第一项、第二项情形，且尚未向股东分配财产的，可以通过修改公司章程或者经股东会决议而存续。
+
+依照前款规定修改公司章程或者经股东会决议，有限责任公司须经持有三分之二以上表决权的股东通过，股份有限公司须经出席股东会会议的股东所持表决权的三分之二以上通过。
+
+### 第二百三十一条 {#article-231}
+
+第二百三十一条 公司经营管理发生严重困难，继续存续会使股东利益受到重大损失，通过其他途径不能解决的，持有公司百分之十以上表决权的股东，可以请求人民法院解散公司。
+
+### 第二百三十二条 {#article-232}
+
+第二百三十二条 公司因本法第二百二十九条第一款第一项、第二项、第四项、第五项规定而解散的，应当清算。董事为公司清算义务人，应当在解散事由出现之日起十五日内组成清算组进行清算。
+
+清算组由董事组成，但是公司章程另有规定或者股东会决议另选他人的除外。
+
+清算义务人未及时履行清算义务，给公司或者债权人造成损失的，应当承担赔偿责任。
+
+### 第二百三十三条 {#article-233}
+
+第二百三十三条 公司依照前条第一款的规定应当清算，逾期不成立清算组进行清算或者成立清算组后不清算的，利害关系人可以申请人民法院指定有关人员组成清算组进行清算。人民法院应当受理该申请，并及时组织清算组进行清算。
+
+公司因本法第二百二十九条第一款第四项的规定而解散的，作出吊销营业执照、责令关闭或者撤销决定的部门或者公司登记机关，可以申请人民法院指定有关人员组成清算组进行清算。
+
+### 第二百三十四条 {#article-234}
+
+第二百三十四条 清算组在清算期间行使下列职权：
+
+（一）清理公司财产，分别编制资产负债表和财产清单；
+
+（二）通知、公告债权人；
+
+（三）处理与清算有关的公司未了结的业务；
+
+（四）清缴所欠税款以及清算过程中产生的税款；
+
+（五）清理债权、债务；
+
+（六）分配公司清偿债务后的剩余财产；
+
+（七）代表公司参与民事诉讼活动。
+
+### 第二百三十五条 {#article-235}
+
+第二百三十五条 清算组应当自成立之日起十日内通知债权人，并于六十日内在报纸上或者国家企业信用信息公示系统公告。债权人应当自接到通知之日起三十日内，未接到通知的自公告之日起四十五日内，向清算组申报其债权。
+
+债权人申报债权，应当说明债权的有关事项，并提供证明材料。清算组应当对债权进行登记。
+
+在申报债权期间，清算组不得对债权人进行清偿。
+
+### 第二百三十六条 {#article-236}
+
+第二百三十六条 清算组在清理公司财产、编制资产负债表和财产清单后，应当制订清算方案，并报股东会或者人民法院确认。
+
+公司财产在分别支付清算费用、职工的工资、社会保险费用和法定补偿金，缴纳所欠税款，清偿公司债务后的剩余财产，有限责任公司按照股东的出资比例分配，股份有限公司按照股东持有的股份比例分配。
+
+清算期间，公司存续，但不得开展与清算无关的经营活动。公司财产在未依照前款规定清偿前，不得分配给股东。
+
+### 第二百三十七条 {#article-237}
+
+第二百三十七条 清算组在清理公司财产、编制资产负债表和财产清单后，发现公司财产不足清偿债务的，应当依法向人民法院申请破产清算。
+
+人民法院受理破产申请后，清算组应当将清算事务移交给人民法院指定的破产管理人。
+
+### 第二百三十八条 {#article-238}
+
+第二百三十八条 清算组成员履行清算职责，负有忠实义务和勤勉义务。
+
+清算组成员怠于履行清算职责，给公司造成损失的，应当承担赔偿责任；因故意或者重大过失给债权人造成损失的，应当承担赔偿责任。
+
+### 第二百三十九条 {#article-239}
+
+第二百三十九条 公司清算结束后，清算组应当制作清算报告，报股东会或者人民法院确认，并报送公司登记机关，申请注销公司登记。
+
+### 第二百四十条 {#article-240}
+
+第二百四十条 公司在存续期间未产生债务，或者已清偿全部债务的，经全体股东承诺，可以按照规定通过简易程序注销公司登记。
+
+通过简易程序注销公司登记，应当通过国家企业信用信息公示系统予以公告，公告期限不少于二十日。公告期限届满后，未有异议的，公司可以在二十日内向公司登记机关申请注销公司登记。
+
+公司通过简易程序注销公司登记，股东对本条第一款规定的内容承诺不实的，应当对注销登记前的债务承担连带责任。
+
+### 第二百四十一条 {#article-241}
+
+第二百四十一条 公司被吊销营业执照、责令关闭或者被撤销，满三年未向公司登记机关申请注销公司登记的，公司登记机关可以通过国家企业信用信息公示系统予以公告，公告期限不少于六十日。公告期限届满后，未有异议的，公司登记机关可以注销公司登记。
+
+依照前款规定注销公司登记的，原公司股东、清算义务人的责任不受影响。
+
+### 第二百四十二条 {#article-242}
+
+第二百四十二条 公司被依法宣告破产的，依照有关企业破产的法律实施破产清算。
+
+### 第二百四十三条 {#article-243}
+
+第二百四十三条 本法所称外国公司，是指依照外国法律在中华人民共和国境外设立的公司。
+
+### 第二百四十四条 {#article-244}
+
+第二百四十四条 外国公司在中华人民共和国境内设立分支机构，应当向中国主管机关提出申请，并提交其公司章程、所属国的公司登记证书等有关文件，经批准后，向公司登记机关依法办理登记，领取营业执照。
+
+外国公司分支机构的审批办法由国务院另行规定。
+
+### 第二百四十五条 {#article-245}
+
+第二百四十五条 外国公司在中华人民共和国境内设立分支机构，应当在中华人民共和国境内指定负责该分支机构的代表人或者代理人，并向该分支机构拨付与其所从事的经营活动相适应的资金。
+
+对外国公司分支机构的经营资金需要规定最低限额的，由国务院另行规定。
+
+### 第二百四十六条 {#article-246}
+
+第二百四十六条 外国公司的分支机构应当在其名称中标明该外国公司的国籍及责任形式。
+
+外国公司的分支机构应当在本机构中置备该外国公司章程。
+
+### 第二百四十七条 {#article-247}
+
+第二百四十七条 外国公司在中华人民共和国境内设立的分支机构不具有中国法人资格。
+
+外国公司对其分支机构在中华人民共和国境内进行经营活动承担民事责任。
+
+### 第二百四十八条 {#article-248}
+
+第二百四十八条 经批准设立的外国公司分支机构，在中华人民共和国境内从事业务活动，应当遵守中国的法律，不得损害中国的社会公共利益，其合法权益受中国法律保护。
+
+### 第二百四十九条 {#article-249}
+
+第二百四十九条 外国公司撤销其在中华人民共和国境内的分支机构时，应当依法清偿债务，依照本法有关公司清算程序的规定进行清算。未清偿债务之前，不得将其分支机构的财产转移至中华人民共和国境外。
+
+### 第二百五十条 {#article-250}
+
+第二百五十条 违反本法规定，虚报注册资本、提交虚假材料或者采取其他欺诈手段隐瞒重要事实取得公司登记的，由公司登记机关责令改正，对虚报注册资本的公司，处以虚报注册资本金额百分之五以上百分之十五以下的罚款；对提交虚假材料或者采取其他欺诈手段隐瞒重要事实的公司，处以五万元以上二百万元以下的罚款；情节严重的，吊销营业执照；对直接负责的主管人员和其他直接责任人员处以三万元以上三十万元以下的罚款。
+
+### 第二百五十一条 {#article-251}
+
+第二百五十一条 公司未依照本法第四十条规定公示有关信息或者不如实公示有关信息的，由公司登记机关责令改正，可以处以一万元以上五万元以下的罚款。情节严重的，处以五万元以上二十万元以下的罚款；对直接负责的主管人员和其他直接责任人员处以一万元以上十万元以下的罚款。
+
+### 第二百五十二条 {#article-252}
+
+第二百五十二条 公司的发起人、股东虚假出资，未交付或者未按期交付作为出资的货币或者非货币财产的，由公司登记机关责令改正，可以处以五万元以上二十万元以下的罚款；情节严重的，处以虚假出资或者未出资金额百分之五以上百分之十五以下的罚款；对直接负责的主管人员和其他直接责任人员处以一万元以上十万元以下的罚款。
+
+### 第二百五十三条 {#article-253}
+
+第二百五十三条 公司的发起人、股东在公司成立后，抽逃其出资的，由公司登记机关责令改正，处以所抽逃出资金额百分之五以上百分之十五以下的罚款；对直接负责的主管人员和其他直接责任人员处以三万元以上三十万元以下的罚款。
+
+### 第二百五十四条 {#article-254}
+
+第二百五十四条 有下列行为之一的，由县级以上人民政府财政部门依照《中华人民共和国会计法》等法律、行政法规的规定处罚：
+
+（一）在法定的会计账簿以外另立会计账簿；
+
+（二）提供存在虚假记载或者隐瞒重要事实的财务会计报告。
+
+### 第二百五十五条 {#article-255}
+
+第二百五十五条 公司在合并、分立、减少注册资本或者进行清算时，不依照本法规定通知或者公告债权人的，由公司登记机关责令改正，对公司处以一万元以上十万元以下的罚款。
+
+### 第二百五十六条 {#article-256}
+
+第二百五十六条 公司在进行清算时，隐匿财产，对资产负债表或者财产清单作虚假记载，或者在未清偿债务前分配公司财产的，由公司登记机关责令改正，对公司处以隐匿财产或者未清偿债务前分配公司财产金额百分之五以上百分之十以下的罚款；对直接负责的主管人员和其他直接责任人员处以一万元以上十万元以下的罚款。
+
+### 第二百五十七条 {#article-257}
+
+第二百五十七条 承担资产评估、验资或者验证的机构提供虚假材料或者提供有重大遗漏的报告的，由有关部门依照《中华人民共和国资产评估法》、《中华人民共和国注册会计师法》等法律、行政法规的规定处罚。
+
+承担资产评估、验资或者验证的机构因其出具的评估结果、验资或者验证证明不实，给公司债权人造成损失的，除能够证明自己没有过错的外，在其评估或者证明不实的金额范围内承担赔偿责任。
+
+### 第二百五十八条 {#article-258}
+
+第二百五十八条 公司登记机关违反法律、行政法规规定未履行职责或者履行职责不当的，对负有责任的领导人员和直接责任人员依法给予政务处分。
+
+### 第二百五十九条 {#article-259}
+
+第二百五十九条 未依法登记为有限责任公司或者股份有限公司，而冒用有限责任公司或者股份有限公司名义的，或者未依法登记为有限责任公司或者股份有限公司的分公司，而冒用有限责任公司或者股份有限公司的分公司名义的，由公司登记机关责令改正或者予以取缔，可以并处十万元以下的罚款。
+
+### 第二百六十条 {#article-260}
+
+第二百六十条 公司成立后无正当理由超过六个月未开业的，或者开业后自行停业连续六个月以上的，公司登记机关可以吊销营业执照，但公司依法办理歇业的除外。
+
+公司登记事项发生变更时，未依照本法规定办理有关变更登记的，由公司登记机关责令限期登记；逾期不登记的，处以一万元以上十万元以下的罚款。
+
+### 第二百六十一条 {#article-261}
+
+第二百六十一条 外国公司违反本法规定，擅自在中华人民共和国境内设立分支机构的，由公司登记机关责令改正或者关闭，可以并处五万元以上二十万元以下的罚款。
+
+### 第二百六十二条 {#article-262}
+
+第二百六十二条 利用公司名义从事危害国家安全、社会公共利益的严重违法行为的，吊销营业执照。
+
+### 第二百六十三条 {#article-263}
+
+第二百六十三条 公司违反本法规定，应当承担民事赔偿责任和缴纳罚款、罚金的，其财产不足以支付时，先承担民事赔偿责任。
+
+### 第二百六十四条 {#article-264}
+
+第二百六十四条 违反本法规定，构成犯罪的，依法追究刑事责任。
+
+### 第二百六十五条 {#article-265}
+
+第二百六十五条 本法下列用语的含义：
+
+（一）高级管理人员，是指公司的经理、副经理、财务负责人，上市公司董事会秘书和公司章程规定的其他人员。
+
+（二）控股股东，是指其出资额占有限责任公司资本总额超过百分之五十或者其持有的股份占股份有限公司股本总额超过百分之五十的股东；出资额或者持有股份的比例虽然低于百分之五十，但依其出资额或者持有的股份所享有的表决权已足以对股东会的决议产生重大影响的股东。
+
+（三）实际控制人，是指通过投资关系、协议或者其他安排，能够实际支配公司行为的人。
+
+（四）关联关系，是指公司控股股东、实际控制人、董事、监事、高级管理人员与其直接或者间接控制的企业之间的关系，以及可能导致公司利益转移的其他关系。但是，国家控股的企业之间不仅因为同受国家控股而具有关联关系。
+
+### 第二百六十六条 {#article-266}
+
+第二百六十六条 本法自2024年7月1日起施行。
+
+本法施行前已登记设立的公司，出资期限超过本法规定的期限的，除法律、行政法规或者国务院另有规定外，应当逐步调整至本法规定的期限以内；对于出资期限、出资额明显异常的，公司登记机关可以依法要求其及时调整。具体实施办法由国务院规定。

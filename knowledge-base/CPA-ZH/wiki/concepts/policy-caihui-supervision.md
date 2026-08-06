@@ -3,14 +3,29 @@ title: 关于进一步加强财会监督工作的意见
 type: concept
 concept_type: policy
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-08-06
 sources: [2026-06-26-initial-structure, archived-cpa-competition-policy-pages]
 tags: [policy, supervision, caihui-supervision, p2-important]
 related: [[concepts/policy-documents]], [[concepts/policy-audit-order]], [[concepts/law-accounting]], [[concepts/first-section-responsibility-risk-map]]
 domain: policies
 topic: supervision
+asset_id: cpa-zh:policy:caihui-supervision-2023-4
+source_id: policy-caihui-supervision-2023-4
+knowledge_type: policy
+page_role: knowledge
+maturity: reviewed
+answer_ready: false
+review_status: agent-reviewed
+version: 中办发〔2023〕4号
+published_on: 2023-02-15
+effective_from: unknown
+lifecycle_status: unknown
+authority_level: official
+raw_path: raw/policies/second-section/caihui-supervision-2023-4/official.html.md
+markdown_path: wiki/concepts/policy-caihui-supervision.md
+source_url: https://www.gov.cn/zhengce/2023-02/15/content_5741628.htm
+content_sha256: edba2cc9532ac41c324308e11fd9f1a6d73e4d5fa723b611317981b201557ca5
 ---
-
 # 关于进一步加强财会监督工作的意见
 
 ## 基本信息

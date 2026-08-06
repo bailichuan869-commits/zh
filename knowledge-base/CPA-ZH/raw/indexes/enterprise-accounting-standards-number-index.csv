@@ -1,4 +1,4 @@
-﻿StandardNo,StandardKey,Title,WikiPage,StandardCount,InterpretationCount,ApplicationCaseCount,ImplementationQaCount,OtherRuleCount,TotalMappedRecords
+StandardNo,StandardKey,Title,WikiPage,StandardCount,InterpretationCount,ApplicationCaseCount,ImplementationQaCount,OtherRuleCount,TotalMappedRecords
 ,basic,企业会计准则——基本准则,concepts/accounting-standards/basic,1,0,0,0,0,1
 1,cas-01,企业会计准则第1号——存货,concepts/accounting-standards/cas-01,1,0,0,1,0,2
 2,cas-02,企业会计准则第2号——长期股权投资,concepts/accounting-standards/cas-02,1,0,0,6,0,7

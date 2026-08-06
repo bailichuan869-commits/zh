@@ -6,7 +6,7 @@ created: 2026-06-26
 updated: 2026-06-26
 sources: [enterprise-accounting-standards-number-index-2026-06-26]
 tags: [accounting, standards, other-rules, p1-core]
-related: [[concepts/accounting-standards-system]], [[concepts/accounting-standards/calibration/index]]
+related: [[concepts/accounting-standards-system]], [[concepts/accounting-standards/unmapped-review]]
 domain: accounting-standards
 topic: other-rules
 ---

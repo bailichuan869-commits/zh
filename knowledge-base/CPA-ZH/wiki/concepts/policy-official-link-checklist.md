@@ -3,14 +3,19 @@ title: 第二板块官方链接核验清单
 type: concept
 concept_type: verification-map
 created: 2026-06-26
-updated: 2026-06-29
+updated: 2026-08-06
 sources: [2026-06-26-initial-structure, policy-documents-official-links-2026-06-29, policy-documents-raw-archive-2026-06-29]
 tags: [policy, official-links, verification, p2-important]
 related: [[concepts/policy-documents]], [[concepts/policy-document-comparison]], [[concepts/policy-version-validity-tracker]]
 domain: policies
 topic: trackers
+asset_id: cpa-zh:index:policy-official-link-checklist
+knowledge_type: index
+page_role: index
+maturity: reviewed
+answer_ready: false
+review_status: agent-reviewed
 ---
-
 # 第二板块官方链接核验清单
 
 本页记录第二板块政策文件的官方来源维护状态。已核验链接以中国政府网、财政部等官方页面为准。

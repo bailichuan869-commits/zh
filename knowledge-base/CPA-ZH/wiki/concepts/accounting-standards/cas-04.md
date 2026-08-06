@@ -41,11 +41,3 @@ topic: cas
 | 准则解释 | 关于印发《企业会计准则解释第10号——关于以使用固定资产产生的收入为基础的折旧方法》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201706/t20170621_2628435.htm | `raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第10号-关于以使用固定资产产生的收入为基础的折旧方法-的通知.html` | title-topic-keyword/medium |
 | 实施问答 | 问：不符合固定资产资本化后续支出条件的固定资产日常修理费用应如何进行会计处理？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/gdzczzsswd/202111/t20211102_3762834.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-055.html.md` | url-category-slug/high |
 | 实施问答 | 问：甲公司持有某大厦写字楼（含玻璃幕墙），甲公司按照《企业会计准则第4号——固定资产... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/gdzczzsswd/202504/t20250417_3962188.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-083.html.md` | title-standard-number/high |
-
-<!-- golden-judgments:start -->
-
-## 会计判断专题
-
-- [[concepts/accounting-judgments/fixed-assets-initial-subsequent-provisional|固定资产初始确认、后续支出与暂估转固]]
-
-<!-- golden-judgments:end -->

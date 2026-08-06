@@ -2,9 +2,20 @@
 title: 企业会计准则、应用指南及解释
 type: concept
 concept_type: standard-system
+page_role: index
+maturity: reviewed
+answer_ready: false
+review_status: agent-reviewed
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-08-06
 sources: [2026-06-26-initial-structure, accounting-standards-official-links, enterprise-accounting-standards-download-2026-06-26, enterprise-accounting-standards-interpretations-download-2026-06-26, enterprise-accounting-standards-other-rules-download-2026-06-26, enterprise-accounting-standards-application-cases-download-2026-06-26, enterprise-accounting-standards-implementation-qa-download-2026-06-26]
+asset_id: cpa-zh:index:accounting-standards-system
+source_id: accounting-standards-official-links
+knowledge_type: accounting-standards-system
+version: unknown
+effective_from: unknown
+lifecycle_status: unknown
+authority_level: curated
 tags: [accounting, standards, p1-core, draft]
 related: [[concepts/regulations-and-standards]], [[concepts/law-accounting]], [[concepts/audit-process]]
 domain: accounting-standards
@@ -44,7 +55,7 @@ topic: overview
 - [[concepts/accounting-standards/interpretations/interp-01]] - 企业会计准则解释第1号。
 - [[concepts/accounting-standards/interpretations/interp-10]] - 企业会计准则解释第10号。
 - [[concepts/accounting-standards/interpretations/interp-20]] - 企业会计准则解释第20号。
-- [[concepts/accounting-standards/calibration/index]] - 未映射资料校准入口，按准则或专题拆分人工核验线索。
+- [[concepts/accounting-standards/unmapped-review]] - 未映射资料待复核清单，记录候选归属和核验依据。
 - [[concepts/accounting-standards/other-rules/index]] - 企业会计准则其他规定入口。
 - [[concepts/accounting-standards/unmapped]] - 暂未稳定映射到具体准则编号的资料。
 
@@ -74,9 +85,26 @@ topic: overview
 - [[concepts/accounting-standards/interpretations/interp-11]] - 企业会计准则解释第11号。
 - [[concepts/accounting-standards/interpretations/interp-19]] - 企业会计准则解释第19号。
 
-## 待补充
+## 使用路径
 
-建立准则清单，并按“准则原文 -> 应用指南 -> 解释 -> 常见审计问题 -> 案例”逐项扩展。
+1. 先按报告期和交易主题定位适用准则编号，再查看该准则页的原文、解释、应用案例、实施问答和其他规定记录。
+2. 将原文要求拆成确认、计量、列报和披露四类判断，明确每一项判断所需的合同、台账、估计和外部证据。
+3. 对存在多版本、解释冲突或未映射资料的事项，回到官方来源和版本状态页，保留适用边界，不用相似标题代替依据。
+4. 最后把会计结论连接到审计风险、程序、底稿证据和案例卡片；只完成索引映射不等于已经形成可直接答疑的专业结论。
+
+## 高频主题路由
+
+| 问题类型 | 优先入口 | 审计落点 |
+|---|---|---|
+| 收入、合同资产负债、履约义务 | [[concepts/accounting-standards/cas-14]] | 控制权、履约进度、可变对价和截止性 |
+| 金融工具、减值和负债权益区分 | [[concepts/accounting-standards/cas-22]], [[concepts/accounting-standards/cas-37]] | 分类、估值、预期信用损失和合同权利义务 |
+| 租赁、固定资产和无形资产 | [[concepts/accounting-standards/cas-21]], [[concepts/accounting-standards/cas-04]], [[concepts/accounting-standards/cas-06]] | 使用权、转固时点、摊销方法和减值 |
+| 合并、企业合并和长期股权投资 | [[concepts/accounting-standards/cas-33]], [[concepts/accounting-standards/cas-20]], [[concepts/accounting-standards/cas-02]] | 控制、购买日、内部重组和合并抵销 |
+| 现金流量表和财务报表列报 | [[concepts/accounting-standards/cas-30]], [[concepts/accounting-standards/cas-31]] | 分类、总额/净额、受限资金和附注勾稽 |
+
+## 版本与准入边界
+
+编号页主要承担资料导航，不自动证明原文在报告期有效。Agent 可以先完成来源、编号、引用和结构复核；涉及法律效力、重大会计判断或正式答疑的页面，仍须经过人工复核底线后才能提升为 `answer_ready`。
 
 ## 官方链接
 
@@ -107,7 +135,6 @@ topic: overview
 - 已生成企业会计准则解释 1-20 号编号页。
 - 解释编号索引：`raw/indexes/accounting-interpretations-index.md`
 - 解释编号索引 CSV：`raw/indexes/accounting-interpretations-index.csv.md`
-- 已生成未映射资料校准专题页 26 个。
-- 校准入口：`wiki/concepts/accounting-standards/calibration/index.md`
-- 已将校准补充资料回挂到 26 个正式准则页、解释页或其他规定专题页。
+- 未映射资料统一维护在 `wiki/concepts/accounting-standards/unmapped-review.md`。
+- 已将 Agent 复核候选资料按主题回挂到正式准则页、解释页或其他规定专题页；未确认条目仍留在复核清单。
 - 其他规定入口：`wiki/concepts/accounting-standards/other-rules/index.md`

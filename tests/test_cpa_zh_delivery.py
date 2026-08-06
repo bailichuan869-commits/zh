@@ -41,8 +41,8 @@ class GoldenContentTests(unittest.TestCase):
             text = path.read_text(encoding="utf-8")
             metadata, _ = parse_frontmatter(text)
             self.assertEqual("knowledge", metadata.get("page_role"), path)
-            self.assertEqual("draft", metadata.get("maturity"), path)
-            self.assertFalse(metadata.get("answer_ready"), path)
+            self.assertEqual("reviewed", metadata.get("maturity"), path)
+            self.assertTrue(metadata.get("answer_ready"), path)
             for heading in required:
                 self.assertIn(f"## {heading}", text, f"{path}: {heading}")
             raw = KB / str(metadata["raw_path"])
@@ -77,7 +77,27 @@ class RetrievalIndexTests(unittest.TestCase):
         assert spec.loader
         spec.loader.exec_module(module)
         report = module.evaluate(include_drafts=True)
-        self.assertGreaterEqual(report["passed"], 18, json.dumps(report, ensure_ascii=False))
+        self.assertEqual("query_recall_at_5", report["metric"])
+        self.assertEqual(5, report["top_k"])
+        self.assertEqual(0.9, report["threshold"])
+        self.assertTrue(report["gate_passed"], json.dumps(report, ensure_ascii=False))
+        self.assertGreaterEqual(report["recall_at_k"], 0.9, json.dumps(report, ensure_ascii=False))
+        self.assertTrue(all(len(item["hits"]) <= 5 for item in report["results"]))
+        self.assertIn("category", report["strata"])
+
+    def test_golden_eval_gate_uses_rate_for_large_datasets(self):
+        spec = importlib.util.spec_from_file_location("kb_eval_gate", TOOLS / "kb_eval.py")
+        module = importlib.util.module_from_spec(spec)
+        assert spec.loader
+        spec.loader.exec_module(module)
+        results = [
+            {"id": f"T{index:03d}", "passed": index < 89, "category": "synthetic"}
+            for index in range(100)
+        ]
+        report = module.summarize_results(results, top_k=5, min_rate=0.9, group_by=("category",))
+        self.assertEqual(89, report["passed"])
+        self.assertFalse(report["gate_passed"])
+        self.assertFalse(report["strata"]["category"][0]["meets_threshold"])
 
     def test_natural_chinese_question_retrieves_official_evidence(self):
         service = LibraryService()

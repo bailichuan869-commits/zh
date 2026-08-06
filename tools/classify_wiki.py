@@ -34,7 +34,6 @@ DOMAINS: list[dict[str, Any]] = [
         ("basic", "基本准则"),
         ("cas", "具体准则（CAS）"),
         ("interpretations", "准则解释"),
-        ("calibration", "准则校准笔记"),
         ("accounting-judgments", "会计判断专题"),
         ("other-rules", "其他会计规定"),
         ("raw-standards", "原文·准则文本"),
@@ -176,8 +175,6 @@ def classify_wiki(rel: str, fm: dict[str, str]) -> tuple[str, str]:
         sub = p[len("concepts/accounting-standards/"):]
         if sub.startswith("interpretations/"):
             return "accounting-standards", "interpretations"
-        if sub.startswith("calibration/"):
-            return "accounting-standards", "calibration"
         if sub.startswith("other-rules/"):
             return "accounting-standards", "other-rules"
         if stem == "basic":
@@ -377,6 +374,10 @@ def iter_wiki_files() -> list[Path]:
 
 RAW_SKIP_NAMES = {"metadata.json", "source-url.txt", "manifest.json"}
 RAW_BROWSE_SUFFIXES = {".md", ".txt", ".html", ".htm", ".pdf", ".docx", ".csv", ".json", ".xlsx"}
+RETIRED_CONCEPT_TYPES = {
+    "accounting-standard-calibration-bucket",
+    "accounting-standard-calibration-index",
+}
 
 
 def iter_raw_files() -> list[Path]:
@@ -403,9 +404,11 @@ def scan(apply: bool = False) -> dict[str, Any]:
 
     for md in iter_wiki_files():
         rel = md.relative_to(KB_ROOT).as_posix()
-        stats["wiki_total"] += 1
         text = md.read_text(encoding="utf-8")
         fm, _, _ = parse_frontmatter(text)
+        if fm.get("concept_type", "") in RETIRED_CONCEPT_TYPES:
+            continue
+        stats["wiki_total"] += 1
         ov = overrides.get(rel, {})
         if ov.get("domain"):
             domain, topic = ov["domain"], ov.get("topic", "")

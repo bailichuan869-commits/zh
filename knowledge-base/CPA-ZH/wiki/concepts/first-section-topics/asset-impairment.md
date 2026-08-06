@@ -21,11 +21,11 @@ topic: first-section
 
 | 维度 | 入口 | 用途 |
 |---|---|---|
-| 实际经济业务核算 | [[concepts/laws/accounting-law/accounting-law-article-009]] | 识别停产、闲置、亏损合同、技术淘汰等真实经营事实。 |
-| 会计制度和财务报告 | [[concepts/laws/accounting-law/accounting-law-article-013]], [[concepts/laws/accounting-law/accounting-law-article-020]] | 连接减值准则、估计披露和报表列报。 |
-| 公司年度财务报告审计 | [[concepts/laws/company-law/company-law-article-208]] | 判断资产减值对年度报告和审计意见的影响。 |
-| 重大风险和信息披露 | [[concepts/laws/securities-law/securities-law-article-080]], [[concepts/laws/securities-law/securities-law-article-082]] | 上市公司减值事项通常需要与经营风险、业绩预告和年报披露一致。 |
-| 虚假记载和重大遗漏责任 | [[concepts/laws/securities-law/securities-law-article-197]] | 大额减值计提不足或不当转回可能形成信息披露风险。 |
+| 实际经济业务核算 | [[concepts/laws/accounting-law/index#article-009]] | 识别停产、闲置、亏损合同、技术淘汰等真实经营事实。 |
+| 会计制度和财务报告 | [[concepts/laws/accounting-law/index#article-013]], [[concepts/laws/accounting-law/index#article-020]] | 连接减值准则、估计披露和报表列报。 |
+| 公司年度财务报告审计 | [[concepts/laws/company-law/index#article-208]] | 判断资产减值对年度报告和审计意见的影响。 |
+| 重大风险和信息披露 | [[concepts/laws/securities-law/index#article-080]], [[concepts/laws/securities-law/index#article-082]] | 上市公司减值事项通常需要与经营风险、业绩预告和年报披露一致。 |
+| 虚假记载和重大遗漏责任 | [[concepts/laws/securities-law/index#article-197]] | 大额减值计提不足或不当转回可能形成信息披露风险。 |
 
 ## 会计准则入口
 

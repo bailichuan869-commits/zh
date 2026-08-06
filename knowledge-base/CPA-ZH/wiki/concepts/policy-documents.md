@@ -3,14 +3,19 @@ title: 行业重要政策性文件
 type: concept
 concept_type: framework
 created: 2026-06-26
-updated: 2026-07-09
+updated: 2026-08-06
 sources: [2026-06-26-initial-structure, archived-cpa-competition-policy-pages, policy-documents-official-links-2026-06-29, policy-documents-raw-archive-2026-06-29, issuance-guidance-rd-staff-investment-archive-2026-07-09]
 tags: [cpa, policy, supervision, p2-important]
 related: [[concepts/policy-caihui-supervision]], [[concepts/policy-audit-order]], [[concepts/policy-cpa-exam]], [[concepts/policy-cpa-registration]], [[concepts/policy-firm-license-supervision]], [[concepts/policy-integrity]], [[concepts/policy-firm-inspection]], [[concepts/securities-issuance-rd-staff-investment]], [[concepts/policy-document-comparison]], [[concepts/policy-implementation-map]], [[concepts/policy-official-link-checklist]], [[concepts/policy-version-validity-tracker]], [[concepts/policy-execution-checklist]]
 domain: policies
 topic: trackers
+asset_id: cpa-zh:index:policy-documents
+knowledge_type: index
+page_role: index
+maturity: reviewed
+answer_ready: false
+review_status: agent-reviewed
 ---
-
 # 行业重要政策性文件
 
 本板块维护注册会计师行业的重要政策性文件，重点不是背文件名，而是看清政策的治理目标、监管对象、事务所影响和责任边界。

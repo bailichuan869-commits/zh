@@ -103,6 +103,10 @@ def build_parser() -> argparse.ArgumentParser:
     review = sub.add_parser("review-preview")
     review.add_argument("path")
     review.add_argument("--content-sha256", default="")
+    agent_review = sub.add_parser("agent-review")
+    agent_review.add_argument("--scope", choices=["golden", "all-pending"], default="golden")
+    agent_review.add_argument("--commit", action="store_true")
+    agent_review.add_argument("--report-path", default="")
     commit = sub.add_parser("commit")
     commit.add_argument("preview_token")
     commit.add_argument("--confirmed", action="store_true")
@@ -135,6 +139,8 @@ def main() -> int:
             result = service.case_preview(args.source_path, slug=args.slug, title=args.title, source_id=args.source_id, raw_path=args.raw_path, tags=args.tags, related=args.related)
         elif operation == "review-preview":
             result = service.review_preview(args.path, args.content_sha256)
+        elif operation == "agent-review":
+            result = service.agent_review(args.scope, commit=args.commit, report_path=args.report_path)
         elif operation == "commit":
             result = service.commit(args.preview_token, confirmed=args.confirmed)
         else:

@@ -7,7 +7,7 @@ import sys
 from datetime import date
 from pathlib import Path
 
-from kb_common import parse_frontmatter
+from kb_common import is_excluded, parse_frontmatter
 
 
 def search_counts(root: Path) -> tuple[dict[str, int], int]:
@@ -54,7 +54,7 @@ def main() -> int:
     wiki_pages = sum(
         1
         for page in (root / "wiki").rglob("*.md")
-        if "_trash" not in page.relative_to(root / "wiki").parts
+        if not is_excluded(page)
     )
     raw_files = sum(1 for p in (root / "raw").rglob("*") if p.is_file())
     manifests = manifest_rows(root)

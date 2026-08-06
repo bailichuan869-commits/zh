@@ -22,31 +22,31 @@ topic: company-law
 - [[concepts/laws/company-law/index]] - 条款级目录，266 条。
 - 条款级索引来源：[[sources/core-laws-article-index-2026-06-26]]
 
-## 待补充
+## 当前覆盖与维护重点
 
-- 当前有效版本与官方来源；
-- 财务会计制度、公司治理、资本交易相关条款；
-- 与审计客户治理结构、关联方、权益性交易和财务报表列报的连接；
-- 本地文本摄入：`raw/laws/中华人民共和国公司法.md`。
+- 当前有效版本线索、官方核验入口和本地原文已记录在下方“有效版本线索”。
+- 财务会计制度、公司治理、资本交易相关条款已回挂到合并全文索引锚点。
+- 与审计客户治理结构、关联方、权益性交易和财务报表列报的连接已在实务表中展开。
+- 本地文本入口：`raw/laws/中华人民共和国公司法.md`；条文入口：[[concepts/laws/company-law/index]]。
 
 <!-- practice-framework:start -->
 ## 有效版本线索
 
 - 本地文本版本线索：1993-12-29 通过，2023-12-29 第二次修订；新修订公司法自 2024-07-01 起施行。
 - 官方核验入口：国家法律法规数据库公司法 2023 年版本 `https://flk.npc.gov.cn/detail2.html?ZmY4MDgxODE4YzkxMDhlYjAxOGNiNjkyMmY3NTBjMDc%3D=`。
-- 本页以本地 raw 文本和条款级页面为知识库底稿；正式引用前应以国家法律法规数据库或权威发布文本复核。
+- 本页以本地 raw 文本和合并全文索引锚点为知识库底稿；正式引用前应以国家法律法规数据库或权威发布文本复核。
 
 ## 核心义务地图
 
 | 主题 | 条款入口 | 实务含义 |
 |---|---|---|
-| 股东查阅和财务信息权利 | [[concepts/laws/company-law/company-law-article-057]], [[concepts/laws/company-law/company-law-article-110]] | 财务报告、会议记录、股东名册和治理资料是审计了解治理结构的重要证据。 |
-| 上市公司信息披露相关治理 | [[concepts/laws/company-law/company-law-article-138]], [[concepts/laws/company-law/company-law-article-140]] | 与 [[concepts/law-securities]] 的信息披露责任衔接。 |
-| 财务会计制度和年度报告审计 | [[concepts/laws/company-law/company-law-article-207]], [[concepts/laws/company-law/company-law-article-208]], [[concepts/laws/company-law/company-law-article-209]] | 公司应建立财务会计制度，并在会计年度终了编制财务会计报告、依法经审计。 |
-| 利润分配和公积金 | [[concepts/laws/company-law/company-law-article-210]], [[concepts/laws/company-law/company-law-article-211]], [[concepts/laws/company-law/company-law-article-212]], [[concepts/laws/company-law/company-law-article-214]] | 利润分配、弥补亏损、公积金和资本公积处理影响权益列报和合规风险。 |
-| 聘用会计师事务所 | [[concepts/laws/company-law/company-law-article-215]], [[concepts/laws/company-law/company-law-article-216]] | 公司应向事务所提供真实、完整资料，不得拒绝、隐匿、谎报。 |
-| 另立账簿和虚假报告责任 | [[concepts/laws/company-law/company-law-article-217]], [[concepts/laws/company-law/company-law-article-254]] | 与会计法、舞弊风险和审计范围受限判断直接相关。 |
-| 验资、验证和中介责任 | [[concepts/laws/company-law/company-law-article-101]], [[concepts/laws/company-law/company-law-article-257]] | 涉及验资、验证、评估或重大遗漏报告时，应联动注册会计师法责任。 |
+| 股东查阅和财务信息权利 | [[concepts/laws/company-law/index#article-057]], [[concepts/laws/company-law/index#article-110]] | 财务报告、会议记录、股东名册和治理资料是审计了解治理结构的重要证据。 |
+| 上市公司信息披露相关治理 | [[concepts/laws/company-law/index#article-138]], [[concepts/laws/company-law/index#article-140]] | 与 [[concepts/law-securities]] 的信息披露责任衔接。 |
+| 财务会计制度和年度报告审计 | [[concepts/laws/company-law/index#article-207]], [[concepts/laws/company-law/index#article-208]], [[concepts/laws/company-law/index#article-209]] | 公司应建立财务会计制度，并在会计年度终了编制财务会计报告、依法经审计。 |
+| 利润分配和公积金 | [[concepts/laws/company-law/index#article-210]], [[concepts/laws/company-law/index#article-211]], [[concepts/laws/company-law/index#article-212]], [[concepts/laws/company-law/index#article-214]] | 利润分配、弥补亏损、公积金和资本公积处理影响权益列报和合规风险。 |
+| 聘用会计师事务所 | [[concepts/laws/company-law/index#article-215]], [[concepts/laws/company-law/index#article-216]] | 公司应向事务所提供真实、完整资料，不得拒绝、隐匿、谎报。 |
+| 另立账簿和虚假报告责任 | [[concepts/laws/company-law/index#article-217]], [[concepts/laws/company-law/index#article-254]] | 与会计法、舞弊风险和审计范围受限判断直接相关。 |
+| 验资、验证和中介责任 | [[concepts/laws/company-law/index#article-101]], [[concepts/laws/company-law/index#article-257]] | 涉及验资、验证、评估或重大遗漏报告时，应联动注册会计师法责任。 |
 
 ## 审计实务连接
 

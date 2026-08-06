@@ -43,11 +43,3 @@ topic: cas
 | 实施问答 | 问：上市公司乙公司是甲公司的联营企业。乙公司向员工以非公开发行的方式授予限售期为3年... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/cqgqtzzzsswd/202301/t20230103_3861812.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-065.html.md` | url-category-slug/high |
 | 实施问答 | 问：乙公司为中国境内非上市保险企业。甲公司持有乙公司30%股权，对乙公司采用权益法核算... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/cqgqtzzzsswd/202606/t20260618_3991862.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-093.html.md` | url-category-slug/high |
 | 实施问答 | 问：投资方的联营企业作为合并方发生同一控制下企业合并的情况下，依据同一控制下企业合... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/cqgqtzzzsswd/202606/t20260618_3991863.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-094.html.md` | url-category-slug/high |
-
-<!-- golden-judgments:start -->
-
-## 会计判断专题
-
-- [[concepts/accounting-judgments/long-term-equity-investment-scope-conversion|长期股权投资适用范围与核算方法转换]]
-
-<!-- golden-judgments:end -->

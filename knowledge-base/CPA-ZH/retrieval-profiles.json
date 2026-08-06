@@ -1,0 +1,53 @@
+{
+  "schema": "cpa-zh-retrieval-profiles-v1",
+  "profiles": {
+    "general-search": {
+      "description": "全库章节检索，允许浏览草稿和历史资料",
+      "allowed_kinds": ["wiki", "raw-manifest", "raw-file", "pdf-markdown"],
+      "allowed_roles": [],
+      "lifecycle_status": ["valid", "unknown", "draft", "historical", "superseded", "expired", "enacted-not-effective"],
+      "answer_ready_only": false,
+      "authority_order": ["official", "curated"],
+      "top_k": 30,
+      "score_threshold": 0.0,
+      "require_citations": false,
+      "mode": "hybrid"
+    },
+    "answer-current": {
+      "description": "当前有效且已准入答疑的证据检索",
+      "allowed_kinds": ["wiki", "raw-manifest", "raw-file", "pdf-markdown"],
+      "allowed_roles": ["knowledge", "case", "reference"],
+      "lifecycle_status": ["valid"],
+      "answer_ready_only": true,
+      "authority_order": ["official", "curated"],
+      "top_k": 8,
+      "score_threshold": 0.15,
+      "require_citations": true,
+      "mode": "hybrid"
+    },
+    "case-review": {
+      "description": "案例复核用章节检索，包含待复核草稿和权威来源",
+      "allowed_kinds": ["wiki", "raw-manifest", "raw-file", "pdf-markdown"],
+      "allowed_roles": ["case", "knowledge", "reference"],
+      "lifecycle_status": ["valid", "unknown", "draft"],
+      "answer_ready_only": false,
+      "authority_order": ["official", "curated"],
+      "top_k": 12,
+      "score_threshold": 0.0,
+      "require_citations": true,
+      "mode": "hybrid"
+    },
+    "learning": {
+      "description": "学习检索，优先当前资料但保留历史对照",
+      "allowed_kinds": ["wiki", "raw-manifest", "raw-file", "pdf-markdown"],
+      "allowed_roles": [],
+      "lifecycle_status": ["valid", "unknown", "draft", "historical", "superseded"],
+      "answer_ready_only": false,
+      "authority_order": ["official", "curated"],
+      "top_k": 20,
+      "score_threshold": 0.0,
+      "require_citations": false,
+      "mode": "hybrid"
+    }
+  }
+}

@@ -1,9 +1,12 @@
 from __future__ import annotations
 
+import argparse
 import csv
 import re
 from collections import Counter
 from pathlib import Path
+
+from kb_common import normalize_core_law_article_links
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -13,30 +16,31 @@ OUT_DIR = KB / "wiki" / "concepts" / "laws"
 INDEX_DIR = KB / "raw" / "indexes"
 
 LAW_CONFIG = {
-    "中华人民共和国注册会计师法.md": {
+    "中华人民共和国注册会计师法-2026-草案.md": {
         "slug": "cpa-law",
+        "title": "中华人民共和国注册会计师法（2026 修订草案）",
         "concept": "concepts/law-cpa",
-        "tags": ["cpa", "law", "article", "p1-core"],
+        "tags": ["cpa", "law", "p1-core"],
+        "version_note": "本页基于 2026 修订草案手工套用文本，非官方重新公布全文；正式引用前应以官方重排版核对。",
     },
     "中华人民共和国会计法.md": {
         "slug": "accounting-law",
         "concept": "concepts/law-accounting",
-        "tags": ["accounting", "law", "article", "p1-core"],
+        "tags": ["accounting", "law", "p1-core"],
     },
     "中华人民共和国公司法.md": {
         "slug": "company-law",
         "concept": "concepts/law-company",
-        "tags": ["company-law", "law", "article", "p1-core"],
+        "tags": ["company-law", "law", "p1-core"],
     },
     "中华人民共和国证券法.md": {
         "slug": "securities-law",
         "concept": "concepts/law-securities",
-        "tags": ["securities-law", "law", "article", "p1-core"],
+        "tags": ["securities-law", "law", "p1-core"],
     },
 }
 
 LAW_CONFIG_BY_SLUG = {str(config["slug"]): config for config in LAW_CONFIG.values()}
-
 
 CHAPTER_RE = re.compile(r"^(?:#{1,3}\s*)?第[一二三四五六七八九十百零〇]+章[ 　]*(.+?)\s*$")
 SECTION_RE = re.compile(r"^(?:#{1,4}\s*)?第[一二三四五六七八九十百零〇]+节[ 　]*(.+?)\s*$")
@@ -61,8 +65,7 @@ def chinese_to_int(text: str) -> int:
             number = 0
         else:
             raise ValueError(f"unsupported numeral: {text}")
-    total += section + number
-    return total
+    return total + section + number
 
 
 def clean_heading(line: str) -> str:
@@ -90,59 +93,45 @@ def parse_law(path: Path) -> list[dict[str, str | int]]:
     current: dict[str, str | int] | None = None
     body_lines: list[str] = []
 
+    def finish() -> None:
+        nonlocal current, body_lines
+        if current is not None:
+            current["body"] = "\n".join(body_lines).strip()
+            articles.append(current)
+            current = None
+            body_lines = []
+
     for raw_line in lines:
         line = raw_line.strip()
         if not line:
             if current is not None:
                 body_lines.append("")
             continue
-
-        chapter_match = CHAPTER_RE.match(line)
-        if chapter_match:
+        if CHAPTER_RE.match(line):
+            finish()
             chapter = clean_heading(line)
             section = ""
-            if current is not None:
-                current["body"] = "\n".join(body_lines).strip()
-                articles.append(current)
-                current = None
-                body_lines = []
             continue
-
-        section_match = SECTION_RE.match(line)
-        if section_match:
+        if SECTION_RE.match(line):
+            finish()
             section = clean_heading(line)
-            if current is not None:
-                current["body"] = "\n".join(body_lines).strip()
-                articles.append(current)
-                current = None
-                body_lines = []
             continue
-
         article_match = ARTICLE_RE.match(line)
         if article_match:
-            if current is not None:
-                current["body"] = "\n".join(body_lines).strip()
-                articles.append(current)
+            finish()
             article_no_cn = article_match.group(1)
-            lead = article_match.group(2).strip()
-            article_no = chinese_to_int(article_no_cn)
             current = {
                 "law": title,
-                "article_no": article_no,
+                "article_no": chinese_to_int(article_no_cn),
                 "article_no_cn": article_no_cn,
                 "chapter": chapter,
                 "section": section,
             }
-            body_lines = [f"第{article_no_cn}条 {lead}".strip()]
+            body_lines = [f"第{article_no_cn}条 {article_match.group(2).strip()}".strip()]
             continue
-
         if current is not None:
             body_lines.append(line)
-
-    if current is not None:
-        current["body"] = "\n".join(body_lines).strip()
-        articles.append(current)
-
+    finish()
     return articles
 
 
@@ -150,171 +139,209 @@ def md_escape_table(text: str) -> str:
     return text.replace("|", "\\|").replace("\n", " ")
 
 
-def write_article_page(config: dict[str, object], row: dict[str, str | int], source_path: Path) -> str:
-    slug = str(config["slug"])
-    article_no = int(row["article_no"])
-    duplicate_ordinal = int(row.get("duplicate_ordinal", 1))
-    duplicate_suffix = "" if duplicate_ordinal == 1 else f"-{duplicate_ordinal}"
-    filename = f"{slug}-article-{article_no:03d}{duplicate_suffix}.md"
-    page_path = OUT_DIR / slug / filename
-    page_path.parent.mkdir(parents=True, exist_ok=True)
-    tags = ", ".join(str(tag) for tag in config["tags"])
-    title = f"{row['law']}第{row['article_no_cn']}条"
-    body = str(row["body"]).strip()
-    summary = first_sentence(body)
-    section_line = f"- 节：{row['section']}\n" if row["section"] else ""
-    content = f"""---
-title: {title}
-type: concept
-concept_type: law-article
-created: 2026-06-26
-updated: 2026-06-26
-sources: [local-core-laws-2026-06-26]
-tags: [{tags}]
-related: [[{config["concept"]}]], [[sources/core-laws-article-index-2026-06-26]]
----
-
-# {title}
-
-## 定位
-
-- 法律：{row['law']}
-- 章节：{row['chapter']}
-{section_line}- 条号：第{row['article_no_cn']}条
-- 本地原文：`{source_path.relative_to(KB).as_posix()}`
-
-## 条文原文
-
-{body}
-
-## 检索摘要
-
-{summary}
-"""
-    page_path.write_text(content, encoding="utf-8")
-    return f"concepts/laws/{slug}/{filename[:-3]}"
+def article_anchor(article_no: int, duplicate_ordinal: int = 1) -> str:
+    suffix = "" if duplicate_ordinal == 1 else f"-{duplicate_ordinal}"
+    return f"article-{article_no:03d}{suffix}"
 
 
-def write_law_index(slug: str, rows: list[dict[str, str | int]]) -> str:
+def article_heading(article_no_cn: str, anchor: str) -> str:
+    return f"### 第{article_no_cn}条 {{#{anchor}}}"
+
+
+def write_law_index(
+    slug: str,
+    rows: list[dict[str, str | int]],
+    source_path: Path,
+    *,
+    apply: bool,
+) -> str:
     config = LAW_CONFIG_BY_SLUG[slug]
-    law = str(rows[0]["Law"])
+    law = str(rows[0]["law"])
     index_path = OUT_DIR / slug / "index.md"
     tag_list = ", ".join(str(tag) for tag in config["tags"])
     lines = [
         "---",
-        f"title: {law}条款目录",
+        f"title: {law}条款全文与索引",
         "type: concept",
         "concept_type: law-article-index",
         "created: 2026-06-26",
-        "updated: 2026-06-26",
+        "updated: 2026-08-05",
         "sources: [local-core-laws-2026-06-26]",
         f"tags: [{tag_list}, article-index]",
         f"related: [[{config['concept']}]], [[sources/core-laws-article-index-2026-06-26]]",
         "---",
         "",
-        f"# {law}条款目录",
+        f"# {law}条款全文与索引",
         "",
-        "## 汇总",
+        "## 使用说明",
         "",
-        f"- 条款记录数：{len(rows)}",
-        "- 条款页：本目录下按条号生成。",
-        "- 说明：如原文存在重复条号，第二个及以后条款页文件名会追加序号后缀。",
-        "",
-        "## 条款",
-        "",
-        "| 条号 | 章节 | 摘要 | 页面 |",
-        "|---:|---|---|---|",
+        f"- 本页按本地原文 `{source_path.relative_to(KB).as_posix()}` 编排，保留全部 {len(rows)} 条条文。",
+        "- 条文标题带有稳定锚点，可从专题页和搜索结果直接定位；专业解释、实务判断或版本差异应沉淀到主题页，不再按条文生成独立知识页。",
     ]
+    version_note = config.get("version_note")
+    if version_note:
+        lines.append(f"- 版本提示：{version_note}")
+    if slug == "cpa-law":
+        lines.append("- 2026 修订资料：[[concepts/laws/cpa-law/2026-amendment-highlights]]、[[sources/cpa-law-amendment-2026]]。")
+    lines.extend(
+        [
+            "",
+            "## 条款索引",
+            "",
+            "| 条号 | 章节 | 摘要 | 页面 |",
+            "|---:|---|---|---|",
+        ]
+    )
     for row in rows:
-        suffix = "" if int(row["DuplicateOrdinal"]) == 1 else f"（第{row['DuplicateOrdinal']}个同号条款）"
+        anchor = article_anchor(int(row["article_no"]), int(row["duplicate_ordinal"]))
+        page = f"concepts/laws/{slug}/index#{anchor}"
+        label = "全文索引锚点"
+        suffix = "" if int(row["duplicate_ordinal"]) == 1 else f"（第{row['duplicate_ordinal']}个同号条款）"
         lines.append(
-            "| {no}{suffix} | {chapter} | {summary} | [[{page}]] |".format(
-                no=row["ArticleNo"],
-                suffix=suffix,
-                chapter=md_escape_table(str(row["Chapter"])),
-                summary=md_escape_table(str(row["Summary"])),
-                page=row["WikiPage"],
-            )
+            f"| {row['article_no']}{suffix} | {md_escape_table(str(row['chapter']))} | "
+            f"{md_escape_table(first_sentence(str(row['body']), 120))} | [[{page}|{label}]] |"
         )
-    index_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    lines.extend(["", "## 条文全文", ""])
+    for row in rows:
+        anchor = article_anchor(int(row["article_no"]), int(row["duplicate_ordinal"]))
+        lines.extend(
+            [
+                article_heading(str(row["article_no_cn"]), anchor),
+                "",
+                str(row["body"]).strip(),
+                "",
+            ]
+        )
+    if apply:
+        index_path.parent.mkdir(parents=True, exist_ok=True)
+        index_path.write_text("\n".join(lines), encoding="utf-8", newline="\n")
     return f"concepts/laws/{slug}/index"
 
 
-def main() -> None:
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    INDEX_DIR.mkdir(parents=True, exist_ok=True)
+def rewrite_article_links(*, apply: bool) -> tuple[int, list[str]]:
+    changed = 0
+    paths: list[str] = []
+    for page in sorted((KB / "wiki").rglob("*.md")):
+        rel = page.relative_to(KB / "wiki").as_posix()
+        if re.match(r"^concepts/laws/(accounting-law|company-law|cpa-law|securities-law)/.+-article-\d{3}(?:-\d+)?\.md$", rel):
+            continue
+        text = page.read_text(encoding="utf-8-sig", errors="ignore")
+        updated, count = normalize_core_law_article_links(text)
+        if count:
+            changed += count
+            paths.append(rel)
+            if apply:
+                page.write_text(updated, encoding="utf-8", newline="\n")
+    return changed, paths
 
+
+def remove_article_pages(*, apply: bool) -> list[Path]:
+    removed: list[Path] = []
+    for slug in LAW_CONFIG_BY_SLUG:
+        directory = OUT_DIR / slug
+        if not directory.exists():
+            continue
+        for path in directory.glob(f"{slug}-article-*.md"):
+            removed.append(path)
+            if apply:
+                path.unlink()
+    return removed
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Build consolidated core-law full-text indexes.")
+    parser.add_argument(
+        "--apply",
+        action="store_true",
+        help="Write consolidated indexes, rewrite legacy links, and remove legacy article pages.",
+    )
+    args = parser.parse_args()
+    apply = bool(args.apply)
+    if apply:
+        OUT_DIR.mkdir(parents=True, exist_ok=True)
+        INDEX_DIR.mkdir(parents=True, exist_ok=True)
+    link_count, link_paths = rewrite_article_links(apply=apply)
     rows: list[dict[str, str | int]] = []
+    per_law_index_links: dict[str, str] = {}
+
     for filename, config in LAW_CONFIG.items():
         source_path = RAW_LAWS / filename
         article_counts: Counter[int] = Counter()
-        for article in parse_law(source_path):
+        parsed = parse_law(source_path)
+        for article in parsed:
+            article["law"] = str(config.get("title") or article["law"])
             article_no = int(article["article_no"])
             article_counts[article_no] += 1
             article["duplicate_ordinal"] = article_counts[article_no]
-            page_link = write_article_page(config, article, source_path)
-            body = str(article["body"])
+            wiki_page = f"concepts/laws/{config['slug']}/index#{article_anchor(article_no, article_counts[article_no])}"
             rows.append(
                 {
                     "Law": article["law"],
-                    "ArticleNo": article["article_no"],
+                    "ArticleNo": article_no,
                     "ArticleNoCn": article["article_no_cn"],
                     "DuplicateOrdinal": article["duplicate_ordinal"],
                     "Chapter": article["chapter"],
                     "Section": article["section"],
-                    "Summary": first_sentence(body, 120),
-                    "WikiPage": page_link,
+                    "Summary": first_sentence(str(article["body"]), 120),
+                    "WikiPage": wiki_page,
+                    "Standalone": "no",
                     "RawPath": source_path.relative_to(KB).as_posix(),
                 }
             )
+        per_law_index_links[str(config["slug"])] = write_law_index(
+            str(config["slug"]),
+            parsed,
+            source_path,
+            apply=apply,
+        )
 
-    per_law_index_links: dict[str, str] = {}
-    for slug in LAW_CONFIG_BY_SLUG:
-        law_rows = [row for row in rows if str(row["WikiPage"]).startswith(f"concepts/laws/{slug}/")]
-        if law_rows:
-            per_law_index_links[slug] = write_law_index(slug, law_rows)
+    removed = remove_article_pages(apply=apply)
 
     csv_path = INDEX_DIR / "core-laws-article-index.csv"
-    with csv_path.open("w", encoding="utf-8-sig", newline="") as fh:
-        writer = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
-        writer.writeheader()
-        writer.writerows(rows)
+    if apply:
+        with csv_path.open("w", encoding="utf-8", newline="") as fh:
+            writer = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
+            writer.writeheader()
+            writer.writerows(rows)
 
     counts = Counter(str(row["Law"]) for row in rows)
     md_lines = [
         "# 四部核心法律条款级索引",
         "",
-        "生成日期：2026-06-26",
+        "生成日期：2026-08-05",
         "",
         "## 汇总",
         "",
-        "| 法律 | 条款数 |",
-        "|---|---:|",
+        "| 法律 | 条款数 | 合并全文索引页 |",
+        "|---|---:|---:|",
     ]
     for law, count in counts.items():
-        md_lines.append(f"| {md_escape_table(law)} | {count} |")
+        md_lines.append(f"| {md_escape_table(law)} | {count} | 1 |")
     md_lines.extend(
         [
-            f"| 合计 | {len(rows)} |",
+            f"| 合计 | {len(rows)} | {len(per_law_index_links)} |",
             "",
             "## 文件",
             "",
             "- CSV 明细：`raw/indexes/core-laws-article-index.csv`",
-            "- 条款页目录：`wiki/concepts/laws/`",
+            "- 法律全文与索引：`wiki/concepts/laws/`",
             "",
-            "## 分法律条款目录",
+            "## 分法律入口",
             "",
         ]
     )
     for slug, link in per_law_index_links.items():
-        law_rows = [row for row in rows if str(row["WikiPage"]).startswith(f"concepts/laws/{slug}/")]
-        md_lines.append(f"- [[{link}]] - {law_rows[0]['Law']}，{len(law_rows)} 条记录")
+        source_name = next(name for name, config in LAW_CONFIG.items() if config["slug"] == slug)
+        raw_path = (RAW_LAWS / source_name).relative_to(KB).as_posix()
+        law_rows = [row for row in rows if row["RawPath"] == raw_path]
+        law_name = str(law_rows[0]["Law"])
+        md_lines.append(f"- [[{link}]] - {law_name}，{len(law_rows)} 条记录")
     md_lines.extend(
         [
             "",
             "## 条款索引",
             "",
-            "| 法律 | 条号 | 章节 | 摘要 | Wiki 页 |",
+            "| 法律 | 条号 | 章节 | 摘要 | Wiki 目标 |",
             "|---|---:|---|---|---|",
         ]
     )
@@ -328,9 +355,17 @@ def main() -> None:
                 page=row["WikiPage"],
             )
         )
-    (INDEX_DIR / "core-laws-article-index.md").write_text("\n".join(md_lines) + "\n", encoding="utf-8")
+    if apply:
+        (INDEX_DIR / "core-laws-article-index.md").write_text("\n".join(md_lines) + "\n", encoding="utf-8", newline="\n")
 
-    print(f"articles={len(rows)} csv={csv_path} md={INDEX_DIR / 'core-laws-article-index.md'}")
+    print(f"apply={str(apply).lower()}")
+    print(f"articles={len(rows)} consolidated_indexes={len(per_law_index_links)} standalone=0")
+    print(f"article_links_rewritten={link_count} files={len(link_paths)}")
+    print(f"article_pages_to_remove={len(removed)} removed={len(removed) if apply else 0}")
+    for path in removed[:20]:
+        print(f"article_page: {path.relative_to(KB).as_posix()}")
+    if len(removed) > 20:
+        print(f"article_page_more={len(removed) - 20}")
     for law, count in counts.items():
         print(f"{law}: {count}")
 

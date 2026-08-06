@@ -39,11 +39,3 @@ topic: cas
 | 准则原文 | 企业会计准则第37号——金融工具列报（财会〔2014〕23号） | https://kjs.mof.gov.cn/zt/kjzzss/kuaijizhunzeshishi/200806/t20080618_46244.htm | `raw/standards/accounting/standards-pages/企业会计准则第37号-金融工具列报-财会〔2014〕23号.html` | title-standard-number/high |
 | 准则原文 | 企业会计准则第37号——金融工具列报（财会〔2017〕14号） | https://kjs.mof.gov.cn/zt/kjzzss/kuaijizhunzeshishi/201709/t20170907_2694118.htm | `raw/standards/accounting/standards-pages/企业会计准则第37号-金融工具列报-财会〔2017〕14号.html` | title-standard-number/high |
 | 其他规定 | 关于印发《金融负债与权益工具的区分及相关会计处理规定》的通知 | https://kjs.mof.gov.cn/zhengcefabu/201403/t20140321_1057952.htm | `raw/standards/accounting/other-rules-pages/004-关于印发-金融负债与权益工具的区分及相关会计处理规定-的通知.html` | title-topic-keyword/medium |
-
-<!-- golden-judgments:start -->
-
-## 会计判断专题
-
-- [[concepts/accounting-judgments/financial-liability-equity-distinction|金融负债与权益工具区分]]
-
-<!-- golden-judgments:end -->

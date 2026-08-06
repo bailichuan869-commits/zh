@@ -21,10 +21,10 @@ topic: first-section
 
 | 维度 | 入口 | 用途 |
 |---|---|---|
-| 证券信息披露责任 | [[concepts/laws/securities-law/securities-law-article-078]], [[concepts/laws/securities-law/securities-law-article-080]] | 核对关键事项与年报披露是否一致。 |
-| 年度报告和重大事项 | [[concepts/laws/securities-law/securities-law-article-082]], [[concepts/laws/securities-law/securities-law-article-085]] | 定位收入、估值、并购、持续经营等高关注事项。 |
-| 证券服务机构勤勉尽责 | [[concepts/laws/securities-law/securities-law-article-163]] | 关键事项文字应能追溯到审计应对和证据。 |
-| 信息披露违法责任 | [[concepts/laws/securities-law/securities-law-article-197]] | 重大遗漏或误导性陈述可能放大报告风险。 |
+| 证券信息披露责任 | [[concepts/laws/securities-law/index#article-078]], [[concepts/laws/securities-law/index#article-080]] | 核对关键事项与年报披露是否一致。 |
+| 年度报告和重大事项 | [[concepts/laws/securities-law/index#article-082]], [[concepts/laws/securities-law/index#article-085]] | 定位收入、估值、并购、持续经营等高关注事项。 |
+| 证券服务机构勤勉尽责 | [[concepts/laws/securities-law/index#article-163]] | 关键事项文字应能追溯到审计应对和证据。 |
+| 信息披露违法责任 | [[concepts/laws/securities-law/index#article-197]] | 重大遗漏或误导性陈述可能放大报告风险。 |
 
 ## 常见会计事项入口
 

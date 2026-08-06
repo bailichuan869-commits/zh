@@ -3,14 +3,19 @@ title: 第二板块政策执行检查清单
 type: concept
 concept_type: checklist
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-08-06
 sources: [policy-documents-official-links-2026-06-29, policy-documents-raw-archive-2026-06-29]
 tags: [policy, checklist, accounting-firm, audit-quality, p2-important]
 related: [[concepts/policy-documents]], [[concepts/policy-implementation-map]], [[concepts/policy-version-validity-tracker]], [[concepts/first-section-responsibility-risk-map]]
 domain: policies
 topic: trackers
+asset_id: cpa-zh:index:policy-execution-checklist
+knowledge_type: index
+page_role: index
+maturity: reviewed
+answer_ready: false
+review_status: agent-reviewed
 ---
-
 # 第二板块政策执行检查清单
 
 本页把第二板块政策要求转成事务所和项目组可执行、可留痕、可复核的检查清单。使用时应结合 [[concepts/policy-implementation-map]]、[[concepts/audit-standards/topics]] 和 [[concepts/first-section-responsibility-risk-map]]。

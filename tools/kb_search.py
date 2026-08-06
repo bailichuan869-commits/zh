@@ -245,8 +245,23 @@ def resolve_local_file(root: Path, local_file: str) -> Path:
     return candidates[0]
 
 
-def iter_documents(root: Path) -> Iterable[dict[str, str]]:
+def _sidecar_metadata(path: Path) -> dict[str, Any]:
+    metadata_path = path.parent / "metadata.json"
+    if not metadata_path.exists():
+        return {}
+    try:
+        value = json.loads(metadata_path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    return value if isinstance(value, dict) else {}
+
+
+def iter_documents(root: Path) -> Iterable[dict[str, Any]]:
     text_cache = load_text_cache_manifest(root)
+    try:
+        from kb_common import parse_frontmatter
+    except ModuleNotFoundError:
+        from tools.kb_common import parse_frontmatter
 
     wiki_root = root / "wiki"
     for md in sorted(wiki_root.rglob("*.md")):
@@ -256,24 +271,32 @@ def iter_documents(root: Path) -> Iterable[dict[str, str]]:
         if is_search_excluded(rel):
             continue
         text = read_text(md)
+        metadata, _ = parse_frontmatter(text)
         yield {
             "kind": "wiki",
             "title": clean_title(frontmatter_title(text, md.stem)),
             "path": rel,
             "source_url": "",
             "body": normalize_text(text),
+            "metadata": metadata,
+            "markdown_path": rel,
+            "content_sha256": hashlib.sha256(text.encode("utf-8")).hexdigest(),
         }
 
     pdf_markdown_root = root / "cache" / "pdf-markdown" / "files"
     if pdf_markdown_root.exists():
         for md in sorted(pdf_markdown_root.rglob("*.md")):
             text = read_text(md)
+            metadata, _ = parse_frontmatter(text)
             yield {
                 "kind": "pdf-markdown",
                 "title": clean_title(frontmatter_title(text, md.stem)),
                 "path": md.relative_to(root).as_posix(),
-                "source_url": "",
+                "source_url": str(metadata.get("source_url") or metadata.get("url") or ""),
                 "body": normalize_text(text),
+                "metadata": metadata,
+                "markdown_path": md.relative_to(root).as_posix(),
+                "content_sha256": hashlib.sha256(text.encode("utf-8")).hexdigest(),
             }
 
     manifest_files = sorted((root / "raw").rglob("manifest.json"))
@@ -315,6 +338,10 @@ def iter_documents(root: Path) -> Iterable[dict[str, str]]:
                 "path": local_file or manifest_path.relative_to(root).as_posix(),
                 "source_url": str(item.get("url") or item.get("source_url") or ""),
                 "body": normalize_text(metadata_text + " " + extracted),
+                "metadata": item,
+                "raw_path": local_file,
+                "markdown_path": derived_markdown,
+                "content_sha256": str(item.get("derived_sha256") or item.get("sha256") or ""),
             }
 
     for raw_file in sorted((root / "raw").rglob("*")):
@@ -331,12 +358,17 @@ def iter_documents(root: Path) -> Iterable[dict[str, str]]:
             continue
         text = cached_file_text(root, raw_file, text_cache)
         if text:
+            metadata = _sidecar_metadata(raw_file)
             yield {
                 "kind": "raw-file",
                 "title": clean_title(raw_file.stem),
                 "path": rel_path,
-                "source_url": "",
+                "source_url": str(metadata.get("url") or metadata.get("source_url") or ""),
                 "body": text,
+                "metadata": metadata,
+                "raw_path": rel_path,
+                "markdown_path": str(metadata.get("derived_markdown") or (rel_path if raw_file.suffix.lower() == ".md" else "")),
+                "content_sha256": str(metadata.get("derived_sha256") or metadata.get("sha256") or ""),
             }
 
 
@@ -388,9 +420,9 @@ def build_index(root: Path, db_path: Path) -> None:
     if str(kb_tools) not in sys.path:
         sys.path.insert(0, str(kb_tools))
     try:
-        from kb_common import page_metadata, parse_frontmatter, section_chunks, is_authoritative_path
+        from kb_common import asset_metadata, page_metadata, parse_frontmatter, section_chunks, is_authoritative_path
     except Exception:
-        page_metadata = parse_frontmatter = section_chunks = is_authoritative_path = None
+        asset_metadata = page_metadata = parse_frontmatter = section_chunks = is_authoritative_path = None
     connection = connect(db_path)
     connection.executescript(
         """
@@ -411,7 +443,24 @@ def build_index(root: Path, db_path: Path) -> None:
             maturity TEXT NOT NULL DEFAULT 'reviewed',
             answer_ready INTEGER NOT NULL DEFAULT 0,
             authority TEXT NOT NULL DEFAULT 'curated',
-            rank_boost REAL NOT NULL DEFAULT 0
+            rank_boost REAL NOT NULL DEFAULT 0,
+            asset_id TEXT NOT NULL DEFAULT '',
+            source_id TEXT NOT NULL DEFAULT '',
+            source_type TEXT NOT NULL DEFAULT '',
+            knowledge_type TEXT NOT NULL DEFAULT '',
+            tags TEXT NOT NULL DEFAULT '',
+            authority_level TEXT NOT NULL DEFAULT 'curated',
+            version TEXT NOT NULL DEFAULT '',
+            published_on TEXT NOT NULL DEFAULT '',
+            effective_from TEXT NOT NULL DEFAULT '',
+            effective_to TEXT NOT NULL DEFAULT '',
+            lifecycle_status TEXT NOT NULL DEFAULT 'valid',
+            raw_path TEXT NOT NULL DEFAULT '',
+            markdown_path TEXT NOT NULL DEFAULT '',
+            content_sha256 TEXT NOT NULL DEFAULT '',
+            review_status TEXT NOT NULL DEFAULT '',
+            supersedes TEXT NOT NULL DEFAULT '',
+            superseded_by TEXT NOT NULL DEFAULT ''
         );
         CREATE VIRTUAL TABLE documents_fts USING fts5(
             title,
@@ -434,7 +483,10 @@ def build_index(root: Path, db_path: Path) -> None:
             content_rowid='id',
             tokenize='trigram'
         );
-        CREATE INDEX idx_documents_delivery ON documents(answer_ready, page_role, authority);
+        CREATE INDEX idx_documents_delivery ON documents(answer_ready, page_role, authority, lifecycle_status);
+        CREATE INDEX idx_documents_asset ON documents(asset_id, source_id, version);
+        CREATE INDEX idx_documents_dates ON documents(effective_from, effective_to, published_on);
+        CREATE INDEX idx_documents_tags ON documents(tags);
         CREATE INDEX idx_chunks_document ON chunks(document_id);
         """
     )
@@ -447,22 +499,54 @@ def build_index(root: Path, db_path: Path) -> None:
         answer_ready = False
         authority = "curated"
         chunk_body = document["body"]
+        metadata = dict(document.get("metadata") or {})
         if document["kind"] == "wiki" and page_metadata is not None:
             source_text = read_text(root / rel_path)
-            metadata = page_metadata(rel_path, source_text)
-            role = str(metadata["page_role"])
-            maturity = str(metadata["maturity"])
-            answer_ready = bool(metadata["answer_ready"])
-            authority = str(metadata["authority"])
+            frontmatter, chunk_body = parse_frontmatter(source_text)
+            page_info = page_metadata(rel_path, source_text)
+            metadata = {**frontmatter, **page_info}
+            role = str(page_info["page_role"])
+            maturity = str(page_info["maturity"])
+            answer_ready = bool(page_info["answer_ready"])
+            authority = str(page_info["authority"])
             if parse_frontmatter is not None:
-                frontmatter, chunk_body = parse_frontmatter(source_text)
                 # A curated page can declare a more precise topic than the
                 # path-based classifier, especially for cross-domain cases.
                 domain = str(frontmatter.get("domain") or domain)
                 topic = str(frontmatter.get("topic") or topic)
         elif is_authoritative_path is not None:
-            authority = "official" if is_authoritative_path(rel_path, {}) else "curated"
-            answer_ready = authority == "official"
+            role = str(metadata.get("page_role") or role)
+            maturity = str(metadata.get("maturity") or maturity)
+            authority = "official" if is_authoritative_path(rel_path, metadata) else str(metadata.get("authority") or "curated")
+            explicit_ready = metadata.get("answer_ready")
+            if isinstance(explicit_ready, bool):
+                answer_ready = explicit_ready
+            elif isinstance(explicit_ready, str):
+                answer_ready = explicit_ready.lower() == "true"
+            else:
+                answer_ready = authority == "official"
+            domain = str(metadata.get("domain") or domain)
+            topic = str(metadata.get("topic") or topic)
+        asset = asset_metadata(
+            rel_path,
+            metadata,
+            kind=document["kind"],
+            page_role=role,
+            domain=domain,
+            topic=topic,
+            source_url=str(document.get("source_url") or ""),
+            raw_path=str(document.get("raw_path") or ""),
+            markdown_path=str(document.get("markdown_path") or ""),
+            content_sha256=str(document.get("content_sha256") or ""),
+            body=source_text if document["kind"] == "wiki" else document["body"],
+            answer_ready=answer_ready,
+            authority=authority,
+        )
+        domain = str(asset["domain"])
+        topic = str(asset["topic"])
+        role = str(asset["page_role"] or role)
+        authority = str(asset["authority"] or authority)
+        answer_ready = bool(asset["answer_ready"])
         rank_boost = 0.0
         if answer_ready and role in {"knowledge", "case"}:
             rank_boost += 150.0
@@ -472,18 +556,27 @@ def build_index(root: Path, db_path: Path) -> None:
             rank_boost += 75.0
         if authority == "official":
             rank_boost += 55.0
+        if role == "case" and metadata.get("source_scope") == "local-only" and answer_ready:
+            # Local workshop cases have no official-authority bonus, but an
+            # explicitly Agent-reviewed case should still surface for its
+            # concrete scenario instead of losing to generic topic pages.
+            rank_boost += 55.0
         if role == "index":
             rank_boost -= 35.0
         if maturity == "skeleton":
             rank_boost -= 60.0
+        if asset["lifecycle_status"] in {"superseded", "expired", "historical"}:
+            rank_boost -= 120.0
+        elif asset["lifecycle_status"] == "enacted-not-effective":
+            rank_boost -= 80.0
         cursor = connection.execute(
-            "INSERT INTO documents(kind, title, path, source_url, body, domain, topic, page_role, maturity, answer_ready, authority, rank_boost)"
-            " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            "INSERT INTO documents(kind, title, path, source_url, body, domain, topic, page_role, maturity, answer_ready, authority, rank_boost, asset_id, source_id, source_type, knowledge_type, tags, authority_level, version, published_on, effective_from, effective_to, lifecycle_status, raw_path, markdown_path, content_sha256, review_status, supersedes, superseded_by)"
+            " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (
                 document["kind"],
                 document["title"],
-                document["path"],
-                document["source_url"],
+                rel_path,
+                str(asset["source_url"]),
                 document["body"],
                 domain,
                 topic,
@@ -492,6 +585,23 @@ def build_index(root: Path, db_path: Path) -> None:
                 int(answer_ready),
                 authority,
                 rank_boost,
+                asset["asset_id"],
+                asset["source_id"],
+                asset["source_type"],
+                asset["knowledge_type"],
+                ",".join(asset["tags"]),
+                asset["authority_level"],
+                asset["version"],
+                asset["published_on"],
+                asset["effective_from"],
+                asset["effective_to"],
+                asset["lifecycle_status"],
+                asset["raw_path"],
+                asset["markdown_path"],
+                asset["content_sha256"],
+                asset["review_status"],
+                asset["supersedes"],
+                asset["superseded_by"],
             ),
         )
         row_id = cursor.lastrowid

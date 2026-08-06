@@ -2,8 +2,14 @@
 title: 中国注册会计师执业准则及应用指南
 type: concept
 concept_type: standard-system
+maturity: draft
+page_role: index
+answer_ready: false
+review_status: agent-reviewed
+asset_id: cpa-zh:index:audit-standards-system
+knowledge_type: index
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-08-06
 sources: [2026-06-26-initial-structure, audit-standards-official-links, cicpa-professional-standards-download-2026-06-26]
 tags: [audit, standards, p1-core, draft]
 related: [[concepts/regulations-and-standards]], [[concepts/law-cpa]], [[concepts/audit-process]]
@@ -51,9 +57,26 @@ topic: overview
 - [[concepts/audit-standards/csa-1241]] - 中国注册会计师审计准则第1241号——对被审计单位使用服务机构的考虑。
 - [[concepts/audit-standards/csa-1331]] - 中国注册会计师审计准则第1331号——首次审计业务涉及的期初余额。
 
-## 待补充
+## 使用路径
 
-建立准则编号索引，并优先补充风险评估、重要性、审计证据、函证、审计抽样、会计估计、集团审计、审计报告等高频主题。
+1. 先确定业务类型：财务报表审计、审阅、其他鉴证、相关服务或质量管理，再进入对应准则族。
+2. 通过编号页核对准则原文、应用指南、通知和专题条目，记录官方链接、本地 Markdown 门面和适用版本。
+3. 将准则要求映射到认定、重大错报风险、控制和实质性程序，再把程序结果连接到底稿、治理层沟通和报告。
+4. 对审阅、商定程序和代编业务，明确保证程度和管理层责任，不能把服务范围扩张成审计意见。
+
+## 高频主题路由
+
+| 问题类型 | 优先入口 | 证据与输出 |
+|---|---|---|
+| 风险识别、重要性和总体应对 | [[concepts/audit-standards/csa-1211]] | 风险评估、重要性计算、总体审计策略和程序矩阵 |
+| 审计证据、函证和抽样 | [[concepts/audit-standards/csa-1301]], [[concepts/audit-standards/csa-1312]], [[concepts/audit-standards/csa-1314]] | 证据充分性、可靠性、样本选择和异常追查 |
+| 会计估计、关联方和持续经营 | [[concepts/audit-standards/csa-1321]], [[concepts/audit-standards/csa-1323]], [[concepts/audit-standards/csa-1324]] | 管理层偏向、关系和交易完整性、重大不确定性 |
+| 集团审计、专家和其他信息 | [[concepts/audit-standards/csa-1401]], [[concepts/audit-standards/csa-1421]], [[concepts/audit-standards/csa-1521]] | 组成部分审计、专家胜任能力、年报其他信息核对 |
+| 报告、关键审计事项和意见修改 | [[concepts/audit-standards/csa-1501]], [[concepts/audit-standards/csa-1503]], [[concepts/audit-standards/csa-1504]] | 事项识别、披露核对、治理层沟通和报告措辞 |
+
+## 资料质量与准入边界
+
+编号页是检索入口，不等于已经阅读全部 PDF 或应用指南。Agent 可以先完成结构、来源和引用复核；审计意见、业务承接、独立性和重大风险结论必须回到完整原文、项目事实和人工复核底线。
 
 ## 官方链接
 

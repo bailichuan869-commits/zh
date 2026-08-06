@@ -3,14 +3,29 @@ title: 关于进一步规范财务审计秩序促进注册会计师行业健康�
 type: concept
 concept_type: policy
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-08-06
 sources: [2026-06-26-initial-structure, archived-cpa-competition-policy-pages]
 tags: [policy, audit-order, accounting-firm, p2-important]
 related: [[concepts/policy-documents]], [[concepts/policy-caihui-supervision]], [[concepts/policy-firm-license-supervision]], [[concepts/policy-integrity]], [[concepts/policy-firm-inspection]]
 domain: policies
 topic: supervision
+asset_id: cpa-zh:policy:audit-order-2021-30
+source_id: policy-audit-order-2021-30
+knowledge_type: policy
+page_role: knowledge
+maturity: reviewed
+answer_ready: false
+review_status: agent-reviewed
+version: 国办发〔2021〕30号
+published_on: 2021-07-30
+effective_from: unknown
+lifecycle_status: unknown
+authority_level: official
+raw_path: raw/policies/second-section/audit-order-2021-30/official.html.md
+markdown_path: wiki/concepts/policy-audit-order.md
+source_url: https://www.gov.cn/zhengce/content/2021-08/23/content_5632714.htm
+content_sha256: 2e83953cae99b8366155c20fd52454ec47172de327c27080c4e1cf226c989409
 ---
-
 # 关于进一步规范财务审计秩序促进注册会计师行业健康发展的意见
 
 ## 基本信息

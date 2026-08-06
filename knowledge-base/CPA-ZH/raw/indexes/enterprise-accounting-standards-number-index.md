@@ -1,8 +1,3 @@
----
-source_type: "generated-index"
-source_role: "index-page"
----
-
 # 企业会计准则编号级索引
 
 生成日期：2026-06-26
@@ -67,4 +62,4 @@ source_role: "index-page"
 - `url-category-slug`：财政部专题栏目 URL 可直接对应准则主题。
 - `html-standard-number`：解释类文件正文中出现准则编号。
 - `title-topic-keyword`：标题关键词可保守对应准则主题。
-- `unmapped`：暂不强行归类，留待人工核验。
+- `unmapped`：暂不强行归类，留待 Agent 复核。

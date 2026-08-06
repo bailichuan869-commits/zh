@@ -3,11 +3,11 @@ title: 金融资产分类、终止确认与预期信用损失
 type: concept
 concept_type: accounting-judgment
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-08-05
 page_role: knowledge
-maturity: draft
-answer_ready: false
-review_status: pending-human-review
+maturity: reviewed
+answer_ready: true
+review_status: agent-reviewed
 source_verified: true
 sources: [cas-22-23]
 raw_path: raw/standards/accounting/standards-pages/企业会计准则第22号-金融工具确认和计量-财会〔2017〕7号.html.md
@@ -15,11 +15,16 @@ tags: [accounting, judgment, golden-topic, cas-22-23]
 related: [[concepts/accounting-standards/cas-22]], [[concepts/accounting-judgments/index]]
 domain: accounting-standards
 topic: accounting-judgments
+review_actor: cpa-zh-agent
+review_method: structured-source-review-v1
+reviewed_at: 2026-08-05
+review_basis: complete-markdown-raw-source-section-hash-check
+review_report: workspace/outputs/cpa-zh-agent-review-2026-08-05.json
+source_url: https://kjs.mof.gov.cn/zt/kjzzss/kuaijizhunzeshishi/201709/t20170908_2694655.htm
 ---
-
 # 金融资产分类、终止确认与预期信用损失
 
-> 复核状态：本页已按现有财政部原文结构化，尚待人工逐项复核。复核前不进入 AI 主检索集。
+> 复核状态：Agent 已完成正文结构、raw 来源链和原文哈希复核；本页进入 AI 主检索集，但不替代报告期有效准则核验。
 
 ## 适用范围
 
@@ -79,7 +84,7 @@ topic: accounting-judgments
 
 ## 案例链接
 
-- 待从黄金案例库继续回挂。
+- [[cases/golden-expected-credit-loss-simplified|预期信用损失简化模型]]
 
 ## 时效与不确定性边界
 

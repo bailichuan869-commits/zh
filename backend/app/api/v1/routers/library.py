@@ -14,6 +14,7 @@ from app.services.answers import answer_service
 from app.services.library import library_service, normalize_link, parse_frontmatter
 
 router = APIRouter(tags=["knowledge-base"])
+LAW_CONCEPT_TYPES = {"law-article", "law-article-index", "law-draft"}
 
 
 def _clean_html(path):
@@ -32,9 +33,24 @@ def _clean_html(path):
         return read_text(path)
 
 
+def _visible_backlinks(path: str, frontmatter: dict[str, str]) -> list[dict[str, str]]:
+    backlinks = library_service.backlinks.get(normalize_link(path), [])
+    if frontmatter.get("concept_type") not in LAW_CONCEPT_TYPES:
+        return backlinks
+    normalized = normalize_link(path)
+    if not normalized.startswith("concepts/laws/"):
+        return backlinks
+    family_prefix = normalized.rsplit("/", 1)[0] + "/"
+    filtered = [item for item in backlinks if not item["path"].startswith(family_prefix)]
+    direct_sources = library_service.direct_backlinks.get(normalized, set())
+    if direct_sources:
+        filtered = [item for item in filtered if item["path"] in direct_sources]
+    return filtered or backlinks
+
+
 @router.get("/health", response_model=HealthResponse)
 def health() -> dict:
-    return {"status": "ok" if DB_PATH.exists() else "degraded", "index_ready": DB_PATH.exists(), "wiki_pages": len(library_service.titles), "backlink_targets": len(library_service.backlinks)}
+    return {"status": "ok" if DB_PATH.exists() else "degraded", "index_ready": DB_PATH.exists(), "wiki_pages": library_service.wiki_page_count, "backlink_targets": len(library_service.backlinks)}
 
 
 @router.get("/library/summary", response_model=SummaryResponse)
@@ -50,13 +66,41 @@ def tree() -> JSONResponse:
 
 
 @router.get("/search", response_model=SearchResponse)
-def search(q: str = Query(..., min_length=1), domain: str = "", kind: str = "", limit: int = Query(30, le=100), offset: int = Query(0, ge=0)) -> dict:
-    return library_service.search(q, domain, kind, limit, offset)
+def search(
+    q: str = Query(..., min_length=1),
+    domain: str = "",
+    kind: str = "",
+    profile: str = "general-search",
+    as_of: str = "",
+    status: str = "",
+    source_type: str = "",
+    tag: str = "",
+    limit: int = Query(30, le=100),
+    offset: int = Query(0, ge=0),
+) -> dict:
+    return library_service.search(
+        q,
+        domain,
+        kind,
+        limit,
+        offset,
+        profile=profile,
+        as_of=as_of,
+        status=status,
+        source_type=source_type,
+        tag=tag,
+    )
 
 
 @router.post("/answers", response_model=AnswerResponse)
 def answer(payload: AnswerRequest) -> dict:
-    return answer_service.answer(payload.question, payload.topic)
+    return answer_service.answer(
+        payload.question,
+        payload.topic,
+        profile=payload.profile,
+        as_of=payload.as_of,
+        depth=payload.depth,
+    )
 
 
 @router.get("/documents", response_model=DocumentResponse)
@@ -65,12 +109,22 @@ def document(path: str) -> dict:
     if not target.exists() or target.suffix.lower() != ".md":
         raise HTTPException(404, f"页面不存在: {path}")
     frontmatter, markdown = parse_frontmatter(read_text(target))
-    return {"path": path, "frontmatter": frontmatter, "markdown": markdown, "backlinks": library_service.backlinks.get(normalize_link(path), [])}
+    return {
+        "path": path,
+        "frontmatter": frontmatter,
+        "markdown": markdown,
+        "backlinks": _visible_backlinks(path, frontmatter),
+        "asset": library_service.asset(path),
+    }
 
 
 @router.get("/documents/backlinks", response_model=BacklinksResponse)
 def backlinks(path: str) -> dict:
-    return {"path": path, "backlinks": library_service.backlinks.get(normalize_link(path), [])}
+    target = safe_resolve(path, allowed_prefix="wiki/")
+    if not target.exists() or target.suffix.lower() != ".md":
+        raise HTTPException(404, f"页面不存在: {path}")
+    frontmatter, _ = parse_frontmatter(read_text(target))
+    return {"path": path, "backlinks": _visible_backlinks(path, frontmatter)}
 
 
 @router.get("/files")

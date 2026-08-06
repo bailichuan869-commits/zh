@@ -76,10 +76,18 @@ topic: cas
 | 实施问答 | 问：对于包含导致合同现金流量时间分布或金额变动的或有特征条款的金融资产，企业应当如... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/jrgjzzss/202604/t20260430_3988923.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-088.html.md` | url-category-slug/high |
 | 实施问答 | 问：甲银行委托信托公司设立资产证券化信托计划，将不良贷款转让给该信托计划，作为发行... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/jrgjzzss/202604/t20260430_3988924.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-089.html.md` | url-category-slug/high |
 
-<!-- golden-judgments:start -->
+<!-- calibration-supplement:start -->
 
-## 会计判断专题
+## 校准补充资料
 
-- [[concepts/accounting-judgments/financial-assets-classification-derecognition-ecl|金融资产分类、终止确认与预期信用损失]]
+以下资料来自 [[concepts/accounting-standards/unmapped-review]] 的 Agent 复核候选。条目保留原始官方链接和本地 HTML 路径；正式引用前仍应结合原文核验适用范围和有效状态。
 
-<!-- golden-judgments:end -->
+### Agent 候选桶：CAS 22 / 金融工具确认和计量
+
+| 类型 | 标题 | 置信度 | 证据依据 | 官方链接 | 本地文件 |
+|---|---|---|---|---|---|
+| 其他规定 | 关于保险公司执行新金融工具相关会计准则有关过渡办法的通知 | medium | 金融工具或金融资产专题 | https://kjs.mof.gov.cn/zhengcefabu/201707/t20170705_2638917.htm | `raw/standards/accounting/other-rules-pages/011-关于保险公司执行新金融工具相关会计准则有关过渡办法的通知.html` |
+| 其他规定 | 关于印发《永续债相关会计处理的规定》的通知 | medium | 金融工具或金融资产专题 | https://kjs.mof.gov.cn/zhengcefabu/201901/t20190130_3138955.htm | `raw/standards/accounting/other-rules-pages/014-关于印发-永续债相关会计处理的规定-的通知.html` |
+| 其他规定 | 关于印发《碳排放权交易有关会计处理暂行规定》的通知 | medium | 金融工具或金融资产专题 | https://kjs.mof.gov.cn/zhengcefabu/201912/t20191223_3448268.htm | `raw/standards/accounting/other-rules-pages/017-关于印发-碳排放权交易有关会计处理暂行规定-的通知.html` |
+
+<!-- calibration-supplement:end -->

@@ -1,13 +1,15 @@
-export interface SearchResult { kind: string; title: string; path: string; source_url: string; domain: string; topic: string; snippet: string; page_role: string; maturity: string; answer_ready: boolean }
+export interface SearchResult { kind: string; title: string; path: string; source_url: string; domain: string; topic: string; snippet: string; page_role: string; maturity: string; answer_ready: boolean; asset_id: string; source_id: string; source_type: string; knowledge_type: string; tags: string[]; authority: string; authority_level: string; version: string; published_on: string; effective_from: string; effective_to: string; lifecycle_status: string; raw_path: string; markdown_path: string; content_sha256: string; review_status: string; section: string; section_anchor: string; score: number; retrieval_path: string }
 export interface Summary { kinds: Record<string, number>; roles: Record<string, number>; maturity: Record<string, number>; answer_ready: number; total: number; wiki_pages: number; backlink_targets: number }
 export interface Health { status: string; index_ready: boolean; wiki_pages: number; backlink_targets: number }
-export interface Document { path: string; frontmatter: Record<string, string>; markdown: string; backlinks: Array<{ path: string; title: string }> }
+export interface Document { path: string; frontmatter: Record<string, string>; markdown: string; backlinks: Array<{ path: string; title: string }>; asset: AssetMetadata }
 export interface NavigationPage { path: string; title: string; short: string; kind: string; type: string; updated: string; page_role: string; maturity: string; answer_ready: boolean }
 export interface NavigationTopic { key: string; label: string; count: number; pages: NavigationPage[] }
 export interface NavigationDomain { key: string; label: string; icon: string; count: number; topics: NavigationTopic[] }
 export interface NavigationTree { generated: string; domains: NavigationDomain[] }
-export interface AnswerCitation { path: string; title: string; excerpt: string; source_url: string; maturity: string; authority: string; answer_ready: boolean }
-export interface AnswerResult { answer: string; citations: AnswerCitation[]; confidence: string; insufficient_evidence: boolean }
+export interface AssetMetadata { asset_id?: string; source_id?: string; source_type?: string; knowledge_type?: string; tags?: string[]; authority?: string; authority_level?: string; version?: string; published_on?: string; effective_from?: string; effective_to?: string; lifecycle_status?: string; raw_path?: string; markdown_path?: string; source_url?: string; content_sha256?: string; review_status?: string; supersedes?: string; superseded_by?: string; kind?: string; title?: string; path?: string }
+export interface AnswerCitation extends AssetMetadata { path: string; title: string; excerpt: string; source_url: string; maturity: string; authority: string; answer_ready: boolean; section: string; section_anchor: string; score: number; retrieval_path: string }
+export interface AnswerResult { answer: string; citations: AnswerCitation[]; confidence: string; insufficient_evidence: boolean; profile: string; as_of: string; depth: string; retrieval_trace: Record<string, unknown>; risk_flags: string[] }
+export interface SearchOptions { profile?: string; as_of?: string; status?: string; source_type?: string; tag?: string }
 export interface MaintenancePreview { preview_token: string; kind: string; output: string; expires_in: number; review?: { path: string; title: string; raw_path: string; body: string; changes: Record<string, string | boolean>; content_sha256: string } }
 export interface MaintenanceResult { status: string; output: string; health: string }
 export interface IngestUploadItem { id: string; filename: string; size: number; markdown_preview: string; markdown_length: number; preview_truncated: boolean; batch_name: string; extraction_method: string }
@@ -54,11 +56,15 @@ export const api = {
   health: () => request<Health>('/api/v1/health'),
   summary: () => request<Summary>('/api/v1/library/summary'),
   tree: () => request<NavigationTree>('/api/v1/navigation/tree'),
-  search: (q: string, domain = '', kind = '', offset = 0) => request<{ results: SearchResult[]; total: number; facets: [string, number][]; kinds: Record<string, number>; engine: string }>(`/api/v1/search?${new URLSearchParams({ q, domain, kind, limit: '30', offset: String(offset) })}`),
+  search: (q: string, domain = '', kind = '', offset = 0, options: SearchOptions = {}) => {
+    const params = new URLSearchParams({ q, domain, kind, limit: '30', offset: String(offset) })
+    Object.entries(options).forEach(([key, value]) => { if (value) params.set(key, value) })
+    return request<{ results: SearchResult[]; total: number; facets: [string, number][]; kinds: Record<string, number>; engine: string; profile: string; retrieval_trace: Record<string, unknown> }>(`/api/v1/search?${params}`)
+  },
   document: (path: string) => request<Document>(`/api/v1/documents?${new URLSearchParams({ path })}`),
   rawText: (path: string) => requestText(`/api/v1/files?${new URLSearchParams({ path })}`),
   rawUrl: (path: string) => `${base}/api/v1/files?${new URLSearchParams({ path })}`,
-  answer: (question: string, topic = '') => post<AnswerResult>('/api/v1/answers', { question, topic }),
+  answer: (question: string, topic = '', options: { profile?: string; as_of?: string; depth?: string } = {}) => post<AnswerResult>('/api/v1/answers', { question, topic, ...options }),
   previewQa: (body: Record<string, string>, token: string) => write<MaintenancePreview>('/maintenance/v1/qa/preview', body, token),
   commitQa: (body: Record<string, string>, previewToken: string, token: string) => write<MaintenanceResult>(`/maintenance/v1/qa/commit?${new URLSearchParams({ preview_token: previewToken })}`, body, token),
   previewIngest: (body: Record<string, string>, token: string) => write<MaintenancePreview>('/maintenance/v1/ingest/preview', body, token),

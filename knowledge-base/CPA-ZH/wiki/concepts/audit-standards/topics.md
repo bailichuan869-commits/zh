@@ -2,8 +2,14 @@
 title: 中国注册会计师审计准则实务主题导航
 type: concept
 concept_type: audit-standard-topic-map
+page_role: index
+maturity: reviewed
+answer_ready: false
+review_status: agent-reviewed
+asset_id: cpa-zh:index:audit-standard-topics
+knowledge_type: index
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-08-06
 sources: [cicpa-professional-standards-number-index-2026-06-26]
 tags: [audit, standards, topic-map, p1-core]
 related: [[concepts/audit-standards-system]], [[sources/cicpa-professional-standards-number-index-2026-06-26]]

@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Any
 
 import kb_manifest_audit
-from kb_common import parse_frontmatter
+from kb_common import is_excluded, parse_frontmatter
 
 
 @dataclass
@@ -59,7 +59,7 @@ def load_manifest(path: Path) -> list[dict[str, Any]]:
 
 def count_wiki_links(root: Path) -> tuple[int, list[tuple[str, str]]]:
     wiki_root = root / "wiki"
-    active_pages = [p for p in wiki_root.rglob("*.md") if "_trash" not in p.relative_to(wiki_root).parts]
+    active_pages = [p for p in wiki_root.rglob("*.md") if not is_excluded(p)]
     pages = {p.relative_to(wiki_root).with_suffix("").as_posix() for p in active_pages}
     missing: list[tuple[str, str]] = []
     for page in active_pages:
@@ -67,6 +67,8 @@ def count_wiki_links(root: Path) -> tuple[int, list[tuple[str, str]]]:
         for match in re.finditer(r"\[\[([^\]|#]+)", text):
             target = match.group(1)
             raw_target_exists = target.startswith("raw/") and (root / target).is_file()
+            if any(part in {"_drafts", "_maintenance", "_trash", "__pycache__"} for part in target.split("/")):
+                continue
             if target not in pages and not raw_target_exists:
                 missing.append((rel(root, page), target))
     return len(pages), missing
@@ -89,6 +91,8 @@ def search_stats(root: Path) -> SearchStats:
         if indexed_root.exists():
             for source in indexed_root.rglob("*"):
                 if source.is_file():
+                    if indexed_root == root / "wiki" and is_excluded(source):
+                        continue
                     if indexed_root == root / "raw":
                         source_rel = source.relative_to(indexed_root)
                         if "_archive" in source_rel.parts or source.name.endswith(".structure.json"):

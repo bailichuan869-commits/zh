@@ -3,7 +3,7 @@ title: CPA-ZH 知识库日志
 type: source
 source_type: activity-log
 created: 2026-06-26
-updated: 2026-08-04
+updated: 2026-08-06
 sources: [kb-activity-log]
 tags: [cpa, log, structured]
 domain: meta
@@ -11,6 +11,14 @@ topic: root
 ---
 
 # CPA-ZH 知识库日志
+
+## 2026-08-06 | content-completeness-and-agent-review
+
+- 修正完整性扫描对“后续可继续补充”词形的漏检；18 个企业会计准则解释占位页已改为财政部原文驱动的编号级事项索引，统一记录官方 URL、raw 门面、版本、生命周期和 Agent 复核边界。行业发展报告全文尚未取得的 1 个真实缺口继续保留。
+- 新增 `tools/kb_completeness.py` 并接入 `tools/kb.py completeness --write-report`，统一扫描显式待补内容、骨架页、来源缺口、待官方核验和 Wiki 断链；初始词形口径曾报告显式待补 0，扩展检测后已按上一条完成纠偏。来源缺口、骨架页和断链保持 0，仍保留 3 个待官方核验提示。
+- 核心法规继续采用四个合并全文索引页和 `#article-xxx` 条文锚点：当前 603 条法规记录、独立条文页 0，不按“一条一个知识页”拆分；原文层和索引层继续承担完整检索与追溯职责。
+- 黄金专题及 21 个案例共 41 项已由 Agent 完成结构、来源和引用复核，状态标记为 `agent-reviewed`；该状态不等于 `user-approved`，人工复核和责任人准入仍是高风险正式结论的底线。
+- 重新生成中国注册会计师执业准则编号页，当前识别 27 个准则页、45 条已映射记录和 17 条暂未稳定映射记录；补齐审计准则实务入口、综合执业能力交付检查，并修复审计准则体系页的失效链接。
 
 ## 2026-08-04 | agent-first
 
@@ -26,7 +34,7 @@ topic: root
 - 生成企业会计准则编号索引与 42 个准则页。
 - 生成中国注册会计师执业准则编号索引与 40 个准则页。
 - 生成企业会计准则解释页 20 个，并记录官方有效链接。
-- 生成企业会计准则未映射资料校准专题页 26 个，入口为 [[concepts/accounting-standards/calibration/index]]。
+- 将企业会计准则未映射资料统一收敛到 [[concepts/accounting-standards/unmapped-review]] 待复核清单，不再生成分桶页。
 - 将校准补充资料回挂到正式准则页、解释页和其他规定专题页；新增 [[concepts/accounting-standards/other-rules/index]]。
 - 新增 [[concepts/audit-standards/topics]]，按审计流程和高频实务问题组织中注协执业准则入口。
 - 新增 [[concepts/first-section-completion-map]]，汇总第一板块完成度、关键索引文件和后续完善清单。
@@ -61,7 +69,7 @@ topic: root
 - 落地第五板块 P2 工具第二项：新增 `tools/kb_qa_capture.py` 并接入 `tools/kb.py qa-capture`；新增 [[concepts/cpa-zh-qa-capture-helper]]；工具把本地问答回写到 `wiki/questions/`，保留原问题、原回答、related、status 和后续动作。
 - 归档练习题库（试卷一）答案解析：新增 [[sources/practice-question-bank-paper-1-answer-explanations-2026-07-13]]，PDF 原文进入 `raw/outlines/practice-question-bank-2026-07-13/`，并使用 `pymupdf` 生成可检索 Markdown 派生文本；新增 [[questions/practice-question-bank-paper-1-answer-key]]，沉淀标准答案和 3 道错题校准记录。
 - 核实考察知识清单文件来源汇总：归档用户提供的 HTML 至 `raw/sources/challenge-knowledge-source-summary-2026-07-13/file-source-summary/official.html.md`；新增 [[sources/challenge-knowledge-source-summary-verification-2026-07-13]]；将《注册会计师法》2026 修订线索标记为高优先级待维护事项，并为第二、第三板块补充备选官方链接。
-- 按最新来源纠偏注册会计师法版本状态：因全国人大网链接当前无法通过本地网络访问，先以已归档来源汇总为版本线索，将 [[concepts/law-cpa]]、[[concepts/laws/cpa-law/index]] 和 46 个条款页统一标记为 2014 修正版历史索引；2026 修订版待取得官方全文后重建。
+- 重做核心法规页结构：四部法律改为“合并全文索引 + 稳定条文锚点 + 高价值独立页”，共 603 条条文记录、57 个独立条文页；《注册会计师法》当前先使用 2026 修订草案，草案·待官方核对。
 
 ## 2026-07-24 | ui-reconstruction
 

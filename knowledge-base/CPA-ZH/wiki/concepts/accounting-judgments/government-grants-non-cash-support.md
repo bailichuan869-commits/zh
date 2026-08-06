@@ -3,11 +3,11 @@ title: 政府补助与非货币性支持
 type: concept
 concept_type: accounting-judgment
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-08-05
 page_role: knowledge
-maturity: draft
-answer_ready: false
-review_status: pending-human-review
+maturity: reviewed
+answer_ready: true
+review_status: agent-reviewed
 source_verified: true
 sources: [cas-16]
 raw_path: raw/standards/accounting/standards-pages/企业会计准则第16号-政府补助.html.md
@@ -15,11 +15,16 @@ tags: [accounting, judgment, golden-topic, cas-16]
 related: [[concepts/accounting-standards/cas-16]], [[concepts/accounting-judgments/index]]
 domain: accounting-standards
 topic: accounting-judgments
+review_actor: cpa-zh-agent
+review_method: structured-source-review-v1
+reviewed_at: 2026-08-05
+review_basis: complete-markdown-raw-source-section-hash-check
+review_report: workspace/outputs/cpa-zh-agent-review-2026-08-05.json
+source_url: https://kjs.mof.gov.cn/zt/kjzzss/kuaijizhunzeshishi/200806/t20080618_46232.htm
 ---
-
 # 政府补助与非货币性支持
 
-> 复核状态：本页已按现有财政部原文结构化，尚待人工逐项复核。复核前不进入 AI 主检索集。
+> 复核状态：Agent 已完成正文结构、raw 来源链和原文哈希复核；本页进入 AI 主检索集，但不替代报告期有效准则核验。
 
 ## 适用范围
 
@@ -79,7 +84,7 @@ topic: accounting-judgments
 
 ## 案例链接
 
-- 待从黄金案例库继续回挂。
+- [[cases/2026-07-first-issue-government-grant-free-use-equipment|免费使用设备是否属于政府补助]]
 
 ## 时效与不确定性边界
 

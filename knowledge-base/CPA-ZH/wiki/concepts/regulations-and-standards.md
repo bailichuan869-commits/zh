@@ -2,9 +2,20 @@
 title: 行业重要法规与准则
 type: concept
 concept_type: framework
+page_role: index
+maturity: reviewed
+answer_ready: false
+review_status: agent-reviewed
 created: 2026-06-26
-updated: 2026-07-14
+updated: 2026-08-05
 sources: [2026-06-26-initial-structure, challenge-knowledge-source-summary-2026-07-13]
+asset_id: cpa-zh:index:regulations-and-standards
+source_id: first-section-master-index-2026-06-26
+knowledge_type: regulations-and-standards-index
+version: unknown
+effective_from: unknown
+lifecycle_status: unknown
+authority_level: curated
 tags: [cpa, law, standards, p1-core]
 related: [[concepts/law-cpa]], [[concepts/law-accounting]], [[concepts/law-company]], [[concepts/law-securities]], [[concepts/accounting-standards-system]], [[concepts/audit-standards-system]]
 domain: laws
@@ -21,8 +32,8 @@ topic: overview
 
 ## 版本提醒
 
-- 《中华人民共和国注册会计师法》按 2026-07-13 来源汇总已出现 2026-06-26 修订、2027-01-01 施行的最新版本线索；当前知识库中的 46 个注册会计师法条款页为 2014 修正版历史索引。
-- 正式引用注册会计师法时，应优先使用 2026 修订后的官方最新文本；知识库将在取得官方全文后重建 [[concepts/law-cpa]] 和 [[concepts/laws/cpa-law/index]]。
+- 《中华人民共和国注册会计师法》条款入口已先按 2026 修订草案重排为 60 条全文索引（[[concepts/laws/cpa-law/index]]）。草案依据 2026-06-26 修改决定手工套用生成，非官方重新公布文本。
+- 正式引用注册会计师法时，应以 2026 修订后的官方重新公布文本核对；当前草案索引用于过渡研读、检索和条号映射。
 
 ## 子专题
 
@@ -41,10 +52,10 @@ topic: overview
 - [[sources/first-section-master-index-2026-06-26]] - 汇总本板块 raw 层已纳入资料 476 条，包括 4 部核心法律、315 条企业会计准则体系资料、85 个中注协准则 PDF/解压附件，以及 72 条中注协执业准则专题索引条目。
 - 明细文件：`raw/indexes/first-section-master-index.csv.md`
 - 总览文件：`raw/indexes/first-section-master-index.md`
-- [[sources/core-laws-article-index-2026-06-26]] - 四部核心法律条款级索引，生成 589 条条款页记录；其中注册会计师法条款页已标记为修订前历史索引。
+- [[sources/core-laws-article-index-2026-06-26]] - 四部核心法律条款级索引，当前生成 603 条条文记录和 4 个合并全文索引，条文通过 `#article-xxx` 锚点引用。
 - [[sources/enterprise-accounting-standards-number-index-2026-06-26]] - 企业会计准则编号级索引，去重后 296 条资料记录，其中 216 条已映射到具体准则编号。
 - [[sources/accounting-interpretations-index-2026-06-26]] - 企业会计准则解释 1-20 号编号级索引。
-- [[concepts/accounting-standards/calibration/index]] - 企业会计准则未映射资料校准入口。
+- [[concepts/accounting-standards/unmapped-review]] - 企业会计准则未映射资料待复核清单。
 - [[concepts/accounting-standards/other-rules/index]] - 企业会计准则其他规定入口。
 - [[sources/cicpa-professional-standards-number-index-2026-06-26]] - 中国注册会计师执业准则编号级索引，100 条资料记录全部映射到 40 个准则编号页。
 - [[concepts/audit-standards/topics]] - 中国注册会计师审计准则实务主题导航。

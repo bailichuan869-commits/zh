@@ -3,14 +3,29 @@ title: 会计师事务所监督检查办法
 type: concept
 concept_type: policy
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-08-06
 sources: [2026-06-26-initial-structure, archived-cpa-competition-policy-pages]
 tags: [policy, inspection, accounting-firm, p2-important]
 related: [[concepts/policy-documents]], [[concepts/policy-firm-license-supervision]], [[concepts/policy-audit-order]], [[concepts/first-section-responsibility-risk-map]]
 domain: policies
 topic: firm
+asset_id: cpa-zh:policy:firm-inspection-2022-23
+source_id: policy-firm-inspection-2022-23
+knowledge_type: policy
+page_role: knowledge
+maturity: reviewed
+answer_ready: false
+review_status: agent-reviewed
+version: 财办〔2022〕23号
+published_on: unknown
+effective_from: unknown
+lifecycle_status: unknown
+authority_level: official
+raw_path: raw/policies/second-section/firm-inspection-2022-23/official.html.md
+markdown_path: wiki/concepts/policy-firm-inspection.md
+source_url: https://www.gov.cn/zhengce/zhengceku/2022-05/16/content_5690682.htm
+content_sha256: 43bf065427d8c38b71c6a4580a7a3b8d69c952d81ec4a2f6210efe6dae0144e9
 ---
-
 # 会计师事务所监督检查办法
 
 ## 基本信息

@@ -21,11 +21,11 @@ topic: first-section
 
 | 维度 | 入口 | 用途 |
 |---|---|---|
-| 会计资料真实完整 | [[concepts/laws/accounting-law/accounting-law-article-003]], [[concepts/laws/accounting-law/accounting-law-article-004]] | 判断往来、担保、资金拆借和交易背景是否完整入账。 |
-| 公司治理和股东查阅 | [[concepts/laws/company-law/company-law-article-057]], [[concepts/laws/company-law/company-law-article-110]] | 获取股东名册、会议记录、财务报告和治理资料。 |
-| 上市公司实际控制人信息 | [[concepts/laws/company-law/company-law-article-140]] | 核对实际控制人、共同控制、重大影响和一致行动关系。 |
-| 信息披露真实准确完整 | [[concepts/laws/securities-law/securities-law-article-078]], [[concepts/laws/securities-law/securities-law-article-080]] | 判断关联交易、资金占用和担保披露是否充分。 |
-| 信息披露违法责任 | [[concepts/laws/securities-law/securities-law-article-197]] | 评估隐瞒关联方、重大遗漏或误导性陈述风险。 |
+| 会计资料真实完整 | [[concepts/laws/accounting-law/index#article-003]], [[concepts/laws/accounting-law/index#article-004]] | 判断往来、担保、资金拆借和交易背景是否完整入账。 |
+| 公司治理和股东查阅 | [[concepts/laws/company-law/index#article-057]], [[concepts/laws/company-law/index#article-110]] | 获取股东名册、会议记录、财务报告和治理资料。 |
+| 上市公司实际控制人信息 | [[concepts/laws/company-law/index#article-140]] | 核对实际控制人、共同控制、重大影响和一致行动关系。 |
+| 信息披露真实准确完整 | [[concepts/laws/securities-law/index#article-078]], [[concepts/laws/securities-law/index#article-080]] | 判断关联交易、资金占用和担保披露是否充分。 |
+| 信息披露违法责任 | [[concepts/laws/securities-law/index#article-197]] | 评估隐瞒关联方、重大遗漏或误导性陈述风险。 |
 
 ## 会计准则入口
 

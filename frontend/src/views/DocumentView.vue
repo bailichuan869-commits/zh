@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
+import { computed, nextTick, ref, watch } from 'vue'
 import { ArrowLeftOutlined, LinkOutlined } from '@ant-design/icons-vue'
 import { useRoute, useRouter } from 'vue-router'
 import MarkdownArticle from '@/components/MarkdownArticle.vue'
@@ -11,7 +11,16 @@ const document = ref<Document | null>(null)
 const loading = ref(false)
 const error = ref('')
 const path = computed(() => String(route.query.path ?? ''))
+const hash = computed(() => route.hash)
 const displayTitle = computed(() => document.value?.frontmatter.title || document.value?.path || '')
+
+async function scrollToHash() {
+  if (!hash.value) return
+  await nextTick()
+  window.requestAnimationFrame(() => {
+    globalThis.document.getElementById(decodeURIComponent(hash.value.slice(1)))?.scrollIntoView({ block: 'start' })
+  })
+}
 
 async function load() {
   if (!path.value) return
@@ -23,6 +32,7 @@ async function load() {
     error.value = reason instanceof Error ? reason.message : '无法读取知识页面'
   } finally {
     loading.value = false
+    scrollToHash()
   }
 }
 
@@ -31,6 +41,7 @@ function openBacklink(target: string) {
 }
 
 watch(path, load, { immediate: true })
+watch(hash, scrollToHash)
 </script>
 
 <template>
@@ -57,6 +68,8 @@ watch(path, load, { immediate: true })
             <div class="article-meta">
               <a-tag v-if="document.frontmatter.maturity" color="green">{{ document.frontmatter.maturity }}</a-tag>
               <a-tag v-if="document.frontmatter.page_role">{{ document.frontmatter.page_role }}</a-tag>
+              <a-tag v-if="document.asset?.lifecycle_status">{{ document.asset.lifecycle_status }}</a-tag>
+              <a-tag v-if="document.asset?.version">版本 {{ document.asset.version }}</a-tag>
               <span>{{ document.backlinks.length }} 条关联知识</span>
             </div>
           </header>
@@ -71,7 +84,13 @@ watch(path, load, { immediate: true })
           <h2>页面信息</h2>
           <div class="info-line"><span>文档类型</span><strong>{{ document.frontmatter.type || '知识页面' }}</strong></div>
           <div class="info-line"><span>成熟度</span><strong>{{ document.frontmatter.maturity || '已整理' }}</strong></div>
+          <div class="info-line"><span>生命周期</span><strong>{{ document.asset?.lifecycle_status || 'valid' }}</strong></div>
+          <div class="info-line"><span>资产 ID</span><strong class="path-value">{{ document.asset?.asset_id || '未生成' }}</strong></div>
+          <div class="info-line"><span>版本</span><strong>{{ document.asset?.version || '未声明' }}</strong></div>
+          <div class="info-line"><span>生效区间</span><strong>{{ document.asset?.effective_from || '未声明' }} 至 {{ document.asset?.effective_to || '未声明' }}</strong></div>
+          <div v-if="document.asset?.source_url" class="info-line"><span>来源链接</span><a :href="document.asset.source_url" target="_blank" rel="noreferrer">打开官方来源</a></div>
           <div class="info-line"><span>来源路径</span><strong class="path-value">{{ document.path }}</strong></div>
+          <div v-if="document.asset?.content_sha256" class="info-line"><span>内容哈希</span><strong class="path-value">{{ document.asset.content_sha256 }}</strong></div>
         </section>
 
         <section class="backlink-section">

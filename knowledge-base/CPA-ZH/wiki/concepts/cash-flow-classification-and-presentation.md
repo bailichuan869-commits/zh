@@ -3,23 +3,28 @@ title: 现金流量分类、总额列报与受限资金
 type: concept
 concept_type: accounting-judgment
 created: 2026-08-03
-updated: 2026-08-03
+updated: 2026-08-05
 page_role: knowledge
 maturity: draft
 answer_ready: false
-review_status: pending-human-review
+review_status: agent-reviewed
 source_verified: true
 sources: [cas-31]
-raw_path: raw/standards/accounting/standards-pages/企业会计准则第31号-现金流量表.html
+raw_path: raw/standards/accounting/standards-pages/企业会计准则第31号-现金流量表.html.md
 tags: [accounting, judgment, cash-flow, presentation, pending-review]
 related: [[concepts/accounting-standards/cas-31]], [[concepts/first-batch-answer-readiness]]
 domain: practice
 topic: audit-practice
+review_actor: cpa-zh-agent
+review_method: structured-source-review-v1
+reviewed_at: 2026-08-05
+review_basis: complete-markdown-raw-source-section-hash-check
+review_report: workspace/outputs/cpa-zh-agent-review-2026-08-05.json
+source_url: https://kjs.mof.gov.cn/zt/kjzzss/kuaijizhunzeshishi/200806/t20080618_46250.htm
 ---
-
 # 现金流量分类、总额列报与受限资金
 
-> 复核状态：本页基于企业会计准则第 31 号及其官方实施问答整理，尚待逐项人工复核。复核完成前不得作为 AI 专业结论的依据。
+> 复核状态：本页已由 Agent 完成来源、结构和引用复核，但尚未取得人工批准；在人工复核完成前，不进入正式答疑准入集。
 
 ## 适用范围
 
@@ -53,9 +58,11 @@ topic: audit-practice
 
 ## 结论边界
 
-本页不预设某一笔资金的具体分类。资金可支配性、交易目的、报告层级或净额列报条件存在缺口时，只能提出待补充事实，不得直接形成确定性结论。
+本页不预设某一笔资金的具体分类。资金可支配性、交易目的、报告层级或净额列报条件存在缺口时，应先列出事实缺口，不得直接形成确定性结论。
 
 ## 原文引用
+
+- [S0] [[raw/standards/accounting/standards-pages/企业会计准则第31号-现金流量表.html.md|准则原文]]
 
 - [S1] [[concepts/accounting-standards/cas-31|企业会计准则第 31 号资料入口]]
 - [S2] [[raw/standards/accounting/implementation-qa-pages-v2/qa-062.html.md|官方实施问答原文]]

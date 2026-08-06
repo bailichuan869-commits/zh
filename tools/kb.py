@@ -103,6 +103,36 @@ def main() -> int:
         default="wiki/concepts/kb-section-upgrade-dashboard.md",
         help="Output path under the knowledge base root.",
     )
+    completeness_parser = subparsers.add_parser(
+        "completeness", help="Scan wiki pages for repeatable content-completeness gaps."
+    )
+    completeness_parser.add_argument(
+        "--write-report", action="store_true", help="Write the Markdown and JSON completeness reports."
+    )
+    completeness_parser.add_argument(
+        "--output",
+        default="wiki/concepts/kb-content-completeness-report.md",
+        help="Markdown report path under the knowledge base root.",
+    )
+    completeness_parser.add_argument(
+        "--json-output",
+        default="workspace/outputs/kb_completeness.json",
+        help="JSON report path relative to the project root.",
+    )
+    governance_parser = subparsers.add_parser(
+        "governance", help="Audit asset metadata, lifecycle, admission, and source-registry coverage."
+    )
+    governance_parser.add_argument("--write-report", action="store_true", help="Write the Markdown and JSON reports.")
+    governance_parser.add_argument(
+        "--output",
+        default="wiki/concepts/kb-governance-dashboard.md",
+        help="Markdown report path under the knowledge base root.",
+    )
+    governance_parser.add_argument(
+        "--json-output",
+        default="workspace/outputs/kb_governance.json",
+        help="JSON report path relative to the project root.",
+    )
 
     ingest_parser = subparsers.add_parser("ingest-local", help="Ingest local files into the raw archive.")
     ingest_parser.add_argument("--source", required=True, help="Local file or directory to ingest.")
@@ -236,6 +266,24 @@ def main() -> int:
         if args.output != "wiki/concepts/kb-section-upgrade-dashboard.md":
             schema_args.extend(["--output", args.output])
         return run_script("kb_schema_check.py", args.root, schema_args)
+    if args.command == "completeness":
+        completeness_args: list[str] = []
+        if args.write_report:
+            completeness_args.append("--write-report")
+        if args.output != "wiki/concepts/kb-content-completeness-report.md":
+            completeness_args.extend(["--output", args.output])
+        if args.json_output != "workspace/outputs/kb_completeness.json":
+            completeness_args.extend(["--json-output", args.json_output])
+        return run_script("kb_completeness.py", args.root, completeness_args)
+    if args.command == "governance":
+        governance_args: list[str] = []
+        if args.write_report:
+            governance_args.append("--write-report")
+        if args.output != "wiki/concepts/kb-governance-dashboard.md":
+            governance_args.extend(["--output", args.output])
+        if args.json_output != "workspace/outputs/kb_governance.json":
+            governance_args.extend(["--json-output", args.json_output])
+        return run_script("kb_governance.py", args.root, governance_args)
     if args.command == "raw-audit":
         return run_script("kb_dual_track_audit.py", args.root, ["--output", args.output])
     if args.command == "raw-repair":

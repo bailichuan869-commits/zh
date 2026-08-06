@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from kb_common import normalize_core_law_article_links, update_frontmatter
+
 
 ROOT = Path(__file__).resolve().parents[1]
 WIKI = ROOT / "knowledge-base" / "CPA-ZH" / "wiki"
@@ -173,7 +175,7 @@ related: [[concepts/policy-documents]], [[concepts/policy-cpa-registration]], [[
 
 ## 政策定位
 
-该办法承接 [[concepts/laws/cpa-law/cpa-law-article-007]] 的统一考试制度，解决“如何考试、谁组织、成绩如何管理、违规如何处理”的问题。考试合格并不等于执业注册，还需满足注册条件。
+该办法承接 [[concepts/laws/cpa-law/cpa-law-article-009]] 的统一考试制度，解决“如何考试、谁组织、成绩如何管理、违规如何处理”的问题。考试合格并不等于执业注册，还需满足注册条件。
 
 ## 核心要求
 
@@ -238,7 +240,7 @@ related: [[concepts/policy-documents]], [[concepts/law-cpa]], [[concepts/policy-
 
 | 问题 | 连接 |
 |---|---|
-| 上位法律依据 | [[concepts/law-cpa]], [[concepts/laws/cpa-law/cpa-law-article-009]] |
+| 上位法律依据 | [[concepts/law-cpa]], [[concepts/laws/cpa-law/cpa-law-article-011]] |
 | 考试制度 | [[concepts/policy-cpa-exam]] |
 | 诚信和职业道德 | [[concepts/policy-integrity]], [[concepts/ethics-code]] |
 | 事务所质量管理 | [[concepts/policy-audit-order]], [[concepts/policy-firm-license-supervision]] |
@@ -279,7 +281,7 @@ related: [[concepts/policy-documents]], [[concepts/law-cpa]], [[concepts/policy-
 
 | 问题 | 连接 |
 |---|---|
-| 事务所设立上位法 | [[concepts/law-cpa]], [[concepts/laws/cpa-law/cpa-law-article-025]] |
+| 事务所设立上位法 | [[concepts/law-cpa]], [[concepts/laws/cpa-law/cpa-law-article-027]] |
 | 行业秩序治理 | [[concepts/policy-audit-order]] |
 | 监督检查程序 | [[concepts/policy-firm-inspection]] |
 | 诚信和信用约束 | [[concepts/policy-integrity]] |
@@ -331,7 +333,7 @@ related: [[concepts/policy-documents]], [[concepts/ethics-code]], [[concepts/ind
 
 | 问题 | 连接 |
 |---|---|
-| 禁止行为和独立性 | [[concepts/law-cpa]], [[concepts/laws/cpa-law/cpa-law-article-022]] |
+| 禁止行为和独立性 | [[concepts/law-cpa]], [[concepts/laws/cpa-law/cpa-law-article-024]] |
 | 证券服务责任 | [[concepts/law-securities]], [[concepts/first-section-topics/securities-service-liability]] |
 | 审计质量和报告责任 | [[concepts/audit-standards-system]], [[concepts/audit-standards/csa-1501]] |
 """,
@@ -501,10 +503,221 @@ related: [[concepts/policy-documents]], [[concepts/policy-document-comparison]]
 }
 
 
+POLICY_METADATA: dict[Path, dict[str, object]] = {
+    CONCEPTS / "policy-audit-order.md": {
+        "asset_id": "cpa-zh:policy:audit-order-2021-30",
+        "source_id": "policy-audit-order-2021-30",
+        "knowledge_type": "policy",
+        "page_role": "knowledge",
+        "maturity": "reviewed",
+        "answer_ready": False,
+        "review_status": "agent-reviewed",
+        "updated": "2026-08-06",
+        "version": "国办发〔2021〕30号",
+        "published_on": "2021-07-30",
+        "effective_from": "unknown",
+        "lifecycle_status": "unknown",
+        "authority_level": "official",
+        "raw_path": "raw/policies/second-section/audit-order-2021-30/official.html.md",
+        "markdown_path": "wiki/concepts/policy-audit-order.md",
+        "source_url": "https://www.gov.cn/zhengce/content/2021-08/23/content_5632714.htm",
+        "content_sha256": "2e83953cae99b8366155c20fd52454ec47172de327c27080c4e1cf226c989409",
+    },
+    CONCEPTS / "policy-caihui-supervision.md": {
+        "asset_id": "cpa-zh:policy:caihui-supervision-2023-4",
+        "source_id": "policy-caihui-supervision-2023-4",
+        "knowledge_type": "policy",
+        "page_role": "knowledge",
+        "maturity": "reviewed",
+        "answer_ready": False,
+        "review_status": "agent-reviewed",
+        "updated": "2026-08-06",
+        "version": "中办发〔2023〕4号",
+        "published_on": "2023-02-15",
+        "effective_from": "unknown",
+        "lifecycle_status": "unknown",
+        "authority_level": "official",
+        "raw_path": "raw/policies/second-section/caihui-supervision-2023-4/official.html.md",
+        "markdown_path": "wiki/concepts/policy-caihui-supervision.md",
+        "source_url": "https://www.gov.cn/zhengce/2023-02/15/content_5741628.htm",
+        "content_sha256": "edba2cc9532ac41c324308e11fd9f1a6d73e4d5fa723b611317981b201557ca5",
+    },
+    CONCEPTS / "policy-cpa-exam.md": {
+        "asset_id": "cpa-zh:policy:cpa-exam-2024-115",
+        "source_id": "policy-cpa-exam-2024-115",
+        "knowledge_type": "policy",
+        "page_role": "knowledge",
+        "maturity": "reviewed",
+        "answer_ready": False,
+        "review_status": "agent-reviewed",
+        "updated": "2026-08-06",
+        "version": "财政部令第115号",
+        "published_on": "2024-01-23",
+        "effective_from": "2024-03-01",
+        "lifecycle_status": "unknown",
+        "authority_level": "official",
+        "raw_path": "raw/policies/second-section/cpa-exam-2024-115/official.html.md",
+        "markdown_path": "wiki/concepts/policy-cpa-exam.md",
+        "source_url": "https://www.gov.cn/gongbao/2024/issue_11286/202404/content_6945588.html",
+        "content_sha256": "23b0a578b1f15c4f2e726fc32c6b97145e34866365caab7207bd9b1a56aa5180",
+        "supersedes": "财政部令第75号修改版本",
+    },
+    CONCEPTS / "policy-cpa-registration.md": {
+        "asset_id": "cpa-zh:policy:cpa-registration-2019-99",
+        "source_id": "policy-cpa-registration-2019-99",
+        "knowledge_type": "policy",
+        "page_role": "knowledge",
+        "maturity": "reviewed",
+        "answer_ready": False,
+        "review_status": "agent-reviewed",
+        "updated": "2026-08-06",
+        "version": "财政部令第99号修改版本",
+        "published_on": "2019-03-15",
+        "effective_from": "2019-03-15",
+        "lifecycle_status": "unknown",
+        "authority_level": "official",
+        "raw_path": "raw/policies/second-section/cpa-registration-2019-99/official.html.md",
+        "markdown_path": "wiki/concepts/policy-cpa-registration.md",
+        "source_url": "https://www.mof.gov.cn/gkml/caizhengwengao/wg201901/wg201912/202005/t20200522_3518260.htm",
+        "content_sha256": "7a3f8a6d74e5018aec4abc41a3605cc7c89324b7ea5f8b6f5b4ca90e1b88d02d",
+        "supersedes": "财政部令第25号经2017年第一次修改版本",
+    },
+    CONCEPTS / "policy-firm-inspection.md": {
+        "asset_id": "cpa-zh:policy:firm-inspection-2022-23",
+        "source_id": "policy-firm-inspection-2022-23",
+        "knowledge_type": "policy",
+        "page_role": "knowledge",
+        "maturity": "reviewed",
+        "answer_ready": False,
+        "review_status": "agent-reviewed",
+        "updated": "2026-08-06",
+        "version": "财办〔2022〕23号",
+        "published_on": "unknown",
+        "effective_from": "unknown",
+        "lifecycle_status": "unknown",
+        "authority_level": "official",
+        "raw_path": "raw/policies/second-section/firm-inspection-2022-23/official.html.md",
+        "markdown_path": "wiki/concepts/policy-firm-inspection.md",
+        "source_url": "https://www.gov.cn/zhengce/zhengceku/2022-05/16/content_5690682.htm",
+        "content_sha256": "43bf065427d8c38b71c6a4580a7a3b8d69c952d81ec4a2f6210efe6dae0144e9",
+    },
+    CONCEPTS / "policy-firm-license-supervision.md": {
+        "asset_id": "cpa-zh:policy:firm-license-supervision-2019-97",
+        "source_id": "policy-firm-license-supervision-2019-97",
+        "knowledge_type": "policy",
+        "page_role": "knowledge",
+        "maturity": "reviewed",
+        "answer_ready": False,
+        "review_status": "agent-reviewed",
+        "updated": "2026-08-06",
+        "version": "财政部令第97号修改版本",
+        "published_on": "2019-01-02",
+        "effective_from": "2019-01-02",
+        "lifecycle_status": "unknown",
+        "authority_level": "official",
+        "raw_path": "raw/policies/second-section/firm-license-supervision-2019-97/official.html.md",
+        "markdown_path": "wiki/concepts/policy-firm-license-supervision.md",
+        "source_url": "https://www.gov.cn/gongbao/content/2019/content_5392297.htm",
+        "content_sha256": "e5b2056d3d8ed66b9242dd2eb7e28f319529581d65f00b28de0ddf693c818029",
+        "supersedes": "财政部令第89号公布版本",
+    },
+    CONCEPTS / "policy-integrity.md": {
+        "asset_id": "cpa-zh:policy:integrity-2023-5",
+        "source_id": "policy-integrity-2023-5",
+        "knowledge_type": "policy",
+        "page_role": "knowledge",
+        "maturity": "reviewed",
+        "answer_ready": False,
+        "review_status": "agent-reviewed",
+        "updated": "2026-08-06",
+        "version": "财会〔2023〕5号",
+        "published_on": "unknown",
+        "effective_from": "unknown",
+        "lifecycle_status": "unknown",
+        "authority_level": "official",
+        "raw_path": "raw/policies/second-section/integrity-2023-5/official.html.md",
+        "markdown_path": "wiki/concepts/policy-integrity.md",
+        "source_url": "https://www.gov.cn/zhengce/zhengceku/2023-04/02/content_5749779.htm",
+        "content_sha256": "8a8529c7395d3fdb47b188a82e22abc393b7316998f85f7a459b785b2e2a2e5c",
+    },
+}
+
+
+SUPPORTING_METADATA: dict[Path, dict[str, object]] = {
+    CONCEPTS / "policy-document-comparison.md": {
+        "asset_id": "cpa-zh:index:policy-document-comparison",
+        "knowledge_type": "index",
+        "page_role": "index",
+        "maturity": "reviewed",
+        "answer_ready": False,
+        "review_status": "agent-reviewed",
+        "updated": "2026-08-06",
+    },
+    CONCEPTS / "policy-documents.md": {
+        "asset_id": "cpa-zh:index:policy-documents",
+        "knowledge_type": "index",
+        "page_role": "index",
+        "maturity": "reviewed",
+        "answer_ready": False,
+        "review_status": "agent-reviewed",
+        "updated": "2026-08-06",
+    },
+    CONCEPTS / "policy-execution-checklist.md": {
+        "asset_id": "cpa-zh:index:policy-execution-checklist",
+        "knowledge_type": "index",
+        "page_role": "index",
+        "maturity": "reviewed",
+        "answer_ready": False,
+        "review_status": "agent-reviewed",
+        "updated": "2026-08-06",
+    },
+    CONCEPTS / "policy-implementation-map.md": {
+        "asset_id": "cpa-zh:index:policy-implementation-map",
+        "knowledge_type": "index",
+        "page_role": "index",
+        "maturity": "reviewed",
+        "answer_ready": False,
+        "review_status": "agent-reviewed",
+        "updated": "2026-08-06",
+    },
+    CONCEPTS / "policy-official-link-checklist.md": {
+        "asset_id": "cpa-zh:index:policy-official-link-checklist",
+        "knowledge_type": "index",
+        "page_role": "index",
+        "maturity": "reviewed",
+        "answer_ready": False,
+        "review_status": "agent-reviewed",
+        "updated": "2026-08-06",
+    },
+    CONCEPTS / "policy-version-validity-tracker.md": {
+        "asset_id": "cpa-zh:index:policy-version-validity-tracker",
+        "knowledge_type": "index",
+        "page_role": "index",
+        "maturity": "reviewed",
+        "answer_ready": False,
+        "review_status": "agent-reviewed",
+        "updated": "2026-08-06",
+    },
+}
+
+
 def main() -> None:
-    for path, text in PAGES.items():
-        path.write_text(text.strip() + "\n", encoding="utf-8")
+    metadata_by_path = {**POLICY_METADATA, **SUPPORTING_METADATA}
+    for path in sorted(set(PAGES) | set(metadata_by_path), key=lambda item: item.as_posix()):
+        fallback = PAGES.get(path)
+        if path.exists():
+            current = path.read_text(encoding="utf-8-sig")
+        elif fallback is not None:
+            current = fallback
+        else:
+            raise FileNotFoundError(f"Missing editorial policy page: {path}")
+        normalized, _ = normalize_core_law_article_links(current)
+        metadata = metadata_by_path.get(path)
+        if metadata:
+            normalized = update_frontmatter(normalized, metadata)
+        path.write_text(normalized.strip() + "\n", encoding="utf-8")
     print(f"policy_pages={len(PAGES)}")
+    print(f"governed_pages={len(metadata_by_path)}")
 
 
 if __name__ == "__main__":

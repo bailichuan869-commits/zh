@@ -21,9 +21,9 @@ topic: first-section
 
 | 维度 | 入口 | 用途 |
 |---|---|---|
-| 公司治理和股东资料 | [[concepts/laws/company-law/company-law-article-057]], [[concepts/laws/company-law/company-law-article-110]] | 获取章程、股东名册、会议记录和投资决策资料。 |
-| 年度财务报告审计 | [[concepts/laws/company-law/company-law-article-208]], [[concepts/laws/company-law/company-law-article-216]] | 获取被投资单位财务资料和投资证据。 |
-| 上市公司重大投资披露 | [[concepts/laws/securities-law/securities-law-article-080]], [[concepts/laws/securities-law/securities-law-article-085]] | 核对重大投资、并购处置、控制权变化和信息披露。 |
+| 公司治理和股东资料 | [[concepts/laws/company-law/index#article-057]], [[concepts/laws/company-law/index#article-110]] | 获取章程、股东名册、会议记录和投资决策资料。 |
+| 年度财务报告审计 | [[concepts/laws/company-law/index#article-208]], [[concepts/laws/company-law/index#article-216]] | 获取被投资单位财务资料和投资证据。 |
+| 上市公司重大投资披露 | [[concepts/laws/securities-law/index#article-080]], [[concepts/laws/securities-law/index#article-085]] | 核对重大投资、并购处置、控制权变化和信息披露。 |
 
 ## 会计准则入口
 

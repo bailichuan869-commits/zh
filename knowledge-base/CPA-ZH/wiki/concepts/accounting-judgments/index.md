@@ -16,7 +16,7 @@ topic: accounting-judgments
 
 # 会计判断黄金专题
 
-本目录承载首版 20 个会计判断专题。目录页只负责导航，不作为独立专业结论。专题人工复核后才能将 `answer_ready` 设为 `true`。
+本目录承载首版 20 个会计判断专题。目录页只负责导航，不作为独立专业结论。专题由 Agent 按来源链、事实边界、准则版本和引用完整性复核通过后，才将 `answer_ready` 设为 `true`；`agent-reviewed` 不等于人工批准或官方效力自动核验。
 
 1. [[concepts/accounting-judgments/inventory-recognition-cost-nrv|存货确认、成本与可变现净值]]
 2. [[concepts/accounting-judgments/long-term-equity-investment-scope-conversion|长期股权投资适用范围与核算方法转换]]

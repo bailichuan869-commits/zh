@@ -23,6 +23,8 @@
 .\.venv\Scripts\python.exe tools\kb.py ingest-local --source "D:\path\to\files" --raw-subdir "cases/new-batch" --batch-slug "new-batch"
 .\.venv\Scripts\python.exe tools\kb.py case-card --source "knowledge-base/CPA-ZH/raw/cases/batch/case.docx" --slug "draft-case"
 .\.venv\Scripts\python.exe tools\kb.py case-index --write-report
+.\.venv\Scripts\python.exe tools\kb.py completeness --write-report
+.\.venv\Scripts\python.exe tools\kb.py governance --write-report
 .\.venv\Scripts\python.exe tools\kb.py qa-capture --question "客户有售后回购条款，能不能确认收入？" --answer "需要围绕控制权是否转移、回购条款实质和客户是否存在重大经济动因判断。"
 .\.venv\Scripts\python.exe tools\kb.py archive-doc --source "D:\path\to\official.pdf" --raw-subdir "policies/new-batch" --slug "official-doc" --title "文件标题"
 .\.venv\Scripts\python.exe tools\kb.py pdf-md --source "knowledge-base\CPA-ZH\raw" --engine auto
@@ -36,7 +38,7 @@
 | 类型 | 命令 | 说明 |
 |---|---|---|
 | 只读 | `health`、`verify`、`manifest`、`search`、`stats`、`sources summary`、`case-index` | 查询、检查当前状态或打印建议 |
-| 重建报告 | `index`、`cache build`、`schema --write-report`、`sources write-report`、`case-index --write-report`、`readme` | 可重复生成索引、缓存、建议报告或仪表盘 |
+| 重建报告 | `index`、`cache build`、`schema --write-report`、`completeness --write-report`、`sources write-report`、`case-index --write-report`、`readme` | 可重复生成索引、缓存、建议报告或仪表盘 |
 | 显式写入 | `ingest-local --commit`、`case-card --commit`、`qa-capture --commit`、`archive-doc --commit`、`pdf-md --commit`、`raw-index-repair --apply` | 新增或修复 raw、wiki 或转换缓存文件，执行前先 dry-run |
 
 ## CPA-ZH 维护脚本
@@ -65,16 +67,20 @@
 | `kb_archive_doc.py` | 原文归档助手：归档单个 PDF/HTML/DOCX 原文为 `official.*`，并生成 manifest、metadata、source-url。 |
 | `kb_pdf_to_markdown.py` | PDF 转 Markdown助手：用 PyMuPDF、pdfplumber、pdfminer、pypdf 多引擎抽取 PDF，转成 Markdown 并标记文本质量。 |
 | `kb_schema_check.py` | 检查 wiki 概念页 frontmatter schema 一致性，生成升级仪表盘 `wiki/concepts/kb-section-upgrade-dashboard.md`。 |
+| `kb_completeness.py` | 扫描显式待补内容、骨架页、来源缺口和 Wiki 断链，生成 `wiki/concepts/kb-content-completeness-report.md`。 |
+| `kb_governance.py` | 统计资产元数据、生命周期、答疑准入和 `source-registry.yml` 覆盖率，生成治理仪表盘。 |
 | `import_local_case_batch.py` | 导入本地案例批次。 |
 
 ## Agent-first 入口
 
-Agent 维护不直接调用底层 `kb.py ... --commit`。先调用预览操作、展示完整 `data`，用户明确确认后，再以同一短期令牌调用 commit：
+Agent 维护不直接调用底层 `kb.py ... --commit`。普通写入先调用预览操作、展示完整 `data`，用户明确确认后，再以同一短期令牌调用 commit。对已明确授权的批量 Agent 复核，可使用独立的 `agent-review --commit`，结果标记为 `agent-reviewed`，不冒充人工确认：
 
 ```powershell
 .\.venv\Scripts\python.exe tools\cpa_zh_agent.py search --query "收入确认"
 .\.venv\Scripts\python.exe tools\cpa_zh_agent.py pending-reviews
 .\.venv\Scripts\python.exe tools\cpa_zh_agent.py review-detail "wiki/cases/example.md"
+.\.venv\Scripts\python.exe tools\cpa_zh_agent.py agent-review --scope golden
+.\.venv\Scripts\python.exe tools\cpa_zh_agent.py agent-review --scope golden --commit
 .\.venv\Scripts\python.exe tools\cpa_zh_mcp.py
 ```
 
@@ -84,7 +90,7 @@ Agent 维护不直接调用底层 `kb.py ... --commit`。先调用预览操作�
 
 | 脚本 | 职责 |
 |---|---|
-| `generate_core_law_article_pages.py` | 生成核心法律条款页。 |
+| `generate_core_law_article_pages.py` | 生成核心法律合并全文索引、条文锚点和 CSV 明细；默认不拆独立条文页。 |
 | `generate_accounting_standards_number_index.py` | 生成企业会计准则编号索引。 |
 | `generate_accounting_interpretation_pages.py` | 生成会计准则解释页。 |
 | `generate_cicpa_professional_standards_number_index.py` | 生成注册会计师执业准则编号索引。 |
@@ -92,7 +98,7 @@ Agent 维护不直接调用底层 `kb.py ... --commit`。先调用预览操作�
 | `generate_first_section_topic_matrix.py` | 生成第一板块专题矩阵。 |
 | `generate_first_section_law_maintenance_pages.py` | 生成法律维护页。 |
 | `generate_accounting_standards_calibration.py` | 生成会计准则校准资料。 |
-| `generate_accounting_unmapped_bucket_pages.py` | 生成未映射准则资料页。 |
+| `generate_accounting_unmapped_bucket_pages.py` | 清理已废止的未映射准则分桶页；待复核事项统一保留在 `unmapped-review.md`。 |
 
 ## 内容加工脚本
 
@@ -123,7 +129,7 @@ Agent 维护不直接调用底层 `kb.py ... --commit`。先调用预览操作�
 | `kb_common.py` | 分类、内容成熟度和检索评估共享的元数据、Markdown 和路径辅助。 |
 | `build_golden_content.py` | 生成可复核的会计判断专题与黄金案例集。 |
 | `classify_wiki.py` | 语义分类回填：按路径规则为 wiki/raw 推断 domain/topic 并写回 frontmatter，生成 `search/navigation-tree.json`。子命令 `report`/`apply`/`build`。 |
-| `kb_eval.py` | 评估黄金问题集的本地检索效果。 |
+| `kb_eval.py` | 评估黄金问题集的本地检索效果；默认执行题级 Recall@5、90% 门禁，并按 domain/category/tier 分层统计。 |
 | `kb_maturity.py` | 生成内容成熟度仪表盘，或回填成熟度元数据。 |
 | `wiki_lint.py` | wiki 断链/孤立页检查：扫描所有 `[[…]]` 链接与未被引用的页面。 |
 | `version_consistency_scan.py` | 按关键字（如「注册会计师法」）扫描全 wiki，输出语义版本一致性报告。 |

@@ -38,11 +38,3 @@ topic: cas
 |---|---|---|---|---|
 | 准则原文 | 企业会计准则第1号——存货 | https://kjs.mof.gov.cn/zt/kjzzss/kuaijizhunzeshishi/200806/t20080618_46216.htm | `raw/standards/accounting/standards-pages/企业会计准则第1号-存货.html` | title-standard-number/high |
 | 实施问答 | 问：汽车销售企业在日常活动中购进并用于销售的二手车，应当如何进行会计处理？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/chzzsswd/202301/t20230103_3861813.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-066.html.md` | url-category-slug/high |
-
-<!-- golden-judgments:start -->
-
-## 会计判断专题
-
-- [[concepts/accounting-judgments/inventory-recognition-cost-nrv|存货确认、成本与可变现净值]]
-
-<!-- golden-judgments:end -->

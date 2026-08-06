@@ -67,6 +67,29 @@ class BackendApiContractTests(unittest.TestCase):
         self.assertEqual("wiki/index.md", document.path)
         self.assertTrue(document.markdown)
 
+    def test_law_index_backlinks_hide_same_family_pages(self) -> None:
+        document = DocumentResponse.model_validate(library.document("wiki/concepts/laws/accounting-law/index.md"))
+        self.assertEqual(
+            [
+                "concepts/law-accounting",
+                "index",
+                "sources/core-laws-article-index-2026-06-26",
+            ],
+            [item.path for item in document.backlinks],
+        )
+
+    def test_navigation_excludes_retired_calibration_bucket_pages(self) -> None:
+        payload = json.loads(library.tree().body)
+        accounting = next(domain for domain in payload["domains"] if domain["key"] == "accounting-standards")
+        self.assertNotIn("calibration", {topic["key"] for topic in accounting["topics"]})
+        self.assertFalse(
+            any(
+                page["path"].startswith("wiki/concepts/accounting-standards/calibration/")
+                for topic in accounting["topics"]
+                for page in topic["pages"]
+            )
+        )
+
     def test_search_snippets_are_plain_text(self) -> None:
         malicious = '<mark>收入</mark><img src=x onerror="alert(1)"><script>bad()</script>'
         snippet = plain_snippet(malicious)

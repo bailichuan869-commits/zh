@@ -3,6 +3,8 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
+from kb_common import normalize_core_law_article_links
+
 
 ROOT = Path(__file__).resolve().parents[1]
 WIKI = ROOT / "knowledge-base" / "CPA-ZH" / "wiki"
@@ -24,14 +26,14 @@ FRAMEWORKS: dict[Path, str] = {
 
 | 主题 | 条款入口 | 实务含义 |
 |---|---|---|
-| 行业监管主体 | [[concepts/laws/cpa-law/cpa-law-article-005]] | 财政部门对注册会计师、会计师事务所和协会进行监督指导。 |
-| 法定审计业务范围 | [[concepts/laws/cpa-law/cpa-law-article-014]] | 财务报表审计、验资、合并分立清算相关审计和其他法定审计业务，是注册会计师法定职责的起点。 |
-| 获取资料和现场协助 | [[concepts/laws/cpa-law/cpa-law-article-017]] | 审计程序需要客户配合时，可与审计证据、管理层责任和受限事项判断衔接。 |
-| 回避和独立性 | [[concepts/laws/cpa-law/cpa-law-article-018]] | 与 [[concepts/ethics-code]]、[[concepts/independence-standard-1]] 共同构成独立性底线。 |
-| 保密义务 | [[concepts/laws/cpa-law/cpa-law-article-019]] | 底稿、客户资料、询证信息和项目沟通均应纳入保密控制。 |
-| 拒绝出具不当报告 | [[concepts/laws/cpa-law/cpa-law-article-020]] | 当委托人示意不实证明或故意不提供资料时，应升级为报告意见和业务保持问题。 |
-| 按执业准则出具报告 | [[concepts/laws/cpa-law/cpa-law-article-021]] | 与 [[concepts/audit-standards-system]] 直接衔接，是“程序到意见”的法定连接点。 |
-| 禁止行为 | [[concepts/laws/cpa-law/cpa-law-article-022]] | 覆盖利益冲突、违反独立性、索取收受不当利益等风险场景。 |
+| 行业监管主体 | [[concepts/laws/cpa-law/cpa-law-article-006]] | 财政部门对注册会计师、会计师事务所和协会进行监督指导。 |
+| 法定审计业务范围 | [[concepts/laws/cpa-law/cpa-law-article-016]] | 财务报表审计、验资、合并分立清算相关审计和其他法定审计业务，是注册会计师法定职责的起点。 |
+| 获取资料和现场协助 | [[concepts/laws/cpa-law/cpa-law-article-019]] | 审计程序需要客户配合时，可与审计证据、管理层责任和受限事项判断衔接。 |
+| 回避和独立性 | [[concepts/laws/cpa-law/cpa-law-article-020]] | 与 [[concepts/ethics-code]]、[[concepts/independence-standard-1]] 共同构成独立性底线。 |
+| 保密义务 | [[concepts/laws/cpa-law/cpa-law-article-021]] | 底稿、客户资料、询证信息和项目沟通均应纳入保密控制。 |
+| 拒绝出具不当报告 | [[concepts/laws/cpa-law/cpa-law-article-022]] | 当委托人示意不实证明或故意不提供资料时，应升级为报告意见和业务保持问题。 |
+| 按执业准则出具报告 | [[concepts/laws/cpa-law/cpa-law-article-023]] | 与 [[concepts/audit-standards-system]] 直接衔接，是“程序到意见”的法定连接点。 |
+| 禁止行为 | [[concepts/laws/cpa-law/cpa-law-article-024]] | 覆盖利益冲突、违反独立性、索取收受不当利益等风险场景。 |
 
 ## 审计实务连接
 
@@ -154,6 +156,7 @@ FRAMEWORKS: dict[Path, str] = {
 
 
 def upsert_framework(path: Path, block: str) -> None:
+    block, _ = normalize_core_law_article_links(block)
     text = path.read_text(encoding="utf-8")
     full = START + "\n" + block.strip() + "\n\n" + END
     pattern = re.compile(rf"\n?{re.escape(START)}.*?{re.escape(END)}\n?", re.S)

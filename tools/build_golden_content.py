@@ -246,7 +246,7 @@ topic: accounting-judgments
 
 # {title}
 
-> 复核状态：本页已按现有财政部原文结构化，尚待人工逐项复核。复核前不进入 AI 主检索集。
+> 复核状态：本页已按现有财政部原文结构化，尚待人工或明确授权的 Agent 逐项复核。复核前不进入 AI 主检索集。
 
 ## 适用范围
 
@@ -442,7 +442,7 @@ related: [[cases/golden-cases-index]], [[concepts/kb-content-maturity-dashboard]
 
 # 会计判断黄金专题
 
-本目录承载首版 20 个会计判断专题。目录页只负责导航，不作为独立专业结论。专题人工复核后才能将 `answer_ready` 设为 `true`。
+本目录承载首版 20 个会计判断专题。目录页只负责导航，不作为独立专业结论。专题经人工或明确授权的 Agent 复核后才能将 `answer_ready` 设为 `true`。
 
 {links}
 """
@@ -503,7 +503,7 @@ related: [[concepts/accounting-judgments/index]], [[concepts/kb-content-maturity
 
 # 会计判断黄金案例
 
-首版共 20 个案例：5 个内部研讨案例升级稿、11 个财政部应用案例、4 个财政部实施问答。内部研讨意见与官方原文分层展示。全部案例在人工复核前保持草稿状态。
+首版共 20 个案例：5 个内部研讨案例升级稿、11 个财政部应用案例、4 个财政部实施问答。内部研讨意见与官方原文分层展示。全部案例在人工或明确授权的 Agent 复核前保持草稿状态。
 
 {links}
 """

@@ -41,11 +41,3 @@ topic: cas
 | 实施问答 | 问：债务重组的方式主要包括债务人以资产清偿债务、将债务转为权益工具、修改其他条款，... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/zwcz/202103/t20210302_3664187.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-011.html.md` | url-category-slug/high |
 | 实施问答 | 问：债务人能否在债务重组合同签署时确认债务重组损益？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/zwcz/202103/t20210302_3664190.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-012.html.md` | url-category-slug/high |
 | 实施问答 | 问：债权人和债务人以资产清偿债务方式进行债务重组的，债权人初始确认受让非金融资产时... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/zwcz/202104/t20210425_3691695.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-029.html.md` | url-category-slug/high |
-
-<!-- golden-judgments:start -->
-
-## 会计判断专题
-
-- [[concepts/accounting-judgments/debt-restructuring-recognition-measurement|债务重组确认时点与损益计量]]
-
-<!-- golden-judgments:end -->

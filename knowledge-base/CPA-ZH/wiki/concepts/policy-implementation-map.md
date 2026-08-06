@@ -3,14 +3,19 @@ title: 第二板块政策落地地图
 type: concept
 concept_type: implementation-map
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-08-06
 sources: [2026-06-26-initial-structure, archived-cpa-competition-policy-pages]
 tags: [policy, implementation, accounting-firm, p2-important]
 related: [[concepts/policy-documents]], [[concepts/policy-document-comparison]], [[concepts/first-section-responsibility-risk-map]]
 domain: policies
 topic: trackers
+asset_id: cpa-zh:index:policy-implementation-map
+knowledge_type: index
+page_role: index
+maturity: reviewed
+answer_ready: false
+review_status: agent-reviewed
 ---
-
 # 第二板块政策落地地图
 
 本页把政策要求翻译成事务所和项目层面的维护动作。

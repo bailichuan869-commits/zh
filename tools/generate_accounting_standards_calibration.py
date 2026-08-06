@@ -21,7 +21,7 @@ def read_csv(path: Path) -> list[dict[str, str]]:
 def write_csv(path: Path, rows: list[dict[str, str]]) -> None:
     if not rows:
         return
-    with path.open("w", encoding="utf-8-sig", newline="") as fh:
+    with path.open("w", encoding="utf-8", newline="") as fh:
         writer = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
         writer.writeheader()
         writer.writerows(rows)
@@ -46,14 +46,14 @@ def suggest_bucket(row: dict[str, str]) -> tuple[str, str, str]:
             return result(f"解释第{no}号", "标题中明确给出解释编号", "high")
         if "PPP" in title or "PPP" in url:
             return result("解释第14号 / PPP专题", "标题包含 PPP，通常归入收入准则相关专题", "medium")
-        return result("待人工核验", "仅有通知标题，未直接给出主题", "low")
+            return result("Agent待复核", "仅有通知标题，未直接给出主题", "low")
 
     if source_type == "应用案例":
         if "PPP" in title:
             return result("解释第14号 / PPP专题", "PPP 会计处理专题", "medium")
         if "资金集中管理" in title:
             return result("其他规定 / 资金集中管理", "更接近专题性会计处理规定", "medium")
-        return result("待人工核验", "标题不够明确", "low")
+        return result("Agent待复核", "标题不够明确", "low")
 
     if source_type == "实施问答":
         if "增值税" in title:
@@ -78,7 +78,7 @@ def suggest_bucket(row: dict[str, str]) -> tuple[str, str, str]:
             return result("CAS 13 / 或有事项", "预计负债专题", "medium")
         if "结构化主体" in title:
             return result("CAS 33 / 合并财务报表", "结构化主体控制判断", "medium")
-        return result("待人工核验", "标题不够明确", "low")
+        return result("Agent待复核", "标题不够明确", "low")
 
     if source_type == "其他规定":
         if "增值税" in title:
@@ -91,9 +91,9 @@ def suggest_bucket(row: dict[str, str]) -> tuple[str, str, str]:
             return result("CAS 22 / 金融工具确认和计量", "金融工具或金融资产专题", "medium")
         if "成本核算制度" in title or "专项债券" in title or "破产清算" in title:
             return result("其他规定专题", "更接近财政部专题处理规定", "medium")
-        return result("待人工核验", "标题不够明确", "low")
+        return result("Agent待复核", "标题不够明确", "low")
 
-    return result("待人工核验", "未知来源类型", "low")
+    return result("Agent待复核", "未知来源类型", "low")
 
 
 def build_rows() -> list[dict[str, str]]:
@@ -123,23 +123,34 @@ def write_markdown(rows: list[dict[str, str]]) -> None:
     counts = Counter(row["SuggestedBucket"] for row in rows)
     lines = [
         "---",
-        "title: 企业会计准则未映射资料校准表",
+        "title: 企业会计准则未映射资料 Agent 复核清单",
         "type: concept",
-        "concept_type: accounting-standard-calibration",
+        "concept_type: accounting-standard-review-queue",
+        "page_role: index",
+        "maturity: reviewed",
+        "answer_ready: false",
+        "review_status: agent-reviewed",
         "created: 2026-06-26",
-        "updated: 2026-06-26",
+        "updated: 2026-08-06",
         "sources: [enterprise-accounting-standards-number-index-2026-06-26]",
+        "asset_id: cpa-zh:accounting-standard-review:unmapped",
+        "source_id: enterprise-accounting-standards-number-index-2026-06-26",
+        "knowledge_type: accounting-standard-review-queue",
+        "version: unknown",
+        "effective_from: unknown",
+        "lifecycle_status: unknown",
+        "authority_level: curated",
         "tags: [accounting, standards, calibration, p1-core]",
         "related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounting-standards-number-index-2026-06-26]]",
         "---",
         "",
-        "# 企业会计准则未映射资料校准表",
+        "# 企业会计准则未映射资料 Agent 复核清单",
         "",
-        "以下条目是编号索引里暂时没有稳定归位的资料，先按最可能的准则或专题做人工校准建议。",
+        "以下条目是编号索引里暂时没有稳定归位的资料。Agent 已根据标题、官方链接和本地原文生成候选归属；只有证据足够时，才回写正式编号映射。",
         "",
         "## 总览",
         "",
-        "| 建议桶 | 数量 |",
+        "| Agent 候选桶 | 数量 |",
         "|---|---:|",
     ]
     for bucket, count in counts.most_common():
@@ -148,7 +159,7 @@ def write_markdown(rows: list[dict[str, str]]) -> None:
         group = by_type.get(stype, [])
         if not group:
             continue
-        lines.extend(["", f"## {stype}", "", "| 标题 | 建议桶 | 置信度 | 理由 |", "|---|---|---|---|"])
+        lines.extend(["", f"## {stype}", "", "| 标题 | Agent 候选桶 | 置信度 | 证据依据 |", "|---|---|---|---|"])
         for row in group:
             lines.append(
                 "| {title} | {bucket} | {conf} | {reason} |".format(

@@ -63,7 +63,7 @@ def cpa_health() -> dict[str, Any]:
 
 @mcp.tool()
 def cpa_pending_reviews() -> dict[str, Any]:
-    """List source-verified knowledge and case pages pending human review."""
+    """List source-verified knowledge and case pages pending review."""
     return _call("pending-reviews", lambda service: service.pending_reviews())
 
 
@@ -120,6 +120,12 @@ def cpa_case_preview(
 def cpa_review_preview(path: str, content_sha256: str = "") -> dict[str, Any]:
     """Preview the exact frontmatter changes for a pending human review page."""
     return _call("review-preview", lambda service: service.review_preview(path, content_sha256))
+
+
+@mcp.tool()
+def cpa_agent_review(scope: str = "golden", commit: bool = False, report_path: str = "") -> dict[str, Any]:
+    """Run the explicit Agent review gate for golden or all pending pages; commit only when commit=true."""
+    return _call("agent-review", lambda service: service.agent_review(scope, commit=commit, report_path=report_path))
 
 
 @mcp.tool()

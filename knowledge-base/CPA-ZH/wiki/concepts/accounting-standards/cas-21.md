@@ -52,10 +52,16 @@ topic: cas
 | 实施问答 | 问：承租人与出租人签订租赁期为1年的租赁合同，能否简单认定该租赁为短期租赁？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/zlzzsswd/202106/t20210610_3717408.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-041.html.md` | url-category-slug/high |
 | 实施问答 | 《新冠肺炎疫情相关租金减让会计处理规定》简化处理方法适用问答 | https://kjs.mof.gov.cn/zt/kjzzss/sswd/zlzzsswd/202205/t20220527_3813704.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-059.html.md` | url-category-slug/high |
 
-<!-- golden-judgments:start -->
+<!-- calibration-supplement:start -->
 
-## 会计判断专题
+## 校准补充资料
 
-- [[concepts/accounting-judgments/lease-term-modification-sale-leaseback|租赁期、租赁变更与售后租回]]
+以下资料来自 [[concepts/accounting-standards/unmapped-review]] 的 Agent 复核候选。条目保留原始官方链接和本地 HTML 路径；正式引用前仍应结合原文核验适用范围和有效状态。
 
-<!-- golden-judgments:end -->
+### Agent 候选桶：其他规定 / 新冠肺炎疫情相关租金减让会计处理规定
+
+| 类型 | 标题 | 置信度 | 证据依据 | 官方链接 | 本地文件 |
+|---|---|---|---|---|---|
+| 其他规定 | 关于印发《新冠肺炎疫情相关租金减让会计处理规定》的通知 | high | 疫情租金减让专题 | https://kjs.mof.gov.cn/zhengcefabu/202006/t20200624_3538070.htm | `raw/standards/accounting/other-rules-pages/018-关于印发-新冠肺炎疫情相关租金减让会计处理规定-的通知.html` |
+
+<!-- calibration-supplement:end -->

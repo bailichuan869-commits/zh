@@ -127,3 +127,81 @@ verified_documents:
     local_raw_path: raw/standards/accounting/interpretations-pages/关于印发-企业会计准则解释第20号-的通知.html.md
     status: valid
     verified_on: 2026-08-04
+  - id: cicpa-audit-guidelines-2022-15
+    authority: cicpa
+    official_url: https://www.cicpa.org.cn/xxfb/tzgg/202201/t20220120_63335.html
+    local_raw_path: raw/standards/audit/cicpa-guidelines-15-20220120.html.md
+    status: unknown
+    published_on: 2022-01-20
+    verified_on: 2026-08-06
+  - id: mof-audit-standards-2022-11
+    authority: mof
+    official_url: https://www.cicpa.org.cn/xxfb/tzgg/202201/t20220120_63336.html
+    local_raw_path: raw/standards/audit/cicpa-standards-20220120.html.md
+    status: unknown
+    published_on: 2022-01-20
+    verified_on: 2026-08-06
+  - id: mof-audit-standards-2023-revision
+    authority: mof
+    official_url: https://www.cicpa.org.cn/xxfb/tzgg/202301/t20230103_63902.html
+    local_raw_path: raw/standards/audit/cicpa-standards-20230103.html.md
+    status: unknown
+    published_on: 2023-01-03
+    verified_on: 2026-08-06
+  - id: cicpa-audit-guidelines-2023-34
+    authority: cicpa
+    official_url: https://www.cicpa.org.cn/xxfb/tzgg/202304/t20230410_64066.html
+    local_raw_path: raw/standards/audit/cicpa-guidelines-34-20230410.html.md
+    status: unknown
+    published_on: 2023-04-10
+    verified_on: 2026-08-06
+  - id: policy-audit-order-2021-30
+    authority: state-council
+    official_url: https://www.gov.cn/zhengce/content/2021-08/23/content_5632714.htm
+    local_raw_path: raw/policies/second-section/audit-order-2021-30/official.html.md
+    status: unknown
+    published_on: 2021-07-30
+    verified_on: 2026-08-06
+  - id: policy-caihui-supervision-2023-4
+    authority: state-council
+    official_url: https://www.gov.cn/zhengce/2023-02/15/content_5741628.htm
+    local_raw_path: raw/policies/second-section/caihui-supervision-2023-4/official.html.md
+    status: unknown
+    published_on: 2023-02-15
+    verified_on: 2026-08-06
+  - id: policy-cpa-exam-2024-115
+    authority: mof
+    official_url: https://www.gov.cn/gongbao/2024/issue_11286/202404/content_6945588.html
+    local_raw_path: raw/policies/second-section/cpa-exam-2024-115/official.html.md
+    status: unknown
+    published_on: 2024-01-23
+    effective_on: 2024-03-01
+    verified_on: 2026-08-06
+  - id: policy-cpa-registration-2019-99
+    authority: mof
+    official_url: https://www.mof.gov.cn/gkml/caizhengwengao/wg201901/wg201912/202005/t20200522_3518260.htm
+    local_raw_path: raw/policies/second-section/cpa-registration-2019-99/official.html.md
+    status: unknown
+    published_on: 2019-03-15
+    effective_on: 2019-03-15
+    verified_on: 2026-08-06
+  - id: policy-firm-inspection-2022-23
+    authority: mof
+    official_url: https://www.gov.cn/zhengce/zhengceku/2022-05/16/content_5690682.htm
+    local_raw_path: raw/policies/second-section/firm-inspection-2022-23/official.html.md
+    status: unknown
+    verified_on: 2026-08-06
+  - id: policy-firm-license-supervision-2019-97
+    authority: mof
+    official_url: https://www.gov.cn/gongbao/content/2019/content_5392297.htm
+    local_raw_path: raw/policies/second-section/firm-license-supervision-2019-97/official.html.md
+    status: unknown
+    published_on: 2019-01-02
+    effective_on: 2019-01-02
+    verified_on: 2026-08-06
+  - id: policy-integrity-2023-5
+    authority: mof
+    official_url: https://www.gov.cn/zhengce/zhengceku/2023-04/02/content_5749779.htm
+    local_raw_path: raw/policies/second-section/integrity-2023-5/official.html.md
+    status: unknown
+    verified_on: 2026-08-06

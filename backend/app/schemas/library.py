@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Any, Literal
+
 from pydantic import BaseModel, Field
 
 
@@ -14,6 +16,26 @@ class SearchResult(BaseModel):
     page_role: str = ""
     maturity: str = ""
     answer_ready: bool = False
+    asset_id: str = ""
+    source_id: str = ""
+    source_type: str = ""
+    knowledge_type: str = ""
+    tags: list[str] = Field(default_factory=list)
+    authority: str = ""
+    authority_level: str = ""
+    version: str = ""
+    published_on: str = ""
+    effective_from: str = ""
+    effective_to: str = ""
+    lifecycle_status: str = ""
+    raw_path: str = ""
+    markdown_path: str = ""
+    content_sha256: str = ""
+    review_status: str = ""
+    section: str = ""
+    section_anchor: str = ""
+    score: float = 0.0
+    retrieval_path: str = ""
 
 
 class SearchResponse(BaseModel):
@@ -22,6 +44,8 @@ class SearchResponse(BaseModel):
     facets: list[tuple[str, int]]
     kinds: dict[str, int]
     engine: str
+    profile: str = "general-search"
+    retrieval_trace: dict[str, Any] = Field(default_factory=dict)
 
 
 class Backlink(BaseModel):
@@ -34,6 +58,7 @@ class DocumentResponse(BaseModel):
     frontmatter: dict[str, str]
     markdown: str
     backlinks: list[Backlink]
+    asset: dict[str, Any] = Field(default_factory=dict)
 
 
 class BacklinksResponse(BaseModel):
@@ -61,6 +86,9 @@ class HealthResponse(BaseModel):
 class AnswerRequest(BaseModel):
     question: str = Field(min_length=2, max_length=1000)
     topic: str = Field(default="", max_length=100)
+    profile: str = Field(default="answer-current", max_length=50)
+    as_of: str = Field(default="", max_length=10)
+    depth: Literal["standard", "deep"] = "standard"
 
 
 class AnswerCitation(BaseModel):
@@ -71,6 +99,22 @@ class AnswerCitation(BaseModel):
     maturity: str = ""
     authority: str = ""
     answer_ready: bool = False
+    asset_id: str = ""
+    source_id: str = ""
+    source_type: str = ""
+    version: str = ""
+    published_on: str = ""
+    effective_from: str = ""
+    effective_to: str = ""
+    lifecycle_status: str = ""
+    raw_path: str = ""
+    markdown_path: str = ""
+    content_sha256: str = ""
+    review_status: str = ""
+    section: str = ""
+    section_anchor: str = ""
+    score: float = 0.0
+    retrieval_path: str = ""
 
 
 class AnswerResponse(BaseModel):
@@ -78,3 +122,8 @@ class AnswerResponse(BaseModel):
     citations: list[AnswerCitation]
     confidence: str
     insufficient_evidence: bool
+    profile: str = "answer-current"
+    as_of: str = ""
+    depth: str = "standard"
+    retrieval_trace: dict[str, Any] = Field(default_factory=dict)
+    risk_flags: list[str] = Field(default_factory=list)

@@ -144,6 +144,7 @@ topic: kb-ops
 .\.venv\Scripts\python.exe tools\kb_text_cache.py build
 .\.venv\Scripts\python.exe tools\kb_search.py index
 .\.venv\Scripts\python.exe tools\kb.py schema --write-report
+.\.venv\Scripts\python.exe tools\kb.py completeness --write-report
 .\.venv\Scripts\python.exe tools\kb_update_readme_stats.py
 .\.venv\Scripts\python.exe tools\kb_health_check.py
 ```
@@ -155,6 +156,7 @@ topic: kb-ops
 | `kb_text_cache.py build` | 抽取 raw 文件正文，形成可复用文本缓存 |
 | `kb_search.py index` | 重建本地搜索索引 |
 | `tools\kb.py schema --write-report` | 生成分板块技术升级仪表盘，追踪五大板块元数据、来源字段和升级重点 |
+| `tools\kb.py completeness --write-report` | 扫描显式待补内容、骨架页、来源缺口和 Wiki 断链；法规全文索引页按有意保留目录处理 |
 | `kb_update_readme_stats.py` | 刷新 README 的统计数字 |
 | `kb_health_check.py` | 检查 manifest、内链、案例回挂、搜索索引和缓存状态 |
 | `kb_source_status.py write-report` | 生成来源状态仪表盘，追踪 OCR、官方链接和文本缓存待办 |

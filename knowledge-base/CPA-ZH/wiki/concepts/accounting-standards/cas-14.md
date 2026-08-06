@@ -60,13 +60,17 @@ topic: cas
 | 实施问答 | 问：合同资产发生减值的，应当计入哪个会计科目？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/srzzsswd/202012/t20201211_3634035.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-003.html.md` | url-category-slug/high |
 | 实施问答 | 问：企业为了履行收入合同而从事的运输活动，如果该运输活动不构成单项履约义务，相关运... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/srzzsswd/202111/t20211102_3762833.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-054.html.md` | url-category-slug/high |
 
-<!-- golden-judgments:start -->
+<!-- calibration-supplement:start -->
 
-## 会计判断专题
+## 校准补充资料
 
-- [[concepts/accounting-judgments/revenue-contract-control-transfer|收入合同识别与控制权转移]]
-- [[concepts/accounting-judgments/revenue-over-time-point-contract-costs|收入按时段或时点确认及合同成本]]
-- [[concepts/accounting-judgments/principal-versus-agent|主要责任人和代理人判断]]
-- [[concepts/accounting-judgments/variable-consideration-modification-returns-repurchase|可变对价、合同变更、退货与回购]]
+以下资料来自 [[concepts/accounting-standards/unmapped-review]] 的 Agent 复核候选。条目保留原始官方链接和本地 HTML 路径；正式引用前仍应结合原文核验适用范围和有效状态。
 
-<!-- golden-judgments:end -->
+### Agent 候选桶：解释第14号 / PPP专题
+
+| 类型 | 标题 | 置信度 | 证据依据 | 官方链接 | 本地文件 |
+|---|---|---|---|---|---|
+| 应用案例 | PPP项目合同社会资本方会计处理应用案例——金融资产模式 | medium | PPP 会计处理专题 | https://kjs.mof.gov.cn/zt/kjzzss/srzzzq/pppkjclyyal/202108/t20210810_3744014.htm | `raw/standards/accounting/application-cases-pages/021-PPP项目合同社会资本方会计处理应用案例-金融资产模式.html.md` |
+| 应用案例 | PPP项目合同社会资本方会计处理应用案例——混合模式 | medium | PPP 会计处理专题 | https://kjs.mof.gov.cn/zt/kjzzss/srzzzq/pppkjclyyal/202108/t20210810_3744016.htm | `raw/standards/accounting/application-cases-pages/022-PPP项目合同社会资本方会计处理应用案例-混合模式.html.md` |
+
+<!-- calibration-supplement:end -->

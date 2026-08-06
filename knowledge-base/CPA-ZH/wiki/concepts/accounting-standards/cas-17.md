@@ -40,11 +40,3 @@ topic: cas
 | 实施问答 | 问：用于开发建造房屋建筑物的土地使用权是否满足《企业会计准则第17号——借款费用》（... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/jkwd/202012/t20201211_3634037.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-005.html.md` | title-standard-number/high |
 | 实施问答 | 新矿产资源法下探矿权专门借款费用资本化问题 | https://kjs.mof.gov.cn/zt/kjzzss/sswd/jkwd/202606/t20260618_3991865.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-096.html.md` | url-category-slug/high |
 | 实施问答 | 问：甲公司委托乙设备生产商建造大型定制专用设备，定制周期超过1年，设备到场后在甲公司... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/jkwd/202606/t20260618_3991866.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-097.html.md` | url-category-slug/high |
-
-<!-- golden-judgments:start -->
-
-## 会计判断专题
-
-- [[concepts/accounting-judgments/borrowing-cost-capitalisation|借款费用资本化]]
-
-<!-- golden-judgments:end -->

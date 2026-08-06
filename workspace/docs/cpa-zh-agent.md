@@ -1,6 +1,6 @@
 # CPA-ZH Agent 工具
 
-CPA-ZH 采用 Agent-first 工作方式：`raw/` 保存事实来源，`wiki/` 保存结构化知识，`cache/` 和 `search/` 是可重建产物。浏览器只负责搜索、阅读和原文追溯；资料摄入、问答沉淀、案例草稿和页面复核统一经过共享 Python 服务。
+CPA-ZH 采用 Agent-first 工作方式：`raw/` 保存事实来源，`wiki/` 保存结构化知识，`cache/` 和 `search/` 是可重建产物。浏览器只负责搜索、阅读和原文追溯；资料摄入、问答沉淀、案例草稿和页面复核统一经过共享 Python 服务。页面复核默认支持人工 preview/commit，也支持用户明确授权的批量 Agent 复核；两者的状态分别记录为 `user-approved` 和 `agent-reviewed`。
 
 ## 入口
 
@@ -34,6 +34,13 @@ MCP 通过标准输入输出通信，不监听端口，也不需要常驻服务�
 2. 向用户展示返回的完整 `data`，包括目标路径、变更清单、完整 Markdown、来源和风险提示。
 3. 用户明确确认后，用原 `preview_token` 调用 `commit --confirmed`。
 4. 服务重新校验令牌有效期、知识库根目录、输入哈希和目标状态，再执行写入及 cache/index/health 维护。
+
+批量 Agent 复核使用独立入口。默认只生成完整检查报告和短期预览，不写入；明确授权 Agent 直接复核时使用 `--commit`。该模式会检查完整正文、raw 门面、来源 URL、原文哈希、原文链接和必要章节，并将通过项标记为 `agent-reviewed`，不会伪造 `user-approved`：
+
+```powershell
+.\.venv\Scripts\python.exe tools\cpa_zh_agent.py agent-review --scope golden
+.\.venv\Scripts\python.exe tools\cpa_zh_agent.py agent-review --scope golden --commit
+```
 
 示例：
 
@@ -80,6 +87,7 @@ CLI 和 MCP 返回同一 envelope：
 | `cpa_health` | 运行知识库健康检查 |
 | `cpa_pending_reviews` | 列出满足准入条件的待复核页面 |
 | `cpa_review_detail` | 读取待复核页面完整正文 |
+| `cpa_agent_review` | 执行黄金内容或全部待复核内容的 Agent 检查；`commit=true` 时提交通过项 |
 | `cpa_ingest_preview` | 预览 raw 资料摄入 |
 | `cpa_qa_preview` | 预览问答草稿 |
 | `cpa_case_preview` | 预览案例卡片草稿 |

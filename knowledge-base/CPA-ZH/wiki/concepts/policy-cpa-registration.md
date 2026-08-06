@@ -3,14 +3,30 @@ title: 注册会计师注册办法
 type: concept
 concept_type: policy
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-08-06
 sources: [2026-06-26-initial-structure, archived-cpa-competition-policy-pages]
 tags: [policy, registration, cpa, p2-important]
 related: [[concepts/policy-documents]], [[concepts/law-cpa]], [[concepts/policy-cpa-exam]], [[concepts/policy-integrity]]
 domain: policies
 topic: registration
+asset_id: cpa-zh:policy:cpa-registration-2019-99
+source_id: policy-cpa-registration-2019-99
+knowledge_type: policy
+page_role: knowledge
+maturity: reviewed
+answer_ready: false
+review_status: agent-reviewed
+version: 财政部令第99号修改版本
+published_on: 2019-03-15
+effective_from: 2019-03-15
+lifecycle_status: unknown
+authority_level: official
+raw_path: raw/policies/second-section/cpa-registration-2019-99/official.html.md
+markdown_path: wiki/concepts/policy-cpa-registration.md
+source_url: https://www.mof.gov.cn/gkml/caizhengwengao/wg201901/wg201912/202005/t20200522_3518260.htm
+content_sha256: 7a3f8a6d74e5018aec4abc41a3605cc7c89324b7ea5f8b6f5b4ca90e1b88d02d
+supersedes: 财政部令第25号经2017年第一次修改版本
 ---
-
 # 注册会计师注册办法
 
 ## 基本信息
@@ -43,7 +59,7 @@ topic: registration
 
 | 问题 | 连接 |
 |---|---|
-| 上位法律依据 | [[concepts/law-cpa]], [[concepts/laws/cpa-law/cpa-law-article-009]] |
+| 上位法律依据 | [[concepts/law-cpa]], [[concepts/laws/cpa-law/index#article-011]] |
 | 考试制度 | [[concepts/policy-cpa-exam]] |
 | 诚信和职业道德 | [[concepts/policy-integrity]], [[concepts/ethics-code]] |
 | 事务所质量管理 | [[concepts/policy-audit-order]], [[concepts/policy-firm-license-supervision]] |

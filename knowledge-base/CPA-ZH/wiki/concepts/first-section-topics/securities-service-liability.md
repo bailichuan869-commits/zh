@@ -21,11 +21,11 @@ topic: first-section
 
 | 维度 | 入口 | 用途 |
 |---|---|---|
-| 注册会计师法定业务和报告证明效力 | [[concepts/laws/cpa-law/cpa-law-article-014]], [[concepts/laws/cpa-law/cpa-law-article-021]] | 连接注册会计师法下的业务范围和执业准则要求。 |
-| 拒绝不当报告和禁止行为 | [[concepts/laws/cpa-law/cpa-law-article-020]], [[concepts/laws/cpa-law/cpa-law-article-022]] | 处理客户施压、资料受限、利益冲突和独立性问题。 |
-| 证券服务机构勤勉尽责 | [[concepts/laws/securities-law/securities-law-article-160]], [[concepts/laws/securities-law/securities-law-article-163]] | 证券业务审计报告和鉴证报告的核心法律入口。 |
-| 连带赔偿和民事责任优先 | [[concepts/laws/securities-law/securities-law-article-169]], [[concepts/laws/securities-law/securities-law-article-220]] | 评估投资者损失、赔偿责任和风险后果。 |
-| 中介机构行政责任 | [[concepts/laws/securities-law/securities-law-article-213]], [[concepts/laws/securities-law/securities-law-article-214]] | 识别未勤勉尽责、文件虚假和资料保存责任。 |
+| 注册会计师法定业务和报告证明效力 | [[concepts/laws/cpa-law/index#article-016]], [[concepts/laws/cpa-law/index#article-023]] | 连接注册会计师法下的业务范围和执业准则要求。 |
+| 拒绝不当报告和禁止行为 | [[concepts/laws/cpa-law/index#article-022]], [[concepts/laws/cpa-law/index#article-024]] | 处理客户施压、资料受限、利益冲突和独立性问题。 |
+| 证券服务机构勤勉尽责 | [[concepts/laws/securities-law/index#article-160]], [[concepts/laws/securities-law/index#article-163]] | 证券业务审计报告和鉴证报告的核心法律入口。 |
+| 连带赔偿和民事责任优先 | [[concepts/laws/securities-law/index#article-169]], [[concepts/laws/securities-law/index#article-220]] | 评估投资者损失、赔偿责任和风险后果。 |
+| 中介机构行政责任 | [[concepts/laws/securities-law/index#article-213]], [[concepts/laws/securities-law/index#article-214]] | 识别未勤勉尽责、文件虚假和资料保存责任。 |
 
 ## 准则和政策入口
 

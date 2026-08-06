@@ -9,6 +9,7 @@ import {
   DashboardOutlined,
   FileSearchOutlined,
   HomeOutlined,
+  MessageOutlined,
   ProfileOutlined,
   SearchOutlined,
   SafetyCertificateOutlined,
@@ -27,6 +28,7 @@ const primaryNav = [
   { path: '/', label: '首页', icon: HomeOutlined },
   { path: '/browse', label: '分类浏览', icon: AppstoreOutlined },
   { path: '/search', label: '全文检索', icon: FileSearchOutlined },
+  { path: '/answers', label: '知识答疑', icon: MessageOutlined },
   { path: '/health', label: '知识库状态', icon: DashboardOutlined },
 ]
 
@@ -466,30 +468,32 @@ function openScope(key: string) {
   }
 
   .mobile-nav {
-    display: flex;
-    gap: 4px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 2px;
     padding: 7px 10px;
-    overflow-x: auto;
-    scrollbar-width: none;
+    overflow: hidden;
     background: var(--app-sidebar);
     border-bottom: 1px solid var(--app-border);
   }
 
-  .mobile-nav::-webkit-scrollbar {
-    display: none;
-  }
-
   .mobile-nav button {
-    min-height: 34px;
-    flex: 0 0 auto;
-    display: inline-flex;
+    min-width: 0;
+    min-height: 44px;
+    display: flex;
     align-items: center;
-    gap: 7px;
-    padding: 0 9px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+    padding: 4px 2px;
     color: var(--app-muted);
     background: transparent;
     border: 0;
     border-radius: 5px;
+    font-size: 11px;
+    line-height: 1.2;
+    text-align: center;
+    white-space: normal;
   }
 
   .mobile-nav button.active {

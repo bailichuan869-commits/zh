@@ -305,7 +305,7 @@ def write_csv(path: Path, rows: Iterable[dict[str, str]]) -> None:
     rows = list(rows)
     if not rows:
         return
-    with path.open("w", encoding="utf-8-sig", newline="") as fh:
+    with path.open("w", encoding="utf-8", newline="") as fh:
         writer = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
         writer.writeheader()
         writer.writerows(rows)
@@ -401,7 +401,13 @@ def write_standard_page(key: str, rows: list[dict[str, str]], standard_record: d
                 confidence=row["Confidence"],
             )
         )
-    page.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    content = "\n".join(lines) + "\n"
+    if page.exists():
+        existing = page.read_text(encoding="utf-8-sig", errors="ignore")
+        match = re.search(r"<!-- calibration-supplement:start -->.*?<!-- calibration-supplement:end -->", existing, re.S)
+        if match:
+            content = content.rstrip() + "\n\n" + match.group(0).strip() + "\n"
+    page.write_text(content, encoding="utf-8")
 
 
 def write_unmapped_page(rows: list[dict[str, str]]) -> None:
@@ -411,6 +417,7 @@ def write_unmapped_page(rows: list[dict[str, str]]) -> None:
         "title: 企业会计准则未映射资料",
         "type: concept",
         "concept_type: accounting-standard-unmapped",
+        "page_role: index",
         "created: 2026-06-26",
         "updated: 2026-06-26",
         "sources: [enterprise-accounting-standards-number-index-2026-06-26]",
@@ -420,7 +427,15 @@ def write_unmapped_page(rows: list[dict[str, str]]) -> None:
         "",
         "# 企业会计准则未映射资料",
         "",
-        "下列资料未能通过准则编号、专题栏目或标题关键词保守映射到具体企业会计准则编号，后续需要人工核验。",
+        "下列资料未能通过准则编号、专题栏目或标题关键词保守映射到具体企业会计准则编号，进入 Agent 复核清单。",
+        "",
+        "## 处理规则",
+        "",
+        "- 先核对官方标题、栏目路径和原文中的准则编号，再决定是否回挂到正式编号页。",
+        "- 无法稳定归类的条目保留在本页，不通过主题相似性强行归入某一准则。",
+        "- Agent 可以完成候选归属、来源和引用结构复核；正式知识准入仍保留人工复核底线。",
+        "",
+        "## 当前队列",
         "",
         "| 类型 | 标题 | 官方链接 | 本地文件 |",
         "|---|---|---|---|",
@@ -516,7 +531,7 @@ def write_markdown_index(mapped_rows: list[dict[str, str]], standard_rows: dict[
             "- `url-category-slug`：财政部专题栏目 URL 可直接对应准则主题。",
             "- `html-standard-number`：解释类文件正文中出现准则编号。",
             "- `title-topic-keyword`：标题关键词可保守对应准则主题。",
-            "- `unmapped`：暂不强行归类，留待人工核验。",
+            "- `unmapped`：暂不强行归类，留待 Agent 复核。",
         ]
     )
     index_path.write_text("\n".join(lines) + "\n", encoding="utf-8")

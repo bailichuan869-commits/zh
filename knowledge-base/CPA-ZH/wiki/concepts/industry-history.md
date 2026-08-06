@@ -3,7 +3,7 @@ title: 中国注册会计师行业发展基础知识
 type: concept
 concept_type: history
 created: 2026-06-26
-updated: 2026-06-29
+updated: 2026-08-06
 sources: [2026-06-26-initial-structure, third-section-official-archive-2026-06-29, archived-cpa-competition-policy-pages]
 tags: [cpa, history, industry, p2-important]
 related: [[concepts/history-ethics-independence]], [[concepts/law-cpa]], [[concepts/policy-audit-order]], [[concepts/policy-caihui-supervision]], [[concepts/ethics-code]]
@@ -44,8 +44,9 @@ topic: history
 | 财务造假与中介失职 | 国办发〔2021〕30号、中办发〔2023〕4号 | 强化“看门人”责任、监管协同和责任追究 |
 | 诚信约束不足 | 职业道德守则、诚信建设纲要、信用监管 | 诚信档案、投诉处罚、检查发现和人员管理联动 |
 
-## 维护提示
+## 来源覆盖与使用边界
 
 - 行业史页面不替代具体法规或准则条文，只提供制度背景。
-- 如后续取得《中国注册会计师行业发展报告2024》全文，应补充为正式 source，并回写本页。
+- 当前归档的是《中国注册会计师行业发展报告2024》出版发行信息页，不包含报告全文；本页不据此扩写报告中的统计数据或具体结论。
+- 取得报告全文时，将其作为新 source 纳入版本链，再更新涉及行业规模、结构和年度变化的数据内容。
 - 监管处罚案例进入第四板块后，可把案例按“历史问题 -> 政策回应 -> 当前检查点”回链本页。

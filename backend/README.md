@@ -14,6 +14,8 @@
 
 `POST /api/v1/answers` 只读取本地检索索引。它优先使用已复核的知识页和案例卡，并以权威原文补充证据；证据不足时不生成专业结论。
 
+搜索支持 `general-search`、`answer-current`、`case-review` 和 `learning` 四个 profile，并可通过 `as_of`、`status`、`source_type`、`tag` 限制资产范围。答疑响应会返回 `citations`、`retrieval_trace`、`risk_flags` 和 `insufficient_evidence`；profile 配置位于 `knowledge-base/CPA-ZH/retrieval-profiles.json`。
+
 在启动读 API 前设置以下环境变量：
 
 ```powershell

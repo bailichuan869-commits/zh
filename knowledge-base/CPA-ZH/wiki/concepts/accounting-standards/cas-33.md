@@ -42,10 +42,19 @@ topic: cas
 | 实施问答 | 问：甲公司处置其唯一子公司并丧失控制权，在处置子公司当期仍应编制合并财务报表，但在... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/hbcwbbzzsswd/202606/t20260618_3991868.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-099.html.md` | url-category-slug/high |
 | 其他规定 | 关于修订印发合并财务报表格式（2019版）的通知 | https://kjs.mof.gov.cn/zhengcefabu/201909/t20190927_3394088.htm | `raw/standards/accounting/other-rules-pages/016-关于修订印发合并财务报表格式-2019版-的通知.html` | title-topic-keyword/medium |
 
-<!-- golden-judgments:start -->
+<!-- calibration-supplement:start -->
 
-## 会计判断专题
+## 校准补充资料
 
-- [[concepts/accounting-judgments/consolidation-control-loss-of-control|合并范围、实质控制与丧失控制权]]
+以下资料来自 [[concepts/accounting-standards/unmapped-review]] 的 Agent 复核候选。条目保留原始官方链接和本地 HTML 路径；正式引用前仍应结合原文核验适用范围和有效状态。
 
-<!-- golden-judgments:end -->
+### Agent 候选桶：CAS 33 / 合并财务报表
+
+| 类型 | 标题 | 置信度 | 证据依据 | 官方链接 | 本地文件 |
+|---|---|---|---|---|---|
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，应当如何应用“双控制”条件（1）“政... | medium | 涉及子公司、控制或合并范围 | https://kjs.mof.gov.cn/zt/kjzzss/sswd/pppkjclsswd/202108/t20210810_3744018.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-043.html.md` |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，应当如何应用“双控制”条件（2）“PP... | medium | 涉及子公司、控制或合并范围 | https://kjs.mof.gov.cn/zt/kjzzss/sswd/pppkjclsswd/202108/t20210810_3744019.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-044.html.md` |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，当PPP项目资产部分受到政府方控制时，... | medium | 涉及子公司、控制或合并范围 | https://kjs.mof.gov.cn/zt/kjzzss/sswd/pppkjclsswd/202108/t20210810_3744020.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-045.html.md` |
+| 实施问答 | 问：社会资本方执行《企业会计准则解释第14号》时，集团合并范围内甲公司（发包方）承接P... | medium | 涉及子公司、控制或合并范围 | https://kjs.mof.gov.cn/zt/kjzzss/sswd/pppkjclsswd/202108/t20210810_3744025.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-049.html.md` |
+
+<!-- calibration-supplement:end -->

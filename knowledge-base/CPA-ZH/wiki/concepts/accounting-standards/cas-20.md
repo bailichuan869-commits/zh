@@ -41,11 +41,3 @@ topic: cas
 | 应用案例 | 企业合并准则应用案例——补偿性资产的会计处理 | https://kjs.mof.gov.cn/zt/kjzzss/srzzzq/qyhbzzyyal/202606/t20260618_3991875.htm | `raw/standards/accounting/application-cases-pages/039-企业合并准则应用案例-补偿性资产的会计处理.html.md` | url-category-slug/high |
 | 实施问答 | 问：某集团公司新设一家子公司，将现有其他子公司或业务注入该新设公司，假定在新设公司... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/qyhbzzsswd/202111/t20211102_3762826.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-053.html.md` | url-category-slug/high |
 | 实施问答 | 问：非同一控制下企业合并中涉及的补偿性资产与或有对价之间的区别是什么？ | https://kjs.mof.gov.cn/zt/kjzzss/sswd/qyhbzzsswd/202606/t20260618_3991867.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-098.html.md` | url-category-slug/high |
-
-<!-- golden-judgments:start -->
-
-## 会计判断专题
-
-- [[concepts/accounting-judgments/business-combinations-purchase-date-contingent-consideration|企业合并、购买日与或有对价]]
-
-<!-- golden-judgments:end -->

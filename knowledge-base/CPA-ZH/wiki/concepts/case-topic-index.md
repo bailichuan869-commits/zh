@@ -3,8 +3,8 @@ title: 实务案例主题索引
 type: concept
 concept_type: case-index
 created: 2026-07-09
-updated: 2026-07-30
-sources: [case-batch-2026-07-first-issue]
+updated: 2026-08-06
+sources: [case-batch-2026-07-first-issue, golden-case-program]
 tags: [case, case-index, revenue-recognition, government-grant, long-term-equity-investments, tax-accounting-difference]
 related: [[concepts/case-analysis]], [[concepts/practice-skills-cases]], [[sources/case-batch-2026-07-first-issue]]
 domain: cases
@@ -30,6 +30,21 @@ topic: index
 | 租赁与固定资产 | [[cases/2026-08-first-issue-lease-asset-not-ready]] | 先区分真实租赁与以租代买，再判断开始日、折旧和资本化路径 |
 | 收入确认 | [[cases/2026-08-first-issue-medical-distributor-revenue]] | 经销商签收可以转移控制权，但纯销折扣和惯例性退货必须同步估计 |
 | 固定资产 | [[cases/2026-08-first-issue-space-test-bench-capitalization]] | 以首次技术达标日确定转固，区分转固前必要测试和转固后实际使用 |
+| 企业合并 | [[cases/golden-business-combination-indemnification-asset]] | 购买日补偿安排应结合确认条件和后续计量识别补偿性资产 |
+| 收入确认 | [[cases/golden-contract-modification-variable-consideration]] | 合同变更、可变对价和交易价格分摊需要联动判断 |
+| 收入确认 | [[cases/golden-custom-software-revenue]] | 定制软件服务应根据履约义务和控制权转移方式判断收入确认期间 |
+| 无形资产 | [[cases/golden-data-resource-rd-capitalisation]] | 数据资源研发支出资本化取决于研究与开发阶段划分及技术可行性证据 |
+| 金融工具 | [[cases/golden-expected-credit-loss-simplified]] | 预期信用损失模型需要保留分组、迁徙率、前瞻情景和回测证据 |
+| 债务重组 | [[cases/golden-inventory-settles-debt]] | 以存货清偿债务应分别判断资产终止确认、债务重组损益和税务影响 |
+| 金融工具 | [[cases/golden-liability-equity-investor-protection]] | 投资者保护条款需依据无条件交付现金义务区分负债与权益 |
+| 长期股权投资 | [[cases/golden-long-term-equity-investment-scope]] | 先判断控制、共同控制或重大影响，再确定长期股权投资适用范围 |
+| 收入确认 | [[cases/golden-presale-property-revenue]] | 预售安排需判断履约义务是否在一段时间内履行及是否存在可执行收款权 |
+| 收入确认 | [[cases/golden-principal-agent-department-store]] | 百货联营模式需根据商品控制权判断主要责任人或代理人 |
+| 股份支付 | [[cases/golden-restricted-shares]] | 限制性股票应结合回购义务、等待期和每股收益影响处理 |
+| 租赁 | [[cases/golden-sale-and-leaseback-variable-payments]] | 售后租回应先判断转让是否构成销售，再处理可变付款和租赁负债 |
+| 股份支付 | [[cases/golden-shareholder-backstop-incentive]] | 股东兜底式激励需判断是否构成集团股份支付及结算主体 |
+| 租赁 | [[cases/golden-short-term-lease-purchase-option]] | 存在购买选择权时不能仅按合同名义期限认定短期租赁 |
+| 收入确认 | [[cases/golden-standard-software-revenue-timing]] | 标准化软件收入时点取决于控制权、交付条件和后续服务是否可明确区分 |
 
 ## 按准则入口
 

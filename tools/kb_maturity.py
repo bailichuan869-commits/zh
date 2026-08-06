@@ -87,7 +87,7 @@ def render_markdown(pages: list[dict], summary: dict) -> str:
         "",
         "# CPA-ZH 内容成熟度仪表盘",
         "",
-        "本页由 `kb_maturity.py dashboard` 生成。法规逐条页即使较短也按原子原文处理，不计入知识骨架缺口。`answer_ready` 只表示允许进入问答主检索集，不替代专业复核。",
+        "本页由 `kb_maturity.py dashboard` 生成。法规合并全文索引页即使较短也按原文索引处理，不计入知识骨架缺口；条文通过稳定锚点检索，不按一条一个知识页拆分。`answer_ready` 只表示允许进入问答主检索集；`agent-reviewed` 表示 Agent 已按结构、来源链和结论边界完成复核并留下记录，不等于人工批准，也不等于官方效力已由 Agent 自动核验。",
         "",
         "## 总览",
         "",
@@ -137,9 +137,10 @@ def render_markdown(pages: list[dict], summary: dict) -> str:
         "",
         "## 下一步缺口",
         "",
-        "1. 对黄金专题和案例逐页核对事实、准则版本、分支和引用后，将 `maturity` 改为 `reviewed`、`answer_ready` 改为 `true`。",
-        "2. 未复核草稿仍可浏览和普通搜索，但不会进入 AI 主检索集。",
-        "3. 目录页只负责导航；不得仅依据目录页生成专业结论。",
+        "1. 新增或变更的黄金专题和案例先由 Agent 按来源、事实、准则版本、分支、引用和不确定性边界执行复核；通过后记录 `review_status: agent-reviewed`。",
+        "2. Agent 复核不替代官方来源效力核验；来源为本地研讨材料的页面必须保持 `source_scope: local-only`，不得冒充官方依据。",
+        "3. 未通过复核的草稿仍可浏览和普通搜索，但不会进入 AI 主检索集；`user-approved` 仅是另一路显式人工确认状态，不是 Agent 复核的前置条件。",
+        "4. 目录页只负责导航；不得仅依据目录页生成专业结论。",
         "",
     ])
     return "\n".join(lines)

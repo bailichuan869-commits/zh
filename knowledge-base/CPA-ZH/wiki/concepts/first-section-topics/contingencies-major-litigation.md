@@ -21,10 +21,10 @@ topic: first-section
 
 | 维度 | 入口 | 用途 |
 |---|---|---|
-| 或有事项财务报告说明 | [[concepts/laws/accounting-law/accounting-law-article-019]], [[concepts/laws/accounting-law/accounting-law-article-020]] | 会计法明确担保、未决诉讼等或有事项应按统一制度在财务报告中说明。 |
-| 公司治理和重大事项 | [[concepts/laws/company-law/company-law-article-208]], [[concepts/laws/company-law/company-law-article-216]] | 获取诉讼、担保、承诺和资料提供证据。 |
-| 证券重大事项披露 | [[concepts/laws/securities-law/securities-law-article-080]], [[concepts/laws/securities-law/securities-law-article-085]] | 上市公司重大诉讼、担保和风险事项披露。 |
-| 虚假记载和重大遗漏责任 | [[concepts/laws/securities-law/securities-law-article-197]] | 重大诉讼或担保披露遗漏的责任风险。 |
+| 或有事项财务报告说明 | [[concepts/laws/accounting-law/index#article-019]], [[concepts/laws/accounting-law/index#article-020]] | 会计法明确担保、未决诉讼等或有事项应按统一制度在财务报告中说明。 |
+| 公司治理和重大事项 | [[concepts/laws/company-law/index#article-208]], [[concepts/laws/company-law/index#article-216]] | 获取诉讼、担保、承诺和资料提供证据。 |
+| 证券重大事项披露 | [[concepts/laws/securities-law/index#article-080]], [[concepts/laws/securities-law/index#article-085]] | 上市公司重大诉讼、担保和风险事项披露。 |
+| 虚假记载和重大遗漏责任 | [[concepts/laws/securities-law/index#article-197]] | 重大诉讼或担保披露遗漏的责任风险。 |
 
 ## 会计准则入口
 

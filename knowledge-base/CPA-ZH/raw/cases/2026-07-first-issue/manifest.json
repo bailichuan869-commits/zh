@@ -11,7 +11,7 @@
     "document_type": "docx",
     "status": "raw-imported",
     "derived_markdown": "raw/cases/2026-07-first-issue/11部研讨会议题【暂估转固税会差异问题】（7月-第1期）.docx.md",
-    "derived_sha256": "415144d80d4917d0d33f76f592456e154fadd0f59acf6d08f1be66d815e7add0",
+    "derived_sha256": "ea1428a30bfa2ca4adb0bc48a68ab4a148bf5da57199e4cf776fa470da965399",
     "text_extraction_status": "ok",
     "archive_policy": "dual-track"
   },
@@ -27,7 +27,7 @@
     "document_type": "docx",
     "status": "raw-imported",
     "derived_markdown": "raw/cases/2026-07-first-issue/29部研讨会议题【政府补助确认】（7月-第一期）.docx.md",
-    "derived_sha256": "e5dd02785bf6a8b2485e8425a5331d8467e07a0d1c4159cb5128e2a5fd65139d",
+    "derived_sha256": "0ed29e4648e4e3ddb8cbc0adee9149b2758c12841acfb8abaab5fdb5853c78a7",
     "text_extraction_status": "ok",
     "archive_policy": "dual-track"
   },
@@ -43,7 +43,7 @@
     "document_type": "docx",
     "status": "raw-imported",
     "derived_markdown": "raw/cases/2026-07-first-issue/2部研讨会议题【收入确认】（7月-第一期）.docx.md",
-    "derived_sha256": "d90e8bcd90e830d7c9dc153911cdbabbfadeed1c3f7481e5c11f9ca6e8c4d3b7",
+    "derived_sha256": "0d1d8dffc84edce4bca8b791c51bd3d9faca1756c65ab375a71d851c12f66356",
     "text_extraction_status": "ok",
     "archive_policy": "dual-track"
   },
@@ -59,7 +59,7 @@
     "document_type": "docx",
     "status": "raw-imported",
     "derived_markdown": "raw/cases/2026-07-first-issue/32部研讨会议题【长期股权投资的确认】（7月-第一期）.docx.md",
-    "derived_sha256": "ccdff0746bbc6a8b859d6285c6640f5bc8e0eded19b72835e9fa0e169d361e14",
+    "derived_sha256": "6bb189fc284c7db1dd32982f46abfb28b961acd5c291dc18aff40865da47491c",
     "text_extraction_status": "ok",
     "archive_policy": "dual-track"
   },
@@ -75,7 +75,7 @@
     "document_type": "docx",
     "status": "raw-imported",
     "derived_markdown": "raw/cases/2026-07-first-issue/天津分所审计6部研讨会议题【收入确认】（7月-第一期）.docx.md",
-    "derived_sha256": "f33460784673c82cbebf41aa6e0577145c9a2ae299b02ba786ac6474be4f6a2d",
+    "derived_sha256": "498f003f791c515755c5688bd166803024516c5e5b0c8972fd40991681eef8e8",
     "text_extraction_status": "ok",
     "archive_policy": "dual-track"
   }

@@ -25,11 +25,48 @@ class MaintenanceApiTests(unittest.TestCase):
         maintenance.PREVIEWS.clear()
         self.token = maintenance.TOKEN
         maintenance.TOKEN = "test-token"
+        self.fixture_directory: tempfile.TemporaryDirectory[str] | None = None
 
     def tearDown(self) -> None:
+        if self.fixture_directory is not None:
+            self.fixture_directory.cleanup()
         maintenance.TOKEN = self.token
         maintenance.PREVIEWS.clear()
         maintenance.UPLOAD_SESSIONS.clear()
+
+    def _pending_fixture(self) -> tuple[Path, Path]:
+        self.fixture_directory = tempfile.TemporaryDirectory()
+        # Normalize the temp root before comparing it with paths returned by
+        # Path.resolve(); Windows may otherwise mix 8.3 and long path forms.
+        root = Path(self.fixture_directory.name).resolve()
+        wiki = root / "wiki" / "cases"
+        raw = root / "raw" / "cases"
+        wiki.mkdir(parents=True)
+        raw.mkdir(parents=True)
+        (raw / "source.md").write_text("# 原始来源\n\n可追溯原文。\n", encoding="utf-8")
+        target = wiki / "pending-fixture.md"
+        target.write_text(
+            """---
+title: 临时待复核案例
+page_role: case
+maturity: draft
+answer_ready: false
+review_status: pending-human-review
+source_verified: true
+raw_path: raw/cases/source.md
+---
+
+# 临时待复核案例
+
+## 原始事实
+案例事实和可追溯原文。
+
+## 判断框架
+需要核对适用规则和结论边界。
+""",
+            encoding="utf-8",
+        )
+        return root, target
 
     def test_preview_requires_valid_token(self) -> None:
         with self.assertRaises(HTTPException) as context:
@@ -46,26 +83,30 @@ class MaintenanceApiTests(unittest.TestCase):
         self.assertEqual(409, context.exception.status_code)
 
     def test_pending_review_preview_requires_explicit_confirmation(self) -> None:
-        pending = maintenance.pending_review("Bearer test-token")
-        self.assertTrue(pending["items"])
-        path = pending["items"][0]["path"]
-        with self.assertRaises(HTTPException) as context:
-            maintenance.review_preview(maintenance.ReviewPreview(path=path, confirmed=False), "Bearer test-token")
-        self.assertEqual(400, context.exception.status_code)
+        root, _target = self._pending_fixture()
+        with patch.object(maintenance, "KB", root):
+            pending = maintenance.pending_review("Bearer test-token")
+            self.assertTrue(pending["items"])
+            path = pending["items"][0]["path"]
+            with self.assertRaises(HTTPException) as context:
+                maintenance.review_preview(maintenance.ReviewPreview(path=path, confirmed=False), "Bearer test-token")
+            self.assertEqual(400, context.exception.status_code)
 
-        preview = maintenance.review_preview(maintenance.ReviewPreview(path=path, confirmed=True), "Bearer test-token")
-        self.assertEqual("review", preview["kind"])
-        self.assertIn("answer_ready", preview["output"])
-        self.assertTrue(preview["review"]["body"])
-        self.assertEqual(pending["items"][0]["content_sha256"], preview["review"]["content_sha256"])
+            preview = maintenance.review_preview(maintenance.ReviewPreview(path=path, confirmed=True), "Bearer test-token")
+            self.assertEqual("review", preview["kind"])
+            self.assertIn("answer_ready", preview["output"])
+            self.assertTrue(preview["review"]["body"])
+            self.assertEqual(pending["items"][0]["content_sha256"], preview["review"]["content_sha256"])
 
     def test_review_commit_rejects_content_changed_after_preview(self) -> None:
-        item = maintenance.pending_review("Bearer test-token")["items"][0]
-        payload = maintenance.ReviewPreview(path=item["path"], confirmed=True, content_sha256=item["content_sha256"])
-        preview = maintenance.review_preview(payload, "Bearer test-token")
-        with patch("tools.kb_maintenance_api._file_sha256", return_value="0" * 64), self.assertRaises(HTTPException) as context:
-            maintenance.review_commit(payload, preview["preview_token"], "Bearer test-token")
-        self.assertEqual(409, context.exception.status_code)
+        root, _target = self._pending_fixture()
+        with patch.object(maintenance, "KB", root):
+            item = maintenance.pending_review("Bearer test-token")["items"][0]
+            payload = maintenance.ReviewPreview(path=item["path"], confirmed=True, content_sha256=item["content_sha256"])
+            preview = maintenance.review_preview(payload, "Bearer test-token")
+            with patch("tools.kb_maintenance_api._file_sha256", return_value="0" * 64), self.assertRaises(HTTPException) as context:
+                maintenance.review_commit(payload, preview["preview_token"], "Bearer test-token")
+            self.assertEqual(409, context.exception.status_code)
 
     @patch("tools.kb_maintenance_api._run")
     def test_demo_mode_accepts_demo_token_without_writing(self, run) -> None:

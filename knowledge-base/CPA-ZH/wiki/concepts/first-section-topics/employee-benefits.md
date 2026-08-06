@@ -21,9 +21,9 @@ topic: first-section
 
 | 维度 | 入口 | 用途 |
 |---|---|---|
-| 实际业务和会计资料 | [[concepts/laws/accounting-law/accounting-law-article-009]], [[concepts/laws/accounting-law/accounting-law-article-013]] | 判断薪酬计提、支付和分配是否符合真实用工和统一制度。 |
-| 财务报告编制 | [[concepts/laws/accounting-law/accounting-law-article-020]], [[concepts/laws/company-law/company-law-article-208]] | 检查应付职工薪酬、成本费用和附注披露。 |
-| 信息披露和重大事项 | [[concepts/laws/securities-law/securities-law-article-080]] | 上市公司高管薪酬、股权激励和重大裁员事项。 |
+| 实际业务和会计资料 | [[concepts/laws/accounting-law/index#article-009]], [[concepts/laws/accounting-law/index#article-013]] | 判断薪酬计提、支付和分配是否符合真实用工和统一制度。 |
+| 财务报告编制 | [[concepts/laws/accounting-law/index#article-020]], [[concepts/laws/company-law/index#article-208]] | 检查应付职工薪酬、成本费用和附注披露。 |
+| 信息披露和重大事项 | [[concepts/laws/securities-law/index#article-080]] | 上市公司高管薪酬、股权激励和重大裁员事项。 |
 
 ## 会计准则入口
 

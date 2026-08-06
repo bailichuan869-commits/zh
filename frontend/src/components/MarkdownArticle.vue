@@ -7,17 +7,60 @@ import { useRouter } from 'vue-router'
 const props = defineProps<{ source: string }>()
 const router = useRouter()
 const parser = new MarkdownIt({ html: false, linkify: true, breaks: true })
-const rendered = computed(() => DOMPurify.sanitize(parser.render(props.source)))
+
+function headingAnchor(value: string) {
+  const slug = value.trim().toLocaleLowerCase().replace(/[^\p{L}\p{N}_-]+/gu, '-').replace(/^-+|-+$/g, '')
+  return `section-${slug || 'body'}`
+}
+
+parser.core.ruler.after('inline', 'heading_attrs', state => {
+  for (let index = 0; index < state.tokens.length - 1; index += 1) {
+    const token = state.tokens[index]
+    const inline = state.tokens[index + 1]
+    if (token.type !== 'heading_open' || inline.type !== 'inline') continue
+    const match = inline.content.match(/\s+\{#([A-Za-z0-9_-]+)\}\s*$/)
+    if (match) {
+      token.attrSet('id', match[1])
+      inline.content = inline.content.slice(0, match.index).trimEnd()
+      for (const child of inline.children ?? []) {
+        if (child.type === 'text') child.content = child.content.replace(/\s+\{#[A-Za-z0-9_-]+\}\s*$/, '')
+      }
+    } else {
+      token.attrSet('id', headingAnchor(inline.content))
+    }
+  }
+})
+
+function normalizeWikiTarget(target: string) {
+  const [pathPart, hashPart = ''] = target.trim().replace(/\\/g, '/').split('#')
+  const hash = hashPart ? `#${hashPart}` : ''
+  if (/^(https?:|mailto:)/i.test(pathPart)) return `${pathPart}${hash}`
+  if (pathPart.startsWith('raw/')) return `${pathPart}${hash}`
+  const wikiPath = pathPart.startsWith('wiki/') ? pathPart : `wiki/${pathPart.replace(/\.md$/i, '')}.md`
+  return `${wikiPath}${hash}`
+}
+
+function transformWikiLinks(source: string) {
+  return source.replace(/\[\[([^\]|#]+(?:#[^\]|]+)?)(?:\|([^\]]+))?\]\]/g, (_match, target: string, label?: string) => {
+    const href = normalizeWikiTarget(target)
+    const text = label?.trim() || target.split('#')[0].split('/').pop()?.replace(/\.md$/i, '') || target
+    return `[${text}](${href})`
+  })
+}
+
+const rendered = computed(() => DOMPurify.sanitize(parser.render(transformWikiLinks(props.source))))
 
 function navigate(event: MouseEvent) {
   const anchor = (event.target as HTMLElement).closest('a')
   const href = anchor?.getAttribute('href') ?? ''
   if (!href) return
   if (/^(wiki|raw)\//i.test(href)) {
+    const [targetPath, targetHash = ''] = href.split('#')
     event.preventDefault()
     router.push({
-      path: href.startsWith('wiki/') ? '/document' : '/raw',
-      query: { path: href },
+      path: targetPath.startsWith('wiki/') ? '/document' : '/raw',
+      query: { path: targetPath },
+      hash: targetHash ? `#${targetHash}` : '',
     })
   }
 }

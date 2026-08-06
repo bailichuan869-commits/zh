@@ -114,6 +114,74 @@ raw_path: raw/cases/source.md
             service.commit(preview["preview_token"], confirmed=True)
         self.assertEqual("content_changed", context.exception.code)
 
+    def test_agent_review_batch_records_distinct_status_and_report(self) -> None:
+        target = self.root / "wiki" / "cases" / "golden-agent-case.md"
+        raw = self.root / "raw" / "cases" / "agent-source.md"
+        target.write_text(
+            """---
+title: Agent 黄金案例
+page_role: case
+maturity: draft
+answer_ready: false
+review_status: pending-human-review
+source_verified: true
+raw_path: raw/cases/agent-source.md
+tags: [case, golden-case]
+---
+# Agent 黄金案例
+
+## 原始事实
+事实。本页记录交易背景、决定性条件、适用期间、报表层次、合同权利、计量输入和可追溯原文，供 Agent 复核时检查正文完整性与来源链，不代表对具体企业实际情况的无条件结论。
+## 缺失事实
+缺失事实。
+## 争议点
+争议点。
+## 适用准则
+准则。
+## 判断分支
+分支。
+## 核心结论
+结论。
+## 结论确定性
+确定性。
+## 会计处理
+处理。
+## 审计程序
+程序。
+## 底稿证据
+证据。
+## 原文引用
+- [[raw/cases/agent-source.md|原文]]
+## 时效与限制
+限制。
+""",
+            encoding="utf-8",
+        )
+        raw.write_text(
+            """---
+title: Agent 来源
+source_url: https://example.gov.cn/source
+sha256: 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
+---
+# 原始资料
+
+原文内容。
+""",
+            encoding="utf-8",
+        )
+        service = self.service()
+        preview = service.agent_review("golden")
+        self.assertEqual(1, preview["data"]["passed_count"])
+        self.assertEqual(0, preview["data"]["rejected_count"])
+        self.assertTrue(preview["preview_token"])
+        result = service.commit(preview["preview_token"], confirmed=True)
+        content = target.read_text(encoding="utf-8")
+        self.assertIn("review_status: agent-reviewed", content)
+        self.assertIn("review_actor: cpa-zh-agent", content)
+        self.assertIn("answer_ready: true", content)
+        self.assertEqual([["index"], ["health"]], self.commands)
+        self.assertEqual("agent-review", result["operation"])
+
     def test_expired_preview_is_rejected(self) -> None:
         service = self.service()
         preview = service.review_preview("wiki/cases/pending.md")
@@ -224,7 +292,7 @@ raw_path: raw/cases/source.md
             {
                 "cpa_search", "cpa_read_page", "cpa_read_raw", "cpa_health",
                 "cpa_pending_reviews", "cpa_review_detail", "cpa_ingest_preview",
-                "cpa_qa_preview", "cpa_case_preview", "cpa_review_preview", "cpa_commit",
+                "cpa_qa_preview", "cpa_case_preview", "cpa_review_preview", "cpa_agent_review", "cpa_commit",
             },
             names,
         )

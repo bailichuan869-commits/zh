@@ -3,17 +3,26 @@ title: A公司持有D公司长期股权投资转换为C公司投资的确认
 type: case
 case_type: accounting-judgment
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-08-06
 sources: [case-batch-2026-07-first-issue]
-raw_path: raw/cases/2026-07-first-issue/32部研讨会议题【长期股权投资的确认】（7月-第一期）.docx
+raw_path: raw/cases/2026-07-first-issue/32部研讨会议题【长期股权投资的确认】（7月-第一期）.docx.md
 tags: [case, long-term-equity-investments, non-monetary-asset-exchange, common-control, internal-reorganization, audit-practice]
 related: [[sources/case-batch-2026-07-first-issue]], [[concepts/case-analysis]], [[concepts/first-section-topics/long-term-equity-investments]], [[concepts/accounting-standards/cas-02]], [[concepts/accounting-standards/cas-07]], [[concepts/first-section-topics/consolidation-scope-control]]
 domain: cases
 topic: accounting-judgment
 page_role: case
-maturity: draft
-answer_ready: false
-review_status: pending-human-review
+maturity: reviewed
+answer_ready: true
+review_status: agent-reviewed
+source_verified: true
+review_actor: cpa-zh-agent
+review_method: structured-source-review-v1
+reviewed_at: 2026-08-06
+review_basis: complete-markdown-raw-source-section-hash-check
+review_report: workspace/outputs/cpa-zh-agent-review-2026-08-06.json
+source_url: 
+source_scope: local-only
+source_verification: agent-raw-manifest-facade-check
 ---
 # A公司持有D公司长期股权投资转换为C公司投资的确认
 
@@ -145,7 +154,7 @@ A 公司个别报表中，对原持有 D 公司 16.67% 股权转为对 C 公司�
 
 ## 结论确定性
 
-现有结论属于对所列事实的专业判断意见，尚待指定复核人对原始材料和报告期准则逐项复核；复核前不进入 AI 主检索集。
+现有结论属于对所列事实的专业判断意见；Agent 已完成正文结构、raw 来源链和原文哈希复核，进入 AI 主检索集时仍须结合报告期准则和项目事实，不替代专业判断。
 
 ## 原文引用与边界
 

@@ -3,14 +3,29 @@ title: 注册会计师行业诚信建设纲要
 type: concept
 concept_type: policy
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-08-06
 sources: [2026-06-26-initial-structure, archived-cpa-competition-policy-pages]
 tags: [policy, integrity, ethics, p2-important]
 related: [[concepts/policy-documents]], [[concepts/ethics-code]], [[concepts/independence-standard-1]], [[concepts/policy-audit-order]]
 domain: policies
 topic: integrity
+asset_id: cpa-zh:policy:integrity-2023-5
+source_id: policy-integrity-2023-5
+knowledge_type: policy
+page_role: knowledge
+maturity: reviewed
+answer_ready: false
+review_status: agent-reviewed
+version: 财会〔2023〕5号
+published_on: unknown
+effective_from: unknown
+lifecycle_status: unknown
+authority_level: official
+raw_path: raw/policies/second-section/integrity-2023-5/official.html.md
+markdown_path: wiki/concepts/policy-integrity.md
+source_url: https://www.gov.cn/zhengce/zhengceku/2023-04/02/content_5749779.htm
+content_sha256: 8a8529c7395d3fdb47b188a82e22abc393b7316998f85f7a459b785b2e2a2e5c
 ---
-
 # 注册会计师行业诚信建设纲要
 
 ## 基本信息
@@ -43,6 +58,6 @@ topic: integrity
 
 | 问题 | 连接 |
 |---|---|
-| 禁止行为和独立性 | [[concepts/law-cpa]], [[concepts/laws/cpa-law/cpa-law-article-022]] |
+| 禁止行为和独立性 | [[concepts/law-cpa]], [[concepts/laws/cpa-law/index#article-024]] |
 | 证券服务责任 | [[concepts/law-securities]], [[concepts/first-section-topics/securities-service-liability]] |
 | 审计质量和报告责任 | [[concepts/audit-standards-system]], [[concepts/audit-standards/csa-1501]] |

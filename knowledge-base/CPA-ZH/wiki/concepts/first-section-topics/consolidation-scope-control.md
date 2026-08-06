@@ -21,10 +21,10 @@ topic: first-section
 
 | 维度 | 入口 | 用途 |
 |---|---|---|
-| 公司治理和股东资料 | [[concepts/laws/company-law/company-law-article-057]], [[concepts/laws/company-law/company-law-article-110]] | 获取章程、股东名册、会议记录和财务报告，识别控制安排。 |
-| 上市公司信息披露 | [[concepts/laws/company-law/company-law-article-140]], [[concepts/laws/securities-law/securities-law-article-078]] | 核对实际控制人、重大投资、并购和处置披露。 |
-| 年度报告和重大事项披露 | [[concepts/laws/securities-law/securities-law-article-082]], [[concepts/laws/securities-law/securities-law-article-085]] | 识别合并范围变化、重大交易和风险事项。 |
-| 向事务所提供完整资料 | [[concepts/laws/company-law/company-law-article-216]] | 处理组成部分资料、投资协议和控制证据缺失。 |
+| 公司治理和股东资料 | [[concepts/laws/company-law/index#article-057]], [[concepts/laws/company-law/index#article-110]] | 获取章程、股东名册、会议记录和财务报告，识别控制安排。 |
+| 上市公司信息披露 | [[concepts/laws/company-law/index#article-140]], [[concepts/laws/securities-law/index#article-078]] | 核对实际控制人、重大投资、并购和处置披露。 |
+| 年度报告和重大事项披露 | [[concepts/laws/securities-law/index#article-082]], [[concepts/laws/securities-law/index#article-085]] | 识别合并范围变化、重大交易和风险事项。 |
+| 向事务所提供完整资料 | [[concepts/laws/company-law/index#article-216]] | 处理组成部分资料、投资协议和控制证据缺失。 |
 
 ## 会计准则入口
 

@@ -39,11 +39,3 @@ topic: cas
 | 准则原文 | 企业会计准则第16号——政府补助 | https://kjs.mof.gov.cn/zt/kjzzss/kuaijizhunzeshishi/200806/t20080618_46232.htm | `raw/standards/accounting/standards-pages/企业会计准则第16号-政府补助.html` | title-standard-number/high |
 | 实施问答 | 问：甲公司租赁某物业，租赁期为5年，每3个月支付一次租金。为支持甲公司经营发展，当地... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/zfbzzzsswd/202206/t20220621_3819697.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-060.html.md` | url-category-slug/high |
 | 实施问答 | 问：甲公司主要从事某材料的生产，于2×25年9月1日在乙经济开发区投资建设某项目，并与乙... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/zfbzzzsswd/202606/t20260618_3991864.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-095.html.md` | url-category-slug/high |
-
-<!-- golden-judgments:start -->
-
-## 会计判断专题
-
-- [[concepts/accounting-judgments/government-grants-non-cash-support|政府补助与非货币性支持]]
-
-<!-- golden-judgments:end -->

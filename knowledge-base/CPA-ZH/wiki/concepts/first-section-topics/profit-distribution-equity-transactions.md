@@ -21,11 +21,11 @@ topic: first-section
 
 | 维度 | 入口 | 用途 |
 |---|---|---|
-| 公司财务会计制度 | [[concepts/laws/company-law/company-law-article-207]], [[concepts/laws/company-law/company-law-article-208]] | 判断财务报告和利润分配基础。 |
-| 利润分配和法定公积金 | [[concepts/laws/company-law/company-law-article-210]], [[concepts/laws/company-law/company-law-article-211]], [[concepts/laws/company-law/company-law-article-212]] | 检查弥补亏损、提取公积、股东会决议和违法分配责任。 |
-| 资本公积和公积金用途 | [[concepts/laws/company-law/company-law-article-213]], [[concepts/laws/company-law/company-law-article-214]] | 连接资本公积、转增资本和弥补亏损限制。 |
-| 财务资料真实完整 | [[concepts/laws/company-law/company-law-article-216]], [[concepts/laws/accounting-law/accounting-law-article-020]] | 获取股东会决议、分配方案、权益变动和支付证据。 |
-| 上市公司信息披露 | [[concepts/laws/securities-law/securities-law-article-080]], [[concepts/laws/securities-law/securities-law-article-197]] | 核对分红、回购、权益工具和重大资本交易披露。 |
+| 公司财务会计制度 | [[concepts/laws/company-law/index#article-207]], [[concepts/laws/company-law/index#article-208]] | 判断财务报告和利润分配基础。 |
+| 利润分配和法定公积金 | [[concepts/laws/company-law/index#article-210]], [[concepts/laws/company-law/index#article-211]], [[concepts/laws/company-law/index#article-212]] | 检查弥补亏损、提取公积、股东会决议和违法分配责任。 |
+| 资本公积和公积金用途 | [[concepts/laws/company-law/index#article-213]], [[concepts/laws/company-law/index#article-214]] | 连接资本公积、转增资本和弥补亏损限制。 |
+| 财务资料真实完整 | [[concepts/laws/company-law/index#article-216]], [[concepts/laws/accounting-law/index#article-020]] | 获取股东会决议、分配方案、权益变动和支付证据。 |
+| 上市公司信息披露 | [[concepts/laws/securities-law/index#article-080]], [[concepts/laws/securities-law/index#article-197]] | 核对分红、回购、权益工具和重大资本交易披露。 |
 
 ## 会计准则入口
 

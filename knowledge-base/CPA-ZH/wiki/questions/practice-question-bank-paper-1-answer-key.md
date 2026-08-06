@@ -2,9 +2,22 @@
 title: 练习题库（试卷一）正确答案与校准记录
 type: question
 question_type: answer-key-calibration
+page_role: reference
+maturity: reviewed
+answer_ready: false
+review_status: agent-reviewed
 created: 2026-07-13
-updated: 2026-07-23
+updated: 2026-08-06
 sources: [practice-question-bank-paper-1-answer-explanations-2026-07-13]
+asset_id: cpa-zh:answer-key:practice-question-bank-paper-1
+source_id: practice-question-bank-paper-1-answer-explanations-2026-07-13
+knowledge_type: answer-key-calibration
+source_type: local-answer-pdf
+version: 2026-07-13
+effective_from: unknown
+lifecycle_status: unknown
+authority_level: local-source
+raw_path: raw/outlines/practice-question-bank-2026-07-13/practice-question-bank-paper-1-answer-explanations/official.pdf.md
 status: verified-from-answer-pdf
 tags: [question-bank, answer-key, company-law, accounting-law, securities-law, cpa-law]
 related: [[sources/practice-question-bank-paper-1-answer-explanations-2026-07-13]], [[concepts/law-company]], [[concepts/law-accounting]], [[concepts/law-securities]], [[concepts/law-cpa]]

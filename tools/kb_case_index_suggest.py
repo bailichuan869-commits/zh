@@ -110,6 +110,8 @@ def load_cases(root: Path) -> list[CasePage]:
     for path in sorted(cases_root.glob("*.md")):
         text = path.read_text(encoding="utf-8")
         metadata, body = parse_frontmatter(text)
+        if str(metadata.get("page_role") or "") == "index" or str(metadata.get("concept_type") or "") == "index":
+            continue
         rel_path = rel(root, path)
         page_slug = rel_path.removeprefix("wiki/").removesuffix(".md").replace("\\", "/")
         title = str(metadata.get("title") or path.stem)
@@ -172,6 +174,9 @@ def render_report(root: Path, cases: list[CasePage], index_text: str) -> str:
         "title: 案例主题索引自动回挂建议报告",
         "type: concept",
         "concept_type: maintenance-dashboard",
+        "page_role: index",
+        "maturity: reviewed",
+        "answer_ready: false",
         f"created: {date.today().isoformat()}",
         f"updated: {date.today().isoformat()}",
         "sources: [case-index-suggest]",
@@ -253,7 +258,7 @@ def render_report(root: Path, cases: list[CasePage], index_text: str) -> str:
             "",
             "## 使用方式",
             "",
-            "1. 若状态为“建议补入”，人工复核后复制对应行到 [[concepts/case-topic-index]]。",
+            "1. 若状态为“建议补入”，由 Agent 复核案例标签、来源和判断边界后回挂到 [[concepts/case-topic-index]]；`agent-reviewed` 不等于人工批准。",
             "2. 若主题、风险或底稿用途不准确，优先修订案例卡片的 `tags`、`related` 和正文关键词。",
             "3. 新增案例后先运行 dry-run，再写入本报告。",
             "",

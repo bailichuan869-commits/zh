@@ -21,9 +21,9 @@ topic: first-section
 
 | 维度 | 入口 | 用途 |
 |---|---|---|
-| 会计资料和实际业务 | [[concepts/laws/accounting-law/accounting-law-article-009]], [[concepts/laws/accounting-law/accounting-law-article-013]] | 判断所得税计算基础是否来自真实业务和统一会计制度。 |
-| 财务报告编制责任 | [[concepts/laws/accounting-law/accounting-law-article-020]], [[concepts/laws/company-law/company-law-article-208]] | 检查所得税费用、递延所得税和附注披露。 |
-| 信息披露责任 | [[concepts/laws/securities-law/securities-law-article-080]], [[concepts/laws/securities-law/securities-law-article-197]] | 上市公司税收优惠、重大税务争议和递延所得税资产确认不足或过度确认的披露风险。 |
+| 会计资料和实际业务 | [[concepts/laws/accounting-law/index#article-009]], [[concepts/laws/accounting-law/index#article-013]] | 判断所得税计算基础是否来自真实业务和统一会计制度。 |
+| 财务报告编制责任 | [[concepts/laws/accounting-law/index#article-020]], [[concepts/laws/company-law/index#article-208]] | 检查所得税费用、递延所得税和附注披露。 |
+| 信息披露责任 | [[concepts/laws/securities-law/index#article-080]], [[concepts/laws/securities-law/index#article-197]] | 上市公司税收优惠、重大税务争议和递延所得税资产确认不足或过度确认的披露风险。 |
 
 ## 会计准则入口
 

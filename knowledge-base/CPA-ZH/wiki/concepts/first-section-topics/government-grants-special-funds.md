@@ -21,9 +21,9 @@ topic: first-section
 
 | 维度 | 入口 | 用途 |
 |---|---|---|
-| 实际经济业务核算 | [[concepts/laws/accounting-law/accounting-law-article-009]] | 判断补助入账是否基于真实拨款、批文和履约条件。 |
-| 会计资料符合统一制度 | [[concepts/laws/accounting-law/accounting-law-article-013]] | 连接政府补助准则和列报规则。 |
-| 财务报告编制和披露 | [[concepts/laws/accounting-law/accounting-law-article-020]], [[concepts/laws/securities-law/securities-law-article-080]] | 检查补助收益、递延收益和附注披露是否完整。 |
+| 实际经济业务核算 | [[concepts/laws/accounting-law/index#article-009]] | 判断补助入账是否基于真实拨款、批文和履约条件。 |
+| 会计资料符合统一制度 | [[concepts/laws/accounting-law/index#article-013]] | 连接政府补助准则和列报规则。 |
+| 财务报告编制和披露 | [[concepts/laws/accounting-law/index#article-020]], [[concepts/laws/securities-law/index#article-080]] | 检查补助收益、递延收益和附注披露是否完整。 |
 
 ## 会计准则入口
 

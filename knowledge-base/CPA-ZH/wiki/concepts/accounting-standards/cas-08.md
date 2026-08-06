@@ -39,11 +39,3 @@ topic: cas
 | 准则原文 | 企业会计准则第8号——资产减值 | https://kjs.mof.gov.cn/zt/kjzzss/kuaijizhunzeshishi/200806/t20080618_46240.htm | `raw/standards/accounting/standards-pages/企业会计准则第8号-资产减值.html` | title-standard-number/high |
 | 实施问答 | 问：上市公司乙公司是甲公司的联营企业，甲公司对乙公司的长期股权投资采用权益法核算。... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/zcjzzzsswd/202307/t20230710_3895086.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-075.html.md` | url-category-slug/high |
 | 实施问答 | 问：企业合并所形成的商誉应当自购买日起按照合理的方法分摊至相关的资产组或资产组组合... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/zcjzzzsswd/202307/t20230710_3895087.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-076.html.md` | url-category-slug/high |
-
-<!-- golden-judgments:start -->
-
-## 会计判断专题
-
-- [[concepts/accounting-judgments/asset-and-goodwill-impairment|资产减值与商誉减值]]
-
-<!-- golden-judgments:end -->

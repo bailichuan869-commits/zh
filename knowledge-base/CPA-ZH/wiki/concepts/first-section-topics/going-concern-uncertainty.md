@@ -21,10 +21,10 @@ topic: first-section
 
 | 维度 | 入口 | 用途 |
 |---|---|---|
-| 财务报告编制和签章 | [[concepts/laws/accounting-law/accounting-law-article-020]], [[concepts/laws/accounting-law/accounting-law-article-021]] | 判断管理层是否在报表和附注中反映持续经营事项。 |
-| 公司年度财务报告审计 | [[concepts/laws/company-law/company-law-article-208]], [[concepts/laws/company-law/company-law-article-209]] | 连接公司年度报告、股东沟通和审计要求。 |
-| 重大事项和风险披露 | [[concepts/laws/securities-law/securities-law-article-080]], [[concepts/laws/securities-law/securities-law-article-082]] | 上市公司项目中核对重大风险和临时公告。 |
-| 虚假记载和重大遗漏责任 | [[concepts/laws/securities-law/securities-law-article-197]] | 持续经营披露不足可能形成信息披露风险。 |
+| 财务报告编制和签章 | [[concepts/laws/accounting-law/index#article-020]], [[concepts/laws/accounting-law/index#article-021]] | 判断管理层是否在报表和附注中反映持续经营事项。 |
+| 公司年度财务报告审计 | [[concepts/laws/company-law/index#article-208]], [[concepts/laws/company-law/index#article-209]] | 连接公司年度报告、股东沟通和审计要求。 |
+| 重大事项和风险披露 | [[concepts/laws/securities-law/index#article-080]], [[concepts/laws/securities-law/index#article-082]] | 上市公司项目中核对重大风险和临时公告。 |
+| 虚假记载和重大遗漏责任 | [[concepts/laws/securities-law/index#article-197]] | 持续经营披露不足可能形成信息披露风险。 |
 
 ## 会计准则入口
 

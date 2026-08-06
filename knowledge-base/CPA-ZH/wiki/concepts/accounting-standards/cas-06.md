@@ -45,11 +45,3 @@ topic: cas
 | 实施问答 | 问：对于企业内部数据资源研究开发项目的支出，应当如何对其开发阶段有关支出资本化的条... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/sjzykjclsswd/202410/t20241030_3946594.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-080.html.md` | title-topic-keyword/medium |
 | 实施问答 | 问：甲公司按照《企业会计准则第6号——无形资产》、《企业会计准则解释第15号》等规定，... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/wxzczzsswd/202504/t20250417_3962191.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-084.html.md` | title-standard-number/high |
 | 其他规定 | 关于印发《企业数据资源相关会计处理暂行规定》的通知 | https://kjs.mof.gov.cn/zhengcefabu/202308/t20230821_3903354.htm | `raw/standards/accounting/other-rules-pages/020-关于印发-企业数据资源相关会计处理暂行规定-的通知.html` | title-topic-keyword/medium |
-
-<!-- golden-judgments:start -->
-
-## 会计判断专题
-
-- [[concepts/accounting-judgments/intangibles-rd-capitalisation|无形资产及研发支出资本化]]
-
-<!-- golden-judgments:end -->

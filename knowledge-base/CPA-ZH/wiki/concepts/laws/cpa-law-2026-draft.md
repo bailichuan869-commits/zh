@@ -2,9 +2,24 @@
 title: 中华人民共和国注册会计师法（2026 修订草案 · 待官方核对）
 type: concept
 concept_type: law-draft
+page_role: reference
+maturity: reviewed
+answer_ready: false
+review_status: agent-reviewed
 created: 2026-07-23
-updated: 2026-07-23
+updated: 2026-08-06
 sources: [cpa-law-amendment-2026, 注册会计师法-修改决定-2026]
+asset_id: cpa-zh:law-draft:cpa-law-2026-working-consolidation
+source_id: cpa-law-amendment-2026
+knowledge_type: law-draft
+source_type: derived-working-consolidation
+version: working-consolidation-2026
+published_on: 2026-07-23
+effective_from: unknown
+lifecycle_status: draft
+authority_level: curated
+raw_path: raw/laws/中华人民共和国注册会计师法-2026-草案.md
+source_url: http://www.npc.gov.cn/npc/c2/c30834/202606/t20260626_455830.html
 related: [concepts/law-cpa, concepts/laws/cpa-law/index, wiki/concepts/laws/cpa-law/2026-amendment-highlights]
 tags: [cpa, law, draft, 2026-amendment, version-alert]
 status: 草案·待官方核对

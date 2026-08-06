@@ -15,6 +15,8 @@ const router = useRouter()
 const query = ref(String(route.query.q ?? ''))
 const domain = ref(String(route.query.domain ?? ''))
 const kind = ref(String(route.query.kind ?? ''))
+const profile = ref(String(route.query.profile ?? 'general-search'))
+const asOf = ref(String(route.query.as_of ?? ''))
 const results = ref<DisplaySearchResult[]>([])
 const total = ref(0)
 const facets = ref<[string, number][]>([])
@@ -22,9 +24,15 @@ const loading = ref(false)
 const error = ref('')
 const lastSearchKey = ref('')
 const title = computed(() => query.value.trim() ? `找到 ${total.value} 条相关资料` : '输入关键词开始检索')
+const profiles = [
+  { value: 'general-search', label: '全库检索' },
+  { value: 'answer-current', label: '当前有效答疑证据' },
+  { value: 'case-review', label: '案例复核' },
+  { value: 'learning', label: '学习对照' },
+]
 
 function makeSearchKey() {
-  return [query.value.trim(), domain.value, kind.value].join('\u0000')
+  return [query.value.trim(), domain.value, kind.value, profile.value, asOf.value].join('\u0000')
 }
 
 async function run() {
@@ -39,7 +47,7 @@ async function run() {
   loading.value = true
   error.value = ''
   try {
-    const data = await api.search(query.value.trim(), domain.value, kind.value)
+    const data = await api.search(query.value.trim(), domain.value, kind.value, 0, { profile: profile.value, as_of: asOf.value })
     const browsable = [...new Map(
       data.results.filter(item => isBrowsablePath(item.path)).map(item => [item.path, item]),
     ).values()]
@@ -47,7 +55,7 @@ async function run() {
       ...item,
       displayTitle: await resolveTitle(item),
     })))
-    total.value = results.value.length
+    total.value = data.total
     facets.value = Object.entries(
       results.value.reduce<Record<string, number>>((counts, item) => {
         if (item.domain) counts[item.domain] = (counts[item.domain] ?? 0) + 1
@@ -59,6 +67,8 @@ async function run() {
         q: query.value.trim(),
         ...(domain.value ? { domain: domain.value } : {}),
         ...(kind.value ? { kind: kind.value } : {}),
+        ...(profile.value !== 'general-search' ? { profile: profile.value } : {}),
+        ...(asOf.value ? { as_of: asOf.value } : {}),
       },
     })
   } catch (reason) {
@@ -85,15 +95,18 @@ function open(item: SearchResult) {
   router.push({
     path: item.path.startsWith('wiki/') ? '/document' : '/raw',
     query: { path: item.path },
+    ...(item.section_anchor ? { hash: `#${item.section_anchor}` } : {}),
   })
 }
 
 watch(
-  () => [route.query.q, route.query.domain, route.query.kind],
+  () => [route.query.q, route.query.domain, route.query.kind, route.query.profile, route.query.as_of],
   value => {
     query.value = String(value[0] ?? '')
     domain.value = String(value[1] ?? '')
     kind.value = String(value[2] ?? '')
+    profile.value = String(value[3] ?? 'general-search')
+    asOf.value = String(value[4] ?? '')
     if (query.value.trim() && makeSearchKey() !== lastSearchKey.value) run()
     if (!query.value.trim()) {
       results.value = []
@@ -150,12 +163,15 @@ watch(
                       <a-tag>{{ item.kind === 'wiki' ? '知识页面' : '原始资料' }}</a-tag>
                     </span>
                     <code class="result-path">{{ item.path }}</code>
-                    <span class="result-snippet">{{ item.snippet }}</span>
-                    <span class="result-tags">
+                     <span class="result-snippet">{{ item.snippet }}</span>
+                     <span class="result-tags">
                       <a-tag v-if="item.answer_ready" color="green">可用于答疑</a-tag>
-                      <a-tag v-if="item.domain">{{ item.domain }}</a-tag>
-                      <a-tag v-if="item.maturity">{{ item.maturity }}</a-tag>
-                    </span>
+                       <a-tag v-if="item.domain">{{ item.domain }}</a-tag>
+                       <a-tag v-if="item.maturity">{{ item.maturity }}</a-tag>
+                       <a-tag v-if="item.section">章节：{{ item.section }}</a-tag>
+                       <a-tag v-if="item.version">版本：{{ item.version }}</a-tag>
+                       <a-tag v-if="item.lifecycle_status">状态：{{ item.lifecycle_status }}</a-tag>
+                     </span>
                   </span>
                   <span class="result-arrow" aria-hidden="true">›</span>
                 </button>
@@ -183,6 +199,16 @@ watch(
               {{ facet[0] }} ({{ facet[1] }})
             </a-select-option>
           </a-select>
+        </label>
+        <label>
+          <span>检索策略</span>
+          <a-select v-model:value="profile" aria-label="检索策略" @change="run">
+            <a-select-option v-for="item in profiles" :key="item.value" :value="item.value">{{ item.label }}</a-select-option>
+          </a-select>
+        </label>
+        <label>
+          <span>截至日期</span>
+          <a-input v-model:value="asOf" type="date" aria-label="截至日期" @change="run" />
         </label>
         <div class="filter-summary">
           <span>结果数量</span>
@@ -274,6 +300,7 @@ watch(
 
 .result-button {
   width: 100%;
+  min-width: 0;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 24px;
   gap: 12px;
@@ -281,6 +308,7 @@ watch(
   color: var(--app-text);
   background: transparent;
   border: 0;
+  overflow: hidden;
   text-align: left;
   cursor: pointer;
 }
@@ -315,6 +343,7 @@ watch(
 }
 
 .result-path {
+  max-width: 100%;
   display: block;
   margin-top: 6px;
   overflow: hidden;
@@ -325,8 +354,11 @@ watch(
 }
 
 .result-snippet {
+  max-width: 100%;
+  display: block;
   margin-top: 9px;
   color: var(--app-muted);
+  overflow-wrap: anywhere;
   line-height: 1.72;
 }
 

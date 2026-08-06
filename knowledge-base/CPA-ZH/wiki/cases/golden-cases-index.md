@@ -16,7 +16,7 @@ topic: case-other
 
 # 会计判断黄金案例
 
-首版共 20 个案例：5 个内部研讨案例升级稿、11 个财政部应用案例、4 个财政部实施问答。内部研讨意见与官方原文分层展示。全部案例在人工复核前保持草稿状态。
+首版共 20 个案例：5 个内部研讨案例升级稿、11 个财政部应用案例、4 个财政部实施问答。内部研讨意见与官方原文分层展示。当前案例由 Agent 完成结构、来源链和结论边界复核；内部研讨案例仍明确标记 `source_scope: local-only`，不作为官方依据。新案例未通过 Agent 复核前保持草稿状态。
 
 1. [[cases/2026-07-first-issue-long-term-equity-investment-confirmation|A公司持有D公司长期股权投资转换为C公司投资的确认]]
 2. [[cases/2026-07-first-issue-temporary-fixed-asset-tax-difference|暂估转固超过12个月的税会差异处理]]

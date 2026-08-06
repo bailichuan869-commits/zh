@@ -51,7 +51,7 @@ topic: root
 - [[concepts/accounting-standards/interpretations/interp-01]] - 企业会计准则解释第1号。
 - [[concepts/accounting-standards/interpretations/interp-10]] - 企业会计准则解释第10号。
 - [[concepts/accounting-standards/interpretations/interp-20]] - 企业会计准则解释第20号。
-- [[concepts/accounting-standards/calibration/index]] - 企业会计准则未映射资料校准入口。
+- [[concepts/accounting-standards/unmapped-review]] - 企业会计准则未映射资料待复核清单。
 - [[concepts/accounting-standards/other-rules/index]] - 企业会计准则其他规定入口。
 - [[concepts/accounting-standards/unmapped]] - 企业会计准则未映射资料。
 - [[concepts/audit-standards-system]] - 中国注册会计师执业准则及应用指南。
@@ -147,7 +147,7 @@ topic: root
 - [[sources/audit-standards-official-links]] (2026-06-26) - 中国注册会计师执业准则及应用指南的官方链接清单。
 - [[sources/cicpa-professional-standards-download-2026-06-26]] (2026-06-26) - 中国注册会计师协会执业准则专题下载批次。
 - [[sources/first-section-master-index-2026-06-26]] (2026-06-26) - 第一板块资料总表，汇总法律、会计准则体系和审计准则体系 476 条资料记录。
-- [[sources/core-laws-article-index-2026-06-26]] (2026-06-26) - 四部核心法律条款级索引，生成 589 条条款页记录。
+- [[sources/core-laws-article-index-2026-06-26]] (2026-06-26) - 四部核心法律条款级索引，当前生成 603 条条文记录、4 个合并全文索引和 57 个独立条文页。
 - [[sources/enterprise-accounting-standards-number-index-2026-06-26]] (2026-06-26) - 企业会计准则编号级索引，296 条去重资料记录，216 条已映射到具体准则编号。
 - [[sources/accounting-interpretations-index-2026-06-26]] (2026-06-26) - 企业会计准则解释 1-20 号编号级索引。
 - [[sources/cicpa-professional-standards-number-index-2026-06-26]] (2026-06-26) - 中国注册会计师执业准则编号级索引，100 条资料记录全部映射到 40 个准则编号页。

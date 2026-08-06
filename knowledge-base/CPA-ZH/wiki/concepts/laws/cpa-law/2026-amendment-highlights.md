@@ -2,9 +2,24 @@
 title: 注册会计师法2026年修订要点对照
 type: concept
 concept_type: amendment-highlights
+page_role: knowledge
+maturity: reviewed
+answer_ready: false
+review_status: agent-reviewed
 created: 2026-07-23
-updated: 2026-07-23
+updated: 2026-08-06
 sources: [raw/laws/注册会计师法-修改决定-2026, cpa-law-amendment-2026]
+asset_id: cpa-zh:law-amendment:cpa-law-2026-highlights
+source_id: cpa-law-amendment-2026
+knowledge_type: law-amendment-highlights
+source_type: official-amendment
+version: 2026-amendment
+published_on: 2026-06-26
+effective_from: 2027-01-01
+lifecycle_status: enacted-not-effective
+authority_level: official
+raw_path: raw/laws/注册会计师法-修改决定-2026.md
+source_url: http://www.npc.gov.cn/npc/c2/c30834/202606/t20260626_455830.html
 tags: [cpa, law, amendment, p1-core, 2026-revision, exam-key]
 related: [[concepts/law-cpa]], [[concepts/laws/cpa-law/index]], [[sources/cpa-law-amendment-2026]]
 domain: laws

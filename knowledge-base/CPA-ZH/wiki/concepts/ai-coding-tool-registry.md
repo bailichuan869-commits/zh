@@ -163,7 +163,7 @@ Agent 写入必须按 [[concepts/cpa-zh-agent-tools]] 的 preview、人工确认
 |---|---|---|
 | dry-run | 只打印计划或草稿，不写入文件 | `ingest-local`、`case-card`、`qa-capture`、`archive-doc`、`pdf-md` 的默认模式 |
 | commit | 真正复制文件、写 manifest、写 wiki 草稿、问答页或转换结果 | `ingest-local --commit`、`case-card --commit`、`qa-capture --commit`、`archive-doc --commit`、`pdf-md --commit` |
-| report write | 重写治理仪表盘或状态报告 | `schema --write-report`、`sources write-report`、`case-index --write-report`、`readme`、`index` |
+| report write | 重写治理仪表盘或状态报告 | `schema --write-report`、`completeness --write-report`、`sources write-report`、`case-index --write-report`、`readme`、`index` |
 | read-only | 只读取并检查当前状态 | `health`、`manifest`、`search`、`sources summary`、`stats` |
 | Agent preview/commit | preview 只生成短期令牌；commit 需 `confirmed=true` | `cpa_zh_agent.py` 和 `cpa_zh_mcp.py` 的写入操作 |
 
@@ -172,7 +172,7 @@ Agent 写入必须按 [[concepts/cpa-zh-agent-tools]] 的 preview、人工确认
 | 风险等级 | 命令 | 说明 |
 |---|---|---|
 | 低 | `search`、`stats`、`manifest`、`health`、`sources summary` | 只读检查或查询，不改文件 |
-| 中 | `index`、`cache build`、`schema --write-report`、`sources write-report`、`case-index --write-report`、`readme`、`pdf-md --commit` | 重建缓存、索引、仪表盘、建议报告或 PDF 转换结果，可重复生成 |
+| 中 | `index`、`cache build`、`schema --write-report`、`completeness --write-report`、`sources write-report`、`case-index --write-report`、`readme`、`pdf-md --commit` | 重建缓存、索引、仪表盘、建议报告或 PDF 转换结果，可重复生成 |
 | 高 | `ingest-local --commit`、`case-card --commit`、`qa-capture --commit`、`archive-doc --commit` | 新增 raw 或 wiki 文件，应先 dry-run 并核对路径 |
 | 高（受控） | Agent `commit` | 仅接受未过期 preview 令牌和明确确认，并重新校验内容哈希 |
 
@@ -180,6 +180,7 @@ Agent 写入必须按 [[concepts/cpa-zh-agent-tools]] 的 preview、人工确认
 
 ```powershell
 .\.venv\Scripts\python.exe tools\kb.py schema --write-report
+.\.venv\Scripts\python.exe tools\kb.py completeness --write-report
 .\.venv\Scripts\python.exe tools\kb.py sources write-report
 .\.venv\Scripts\python.exe tools\kb.py index
 .\.venv\Scripts\python.exe tools\kb.py readme
@@ -202,7 +203,7 @@ Agent 写入必须按 [[concepts/cpa-zh-agent-tools]] 的 preview、人工确认
 | 新增官方 PDF 或网页下载件 | `archive-doc` | 建来源页，回挂相关法规、政策或准则专题 |
 | PDF 已归档但需要可检索正文 | `pdf-md` | 转出 Markdown 后重建文本缓存和检索索引 |
 | 新增讲义或课程材料 | `ingest-local` | 建学习线、模板页和场景矩阵 |
-| 检查知识库是否健康 | `schema --write-report`、`sources write-report`、`health` | 修复 flagged 页面、失效来源或文本抽取问题 |
+| 检查知识库是否健康 | `schema --write-report`、`completeness --write-report`、`sources write-report`、`health` | 修复 flagged 页面、失效来源或文本抽取问题 |
 | 回答实务问题前检索依据 | `search` | 读取相关规则页、案例页和来源页后再形成判断 |
 | Agent 维护知识库 | `cpa_zh_agent.py` 或 `cpa_zh_mcp.py` | 展示完整预览，取得人工确认后提交并检查 health |
 

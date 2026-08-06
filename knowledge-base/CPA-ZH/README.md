@@ -2,7 +2,7 @@
 
 CPA-ZH 是围绕中国注册会计师行业建立的本地知识库，用于沉淀法规准则、政策文件、职业道德与独立性要求、审计实务技能和案例分析。
 
-截至 2026-08-04，知识库已经具备“原文归档 + 结构化 wiki + 本地检索 + 案例卡片”的基础形态。
+截至 2026-08-06，知识库已经具备“原文归档 + 结构化 wiki + 本地检索 + 案例卡片”的基础形态。
 
 新手优先入口：
 
@@ -13,16 +13,18 @@ CPA-ZH 是围绕中国注册会计师行业建立的本地知识库，用于沉�
 - `wiki/concepts/kb-section-upgrade-dashboard.md` - 分板块技术升级仪表盘，查看五大板块的元数据、来源结构和后续升级重点。
 - `../../tools/kb.py` - 统一维护入口，封装检索、缓存、索引、分板块治理检查、体检和 README 统计刷新。
 - `../../workspace/docs/cpa-zh-agent.md` - Agent CLI、stdio MCP、完整预览和两阶段确认说明。
+- `../../workspace/docs/cpa-zh-long-term-plan.md` - 参考阿里、腾讯方案制定的 12 个月长期计划、阶段门禁和当前执行顺序。
+- `../../workspace/docs/cpa-zh-phase-0-baseline.md` - 当前大规模治理改动的分类、退役页依据和交付验证基线。
 
 ## 当前状态
 
 
 | 项目 | 数量或状态 |
 |---|---:|
-| wiki 页面 | 887 |
-| raw 原始文件 | 4562 |
+| wiki 页面 | 271 |
+| raw 原始文件 | 4567 |
 | manifest 批次 | 8 |
-| 本地检索索引记录 | 1539 |
+| 本地检索索引记录 | 976 |
 | 实务案例卡片 | 24 |
 | wiki 内链状态 | 最近检查为 0 缺失 |
 | Python 运行方式 | 统一使用工作区虚拟环境 `.venv` |
@@ -30,7 +32,7 @@ CPA-ZH 是围绕中国注册会计师行业建立的本地知识库，用于沉�
 ## 最近重大更新（2026-07-23）
 
 - **《注册会计师法》2026 修订草案已接入知识库**：依据主席令第七十八号（2026-06-26 通过、2027-01-01 施行）二十七条修改决定，手工套用 2014 修正版原文生成 8 章 60 条草案全文，归档于 `raw/laws/中华人民共和国注册会计师法-2026-草案.md`，可浏览页见 `wiki/concepts/laws/cpa-law-2026-draft.md`。草案为推演文本，正式引用以官方重新公布的重排版为准。
-- **旧版（2014 修正）条款页已排除出检索**：46 个旧条款页、1 个旧条款目录页与旧法 raw 全文已从本地检索索引移除（文件物理保留，仍可经 `wiki/concepts/law-cpa.md` 的历史版本链接访问）。检索“注册会计师法”现只返回 2026 修订草案及主入口页。排除逻辑见 `tools/kb_search.py` 的 `SUPERSEDED_SEARCH_EXCLUDES`。
+- **核心法规页已改为合并全文索引**：四部法律当前生成 603 条条文记录和 4 个合并全文索引，条文通过 `#article-xxx` 锚点引用，不按“一条一个知识页”拆分。注册会计师法先使用 2026 修订草案 60 条文本，草案·待官方核对；2014 修正版 raw 继续保留为历史底本。
 - 相关页面：修改决定归档 `raw/laws/注册会计师法-修改决定-2026.md`、要点对照 `wiki/concepts/laws/cpa-law/2026-amendment-highlights.md`、来源核验 `wiki/sources/cpa-law-amendment-2026.md`。
 
 ## 最近重大更新（2026-07-24）
@@ -145,7 +147,7 @@ knowledge-base/CPA-ZH/
 
 ## Agent-first 维护
 
-Agent 是资料摄入、问答沉淀、案例草稿和页面复核的主要入口。CLI 与本机 stdio MCP 共用 `tools/cpa_zh_agent_service.py`，所有知识库写入必须先 preview，再由用户明确确认后以短期令牌 commit。完整说明见 `../../workspace/docs/cpa-zh-agent.md`，工具登记见 [[concepts/cpa-zh-agent-tools]]。
+Agent 是资料摄入、问答沉淀、案例草稿和页面复核的主要入口。CLI 与本机 stdio MCP 共用 `tools/cpa_zh_agent_service.py`，普通写入先 preview，再由用户明确确认后以短期令牌 commit；已明确授权的批量 Agent 复核可使用 `agent-review --commit`，结果记录为 `agent-reviewed`。完整说明见 `../../workspace/docs/cpa-zh-agent.md`，工具登记见 [[concepts/cpa-zh-agent-tools]]。
 
 ```powershell
 .\.venv\Scripts\python.exe tools\cpa_zh_agent.py search --query "收入确认"
@@ -249,10 +251,10 @@ PDF 转 Markdown 预览：
 | 类型 | 数量 |
 |---|---:|
 | pdf-markdown | 97 |
-| raw-file | 503 |
+| raw-file | 508 |
 | raw-manifest | 101 |
-| wiki | 838 |
-| total | 1539 |
+| wiki | 270 |
+| total | 976 |
 
 > 说明：wiki 有效页面 793（不含暂存区 `_trash` 与维护区 `_maintenance`）。其中 47 个旧《注册会计师法》页面与 1 个旧法 raw 全文早已排除出检索索引（见 `SUPERSEDED_SEARCH_EXCLUDES`）；历史专题拆分页及维护控制页已不再进入索引。raw-file 仍为 651。
 
@@ -363,9 +365,11 @@ wiki/cases/        案例卡片
 
 ## 当前最适合继续建设的方向
 
+长期阶段和退出标准以 `../../workspace/docs/cpa-zh-long-term-plan.md` 为准；以下内容作为专业知识建设候选池持续维护。
+
 1. 继续扩展第四板块，把更多实务案例加工为案例卡片。
 2. 为案例卡片增加跨案例索引，例如“收入确认案例索引”“政府补助案例索引”。
 3. 对第一板块核心准则增加更多审计程序模板和底稿提示。
 4. 为政策文件、职业道德和独立性准则建立定期复核清单。
 5. 按第五板块项目落地路线推进 P1 工具：CPA-ZH 入库助手、案例卡片生成助手、PDF 原文归档工具。
-6. 取得《注册会计师法》2026 修订官方重新公布全文后，用 `tools/generate_core_law_article_pages.py` 把草案拆为 60 个正式条款页替换旧结构。
+6. 取得《注册会计师法》2026 修订官方重新公布全文后，用 `tools/generate_core_law_article_pages.py` 核对并替换当前草案索引。

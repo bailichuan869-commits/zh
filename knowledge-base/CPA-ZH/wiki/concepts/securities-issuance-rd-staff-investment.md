@@ -2,6 +2,7 @@
 title: 监管规则适用指引——发行类第9号：研发人员及研发投入
 type: concept
 concept_type: regulatory-guidance
+maturity: draft
 created: 2026-07-09
 updated: 2026-07-09
 sources: [issuance-guidance-rd-staff-investment-archive-2026-07-09]
@@ -29,7 +30,7 @@ topic: audit-practice
 | 来源说明 | [[sources/issuance-guidance-rd-staff-investment-archive-2026-07-09]] |
 | 官方原文页 | https://www.csrc.gov.cn/csrc/c101802/c7445462/content.shtml |
 | 起草说明附件 | https://www.csrc.gov.cn/csrc/c101802/c7445462/7445462/files/%E7%9B%91%E7%AE%A1%E8%A7%84%E5%88%99%E9%80%82%E7%94%A8%E6%8C%87%E5%BC%95%E2%80%94%E2%80%94%E5%8F%91%E8%A1%8C%E7%B1%BB%E7%AC%AC9%E5%8F%B7%20%E7%A0%94%E5%8F%91%E4%BA%BA%E5%91%98%E5%8F%8A%E7%A0%94%E5%8F%91%E6%8A%95%E5%85%A5%E8%B5%B7%E8%8D%89%E8%AF%B4%E6%98%8E.pdf |
-| 原文状态 | 官方页面已核验；本地 PDF 已归档；pypdf 已抽取正文，建议后续抽样校验文本质量 |
+| 原文状态 | 官方页面已核验；本地 PDF 已归档；PDF 共 8 页，文本抽取状态为 `ok`，已完成结构和页数检查 |
 
 ## 使用场景
 
@@ -90,8 +91,9 @@ topic: audit-practice
 | [[concepts/first-section-topics/income-tax-deferred-tax]] | 研发费用加计扣除、税会差异和所得税影响 |
 | [[concepts/case-analysis]] | 后续可把研发费用核查案例加工为案例卡片 |
 
-## 待补充
+## 使用边界与维护触发
 
-1. 抽样校验本地 PDF 抽取文本质量；如后续发现乱码或缺页，再补做 OCR。
-2. 在终端网络可访问证监会官网后，补充官方 HTML 快照。
-3. 后续如证监会更新该指引，应同步维护版本效力状态。
+- 当前可检索正文来自本地 PDF 的 Markdown 门面；正式引用时仍应保留 PDF、官方页面和内容哈希三类追溯信息。
+- 证监会官方页面已作为来源入口记录，但当前知识库不把网页快照缺失误写成正文缺失；页面迁移或下载条件变化时再补充 HTML 快照。
+- 指引发生修订、废止或适用范围变化时，新版本应生成新资产并建立 `superseded` 或 `expired` 版本关系，不能覆盖当前原文。
+- 研发人员认定、研发投入归集和委外研发结论涉及申报期事实，Agent 可以先完成结构化复核，正式申报或审计结论仍须人工复核。

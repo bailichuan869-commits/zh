@@ -1,4 +1,4 @@
-﻿SourceType,SourceTypeLabel,Title,Url,LocalPath,Seq,StandardNo,StandardKey,StandardPage,MappingMethod,Confidence,InterpretationNo
+SourceType,SourceTypeLabel,Title,Url,LocalPath,Seq,StandardNo,StandardKey,StandardPage,MappingMethod,Confidence,InterpretationNo
 standard,准则原文,企业会计准则——基本准则,http://tfs.mof.gov.cn/caizhengbuling/201407/t20140729_1119494.htm,raw/standards/accounting/standards-pages/企业会计准则-基本准则.html,,,basic,concepts/accounting-standards/basic,basic-standard-title,high,
 standard,准则原文,企业会计准则第5号——生物资产,https://kjs.mof.gov.cn/zt/kjzzss/kuaijizhunzeshishi/200806/t20080618_46212.htm,raw/standards/accounting/standards-pages/企业会计准则第5号-生物资产.html,,5,cas-05,concepts/accounting-standards/cas-05,title-standard-number,high,
 standard,准则原文,企业会计准则第4号——固定资产,https://kjs.mof.gov.cn/zt/kjzzss/kuaijizhunzeshishi/200806/t20080618_46213.htm,raw/standards/accounting/standards-pages/企业会计准则第4号-固定资产.html,,4,cas-04,concepts/accounting-standards/cas-04,title-standard-number,high,

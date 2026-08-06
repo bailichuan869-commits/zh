@@ -3,7 +3,7 @@ title: 企业会计准则解释下载批次
 type: source
 source_type: official-download-batch
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-08-06
 raw_path: raw/standards/accounting/
 tags: [accounting, standards, interpretations, official-download, p1-core]
 related: [[concepts/accounting-standards-system]], [[sources/enterprise-accounting-standards-download-2026-06-26]]
@@ -36,4 +36,4 @@ topic: batches
 
 ## 备注
 
-本次已下载企业会计准则解释第1号至第20号相关通知页面的 HTML 原文。后续可转换为 Markdown，并建立“解释号 -> 涉及准则 -> 生效日期 -> 实务影响”的索引表。
+本次已下载企业会计准则解释第1号至第20号相关通知页面，并完成 Markdown 原文门面和解释编号级事项索引。解释页记录官方 URL、本地 raw 路径、版本和生命周期状态；未经官方注册表确认的效力统一保留为 `unknown`，不据此宣称现行有效。

@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from kb_common import normalize_core_law_article_links
+
 
 ROOT = Path(__file__).resolve().parents[1]
 WIKI = ROOT / "knowledge-base" / "CPA-ZH" / "wiki"
@@ -322,8 +324,8 @@ related: [[concepts/first-section-topic-matrix]], [[concepts/law-securities]], [
 
 | 维度 | 入口 | 用途 |
 |---|---|---|
-| 注册会计师法定业务和报告证明效力 | [[concepts/laws/cpa-law/cpa-law-article-014]], [[concepts/laws/cpa-law/cpa-law-article-021]] | 连接注册会计师法下的业务范围和执业准则要求。 |
-| 拒绝不当报告和禁止行为 | [[concepts/laws/cpa-law/cpa-law-article-020]], [[concepts/laws/cpa-law/cpa-law-article-022]] | 处理客户施压、资料受限、利益冲突和独立性问题。 |
+| 注册会计师法定业务和报告证明效力 | [[concepts/laws/cpa-law/cpa-law-article-016]], [[concepts/laws/cpa-law/cpa-law-article-023]] | 连接注册会计师法下的业务范围和执业准则要求。 |
+| 拒绝不当报告和禁止行为 | [[concepts/laws/cpa-law/cpa-law-article-022]], [[concepts/laws/cpa-law/cpa-law-article-024]] | 处理客户施压、资料受限、利益冲突和独立性问题。 |
 | 证券服务机构勤勉尽责 | [[concepts/laws/securities-law/securities-law-article-160]], [[concepts/laws/securities-law/securities-law-article-163]] | 证券业务审计报告和鉴证报告的核心法律入口。 |
 | 连带赔偿和民事责任优先 | [[concepts/laws/securities-law/securities-law-article-169]], [[concepts/laws/securities-law/securities-law-article-220]] | 评估投资者损失、赔偿责任和风险后果。 |
 | 中介机构行政责任 | [[concepts/laws/securities-law/securities-law-article-213]], [[concepts/laws/securities-law/securities-law-article-214]] | 识别未勤勉尽责、文件虚假和资料保存责任。 |
@@ -753,7 +755,8 @@ def main() -> None:
     TOPICS.mkdir(parents=True, exist_ok=True)
     for path, text in PAGES.items():
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(text.strip() + "\n", encoding="utf-8")
+        normalized, _ = normalize_core_law_article_links(text)
+        path.write_text(normalized.strip() + "\n", encoding="utf-8")
     print(f"topic_pages={len(PAGES)}")
 
 

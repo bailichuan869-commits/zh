@@ -3,11 +3,11 @@ title: 大股东兜底式股权激励
 type: case
 case_type: share-based-payment
 created: 2026-07-29
-updated: 2026-07-29
+updated: 2026-08-05
 page_role: case
-maturity: draft
-answer_ready: false
-review_status: pending-human-review
+maturity: reviewed
+answer_ready: true
+review_status: agent-reviewed
 source_verified: true
 conclusion_certainty: high-for-stated-facts
 sources: [mof-official-source]
@@ -16,8 +16,13 @@ tags: [case, golden-case, accounting, official-application]
 related: [[concepts/accounting-judgments/share-based-payment-recognition-modification]], [[cases/golden-cases-index]]
 domain: cases
 topic: share-based-payment
+review_actor: cpa-zh-agent
+review_method: structured-source-review-v1
+reviewed_at: 2026-08-05
+review_basis: complete-markdown-raw-source-section-hash-check
+review_report: workspace/outputs/cpa-zh-agent-review-2026-08-05.json
+source_url: https://kjs.mof.gov.cn/zt/kjzzss/srzzzq/gfzfyyal/202105/t20210518_3704076.htm
 ---
-
 # 大股东兜底式股权激励
 
 > 来源层级：财政部原文加工。下述事实和结论来自本地 raw 快照；审计程序和底稿建议是专业实务补充，二者分层展示。

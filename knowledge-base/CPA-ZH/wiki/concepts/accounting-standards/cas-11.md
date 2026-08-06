@@ -47,11 +47,3 @@ topic: cas
 | 应用案例 | 股份支付准则应用案例——股份支付的修改导致所授予权益工具的公允价值增加 | https://kjs.mof.gov.cn/zt/kjzzss/srzzzq/gfzfyyal/202406/t20240620_3937581.htm | `raw/standards/accounting/application-cases-pages/036-股份支付准则应用案例-股份支付的修改导致所授予权益工具的公允价值增加.html.md` | url-category-slug/high |
 | 实施问答 | 问：某国内企业的境外母公司在集团内实施股权激励计划且适用股份支付准则，该国内企业无... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/gfzzsswd/202103/t20210302_3664183.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-009.html.md` | url-category-slug/high |
 | 实施问答 | 问：某企业对职工实行股权激励计划，并约定了服务期和业绩条件。在等待期内，某已参加该... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/gfzzsswd/202307/t20230717_3896761.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-079.html.md` | url-category-slug/high |
-
-<!-- golden-judgments:start -->
-
-## 会计判断专题
-
-- [[concepts/accounting-judgments/share-based-payment-recognition-modification|股份支付识别、授予日与计划修改]]
-
-<!-- golden-judgments:end -->

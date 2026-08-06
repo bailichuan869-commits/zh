@@ -3,17 +3,26 @@ title: 暂估转固超过12个月的税会差异处理
 type: case
 case_type: tax-accounting-judgment
 created: 2026-07-01
-updated: 2026-07-01
+updated: 2026-08-06
 sources: [case-batch-2026-07-first-issue]
-raw_path: raw/cases/2026-07-first-issue/11部研讨会议题【暂估转固税会差异问题】（7月-第1期）.docx
+raw_path: raw/cases/2026-07-first-issue/11部研讨会议题【暂估转固税会差异问题】（7月-第1期）.docx.md
 tags: [case, fixed-assets, tax-accounting-difference, deferred-tax, temporary-difference, practice]
 related: [[sources/case-batch-2026-07-first-issue]], [[concepts/case-analysis]], [[concepts/accounting-standards/cas-18]], [[concepts/accounting-standards/cas-08]]
 domain: cases
 topic: case-other
 page_role: case
-maturity: draft
-answer_ready: false
-review_status: pending-human-review
+maturity: reviewed
+answer_ready: true
+review_status: agent-reviewed
+source_verified: true
+review_actor: cpa-zh-agent
+review_method: structured-source-review-v1
+reviewed_at: 2026-08-06
+review_basis: complete-markdown-raw-source-section-hash-check
+review_report: workspace/outputs/cpa-zh-agent-review-2026-08-06.json
+source_url: 
+source_scope: local-only
+source_verification: agent-raw-manifest-facade-check
 ---
 # 暂估转固超过12个月的税会差异处理
 
@@ -107,7 +116,7 @@ B 公司某新建生产线 2024 年 11 月完工并达到预定可使用状态�
 
 ## 结论确定性
 
-现有结论属于对所列事实的专业判断意见，尚待指定复核人对原始材料和报告期准则逐项复核；复核前不进入 AI 主检索集。
+现有结论属于对所列事实的专业判断意见；Agent 已完成正文结构、raw 来源链和原文哈希复核，进入 AI 主检索集时仍须结合报告期准则和项目事实，不替代专业判断。
 
 ## 原文引用与边界
 

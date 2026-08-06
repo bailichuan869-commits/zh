@@ -5,6 +5,8 @@ concept_type: automation-tool
 created: 2026-08-04
 updated: 2026-08-04
 tags: [agent, mcp, cli, knowledge-base, review-gate]
+sources: [cpa-zh-agent-architecture]
+raw_path: workspace/docs/cpa-zh-agent.md
 related: [[concepts/ai-coding-tool-registry]], [[concepts/kb-maintenance-workflow]], [[concepts/kb-user-guide]]
 domain: tools
 topic: helpers

@@ -3,14 +3,19 @@ title: 第二板块政策版本与效力跟踪
 type: concept
 concept_type: validity-tracker
 created: 2026-06-29
-updated: 2026-06-29
+updated: 2026-08-06
 sources: [policy-documents-official-links-2026-06-29, policy-documents-raw-archive-2026-06-29]
 tags: [policy, validity, version-control, p2-important]
 related: [[concepts/policy-documents]], [[concepts/policy-official-link-checklist]], [[concepts/policy-execution-checklist]]
 domain: policies
 topic: trackers
+asset_id: cpa-zh:index:policy-version-validity-tracker
+knowledge_type: index
+page_role: index
+maturity: reviewed
+answer_ready: false
+review_status: agent-reviewed
 ---
-
 # 第二板块政策版本与效力跟踪
 
 本页用于跟踪第二板块政策文件的官方来源、归档状态、效力复核状态和后续维护触发条件。这里的“已核验”表示官方来源和本地归档已完成，不等同于永久有效；政策、规章和规范性文件仍需定期复核。

@@ -36,11 +36,3 @@ topic: cas
 | 类型 | 标题 | 官方链接 | 本地文件 | 映射 |
 |---|---|---|---|---|
 | 准则原文 | 企业会计准则第13号——或有事项 | https://kjs.mof.gov.cn/zt/kjzzss/kuaijizhunzeshishi/200806/t20080618_46235.htm | `raw/standards/accounting/standards-pages/企业会计准则第13号-或有事项.html` | title-standard-number/high |
-
-<!-- golden-judgments:start -->
-
-## 会计判断专题
-
-- [[concepts/accounting-judgments/contingencies-and-provisions|或有事项与预计负债]]
-
-<!-- golden-judgments:end -->

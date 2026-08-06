@@ -40,11 +40,3 @@ topic: cas
 | 准则原文 | 企业会计准则第18号——所得税 | https://kjs.mof.gov.cn/zt/kjzzss/kuaijizhunzeshishi/200806/t20080618_46230.htm | `raw/standards/accounting/standards-pages/企业会计准则第18号-所得税.html` | title-standard-number/high |
 | 应用案例 | 所得税准则应用案例——单项交易产生的资产和负债相关的递延所得税不适用初始确认豁免的... | https://kjs.mof.gov.cn/zt/kjzzss/srzzzq/sdszzyyal/202304/t20230404_3877087.htm | `raw/standards/accounting/application-cases-pages/031-所得税准则应用案例-单项交易产生的资产和负债相关的递延所得税不适用初始确认豁免的....html.md` | url-category-slug/high |
 | 实施问答 | 问：执行《小企业会计准则》的企业作为个人所得税的扣缴义务人，根据《中华人民共和国个... | https://kjs.mof.gov.cn/zt/kjzzss/sswd/xqykjzzsswd/202111/t20211102_3762844.htm | `raw/standards/accounting/implementation-qa-pages-v2/qa-058.html.md` | title-topic-keyword/medium |
-
-<!-- golden-judgments:start -->
-
-## 会计判断专题
-
-- [[concepts/accounting-judgments/income-and-deferred-tax|所得税与递延所得税]]
-
-<!-- golden-judgments:end -->

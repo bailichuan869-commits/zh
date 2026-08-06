@@ -3,14 +3,30 @@ title: 会计师事务所执业许可和监督管理办法
 type: concept
 concept_type: policy
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-08-06
 sources: [2026-06-26-initial-structure, archived-cpa-competition-policy-pages]
 tags: [policy, accounting-firm, license, supervision, p2-important]
 related: [[concepts/policy-documents]], [[concepts/law-cpa]], [[concepts/policy-audit-order]], [[concepts/policy-firm-inspection]]
 domain: policies
 topic: firm
+asset_id: cpa-zh:policy:firm-license-supervision-2019-97
+source_id: policy-firm-license-supervision-2019-97
+knowledge_type: policy
+page_role: knowledge
+maturity: reviewed
+answer_ready: false
+review_status: agent-reviewed
+version: 财政部令第97号修改版本
+published_on: 2019-01-02
+effective_from: 2019-01-02
+lifecycle_status: unknown
+authority_level: official
+raw_path: raw/policies/second-section/firm-license-supervision-2019-97/official.html.md
+markdown_path: wiki/concepts/policy-firm-license-supervision.md
+source_url: https://www.gov.cn/gongbao/content/2019/content_5392297.htm
+content_sha256: e5b2056d3d8ed66b9242dd2eb7e28f319529581d65f00b28de0ddf693c818029
+supersedes: 财政部令第89号公布版本
 ---
-
 # 会计师事务所执业许可和监督管理办法
 
 ## 基本信息
@@ -37,7 +53,7 @@ topic: firm
 
 | 问题 | 连接 |
 |---|---|
-| 事务所设立上位法 | [[concepts/law-cpa]], [[concepts/laws/cpa-law/cpa-law-article-025]] |
+| 事务所设立上位法 | [[concepts/law-cpa]], [[concepts/laws/cpa-law/index#article-027]] |
 | 行业秩序治理 | [[concepts/policy-audit-order]] |
 | 监督检查程序 | [[concepts/policy-firm-inspection]] |
 | 诚信和信用约束 | [[concepts/policy-integrity]] |

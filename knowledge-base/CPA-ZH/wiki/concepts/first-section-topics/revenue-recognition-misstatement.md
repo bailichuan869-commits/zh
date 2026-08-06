@@ -21,11 +21,11 @@ topic: first-section
 
 | 维度 | 入口 | 用途 |
 |---|---|---|
-| 会计资料真实完整 | [[concepts/laws/accounting-law/accounting-law-article-003]], [[concepts/laws/accounting-law/accounting-law-article-004]] | 判断单位负责人和会计资料责任。 |
-| 实际经济业务核算 | [[concepts/laws/accounting-law/accounting-law-article-009]] | 识别虚构交易、提前确认、循环交易和无商业实质安排。 |
-| 财务报告编制责任 | [[concepts/laws/accounting-law/accounting-law-article-020]], [[concepts/laws/company-law/company-law-article-208]] | 连接财务报表编制、审计和披露责任。 |
-| 向事务所提供资料 | [[concepts/laws/accounting-law/accounting-law-article-029]], [[concepts/laws/company-law/company-law-article-216]] | 处理合同、发货、验收、回款等证据不完整问题。 |
-| 虚假报告和信息披露责任 | [[concepts/laws/accounting-law/accounting-law-article-041]], [[concepts/laws/securities-law/securities-law-article-197]] | 评估重大错报、虚假记载和重大遗漏的责任风险。 |
+| 会计资料真实完整 | [[concepts/laws/accounting-law/index#article-003]], [[concepts/laws/accounting-law/index#article-004]] | 判断单位负责人和会计资料责任。 |
+| 实际经济业务核算 | [[concepts/laws/accounting-law/index#article-009]] | 识别虚构交易、提前确认、循环交易和无商业实质安排。 |
+| 财务报告编制责任 | [[concepts/laws/accounting-law/index#article-020]], [[concepts/laws/company-law/index#article-208]] | 连接财务报表编制、审计和披露责任。 |
+| 向事务所提供资料 | [[concepts/laws/accounting-law/index#article-029]], [[concepts/laws/company-law/index#article-216]] | 处理合同、发货、验收、回款等证据不完整问题。 |
+| 虚假报告和信息披露责任 | [[concepts/laws/accounting-law/index#article-041]], [[concepts/laws/securities-law/index#article-197]] | 评估重大错报、虚假记载和重大遗漏的责任风险。 |
 
 ## 会计准则入口
 

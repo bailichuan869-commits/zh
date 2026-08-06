@@ -3,14 +3,19 @@ title: 第二板块政策文件对照表
 type: concept
 concept_type: comparison
 created: 2026-06-26
-updated: 2026-06-26
+updated: 2026-08-06
 sources: [2026-06-26-initial-structure, archived-cpa-competition-policy-pages]
 tags: [policy, comparison, p2-important]
 related: [[concepts/policy-documents]], [[concepts/policy-implementation-map]], [[concepts/policy-official-link-checklist]]
 domain: policies
 topic: trackers
+asset_id: cpa-zh:index:policy-document-comparison
+knowledge_type: index
+page_role: index
+maturity: reviewed
+answer_ready: false
+review_status: agent-reviewed
 ---
-
 # 第二板块政策文件对照表
 
 ## 总体对照

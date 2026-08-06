@@ -21,10 +21,10 @@ topic: first-section
 
 | 维度 | 入口 | 用途 |
 |---|---|---|
-| 国家统一会计制度 | [[concepts/laws/accounting-law/accounting-law-article-013]] | 连接企业会计准则的分类、计量和披露要求。 |
-| 财务会计报告责任 | [[concepts/laws/accounting-law/accounting-law-article-020]], [[concepts/laws/company-law/company-law-article-208]] | 评估估值和减值是否进入报表和附注。 |
-| 信息披露真实准确完整 | [[concepts/laws/securities-law/securities-law-article-078]], [[concepts/laws/securities-law/securities-law-article-080]] | 处理复杂金融工具、重大估计和敏感性披露。 |
-| 证券服务机构勤勉尽责 | [[concepts/laws/securities-law/securities-law-article-163]], [[concepts/laws/securities-law/securities-law-article-213]] | 评价审计报告或鉴证报告涉及复杂估值时的中介责任。 |
+| 国家统一会计制度 | [[concepts/laws/accounting-law/index#article-013]] | 连接企业会计准则的分类、计量和披露要求。 |
+| 财务会计报告责任 | [[concepts/laws/accounting-law/index#article-020]], [[concepts/laws/company-law/index#article-208]] | 评估估值和减值是否进入报表和附注。 |
+| 信息披露真实准确完整 | [[concepts/laws/securities-law/index#article-078]], [[concepts/laws/securities-law/index#article-080]] | 处理复杂金融工具、重大估计和敏感性披露。 |
+| 证券服务机构勤勉尽责 | [[concepts/laws/securities-law/index#article-163]], [[concepts/laws/securities-law/index#article-213]] | 评价审计报告或鉴证报告涉及复杂估值时的中介责任。 |
 
 ## 会计准则入口
 

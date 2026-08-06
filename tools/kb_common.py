@@ -1,6 +1,7 @@
 """Shared metadata, Markdown, and path helpers for the CPA-ZH delivery features."""
 from __future__ import annotations
 
+import hashlib
 import os
 import re
 from pathlib import Path
@@ -16,6 +17,20 @@ ROLE_LABELS = {
     "knowledge": "知识专题",
     "case": "案例",
 }
+LIFECYCLE_STATUSES = {
+    "valid",
+    "unknown",
+    "draft",
+    "historical",
+    "superseded",
+    "expired",
+    "enacted-not-effective",
+}
+CORE_LAW_ARTICLE_LINK_RE = re.compile(
+    r"\[\[concepts/laws/(?P<slug>accounting-law|company-law|cpa-law|securities-law)/"
+    r"(?P=slug)-article-(?P<number>\d{3})(?P<duplicate>-\d+)?"
+    r"(?:#[^|\]]+)?(?P<label>\|[^\]]+)?\]\]"
+)
 
 
 def read_text(path: Path) -> str:
@@ -36,6 +51,113 @@ def parse_scalar(value: str) -> Any:
         inner = value[1:-1].strip()
         return [] if not inner else [item.strip().strip("\"'") for item in inner.split(",")]
     return value
+
+
+def metadata_text(value: Any) -> str:
+    """Render scalar or simple frontmatter collections into stable text."""
+    if isinstance(value, (list, tuple, set)):
+        return ",".join(str(item).strip() for item in value if str(item).strip())
+    return str(value or "").strip()
+
+
+def metadata_list(value: Any) -> list[str]:
+    if isinstance(value, (list, tuple, set)):
+        values = [str(item).strip() for item in value]
+    else:
+        values = [item.strip() for item in str(value or "").split(",")]
+    return [item for item in values if item]
+
+
+def normalize_core_law_article_links(text: str) -> tuple[str, int]:
+    """Point legacy article links at the consolidated law-index anchors."""
+    def replace(match: re.Match[str]) -> str:
+        slug = match.group("slug")
+        number = match.group("number")
+        duplicate = match.group("duplicate") or ""
+        label = match.group("label") or ""
+        return f"[[concepts/laws/{slug}/index#article-{number}{duplicate}{label}]]"
+
+    return CORE_LAW_ARTICLE_LINK_RE.subn(replace, text)
+
+
+def lifecycle_status(metadata: dict[str, Any]) -> str:
+    """Map existing status vocabulary onto the retrieval lifecycle contract."""
+    explicit = metadata_text(metadata.get("lifecycle_status")).lower()
+    if explicit in LIFECYCLE_STATUSES:
+        return explicit
+    status = metadata_text(metadata.get("status")).lower()
+    if status in LIFECYCLE_STATUSES:
+        return status
+    if "supersed" in status or "replace" in status:
+        return "superseded"
+    if "expire" in status:
+        return "expired"
+    if "histor" in status:
+        return "historical"
+    if "draft" in status or "pending" in status:
+        return "draft"
+    if "enacted-not-effective" in status:
+        return "enacted-not-effective"
+    return "valid"
+
+
+def asset_metadata(
+    rel_path: str,
+    metadata: dict[str, Any] | None = None,
+    *,
+    kind: str = "",
+    page_role: str = "",
+    domain: str = "",
+    topic: str = "",
+    source_url: str = "",
+    raw_path: str = "",
+    markdown_path: str = "",
+    content_sha256: str = "",
+    body: str = "",
+    answer_ready: bool = False,
+    authority: str = "curated",
+) -> dict[str, Any]:
+    """Build the stable asset projection used by the SQLite retrieval index."""
+    values = metadata or {}
+    normalized_path = rel_path.replace("\\", "/")
+    role = page_role or metadata_text(values.get("page_role"))
+    resolved_domain = domain or metadata_text(values.get("domain"))
+    resolved_topic = topic or metadata_text(values.get("topic"))
+    resolved_source_url = source_url or metadata_text(
+        values.get("source_url") or values.get("url") or values.get("official_url")
+    )
+    source_values = metadata_list(values.get("source_id") or values.get("sources"))
+    resolved_raw_path = raw_path or metadata_text(values.get("raw_path") or values.get("local_file"))
+    resolved_markdown_path = markdown_path or metadata_text(values.get("markdown_path") or values.get("derived_markdown"))
+    resolved_hash = content_sha256 or metadata_text(values.get("content_sha256") or values.get("derived_sha256") or values.get("sha256"))
+    if not resolved_hash and body:
+        resolved_hash = hashlib.sha256(body.encode("utf-8")).hexdigest()
+    resolved_authority = metadata_text(values.get("authority_level") or values.get("authority")) or authority
+    return {
+        "asset_id": metadata_text(values.get("asset_id")) or f"cpa-zh:{kind or 'asset'}:{normalized_path}",
+        "source_id": source_values[0] if source_values else "",
+        "source_type": metadata_text(values.get("source_type") or values.get("document_type")) or kind,
+        "knowledge_type": metadata_text(values.get("knowledge_type") or values.get("type")) or role or kind,
+        "domain": resolved_domain,
+        "topic": resolved_topic,
+        "tags": metadata_list(values.get("tags")),
+        "authority_level": resolved_authority,
+        "version": metadata_text(values.get("version") or values.get("version_label")),
+        "published_on": metadata_text(values.get("published_on") or values.get("issued_date") or values.get("created") or values.get("imported_on")),
+        "effective_from": metadata_text(values.get("effective_from") or values.get("effective_on") or values.get("effective_date")),
+        "effective_to": metadata_text(values.get("effective_to") or values.get("expiry_date") or values.get("expired_on")),
+        "lifecycle_status": lifecycle_status(values),
+        "raw_path": resolved_raw_path,
+        "markdown_path": resolved_markdown_path,
+        "source_url": resolved_source_url,
+        "content_sha256": resolved_hash,
+        "review_status": metadata_text(values.get("review_status")),
+        "supersedes": metadata_text(values.get("supersedes")),
+        "superseded_by": metadata_text(values.get("superseded_by")),
+        "page_role": role,
+        "answer_ready": bool(answer_ready),
+        "authority": resolved_authority,
+    }
 
 
 def parse_frontmatter(text: str) -> tuple[dict[str, Any], str]:
